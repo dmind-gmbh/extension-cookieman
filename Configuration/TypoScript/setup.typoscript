@@ -1,0 +1,35 @@
+plugin.tx_cookieman {
+    view {
+        templateRootPaths.0 = {$plugin.tx_cookieman.settings.resourcesBasePath}/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Templates/
+        partialRootPaths.0 = {$plugin.tx_cookieman.settings.resourcesBasePath}/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Partials/
+        layoutRootPaths.0 = EXT:cookieman/Resources/Private/Layouts/
+    }
+
+    settings {
+        links {
+            dataProtectionDeclarationPid = {$plugin.tx_cookieman.settings.links.dataProtectionDeclarationPid}
+            dataProtectionDeclarationAnchor = {$plugin.tx_cookieman.settings.links.dataProtectionDeclarationAnchor}
+        }
+    }
+}
+
+page {
+    includeJSFooter {
+        cookie-js = EXT:cookieman/Resources/Public/Js/js.cookie-2.2.0.min.js
+        cookieman = EXT:cookieman/Resources/Public/Js/cookieman.js
+        cookieman-framework-specific = {$plugin.tx_cookieman.settings.resourcesBasePath}/Public/Themes/{$plugin.tx_cookieman.settings.theme}/cookieman-theme.js
+    }
+    includeCSS {
+        cookieman-framework-specific = {$plugin.tx_cookieman.settings.resourcesBasePath}/Public/Themes/{$plugin.tx_cookieman.settings.theme}/cookieman-theme.css
+    }
+
+    1365499 = FLUIDTEMPLATE
+    1365499 {
+        templateName = Popup
+        templateRootPaths < plugin.tx_cookieman.view.templateRootPaths
+        partialRootPaths < plugin.tx_cookieman.view.partialRootPaths
+        layoutRootPaths < plugin.tx_cookieman.view.layoutRootPaths
+
+        settings < plugin.tx_cookieman.settings
+    }
+}

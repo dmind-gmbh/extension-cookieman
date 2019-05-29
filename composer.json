@@ -1,0 +1,21 @@
+{
+  "name": "dmind/cookieman",
+  "type": "typo3-cms-extension",
+  "description": "Provide cookie banner with opt-in and multiple categories",
+  "version": "1.0.0-dev",
+  "authors": [
+    {
+      "name": "Jonas Eberle",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.0.0",
+    "typo3/cms-core": ">=8.7.0,<10.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "Dmind\\Cookieman\\": "Classes"
+    }
+  }
+}

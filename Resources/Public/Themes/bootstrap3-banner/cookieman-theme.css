@@ -1,0 +1,148 @@
+#cookieman-modal.modal {
+    z-index: 9999;
+}
+
+.modal-backdrop {
+    z-index: 9998;
+    background-color: rgba(136, 136, 136, 0.53);
+}
+
+#cookieman-modal .modal-dialog {
+    width: 100%;
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    #cookieman-modal .modal-dialog {
+        margin: 140px auto 20px;
+    }
+}
+
+#cookieman-modal .modal-content {
+    border-radius: 0;
+    border: unset;
+    background-color: rgba(119, 119, 119, 0.87);
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.25);
+}
+
+#cookieman-modal .light-txt a {
+    text-decoration: underline !important;
+    color: #fff;
+}
+
+@media (min-width: 1025px) {
+    #cookieman-modal .modal-content {
+        padding: 5px 30% 10px;
+    }
+}
+
+#cookieman-modal .panel-default > .panel-heading {
+    background-color: unset;
+    padding: unset;
+}
+
+#cookieman-modal .panel-group .panel-heading + .panel-collapse > .panel-body {
+    border-top: none;
+}
+
+#cookieman-modal .panel-title {
+    position: relative;
+}
+
+#cookieman-modal .panel-title a {
+    display: inline-block;
+    padding: 15px 130px 15px 15px; /* increases click area */
+    width: 100%;
+}
+
+#cookieman-modal .panel-title-checkbox {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+}
+
+#cookieman-modal .panel-title .checkbox {
+    margin: -12px 0 0 0;
+}
+
+#cookieman-modal .panel-title .checkbox [type="checkbox"] {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    position: absolute;
+    margin: 0;
+    width: 24px;
+    height: 24px;
+}
+
+#cookieman-modal .panel-title .checkbox input ~ .p-label::after {
+    content: 'Inaktiv';
+}
+
+#cookieman-modal .panel-title .checkbox :checked ~ .p-label::after {
+    content: 'Aktiv';
+}
+
+#cookieman-modal .panel-title .checkbox .p-check-icon {
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    margin-right: 5px;
+    position: relative;
+    width: 24px;
+    height: 24px;
+}
+
+#cookieman-modal .panel-title .checkbox .p-check-block {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid transparent;
+    background-color: #ededed;
+}
+
+#cookieman-modal .panel-title .checkbox :checked ~ .p-check-icon .p-check-block::after {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+}
+
+#cookieman-modal .panel-title .checkbox .p-check-block::after {
+    transition: all 0.2s linear 0s;
+    content: "";
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    background-color: #93c000;
+    border-color: #93c000;
+    border: 0 none;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+}
+
+#cookieman-modal table {
+    font-size: 80%;
+}
+
+#cookieman-settings [data-toggle="collapse"]:after {
+    content: "+";
+    font-size: 50px;
+    opacity: .7;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    line-height: 0;
+    transition: transform ease-in-out 0.3s;
+    transform-origin: center;
+    transform: rotate(45deg);
+}
+
+#cookieman-settings [data-toggle="collapse"].collapsed:after {
+    transform: rotate(0);
+}
