@@ -1,8 +1,10 @@
 // requires: cookieman.js, Bootstrap-JS, jQuery
-cookieman.bootstrap3banner = (function () {
+cookieman.bootstrap3Banner = (function () {
     "use strict";
-    var $modal = jQuery('#cookieman-modal')
-    var showBackdrop = true
+    var $modal = jQuery('#cookieman-modal'),
+        $accordion = jQuery('#cookieman-acco'),
+        $checkboxWrappers = $accordion.find('.panel-title-checkbox'),
+        showBackdrop = true
 
     cookieman.show = function () {
         $modal.modal({show: true, backdrop: showBackdrop})
@@ -11,14 +13,12 @@ cookieman.bootstrap3banner = (function () {
         $modal.modal('hide')
     }
 
-    // example if you need to initialize
-    // return {
-    //     init: function () {
-    //     }
-    // }
+    return {
+        // initJquery: function () {
+        // }
+    }
 }())
 
-// example if you need to initialize
 // jQuery(function () {
-//     cookieman.bootstrap3banner.init()
+//     cookieman.bootstrap3Banner.initJquery()
 // })

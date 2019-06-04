@@ -38,10 +38,14 @@ var cookieman = (function () {
             setChecked(checkboxes[_i], true)
         }
     }
+    
+    function consentedSelections() {
+        var cookie = Cookies.get(cookieName)
+        return cookie ? cookie.split(',') : []
+    }
 
     function loadSelections() {
-        var cookie = Cookies.get(cookieName)
-        var consented = cookie ? cookie.split(',') : []
+        var consented = consentedSelections()
         selectNone()
         for (var _i = 0; _i < consented.length; _i++) {
             var _checkbox = form.querySelector('[name=' + consented[_i] + ']')
@@ -92,6 +96,15 @@ var cookieman = (function () {
             if (typeof Cookies.get(cookieName) === 'undefined') {
                 cookieman.show()
             }
+        },
+        hasConsented: function(selection) {
+            var consented = consentedSelections()
+            for (var i = 0; i < consented.length; i++) {
+                if (consented[i] === selection) {
+                    return true
+                }
+            }
+            return false
         }
     }
 }())
