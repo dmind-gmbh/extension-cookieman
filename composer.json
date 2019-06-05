@@ -2,7 +2,7 @@
   "name": "dmind/cookieman",
   "type": "typo3-cms-extension",
   "description": "Provide cookie banner with opt-in and multiple categories",
-  "version": "1.0.0-dev",
+  "version": "1.0.0",
   "authors": [
     {
       "name": "Jonas Eberle",
