@@ -32,7 +32,11 @@
                                          section="{settings.links.dataProtectionDeclarationAnchor}">
                                 Datenschutzerklärung
                             </f:link.page>
-                            ändern.
+                            ändern.<br>
+                            Informationen zu uns finden Sie im
+                            <f:link.page pageUid="{settings.links.imprintPid}"
+                                         section="{settings.links.imprintAnchor}">
+                                Impressum</f:link.page>.
                         </p>
                     </f:if>
 
@@ -239,10 +243,12 @@
                 </div>
             </div>
         </div>
-        <script>
-            $(function () {
-                cookieman.showOnce()
-            })
-        </script>
+        <f:if condition="{data.uid} != {settings.links.dataProtectionDeclarationPid} && {data.uid} != {settings.links.imprintPid}">
+            <script>
+                $(function () {
+                    cookieman.showOnce()
+                })
+            </script>
+        </f:if>
     </div>
 </f:section>

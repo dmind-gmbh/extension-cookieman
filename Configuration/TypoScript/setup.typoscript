@@ -9,6 +9,8 @@ plugin.tx_cookieman {
         links {
             dataProtectionDeclarationPid = {$plugin.tx_cookieman.settings.links.dataProtectionDeclarationPid}
             dataProtectionDeclarationAnchor = {$plugin.tx_cookieman.settings.links.dataProtectionDeclarationAnchor}
+            imprintPid = {$plugin.tx_cookieman.settings.links.imprintPid}
+            imprintAnchor = {$plugin.tx_cookieman.settings.links.imprintAnchor}
         }
     }
 }
