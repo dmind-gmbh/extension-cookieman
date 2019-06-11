@@ -12,7 +12,7 @@
 
 $EM_CONF[$_EXTKEY] = array(
     'title' => 'd-mind Cookieman',
-    'description' => 'Provide multi-categogory cookie banner for selective opt-ins',
+    'description' => 'Provide cookie opt-in with multiple categories',
     'category' => 'frontend',
     'author' => 'Jonas Eberle',
     'author_email' => 'jonas.eberle@d-mind.de',
@@ -21,7 +21,7 @@ $EM_CONF[$_EXTKEY] = array(
     'uploadfolder' => '0',
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '1.0.0-dev',
+    'version' => 'see composer.json',
     'constraints' => array(
         'depends' => array(),
         'conflicts' => array(),
