@@ -4,15 +4,15 @@
 
 It includes the HTML for a cookie confirmation modal on every page.
 
-It shows the modal when the cookie *CookieConsent* is not set yet. 
+It shows the modal when the cookie *CookieConsent* is not set yet. In the example templates it is not shown on the configured imprintPid and dataProtectionDeclarationPid (see TypoScript constants) - this is to follow the GDPR's expectation that those pages shall be easily and directly accessible and should not interfere with a cookie consent banner. 
 
 It saves user's choices as a comma-separated list in the HTML cookie *CookieConsent*, e.g. "marketing,preferences".
 
-All cookie groups are defined in HTML.
+All cookie groups are simply defined in HTML by setting the name= of a checkbox.
 
 Your tracking solutions shall then adhere to this setting by checking if their repective string (e.g. "marketing") is contained in the cookie *CookieConsent*. 
 
-This can be done with conditions in Google Tagmanager or by dynamically including &lt;script&gt;s with JavaScript. 
+This can be done in Google Tagmanager or by dynamically including &lt;script&gt;s with JavaScript.
 
 This is an example using the convenience function hasConsented('...') provided by this extension:
 <pre>
@@ -34,7 +34,7 @@ You could of course let your server handle that, too (in PHP, TypoScript, e.g.) 
 * they use Bootstrap 3 JavaScript for *collapse*s and *modal*s
 * jQuery
 
-### Using it with another framework
+### Using with another framework
 
 Apart from adapting the HTML and CSS you should reimplement the opening and closing of modals in cookieman.js.
 
@@ -64,7 +64,7 @@ cookieman.js exposes these methods:
 
 #### *cookieman.show()*
 
-> Shows the confirmation modal. You can call that with a link from your data protection declaration page. 
+> Shows the confirmation modal. You can call that from anywhere you need it (e.g. with a link from your data protection declaration page). 
 > <pre>
 > &lt;a href="" onclick="cookieman.show(); return false"&gt;
 >   Cookie settings
