@@ -6,15 +6,19 @@ It includes the HTML for a cookie confirmation modal on every page.
 
 It shows the modal when the cookie *CookieConsent* is not set yet. In the example templates it is not shown on the configured imprintPid and dataProtectionDeclarationPid (see TypoScript constants) - this is to follow the GDPR's expectation that those pages shall be easily and directly accessible and should not interfere with a cookie consent banner. 
 
-It saves user's choices as a comma-separated list in the HTML cookie *CookieConsent*, e.g. "marketing,preferences".
+It is recommended to include a snippet like that on your data protection page to allow your users to adjust their cookie preferences: 
+<pre>
+&lt;a href="" onclick="cookieman.show(); return false"&gt;
+  Adjust your cookie preferences
+&lt;/a&gt;
+</pre>
 
-All cookie groups are simply defined in HTML by setting the name= of a checkbox.
+It saves the user's choices as a comma-separated list of groups in the HTML cookie *CookieConsent*, e.g. "marketing,preferences".
 
 Your tracking solutions shall then adhere to this setting by checking if their repective string (e.g. "marketing") is contained in the cookie *CookieConsent*. 
 
 This can be done in Google Tagmanager or by dynamically including &lt;script&gt;s with JavaScript.
 
-This is an example using the convenience function hasConsented('...') provided by this extension:
 <pre>
 (function() {
     if (cookieman.hasConsented('marketing')) {
@@ -25,32 +29,32 @@ This is an example using the convenience function hasConsented('...') provided b
 })()
 </pre>
 
-You could of course let your server handle that, too (in PHP, TypoScript, e.g.) but this is IMHO overkill.
+You could of course let your server handle that, too (in PHP, TypoScript, e.g.) but this is IMHO overkill and should only be necessary for edge cases.
 
 ## Requirements
 
 * If you reimplement your own theme, it has no requirements at all
-* the example HTML templates are based on Bootstrap 3 
-* they use Bootstrap 3 JavaScript for *collapse*s and *modal*s
-* jQuery
-
-### Using with another framework
-
-Apart from adapting the HTML and CSS you should reimplement the opening and closing of modals in cookieman.js.
+* for the example HTML templates
+  * Bootstrap 3 CSS
+  * Bootstrap 3 JavaScript for *collapse*s and *modal*s
+  * jQuery
 
 ## Integration
 
 Include the TypoScript and adjust the constants.
 
-It should get loaded on every page. If it does not pop up although expected check for errors in a JavaScript console with `cookieman.show()`.
+It should get loaded automatically on every (except imprint and data protection declaration) page. If it does not, check for errors in a JavaScript console when calling `cookieman.show()` manually.
 
-Copy the Themes/ folder to your site package and adapt the HTML/CSS/JS. These elements control the functionality:
-* *&lt;\* data-cookieman-save&gt;* - save and close
-* *&lt;\* data-cookieman-accept-all&gt;* - accept all
-* *&lt;form data-cookieman-form&gt;* - the form that contains all checkboxes
-* change the checkboxes' name="" to a value that you expect to find in the CookieConsent when the user consented
+### Create a new theme
+Copy the EXT:cookieman/Resources/ folder to your site package extension and set the `plugin.tx_cookieman.settings.resourcesBasePath` TypoScript constant. Choose a theme name, set it in the constant `plugin.tx_cookieman.settings.theme` and rename the example folders (e.g. bootstrap3-banner) to your name.
 
-Reimplement the methods cookieman.show() and cookieman.hide() (see examples).
+Adapt the HTML/CSS/JS as needed. These elements control the functionality:
+* <code>&lt;\* data-cookieman-save&gt;</code> - save and close
+* <code>&lt;\* data-cookieman-accept-all&gt;</code> - accept all
+* <code>&lt;form data-cookieman-form&gt;</code> - the form that contains all checkboxes
+* change the checkboxes' <code>name="..."</code> to a value that you expect to find in the CookieConsent when the user consented (in the examples only one group called "marketing" is included)
+
+If you are working a non-Bootstrap environment, you will have to reimplement the methods cookieman.show() and cookieman.hide() (see the example code in `JavaScript/cookieman-theme.js`).
 
 ## API
 
@@ -58,11 +62,11 @@ Reimplement the methods cookieman.show() and cookieman.hide() (see examples).
 
 cookieman.js exposes these methods:
 
-#### *cookieman.showOnce()*
+#### *cookieman.showOnce()*: void
 
 > Shows the confirmation modal only when the user preferences in the cookie *CookieConsent* are not yet present. 
 
-#### *cookieman.show()*
+#### *cookieman.show()*: void
 
 > Shows the confirmation modal. You can call that from anywhere you need it (e.g. with a link from your data protection declaration page). 
 > <pre>
@@ -71,12 +75,12 @@ cookieman.js exposes these methods:
 > &lt;/a&gt;
 > </pre>
 
-#### *cookieman.hide()*
+#### *cookieman.hide()*: void
 
 > Hides the confirmation modal. 
 
-#### *cookieman.hasConsented(selection)*
+#### *cookieman.hasConsented(selection)*: Boolean
 
 > Returns true if the user has consented to the given selection, else false. A selection is any name of a checkbox in the popup, e.g. 'marketing'
  
-Cookieman also includes the (1kB) cookie library [JavaScript Cookie](https://github.com/js-cookie/js-cookie) that also exposes its API.
+Cookieman also includes the (1kB) cookie library [JavaScript Cookie](https://github.com/js-cookie/js-cookie) that also exposes its API and makes it easier to work with cookies.
