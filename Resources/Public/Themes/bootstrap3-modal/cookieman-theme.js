@@ -1,5 +1,5 @@
 // requires: cookieman.js, Bootstrap-JS, jQuery
-cookieman.bootstrap = (function () {
+cookieman.theme = (function () {
     "use strict";
     var $modal = jQuery('#cookieman-modal')
 
@@ -18,6 +18,6 @@ cookieman.bootstrap = (function () {
 }())
 
 // example if you need to initialize
-// jQuery(function () {
-//     cookieman.bootstrap.init()
+// jQuery(function () { // if you need jQuery
+//     cookieman.theme.init()
 // })
