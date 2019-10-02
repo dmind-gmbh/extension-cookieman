@@ -48,6 +48,25 @@ You could of course let your server handle that, too (in PHP, TypoScript, e.g.) 
   * Bootstrap 3 JavaScript for *collapse*s and *modal*s
   * jQuery
 
+## Installation
+
+### download
+from https://extensions.d-mind.de/#dmind/cookieman 
+
+### composer
+Add the repository to your composer.json
+<pre>
+     ...
+     "repositories": [
+       {
+         "type": "composer",
+         "url": "https://extensions.d-mind.de"
+       }
+     ],
+     ...
+</pre>
+Run <code>composer req dmind/cookieman</code>
+
 ## Integration
 
 Include the TypoScript and adjust the constants.
