@@ -15,13 +15,16 @@ It is recommended to include a snippet like that on your data protection page to
 
 It saves the user's choices as a comma-separated list of groups in the HTML cookie *CookieConsent*, e.g. "marketing,preferences".
 
-Your tracking solutions shall then adhere to this setting by checking if their repective string (e.g. "marketing") is contained in the cookie *CookieConsent*. 
+Your tracking solutions shall then adhere to this setting by checking if their repective string (e.g. "marketing") is contained in the cookie *CookieConsent*. You should also pay respect to the "Do-not-track" setting of your users which is sent as HTTP-Header `DNT: 1` and accessible in JavaScript via `navigator.doNotTrack`. The example templates include a dynamic text block that show this browser setting.
 
 This can be done in Google Tagmanager or by dynamically including &lt;script&gt;s with JavaScript.
 
 <pre>
 (function() {
-    if (cookieman.hasConsented('marketing')) {
+    if (
+      !(navigator.doNotTrack && navigator.doNotTrack === '1') 
+      && cookieman.hasConsented('marketing')
+    ) {
         var _ = document.createElement('script')
         _.src = 'https://mytrackingthingie.com/anal.js'
         document.head.appendChild(_)
