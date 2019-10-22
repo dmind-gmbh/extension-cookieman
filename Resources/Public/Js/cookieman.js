@@ -63,7 +63,6 @@ var cookieman = (function () {
 
     function onAcceptAllClick(e) {
         e.preventDefault()
-        e.preventDefault()
         selectAll()
     }
 
