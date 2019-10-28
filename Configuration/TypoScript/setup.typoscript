@@ -28,6 +28,7 @@ page {
         cookie-js = EXT:cookieman/Resources/Public/Js/js.cookie-2.2.0.min.js
         cookieman = EXT:cookieman/Resources/Public/Js/cookieman.js
         cookieman-framework-specific = {$plugin.tx_cookieman.settings.resourcesBasePath}/Public/Themes/{$plugin.tx_cookieman.settings.theme}/cookieman-theme.js
+        cookieman-init = EXT:cookieman/Resources/Public/Js/cookieman-init.js
     }
     includeCSS {
         cookieman-framework-specific = {$plugin.tx_cookieman.settings.resourcesBasePath}/Public/Themes/{$plugin.tx_cookieman.settings.theme}/cookieman-theme.css
