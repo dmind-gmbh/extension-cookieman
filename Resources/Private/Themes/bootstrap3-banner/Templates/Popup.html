@@ -3,39 +3,68 @@
 <f:layout name="Default"/>
 
 <f:section name="Content">
-    <div id="cookieman-modal" class="modal fade" tabindex="-1" role="dialog">
+    <f:comment><!--
+        adding data-cookieman-showonce=1 only if we are not currently on pages where direct read access is mandatory
+        -->
+    </f:comment>
+    <f:variable name="isShowOnce"
+                value="{f:if(
+                    condition:'{data.uid} != {settings.links.dataProtectionDeclarationPid} 
+                        && {data.uid} != {settings.links.imprintPid}', 
+                    then: 1, 
+                    else: 0
+                )}"
+    />
+
+    <div id="cookieman-modal"
+         data-cookieman-showonce="{isShowOnce}"
+         class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body">
-                    <div class="light-txt">
-                        <h4 style="margin-bottom: 10px">
-                            Hinweis zu Cookies
-                        </h4>
-                        <p>
-                            Unsere Seite verwendet Cookies. Diese haben zwei Funktionen: Zum einen sind sie erforderlich
-                            für die grundlegende Funktionalität unserer Website. Zum anderen können wir mit Hilfe der
-                            Cookies unsere Inhalte für Sie immer weiter verbessern. Hierzu werden pseudonymisierte Daten 
-                            von Website-Besuchern gesammelt und ausgewertet. Das Einverständnis in die Verwendung der
-                            Cookies können Sie jeder Zeit schriftlich widerrufen. Weitere Informationen zu Cookies auf 
-                            dieser Website finden Sie in unserer
-                            <f:link.page pageUid="{settings.links.dataProtectionDeclarationPid}"
-                                         section="{settings.links.dataProtectionDeclarationAnchor}">
-                                Datenschutzerklärung</f:link.page>
-                            und zu uns im
-                            <f:link.page pageUid="{settings.links.imprintPid}"
-                                         section="{settings.links.imprintAnchor}">
-                                Impressum</f:link.page>.
-                            Hier gelangen Sie zu den Cookie
+                    <h4>
+                        {f:translate(key: 'heading')}
+                    </h4>
+                    <p>
+                        <f:variable name="dataProtectionDeclarationLink">
+                            <a href="{f:uri.page(
+                                        pageUid: settings.links.dataProtectionDeclarationPid,
+                                        section: settings.links.dataProtectionDeclarationAnchor
+                                    )}"
+                            >{f:translate(key: 'dataProtectionDeclaration')}</a>
+                        </f:variable>
+
+                        <f:variable name="imprintLink">
+                            <a href="{f:uri.page(
+                                        pageUid: settings.links.imprintPid, 
+                                        section: settings.links.imprintAnchor
+                                    )}"
+                            >{f:translate(key: 'imprint')}</a>
+                        </f:variable>
+
+                        {f:translate(
+                        key: 'introText',
+                        arguments: {
+                        1: "{dataProtectionDeclarationLink -> f:spaceless()}",
+                        2: "{imprintLink -> f:spaceless()}"
+                        }) -> f:format.raw()}
+
+                        <f:variable name="settingsLink">
                             <a href="" class=""
                                onclick="document.querySelector('[data-cookieman-accept-all]').text = 'Alle akzeptieren';
-                                    document.querySelector('[data-cookieman-custom-save]').style.display = 'inline';
+                                    document.querySelector('[data-cookieman-custom-save]').style.display = 'inline-block';
                                     return false"
                                data-toggle="collapse"
                                data-target="#cookieman-settings" aria-expanded="false"
                                aria-controls="cookieman-settings"
-                            >Einstellungen</a>.
-                        </p>
-                    </div>
+                            >{f:translate(key: 'settings')}</a>
+                        </f:variable>
+
+                        {f:translate(
+                        key: 'settingsText',
+                        arguments: {1: "{settingsLink -> f:spaceless()}"
+                        }) -> f:format.raw()}
+                    </p>
 
                     <div class="clearfix"></div>
 
@@ -58,7 +87,7 @@
                                             <div class="checkbox-wrapper">
                                                 <div class="checkbox">
                                                     <label>
-                                                        <span class="p-label" style="color: #93c000">
+                                                        <span class="p-label">
                                                             Immer aktiv
                                                         </span>
                                                     </label>
@@ -251,28 +280,22 @@
                         </form>
                     </div>
                     <a data-cookieman-accept-all data-cookieman-save
-                       href="" rel="nofollow" class="btn btn-medium btn-theme-color btn-rounded">
-                        Cookies akzeptieren
+                       href="" rel="nofollow" class="btn btn-warning">
+                        {f:translate(key: 'accept')}
                     </a>
 
-                    <div class="light-txt pull-right" style="padding: 12px 0 14px 45px !important">
+                    <div class="pull-right">
                         <a data-cookieman-save data-cookieman-custom-save
+                           class="btn btn-default"
                            style="display:none"
                            href="" rel="nofollow"
                         >
-                            <small>Einstellungen speichern</small>
+                            {f:translate(key: 'save')}
                         </a>
                     </div>
                     <div class="clearfix"></div>
                 </div>
             </div>
         </div>
-        <f:if condition="{data.uid} != {settings.links.dataProtectionDeclarationPid} && {data.uid} != {settings.links.imprintPid}">
-            <script>
-                $(function () {
-                    cookieman.showOnce()
-                })
-            </script>
-        </f:if>
     </div>
 </f:section>

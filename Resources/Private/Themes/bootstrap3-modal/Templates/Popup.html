@@ -3,42 +3,62 @@
 <f:layout name="Default"/>
 
 <f:section name="Content">
-    <div id="cookieman-modal" class="modal fade" tabindex="-1" role="dialog">
+    <f:comment><!--
+        adding data-cookieman-showonce=1 only if we are not currently on pages where direct read access is mandatory
+        -->
+    </f:comment>
+    <f:variable name="isShowOnce"
+                value="{f:if(
+                    condition:'{data.uid} != {settings.links.dataProtectionDeclarationPid} 
+                        && {data.uid} != {settings.links.imprintPid}', 
+                    then: 1, 
+                    else: 0
+                )}"
+    />
+
+    <div id="cookieman-modal"
+         data-cookieman-showonce="{isShowOnce}"
+         class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="headline modal-title">
-                        Einwilligung zur Datenverarbeitung
+                    <h5 class="modal-title">
+                        {f:translate(key: 'heading')}
                     </h5>
                 </div>
                 <div class="modal-body">
                     <p>
-                        Mit Ihrem Einverständnis helfen Sie uns unsere Dienstleistung zu verbessern und für Sie
-                        passende Inhalte zu liefern. Dazu setzen wir Technologien ein, um das Nutzerverhalten zu
-                        analysieren und in pseudonymisierter Form zu erfassen.
+                        <f:variable name="dataProtectionDeclarationLink">
+                            <a href="{f:uri.page(
+                                        pageUid: settings.links.dataProtectionDeclarationPid,
+                                        section: settings.links.dataProtectionDeclarationAnchor
+                                    )}"
+                            >{f:translate(key: 'dataProtectionDeclaration')}</a>
+                        </f:variable>
+
+                        <f:variable name="imprintLink">
+                            <a href="{f:uri.page(
+                                        pageUid: settings.links.imprintPid, 
+                                        section: settings.links.imprintAnchor
+                                    )}"
+                            >{f:translate(key: 'imprint')}</a>
+                        </f:variable>
+
+                        {f:translate(
+                        key: 'introText',
+                        arguments: {
+                        1: "{dataProtectionDeclarationLink -> f:spaceless()}",
+                        2: "{imprintLink -> f:spaceless()}"
+                        }) -> f:format.raw()}
+
                     </p>
-                    <button class="btn btn-small btn-theme-color btn-rounded pull-right collapsed"
+                    <button class="btn btn-default btn-small pull-right collapsed"
                             style="margin-bottom: 1em"
                             type="button" data-toggle="collapse"
                             data-target="#cookieman-settings" aria-expanded="false" aria-controls="cookieman-settings">
-                        Einstellungen
+                        {f:translate(key: 'settings')}
                     </button>
                     <br>
-
-                    <f:if condition="{data.uid} != {settings.links.dataProtectionDeclarationPid}">
-                        <p>
-                            Sie können diese Einstellungen jederzeit über unsere
-                            <f:link.page pageUid="{settings.links.dataProtectionDeclarationPid}"
-                                         section="{settings.links.dataProtectionDeclarationAnchor}">
-                                Datenschutzerklärung
-                            </f:link.page>
-                            ändern.<br>
-                            Informationen zu uns finden Sie im
-                            <f:link.page pageUid="{settings.links.imprintPid}"
-                                         section="{settings.links.imprintAnchor}">
-                                Impressum</f:link.page>.
-                        </p>
-                    </f:if>
 
                     <div class="clearfix"></div>
 
@@ -226,18 +246,11 @@
 
                 <div class="modal-footer">
                     <a data-cookieman-save
-                       href="" rel="nofollow" class="btn btn-small btn-theme-color btn-rounded">
-                        Einstellungen speichern
+                       href="" rel="nofollow" class="btn btn-primary btn-block">
+                        {f:translate(key: 'save')}
                     </a>
                 </div>
             </div>
         </div>
-        <f:if condition="{data.uid} != {settings.links.dataProtectionDeclarationPid} && {data.uid} != {settings.links.imprintPid}">
-            <script>
-                $(function () {
-                    cookieman.showOnce()
-                })
-            </script>
-        </f:if>
     </div>
 </f:section>
