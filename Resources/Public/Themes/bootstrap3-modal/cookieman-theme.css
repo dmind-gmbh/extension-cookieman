@@ -46,8 +46,11 @@
     font-size: .7em;
     padding-left: .7em;
     opacity: .7;
-    float: right;
     padding-top: .4%;
+}
+
+#cookieman-settings [data-toggle="collapse"]:after {
+    float: right;
 }
 
 #cookieman-modal [data-toggle="collapse"].collapsed:after {
