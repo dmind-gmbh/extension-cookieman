@@ -38,7 +38,7 @@ var cookieman = (function () {
             setChecked(checkboxes[_i], true)
         }
     }
-    
+
     function consentedSelections() {
         var cookie = Cookies.get(cookieName)
         return cookie ? cookie.split(',') : []
@@ -96,7 +96,7 @@ var cookieman = (function () {
                 cookieman.show()
             }
         },
-        hasConsented: function(selection) {
+        hasConsented: function (selection) {
             var consented = consentedSelections()
             for (var i = 0; i < consented.length; i++) {
                 if (consented[i] === selection) {

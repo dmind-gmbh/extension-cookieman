@@ -4,10 +4,12 @@ plugin.tx_cookieman {
             0 = EXT:cookieman/Resources/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Templates/
             100 = {$plugin.tx_cookieman.settings.resourcesBasePath}/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Templates/
         }
+
         partialRootPaths {
             0 = EXT:cookieman/Resources/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Partials/
             100 = {$plugin.tx_cookieman.settings.resourcesBasePath}/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Partials/
         }
+
         layoutRootPaths {
             0 = EXT:cookieman/Resources/Private/Layouts/
         }
@@ -30,6 +32,7 @@ page {
         cookieman-framework-specific = {$plugin.tx_cookieman.settings.resourcesBasePath}/Public/Themes/{$plugin.tx_cookieman.settings.theme}/cookieman-theme.js
         cookieman-init = EXT:cookieman/Resources/Public/Js/cookieman-init.js
     }
+
     includeCSS {
         cookieman-framework-specific = {$plugin.tx_cookieman.settings.resourcesBasePath}/Public/Themes/{$plugin.tx_cookieman.settings.theme}/cookieman-theme.css
     }
@@ -42,5 +45,8 @@ page {
         layoutRootPaths < plugin.tx_cookieman.view.layoutRootPaths
 
         settings < plugin.tx_cookieman.settings
+
+        // allows to omit extension name in f:translate ViewHelpers
+        extbase.controllerExtensionName = cookieman
     }
 }
