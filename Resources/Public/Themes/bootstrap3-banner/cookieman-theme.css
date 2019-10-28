@@ -96,8 +96,8 @@
     position: absolute;
     left: 3px;
     top: 3px;
-    background-color: #93c000;
-    border-color: #93c000;
+    background-color: #666;
+    border-color: #666;
     border: 0 none;
     opacity: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
