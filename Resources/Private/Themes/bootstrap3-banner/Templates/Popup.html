@@ -19,13 +19,13 @@
     <div id="cookieman-modal"
          data-cookieman-showonce="{isShowOnce}"
          class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog text-justify" role="document">
             <div class="modal-content">
                 <div class="modal-body">
                     <h4>
                         {f:translate(key: 'heading')}
                     </h4>
-                    <p class="text-justify">
+                    <p>
                         <f:variable name="dataProtectionDeclarationLink">
                             <a href="{f:uri.page(
                                         pageUid: settings.links.dataProtectionDeclarationPid,
@@ -280,7 +280,7 @@
                         </form>
                     </div>
                     <a data-cookieman-accept-all data-cookieman-save
-                       href="" rel="nofollow" class="btn btn-warning">
+                       href="" rel="nofollow" class="btn btn-primary">
                         {f:translate(key: 'accept')}
                     </a>
 
