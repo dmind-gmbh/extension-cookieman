@@ -1,0 +1,11 @@
+{
+  "name": "dmind/cookieman-test",
+  "type": "typo3-cms-extension",
+  "description": "",
+  "license": ["GPL-2.0-or-later"],
+  "version": "1.0.0",
+  "require": {
+    "dmind/cookieman": "*",
+    "bk2k/bootstrap-package": "*"
+  }
+}

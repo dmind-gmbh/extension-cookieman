@@ -1,0 +1,42 @@
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cookieman/Configuration/TypoScript/setup.typoscript">
+
+
+page = PAGE
+page {
+    includeCSS {
+        # unset bootstrap-package
+#        theme >
+
+#        bootstrap3 = https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css
+#        bootstrap3.external = 1
+#        bootstrap3.excludeFromConcatenation = 1
+
+#        bootstrap4 = https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css
+#        bootstrap4.external = 1
+#        bootstrap4.excludeFromConcatenation = 1
+    }
+
+    includeJSFooterlibs {
+        # unset bootstrap-package
+#        bootstrap_accordion >
+#        bootstrap_form >
+#        bootstrap_swipe >
+
+
+#        jquery = https://code.jquery.com/jquery-3.3.1.slim.min.js
+#        jquery.external = 1
+#        jquery.excludeFromConcatenation = 1
+
+#        popper = https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js
+#        popper.external = 1
+#        popper.excludeFromConcatenation = 1
+
+#        bootstrap3 = https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js
+#        bootstrap3.external = 1
+#        bootstrap3.excludeFromConcatenation = 1
+
+#        bootstrap4 = https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js
+#        bootstrap4.external = 1
+#        bootstrap4.excludeFromConcatenation = 1
+    }
+}
