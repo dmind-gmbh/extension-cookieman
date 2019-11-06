@@ -1,1 +1,13 @@
 /.idea
+
+# composer
+/vendor/
+composer.lock
+
+# Build stuff
+/.build/
+/Build/.phpunit.result.cache
+/node_modules/
+
+# CGL Fixer
+/.php_cs.cache
