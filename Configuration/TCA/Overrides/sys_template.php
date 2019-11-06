@@ -1,9 +1,9 @@
 <?php
-if ( ! defined('TYPO3_MODE')) {
-    die ('Access denied.');
-}
+defined('TYPO3_MODE') || die();
 
-// inject our TS
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('cookieman', 'Configuration/TypoScript',
+// static TypoScript
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+    'cookieman',
+    'Configuration/TypoScript',
     'Cookieman'
 );
