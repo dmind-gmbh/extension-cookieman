@@ -12,7 +12,7 @@
 
 $EM_CONF[$_EXTKEY] = array(
     'title' => 'd-mind Cookieman',
-    'description' => 'Provide cookie opt-in with multiple categories',
+    'description' => 'Provides cookie opt-in by loading JavaScript only when consented',
     'category' => 'frontend',
     'author' => 'Jonas Eberle',
     'author_email' => 'jonas.eberle@d-mind.de',
