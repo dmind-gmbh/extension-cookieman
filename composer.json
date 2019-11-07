@@ -72,10 +72,10 @@
             "php-cs-fixer --config=.php_cs.dist fix --using-cache=no"
         ],
         "install-extensions": [
-            "typo3 extension:activate -n cookieman",
-            "typo3 extension:activate -n cookieman_test",
             "typo3 extension:activate -n bootstrap_package",
-            "typo3 extension:activate -n introduction"
+            "typo3 extension:activate -n introduction",
+            "typo3 extension:activate -n cookieman",
+            "typo3 extension:activate -n cookieman_test"
         ],
         "post-autoload-dump": [
             "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
