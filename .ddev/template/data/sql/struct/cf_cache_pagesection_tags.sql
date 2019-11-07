@@ -9,10 +9,10 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-DROP TABLE IF EXISTS `cache_pagesection_tags`;
+DROP TABLE IF EXISTS `cf_cache_pagesection_tags`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `cache_pagesection_tags` (
+CREATE TABLE `cf_cache_pagesection_tags` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `identifier` varchar(250) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `tag` varchar(250) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',

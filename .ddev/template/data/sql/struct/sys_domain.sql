@@ -9,16 +9,22 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-DROP TABLE IF EXISTS `cache_imagesizes_tags`;
+DROP TABLE IF EXISTS `sys_domain`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `cache_imagesizes_tags` (
-  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `identifier` varchar(250) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `tag` varchar(250) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  PRIMARY KEY (`id`),
-  KEY `cache_id` (`identifier`(191)),
-  KEY `cache_tag` (`tag`(191))
+CREATE TABLE `sys_domain` (
+  `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `pid` int(10) unsigned NOT NULL DEFAULT 0,
+  `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
+  `crdate` int(10) unsigned NOT NULL DEFAULT 0,
+  `cruser_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `hidden` smallint(5) unsigned NOT NULL DEFAULT 0,
+  `sorting` int(11) NOT NULL DEFAULT 0,
+  `domainName` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  PRIMARY KEY (`uid`),
+  KEY `getSysDomain` (`hidden`),
+  KEY `getDomainStartPage` (`pid`,`hidden`,`domainName`(100)),
+  KEY `parent` (`pid`,`hidden`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

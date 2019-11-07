@@ -26,17 +26,23 @@ return [
         'backend' => [
             'packagePath' => 'typo3/sysext/backend/',
         ],
+        'impexp' => [
+            'packagePath' => 'typo3/sysext/impexp/',
+        ],
+        'form' => [
+            'packagePath' => 'typo3/sysext/form/',
+        ],
         'extensionmanager' => [
             'packagePath' => 'typo3/sysext/extensionmanager/',
+        ],
+        'felogin' => [
+            'packagePath' => 'typo3/sysext/felogin/',
         ],
         'frontend' => [
             'packagePath' => 'typo3/sysext/frontend/',
         ],
         'rte_ckeditor' => [
             'packagePath' => 'typo3/sysext/rte_ckeditor/',
-        ],
-        'seo' => [
-            'packagePath' => 'typo3/sysext/seo/',
         ],
         'tstemplate' => [
             'packagePath' => 'typo3/sysext/tstemplate/',

@@ -14,6 +14,7 @@ DROP TABLE IF EXISTS `sys_history`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `sys_history` (
   `uid` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `pid` int(10) unsigned NOT NULL DEFAULT 0,
   `tstamp` int(10) unsigned NOT NULL DEFAULT 0,
   `actiontype` smallint(6) NOT NULL DEFAULT 0,
   `usertype` varchar(2) COLLATE utf8_unicode_ci NOT NULL DEFAULT 'BE',
@@ -23,10 +24,10 @@ CREATE TABLE `sys_history` (
   `tablename` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `history_data` mediumtext COLLATE utf8_unicode_ci DEFAULT NULL,
   `workspace` int(11) DEFAULT 0,
-  `correlation_id` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   PRIMARY KEY (`uid`),
   KEY `recordident_1` (`tablename`(100),`recuid`),
-  KEY `recordident_2` (`tablename`(100),`tstamp`)
+  KEY `recordident_2` (`tablename`(100),`tstamp`),
+  KEY `parent` (`pid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

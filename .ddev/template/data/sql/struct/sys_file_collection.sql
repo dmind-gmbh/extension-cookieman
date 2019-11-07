@@ -29,6 +29,8 @@ CREATE TABLE `sys_file_collection` (
   `t3_origuid` int(10) unsigned NOT NULL DEFAULT 0,
   `l10n_diffsource` mediumblob DEFAULT NULL,
   `t3ver_oid` int(10) unsigned NOT NULL DEFAULT 0,
+  `t3ver_id` int(10) unsigned NOT NULL DEFAULT 0,
+  `t3ver_label` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `t3ver_wsid` int(10) unsigned NOT NULL DEFAULT 0,
   `t3ver_state` smallint(6) NOT NULL DEFAULT 0,
   `t3ver_stage` int(11) NOT NULL DEFAULT 0,

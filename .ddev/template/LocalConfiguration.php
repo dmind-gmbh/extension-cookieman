@@ -3,7 +3,7 @@ return [
     'BE' => [
         'debug' => true,
         'explicitADmode' => 'explicitAllow',
-        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=2$SVg4L0I3YTMyUWhCbnVyMg$L7U4u/lUhjnq/Hr0lCiHko+/PSd3XvHuWMGOMS3R6Ek',
+        'installToolPassword' => '$argon2i$v=19$m=65536,t=16,p=2$WFNBR05hZ3g4YndmYmZvWQ$4QX6Fe37n7CQmiEEbB79/TiO4XvxwQVQqIfFDHgjaZE',
         'loginSecurityLevel' => 'normal',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
@@ -18,6 +18,12 @@ return [
             ],
         ],
     ],
+    'EXT' => [
+        'extConf' => [
+            'backend' => 'a:6:{s:9:"loginLogo";s:0:"";s:19:"loginHighlightColor";s:0:"";s:20:"loginBackgroundImage";s:0:"";s:13:"loginFootnote";s:0:"";s:11:"backendLogo";s:0:"";s:14:"backendFavicon";s:0:"";}',
+            'extensionmanager' => 'a:2:{s:21:"automaticInstallation";s:1:"1";s:11:"offlineMode";s:1:"0";}',
+        ],
+    ],
     'EXTENSIONS' => [
         'backend' => [
             'backendFavicon' => '',
@@ -27,16 +33,6 @@ return [
             'loginHighlightColor' => '',
             'loginLogo' => '',
         ],
-        'bootstrap_package' => [
-            'disableCssProcessing' => '0',
-            'disableFontLoader' => '0',
-            'disableGoogleFontCaching' => '0',
-            'disablePageTsBackendLayouts' => '0',
-            'disablePageTsContentElements' => '0',
-            'disablePageTsRTE' => '0',
-            'disablePageTsTCEFORM' => '0',
-            'disablePageTsTCEMAIN' => '0',
-        ],
         'extensionmanager' => [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
@@ -44,6 +40,7 @@ return [
     ],
     'FE' => [
         'debug' => true,
+        'loginSecurityLevel' => 'normal',
         'passwordHashing' => [
             'className' => 'TYPO3\\CMS\\Core\\Crypto\\PasswordHashing\\Argon2iPasswordHash',
             'options' => [],
@@ -67,40 +64,9 @@ return [
         'transport_smtp_username' => '',
     ],
     'SYS' => [
-        'caching' => [
-            'cacheConfigurations' => [
-                'hash' => [
-                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
-                ],
-                'imagesizes' => [
-                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
-                    'options' => [
-                        'compression' => 1,
-                    ],
-                ],
-                'pages' => [
-                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
-                    'options' => [
-                        'compression' => 1,
-                    ],
-                ],
-                'pagesection' => [
-                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
-                    'options' => [
-                        'compression' => 1,
-                    ],
-                ],
-                'rootline' => [
-                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
-                    'options' => [
-                        'compression' => 1,
-                    ],
-                ],
-            ],
-        ],
         'devIPmask' => '*',
         'displayErrors' => 1,
-        'encryptionKey' => '83d652951f40f3adca4bc118abf42c34b3a9f9bb79fdc2b97afc8d13de7153e34b777ee1a1e53d20863bc6129fc6070c',
+        'encryptionKey' => '7c561ce40d1cb4d921523ea763299c4bbdf4d5fffcd6368624a1e7dd96701f2e6c3c62b52d7eda7af80157abf17e50fa',
         'exceptionalErrors' => 12290,
         'features' => [
             'unifiedPageTranslationHandling' => true,

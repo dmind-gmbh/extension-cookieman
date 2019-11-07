@@ -9,16 +9,16 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
-DROP TABLE IF EXISTS `cache_pages_tags`;
+DROP TABLE IF EXISTS `cf_extbase_datamapfactory_datamap`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `cache_pages_tags` (
+CREATE TABLE `cf_extbase_datamapfactory_datamap` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `identifier` varchar(250) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
-  `tag` varchar(250) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
+  `expires` int(10) unsigned NOT NULL DEFAULT 0,
+  `content` longblob DEFAULT NULL,
   PRIMARY KEY (`id`),
-  KEY `cache_id` (`identifier`(191)),
-  KEY `cache_tag` (`tag`(191))
+  KEY `cache_id` (`identifier`(180),`expires`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
