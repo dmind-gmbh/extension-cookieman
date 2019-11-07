@@ -23,9 +23,6 @@ hooks:
     post-start:
         - exec: yarn install
         - composer: install
-#        - exec: '[[ $(mysql -e "SHOW TABLES" | wc -l) -gt 0 ]]
-#            && composer install-extensions
-#            || exit 0' # always proudly show success
         # quick-and-dirty TYPO3 setup; let's not rely on typo3-console although it would be very handy
         - exec: |
             if [[ $(mysql -e "SHOW TABLES" | wc -l) -eq 0 ]]; then
@@ -33,9 +30,6 @@ hooks:
                 cp /mnt/ddev_config/template/LocalConfiguration.php /mnt/ddev_config/template/PackageStates.php .build/public/typo3conf/
             fi
         - composer: install-extensions
-#        - exec: '[[ $(mysql -e "SHOW TABLES" | wc -l) -gt 0 ]]
-#            || echo -e "\033[0;31m"Visit the project URL given below by ddev, finish the TYPO3 install process \(Last step: \"Take me straight to the backend\"\) and run ‹ddev start› again"\033[0m"
-#            && touch .build/public/FIRST_INSTALL'
 
 # This config.yaml was created with ddev version v1.11.2
 # webimage: drud/ddev-webserver:v1.11.0
