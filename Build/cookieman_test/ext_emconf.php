@@ -20,8 +20,8 @@ $EM_CONF[$_EXTKEY] = [
     'clearCacheOnLoad' => 0,
     'version' => '10.x.x-dev',
     'constraints' => [
-        'depends' => ['bootstrap-package' => '*'],
+        'depends' => ['bootstrap_package' => '*'],
         'conflicts' => [],
-        'suggests' => ['bootstrap-package' => '*'],
+        'suggests' => ['bootstrap_package' => '*'],
     ],
 ];
