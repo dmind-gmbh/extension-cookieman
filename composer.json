@@ -26,7 +26,7 @@
     ],
     "require": {
         "php": "^7.0",
-        "typo3/cms-core": "10.*@dev"
+        "typo3/cms-core": "^9.5.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.14",
