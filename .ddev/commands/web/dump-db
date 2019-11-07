@@ -5,7 +5,7 @@
 
 # This script was adapted from another asset backup/deploy application.
 # For this specific case, we want data in .ddev/template:
-WEBSERVER_DOCROOT=/mnt/ddev_config/template
+WEBSERVER_DOCROOT=/var/www/html/.ddev/template
 
 endC="\033[0m"
 black="\033[0;30m"
