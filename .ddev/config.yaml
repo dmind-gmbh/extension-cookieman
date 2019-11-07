@@ -23,7 +23,7 @@ hooks:
     post-start:
         - exec: yarn install
         - composer: install
-        # quick-and-dirty TYPO3 setup; let's not rely on typo3-console although it would be very handy
+        # quick-and-dirty TYPO3 setup; typo3-console would be very handy but it is not ready for TYPO3v10 yet
         - exec: |
             if [[ $(mysql -e "SHOW TABLES" | wc -l) -eq 0 ]]; then
                 /mnt/ddev_config/commands/web/deploy-db ddev --force
