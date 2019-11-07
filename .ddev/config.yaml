@@ -23,11 +23,9 @@ hooks:
     post-start:
         - exec: yarn install
         - composer: install
-        # quick-and-dirty TYPO3 setup; let's not rely on typo3-console although it would be very handy
         - exec: |
             if [[ $(mysql -e "SHOW TABLES" | wc -l) -eq 0 ]]; then
-                /mnt/ddev_config/commands/web/deploy-db ddev --force
-                cp /mnt/ddev_config/template/LocalConfiguration.php /mnt/ddev_config/template/PackageStates.php .build/public/typo3conf/
+              composer install-typo3
             fi
         - composer: install-extensions
 
