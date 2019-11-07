@@ -1,21 +1,84 @@
 {
-  "name": "dmind/cookieman",
-  "type": "typo3-cms-extension",
-  "description": "Provide cookie opt-in with multiple categories",
-  "version": "1.3.0",
-  "authors": [
-    {
-      "name": "Jonas Eberle",
-      "role": "Developer"
+    "name": "dmind/cookieman",
+    "type": "typo3-cms-extension",
+    "description": "Provides cookie opt-in by loading JavaScript only when consented",
+    "homepage": "https://github.com/dmind/cookieman",
+    "support": {
+        "issues": "https://github.com/dmind/cookieman/issues",
+        "source": "https://github.com/dmind/cookieman"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "path",
+            "url": "Build/cookieman_test"
+        }
+    ],
+    "authors": [
+        {
+            "name": "Jonas Eberle",
+            "role": "Developer"
+        }
+    ],
+    "license": [
+        "GPL-2.0-or-later"
+    ],
+    "require": {
+        "php": "^7.0",
+        "typo3/cms-core": "10.*@dev"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.14",
+        "roave/security-advisories": "dev-master",
+        "dmind/cookieman-test": "@dev",
+        "typo3/testing-framework": "^4.9 || ^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dmind\\Cookieman\\": "Classes/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dmind\\Cookieman\\Tests\\": "Tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "10.x-dev"
+        },
+        "typo3/cms": {
+            "extension-key": "cookieman",
+            "web-dir": ".build/public",
+            "app-dir": ".build"
+        }
+    },
+    "config": {
+        "vendor-dir": ".build/vendor",
+        "bin-dir": ".build/bin"
+    },
+    "scripts": {
+        "cookieman:test:php:unit": [
+            "phpunit -c Build/UnitTests.xml"
+        ],
+        "cookieman:test": [
+            "@cookieman:test:php:unit"
+        ],
+        "cookieman:cgl:test": [
+            "php-cs-fixer --config=.php_cs.dist fix -v --dry-run --using-cache=no"
+        ],
+        "cookieman:cgl:fix": [
+            "php-cs-fixer --config=.php_cs.dist fix --using-cache=no"
+        ],
+        "install-extensions": [
+            "typo3 extension:activate -n cookieman",
+            "typo3 extension:activate -n cookieman_test",
+            "typo3 extension:activate -n bootstrap_package",
+            "typo3 extension:activate -n introduction"
+        ],
+        "post-autoload-dump": [
+            "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
+        ]
     }
-  ],
-  "require": {
-    "php": ">=7.0.0",
-    "typo3/cms-core": ">=8.7.0,<11.0"
-  },
-  "autoload": {
-    "psr-4": {
-      "Dmind\\Cookieman\\": "Classes"
-    }
-  }
 }
