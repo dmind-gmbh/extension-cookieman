@@ -1,0 +1,18 @@
+#!/bin/bash
+
+composer cookieman:cgl:test
+
+if [ $? -ne 0 ];then
+     echo "--------------------------------------------------------------------"
+     echo "  >> ERROR: There was a coding guideline problem in one or more of  "
+     echo "              your php files.                                       "
+     echo "   Please refer to [1] for details on the coding guidelines         "
+     echo "   Please refer to [2] for details on contribution                  "
+     echo "   [1] https://docs.typo3.org/typo3cms/CoreApiReference/CodingGuidelines/Index.html"
+     echo "   [2] https://docs.typo3.org/typo3cms/ContributionWorkflowGuide/   "
+     echo "--------------------------------------------------------------------"
+     echo "   Your commit is being aborted ... Fix and try again!"
+     echo "   You can try automatic fixing with the composer script ‹composer cookieman:cgl:fix›"
+     exit 1
+fi
+exit 0
