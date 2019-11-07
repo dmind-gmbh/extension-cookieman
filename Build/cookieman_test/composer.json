@@ -7,8 +7,8 @@
     ],
     "version": "1.0.0-dev",
     "require": {
-        "dmind/cookieman": "*",
-        "bk2k/bootstrap-package": "*",
+        "dmind/cookieman": "@dev",
+        "bk2k/bootstrap-package": "^10.0",
         "typo3/cms-introduction": "*",
         "typo3/cms-tstemplate": "*"
     },
