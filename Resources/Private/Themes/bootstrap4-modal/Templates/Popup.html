@@ -63,7 +63,11 @@
                               data-cookieman-dnt-enabled="{f:translate(key: 'browser.dnt-enabled')}"
                               data-cookieman-dnt-disabled="{f:translate(key: 'browser.dnt-explicitly-disabled')}"
                         >
-                            <div class="accordion" id="cookieman-acco">
+                            <f:comment>
+                                should have class="accordion"; due to incompatiblity with bootstrap_package
+                                left out at the moment
+                            </f:comment>
+                            <div id="cookieman-acco">
                                 <f:for each="{settings.trackingGroups}" key="trackingGroupId" as="trackingGroup">
                                     <div class="card">
                                         <div class="card-header" id="cookieman-acco-h-{trackingGroupId}">
