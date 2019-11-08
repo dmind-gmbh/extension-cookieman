@@ -75,6 +75,9 @@
         "install-typo3": [
             "typo3cms install:setup --admin-user-name=admin --admin-password=adminadmin --no-interaction"
         ],
+        "cookieman:release:create": [
+            "extension-helper release:create"
+        ],
         "install-extensions": [
             "typo3 extensionmanager:extension:install bootstrap_package",
             "typo3 extensionmanager:extension:install introduction",
