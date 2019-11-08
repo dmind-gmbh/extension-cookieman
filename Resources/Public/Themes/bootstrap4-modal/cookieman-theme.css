@@ -1,0 +1,30 @@
+#cookieman-modal table {
+    font-size: 80%;
+}
+
+#cookieman-modal [data-toggle="collapse"]:after {
+    content: "+";
+    font-size: 3rem;
+    opacity: .7;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    line-height: 0;
+    transition: transform ease-in-out 0.3s;
+    transform-origin: center;
+    transform: rotate(45deg);
+}
+
+#cookieman-modal [data-toggle="collapse"].collapsed:after {
+    transform: rotate(0);
+}
+
+#cookieman-settings .card-header {
+    position: relative;
+}
+#cookieman-modal [data-toggle="collapse"][data-target="#cookieman-settings"] {
+    position: relative;
+}
+#cookieman-modal [data-toggle="collapse"][data-target="#cookieman-settings"]:after {
+    font-size: 2rem;
+}
