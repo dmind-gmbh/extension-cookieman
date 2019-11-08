@@ -1,3 +1,17 @@
+# 2.0.2
+
+## MISC
+- use release:create d3fb2a2
+- add release:publish script f208fb5
+- enable bootstrap_package compatiblity e94aece
+- config via TypoScript; translation 26233b3
+- modernize TypoScript include f3a430d
+- style card-body e5e48b0
+- use bootstrap4 in master/v10 7975b88
+- amend TODO c2305df
+- amend TODO e93cedf
+- cleanup c6913c7
+
 # 1.3.4
 
 ## MISC
@@ -8,10 +22,6 @@
 - alias branches to 2.x-dev 46c105f
 - remove private Satis e89af7b
 - fix .md syntax 880b003
-
-# 2.0.0-alpha+v10
-
-## MISC
 - fix homepage 9cadb56
 - remove private Satis c22b03e
 - document typo3-console (not!) usage 8b657da
