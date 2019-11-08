@@ -50,10 +50,9 @@ You could of course let your server handle that, too (in PHP, TypoScript, e.g.) 
 
 ## Installation
 
-### download
-from https://extensions.d-mind.de/#dmind/cookieman 
-
 ### composer
+Get it from packagist https://packagist.org/packages/dmind/cookieman
+
 Run <code>composer req dmind/cookieman</code>
 
 ## Integration
