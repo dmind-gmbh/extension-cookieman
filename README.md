@@ -25,12 +25,12 @@ This can be done in Google Tagmanager or by dynamically including &lt;script&gt;
       !(navigator.doNotTrack && navigator.doNotTrack === '1') 
       && cookieman.hasConsented('marketing')
     ) {
-        // if you need a <script src=""> tag
+        // if you need a &lt;script src=""&gt; tag
         var _tagSrc = document.createElement('script')
         _tagSrc.src = 'https://mytrackingthingie.com/anal.js'
         document.head.appendChild(_tagSrc)
 
-        // if you need <script> tag content
+        // if you need &lt;script&gt; tag content
         var _tagContent = document.createElement('script')
         _tagContent.textContent = 'alert("some content")'
         document.head.appendChild(_tagContent)
