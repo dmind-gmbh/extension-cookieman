@@ -47,9 +47,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "2.x-dev",
-            "dev-9lts": "2.x-dev",
-            "dev-8lts": "2.x-dev"
+            "dev-8lts": "1.3.x-dev"
         },
         "typo3/cms": {
             "extension-key": "cookieman",
@@ -74,7 +72,7 @@
         "cookieman:cgl:fix": [
             "php-cs-fixer --config=.php_cs.dist fix --using-cache=no"
         ],
-        "install-typo3" : [
+        "install-typo3": [
             "typo3cms install:setup --admin-user-name=admin --admin-password=adminadmin --no-interaction"
         ],
         "install-extensions": [
