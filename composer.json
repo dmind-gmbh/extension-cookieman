@@ -71,6 +71,9 @@
         "cookieman:cgl:fix": [
             "php-cs-fixer --config=.php_cs.dist fix --using-cache=no"
         ],
+        "cookieman:release:publish": [
+            "extension-helper release:publish"
+        ],
         "install-extensions": [
             "typo3 extension:activate -n bootstrap_package",
             "typo3 extension:activate -n introduction",
