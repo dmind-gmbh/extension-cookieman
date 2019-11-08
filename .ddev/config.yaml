@@ -22,7 +22,7 @@ hooks:
         - exec-host: mkdir -p .build/public/typo3conf/
     post-start:
         - exec: yarn install
-        - composer: install
+        - composer: update
         - exec: |
             if [[ $(mysql -e "SHOW TABLES" | wc -l) -eq 0 ]]; then
               composer install-typo3
