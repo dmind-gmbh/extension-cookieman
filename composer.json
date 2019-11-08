@@ -2,10 +2,10 @@
     "name": "dmind/cookieman",
     "type": "typo3-cms-extension",
     "description": "Provides cookie opt-in by loading JavaScript only when consented",
-    "homepage": "https://github.com/dmind/cookieman",
+    "homepage": "https://github.com/dmind-gmbh/extension-cookieman",
     "support": {
-        "issues": "https://github.com/dmind/cookieman/issues",
-        "source": "https://github.com/dmind/cookieman"
+        "issues": "https://github.com/dmind-gmbh/extension-cookieman/issues",
+        "source": "https://github.com/dmind-gmbh/extension-cookieman"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
