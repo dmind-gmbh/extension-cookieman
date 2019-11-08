@@ -3,7 +3,7 @@ plugin.tx_cookieman {
         # cat=plugin.tx_cookieman/theme; type=string; label=Path to directory that holds Resources/Private|Public/Themes/<theme>
         resourcesBasePath = EXT:cookieman/Resources
         # cat=plugin.tx_cookieman/theme; type=string; label=name of theme. These examples are included: bootstrap3-modal (a simple and straight-forward popup), bootstrap3-banner (a banner that uses some interactive functions)
-        theme = bootstrap3-modal
+        theme = bootstrap4-modal
         links {
             # cat=plugin.tx_cookieman/links; type=string; label=page ID of data declaration (the cookie banner will not be shown on this page)
             dataProtectionDeclarationPid =
