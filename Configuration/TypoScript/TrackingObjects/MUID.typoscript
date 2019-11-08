@@ -1,0 +1,8 @@
+plugin.tx_cookieman.settings.trackingObjects {
+    MUID {
+        duration = 1
+        durationUnit = year
+        type = cookie_http+html
+        provider = Bing
+    }
+}
