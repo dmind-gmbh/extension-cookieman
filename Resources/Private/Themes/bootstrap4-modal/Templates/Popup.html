@@ -63,7 +63,8 @@
                             <div class="accordion" id="cookieman-acco">
                                 <div class="card">
                                     <div class="card-header" id="cookieman-acco-h-1">
-                                        <input class="float-right mr-5 mt-1" type="checkbox" checked="checked" disabled="disabled">
+                                        <input class="float-right mr-5 mt-1" type="checkbox" checked="checked"
+                                               disabled="disabled">
                                         <a href="" class="collapsed" data-toggle="collapse"
                                            data-target="#cookieman-acco-1" role="button"
                                            aria-expanded="false" aria-controls="cookieman-acco-1">
@@ -71,7 +72,7 @@
                                         </a>
                                     </div>
 
-                                    <div id="cookieman-acco-1" class="collapse"
+                                    <div id="cookieman-acco-1" class="collapse card-body"
                                          aria-labelledby="cookieman-acco-h-1" data-parent="#cookieman-acco">
                                         <div class="table-responsive">
                                             <table class="table table-hover table-sm">
@@ -120,30 +121,28 @@
                                         </a>
                                     </div>
 
-                                    <div id="cookieman-acco-2" class="collapse"
+                                    <div id="cookieman-acco-2" class="collapse card-body"
                                          aria-labelledby="cookieman-acco-h-2" data-parent="#cookieman-acco">
-                                        <div class="card-body">
-                                            <script>
-                                                if (navigator.doNotTrack === '1' || navigator.doNotTrack === '0') {
+                                        <script>
+                                            if (navigator.doNotTrack === '1' || navigator.doNotTrack === '0') {
+                                                document.write(
+                                                    '<p><small>' +
+                                                    'Sie haben über die <a target="_blank" rel="noopener" href="https://de.wikipedia.org/wiki/Do_Not_Track_(Software)">Do-not-track-Funktion Ihres Browsers</a> '
+                                                )
+                                                if (navigator.doNotTrack === '1') {
                                                     document.write(
-                                                        '<p><small>' +
-                                                        'Sie haben über die <a target="_blank" rel="noopener" href="https://de.wikipedia.org/wiki/Do_Not_Track_(Software)">Do-not-track-Funktion Ihres Browsers</a> '
+                                                        'bereits der Erstellung von Nutzungsprofilen widersprochen. Das akzeptieren wir. Sie können diese Funktion über die Einstellungen Ihres Browsers beeinflussen.'
                                                     )
-                                                    if (navigator.doNotTrack === '1') {
-                                                        document.write(
-                                                            'bereits der Erstellung von Nutzungsprofilen widersprochen. Das akzeptieren wir. Sie können diese Funktion über die Einstellungen Ihres Browsers beeinflussen.'
-                                                        )
-                                                    } else if (navigator.doNotTrack === '0') {
-                                                        document.write(
-                                                            'signalisiert, dass Sie der Erstellung von Nutzungsprofilen zustimmen. Sie können diese Funktion über die Einstellungen Ihres Browsers steuern. Es werden nur dann Nutzungsprofile erstellt, wenn Sie auch hier bei "Marketing" ein Häkchen setzen.'
-                                                        )
-                                                    }
+                                                } else if (navigator.doNotTrack === '0') {
                                                     document.write(
-                                                        '</small></p>'
+                                                        'signalisiert, dass Sie der Erstellung von Nutzungsprofilen zustimmen. Sie können diese Funktion über die Einstellungen Ihres Browsers steuern. Es werden nur dann Nutzungsprofile erstellt, wenn Sie auch hier bei "Marketing" ein Häkchen setzen.'
                                                     )
                                                 }
-                                            </script>
-                                        </div>
+                                                document.write(
+                                                    '</small></p>'
+                                                )
+                                            }
+                                        </script>
                                         <div class="table-responsive">
                                             <table class="table table-hover table-sm">
                                                 <thead>
