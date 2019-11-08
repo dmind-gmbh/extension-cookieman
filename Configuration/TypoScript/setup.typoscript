@@ -1,3 +1,6 @@
+# load TrackingObjects. Extend them in your site package/extension/... as needed.
+@import 'EXT:cookieman/Configuration/TypoScript/TrackingObjects/*.typoscript'
+
 plugin.tx_cookieman {
     view {
         templateRootPaths {
@@ -21,6 +24,51 @@ plugin.tx_cookieman {
             dataProtectionDeclarationAnchor = {$plugin.tx_cookieman.settings.links.dataProtectionDeclarationAnchor}
             imprintPid = {$plugin.tx_cookieman.settings.links.imprintPid}
             imprintAnchor = {$plugin.tx_cookieman.settings.links.imprintAnchor}
+        }
+
+        trackingObjects {
+            CookieConsent {
+                duration = 1
+                durationUnit = year
+                type = cookie_http+html
+                provider = Website
+            }
+            fe_typo_user {
+                duration =
+                durationUnit = session
+                type = cookie_http
+                provider = Website
+            }
+            # ... others are included from directory ./TrackingObjects
+        }
+
+        trackingGroups {
+            # key must be valid for HTML-ids
+            mandatory {
+                # is preselected?
+                preselected = 1
+                # control disabled?
+                disabled = 1
+                # included tracking objects in this group
+                trackingObjects {
+                    0 = CookieConsent
+                    1 = fe_typo_user
+                }
+            }
+            marketing {
+                trackingObjects {
+                    0 = _ga
+                    1 = _gat
+                    2 = _gcl_au
+                    3 = _gid
+                    4 = MUID
+                    5 = MUIDB
+                }
+                # only consider consented together with browser D-N-T https://en.wikipedia.org/wiki/Do_Not_Track
+                respectDnt = 1
+                # show message when DNT is selected
+                showDntMessage = 1
+            }
         }
     }
 }

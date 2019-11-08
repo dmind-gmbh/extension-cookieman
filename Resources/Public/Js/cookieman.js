@@ -29,7 +29,10 @@ var cookieman = (function () {
 
     function selectNone() {
         for (var _i = 0; _i < checkboxes.length; _i++) {
-            setChecked(checkboxes[_i], false)
+            var _checkbox = checkboxes[_i]
+            if (!_checkbox.disabled) { // exclude disabled (problably preselected) ones
+                setChecked(_checkbox, false)
+            }
         }
     }
 
@@ -66,8 +69,20 @@ var cookieman = (function () {
         selectAll()
     }
 
+    function setDnt() {
+        var dnt = document.querySelector('[data-cookieman-dnt]')
+        if (dnt) {
+            if (navigator.doNotTrack === '1') {
+                dnt.innerHTML = form.dataset.cookiemanDntEnabled
+            } else if (navigator.doNotTrack === '0') {
+                dnt.innerHTML = form.dataset.cookiemanDntDisabled
+            }
+        }
+    }
+
     function init() {
         loadSelections()
+        setDnt()
         for (var i = 0; i < acceptAllButtons.length; i++) {
             acceptAllButtons[i].addEventListener(
                 'click',
