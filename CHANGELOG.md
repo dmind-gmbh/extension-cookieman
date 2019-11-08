@@ -1,3 +1,12 @@
+# 2.0.0
+
+## MISC
+- use release:create 6ab08e2
+- enable bootstrap_package compatiblity 8610a69
+- config via TypoScript; translation c90a843
+- amend TODO d02f00b
+- amend TODO b763c55
+
 # 1.3.2
 
 ## MISC
@@ -8,10 +17,6 @@
 - alias branches to 2.x-dev 14ca713
 - remove private Satis a2ec4ce
 - fix .md syntax 7359869
-
-# 2.0.0-alpha+v8
-
-## MISC
 - fix homepage d66cafc
 - remove private Satis 7c57e92
 - add cookieman test config 5c4e025
