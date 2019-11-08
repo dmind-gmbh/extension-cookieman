@@ -1,3 +1,16 @@
+# 2.0.1
+
+## MISC
+- use release:create 5202f8a
+- add release:publish script 7291b89
+- enable bootstrap_package compatiblity 95c599e
+- config via TypoScript; translation 0907105
+- modernize TypoScript include e2b8c38
+- style card-body 8ffe8cd
+- amend TODO f0c8bc5
+- amend TODO 59027eb
+- cleanup 2a807bd
+
 # 1.3.3
 
 ## MISC
@@ -8,10 +21,6 @@
 - alias branches to 2.x-dev 477aef9
 - remove private Satis 56888ef
 - fix .md syntax 04028be
-
-# 2.0.0-alpha+v9
-
-## MISC
 - fix homepage 4436c26
 - clarify versions 24e7413
 - set new default template 520f2fd
