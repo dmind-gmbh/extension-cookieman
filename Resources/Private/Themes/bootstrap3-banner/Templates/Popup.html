@@ -1,300 +1,283 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
-<f:layout name="Default"/>
+<f:layout name="PopupLayout"/>
 
 <f:section name="Content">
-    <f:comment><!--
-        adding data-cookieman-showonce=1 only if we are not currently on pages where direct read access is mandatory
-        -->
-    </f:comment>
-    <f:variable name="isShowOnce"
-                value="{f:if(
-                    condition:'{data.uid} != {settings.links.dataProtectionDeclarationPid} 
-                        && {data.uid} != {settings.links.imprintPid}', 
-                    then: 1, 
-                    else: 0
-                )}"
-    />
-
-    <div id="cookieman-modal"
-         data-cookieman-showonce="{isShowOnce}"
-         class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog text-justify" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <h4>
-                        {f:translate(key: 'heading')}
-                    </h4>
-                    <p>
-                        <f:variable name="dataProtectionDeclarationLink">
-                            <a href="{f:uri.page(
+    <div class="modal-dialog text-justify" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h4>
+                    {f:translate(key: 'heading')}
+                </h4>
+                <p>
+                    <f:variable name="dataProtectionDeclarationLink">
+                        <a href="{f:uri.page(
                                         pageUid: settings.links.dataProtectionDeclarationPid,
                                         section: settings.links.dataProtectionDeclarationAnchor
                                     )}"
-                            >{f:translate(key: 'dataProtectionDeclaration')}</a>
-                        </f:variable>
+                        >{f:translate(key: 'dataProtectionDeclaration')}</a>
+                    </f:variable>
 
-                        <f:variable name="imprintLink">
-                            <a href="{f:uri.page(
-                                        pageUid: settings.links.imprintPid, 
+                    <f:variable name="imprintLink">
+                        <a href="{f:uri.page(
+                                        pageUid: settings.links.imprintPid,
                                         section: settings.links.imprintAnchor
                                     )}"
-                            >{f:translate(key: 'imprint')}</a>
-                        </f:variable>
+                        >{f:translate(key: 'imprint')}</a>
+                    </f:variable>
 
-                        {f:translate(
-                        key: 'introText',
-                        arguments: {
-                        1: "{dataProtectionDeclarationLink -> f:spaceless()}",
-                        2: "{imprintLink -> f:spaceless()}"
-                        }) -> f:format.raw()}
+                    {f:translate(
+                    key: 'introText',
+                    arguments: {
+                    1: "{dataProtectionDeclarationLink -> f:spaceless()}",
+                    2: "{imprintLink -> f:spaceless()}"
+                    }) -> f:format.raw()}
 
-                        <f:variable name="settingsLink">
-                            <a href="" class=""
-                               onclick="document.querySelector('[data-cookieman-accept-all]').text = 'Alle akzeptieren';
+                    <f:variable name="settingsLink">
+                        <a href="" class=""
+                           onclick="document.querySelector('[data-cookieman-accept-all]').text = 'Alle akzeptieren';
                                     document.querySelector('[data-cookieman-custom-save]').style.display = 'inline-block';
                                     return false"
-                               data-toggle="collapse"
-                               data-target="#cookieman-settings" aria-expanded="false"
-                               aria-controls="cookieman-settings"
-                            >{f:translate(key: 'settings')}</a>
-                        </f:variable>
+                           data-toggle="collapse"
+                           data-target="#cookieman-settings" aria-expanded="false"
+                           aria-controls="cookieman-settings"
+                        >{f:translate(key: 'settings')}</a>
+                    </f:variable>
 
-                        {f:translate(
-                        key: 'settingsText',
-                        arguments: {1: "{settingsLink -> f:spaceless()}"
-                        }) -> f:format.raw()}
-                    </p>
+                    {f:translate(
+                    key: 'settingsText',
+                    arguments: {1: "{settingsLink -> f:spaceless()}"
+                    }) -> f:format.raw()}
+                </p>
 
-                    <div class="clearfix"></div>
+                <div class="clearfix"></div>
 
-                    <div class="collapse" id="cookieman-settings">
-                        <form data-cookieman-form>
-                            <div class="panel-group" id="cookieman-acco" role="tablist" aria-multiselectable="true">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab">
-                                        <div class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse"
-                                               data-parent="#cookieman-acco" data-target="#cookieman-acco-1"
-                                               aria-expanded="true"
-                                               aria-controls="cookieman-acco-1">
-                                                Unbedingt erforderliche Cookies
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div id="cookieman-acco-1" class="panel-collapse collapse" role="tabpanel">
-                                        <div class="panel-body">
-                                            <div class="checkbox-wrapper">
-                                                <div class="checkbox">
-                                                    <label>
-                                                        <span class="p-label">
-                                                            Immer aktiv
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                            </div>
-
-                                            <p>
-                                                <small>
-                                                    Diese Cookies sorgen für eine reibungslose Funktion unserer Website.
-                                                    Sie werden für die Datenübertragung bei einer Bewerbung und die
-                                                    Filtermöglichkeit unserer Vakanzen benötigt.
-                                                </small>
-                                            </p>
-                                            <div class="table-responsive">
-                                                <table class="table table-hover table-condensed">
-                                                    <thead>
-                                                    <tr>
-                                                        <th>Name</th>
-                                                        <th>Zweck</th>
-                                                        <th>Ablauf</th>
-                                                        <th>Typ</th>
-                                                        <th>Anbieter</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>CookieConsent</td>
-                                                        <td>
-                                                            Speichert Ihren Zustimmungsstatus für Cookies
-                                                        </td>
-                                                        <td>1 Jahr</td>
-                                                        <td>HTML</td>
-                                                        <td>XXX</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>fe_typo_user</td>
-                                                        <td>
-                                                            Ordnet Ihren Browser einer Session auf dem Server zu. Dies
-                                                            beeinflusst nur die Inhalte, die Sie sehen und wird von uns
-                                                            nicht ausgewertet oder weiterverarbeitet.
-                                                        </td>
-                                                        <td>Bis zum Ende der Session</td>
-                                                        <td>HTTP</td>
-                                                        <td>XXX</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
+                <div class="collapse" id="cookieman-settings">
+                    <form data-cookieman-form>
+                        <div class="panel-group" id="cookieman-acco" role="tablist" aria-multiselectable="true">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab">
+                                    <div class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                           data-parent="#cookieman-acco" data-target="#cookieman-acco-1"
+                                           aria-expanded="true"
+                                           aria-controls="cookieman-acco-1">
+                                            Unbedingt erforderliche Cookies
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading" role="tab">
-                                        <div class="panel-title">
-                                            <a class="collapsed" role="button" data-toggle="collapse"
-                                               data-parent="#cookieman-acco" data-target="#cookieman-acco-2"
-                                               aria-expanded="true"
-                                               aria-controls="cookieman-acco-2">
-                                                Cookies für Marketingzwecke
-                                            </a>
+                                <div id="cookieman-acco-1" class="panel-collapse collapse" role="tabpanel">
+                                    <div class="panel-body">
+                                        <div class="checkbox-wrapper">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <span class="p-label">
+                                                        Immer aktiv
+                                                    </span>
+                                                </label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div id="cookieman-acco-2" class="panel-collapse collapse" role="tabpanel">
-                                        <div class="panel-body">
-                                            <div class="checkbox-wrapper">
-                                                <div class="checkbox">
-                                                    <label>
-                                                        <input name="marketing" value="1" type="checkbox">
-                                                        <span class="p-check-icon">
-                                                            <span class="p-check-block"></span>
-                                                        </span>
-                                                        <span class="p-label"></span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <p>
-                                                <small>
-                                                    Mit Hilfe dieser Cookies sind wir bemüht unser Angebot für Sie noch
-                                                    attraktiver zu gestalten. Mittels pseudonymisierter Daten von
-                                                    Websitenutzern, kann der Nutzerfluss analysiert und beurteilt
-                                                    werden. Dies gibt uns die Möglichkeit Werbe- und Websiteinhalte zu
-                                                    optimieren.
-                                                </small>
-                                            </p>
-                                            <script>
-                                                if (navigator.doNotTrack === '1' || navigator.doNotTrack === '0') {
-                                                    document.write(
-                                                        '<p><small>' +
-                                                        'Sie haben über die <a target="_blank" rel="noopener" href="https://de.wikipedia.org/wiki/Do_Not_Track_(Software)">Do-not-track-Funktion Ihres Browsers</a> '
-                                                    )
-                                                    if (navigator.doNotTrack === '1') {
-                                                        document.write(
-                                                            'bereits der Erstellung von Nutzungsprofilen widersprochen. Das akzeptieren wir. Sie können diese Funktion über die Einstellungen Ihres Browsers beeinflussen.'
-                                                        )
-                                                    } else if (navigator.doNotTrack === '0') {
-                                                        document.write(
-                                                            'signalisiert, dass Sie der Erstellung von Nutzungsprofilen zustimmen. Sie können diese Funktion über die Einstellungen Ihres Browsers steuern. Es werden nur dann Nutzungsprofile erstellt, wenn Sie auch hier bei "Marketing" ein Häkchen setzen.'
-                                                        )
-                                                    }
-                                                    document.write(
-                                                        '</small></p>'
-                                                    )
-                                                }
-                                            </script>
-                                            <div class="table-responsive">
-                                                <table class="table table-hover table-condensed">
-                                                    <thead>
-                                                    <tr>
-                                                        <th>Name</th>
-                                                        <th>Zweck</th>
-                                                        <th>Ablauf</th>
-                                                        <th>Typ</th>
-                                                        <th>Anbieter</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td>_ga</td>
-                                                        <td>
-                                                            Registriert eine eindeutige ID, die verwendet wird, um
-                                                            statistische Daten dazu, wie der Besucher die Website nutzt,
-                                                            zu generieren.
-                                                        </td>
-                                                        <td>2 Jahre</td>
-                                                        <td>HTML</td>
-                                                        <td>Google</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>_gat</td>
-                                                        <td>
-                                                            Wird von Google Analytics verwendet, um die Anforderungsrate
-                                                            einzuschränken
-                                                        </td>
-                                                        <td>1 Tag</td>
-                                                        <td>HTML</td>
-                                                        <td>Google</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>_gcl_au</td>
-                                                        <td>
-                                                            Wird von Google AdSense zum Experimentieren mit
-                                                            Werbungseffizienz auf Webseiten verwendet, die ihre Dienste
-                                                            nutzen.
-                                                        </td>
-                                                        <td>3 Monate</td>
-                                                        <td>HTML</td>
-                                                        <td>Google</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>_gid</td>
-                                                        <td>
-                                                            Registriert eine eindeutige ID, die verwendet wird, um
-                                                            statistische Daten dazu, wie der Besucher die Website nutzt,
-                                                            zu generieren.
-                                                        </td>
-                                                        <td>1 Tag</td>
-                                                        <td>HTML</td>
-                                                        <td>Google</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>MUID</td>
-                                                        <td>
-                                                            Weitgehend von Microsoft als eindeutige Benutzer-ID
-                                                            verwendet. Der Cookie ermöglicht Benutzer-Tracking durch
-                                                            Synchronisieren der ID in vielen Microsoft-Domänen.
-                                                        </td>
-                                                        <td>1 Jahr</td>
-                                                        <td>HTML</td>
-                                                        <td>Bing</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>MUIDB</td>
-                                                        <td>
-                                                            Registriert anonyme Daten über Besucher von mehreren
-                                                            Besuchen und auf mehreren Webseiten. Diese Informationen
-                                                            werden verwendet, um die Effizienz der Werbung auf Webseiten
-                                                            zu messen.
-                                                        </td>
-                                                        <td>1 Jahr</td>
-                                                        <td>HTML</td>
-                                                        <td>Bing</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
+
+                                        <p>
+                                            <small>
+                                                Diese Cookies sorgen für eine reibungslose Funktion unserer Website.
+                                                Sie werden für die Datenübertragung bei einer Bewerbung und die
+                                                Filtermöglichkeit unserer Vakanzen benötigt.
+                                            </small>
+                                        </p>
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-condensed">
+                                                <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Zweck</th>
+                                                    <th>Ablauf</th>
+                                                    <th>Typ</th>
+                                                    <th>Anbieter</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>CookieConsent</td>
+                                                    <td>
+                                                        Speichert Ihren Zustimmungsstatus für Cookies
+                                                    </td>
+                                                    <td>1 Jahr</td>
+                                                    <td>HTML</td>
+                                                    <td>XXX</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>fe_typo_user</td>
+                                                    <td>
+                                                        Ordnet Ihren Browser einer Session auf dem Server zu. Dies
+                                                        beeinflusst nur die Inhalte, die Sie sehen und wird von uns
+                                                        nicht ausgewertet oder weiterverarbeitet.
+                                                    </td>
+                                                    <td>Bis zum Ende der Session</td>
+                                                    <td>HTTP</td>
+                                                    <td>XXX</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </form>
-                    </div>
-                    <a data-cookieman-accept-all data-cookieman-save
-                       href="" rel="nofollow" class="btn btn-primary">
-                        {f:translate(key: 'accept')}
-                    </a>
-
-                    <div class="pull-right">
-                        <a data-cookieman-save data-cookieman-custom-save
-                           class="btn btn-default"
-                           style="display:none"
-                           href="" rel="nofollow"
-                        >
-                            {f:translate(key: 'save')}
-                        </a>
-                    </div>
-                    <div class="clearfix"></div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab">
+                                    <div class="panel-title">
+                                        <a class="collapsed" role="button" data-toggle="collapse"
+                                           data-parent="#cookieman-acco" data-target="#cookieman-acco-2"
+                                           aria-expanded="true"
+                                           aria-controls="cookieman-acco-2">
+                                            Cookies für Marketingzwecke
+                                        </a>
+                                    </div>
+                                </div>
+                                <div id="cookieman-acco-2" class="panel-collapse collapse" role="tabpanel">
+                                    <div class="panel-body">
+                                        <div class="checkbox-wrapper">
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input name="marketing" value="1" type="checkbox">
+                                                    <span class="p-check-icon">
+                                                        <span class="p-check-block"></span>
+                                                    </span>
+                                                    <span class="p-label"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <small>
+                                                Mit Hilfe dieser Cookies sind wir bemüht unser Angebot für Sie noch
+                                                attraktiver zu gestalten. Mittels pseudonymisierter Daten von
+                                                Websitenutzern, kann der Nutzerfluss analysiert und beurteilt
+                                                werden. Dies gibt uns die Möglichkeit Werbe- und Websiteinhalte zu
+                                                optimieren.
+                                            </small>
+                                        </p>
+                                        <script>
+                                            if (navigator.doNotTrack === '1' || navigator.doNotTrack === '0') {
+                                                document.write(
+                                                    '<p><small>' +
+                                                    'Sie haben über die <a target="_blank" rel="noopener" href="https://de.wikipedia.org/wiki/Do_Not_Track_(Software)">Do-not-track-Funktion Ihres Browsers</a> '
+                                                )
+                                                if (navigator.doNotTrack === '1') {
+                                                    document.write(
+                                                        'bereits der Erstellung von Nutzungsprofilen widersprochen. Das akzeptieren wir. Sie können diese Funktion über die Einstellungen Ihres Browsers beeinflussen.'
+                                                    )
+                                                } else if (navigator.doNotTrack === '0') {
+                                                    document.write(
+                                                        'signalisiert, dass Sie der Erstellung von Nutzungsprofilen zustimmen. Sie können diese Funktion über die Einstellungen Ihres Browsers steuern. Es werden nur dann Nutzungsprofile erstellt, wenn Sie auch hier bei "Marketing" ein Häkchen setzen.'
+                                                    )
+                                                }
+                                                document.write(
+                                                    '</small></p>'
+                                                )
+                                            }
+                                        </script>
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-condensed">
+                                                <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Zweck</th>
+                                                    <th>Ablauf</th>
+                                                    <th>Typ</th>
+                                                    <th>Anbieter</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>_ga</td>
+                                                    <td>
+                                                        Registriert eine eindeutige ID, die verwendet wird, um
+                                                        statistische Daten dazu, wie der Besucher die Website nutzt,
+                                                        zu generieren.
+                                                    </td>
+                                                    <td>2 Jahre</td>
+                                                    <td>HTML</td>
+                                                    <td>Google</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>_gat</td>
+                                                    <td>
+                                                        Wird von Google Analytics verwendet, um die Anforderungsrate
+                                                        einzuschränken
+                                                    </td>
+                                                    <td>1 Tag</td>
+                                                    <td>HTML</td>
+                                                    <td>Google</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>_gcl_au</td>
+                                                    <td>
+                                                        Wird von Google AdSense zum Experimentieren mit
+                                                        Werbungseffizienz auf Webseiten verwendet, die ihre Dienste
+                                                        nutzen.
+                                                    </td>
+                                                    <td>3 Monate</td>
+                                                    <td>HTML</td>
+                                                    <td>Google</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>_gid</td>
+                                                    <td>
+                                                        Registriert eine eindeutige ID, die verwendet wird, um
+                                                        statistische Daten dazu, wie der Besucher die Website nutzt,
+                                                        zu generieren.
+                                                    </td>
+                                                    <td>1 Tag</td>
+                                                    <td>HTML</td>
+                                                    <td>Google</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MUID</td>
+                                                    <td>
+                                                        Weitgehend von Microsoft als eindeutige Benutzer-ID
+                                                        verwendet. Der Cookie ermöglicht Benutzer-Tracking durch
+                                                        Synchronisieren der ID in vielen Microsoft-Domänen.
+                                                    </td>
+                                                    <td>1 Jahr</td>
+                                                    <td>HTML</td>
+                                                    <td>Bing</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>MUIDB</td>
+                                                    <td>
+                                                        Registriert anonyme Daten über Besucher von mehreren
+                                                        Besuchen und auf mehreren Webseiten. Diese Informationen
+                                                        werden verwendet, um die Effizienz der Werbung auf Webseiten
+                                                        zu messen.
+                                                    </td>
+                                                    <td>1 Jahr</td>
+                                                    <td>HTML</td>
+                                                    <td>Bing</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
+                <a data-cookieman-accept-all data-cookieman-save
+                   href="" rel="nofollow" class="btn btn-primary">
+                    {f:translate(key: 'accept')}
+                </a>
+
+                <div class="pull-right">
+                    <a data-cookieman-save data-cookieman-custom-save
+                       class="btn btn-default"
+                       style="display:none"
+                       href="" rel="nofollow"
+                    >
+                        {f:translate(key: 'save')}
+                    </a>
+                </div>
+                <div class="clearfix"></div>
             </div>
         </div>
     </div>
