@@ -4,17 +4,21 @@
 plugin.tx_cookieman {
     view {
         templateRootPaths {
-            0 = EXT:cookieman/Resources/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Templates/
+            0 = EXT:cookieman/Resources/Private/Templates/
+            10 = EXT:cookieman/Resources/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Templates/
             100 = {$plugin.tx_cookieman.settings.resourcesBasePath}/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Templates/
         }
 
         partialRootPaths {
-            0 = EXT:cookieman/Resources/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Partials/
+            0 = EXT:cookieman/Resources/Private/Partials/
+            10 = EXT:cookieman/Resources/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Partials/
             100 = {$plugin.tx_cookieman.settings.resourcesBasePath}/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Partials/
         }
 
         layoutRootPaths {
             0 = EXT:cookieman/Resources/Private/Layouts/
+            10 = EXT:cookieman/Resources/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Layouts/
+            100 = {$plugin.tx_cookieman.settings.resourcesBasePath}/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Layouts/
         }
     }
 
