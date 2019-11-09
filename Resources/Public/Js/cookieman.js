@@ -47,7 +47,7 @@ var cookieman = (function () {
         return cookie ? cookie.split(',') : []
     }
 
-    function loadSelections() {
+    function loadCheckboxStates() {
         var consented = consentedSelections()
         selectNone()
         for (var _i = 0; _i < consented.length; _i++) {
@@ -80,9 +80,18 @@ var cookieman = (function () {
         }
     }
 
+    function injectTrackingObjects() {
+        var consented = consentedSelections()
+        for (var _i = 0; _i < consented.length; _i++) {
+
+        }
+    }
+
     function init() {
-        loadSelections()
+        // load form state
+        loadCheckboxStates()
         setDnt()
+        // register handlers
         for (var i = 0; i < acceptAllButtons.length; i++) {
             acceptAllButtons[i].addEventListener(
                 'click',
@@ -95,6 +104,9 @@ var cookieman = (function () {
                 onSaveClick
             )
         }
+
+        // inject tracking objects when consented
+        injectTrackingObjects()
     }
 
     init()
