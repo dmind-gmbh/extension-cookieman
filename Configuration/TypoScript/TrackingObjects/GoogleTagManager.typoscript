@@ -1,0 +1,32 @@
+plugin.tx_cookieman.settings.trackingObjects {
+    GoogleTagManager {
+        inject (
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA_MEASUREMENT_ID');
+</script>
+        )
+        show {
+            # https://developers.google.com/analytics/devguides/collection/gtagjs/cookie-usage
+            _gcl_au {
+                duration = 3
+                durationUnit = months
+                type = cookie_http+html
+                provider = Google
+            }
+
+            AMP_TOKEN {
+                duration = 1
+                durationUnit = year
+                type = cookie_http+html
+                provider = Google
+            }
+            _dc_gtm_--property-id-- {
+
+            }
+        }
+    }
+}
