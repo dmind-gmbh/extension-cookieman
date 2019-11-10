@@ -3,17 +3,17 @@
         -->
 </f:comment>
 <f:variable name="isShowOnce"
-            value="{f:if(
-                    condition:'{data.uid} != {settings.links.dataProtectionDeclarationPid}
-                        && {data.uid} != {settings.links.imprintPid}',
-                    then: 1,
-                    else: 0
-                )}"
+    value="{f:if(
+        condition:'{data.uid} != {settings.links.dataProtectionDeclarationPid}
+            && {data.uid} != {settings.links.imprintPid}',
+        then: 1,
+        else: 0
+    )}"
 />
 <div id="cookieman-modal"
      data-cookieman-showonce="{isShowOnce}"
+     data-cookieman-settings="{settings.exportToHtml -> f:format.json()}"
      class="modal fade" tabindex="-1" role="dialog"
 >
-
     <f:render section="Content"/>
 </div>
