@@ -51,26 +51,26 @@
                             left out at the moment
                         </f:comment>
                         <div id="cookieman-acco">
-                            <f:for each="{settings.trackingGroups}" key="trackingGroupId" as="trackingGroup">
+                            <f:for each="{settings.groups}" key="groupId" as="group">
                                 <div class="card">
-                                    <div class="card-header" id="cookieman-acco-h-{trackingGroupId}">
+                                    <div class="card-header" id="cookieman-acco-h-{groupId}">
                                         <input class="float-right mr-5 mt-1" type="checkbox"
-                                               name="{trackingGroupId}"
-                                               {f:if(condition: trackingGroup.preselected, then:
+                                               name="{groupId}"
+                                               {f:if(condition: group.preselected, then:
                                         'checked="checked"')}
-                                        {f:if(condition: trackingGroup.disabled, then: 'disabled="disabled"')}
+                                        {f:if(condition: group.disabled, then: 'disabled="disabled"')}
                                         >
                                         <a href="" class="collapsed" data-toggle="collapse"
-                                           data-target="#cookieman-acco-{trackingGroupId}" role="button"
-                                           aria-expanded="false" aria-controls="cookieman-acco-{trackingGroupId}">
-                                            {f:translate(key: 'group.{trackingGroupId}', default: trackingGroupId)}
+                                           data-target="#cookieman-acco-{groupId}" role="button"
+                                           aria-expanded="false" aria-controls="cookieman-acco-{groupId}">
+                                            {f:translate(key: 'group.{groupId}', default: groupId)}
                                         </a>
                                     </div>
 
-                                    <div id="cookieman-acco-{trackingGroupId}" class="collapse card-body"
-                                         aria-labelledby="cookieman-acco-h-{trackingGroupId}"
+                                    <div id="cookieman-acco-{groupId}" class="collapse card-body"
+                                         aria-labelledby="cookieman-acco-h-{groupId}"
                                          data-parent="#cookieman-acco">
-                                        <f:if condition="{trackingGroup.showDntMessage}">
+                                        <f:if condition="{group.showDntMessage}">
                                             <div data-cookieman-dnt></div>
                                         </f:if>
 
@@ -86,44 +86,46 @@
                                                 </tr>
                                                 </thead>
                                                 <tbody>
-                                                <f:for each="{trackingGroup.trackingObjects}" as="trackingObjectId">
-                                                    <tr>
-                                                        <td>
-                                                            {f:translate(
-                                                            key:'trackingobject.{trackingObjectId}',
-                                                            default: trackingObjectId
-                                                            )}
-                                                        </td>
-                                                        <td>
-                                                            {f:translate(
-                                                            key:'trackingobject.{trackingObjectId}.desc',
-                                                            default: 'missing translation:
-                                                            trackingobject.{trackingObjectId}.desc'
-                                                            )}
-                                                        </td>
-                                                        <td>
-                                                            {settings.trackingObjects.{trackingObjectId}.duration}
-                                                            {f:translate(
-                                                            key:'duration.{settings.trackingObjects.{trackingObjectId}.durationUnit}',
-                                                            default: 'missing translation:
-                                                            duration.{settings.trackingObjects.{trackingObjectId}.durationUnit}'
-                                                            )}
-                                                        </td>
-                                                        <td>
-                                                            {f:translate(
-                                                            key:'type.{settings.trackingObjects.{trackingObjectId}.type}',
-                                                            default: 'missing translation:
-                                                            type.{settings.trackingObjects.{trackingObjectId}.type}'
-                                                            )}
-                                                        </td>
-                                                        <td>
-                                                            {f:translate(
-                                                            key:'{settings.trackingObjects.{trackingObjectId}.provider}',
-                                                            default:
-                                                            '{settings.trackingObjects.{trackingObjectId}.provider}'
-                                                            )}
-                                                        </td>
-                                                    </tr>
+                                                <f:for each="{group.trackingObjects}" as="trackingObjectId">
+                                                    <f:for each="{settings.trackingObjects.{trackingObjectId}.show}"
+                                                           key="trackingItemId" as="trackingItem">
+                                                        <tr>
+                                                            <td>
+                                                                {f:translate(
+                                                                key:'trackingobject.{trackingItemId}',
+                                                                default: trackingItemId
+                                                                )}
+                                                            </td>
+                                                            <td>
+                                                                {f:translate(
+                                                                key:'trackingobject.{trackingItemId}.desc',
+                                                                default: 'missing translation:
+                                                                trackingobject.{trackingItemId}.desc'
+                                                                )}
+                                                            </td>
+                                                            <td>
+                                                                {trackingItem.duration}
+                                                                {f:translate(
+                                                                key:'duration.{trackingItem.durationUnit}',
+                                                                default: 'missing translation:
+                                                                duration.{trackingItem.durationUnit}'
+                                                                )}
+                                                            </td>
+                                                            <td>
+                                                                {f:translate(
+                                                                key:'type.{trackingItem.type}',
+                                                                default: 'missing translation:
+                                                                type.{trackingItem.type}'
+                                                                )}
+                                                            </td>
+                                                            <td>
+                                                                {f:translate(
+                                                                key: trackingItem.provider,
+                                                                default: trackingItem.provider
+                                                                )}
+                                                            </td>
+                                                        </tr>
+                                                    </f:for>
                                                 </f:for>
                                                 </tbody>
                                             </table>
