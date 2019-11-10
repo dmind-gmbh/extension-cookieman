@@ -1,0 +1,12 @@
+plugin.tx_cookieman.settings.trackingObjects {
+    CookieConsent {
+        show {
+            CookieConsent {
+                duration = 1
+                durationUnit = year
+                type = cookie_http+html
+                provider = Website
+            }
+        }
+    }
+}

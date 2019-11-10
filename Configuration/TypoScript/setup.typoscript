@@ -30,23 +30,7 @@ plugin.tx_cookieman {
             imprintAnchor = {$plugin.tx_cookieman.settings.links.imprintAnchor}
         }
 
-        trackingObjects {
-            CookieConsent {
-                duration = 1
-                durationUnit = year
-                type = cookie_http+html
-                provider = Website
-            }
-            fe_typo_user {
-                duration =
-                durationUnit = session
-                type = cookie_http
-                provider = Website
-            }
-            # ... others are included from directory ./TrackingObjects
-        }
-
-        trackingGroups {
+        groups {
             # key must be valid for HTML-ids
             mandatory {
                 # is preselected?
@@ -61,12 +45,8 @@ plugin.tx_cookieman {
             }
             marketing {
                 trackingObjects {
-                    0 = _ga
-                    1 = _gat
-                    2 = _gcl_au
-                    3 = _gid
-                    4 = MUID
-                    5 = MUIDB
+                    0 = GoogleAnalytics
+                    1 = Bing
                 }
                 # only consider consented together with browser D-N-T https://en.wikipedia.org/wiki/Do_Not_Track
                 respectDnt = 1
@@ -74,6 +54,11 @@ plugin.tx_cookieman {
                 showDntMessage = 1
             }
         }
+    }
+
+    exportToHtml {
+        groups < plugin.tx_cookieman.groups
+        trackingObjects < plugin.tx_cookieman.trackingObjects
     }
 }
 

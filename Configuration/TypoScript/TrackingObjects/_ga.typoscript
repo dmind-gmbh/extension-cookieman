@@ -1,8 +1,0 @@
-plugin.tx_cookieman.settings.trackingObjects {
-    _ga {
-        duration = 2
-        durationUnit = years
-        type = cookie_http+html
-        provider = Google
-    }
-}
