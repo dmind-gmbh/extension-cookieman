@@ -1,5 +1,20 @@
 # Cookieman
 
+## ! Warnings !
+
+Expect some days until this is fixed:
+
+This documentation is still v1 and not proper for the current v2.
+
+Currently only the example theme `bootstrap4-modal` is v2-ready.
+
+Choose your branch: 8lts (TYPO3 8.7), 9lts (TYPO3 9.5), master (TYPO3 10.x).
+
+To try it: just run `ddev start` which will install a TYPO3 with example content and `cookieman`.
+
+
+
+
 ##  How it works
 
 It includes the HTML for a cookie confirmation modal on every page.
