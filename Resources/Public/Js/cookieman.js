@@ -115,7 +115,6 @@ var cookieman = (function () {
 
             // keep track what we injected
             injectedTrackingObjects.push(trackingObjectId)
-            console.log('injected ' + trackingObjectId, trackingObjectSettings.inject)
         }
     }
 
