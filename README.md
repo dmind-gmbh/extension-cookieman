@@ -103,6 +103,8 @@ Cookieman also includes the (1kB) cookie library [JavaScript Cookie](https://git
 
 # TODO
 ## Document
+### Mention https://www.cookieserve.com/
+### Browser support
 ### ddev install-git-hooks
 ## Branches, Releases
 ### git clean when changing branches
