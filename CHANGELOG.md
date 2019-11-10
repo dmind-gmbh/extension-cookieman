@@ -1,4 +1,21 @@
-# 2.0.2
+# 2.0.5
+
+## MISC
+- use bootstrap4-modal as default theme b78fdd1
+- mention w.i.p. in README 6d33124
+- remove debug da9ba6d
+- inject HTML, take special care of  67fbf07
+- add TODOs 71cb2cc
+- fix exportToHtml abeaacd
+- add translations (w.i.p.) ee33a35
+- adapt to new TypoScript structure 0e5ba77
+- export some settings to HTML 5bc4697
+- refactor TypoScript, add TypoScript examples 58577b7
+- use partial across default themes b9df4e4
+- add rootPaths sequence resourceBasePath › default themes › default a8c7985
+- set bootstrap 4 as default 3f41550
+
+# 2.0.2-dev
 
 ## MISC
 - use release:create d3fb2a2
@@ -96,11 +113,11 @@
 
 ## MISC
 - bump version f906f2c
+- bump version 712f71e
 
 # 1.1.0
 
 ## MISC
-- bump version 712f71e
 - bump version 50c9c8f
 - add imprint PID to constants; suppress showing popup on imprint/data declaration pages 683fc49
 - docs a3cd1e5
