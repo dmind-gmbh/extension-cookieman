@@ -1,3 +1,18 @@
+# 2.0.4
+
+## MISC
+- mention w.i.p. in README 30eb235
+- remove debug 0773bc5
+- inject HTML, take special care of  13ddaac
+- add TODOs 0eb5102
+- fix exportToHtml 43db0cb
+- add translations (w.i.p.) e6e7d3f
+- adapt to new TypoScript structure a3dc1ee
+- export some settings to HTML c62fa51
+- refactor TypoScript, add TypoScript examples 1a87776
+- use partial across default themes 29b60cc
+- add rootPaths sequence resourceBasePath › default themes › default f1dbecf
+
 # 2.0.1
 
 ## MISC
@@ -99,11 +114,11 @@
 
 ## MISC
 - bump version f906f2c
+- bump version 712f71e
 
 # 1.1.0
 
 ## MISC
-- bump version 712f71e
 - bump version 50c9c8f
 - add imprint PID to constants; suppress showing popup on imprint/data declaration pages 683fc49
 - docs a3cd1e5
