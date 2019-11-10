@@ -117,6 +117,7 @@ cookieman.js exposes these methods:
 Cookieman also includes the (1kB) cookie library [JavaScript Cookie](https://github.com/js-cookie/js-cookie) that also exposes its API and makes it easier to work with cookies.
 
 # TODO
+## Translations
 ## Document
 ### Mention https://www.cookieserve.com/
 ### Browser support
