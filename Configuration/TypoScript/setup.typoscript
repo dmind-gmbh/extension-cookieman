@@ -60,6 +60,11 @@ plugin.tx_cookieman {
             trackingObjects < plugin.tx_cookieman.settings.trackingObjects
         }
     }
+
+    exportToHtml {
+        groups < plugin.tx_cookieman.groups
+        trackingObjects < plugin.tx_cookieman.trackingObjects
+    }
 }
 
 page {
