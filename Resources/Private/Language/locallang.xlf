@@ -31,6 +31,9 @@
             <trans-unit id="group.mandatory" resname="group.mandatory">
                 <source>Mandatory</source>
             </trans-unit>
+            <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc">
+                <source>These cookies are needed for a smooth operation of our website.</source>
+            </trans-unit>
             <trans-unit id="tableheader.name" resname="tableheader.name">
                 <source>Name</source>
             </trans-unit>
@@ -63,6 +66,9 @@
             </trans-unit>
             <trans-unit id="group.marketing" resname="group.marketing">
                 <source>Marketing</source>
+            </trans-unit>
+            <trans-unit id="group.marketing.desc" resname="group.marketing">
+                <source>With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</source>
             </trans-unit>
             <trans-unit id="trackingobject._ga.desc" resname="trackingobject._ga.desc">
                 <source>Used to distinguish users.</source>
@@ -124,6 +130,18 @@
             </trans-unit>
             <trans-unit id="duration.years" resname="duration.years">
                 <source>years</source>
+            </trans-unit>
+            <trans-unit id="active" resname="active">
+                <source>active</source>
+            </trans-unit>
+            <trans-unit id="alwaysactive" resname="alwaysactive">
+                <source>always active</source>
+            </trans-unit>
+            <trans-unit id="inactive" resname="inactive">
+                <source>inactive</source>
+            </trans-unit>
+            <trans-unit id="alwaysinactive" resname="alwaysinactive">
+                <source>always inactive</source>
             </trans-unit>
         </body>
     </file>
