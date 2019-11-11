@@ -3,7 +3,7 @@ var cookieman = (function () {
     "use strict";
     // remember: write IE11-compatible JavaScript
     var cookieName = 'CookieConsent',
-        cookieDurationDays = 365,
+        cookieLifetimeDays = 365,
         form = document.querySelector('[data-cookieman-form]'),
         settingsEl = document.querySelector('[data-cookieman-settings]'),
         settings = JSON.parse(settingsEl.dataset.cookiemanSettings),
@@ -22,8 +22,8 @@ var cookieman = (function () {
 
         Cookies.set(
             cookieName,
-            consented.join(','),
-            {expires: cookieDurationDays}
+            consented.join('|'),
+            {expires: cookieLifetimeDays}
         )
     }
 
@@ -48,7 +48,16 @@ var cookieman = (function () {
 
     function consentedSelections() {
         var cookie = Cookies.get(cookieName)
-        return cookie ? cookie.split(',') : []
+        return cookie ? cookie.split('|') : []
+    }
+
+    function consentedSelectionsRespectDnt() {
+        return consentedSelections().filter(
+            function (consented) {
+                var aGroup = settings.groups[consented]
+                return !aGroup.respectDnt || (navigator.doNotTrack !== '1')
+            }
+        )
     }
 
     function loadCheckboxStates() {
@@ -65,8 +74,8 @@ var cookieman = (function () {
     function onSaveClick(e) {
         e.preventDefault()
         saveSelections()
-        injectNewTrackingObjects()
         cookieman.hide()
+        injectNewTrackingObjects()
     }
 
     function onAcceptAllClick(e) {
@@ -74,7 +83,7 @@ var cookieman = (function () {
         selectAll()
     }
 
-    function setDnt() {
+    function setDntTextIfEnabled() {
         var dnt = document.querySelector('[data-cookieman-dnt]')
         if (dnt && (navigator.doNotTrack === '1')) {
             dnt.innerHTML = form.dataset.cookiemanDntEnabled
@@ -93,7 +102,7 @@ var cookieman = (function () {
             // https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML
 
             // Let the DOM parse our inject-HTML...
-            var pseudo = document.createElement('div')
+            var pseudo = document.createElement('span')
             pseudo.innerHTML = trackingObjectSettings.inject
 
             // ...and insert <script>s manually
@@ -107,7 +116,7 @@ var cookieman = (function () {
             }
 
             // append the rest of pseudo
-            document.body.innerHTML += pseudo.innerHTML // only the content of our pseudo-div
+            document.body.appendChild(pseudo)
 
             // keep track what we injected
             injectedTrackingObjects.push(trackingObjectId)
@@ -115,14 +124,14 @@ var cookieman = (function () {
     }
 
     /**
-     * inject not-yet-injected tracking objects if consented
+     * inject not-yet-injected tracking objects if consented and matching DNT constraints
      */
     function injectNewTrackingObjects() {
-        var consenteds = consentedSelections()
+        var consenteds = consentedSelectionsRespectDnt()
         for (var _i = 0; _i < consenteds.length; _i++) {
-            var consented = consenteds[_i]
-            for (var _j = 0; _j < settings.groups[consented].trackingObjects.length; _j++) {
-                var trackingObjectId = settings.groups[consented].trackingObjects[_j]
+            var aGroup = settings.groups[consenteds[_i]]
+            for (var _j = 0; _j < aGroup.trackingObjects.length; _j++) {
+                var trackingObjectId = aGroup.trackingObjects[_j]
                 if (injectedTrackingObjects.indexOf(trackingObjectId) === -1) {
                     injectTrackingObject(trackingObjectId, settings.trackingObjects[trackingObjectId])
                 }
@@ -180,9 +189,6 @@ var cookieman = (function () {
     }
 
     function init() {
-        // load form state
-        loadCheckboxStates()
-        setDnt()
         // register handlers
         for (var i = 0; i < acceptAllButtons.length; i++) {
             acceptAllButtons[i].addEventListener(
@@ -197,7 +203,11 @@ var cookieman = (function () {
             )
         }
 
-        // inject tracking objects when consented
+        // load form state
+        loadCheckboxStates()
+        setDntTextIfEnabled()
+
+        // inject tracking objects if consented
         injectNewTrackingObjects()
     }
 
