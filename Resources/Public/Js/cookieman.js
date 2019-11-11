@@ -76,7 +76,7 @@ var cookieman = (function () {
 
     function setDnt() {
         var dnt = document.querySelector('[data-cookieman-dnt]')
-        if (dnt && (navigator.doNotTrack === '1') {
+        if (dnt && (navigator.doNotTrack === '1')) {
             dnt.innerHTML = form.dataset.cookiemanDntEnabled
         }
     }
