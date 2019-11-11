@@ -11,9 +11,8 @@ page.76352765.value (
   data-project-id="379354"
   style="bottom: 90px; right: 20px;">
 </div>
-translate on crowdin:
 <div
   id="crowdjet-expand-container"
-  style="top: 50%; right: 15px; background: var(--warning); border-radius: 5%">
+  style="top: 50%; right: 15px; background-color: #ffc107; background-color: var(--warning); border-radius: 5%">
 </div>
 )

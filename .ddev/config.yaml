@@ -28,6 +28,7 @@ hooks:
               composer install-typo3
             fi
         - composer: install-extensions
+        - composer: cookieman:bootstrap3-banner
 
 # This config.yaml was created with ddev version v1.11.2
 # webimage: drud/ddev-webserver:v1.11.0
