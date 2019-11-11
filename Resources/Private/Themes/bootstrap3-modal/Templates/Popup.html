@@ -12,29 +12,12 @@
             </div>
             <div class="modal-body">
                 <p>
-                    <f:variable name="dataProtectionDeclarationLink">
-                        <a href="{f:uri.page(
-                                        pageUid: settings.links.dataProtectionDeclarationPid,
-                                        section: settings.links.dataProtectionDeclarationAnchor
-                                    )}"
-                        >{f:translate(key: 'dataProtectionDeclaration')}</a>
-                    </f:variable>
-
-                    <f:variable name="imprintLink">
-                        <a href="{f:uri.page(
-                                        pageUid: settings.links.imprintPid,
-                                        section: settings.links.imprintAnchor
-                                    )}"
-                        >{f:translate(key: 'imprint')}</a>
-                    </f:variable>
-
                     {f:translate(
                     key: 'introText',
                     arguments: {
                     1: "{dataProtectionDeclarationLink -> f:spaceless()}",
                     2: "{imprintLink -> f:spaceless()}"
                     }) -> f:format.raw()}
-
                 </p>
                 <button class="btn btn-default btn-small pull-right collapsed"
                         style="margin-bottom: 1em"
@@ -46,192 +29,75 @@
                 <div class="clearfix"></div>
 
                 <div class="collapse" id="cookieman-settings">
-                    <form data-cookieman-form>
+                    <form data-cookieman-form
+                          data-cookieman-dnt-enabled="{f:translate(key: 'browser.dnt-enabled')}"
+                    >
                         <div class="panel-group" id="cookieman-acco" role="tablist" aria-multiselectable="true">
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab">
-                                    <h4 class="panel-title">
-                                        <label>
-                                            <input type="checkbox" checked="checked" disabled="disabled">
-                                        </label>
-                                        <a class="collapsed" role="button" data-toggle="collapse"
-                                           data-parent="#cookieman-acco" data-target="#cookieman-acco-1"
-                                           aria-expanded="true"
-                                           aria-controls="cookieman-acco-1">
-                                            Notwendig
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="cookieman-acco-1" class="panel-collapse collapse" role="tabpanel">
-                                    <div class="panel-body">
-                                        <div class="table-responsive">
-                                            <table class="table table-hover table-condensed">
-                                                <thead>
-                                                <tr>
-                                                    <th>Name</th>
-                                                    <th>Zweck</th>
-                                                    <th>Ablauf</th>
-                                                    <th>Typ</th>
-                                                    <th>Anbieter</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                <tr>
-                                                    <td>CookieConsent</td>
-                                                    <td>
-                                                        Speichert Ihren Zustimmungsstatus für Cookies
-                                                    </td>
-                                                    <td>1 Jahr</td>
-                                                    <td>HTML</td>
-                                                    <td>XXX</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>fe_typo_user</td>
-                                                    <td>
-                                                        Ordnet Ihren Browser einer Session auf dem Server zu. Dies
-                                                        beeinflusst nur die Inhalte, die Sie sehen und wird von uns
-                                                        nicht ausgewertet oder weiterverarbeitet.
-                                                    </td>
-                                                    <td>Bis zum Ende der Session</td>
-                                                    <td>HTTP</td>
-                                                    <td>XXX</td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
+                            <f:for each="{settings.groups}" key="groupId" as="group">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading" role="tab">
+                                        <h4 class="panel-title">
+                                            <label>
+                                                <input type="checkbox"
+                                                       name="{groupId}"
+                                                       {f:if(condition: group.preselected, then:
+                                                'checked="checked"')}
+                                                {f:if(condition: group.disabled, then: 'disabled="disabled"')}
+                                                >
+                                            </label>
+                                            <a class="collapsed" role="button" data-toggle="collapse"
+                                               data-parent="#cookieman-acco" data-target="#cookieman-acco-{groupId}"
+                                               aria-expanded="true"
+                                               aria-controls="cookieman-acco-{groupId}">
+                                                {f:translate(key: 'group.{groupId}', default: groupId)}
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="cookieman-acco-{groupId}" class="panel-collapse collapse" role="tabpanel">
+                                        <div class="panel-body">
+                                            <f:if condition="{group.showDntMessage}">
+                                                <div data-cookieman-dnt></div>
+                                            </f:if>
+
+                                            <div class="table-responsive">
+                                                <table class="table table-hover table-condensed">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>{f:translate(key: 'tableheader.name')}</th>
+                                                        <th>{f:translate(key: 'tableheader.purpose')}</th>
+                                                        <th>{f:translate(key: 'tableheader.duration')}</th>
+                                                        <th>{f:translate(key: 'tableheader.type')}</th>
+                                                        <th>{f:translate(key: 'tableheader.provider')}</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <f:render partial="TableRowsByGroup" section="content"
+                                                              arguments="{_all}"/>
+                                                    </tbody>
+                                                </table>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading" role="tab">
-                                    <h4 class="panel-title">
-                                        <label>
-                                            <input name="marketing" value="1" type="checkbox">
-                                        </label>
-                                        <a class="collapsed" role="button" data-toggle="collapse"
-                                           data-parent="#cookieman-acco" data-target="#cookieman-acco-2"
-                                           aria-expanded="true"
-                                           aria-controls="cookieman-acco-2">
-                                            Marketing
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="cookieman-acco-2" class="panel-collapse collapse" role="tabpanel">
-                                    <div class="panel-body">
-                                        <script>
-                                            if (navigator.doNotTrack === '1' || navigator.doNotTrack === '0') {
-                                                document.write(
-                                                    '<p><small>' +
-                                                    'Sie haben über die <a target="_blank" rel="noopener" href="https://de.wikipedia.org/wiki/Do_Not_Track_(Software)">Do-not-track-Funktion Ihres Browsers</a> '
-                                                )
-                                                if (navigator.doNotTrack === '1') {
-                                                    document.write(
-                                                        'bereits der Erstellung von Nutzungsprofilen widersprochen. Das akzeptieren wir. Sie können diese Funktion über die Einstellungen Ihres Browsers beeinflussen.'
-                                                    )
-                                                } else if (navigator.doNotTrack === '0') {
-                                                    document.write(
-                                                        'signalisiert, dass Sie der Erstellung von Nutzungsprofilen zustimmen. Sie können diese Funktion über die Einstellungen Ihres Browsers steuern. Es werden nur dann Nutzungsprofile erstellt, wenn Sie auch hier bei "Marketing" ein Häkchen setzen.'
-                                                    )
-                                                }
-                                                document.write(
-                                                    '</small></p>'
-                                                )
-                                            }
-                                        </script>
-                                        <div class="table-responsive">
-                                            <table class="table table-hover table-condensed">
-                                                <thead>
-                                                <tr>
-                                                    <th>Name</th>
-                                                    <th>Zweck</th>
-                                                    <th>Ablauf</th>
-                                                    <th>Typ</th>
-                                                    <th>Anbieter</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                <tr>
-                                                    <td>_ga</td>
-                                                    <td>
-                                                        Registriert eine eindeutige ID, die verwendet wird, um
-                                                        statistische Daten dazu, wie der Besucher die Website nutzt,
-                                                        zu generieren.
-                                                    </td>
-                                                    <td>2 Jahre</td>
-                                                    <td>HTML</td>
-                                                    <td>Google</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>_gat</td>
-                                                    <td>
-                                                        Wird von Google Analytics verwendet, um die Anforderungsrate
-                                                        einzuschränken
-                                                    </td>
-                                                    <td>1 Tag</td>
-                                                    <td>HTML</td>
-                                                    <td>Google</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>_gcl_au</td>
-                                                    <td>
-                                                        Wird von Google AdSense zum Experimentieren mit
-                                                        Werbungseffizienz auf Webseiten verwendet, die ihre Dienste
-                                                        nutzen.
-                                                    </td>
-                                                    <td>3 Monate</td>
-                                                    <td>HTML</td>
-                                                    <td>Google</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>_gid</td>
-                                                    <td>
-                                                        Registriert eine eindeutige ID, die verwendet wird, um
-                                                        statistische Daten dazu, wie der Besucher die Website nutzt,
-                                                        zu generieren.
-                                                    </td>
-                                                    <td>1 Tag</td>
-                                                    <td>HTML</td>
-                                                    <td>Google</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>MUID</td>
-                                                    <td>
-                                                        Weitgehend von Microsoft als eindeutige Benutzer-ID
-                                                        verwendet. Der Cookie ermöglicht Benutzer-Tracking durch
-                                                        Synchronisieren der ID in vielen Microsoft-Domänen.
-                                                    </td>
-                                                    <td>1 Jahr</td>
-                                                    <td>HTML</td>
-                                                    <td>Bing</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>MUIDB</td>
-                                                    <td>
-                                                        Registriert anonyme Daten über Besucher von mehreren
-                                                        Besuchen und auf mehreren Webseiten. Diese Informationen
-                                                        werden verwendet, um die Effizienz der Werbung auf Webseiten
-                                                        zu messen.
-                                                    </td>
-                                                    <td>1 Jahr</td>
-                                                    <td>HTML</td>
-                                                    <td>Bing</td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </f:for>
                         </div>
                     </form>
                 </div>
             </div>
 
             <div class="modal-footer">
-                <a data-cookieman-save
-                   href="" rel="nofollow" class="btn btn-primary btn-block">
-                    {f:translate(key: 'save')}
-                </a>
+                <div class="btn-group" role="group">
+                    <a data-cookieman-save
+                       class="btn btn-default"
+                       href="" rel="nofollow"
+                    >
+                        {f:translate(key: 'save')}
+                    </a>
+                    <a data-cookieman-accept-all data-cookieman-save
+                       href="" rel="nofollow" class="btn btn-primary">
+                        {f:translate(key: 'accept')}
+                    </a>
+                </div>
             </div>
         </div>
     </div>
