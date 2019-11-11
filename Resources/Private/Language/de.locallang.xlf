@@ -4,8 +4,8 @@
     <header/>
     <body>
       <trans-unit id="heading">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Hinweis zu Cookies</source>
-        <target state="needs-translation">Hinweis zu Cookies</target>
+        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">About Cookies</source>
+        <target state="needs-translation">About Cookies</target>
       </trans-unit>
       <trans-unit id="dataProtectionDeclaration">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Datenschutzerklärung</source>
@@ -15,7 +15,7 @@
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Impressum</source>
         <target state="needs-translation">Impressum</target>
       </trans-unit>
-      <trans-unit id="introText">
+      <trans-unit id="introText" approved="yes">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Unsere Seite verwendet Cookies. Diese haben zwei
                     Funktionen: Zum einen sind sie erforderlich
                     für die grundlegende Funktionalität unserer Website. Zum anderen können wir mit Hilfe der
@@ -24,14 +24,13 @@
                     Cookies können Sie jeder Zeit schriftlich widerrufen. Weitere Informationen zu Cookies auf
                     dieser Website finden Sie in unserer %1$s und zu uns im %2$s.
                 </source>
-        <target state="needs-translation">Unsere Seite verwendet Cookies. Diese haben zwei
+        <target state="final">Unsere Seite verwendet Cookies. Diese haben zwei
                     Funktionen: Zum einen sind sie erforderlich
                     für die grundlegende Funktionalität unserer Website. Zum anderen können wir mit Hilfe der
                     Cookies unsere Inhalte für Sie immer weiter verbessern. Hierzu werden pseudonymisierte Daten
                     von Website-Besuchern gesammelt und ausgewertet. Das Einverständnis in die Verwendung der
-                    Cookies können Sie jeder Zeit schriftlich widerrufen. Weitere Informationen zu Cookies auf
-                    dieser Website finden Sie in unserer %1$s und zu uns im %2$s.
-                </target>
+                    Cookies können Sie jederzeit widerrufen. Weitere Informationen zu Cookies auf
+                    dieser Website finden Sie in unserer %1$s und zu uns im %2$s.</target>
       </trans-unit>
       <trans-unit id="settings">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Einstellungen</source>
