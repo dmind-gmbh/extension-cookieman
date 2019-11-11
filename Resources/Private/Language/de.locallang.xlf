@@ -72,10 +72,10 @@
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Anbieter</source>
         <target state="needs-translation">Anbieter</target>
       </trans-unit>
-      <trans-unit id="trackingobject.CookieConsent.desc">
+      <trans-unit id="trackingobject.CookieConsent.desc" approved="yes">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Speichert Ihren Zustimmungsstatus für Cookies
                 </source>
-        <target state="needs-translation">Speichert Ihren Zustimmungsstatus für Cookies
+        <target state="final">Speichert Ihren Zustimmungsstatus für Cookies
                 </target>
       </trans-unit>
       <trans-unit id="type.cookie_http+html">
@@ -94,9 +94,9 @@
                     nicht ausgewertet oder weiterverarbeitet.
                 </target>
       </trans-unit>
-      <trans-unit id="duration.session">
+      <trans-unit id="duration.session" approved="yes">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">session</source>
-        <target state="needs-translation">session</target>
+        <target state="final">Session</target>
       </trans-unit>
       <trans-unit id="type.cookie_http">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">HTTP</source>
@@ -112,16 +112,14 @@
         <target state="needs-translation">Used to distinguish users.
                 </target>
       </trans-unit>
-      <trans-unit id="trackingobject.AMP_TOKEN.desc">
+      <trans-unit id="trackingobject.AMP_TOKEN.desc" approved="yes">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">
                     Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible
                     values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID
                     service.
                 </source>
-        <target state="needs-translation">
-                    Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible
-                    values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID
-                    service.
+        <target state="final">
+                    Enthält ein Token, das verwendet werden kann, um eine Client-ID vom AMP-Client-ID-Dienst abzurufen. 
                 </target>
       </trans-unit>
       <trans-unit id="trackingobject._gac_--property-id--.desc">
@@ -134,11 +132,10 @@
                     Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.
                 </target>
       </trans-unit>
-      <trans-unit id="trackingobject._gat.desc">
+      <trans-unit id="trackingobject._gat.desc" approved="yes">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Used to throttle request rate.
                 </source>
-        <target state="needs-translation">Used to throttle request rate.
-                </target>
+        <target state="final">Wird benutzt, um die Anfragerate zu kontrollieren.</target>
       </trans-unit>
       <trans-unit id="trackingobject._ga_--container-id--.desc">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Persists session state.
@@ -162,13 +159,13 @@
         <target state="needs-translation">Used to distinguish users.
                 </target>
       </trans-unit>
-      <trans-unit id="trackingobject.MUID.desc">
+      <trans-unit id="trackingobject.MUID.desc" approved="yes">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Weitgehend von Microsoft als eindeutige
                     Benutzer-ID
                     verwendet. Der Cookie ermöglicht Benutzer-Tracking durch
                     Synchronisieren der ID in vielen Microsoft-Domänen.
                 </source>
-        <target state="needs-translation">Weitgehend von Microsoft als eindeutige
+        <target state="final">Weitgehend von Microsoft als eindeutige
                     Benutzer-ID
                     verwendet. Der Cookie ermöglicht Benutzer-Tracking durch
                     Synchronisieren der ID in vielen Microsoft-Domänen.
@@ -188,95 +185,75 @@
                     zu messen.
                 </target>
       </trans-unit>
-      <trans-unit id="browser.dnt-enabled">
+      <trans-unit id="browser.dnt-enabled" approved="yes">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1"><![CDATA[Sie haben über die <a target="_blank" rel="noopener" href="https://de.wikipedia.org/wiki/Do_Not_Track_(Software)">Do-not-track-Funktion Ihres Browsers</a> bereits der Erstellung von Nutzungsprofilen widersprochen. Das akzeptieren wir. Sie können diese Funktion über die Einstellungen Ihres Browsers beeinflussen.]]></source>
-        <target state="needs-translation"><![CDATA[
+        <target state="final"><![CDATA[
                     Sie haben über die <a target="_blank" rel="noopener" href="https://de.wikipedia.org/wiki/Do_Not_Track_(Software)">Do-not-track-Funktion Ihres Browsers</a> bereits der Erstellung von Nutzungsprofilen widersprochen. Das akzeptieren wir. Sie können diese Funktion über die Einstellungen Ihres Browsers beeinflussen.]]></target>
       </trans-unit>
-      <trans-unit id="browser.dnt-explicitly-disabled">
+      <trans-unit id="browser.dnt-explicitly-disabled" approved="yes">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1"><![CDATA[Sie haben über die <a target="_blank" rel="noopener" href="https://de.wikipedia.org/wiki/Do_Not_Track_(Software)">Do-not-track-Funktion Ihres Browsers</a> signalisiert, dass Sie der Erstellung von Nutzungsprofilen zustimmen. Sie können diese Funktion über die Einstellungen Ihres Browsers steuern. Es werden nur dann Nutzungsprofile erstellt, wenn Sie auch hier bei "Marketing" ein Häkchen setzen.]]></source>
-        <target state="needs-translation"><![CDATA[
+        <target state="final"><![CDATA[
                     Sie haben über die <a target="_blank" rel="noopener" href="https://de.wikipedia.org/wiki/Do_Not_Track_(Software)">Do-not-track-Funktion Ihres Browsers</a> signalisiert, dass Sie der Erstellung von Nutzungsprofilen zustimmen. Sie können diese Funktion über die Einstellungen Ihres Browsers steuern. Es werden nur dann Nutzungsprofile erstellt, wenn Sie auch hier bei "Marketing" ein Häkchen setzen.]]></target>
       </trans-unit>
-      <trans-unit id="duration.minute">
+      <trans-unit id="duration.minute" approved="yes">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">
                     minute
                 </source>
-        <target state="needs-translation">
-                    minute
-                </target>
+        <target state="final">Minute</target>
       </trans-unit>
-      <trans-unit id="duration.minutes">
+      <trans-unit id="duration.minutes" approved="yes">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">
                     minutes
                 </source>
-        <target state="needs-translation">
-                    minutes
-                </target>
+        <target state="final">Minuten</target>
       </trans-unit>
-      <trans-unit id="duration.hour">
+      <trans-unit id="duration.hour" approved="yes">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">
                     hour
                 </source>
-        <target state="needs-translation">
-                    hour
-                </target>
+        <target state="final">Stunde</target>
       </trans-unit>
-      <trans-unit id="duration.hours">
+      <trans-unit id="duration.hours" approved="yes">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">
                     hours
                 </source>
-        <target state="needs-translation">
-                    hours
-                </target>
+        <target state="final">Stunden</target>
       </trans-unit>
-      <trans-unit id="duration.day">
+      <trans-unit id="duration.day" approved="yes">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">
                     day
                 </source>
-        <target state="needs-translation">
-                    day
-                </target>
+        <target state="final">Tag</target>
       </trans-unit>
-      <trans-unit id="duration.days">
+      <trans-unit id="duration.days" approved="yes">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">
                     days
                 </source>
-        <target state="needs-translation">
-                    days
-                </target>
+        <target state="final">Tage</target>
       </trans-unit>
-      <trans-unit id="duration.month">
+      <trans-unit id="duration.month" approved="yes">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">
                     month
                 </source>
-        <target state="needs-translation">
-                    month
-                </target>
+        <target state="final">Monat</target>
       </trans-unit>
-      <trans-unit id="duration.months">
+      <trans-unit id="duration.months" approved="yes">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">
                     months
                 </source>
-        <target state="needs-translation">
-                    months
-                </target>
+        <target state="final">Monate</target>
       </trans-unit>
-      <trans-unit id="duration.year">
+      <trans-unit id="duration.year" approved="yes">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">
                     year
                 </source>
-        <target state="needs-translation">
-                    year
-                </target>
+        <target state="final">Jahr</target>
       </trans-unit>
-      <trans-unit id="duration.years">
+      <trans-unit id="duration.years" approved="yes">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">
                     years
                 </source>
-        <target state="needs-translation">
-                    years
-                </target>
+        <target state="final">Jahre</target>
       </trans-unit>
       <trans-unit id="AMP_TOKEN">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">AMP_TOKEN</source>
