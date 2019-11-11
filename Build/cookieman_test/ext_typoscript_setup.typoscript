@@ -1,1 +1,19 @@
 @import 'EXT:cookieman/Configuration/TypoScript/setup.typoscript'
+
+page.76352765 = TEXT
+page.76352765.value (
+<script
+  type="text/javascript"
+  src="https://crowdin.com/js/crowdjet/crowdjet.js">
+</script>
+<div
+  id="crowdjet-container"
+  data-project-id="379354"
+  style="bottom: 90px; right: 20px;">
+</div>
+translate on crowdin:
+<div
+  id="crowdjet-expand-container"
+  style="top: 50%; right: 15px; background: var(--warning); border-radius: 5%">
+</div>
+)
