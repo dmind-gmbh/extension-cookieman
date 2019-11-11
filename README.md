@@ -128,5 +128,13 @@ Cookieman also includes the (1kB) cookie library [JavaScript Cookie](https://git
 ### git clean when changing branches
 ## testing extension for Bootstrap 3
 ### Access crowdin from ddev Development: 
+### DNT per group respected
+Not shown on Imprint and Data Declaration Page
 
-### DNT per group
+ddev TYPO3 backend admin: admin / adminadmin
+
+Browser compat: IE11, Firefox, Chrome, Safari
+
+supports: &lt;script&gt; / img / any HTML
+
+add hooks
