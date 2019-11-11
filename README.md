@@ -1,5 +1,7 @@
 # Cookieman
 
+[![Crowdin](https://badges.crowdin.net/typo3-extension-cookieman/localized.svg)](https://crowdin.com/project/typo3-extension-cookieman)
+
 ## ! Warnings !
 
 Expect some days until this is fixed:
@@ -124,3 +126,15 @@ Cookieman also includes the (1kB) cookie library [JavaScript Cookie](https://git
 ### ddev install-git-hooks
 ## Branches, Releases
 ### git clean when changing branches
+## testing extension for Bootstrap 3
+### Access crowdin from ddev Development: 
+### DNT per group respected
+Not shown on Imprint and Data Declaration Page
+
+ddev TYPO3 backend admin: admin / adminadmin
+
+Browser compat: IE11, Firefox, Chrome, Safari
+
+supports: &lt;script&gt; / img / any HTML
+
+add hooks
