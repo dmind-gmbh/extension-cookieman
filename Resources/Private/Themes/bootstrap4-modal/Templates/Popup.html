@@ -10,22 +10,6 @@
             </h5>
             <div class="modal-body">
                 <p>
-                    <f:variable name="dataProtectionDeclarationLink">
-                        <a href="{f:uri.page(
-                                        pageUid: settings.links.dataProtectionDeclarationPid,
-                                        section: settings.links.dataProtectionDeclarationAnchor
-                                    )}"
-                        >{f:translate(key: 'dataProtectionDeclaration')}</a>
-                    </f:variable>
-
-                    <f:variable name="imprintLink">
-                        <a href="{f:uri.page(
-                                        pageUid: settings.links.imprintPid,
-                                        section: settings.links.imprintAnchor
-                                    )}"
-                        >{f:translate(key: 'imprint')}</a>
-                    </f:variable>
-
                     {f:translate(
                     key: 'introText',
                     arguments: {
@@ -47,7 +31,7 @@
                     >
                         <f:comment>
                             should have class="accordion"; due to incompatiblity with bootstrap_package
-                            left out at the moment
+                            left out at the moment - https://github.com/benjaminkott/bootstrap_package/pull/775
                         </f:comment>
                         <div id="cookieman-acco">
                             <f:for each="{settings.groups}" key="groupId" as="group">
@@ -85,47 +69,8 @@
                                                 </tr>
                                                 </thead>
                                                 <tbody>
-                                                <f:for each="{group.trackingObjects}" as="trackingObjectId">
-                                                    <f:for each="{settings.trackingObjects.{trackingObjectId}.show}"
-                                                           key="trackingItemId" as="trackingItem">
-                                                        <tr>
-                                                            <td>
-                                                                {f:translate(
-                                                                key:'trackingobject.{trackingItemId}',
-                                                                default: trackingItemId
-                                                                )}
-                                                            </td>
-                                                            <td>
-                                                                {f:translate(
-                                                                key:'trackingobject.{trackingItemId}.desc',
-                                                                default: 'missing translation:
-                                                                trackingobject.{trackingItemId}.desc'
-                                                                )}
-                                                            </td>
-                                                            <td>
-                                                                {trackingItem.duration}
-                                                                {f:translate(
-                                                                key:'duration.{trackingItem.durationUnit}',
-                                                                default: 'missing translation:
-                                                                duration.{trackingItem.durationUnit}'
-                                                                )}
-                                                            </td>
-                                                            <td>
-                                                                {f:translate(
-                                                                key:'type.{trackingItem.type}',
-                                                                default: 'missing translation:
-                                                                type.{trackingItem.type}'
-                                                                )}
-                                                            </td>
-                                                            <td>
-                                                                {f:translate(
-                                                                key: trackingItem.provider,
-                                                                default: trackingItem.provider
-                                                                )}
-                                                            </td>
-                                                        </tr>
-                                                    </f:for>
-                                                </f:for>
+                                                <f:render partial="TableRowsByGroup" section="content"
+                                                          arguments="{_all}"/>
                                                 </tbody>
                                             </table>
                                         </div>
@@ -139,8 +84,14 @@
 
             <div class="modal-footer">
                 <a data-cookieman-save
-                   href="" rel="nofollow" class="btn btn-primary btn-block">
+                   class="btn btn-default"
+                   href="" rel="nofollow"
+                >
                     {f:translate(key: 'save')}
+                </a>
+                <a data-cookieman-accept-all data-cookieman-save
+                   href="" rel="nofollow" class="btn btn-primary">
+                    {f:translate(key: 'accept')}
                 </a>
             </div>
         </div>
