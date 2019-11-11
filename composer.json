@@ -12,7 +12,7 @@
     "repositories": [
         {
             "type": "path",
-            "url": "Build/cookieman_test"
+            "url": "Build/*"
         }
     ],
     "authors": [
@@ -30,8 +30,11 @@
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.14",
         "roave/security-advisories": "dev-master",
-        "dmind/cookieman-test": "@dev",
         "helhum/typo3-console": "^5.7",
+        "dmind/cookieman-test-bootstrap3-banner": "@dev",
+        "dmind/cookieman-test-bootstrap3-modal": "@dev",
+        "dmind/cookieman-test-bootstrap4-modal": "@dev",
+        "dmind/cookieman-test-crowdin-link": "@dev",
         "typo3/testing-framework": "^4.9",
         "bk2k/extension-helper": "^1.0"
     },
@@ -79,10 +82,25 @@
             "extension-helper release:create"
         ],
         "install-extensions": [
-            "typo3 extensionmanager:extension:install bootstrap_package",
-            "typo3 extensionmanager:extension:install introduction",
-            "typo3 extensionmanager:extension:install cookieman",
-            "typo3 extensionmanager:extension:install cookieman_test"
+            "typo3 extension:activate -n bootstrap_package",
+            "typo3 extension:activate -n introduction",
+            "typo3 extension:activate -n cookieman",
+            "typo3 extension:activate -n cookieman_test_crowdin_link"
+        ],
+        "cookieman:bootstrap3-banner": [
+            "typo3 extension:deactivate -n cookieman_test_bootstrap3_modal",
+            "typo3 extension:deactivate -n cookieman_test_bootstrap4_modal",
+            "typo3 extension:activate -n cookieman_test_bootstrap3_banner"
+        ],
+        "cookieman:bootstrap3-modal": [
+            "typo3 extension:deactivate -n cookieman_test_bootstrap3_banner",
+            "typo3 extension:deactivate -n cookieman_test_bootstrap4_modal",
+            "typo3 extension:activate -n cookieman_test_bootstrap3_modal"
+        ],
+        "cookieman:bootstrap4-modal": [
+            "typo3 extension:deactivate -n cookieman_test_bootstrap3_banner",
+            "typo3 extension:deactivate -n cookieman_test_bootstrap3_modal",
+            "typo3 extension:activate -n cookieman_test_bootstrap4_modal"
         ],
         "post-autoload-dump": [
             "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"

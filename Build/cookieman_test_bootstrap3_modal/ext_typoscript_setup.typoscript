@@ -1,0 +1,3 @@
+@import 'EXT:bootstrap_package/Configuration/TypoScript/Bootstrap3/setup.typoscript'
+@import 'EXT:cookieman/Configuration/TypoScript/setup.typoscript'
+

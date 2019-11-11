@@ -1,0 +1,46 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
+<f:section name="content">
+    <f:for each="{group.trackingObjects}" as="trackingObjectId">
+        <f:for each="{settings.trackingObjects.{trackingObjectId}.show}"
+               key="trackingItemId" as="trackingItem">
+            <tr>
+                <td>
+                    {f:translate(
+                    key:'trackingobject.{trackingItemId}',
+                    default: trackingItemId
+                    )}
+                </td>
+                <td>
+                    {f:translate(
+                    key:'trackingobject.{trackingItemId}.desc',
+                    default: 'missing translation:
+                    trackingobject.{trackingItemId}.desc'
+                    )}
+                </td>
+                <td>
+                    {trackingItem.duration}
+                    {f:translate(
+                    key:'duration.{trackingItem.durationUnit}',
+                    default: 'missing translation:
+                    duration.{trackingItem.durationUnit}'
+                    )}
+                </td>
+                <td>
+                    {f:translate(
+                    key:'type.{trackingItem.type}',
+                    default: 'missing translation:
+                    type.{trackingItem.type}'
+                    )}
+                </td>
+                <td>
+                    {f:translate(
+                    key: trackingItem.provider,
+                    default: trackingItem.provider
+                    )}
+                </td>
+            </tr>
+        </f:for>
+    </f:for>
+</f:section>
+</html>
