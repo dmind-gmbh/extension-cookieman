@@ -8,75 +8,61 @@
         <target state="needs-translation">About Cookies</target>
       </trans-unit>
       <trans-unit id="dataProtectionDeclaration">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Datenschutzerklärung</source>
-        <target state="needs-translation">Datenschutzerklärung</target>
+        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Data Protection Declaration</source>
+        <target state="needs-translation">Data Protection Declaration</target>
       </trans-unit>
       <trans-unit id="imprint">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Impressum</source>
-        <target state="needs-translation">Impressum</target>
+        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Imprint</source>
+        <target state="needs-translation">Imprint</target>
       </trans-unit>
       <trans-unit id="introText">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Unsere Seite verwendet Cookies. Diese haben zwei
-                    Funktionen: Zum einen sind sie erforderlich
-                    für die grundlegende Funktionalität unserer Website. Zum anderen können wir mit Hilfe der
-                    Cookies unsere Inhalte für Sie immer weiter verbessern. Hierzu werden pseudonymisierte Daten
-                    von Website-Besuchern gesammelt und ausgewertet. Das Einverständnis in die Verwendung der
-                    Cookies können Sie jeder Zeit schriftlich widerrufen. Weitere Informationen zu Cookies auf
-                    dieser Website finden Sie in unserer %1$s und zu uns im %2$s.
-                </source>
-        <target state="needs-translation">Unsere Seite verwendet Cookies. Diese haben zwei
-                    Funktionen: Zum einen sind sie erforderlich
-                    für die grundlegende Funktionalität unserer Website. Zum anderen können wir mit Hilfe der
-                    Cookies unsere Inhalte für Sie immer weiter verbessern. Hierzu werden pseudonymisierte Daten
-                    von Website-Besuchern gesammelt und ausgewertet. Das Einverständnis in die Verwendung der
-                    Cookies können Sie jeder Zeit schriftlich widerrufen. Weitere Informationen zu Cookies auf
-                    dieser Website finden Sie in unserer %1$s und zu uns im %2$s.
-                </target>
+        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">This website uses cookies. Those have zwo functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
+        <target state="needs-translation">This website uses cookies. Those have zwo functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</target>
       </trans-unit>
       <trans-unit id="settings">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Einstellungen</source>
-        <target state="needs-translation">Einstellungen</target>
+        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Settings</source>
+        <target state="needs-translation">Settings</target>
       </trans-unit>
       <trans-unit id="settingsText">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Hier gelangen Sie zu den Cookie %1$s.</source>
-        <target state="needs-translation">Hier gelangen Sie zu den Cookie %1$s.</target>
+        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Click here for Cookie %1$s.</source>
+        <target state="needs-translation">Click here for Cookie %1$s.</target>
       </trans-unit>
       <trans-unit id="accept">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Cookies akzeptieren</source>
-        <target state="needs-translation">Cookies akzeptieren</target>
+        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Accept all cookies</source>
+        <target state="needs-translation">Accept all cookies</target>
       </trans-unit>
       <trans-unit id="save">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Einstellungen speichern</source>
-        <target state="needs-translation">Einstellungen speichern</target>
+        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Save</source>
+        <target state="needs-translation">Save</target>
       </trans-unit>
       <trans-unit id="group.mandatory">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Notwendig</source>
-        <target state="needs-translation">Notwendig</target>
+        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Mandatory</source>
+        <target state="needs-translation">Mandatory</target>
       </trans-unit>
       <trans-unit id="tableheader.name">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Name</source>
         <target state="needs-translation">Name</target>
       </trans-unit>
       <trans-unit id="tableheader.purpose">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Zweck</source>
-        <target state="needs-translation">Zweck</target>
+        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Purpose</source>
+        <target state="needs-translation">Purpose</target>
       </trans-unit>
       <trans-unit id="tableheader.duration">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Ablauf</source>
-        <target state="needs-translation">Ablauf</target>
+        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Lifetime</source>
+        <target state="needs-translation">Lifetime</target>
       </trans-unit>
       <trans-unit id="tableheader.type">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Typ</source>
-        <target state="needs-translation">Typ</target>
+        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Type</source>
+        <target state="needs-translation">Type</target>
       </trans-unit>
       <trans-unit id="tableheader.provider">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Anbieter</source>
-        <target state="needs-translation">Anbieter</target>
+        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Provider</source>
+        <target state="needs-translation">Provider</target>
       </trans-unit>
       <trans-unit id="trackingobject.CookieConsent.desc">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Speichert Ihren Zustimmungsstatus für Cookies
+        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Saves your consent to using cookies.
                 </source>
-        <target state="needs-translation">Speichert Ihren Zustimmungsstatus für Cookies
+        <target state="needs-translation">Saves your consent to using cookies.
                 </target>
       </trans-unit>
       <trans-unit id="type.cookie_http+html">
@@ -84,16 +70,8 @@
         <target state="needs-translation">HTML</target>
       </trans-unit>
       <trans-unit id="trackingobject.fe_typo_user.desc">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Ordnet Ihren Browser einer Session auf dem Server
-                    zu. Dies
-                    beeinflusst nur die Inhalte, die Sie sehen und wird von uns
-                    nicht ausgewertet oder weiterverarbeitet.
-                </source>
-        <target state="needs-translation">Ordnet Ihren Browser einer Session auf dem Server
-                    zu. Dies
-                    beeinflusst nur die Inhalte, die Sie sehen und wird von uns
-                    nicht ausgewertet oder weiterverarbeitet.
-                </target>
+        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Assigns your browser to a session on the server.</source>
+        <target state="needs-translation">Assigns your browser to a session on the server.</target>
       </trans-unit>
       <trans-unit id="duration.session">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">session</source>
@@ -108,96 +86,47 @@
         <target state="needs-translation">Marketing</target>
       </trans-unit>
       <trans-unit id="trackingobject._ga.desc">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Used to distinguish users.
-                </source>
-        <target state="needs-translation">Used to distinguish users.
-                </target>
+        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Used to distinguish users.</source>
+        <target state="needs-translation">Used to distinguish users.</target>
       </trans-unit>
       <trans-unit id="trackingobject.AMP_TOKEN.desc">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">
-                    Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible
-                    values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID
-                    service.
-                </source>
-        <target state="needs-translation">
-                    Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible
-                    values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID
-                    service.
-                </target>
+        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID
+                    service.</source>
+        <target state="needs-translation">Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID
+                    service.</target>
       </trans-unit>
       <trans-unit id="trackingobject._gac_--property-id--.desc">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">
-                    Contains campaign related information for the user. If you have linked your Google Analytics and
-                    Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.
-                </source>
-        <target state="needs-translation">
-                    Contains campaign related information for the user. If you have linked your Google Analytics and
-                    Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.
-                </target>
+        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Contains campaign related information for the user. If you have linked your Google Analytics and Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.</source>
+        <target state="needs-translation">Contains campaign related information for the user. If you have linked your Google Analytics and Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.</target>
       </trans-unit>
       <trans-unit id="trackingobject._gat.desc">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Used to throttle request rate.
-                </source>
-        <target state="needs-translation">Used to throttle request rate.
-                </target>
+        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Used to throttle request rate.</source>
+        <target state="needs-translation">Used to throttle request rate.</target>
       </trans-unit>
       <trans-unit id="trackingobject._ga_--container-id--.desc">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Persists session state.
-                </source>
-        <target state="needs-translation">Persists session state.
-                </target>
+        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Persists session state.</source>
+        <target state="needs-translation">Persists session state.</target>
       </trans-unit>
       <trans-unit id="trackingobject._gcl_au.desc">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Wird von Google AdSense zum Experimentieren mit
-                    Werbungseffizienz auf Webseiten verwendet, die ihre Dienste
-                    nutzen.
-                </source>
-        <target state="needs-translation">Wird von Google AdSense zum Experimentieren mit
-                    Werbungseffizienz auf Webseiten verwendet, die ihre Dienste
-                    nutzen.
-                </target>
+        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Used by Google AdSense to experiment with advertisement efficiency.</source>
+        <target state="needs-translation">Used by Google AdSense to experiment with advertisement efficiency.</target>
       </trans-unit>
       <trans-unit id="trackingobject._gid.desc">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Used to distinguish users.
-                </source>
-        <target state="needs-translation">Used to distinguish users.
-                </target>
+        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Used to distinguish users.</source>
+        <target state="needs-translation">Used to distinguish users.</target>
       </trans-unit>
       <trans-unit id="trackingobject.MUID.desc">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Weitgehend von Microsoft als eindeutige
-                    Benutzer-ID
-                    verwendet. Der Cookie ermöglicht Benutzer-Tracking durch
-                    Synchronisieren der ID in vielen Microsoft-Domänen.
-                </source>
-        <target state="needs-translation">Weitgehend von Microsoft als eindeutige
-                    Benutzer-ID
-                    verwendet. Der Cookie ermöglicht Benutzer-Tracking durch
-                    Synchronisieren der ID in vielen Microsoft-Domänen.
-                </target>
+        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Used as unique user identifier. The cookie allows user tracking across many Microsoft domains</source>
+        <target state="needs-translation">Used as unique user identifier. The cookie allows user tracking across many Microsoft domains</target>
       </trans-unit>
       <trans-unit id="trackingobject.MUIDB.desc">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Registriert anonyme Daten über Besucher von
-                    mehreren
-                    Besuchen und auf mehreren Webseiten. Diese Informationen
-                    werden verwendet, um die Effizienz der Werbung auf Webseiten
-                    zu messen.
-                </source>
-        <target state="needs-translation">Registriert anonyme Daten über Besucher von
-                    mehreren
-                    Besuchen und auf mehreren Webseiten. Diese Informationen
-                    werden verwendet, um die Effizienz der Werbung auf Webseiten
-                    zu messen.
-                </target>
+        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</source>
+        <target state="needs-translation">Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</target>
       </trans-unit>
       <trans-unit id="browser.dnt-enabled">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1"><![CDATA[Sie haben über die <a target="_blank" rel="noopener" href="https://de.wikipedia.org/wiki/Do_Not_Track_(Software)">Do-not-track-Funktion Ihres Browsers</a> bereits der Erstellung von Nutzungsprofilen widersprochen. Das akzeptieren wir. Sie können diese Funktion über die Einstellungen Ihres Browsers beeinflussen.]]></source>
+        <source xmlns="urn:oasis:names:tc:xliff:document:1.1"><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></source>
         <target state="needs-translation"><![CDATA[
-                    Sie haben über die <a target="_blank" rel="noopener" href="https://de.wikipedia.org/wiki/Do_Not_Track_(Software)">Do-not-track-Funktion Ihres Browsers</a> bereits der Erstellung von Nutzungsprofilen widersprochen. Das akzeptieren wir. Sie können diese Funktion über die Einstellungen Ihres Browsers beeinflussen.]]></target>
-      </trans-unit>
-      <trans-unit id="browser.dnt-explicitly-disabled">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1"><![CDATA[Sie haben über die <a target="_blank" rel="noopener" href="https://de.wikipedia.org/wiki/Do_Not_Track_(Software)">Do-not-track-Funktion Ihres Browsers</a> signalisiert, dass Sie der Erstellung von Nutzungsprofilen zustimmen. Sie können diese Funktion über die Einstellungen Ihres Browsers steuern. Es werden nur dann Nutzungsprofile erstellt, wenn Sie auch hier bei "Marketing" ein Häkchen setzen.]]></source>
-        <target state="needs-translation"><![CDATA[
-                    Sie haben über die <a target="_blank" rel="noopener" href="https://de.wikipedia.org/wiki/Do_Not_Track_(Software)">Do-not-track-Funktion Ihres Browsers</a> signalisiert, dass Sie der Erstellung von Nutzungsprofilen zustimmen. Sie können diese Funktion über die Einstellungen Ihres Browsers steuern. Es werden nur dann Nutzungsprofile erstellt, wenn Sie auch hier bei "Marketing" ein Häkchen setzen.]]></target>
+                    You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></target>
       </trans-unit>
       <trans-unit id="duration.minute">
         <source xmlns="urn:oasis:names:tc:xliff:document:1.1">
@@ -278,10 +207,6 @@
         <target state="needs-translation">
                     years
                 </target>
-      </trans-unit>
-      <trans-unit id="AMP_TOKEN">
-        <source xmlns="urn:oasis:names:tc:xliff:document:1.1">AMP_TOKEN</source>
-        <target state="needs-translation">AMP_TOKEN</target>
       </trans-unit>
     </body>
   </file>
