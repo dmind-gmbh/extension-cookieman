@@ -54,15 +54,21 @@
     height: 24px;
 }
 
-#cookieman-modal .checkbox input ~ .p-label::after {
-    content: 'Inaktiv';
+#cookieman-modal .checkbox input ~ .cookieman-label-inactive {
+    display: inline;
+}
+#cookieman-modal .checkbox input ~ .cookieman-label-active {
+    display: none;
 }
 
-#cookieman-modal .checkbox :checked ~ .p-label::after {
-    content: 'Aktiv';
+#cookieman-modal .checkbox :checked ~ .cookieman-label-inactive {
+    display: none;
+}
+#cookieman-modal .checkbox :checked ~ .cookieman-label-active {
+    display: inline;
 }
 
-#cookieman-modal .checkbox .p-check-icon {
+#cookieman-modal .checkbox .cookieman-check-icon {
     display: inline-block;
     vertical-align: top;
     cursor: pointer;
@@ -72,7 +78,7 @@
     height: 24px;
 }
 
-#cookieman-modal .checkbox .p-check-block {
+#cookieman-modal .checkbox .cookieman-check-block {
     position: absolute;
     left: 0;
     top: 0;
@@ -82,13 +88,13 @@
     background-color: #ededed;
 }
 
-#cookieman-modal .checkbox :checked ~ .p-check-icon .p-check-block::after {
+#cookieman-modal .checkbox :checked ~ .cookieman-check-icon .cookieman-check-block::after {
     opacity: 1;
     -ms-filter: none;
     filter: none;
 }
 
-#cookieman-modal .checkbox .p-check-block::after {
+#cookieman-modal .checkbox .cookieman-check-block::after {
     transition: all 0.2s linear 0s;
     content: "";
     width: 14px;
