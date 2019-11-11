@@ -3,166 +3,166 @@
   <file source-language="en" datatype="plaintext" original="Frontend" date="2019-10-28T12:20:51Z" product-name="cookieman" target-language="de">
     <header/>
     <body>
-      <trans-unit id="heading" resname="heading">
+      <trans-unit id="heading" resname="heading" approved="yes">
         <source>About Cookies</source>
-        <target state="translated">Hinweis zu Cookies</target>
+        <target state="final">Hinweis zu Cookies</target>
       </trans-unit>
-      <trans-unit id="dataProtectionDeclaration" resname="dataProtectionDeclaration">
+      <trans-unit id="dataProtectionDeclaration" resname="dataProtectionDeclaration" approved="yes">
         <source>Data Protection Declaration</source>
-        <target state="translated">Datenschutzerklärung</target>
+        <target state="final">Datenschutzerklärung</target>
       </trans-unit>
-      <trans-unit id="imprint" resname="imprint">
+      <trans-unit id="imprint" resname="imprint" approved="yes">
         <source>Imprint</source>
-        <target state="translated">Impressum</target>
+        <target state="final">Impressum</target>
       </trans-unit>
-      <trans-unit id="introText" resname="introText">
+      <trans-unit id="introText" resname="introText" approved="yes">
         <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
-        <target state="translated">Unsere Webseite verwendet Cookies. Diese haben zwei Funktionen: Zum einen sind sie erforderlich für die grundlegende Funktionalität unserer Website. Zum anderen können wir mit Hilfe der Cookies unsere Inhalte für Sie immer weiter verbessern. Hierzu werden pseudonymisierte Daten von Website-Besuchern gesammelt und ausgewertet. Das Einverständnis in die Verwendung der Cookies können Sie jederzeit widerrufen. Weitere Informationen zu Cookies auf auf Website finden Sie in unserer %1$s und zu uns im %2$s.</target>
+        <target state="final">Unsere Webseite verwendet Cookies. Diese haben zwei Funktionen: Zum einen sind sie erforderlich für die grundlegende Funktionalität unserer Website. Zum anderen können wir mit Hilfe der Cookies unsere Inhalte für Sie immer weiter verbessern. Hierzu werden pseudonymisierte Daten von Website-Besuchern gesammelt und ausgewertet. Das Einverständnis in die Verwendung der Cookies können Sie jederzeit widerrufen. Weitere Informationen zu Cookies auf auf Website finden Sie in unserer %1$s und zu uns im %2$s.</target>
       </trans-unit>
-      <trans-unit id="settings" resname="settings">
+      <trans-unit id="settings" resname="settings" approved="yes">
         <source>Settings</source>
-        <target state="translated">Einstellungen</target>
+        <target state="final">Einstellungen</target>
       </trans-unit>
-      <trans-unit id="settingsText" resname="settingsText">
+      <trans-unit id="settingsText" resname="settingsText" approved="yes">
         <source>Click here for Cookie %1$s.</source>
-        <target state="translated">Hier gelangen Sie zu den Cookie %1$s.</target>
+        <target state="final">Hier gelangen Sie zu den Cookie %1$s.</target>
       </trans-unit>
-      <trans-unit id="accept" resname="accept">
+      <trans-unit id="accept" resname="accept" approved="yes">
         <source>Accept all cookies</source>
-        <target state="translated">Alle Cookies akzeptieren</target>
+        <target state="final">Alle Cookies akzeptieren</target>
       </trans-unit>
-      <trans-unit id="save" resname="save">
+      <trans-unit id="save" resname="save" approved="yes">
         <source>Save</source>
-        <target state="translated">Speichern</target>
+        <target state="final">Speichern</target>
       </trans-unit>
-      <trans-unit id="group.mandatory" resname="group.mandatory">
+      <trans-unit id="group.mandatory" resname="group.mandatory" approved="yes">
         <source>Mandatory</source>
-        <target state="translated">Erforderlich</target>
+        <target state="final">Erforderlich</target>
       </trans-unit>
-      <trans-unit id="tableheader.name" resname="tableheader.name">
+      <trans-unit id="tableheader.name" resname="tableheader.name" approved="yes">
         <source>Name</source>
-        <target state="translated">Name</target>
+        <target state="final">Name</target>
       </trans-unit>
-      <trans-unit id="tableheader.purpose" resname="tableheader.purpose">
+      <trans-unit id="tableheader.purpose" resname="tableheader.purpose" approved="yes">
         <source>Purpose</source>
-        <target state="translated">Zweck</target>
+        <target state="final">Zweck</target>
       </trans-unit>
-      <trans-unit id="tableheader.duration" resname="tableheader.duration">
+      <trans-unit id="tableheader.duration" resname="tableheader.duration" approved="yes">
         <source>Lifetime</source>
-        <target state="translated">Ablauf</target>
+        <target state="final">Ablauf</target>
       </trans-unit>
-      <trans-unit id="tableheader.type" resname="tableheader.type">
+      <trans-unit id="tableheader.type" resname="tableheader.type" approved="yes">
         <source>Type</source>
-        <target state="translated">Typ</target>
+        <target state="final">Typ</target>
       </trans-unit>
-      <trans-unit id="tableheader.provider" resname="tableheader.provider">
+      <trans-unit id="tableheader.provider" resname="tableheader.provider" approved="yes">
         <source>Provider</source>
-        <target state="translated">Anbieter</target>
+        <target state="final">Anbieter</target>
       </trans-unit>
-      <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc">
+      <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc" approved="yes">
         <source>Saves your consent to using cookies.</source>
-        <target state="translated">Speichert Ihre Einwilligung zur Verwendung von Cookies.</target>
+        <target state="final">Speichert Ihre Einwilligung zur Verwendung von Cookies.</target>
       </trans-unit>
-      <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html">
+      <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html" approved="yes">
         <source>HTML</source>
-        <target state="translated">HTML</target>
+        <target state="final">HTML</target>
       </trans-unit>
-      <trans-unit id="trackingobject.fe_typo_user.desc" resname="trackingobject.fe_typo_user.desc">
+      <trans-unit id="trackingobject.fe_typo_user.desc" resname="trackingobject.fe_typo_user.desc" approved="yes">
         <source>Assigns your browser to a session on the server.</source>
-        <target state="translated">Ordnet Ihren Browser einer Session auf dem Server zu. Dies beeinflusst nur die Inhalte, die Sie sehen und wird von uns nicht ausgewertet oder weiterverarbeitet.</target>
+        <target state="final">Ordnet Ihren Browser einer Session auf dem Server zu. Dies beeinflusst nur die Inhalte, die Sie sehen und wird von uns nicht ausgewertet oder weiterverarbeitet.</target>
       </trans-unit>
-      <trans-unit id="duration.session" resname="duration.session">
+      <trans-unit id="duration.session" resname="duration.session" approved="yes">
         <source>session</source>
-        <target state="translated">Session</target>
+        <target state="final">Session</target>
       </trans-unit>
-      <trans-unit id="type.cookie_http" resname="type.cookie_http">
+      <trans-unit id="type.cookie_http" resname="type.cookie_http" approved="yes">
         <source>HTTP</source>
-        <target state="translated">HTTP</target>
+        <target state="final">HTTP</target>
       </trans-unit>
-      <trans-unit id="group.marketing" resname="group.marketing">
+      <trans-unit id="group.marketing" resname="group.marketing" approved="yes">
         <source>Marketing</source>
-        <target state="translated">Marketing</target>
+        <target state="final">Marketing</target>
       </trans-unit>
-      <trans-unit id="trackingobject._ga.desc" resname="trackingobject._ga.desc">
+      <trans-unit id="trackingobject._ga.desc" resname="trackingobject._ga.desc" approved="yes">
         <source>Used to distinguish users.</source>
-        <target state="translated">Wird verwendet, um Benutzer zu unterscheiden.</target>
+        <target state="final">Wird verwendet, um Benutzer zu unterscheiden.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.AMP_TOKEN.desc" resname="trackingobject.AMP_TOKEN.desc">
+      <trans-unit id="trackingobject.AMP_TOKEN.desc" resname="trackingobject.AMP_TOKEN.desc" approved="yes">
         <source>Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID
                     service.</source>
-        <target state="translated">Enthält ein Token, das verwendet werden kann, um eine Client-ID vom AMP-Client-ID-Dienst abzurufen.</target>
+        <target state="final">Enthält ein Token, das verwendet werden kann, um eine Client-ID vom AMP-Client-ID-Dienst abzurufen.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._gac_--property-id--.desc" resname="trackingobject._gac_--property-id--.desc">
+      <trans-unit id="trackingobject._gac_--property-id--.desc" resname="trackingobject._gac_--property-id--.desc" approved="yes">
         <source>Contains campaign related information for the user. If you have linked your Google Analytics and Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.</source>
-        <target state="translated">Enthält Informationen zu Kampagnen für den Benutzer. Wenn Sie Ihre Google Analytics und Google Ads Konten verknüpft haben, werden Elemente zur Effizienzmessung dieses Cookie lesen.</target>
+        <target state="final">Enthält Informationen zu Kampagnen für den Benutzer. Wenn Sie Ihre Google Analytics und Google Ads Konten verknüpft haben, werden Elemente zur Effizienzmessung dieses Cookie lesen.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._gat.desc" resname="trackingobject._gat.desc">
+      <trans-unit id="trackingobject._gat.desc" resname="trackingobject._gat.desc" approved="yes">
         <source>Used to throttle request rate.</source>
-        <target state="translated">Wird zum Drosseln der Anfragerate verwendet.</target>
+        <target state="final">Wird zum Drosseln der Anfragerate verwendet.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._ga_--container-id--.desc" resname="trackingobject._ga_--container-id--.desc">
+      <trans-unit id="trackingobject._ga_--container-id--.desc" resname="trackingobject._ga_--container-id--.desc" approved="yes">
         <source>Persists session state.</source>
-        <target state="translated">Speichert den aktuellen Sessionstatus.</target>
+        <target state="final">Speichert den aktuellen Sessionstatus.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._gcl_au.desc" resname="trackingobject._gcl_au.desc">
+      <trans-unit id="trackingobject._gcl_au.desc" resname="trackingobject._gcl_au.desc" approved="yes">
         <source>Used by Google AdSense to experiment with advertisement efficiency.</source>
-        <target state="translated">Wird von Google AdSense zum Experimentieren mit Werbungseffizienz auf Webseiten verwendet.</target>
+        <target state="final">Wird von Google AdSense zum Experimentieren mit Werbungseffizienz auf Webseiten verwendet.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._gid.desc" resname="trackingobject._gid.desc">
+      <trans-unit id="trackingobject._gid.desc" resname="trackingobject._gid.desc" approved="yes">
         <source>Used to distinguish users.</source>
-        <target state="translated">Wird für die Nutzerunterscheidung genutzt.</target>
+        <target state="final">Wird für die Nutzerunterscheidung genutzt.</target>
       </trans-unit>
       <trans-unit id="trackingobject.MUID.desc" resname="trackingobject.MUID.desc" approved="yes">
         <source>Used as unique user identifier. The cookie allows user tracking across many Microsoft domains</source>
         <target state="final">Wird als eindeutige Benutzer-ID verwendet. Der Cookie ermöglicht Benutzer-Tracking durch Synchronisieren der ID in vielen Microsoft-Domänen.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.MUIDB.desc" resname="trackingobject.MUIDB.desc">
+      <trans-unit id="trackingobject.MUIDB.desc" resname="trackingobject.MUIDB.desc" approved="yes">
         <source>Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</source>
-        <target state="translated">Registriert anonyme Daten über Besucher von mehreren Besuchen und auf mehreren Webseiten. Diese Informationen werden verwendet, um die Effizienz der Werbung auf Webseiten zu messen.</target>
+        <target state="final">Registriert anonyme Daten über Besucher von mehreren Besuchen und auf mehreren Webseiten. Diese Informationen werden verwendet, um die Effizienz der Werbung auf Webseiten zu messen.</target>
       </trans-unit>
-      <trans-unit id="browser.dnt-enabled" resname="browser.dnt-enabled">
+      <trans-unit id="browser.dnt-enabled" resname="browser.dnt-enabled" approved="yes">
         <source><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></source>
-        <target state="needs-translation"><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></target>
+        <target state="final"><![CDATA[Sie haben über die <a target="_blank" rel="noopener" href="https://de.wikipedia.org/wiki/Do_Not_Track_(Software)">Do-not-track-Funktion Ihres Browsers</a> bereits der Erstellung von Nutzungsprofilen widersprochen. Das akzeptieren wir. Sie können diese Funktion über die Einstellungen Ihres Browsers beeinflussen.]]></target>
       </trans-unit>
-      <trans-unit id="duration.minute" resname="duration.minute">
+      <trans-unit id="duration.minute" resname="duration.minute" approved="yes">
         <source>minute</source>
-        <target state="translated">Minute</target>
+        <target state="final">Minute</target>
       </trans-unit>
-      <trans-unit id="duration.minutes" resname="duration.minutes">
+      <trans-unit id="duration.minutes" resname="duration.minutes" approved="yes">
         <source>minutes</source>
-        <target state="translated">Minuten</target>
+        <target state="final">Minuten</target>
       </trans-unit>
-      <trans-unit id="duration.hour" resname="duration.hour">
+      <trans-unit id="duration.hour" resname="duration.hour" approved="yes">
         <source>hour</source>
-        <target state="translated">Stunde</target>
+        <target state="final">Stunde</target>
       </trans-unit>
-      <trans-unit id="duration.hours" resname="duration.hours">
+      <trans-unit id="duration.hours" resname="duration.hours" approved="yes">
         <source>hours</source>
-        <target state="translated">Stunden</target>
+        <target state="final">Stunden</target>
       </trans-unit>
-      <trans-unit id="duration.day" resname="duration.day">
+      <trans-unit id="duration.day" resname="duration.day" approved="yes">
         <source>day</source>
-        <target state="translated">Tag</target>
+        <target state="final">Tag</target>
       </trans-unit>
-      <trans-unit id="duration.days" resname="duration.days">
+      <trans-unit id="duration.days" resname="duration.days" approved="yes">
         <source>days</source>
-        <target state="translated">Tage</target>
+        <target state="final">Tage</target>
       </trans-unit>
-      <trans-unit id="duration.month" resname="duration.month">
+      <trans-unit id="duration.month" resname="duration.month" approved="yes">
         <source>month</source>
-        <target state="translated">Monat</target>
+        <target state="final">Monat</target>
       </trans-unit>
-      <trans-unit id="duration.months" resname="duration.months">
+      <trans-unit id="duration.months" resname="duration.months" approved="yes">
         <source>months</source>
-        <target state="translated">Monate</target>
+        <target state="final">Monate</target>
       </trans-unit>
-      <trans-unit id="duration.year" resname="duration.year">
+      <trans-unit id="duration.year" resname="duration.year" approved="yes">
         <source>year</source>
-        <target state="translated">Jahr</target>
+        <target state="final">Jahr</target>
       </trans-unit>
-      <trans-unit id="duration.years" resname="duration.years">
+      <trans-unit id="duration.years" resname="duration.years" approved="yes">
         <source>years</source>
-        <target state="translated">Jahre</target>
+        <target state="final">Jahre</target>
       </trans-unit>
     </body>
   </file>
