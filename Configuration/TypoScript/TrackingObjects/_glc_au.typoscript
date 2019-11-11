@@ -1,8 +1,0 @@
-plugin.tx_cookieman.settings.trackingObjects {
-    _gcl_au {
-        duration = 3
-        durationUnit = months
-        type = cookie_http+html
-        provider = Google
-    }
-}

@@ -30,6 +30,13 @@ plugin.tx_cookieman {
             imprintAnchor = {$plugin.tx_cookieman.settings.links.imprintAnchor}
         }
 
+        # Overwrite this key completely ...
+        # plugin.tx_cookieman.settings.groups >
+        # ... and add the groups and tracking objects that you need.
+        # Don't forget to add translations for:
+        # * group.{key, e.g. marketing}
+        # * group.{key, e.g. marketing}.desc (if you want an introductory text block)
+        # * trackingobject.{key, e.g.CookieConsent}.desc
         groups {
             # key must be valid for HTML-ids
             mandatory {
@@ -37,20 +44,24 @@ plugin.tx_cookieman {
                 preselected = 1
                 # control disabled?
                 disabled = 1
-                # included tracking objects in this group
+                # included tracking objects in this group. See plugin.tx_cookieman.settings.trackingObjects
                 trackingObjects {
                     0 = CookieConsent
                     1 = fe_typo_user
                 }
             }
+
             marketing {
                 trackingObjects {
-                    0 = GoogleAnalytics
-                    1 = Bing
+                    0 = Matomo
+                    1 = GoogleAnalytics
+                    2 = GoogleTagManager
+                    3 = Bing
                 }
+
                 # only consider consented together with browser D-N-T https://en.wikipedia.org/wiki/Do_Not_Track
                 respectDnt = 1
-                # show message when DNT is selected
+                # show message when browser's Do-Not-Track is sent
                 showDntMessage = 1
             }
         }
@@ -71,12 +82,12 @@ page {
     includeJSFooter {
         cookie-js = EXT:cookieman/Resources/Public/Js/js.cookie-2.2.0.min.js
         cookieman = EXT:cookieman/Resources/Public/Js/cookieman.js
-        cookieman-framework-specific = {$plugin.tx_cookieman.settings.resourcesBasePath}/Public/Themes/{$plugin.tx_cookieman.settings.theme}/cookieman-theme.js
+        cookieman-theme = {$plugin.tx_cookieman.settings.resourcesBasePath}/Public/Themes/{$plugin.tx_cookieman.settings.theme}/cookieman-theme.js
         cookieman-init = EXT:cookieman/Resources/Public/Js/cookieman-init.js
     }
 
     includeCSS {
-        cookieman-framework-specific = {$plugin.tx_cookieman.settings.resourcesBasePath}/Public/Themes/{$plugin.tx_cookieman.settings.theme}/cookieman-theme.css
+        cookieman-theme = {$plugin.tx_cookieman.settings.resourcesBasePath}/Public/Themes/{$plugin.tx_cookieman.settings.theme}/cookieman-theme.css
     }
 
     1365499 = FLUIDTEMPLATE
