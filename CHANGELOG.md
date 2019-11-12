@@ -1,3 +1,9 @@
+# 2.0.7
+
+## MISC
+- use DataProcessor to enable settings overwritability ebf1e035
+- fix duplicate key f93ced98
+
 # 2.0.6
 
 ## MISC
