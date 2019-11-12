@@ -42,9 +42,9 @@
         <source>Mandatory</source>
         <target state="final">Erforderlich</target>
       </trans-unit>
-      <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc">
+      <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc" approved="yes">
         <source>These cookies are needed for a smooth operation of our website.</source>
-        <target state="translated">Diese Cookies werden für eine reibungslose Funktion unserer Website benötigt.</target>
+        <target state="final">Diese Cookies werden für eine reibungslose Funktion unserer Website benötigt.</target>
       </trans-unit>
       <trans-unit id="tableheader.name" resname="tableheader.name" approved="yes">
         <source>Name</source>
@@ -90,9 +90,9 @@
         <source>Marketing</source>
         <target state="final">Marketing</target>
       </trans-unit>
-      <trans-unit id="group.marketing.desc" resname="group.marketing">
+      <trans-unit id="group.marketing.desc" resname="group.marketing" approved="yes">
         <source>With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</source>
-        <target state="translated">Mit Hilfe dieser Cookies sind wir bemüht unser Angebot für Sie noch attraktiver zu gestalten. Mittels pseudonymisierter Daten von Websitenutzern kann der Nutzerfluss analysiert und beurteilt werden. Dies gibt uns die Möglichkeit Werbe- und Websiteinhalte zu optimieren.</target>
+        <target state="final">Mit Hilfe dieser Cookies sind wir bemüht unser Angebot für Sie noch attraktiver zu gestalten. Mittels pseudonymisierter Daten von Websitenutzern kann der Nutzerfluss analysiert und beurteilt werden. Dies gibt uns die Möglichkeit Werbe- und Websiteinhalte zu optimieren.</target>
       </trans-unit>
       <trans-unit id="trackingobject._ga.desc" resname="trackingobject._ga.desc" approved="yes">
         <source>Used to distinguish users.</source>
@@ -175,21 +175,21 @@
         <source>years</source>
         <target state="final">Jahre</target>
       </trans-unit>
-      <trans-unit id="active" resname="active">
+      <trans-unit id="active" resname="active" approved="yes">
         <source>active</source>
-        <target state="translated">aktiv</target>
+        <target state="final">aktiv</target>
       </trans-unit>
-      <trans-unit id="alwaysactive" resname="alwaysactive">
+      <trans-unit id="alwaysactive" resname="alwaysactive" approved="yes">
         <source>always active</source>
-        <target state="translated">immer aktiv</target>
+        <target state="final">immer aktiv</target>
       </trans-unit>
-      <trans-unit id="inactive" resname="inactive">
+      <trans-unit id="inactive" resname="inactive" approved="yes">
         <source>inactive</source>
-        <target state="translated">inaktiv</target>
+        <target state="final">inaktiv</target>
       </trans-unit>
-      <trans-unit id="alwaysinactive" resname="alwaysinactive">
+      <trans-unit id="alwaysinactive" resname="alwaysinactive" approved="yes">
         <source>always inactive</source>
-        <target state="translated">immer inaktiv</target>
+        <target state="final">immer inaktiv</target>
       </trans-unit>
     </body>
   </file>
