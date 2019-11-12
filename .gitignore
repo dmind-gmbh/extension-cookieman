@@ -2,12 +2,13 @@
 
 # composer
 /vendor/
-composer.lock
+/composer.lock
 
 # Build stuff
 /.build/
 /Build/.phpunit.result.cache
-/node_modules/
+/Build/node_modules/
+/Build/mix-manifest.json
 
 # CGL Fixer
 /.php_cs.cache
