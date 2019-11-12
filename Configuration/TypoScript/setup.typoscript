@@ -2,26 +2,6 @@
 @import 'EXT:cookieman/Configuration/TypoScript/TrackingObjects/*.typoscript'
 
 plugin.tx_cookieman {
-    view {
-        templateRootPaths {
-            0 = EXT:cookieman/Resources/Private/Templates/
-            10 = EXT:cookieman/Resources/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Templates/
-            100 = {$plugin.tx_cookieman.settings.resourcesBasePath}/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Templates/
-        }
-
-        partialRootPaths {
-            0 = EXT:cookieman/Resources/Private/Partials/
-            10 = EXT:cookieman/Resources/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Partials/
-            100 = {$plugin.tx_cookieman.settings.resourcesBasePath}/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Partials/
-        }
-
-        layoutRootPaths {
-            0 = EXT:cookieman/Resources/Private/Layouts/
-            10 = EXT:cookieman/Resources/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Layouts/
-            100 = {$plugin.tx_cookieman.settings.resourcesBasePath}/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Layouts/
-        }
-    }
-
     settings {
         links {
             dataProtectionDeclarationPid = {$plugin.tx_cookieman.settings.links.dataProtectionDeclarationPid}
@@ -65,11 +45,6 @@ plugin.tx_cookieman {
                 showDntMessage = 1
             }
         }
-
-        exportToHtml {
-            groups < plugin.tx_cookieman.settings.groups
-            trackingObjects < plugin.tx_cookieman.settings.trackingObjects
-        }
     }
 }
 
@@ -88,13 +63,30 @@ page {
     1365499 = FLUIDTEMPLATE
     1365499 {
         templateName = Popup
-        templateRootPaths < plugin.tx_cookieman.view.templateRootPaths
-        partialRootPaths < plugin.tx_cookieman.view.partialRootPaths
-        layoutRootPaths < plugin.tx_cookieman.view.layoutRootPaths
+        templateRootPaths {
+            0 = EXT:cookieman/Resources/Private/Templates/
+            10 = EXT:cookieman/Resources/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Templates/
+            100 = {$plugin.tx_cookieman.settings.resourcesBasePath}/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Templates/
+        }
 
-        settings < plugin.tx_cookieman.settings
+        partialRootPaths {
+            0 = EXT:cookieman/Resources/Private/Partials/
+            10 = EXT:cookieman/Resources/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Partials/
+            100 = {$plugin.tx_cookieman.settings.resourcesBasePath}/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Partials/
+        }
+
+        layoutRootPaths {
+            0 = EXT:cookieman/Resources/Private/Layouts/
+            10 = EXT:cookieman/Resources/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Layouts/
+            100 = {$plugin.tx_cookieman.settings.resourcesBasePath}/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Layouts/
+        }
 
         // allows to omit extension name in f:translate ViewHelpers
         extbase.controllerExtensionName = cookieman
+
+        # evaluate settings during rendering. With FLUIDTEMPLATE.settings we would prevent overwritability
+        dataProcessing {
+            1 = Dmind\Cookieman\DataProcessing\TypoScriptSettingsProcessor
+        }
     }
 }
