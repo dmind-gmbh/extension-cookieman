@@ -67,6 +67,7 @@
             "phpunit -c Build/UnitTests.xml"
         ],
         "cookieman:test": [
+            "@cookieman:cgl:test",
             "@cookieman:test:php:unit"
         ],
         "cookieman:cgl:test": [
@@ -75,11 +76,21 @@
         "cookieman:cgl:fix": [
             "php-cs-fixer --config=.php_cs.dist fix --using-cache=no"
         ],
+        "cookieman:build:prod": [
+            "yarn --cwd=Build/ run prod"
+        ],
         "install-typo3": [
             "typo3cms install:setup --admin-user-name=admin --admin-password=adminadmin --no-interaction"
         ],
+        "cookieman:release:prepare": [
+            "@cookieman:build:prod",
+            "[ -z \"$(git status --porcelain)\" ] || ( echo Working copy not clean; exit 1 )",
+            "@cookieman:test"
+        ],
         "cookieman:release:create": [
-            "extension-helper release:create"
+            "composer cookieman:release:prepare || exit $?",
+            "extension-helper release:create",
+            "rm cookieman_*.zip || exit $?"
         ],
         "install-extensions": [
             "typo3 extension:activate -n bootstrap_package",
