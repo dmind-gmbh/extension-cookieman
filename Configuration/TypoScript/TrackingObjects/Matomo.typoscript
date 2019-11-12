@@ -1,4 +1,5 @@
 # https://developer.matomo.org/guides/tracking-javascript-guide
+# https://matomo.org/faq/general/faq_146/
 plugin.tx_cookieman.settings.trackingObjects {
     Matomo {
         inject (
