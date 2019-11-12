@@ -199,7 +199,9 @@ plugin.tx_cookieman.settings {
 
 plugin.tx_cookieman._LOCAL_LANG {
   en {
+    trackingobject\.pixelphp = You can translate the name, but you do not have to.
     trackingobject\.pixelphp\.desc = My own tracking pixel does not really track you. It's just here to cheer you up.
-    heading = a new heading
+    group\.mygroup = My group is my castle.
   }
+  default < .en
 }
