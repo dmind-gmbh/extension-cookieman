@@ -28,6 +28,8 @@
         "typo3/cms-core": "^8.7.0"
     },
     "require-dev": {
+        "bk2k/bootstrap-package": "^8.0 || ^10.0",
+        "typo3/cms-tstemplate": "*",
         "friendsofphp/php-cs-fixer": "^2.14",
         "roave/security-advisories": "dev-master",
         "dmind/cookieman-test-bootstrap3-banner": "@dev",

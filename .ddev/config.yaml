@@ -22,12 +22,15 @@ hooks:
         - exec-host: mkdir -p .build/public/typo3conf/
     post-start:
         - exec: yarn install
-        - composer: update
+        # this looks extra-weird... It works around typo3/cms-introduction depend on bs-p ^8.0 while I want ^10.0
+        - composer: require --dev typo3/cms-introduction:^3.0.2
         - exec: |
             if [[ $(mysql -e "SHOW TABLES" | wc -l) -eq 0 ]]; then
               composer install-typo3
             fi
         - composer: install-extensions
+        - composer: remove --dev typo3/cms-introduction
+        - composer: update bk2k/bootstrap-package
         - composer: cookieman:bootstrap3-banner
 
 # This config.yaml was created with ddev version v1.11.2
