@@ -21,7 +21,7 @@ hooks:
     pre-start:
         - exec-host: mkdir -p .build/public/typo3conf/
     post-start:
-        - exec: yarn install
+        - exec: yarn install --save-dev --cwd=Build/
         - composer: update
         - exec: |
             if [[ $(mysql -e "SHOW TABLES" | wc -l) -eq 0 ]]; then
