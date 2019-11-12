@@ -1,5 +1,5 @@
 APIVersion: v1.11.2
-name: extension-cookieman
+name: extension-cookieman-9lts
 type: typo3
 docroot: .build/public
 php_version: "7.2"
