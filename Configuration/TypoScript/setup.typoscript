@@ -76,13 +76,13 @@ plugin.tx_cookieman {
 page {
     includeJSFooter {
         cookie-js = EXT:cookieman/Resources/Public/Js/js.cookie-2.2.0.min.js
-        cookieman = EXT:cookieman/Resources/Public/Js/cookieman.js
-        cookieman-theme = {$plugin.tx_cookieman.settings.resourcesBasePath}/Public/Themes/{$plugin.tx_cookieman.settings.theme}/cookieman-theme.js
-        cookieman-init = EXT:cookieman/Resources/Public/Js/cookieman-init.js
+        cookieman = EXT:cookieman/Resources/Public/Js/cookieman.min.js
+        cookieman-theme = {$plugin.tx_cookieman.settings.resourcesBasePath}/Public/Themes/{$plugin.tx_cookieman.settings.theme}/cookieman-theme.min.js
+        cookieman-init = EXT:cookieman/Resources/Public/Js/cookieman-init.min.js
     }
 
     includeCSS {
-        cookieman-theme = {$plugin.tx_cookieman.settings.resourcesBasePath}/Public/Themes/{$plugin.tx_cookieman.settings.theme}/cookieman-theme.css
+        cookieman-theme = {$plugin.tx_cookieman.settings.resourcesBasePath}/Public/Themes/{$plugin.tx_cookieman.settings.theme}/cookieman-theme.min.css
     }
 
     1365499 = FLUIDTEMPLATE

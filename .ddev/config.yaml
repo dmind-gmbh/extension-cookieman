@@ -21,7 +21,7 @@ hooks:
     pre-start:
         - exec-host: mkdir -p .build/public/typo3conf/
     post-start:
-        - exec: yarn install
+        - exec: yarn install --save-dev --cwd=Build/
         - composer: update
         # quick-and-dirty TYPO3 setup; typo3-console would be very handy but it is not ready for TYPO3v10 yet
         - exec: |
