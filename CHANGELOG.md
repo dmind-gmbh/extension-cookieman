@@ -1,3 +1,9 @@
+# 2.0.8
+
+## MISC
+- edit example - finally had the idea how to fix the translation-via-TypoScript issue. 25300fe3
+- add example 193ebc9c
+
 # 2.0.7
 
 ## MISC
