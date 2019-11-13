@@ -8,7 +8,7 @@
  */
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'd-mind Cookieman',
+    'title' => 'Cookieman',
     'description' => 'A GDPR tracking consent popup. It asks for approval to include tracking objects (cookies, images or any HTML) and includes the objects when consented.',
     'category' => 'frontend',
     'author' => 'Jonas Eberle',
