@@ -1,5 +1,13 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:cookieman/Configuration/TypoScript/constants.typoscript">
 
+# disable compression and concatenation of CSS and JS files
+config {
+    compressJs = 0
+    compressCss = 0
+    concatenateJs = 0
+    concatenateCss = 0
+}
+
 # test config for bootstrap_package
 page.theme.cookieconsent.enable = 0
 
@@ -13,5 +21,6 @@ plugin.tx_cookieman {
             imprintPid = 10
             imprintAnchor = imprintAnchor
         }
+        minify = 0
     }
 }

@@ -98,3 +98,17 @@ page {
         extbase.controllerExtensionName = cookieman
     }
 }
+
+[globalVar = LIT:0 = {$plugin.tx_cookieman.settings.minify}]
+page {
+    includeJSFooter {
+        cookieman := removeString(.min)
+        cookieman-theme := removeString(.min)
+        cookieman-init := removeString(.min)
+    }
+
+    includeCSS {
+        cookieman-theme := removeString(.min)
+    }
+}
+[end]

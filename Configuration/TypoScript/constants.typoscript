@@ -14,5 +14,7 @@ plugin.tx_cookieman {
             # cat=plugin.tx_cookieman/links; type=string; label=anchor within imprint (if needed)
             imprintAnchor =
         }
+        # cat=plugin.tx_cookieman/assets; type=boolean; label=include minified CSS/JS (disable for development)
+        minify = 1
     }
 }
