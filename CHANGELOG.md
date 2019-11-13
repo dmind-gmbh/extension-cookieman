@@ -1,3 +1,69 @@
+# 2.1.2
+
+## MISC
+- README (2) 0ce5094
+- README fb0bcf0
+- use SEL for Typo3v9+ bc69c6e
+- make minify configurable a1a2ec3
+- New translations locallang.xlf (Vietnamese) 444c28b
+- New translations locallang.xlf (Catalan) 6588ccf
+- New translations locallang.xlf (Chinese Simplified) ce74d2d
+- New translations locallang.xlf (Czech) 518c25a
+- New translations locallang.xlf (Danish) 4dbfd16
+- New translations locallang.xlf (Dutch) f9a016f
+- New translations locallang.xlf (Finnish) 3695641
+- New translations locallang.xlf (French) 875cbd6
+- New translations locallang.xlf (German) 0fc76fb
+- New translations locallang.xlf (Greek) c82ff54
+- New translations locallang.xlf (Hebrew) b5d3e1c
+- New translations locallang.xlf (Hungarian) efd5ee9
+- New translations locallang.xlf (Arabic) 34a4298
+- New translations locallang.xlf (Italian) b580adf
+- New translations locallang.xlf (Korean) 10646e1
+- New translations locallang.xlf (Norwegian) 9d881b8
+- New translations locallang.xlf (Polish) 1a9d93d
+- New translations locallang.xlf (Portuguese) 0ac80cb
+- New translations locallang.xlf (Romanian) f87053c
+- New translations locallang.xlf (Russian) 3bc1ed9
+- New translations locallang.xlf (Serbian (Cyrillic)) 84f71ec
+- New translations locallang.xlf (Spanish) fd38acc
+- New translations locallang.xlf (Swedish) fd7e105
+- New translations locallang.xlf (Turkish) 9b3b8c7
+- New translations locallang.xlf (Ukrainian) 775a6ee
+- New translations locallang.xlf (Japanese) c289424
+- New translations locallang.xlf (Afrikaans) f10be1f
+- New translations locallang.xlf (Vietnamese) 7d7d051
+- New translations locallang.xlf (Catalan) ca8c80c
+- New translations locallang.xlf (Chinese Simplified) 7ca2334
+- New translations locallang.xlf (Czech) 55ee6b4
+- New translations locallang.xlf (Danish) 07b15ef
+- New translations locallang.xlf (Dutch) 4a92e7a
+- New translations locallang.xlf (Finnish) 19a295e
+- New translations locallang.xlf (French) a56e054
+- New translations locallang.xlf (Greek) 7213773
+- New translations locallang.xlf (Hebrew) 63b9b67
+- New translations locallang.xlf (Hungarian) 69deef3
+- New translations locallang.xlf (Arabic) 155e763
+- New translations locallang.xlf (Italian) 9cf860d
+- New translations locallang.xlf (Korean) abd9a51
+- New translations locallang.xlf (Norwegian) 911fd2c
+- New translations locallang.xlf (Polish) 9fef8cc
+- New translations locallang.xlf (Portuguese) 004d836
+- New translations locallang.xlf (Romanian) 75795da
+- New translations locallang.xlf (Russian) b74481c
+- New translations locallang.xlf (Serbian (Cyrillic)) 04cec38
+- New translations locallang.xlf (Spanish) 864f251
+- New translations locallang.xlf (Swedish) bca402a
+- New translations locallang.xlf (Turkish) cd98d13
+- New translations locallang.xlf (Ukrainian) 1d15275
+- New translations locallang.xlf (Japanese) a6517f7
+- New translations locallang.xlf (Afrikaans) bfe0388
+- New translations locallang.xlf (Chinese Simplified) f17c75b
+- New translations locallang.xlf (Chinese Traditional) 379a483
+- New translations locallang.xlf (Portuguese) 0950247
+- New translations locallang.xlf (Portuguese, Brazilian) 9703834
+- cleanup 1cbe840
+
 # 2.0.10
 
 ## MISC
