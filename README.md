@@ -5,13 +5,13 @@
 A GDPR tracking consent popup. It asks for approval to include tracking objects (cookies, images or any HTML) and includes the objects when consented. It enables tracking from the very first page (including referrer). Consents are shown in groups and saved to a cookie. It provides a stable API to read out consents with JavaScript. 
 
 ## Demo
-You can click around the demo [here](http://cookieman.d-mind.de/). Have a look at the JavaScript console to see when tracking gets enabled.
+You can click around the demo [here](http://cookieman.d-mind.de/). Have a look at the JavaScript console to see when tracking gets enabled. You can also try out the ["Do-not-track" setting of your browser](https://en.wikipedia.org/wiki/Do_Not_Track) which triggers a message in the "marketing" group.
 
 ##  When is it shown?
-If the cookie *CookieConsent* is **not yet** set the popup/banner is shown (except on imprint and data privacy statement pages, see TypoScript constants - this is to follow the GDPR's expectation that those pages shall be easily and directly accessible and should not interfere with a cookie consent banner). If it does not, check for errors in a JavaScript console and call `cookieman.show()` manually.
+If the cookie *CookieConsent* is **not yet** set the popup/banner is shown (except on imprint and data privacy statement pages, see TypoScript constants - this is to follow the GDPR's expectation that those pages shall be easily and directly accessible and should not interfere with a cookie consent banner).
 
 ## Browser support
-IE11 and up
+IE11 and up, fully responsive
 
 ## Contact
 For **bugs** and **feature** requests use the [Github bug tracker](https://github.com/dmind-gmbh/extension-cookieman/issues).
