@@ -17,79 +17,79 @@
       </trans-unit>
       <trans-unit id="introText" resname="introText">
         <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
-        <target state="needs-translation">This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</target>
+        <target state="translated">Denne webside bruger cookies. De har to funktioner: For det første leverer de grundlæggende funktionalitet til websiden. For det andet giver de os mulighed for at forbedre vores indhold, målrettet dig, ved at gemme og analysere anonymiserede brugerdata. Du kan til enhver tid trække din tilladelse til cookies tilbage. Du finder mere information om cookies på vores %1$s og mere om os på %2$s.</target>
       </trans-unit>
       <trans-unit id="settings" resname="settings">
         <source>Settings</source>
-        <target state="needs-translation">Settings</target>
+        <target state="translated">Indstillinger</target>
       </trans-unit>
       <trans-unit id="settingsText" resname="settingsText">
         <source>Click here for Cookie %1$s.</source>
-        <target state="needs-translation">Click here for Cookie %1$s.</target>
+        <target state="translated">Kliok her for cookies %1$s.</target>
       </trans-unit>
       <trans-unit id="accept" resname="accept">
         <source>Accept all cookies</source>
-        <target state="needs-translation">Accept all cookies</target>
+        <target state="translated">Acceptér alle cookies</target>
       </trans-unit>
       <trans-unit id="save" resname="save">
         <source>Save</source>
-        <target state="needs-translation">Save</target>
+        <target state="translated">Gem</target>
       </trans-unit>
       <trans-unit id="group.mandatory" resname="group.mandatory">
         <source>Mandatory</source>
-        <target state="needs-translation">Mandatory</target>
+        <target state="translated">Obligatorisk</target>
       </trans-unit>
       <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc">
         <source>These cookies are needed for a smooth operation of our website.</source>
-        <target state="needs-translation">These cookies are needed for a smooth operation of our website.</target>
+        <target state="translated">Disse cookies er nødvendige for at websiden fungerer optimalt.</target>
       </trans-unit>
       <trans-unit id="tableheader.name" resname="tableheader.name">
         <source>Name</source>
-        <target state="needs-translation">Name</target>
+        <target state="translated">Navn</target>
       </trans-unit>
       <trans-unit id="tableheader.purpose" resname="tableheader.purpose">
         <source>Purpose</source>
-        <target state="needs-translation">Purpose</target>
+        <target state="translated">Formål</target>
       </trans-unit>
       <trans-unit id="tableheader.duration" resname="tableheader.duration">
         <source>Lifetime</source>
-        <target state="needs-translation">Lifetime</target>
+        <target state="translated">Levetid</target>
       </trans-unit>
       <trans-unit id="tableheader.type" resname="tableheader.type">
         <source>Type</source>
-        <target state="needs-translation">Type</target>
+        <target state="translated">Type</target>
       </trans-unit>
       <trans-unit id="tableheader.provider" resname="tableheader.provider">
         <source>Provider</source>
-        <target state="needs-translation">Provider</target>
+        <target state="translated">Udbyder</target>
       </trans-unit>
       <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc">
         <source>Saves your consent to using cookies.</source>
-        <target state="needs-translation">Saves your consent to using cookies.</target>
+        <target state="translated">Gem din tilladelse til at bruge cookies.</target>
       </trans-unit>
       <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html">
         <source>HTML</source>
-        <target state="needs-translation">HTML</target>
+        <target state="translated">HTML</target>
       </trans-unit>
       <trans-unit id="trackingobject.fe_typo_user.desc" resname="trackingobject.fe_typo_user.desc">
         <source>Assigns your browser to a session on the server.</source>
-        <target state="needs-translation">Assigns your browser to a session on the server.</target>
+        <target state="translated">Tildel din browser en session på serveren.</target>
       </trans-unit>
       <trans-unit id="duration.session" resname="duration.session">
         <source>session</source>
-        <target state="needs-translation">session</target>
+        <target state="translated">session</target>
       </trans-unit>
       <trans-unit id="type.cookie_http" resname="type.cookie_http">
         <source>HTTP</source>
-        <target state="needs-translation">HTTP</target>
+        <target state="translated">HTTP</target>
       </trans-unit>
       <trans-unit id="group.marketing" resname="group.marketing">
         <source>Marketing</source>
-        <target state="needs-translation">Marketing</target>
+        <target state="translated">Markedsføring</target>
       </trans-unit>
       <trans-unit id="group.marketing.desc" resname="group.marketing">
         <source>With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</source>
-        <target state="needs-translation">With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</target>
+        <target state="translated">Ved hjælp af disse cookies, arbejder vi målrettet på at forbedre vores indhold for vores brugere. Ved hjælp af anonymiserede data fra websidens brugere, kan vi optimere brugerflowet. Det gør os i stand til at forbedre reklamer og indhold.</target>
       </trans-unit>
       <trans-unit id="trackingobject._pk_id.desc" resname="trackingobject._pk_id.desc">
         <source>Used to store a few details about the user such as the unique visitor ID.</source>
