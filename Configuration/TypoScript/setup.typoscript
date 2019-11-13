@@ -91,7 +91,7 @@ page {
     }
 }
 
-[globalVar = LIT:0 = {$plugin.tx_cookieman.settings.minify}]
+[{$plugin.tx_cookieman.settings.minify} == '0']
 page {
     includeJSFooter {
         cookieman := removeString(.min)
