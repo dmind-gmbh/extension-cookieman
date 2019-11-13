@@ -34,6 +34,7 @@
         "dmind/cookieman-test-bootstrap3-banner": "@dev",
         "dmind/cookieman-test-bootstrap3-modal": "@dev",
         "dmind/cookieman-test-bootstrap4-modal": "@dev",
+        "dmind/cookieman-test-customtheme": "@dev",
         "dmind/cookieman-test-crowdin-link": "@dev",
         "typo3/testing-framework": "^4.9",
         "bk2k/extension-helper": "^1.0"
@@ -101,17 +102,26 @@
         "cookieman:bootstrap3-banner": [
             "typo3 extension:deactivate -n cookieman_test_bootstrap3_modal",
             "typo3 extension:deactivate -n cookieman_test_bootstrap4_modal",
+            "typo3 extension:deactivate -n cookieman_test_customtheme",
             "typo3 extension:activate -n cookieman_test_bootstrap3_banner"
         ],
         "cookieman:bootstrap3-modal": [
             "typo3 extension:deactivate -n cookieman_test_bootstrap3_banner",
             "typo3 extension:deactivate -n cookieman_test_bootstrap4_modal",
+            "typo3 extension:deactivate -n cookieman_test_customtheme",
             "typo3 extension:activate -n cookieman_test_bootstrap3_modal"
         ],
         "cookieman:bootstrap4-modal": [
             "typo3 extension:deactivate -n cookieman_test_bootstrap3_banner",
             "typo3 extension:deactivate -n cookieman_test_bootstrap3_modal",
+            "typo3 extension:deactivate -n cookieman_test_customtheme",
             "typo3 extension:activate -n cookieman_test_bootstrap4_modal"
+        ],
+        "cookieman:customtheme": [
+            "typo3 extension:deactivate -n cookieman_test_bootstrap3_banner",
+            "typo3 extension:deactivate -n cookieman_test_bootstrap3_modal",
+            "typo3 extension:deactivate -n cookieman_test_bootstrap4_modal",
+            "typo3 extension:activate -n cookieman_test_customtheme"
         ],
         "post-autoload-dump": [
             "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
