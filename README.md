@@ -29,9 +29,11 @@ If you have control over how the tracking object is inserted you can have *cooki
   * Bootstrap 3/4 JavaScript for *collapse*s and *modal*s
   * jQuery
 
-### Installation with composer
-Get it from packagist <https://packagist.org/packages/dmind/cookieman>
+### Installation
+Get it from packagist <https://packagist.org/packages/dmind/cookieman> via composer
 <pre>composer req dmind/cookieman</pre>
+
+... or download it from <https://extensions.typo3.org/extension/cookieman/>.
 
 Each version **only supports** either TYPO3v8/v9/v10. This might be a bit confusing but makes development and testing easier. 
 
