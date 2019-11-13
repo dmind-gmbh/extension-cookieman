@@ -1,3 +1,9 @@
+# 2.0.11
+
+## MISC
+- compile JS 8ed5fa7f
+- fix HTML reflow 61dba255
+
 # 2.0.8
 
 ## MISC
