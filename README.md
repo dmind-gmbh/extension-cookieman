@@ -13,11 +13,6 @@ If the cookie *CookieConsent* is **not yet** set the popup/banner is shown (exce
 ## Browser support
 IE11 and up, fully responsive
 
-## Contact
-For **bugs** and **feature** requests use the [Github bug tracker](https://github.com/dmind-gmbh/extension-cookieman/issues).
-
-We are happy to hear from you: <projekt-cookieman@d-mind.de>
-
 # Steps to implement
 ## Find out which tracking objects are used
 You can check your page with an empty cookie storage with your browser and see which cookies gets inserted in your browser. Or you can use a service like <https://www.cookieserve.com/> to fetch a page or sign up for services that crawl your whole site regularly for cookies.
@@ -307,3 +302,16 @@ After switching branches, you might need a `git clean -fdX -e '!.idea'`.
 To throw away the database and restart cleanly, run `ddev rm -ORU && git clean -fdX -e '!.idea' && ddev start`
 
 `ddev install-git-hooks` will install the CGL tools as a pre-commit hook.
+
+## Contact
+For **bugs** and **feature** requests use the [Github bug tracker](https://github.com/dmind-gmbh/extension-cookieman/issues).
+
+Pull requests are very welcome.
+
+Private messages: <projekt-cookieman@d-mind.de>
+
+> Made with love @ 
+>
+> ![d-mind](Documentation/Images/d-mind_logo_rgb.png)
+>
+> <https://www.d-mind.de/>
