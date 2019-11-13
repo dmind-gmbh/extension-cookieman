@@ -202,7 +202,7 @@ plugin.tx_cookieman._LOCAL_LANG {
 ## Create a new theme or adapt an existing one
 We are happy to receive pull-requests for new themes!
 
-This is a recommendation how to set up your template structure for a custom extension:
+This is a recommendation how to set up your template structure for a custom extension. It looks like this: <https://github.com/dmind-gmbh/extension-cookieman/tree/master/Build/cookieman_test_customtheme>.
 
 Set your base path in TypoScript constants:
 <pre>
