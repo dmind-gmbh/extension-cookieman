@@ -1,3 +1,9 @@
+# 2.0.5
+
+## MISC
+- adapt release script 56412c2
+- add dependency to ext_emconf.php 505646e
+
 # 2.1.2
 
 ## MISC
@@ -333,10 +339,6 @@
 
 ## MISC
 - bump version f906f2c
-
-# 1.1.0
-
-## MISC
 - bump version 712f71e
 - bump version 50c9c8f
 - add imprint PID to constants; suppress showing popup on imprint/data declaration pages 683fc49
