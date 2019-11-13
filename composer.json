@@ -86,7 +86,7 @@
         "cookieman:release:create": [
             "composer cookieman:release:prepare || exit $?",
             "extension-helper release:create",
-            "rm cookieman_*.zip || exit $?"
+            "mv cookieman_*.zip .build || exit $?"
         ],
         "install-extensions": [
             "typo3 extension:activate -n bootstrap_package",
