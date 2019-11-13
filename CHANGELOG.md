@@ -1,3 +1,10 @@
+# 2.1.8
+
+## MISC
+- showcase theme customizing aa94202
+- describe theme customizing 99ba259
+- change description 493d648
+
 # 2.1.5
 
 ## MISC
@@ -340,6 +347,10 @@
 ## MISC
 - bump version f906f2c
 - bump version 712f71e
+
+# 1.1.0
+
+## MISC
 - bump version 50c9c8f
 - add imprint PID to constants; suppress showing popup on imprint/data declaration pages 683fc49
 - docs a3cd1e5
