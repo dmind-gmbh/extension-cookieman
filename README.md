@@ -199,21 +199,42 @@ plugin.tx_cookieman._LOCAL_LANG {
 }
 </pre>
 
-## Create a new theme
-Copy the EXT:cookieman/Resources/ folder to your site package extension and set the `plugin.tx_cookieman.settings.resourcesBasePath` TypoScript constant. Choose a theme name, set it in the constant `plugin.tx_cookieman.settings.theme` and rename the example folders (e.g. bootstrap3-banner) to your name.
+## Create a new theme or adapt an existing one
+We are happy to receive pull-requests for new themes!
 
-Adapt the HTML/CSS/JS as needed. These elements control the functionality:
-* <code>&lt;\* data-cookieman-save&gt;</code> - save and close
-* <code>&lt;\* data-cookieman-accept-all&gt;</code> - mark all checkboxes
-* <code>&lt;form data-cookieman-form&gt;</code> - the form that contains all checkboxes
-* change the checkboxes' <code>name="..."</code> to a value that you expect to find in the CookieConsent when the user consented (in the examples only one group called "marketing" is included)
+This is a recommendation how to set up your template structure for a custom extension:
 
-Reimplement the methods cookieman.show() and cookieman.hide() (see the example code in `JavaScript/cookieman-theme.js`).
+Set your base path in TypoScript constants:
+<pre>
+plugin.tx_cookieman.settings.resourcesBasePath = EXT:your_ext/Extensions/cookieman/Resources
+</pre>
+
+Choose a new theme name:
+<pre>
+plugin.tx_cookieman.settings.theme = myTheme
+</pre>
+
+Create folder `EXT:your_ext/Extensions/cookieman/Resources/Private/Themes/myTheme/`. Add 3 folders: `Templates`, `Partials`, `Layouts`.
+
+These folders will have the highest priority when looking for templates, partials or layouts now. The fallback will be  `EXT:cookieman/Resources/Private/*`.
+
+Create folder `EXT:your_ext/Extensions/cookieman/Resources/Public/Themes/myTheme`. This will hold the files `cookieman-theme(.min).css` and `cookieman-theme(.min).js`. Reimplement the methods cookieman.show() and cookieman.hide() in `cookieman-theme(.min).js`.
+
+Copy the .css, .js and .html files as needed from a default theme.
+
+Adapt the HTML/CSS/JS as needed. 
+
+These HTML attributes elements control the functionality:
+#### &lt;\* data-cookieman-save&gt;</code> 
+> save and close
+#### &lt;\* data-cookieman-accept-all&gt;
+> mark all checkboxes
+
+They can appear multiple times and also together on the same element.
 
 # API
 
 ### JavaScript
-
 cookieman.js exposes these methods:
 
 #### *cookieman.showOnce()*: void
@@ -238,10 +259,10 @@ Cookieman also includes the (1kB) cookie library [JavaScript Cookie](https://git
 # Development
 Choose your branch: 8lts (TYPO3 8.7), 9lts (TYPO3 9.5), master (TYPO3 10.x).
 
-To try it: just run `ddev start` which will install a TYPO3 with example content and `cookieman`. This installs helper extensions that enable a certain theme to facilitate development. The admin user is "admin", password "adminadmin".
+To try it: just run `ddev start` which will install a TYPO3 with example content and `cookieman`. This installs helper extensions that automatically enable a certain theme and some TypoScript setup to facilitate development. The admin user is "admin", password "adminadmin".
 
-When switches branches, you might need a `git clean -fdX -e '!.idea'`.
+After switching branches, you might need a `git clean -fdX -e '!.idea'`.
  
-To throw away the database and restart, `ddev rm -ORU && git clean -fdX -e '!.idea' && ddev start`
+To throw away the database and restart cleanly, run `ddev rm -ORU && git clean -fdX -e '!.idea' && ddev start`
 
 `ddev install-git-hooks` will install the CGL tools as a pre-commit hook.
