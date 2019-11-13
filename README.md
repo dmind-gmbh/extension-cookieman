@@ -5,7 +5,7 @@
 A GDPR tracking consent popup. It asks for approval to include tracking objects (cookies, images or any HTML) and includes the objects when consented. It enables tracking from the very first page (including referrer). Consents are shown in groups and saved to a cookie. It provides a stable API to read out consents with JavaScript. 
 
 ## Demo
-You can click around the demo [here](http://cookieman.d-mind.de/). Have a look at the JavaScript console to see when tracking gets enabled. You can also try out the ["Do-not-track" setting of your browser](https://en.wikipedia.org/wiki/Do_Not_Track) which triggers a message in the "marketing" group.
+You can click around the 3 included demo themes [here](http://cookieman.d-mind.de/). Have a look at the JavaScript console to see when tracking gets enabled. You can also try out the ["Do-not-track" setting of your browser](https://en.wikipedia.org/wiki/Do_Not_Track) which triggers a message inside the popup (in the "marketing" group) when enabled.
 
 ##  When is it shown?
 If the cookie *CookieConsent* is **not yet** set the popup/banner is shown (except on imprint and data privacy statement pages, see TypoScript constants - this is to follow the GDPR's expectation that those pages shall be easily and directly accessible and should not interfere with a cookie consent banner).
@@ -38,15 +38,56 @@ If you have control over how the tracking object is inserted you can have *cooki
 Get it from packagist <https://packagist.org/packages/dmind/cookieman>
 <pre>composer req dmind/cookieman</pre>
 
-## Integration
-Include the TypoScript as usual (either by including it in a sys_template or by referencing it in your site package).
+Each version **only supports** either TYPO3v8/v9/v10. This might be a bit confusing but makes development and testing easier. 
 
-Adjust the TypoScript constants (again, either in a sys_template record or in a file in your site package).
+## Integration
+Include the shipped TypoScript as usual (either by including it from a sys_template \["Cookieman"\] or by referencing the files from your site package).
+
+### TypoScript constants
+Adjust the TypoScript constants (again, either in a sys_template record or in a file in your site package):
+
+***plugin.tx_cookieman.settings.*** ...
+
+#### *resourcesBasePath*: String
+> see below ("Create new theme") - the default enables the shipped demo themes
+
+#### *theme*: String
+> the theme name. These default themes are shipped:
+>
+> **bootstrap3-banner:**
+>  
+> ![bootstrap3-banner](Documentation/Images/bs3-banner-initial.png)
+>  
+> ![bootstrap3-banner](Documentation/Images/bs3-banner-opened.png)
+>
+> **bootstrap3-modal:**
+>  
+> ![bootstrap3-modal](Documentation/Images/bs3-modal-initial.png)
+>  
+> ![bootstrap3-modal](Documentation/Images/bs3-modal.png)
+>
+> **bootstrap4-modal:**
+>  
+> ![bootstrap4-modal](Documentation/Images/bs4-modal-initial.png)
+>  
+> ![bootstrap4-modal](Documentation/Images/bs4-modal-colors.png)
+
+#### *links*.*dataProtectionDeclarationPid*: int
+> page UID of data privacy statement page - the *cookieman* modal will not be automatically opened on this page (See "When is it shown?")
+
+#### *links*.*dataProtectionDeclarationAnchor*: ?String
+> an anchor (TYPO3-lingua "section") on that page, if needed
+
+#### *links*.*imprintPid*: int
+> page UID of imprint page - the *cookieman* modal will not be automatically opened on this page (See "When is it shown?")
+
+#### *links*.*imprintAnchor*: ?String
+> an anchor (TYPO3-lingua "section") on that page, if needed
 
 ### TypoScript setup 
-There are some things that are not adjustable via TypoScript constants. See a full example at the end of the paragraph.
+There are some things that are not adjustable via TypoScript constants. See a full TypoScript configuration example below.
 
-***plugin.tx_cookieman.settings.***
+***plugin.tx_cookieman.settings.*** ...
 
 #### *groups*: Array
 > holds the group configurations. A group contains several tracking objects.
@@ -77,7 +118,7 @@ There are some things that are not adjustable via TypoScript constants. See a fu
 > If *1* AND the ["Do-not-track" setting of the browser](https://en.wikipedia.org/wiki/Do_Not_Track) is enabled, a message about that is shown. 
 
 #### *trackingObjects*: Array
-> holds the tracking object configurations
+> holds the tracking object configurations. Have a look at the included examples here <https://github.com/dmind-gmbh/extension-cookieman/tree/master/Configuration/TypoScript/TrackingObjects>
 
 #### *trackingObjects*.*‹tracking object key›*: Array
 > a single tracking object configuration
