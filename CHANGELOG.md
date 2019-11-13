@@ -1,3 +1,37 @@
+# 2.1.0
+
+## MISC
+- README (2) 59fc257
+- README fb76f46
+- make minify configurable fad6292
+- New translations locallang.xlf (Vietnamese) d8448bd
+- New translations locallang.xlf (Catalan) 678c1cc
+- New translations locallang.xlf (Chinese Simplified) 7d1b376
+- New translations locallang.xlf (Czech) eb0e345
+- New translations locallang.xlf (Danish) fb32bd7
+- New translations locallang.xlf (Dutch) 5d5863c
+- New translations locallang.xlf (Finnish) fd4f775
+- New translations locallang.xlf (French) 85ae2fb
+- New translations locallang.xlf (German) d8d5667
+- New translations locallang.xlf (Greek) 3f801f2
+- New translations locallang.xlf (Hebrew) 116ee24
+- New translations locallang.xlf (Hungarian) d8b70b7
+- New translations locallang.xlf (Arabic) 268290c
+- New translations locallang.xlf (Italian) 20ff07b
+- New translations locallang.xlf (Korean) b61aaa5
+- New translations locallang.xlf (Norwegian) 1a947af
+- New translations locallang.xlf (Polish) bb02e57
+- New translations locallang.xlf (Portuguese) b5ccba3
+- New translations locallang.xlf (Romanian) b0ba75d
+- New translations locallang.xlf (Russian) 307608e
+- New translations locallang.xlf (Serbian (Cyrillic)) aef7b3d
+- New translations locallang.xlf (Spanish) 5552d54
+- New translations locallang.xlf (Swedish) 474ae68
+- New translations locallang.xlf (Turkish) 9e86067
+- New translations locallang.xlf (Ukrainian) 9cef9c3
+- New translations locallang.xlf (Japanese) 026448d
+- New translations locallang.xlf (Afrikaans) c911d89
+
 # 2.0.9
 
 ## MISC
