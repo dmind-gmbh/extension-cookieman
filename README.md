@@ -137,7 +137,9 @@ There are some things that are not adjustable via TypoScript constants. See a fu
 
 #### *trackingObjects*.*‹tracking object key›*.*show*.*‹tracking item key›*.*type*: String
 > the type of tracking:
+>
 > "cookie_http+html": an HTML (=HTTP+HTML) cookie which is also readable from JavaScript
+> 
 > "cookie_http": an HTTP cookie
 
 #### *trackingObjects*.*‹tracking object key›*.*show*.*‹tracking item key›*.*provider*: String
