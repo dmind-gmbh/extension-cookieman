@@ -1,3 +1,8 @@
+# 2.0.4
+
+## MISC
+- adapt release script 5fb06617
+
 # 2.1.1
 
 ## MISC
@@ -309,10 +314,6 @@
 
 ## MISC
 - bump version f906f2c8
-
-# 1.1.0
-
-## MISC
 - bump version 712f71e8
 - bump version 50c9c8f6
 - add imprint PID to constants; suppress showing popup on imprint/data declaration pages 683fc490
