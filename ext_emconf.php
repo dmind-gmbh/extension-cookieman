@@ -9,7 +9,7 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'd-mind Cookieman',
-    'description' => 'Provides cookie opt-in by loading JavaScript only when consented',
+    'description' => 'A GDPR tracking consent popup. It asks for approval to include tracking objects (cookies, images or any HTML) and includes the objects when consented.',
     'category' => 'frontend',
     'author' => 'Jonas Eberle',
     'author_email' => 'jonas.eberle@d-mind.de',
