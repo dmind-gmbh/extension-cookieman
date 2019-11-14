@@ -10,9 +10,10 @@
 /Build/.phpunit.result.cache
 /Build/node_modules/
 /Build/mix-manifest.json
+/Build/Scripts/testing-docker/.env
 
 # CGL Fixer
 /.php_cs.cache
 
 # private stuff
-.ddev/homeadditions/.gitconfig
+/.ddev/homeadditions/.gitconfig
