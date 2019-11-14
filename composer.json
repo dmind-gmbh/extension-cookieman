@@ -99,7 +99,8 @@
             "typo3 extensionmanager:extension:install bootstrap_package",
             "typo3 extensionmanager:extension:install introduction",
             "typo3 extensionmanager:extension:install cookieman",
-            "typo3 extensionmanager:extension:install cookieman_test_crowdin_link"
+            "typo3 extensionmanager:extension:install cookieman_test_crowdin_link",
+            "typo3 extensionmanager:extension:install cookieman_test_bootstrap4_modal"
         ],
         "cookieman:bootstrap3-banner": [
             "typo3 extensionmanager:extension:uninstall cookieman_test_bootstrap3_modal",
