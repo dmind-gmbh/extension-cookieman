@@ -10,7 +10,9 @@
 /Build/.phpunit.result.cache
 /Build/node_modules/
 /Build/mix-manifest.json
-/Build/Scripts/testing-docker/.env
+/Build/testing-docker/.env
+/Build/clover.xml
+/Build/coveralls-upload.json
 
 # CGL Fixer
 /.php_cs.cache
