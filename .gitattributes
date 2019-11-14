@@ -7,6 +7,7 @@
 # Files
 .editorconfig export-ignore
 .gitattributes export-ignore
+.crowdin.yaml export-ignore
 .gitignore export-ignore
 .php_cs.dist export-ignore
 
