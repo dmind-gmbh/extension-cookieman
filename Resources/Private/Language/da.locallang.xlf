@@ -3,93 +3,93 @@
   <file source-language="en" datatype="plaintext" original="Frontend" date="2019-10-28T12:20:51Z" product-name="cookieman" target-language="da">
     <header/>
     <body>
-      <trans-unit id="heading" resname="heading">
+      <trans-unit id="heading" resname="heading" approved="yes">
         <source>About Cookies</source>
-        <target state="translated">Om cookies</target>
+        <target state="final">Om cookies</target>
       </trans-unit>
-      <trans-unit id="dataProtectionDeclaration" resname="dataProtectionDeclaration">
+      <trans-unit id="dataProtectionDeclaration" resname="dataProtectionDeclaration" approved="yes">
         <source>Data Protection Declaration</source>
-        <target state="translated">Databeskyttelseserklæring</target>
+        <target state="final">Databeskyttelseserklæring</target>
       </trans-unit>
-      <trans-unit id="imprint" resname="imprint">
+      <trans-unit id="imprint" resname="imprint" approved="yes">
         <source>Imprint</source>
-        <target state="translated">Impressum</target>
+        <target state="final">Impressum</target>
       </trans-unit>
-      <trans-unit id="introText" resname="introText">
+      <trans-unit id="introText" resname="introText" approved="yes">
         <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
-        <target state="translated">Denne webside bruger cookies. De har to funktioner: For det første leverer de grundlæggende funktionalitet til websiden. For det andet giver de os mulighed for at forbedre vores indhold, målrettet dig, ved at gemme og analysere anonymiserede brugerdata. Du kan til enhver tid trække din tilladelse til cookies tilbage. Du finder mere information om cookies på vores %1$s og mere om os på %2$s.</target>
+        <target state="final">Denne webside bruger cookies. De har to funktioner: For det første leverer de grundlæggende funktionalitet til websiden. For det andet giver de os mulighed for at forbedre vores indhold, målrettet dig, ved at gemme og analysere anonymiserede brugerdata. Du kan til enhver tid trække din tilladelse til cookies tilbage. Du finder mere information om cookies på vores %1$s og mere om os på %2$s.</target>
       </trans-unit>
-      <trans-unit id="settings" resname="settings">
+      <trans-unit id="settings" resname="settings" approved="yes">
         <source>Settings</source>
-        <target state="translated">Indstillinger</target>
+        <target state="final">Indstillinger</target>
       </trans-unit>
-      <trans-unit id="settingsText" resname="settingsText">
+      <trans-unit id="settingsText" resname="settingsText" approved="yes">
         <source>Click here for Cookie %1$s.</source>
-        <target state="translated">Kliok her for cookies %1$s.</target>
+        <target state="final">Kliok her for cookies %1$s.</target>
       </trans-unit>
-      <trans-unit id="accept" resname="accept">
+      <trans-unit id="accept" resname="accept" approved="yes">
         <source>Accept all cookies</source>
-        <target state="translated">Acceptér alle cookies</target>
+        <target state="final">Acceptér alle cookies</target>
       </trans-unit>
-      <trans-unit id="save" resname="save">
+      <trans-unit id="save" resname="save" approved="yes">
         <source>Save</source>
-        <target state="translated">Gem</target>
+        <target state="final">Gem</target>
       </trans-unit>
-      <trans-unit id="group.mandatory" resname="group.mandatory">
+      <trans-unit id="group.mandatory" resname="group.mandatory" approved="yes">
         <source>Mandatory</source>
-        <target state="translated">Obligatorisk</target>
+        <target state="final">Obligatorisk</target>
       </trans-unit>
-      <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc">
+      <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc" approved="yes">
         <source>These cookies are needed for a smooth operation of our website.</source>
-        <target state="translated">Disse cookies er nødvendige for at websiden fungerer optimalt.</target>
+        <target state="final">Disse cookies er nødvendige for at websiden fungerer optimalt.</target>
       </trans-unit>
-      <trans-unit id="tableheader.name" resname="tableheader.name">
+      <trans-unit id="tableheader.name" resname="tableheader.name" approved="yes">
         <source>Name</source>
-        <target state="translated">Navn</target>
+        <target state="final">Navn</target>
       </trans-unit>
-      <trans-unit id="tableheader.purpose" resname="tableheader.purpose">
+      <trans-unit id="tableheader.purpose" resname="tableheader.purpose" approved="yes">
         <source>Purpose</source>
-        <target state="translated">Formål</target>
+        <target state="final">Formål</target>
       </trans-unit>
-      <trans-unit id="tableheader.duration" resname="tableheader.duration">
+      <trans-unit id="tableheader.duration" resname="tableheader.duration" approved="yes">
         <source>Lifetime</source>
-        <target state="translated">Levetid</target>
+        <target state="final">Levetid</target>
       </trans-unit>
-      <trans-unit id="tableheader.type" resname="tableheader.type">
+      <trans-unit id="tableheader.type" resname="tableheader.type" approved="yes">
         <source>Type</source>
-        <target state="translated">Type</target>
+        <target state="final">Type</target>
       </trans-unit>
-      <trans-unit id="tableheader.provider" resname="tableheader.provider">
+      <trans-unit id="tableheader.provider" resname="tableheader.provider" approved="yes">
         <source>Provider</source>
-        <target state="translated">Udbyder</target>
+        <target state="final">Udbyder</target>
       </trans-unit>
-      <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc">
+      <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc" approved="yes">
         <source>Saves your consent to using cookies.</source>
-        <target state="translated">Gem din tilladelse til at bruge cookies.</target>
+        <target state="final">Gem din tilladelse til at bruge cookies.</target>
       </trans-unit>
-      <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html">
+      <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html" approved="yes">
         <source>HTML</source>
-        <target state="translated">HTML</target>
+        <target state="final">HTML</target>
       </trans-unit>
-      <trans-unit id="trackingobject.fe_typo_user.desc" resname="trackingobject.fe_typo_user.desc">
+      <trans-unit id="trackingobject.fe_typo_user.desc" resname="trackingobject.fe_typo_user.desc" approved="yes">
         <source>Assigns your browser to a session on the server.</source>
-        <target state="translated">Tildel din browser en session på serveren.</target>
+        <target state="final">Tildel din browser en session på serveren.</target>
       </trans-unit>
-      <trans-unit id="duration.session" resname="duration.session">
+      <trans-unit id="duration.session" resname="duration.session" approved="yes">
         <source>session</source>
-        <target state="translated">session</target>
+        <target state="final">session</target>
       </trans-unit>
-      <trans-unit id="type.cookie_http" resname="type.cookie_http">
+      <trans-unit id="type.cookie_http" resname="type.cookie_http" approved="yes">
         <source>HTTP</source>
-        <target state="translated">HTTP</target>
+        <target state="final">HTTP</target>
       </trans-unit>
-      <trans-unit id="group.marketing" resname="group.marketing">
+      <trans-unit id="group.marketing" resname="group.marketing" approved="yes">
         <source>Marketing</source>
-        <target state="translated">Markedsføring</target>
+        <target state="final">Markedsføring</target>
       </trans-unit>
-      <trans-unit id="group.marketing.desc" resname="group.marketing">
+      <trans-unit id="group.marketing.desc" resname="group.marketing" approved="yes">
         <source>With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</source>
-        <target state="translated">Ved hjælp af disse cookies, arbejder vi målrettet på at forbedre vores indhold for vores brugere. Ved hjælp af anonymiserede data fra websidens brugere, kan vi optimere brugerflowet. Det gør os i stand til at forbedre reklamer og indhold.</target>
+        <target state="final">Ved hjælp af disse cookies, arbejder vi målrettet på at forbedre vores indhold for vores brugere. Ved hjælp af anonymiserede data fra websidens brugere, kan vi optimere brugerflowet. Det gør os i stand til at forbedre reklamer og indhold.</target>
       </trans-unit>
       <trans-unit id="trackingobject._pk_id.desc" resname="trackingobject._pk_id.desc">
         <source>Used to store a few details about the user such as the unique visitor ID.</source>
