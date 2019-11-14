@@ -13,3 +13,6 @@
 
 # CGL Fixer
 /.php_cs.cache
+
+# private stuff
+.ddev/homeadditions/.gitconfig

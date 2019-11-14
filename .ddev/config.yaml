@@ -20,6 +20,7 @@ timezone: ""
 hooks:
     pre-start:
         - exec-host: mkdir -p .build/public/typo3conf/
+        - exec-host: .ddev/commands/copy-git-config
     post-start:
         - exec: yarn install --save-dev --cwd=Build/
         - composer: update
