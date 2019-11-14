@@ -5,12 +5,15 @@ on: [push]
 jobs:
     build:
         runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                php-version: [7.2, 7.3]
         steps:
             -   uses: actions/checkout@v1
             -   name: composer
                 run: composer update
             -   name: execute unit tests
-                run: Build/Scripts/runTests.sh -p 7.2 -x
+                run: Build/Scripts/runTests.sh -p ${{ matrix.php-version }} -x
             -   name: coveralls
                 run: |
                     COVERALLS_REPO_TOKEN=${{ secrets.COVERALLS_REPO_TOKEN }} \
