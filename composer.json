@@ -125,7 +125,7 @@
             "typo3 extension:activate -n cookieman_test_customtheme"
         ],
         "post-autoload-dump": [
-            "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
+            "[ -L .build/public/typo3conf/ext/cookieman ] || ln -snvf ../../../../. .build/public/typo3conf/ext/cookieman"
         ]
     }
 }
