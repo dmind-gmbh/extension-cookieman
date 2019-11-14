@@ -3,9 +3,9 @@
   <file source-language="en" datatype="plaintext" original="Frontend" date="2019-10-28T12:20:51Z" product-name="cookieman" target-language="fr">
     <header/>
     <body>
-      <trans-unit id="heading" resname="heading">
+      <trans-unit id="heading" resname="heading" approved="yes">
         <source>About Cookies</source>
-        <target state="needs-translation">About Cookies</target>
+        <target state="final">À propos des cookies</target>
       </trans-unit>
       <trans-unit id="dataProtectionDeclaration" resname="dataProtectionDeclaration">
         <source>Data Protection Declaration</source>
@@ -19,9 +19,9 @@
         <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
         <target state="needs-translation">This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</target>
       </trans-unit>
-      <trans-unit id="settings" resname="settings">
+      <trans-unit id="settings" resname="settings" approved="yes">
         <source>Settings</source>
-        <target state="needs-translation">Settings</target>
+        <target state="final">Paramètres</target>
       </trans-unit>
       <trans-unit id="settingsText" resname="settingsText">
         <source>Click here for Cookie %1$s.</source>
@@ -31,25 +31,25 @@
         <source>Accept all cookies</source>
         <target state="needs-translation">Accept all cookies</target>
       </trans-unit>
-      <trans-unit id="save" resname="save">
+      <trans-unit id="save" resname="save" approved="yes">
         <source>Save</source>
-        <target state="needs-translation">Save</target>
+        <target state="final">Sauvegarder</target>
       </trans-unit>
-      <trans-unit id="group.mandatory" resname="group.mandatory">
+      <trans-unit id="group.mandatory" resname="group.mandatory" approved="yes">
         <source>Mandatory</source>
-        <target state="needs-translation">Mandatory</target>
+        <target state="final">Obligatoire</target>
       </trans-unit>
       <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc">
         <source>These cookies are needed for a smooth operation of our website.</source>
         <target state="needs-translation">These cookies are needed for a smooth operation of our website.</target>
       </trans-unit>
-      <trans-unit id="tableheader.name" resname="tableheader.name">
+      <trans-unit id="tableheader.name" resname="tableheader.name" approved="yes">
         <source>Name</source>
-        <target state="needs-translation">Name</target>
+        <target state="final">Nom</target>
       </trans-unit>
-      <trans-unit id="tableheader.purpose" resname="tableheader.purpose">
+      <trans-unit id="tableheader.purpose" resname="tableheader.purpose" approved="yes">
         <source>Purpose</source>
-        <target state="needs-translation">Purpose</target>
+        <target state="final">Motif</target>
       </trans-unit>
       <trans-unit id="tableheader.duration" resname="tableheader.duration">
         <source>Lifetime</source>
@@ -153,61 +153,61 @@
         <source><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></source>
         <target state="needs-translation"><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></target>
       </trans-unit>
-      <trans-unit id="duration.minute" resname="duration.minute">
+      <trans-unit id="duration.minute" resname="duration.minute" approved="yes">
         <source>minute</source>
-        <target state="needs-translation">minute</target>
+        <target state="final">minute</target>
       </trans-unit>
-      <trans-unit id="duration.minutes" resname="duration.minutes">
+      <trans-unit id="duration.minutes" resname="duration.minutes" approved="yes">
         <source>minutes</source>
-        <target state="needs-translation">minutes</target>
+        <target state="final">minutes</target>
       </trans-unit>
-      <trans-unit id="duration.hour" resname="duration.hour">
+      <trans-unit id="duration.hour" resname="duration.hour" approved="yes">
         <source>hour</source>
-        <target state="needs-translation">hour</target>
+        <target state="final">heure</target>
       </trans-unit>
-      <trans-unit id="duration.hours" resname="duration.hours">
+      <trans-unit id="duration.hours" resname="duration.hours" approved="yes">
         <source>hours</source>
-        <target state="needs-translation">hours</target>
+        <target state="final">heures</target>
       </trans-unit>
-      <trans-unit id="duration.day" resname="duration.day">
+      <trans-unit id="duration.day" resname="duration.day" approved="yes">
         <source>day</source>
-        <target state="needs-translation">day</target>
+        <target state="final">jour</target>
       </trans-unit>
-      <trans-unit id="duration.days" resname="duration.days">
+      <trans-unit id="duration.days" resname="duration.days" approved="yes">
         <source>days</source>
-        <target state="needs-translation">days</target>
+        <target state="final">jours</target>
       </trans-unit>
-      <trans-unit id="duration.month" resname="duration.month">
+      <trans-unit id="duration.month" resname="duration.month" approved="yes">
         <source>month</source>
-        <target state="needs-translation">month</target>
+        <target state="final">mois</target>
       </trans-unit>
-      <trans-unit id="duration.months" resname="duration.months">
+      <trans-unit id="duration.months" resname="duration.months" approved="yes">
         <source>months</source>
-        <target state="needs-translation">months</target>
+        <target state="final">mois</target>
       </trans-unit>
-      <trans-unit id="duration.year" resname="duration.year">
+      <trans-unit id="duration.year" resname="duration.year" approved="yes">
         <source>year</source>
-        <target state="needs-translation">year</target>
+        <target state="final">an</target>
       </trans-unit>
-      <trans-unit id="duration.years" resname="duration.years">
+      <trans-unit id="duration.years" resname="duration.years" approved="yes">
         <source>years</source>
-        <target state="needs-translation">years</target>
+        <target state="final">ans</target>
       </trans-unit>
-      <trans-unit id="active" resname="active">
+      <trans-unit id="active" resname="active" approved="yes">
         <source>active</source>
-        <target state="needs-translation">active</target>
+        <target state="final">actif</target>
       </trans-unit>
-      <trans-unit id="alwaysactive" resname="alwaysactive">
+      <trans-unit id="alwaysactive" resname="alwaysactive" approved="yes">
         <source>always active</source>
-        <target state="needs-translation">always active</target>
+        <target state="final">toujours actif</target>
       </trans-unit>
-      <trans-unit id="inactive" resname="inactive">
+      <trans-unit id="inactive" resname="inactive" approved="yes">
         <source>inactive</source>
-        <target state="needs-translation">inactive</target>
+        <target state="final">inactif</target>
       </trans-unit>
-      <trans-unit id="alwaysinactive" resname="alwaysinactive">
+      <trans-unit id="alwaysinactive" resname="alwaysinactive" approved="yes">
         <source>always inactive</source>
-        <target state="needs-translation">always inactive</target>
+        <target state="final">toujours inactif</target>
       </trans-unit>
     </body>
   </file>
