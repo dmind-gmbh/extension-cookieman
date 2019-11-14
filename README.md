@@ -8,7 +8,7 @@ A GDPR tracking consent popup. It asks for approval to include tracking objects 
 You can click around the 3 included demo themes [here](http://cookieman.d-mind.de/). Have a look at the JavaScript console to see when tracking gets enabled. You can also try out the ["Do-not-track" setting of your browser](https://en.wikipedia.org/wiki/Do_Not_Track) which triggers a message inside the popup (in the "marketing" group) when enabled.
 
 ##  When is it shown?
-If the cookie *CookieConsent* is **not yet** set the popup/banner is shown (except on imprint and data privacy statement pages, see TypoScript constants - this is to follow the GDPR's expectation that those pages shall be easily and directly accessible and should not interfere with a cookie consent banner).
+If consent has not been saved yet (aka our cookie *CookieConsent* is not set) the popup/banner is shown. Exceptions are imprint and data privacy statement pages - this is to follow the GDPR's expectation that those pages shall be easily and directly accessible and should not interfere with a cookie consent banner.
 
 ## Browser support
 IE11 and up, fully responsive
@@ -283,7 +283,7 @@ They can appear multiple times and also together on the same element.
 cookieman.js exposes these methods:
 
 #### *cookieman.showOnce()*: void
-> Shows the confirmation modal only when the user preferences in the cookie *CookieConsent* are not yet present. 
+> Shows the confirmation modal when consent has not been saved yet. It is automatically called on each page from `cookieman-init.js` (with an aditional condition, see "When is it shown?").
 
 #### *cookieman.show()*: void
 > Shows the confirmation modal. You can call that from anywhere you need it (e.g. with a link from your data protection declaration page). 
