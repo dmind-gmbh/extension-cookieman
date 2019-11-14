@@ -5,11 +5,11 @@
     <body>
       <trans-unit id="heading" resname="heading">
         <source>About Cookies</source>
-        <target state="needs-translation">About Cookies</target>
+        <target state="translated">Despre cookie-uri</target>
       </trans-unit>
       <trans-unit id="dataProtectionDeclaration" resname="dataProtectionDeclaration">
         <source>Data Protection Declaration</source>
-        <target state="needs-translation">Data Protection Declaration</target>
+        <target state="translated">Informații privind protecția datelor cu caracter personal</target>
       </trans-unit>
       <trans-unit id="imprint" resname="imprint">
         <source>Imprint</source>
@@ -21,7 +21,7 @@
       </trans-unit>
       <trans-unit id="settings" resname="settings">
         <source>Settings</source>
-        <target state="needs-translation">Settings</target>
+        <target state="translated">Opţiuni</target>
       </trans-unit>
       <trans-unit id="settingsText" resname="settingsText">
         <source>Click here for Cookie %1$s.</source>
@@ -29,15 +29,15 @@
       </trans-unit>
       <trans-unit id="accept" resname="accept">
         <source>Accept all cookies</source>
-        <target state="needs-translation">Accept all cookies</target>
+        <target state="translated">Acceptă tot cookie-uri</target>
       </trans-unit>
       <trans-unit id="save" resname="save">
         <source>Save</source>
-        <target state="needs-translation">Save</target>
+        <target state="translated">Salvare</target>
       </trans-unit>
       <trans-unit id="group.mandatory" resname="group.mandatory">
         <source>Mandatory</source>
-        <target state="needs-translation">Mandatory</target>
+        <target state="translated">Obligatorii</target>
       </trans-unit>
       <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc">
         <source>These cookies are needed for a smooth operation of our website.</source>
@@ -45,23 +45,23 @@
       </trans-unit>
       <trans-unit id="tableheader.name" resname="tableheader.name">
         <source>Name</source>
-        <target state="needs-translation">Name</target>
+        <target state="translated">Nume</target>
       </trans-unit>
       <trans-unit id="tableheader.purpose" resname="tableheader.purpose">
         <source>Purpose</source>
-        <target state="needs-translation">Purpose</target>
+        <target state="translated">Scop</target>
       </trans-unit>
       <trans-unit id="tableheader.duration" resname="tableheader.duration">
         <source>Lifetime</source>
-        <target state="needs-translation">Lifetime</target>
+        <target state="translated">Durata de viaţă</target>
       </trans-unit>
       <trans-unit id="tableheader.type" resname="tableheader.type">
         <source>Type</source>
-        <target state="needs-translation">Type</target>
+        <target state="translated">Tip</target>
       </trans-unit>
       <trans-unit id="tableheader.provider" resname="tableheader.provider">
         <source>Provider</source>
-        <target state="needs-translation">Provider</target>
+        <target state="translated">Distribuitor</target>
       </trans-unit>
       <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc">
         <source>Saves your consent to using cookies.</source>
@@ -69,7 +69,7 @@
       </trans-unit>
       <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html">
         <source>HTML</source>
-        <target state="needs-translation">HTML</target>
+        <target state="translated">HTML</target>
       </trans-unit>
       <trans-unit id="trackingobject.fe_typo_user.desc" resname="trackingobject.fe_typo_user.desc">
         <source>Assigns your browser to a session on the server.</source>
@@ -81,11 +81,11 @@
       </trans-unit>
       <trans-unit id="type.cookie_http" resname="type.cookie_http">
         <source>HTTP</source>
-        <target state="needs-translation">HTTP</target>
+        <target state="translated">HTTP</target>
       </trans-unit>
       <trans-unit id="group.marketing" resname="group.marketing">
         <source>Marketing</source>
-        <target state="needs-translation">Marketing</target>
+        <target state="translated">Publicitate</target>
       </trans-unit>
       <trans-unit id="group.marketing.desc" resname="group.marketing">
         <source>With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</source>
@@ -155,47 +155,47 @@
       </trans-unit>
       <trans-unit id="duration.minute" resname="duration.minute">
         <source>minute</source>
-        <target state="needs-translation">minute</target>
+        <target state="translated">minut</target>
       </trans-unit>
       <trans-unit id="duration.minutes" resname="duration.minutes">
         <source>minutes</source>
-        <target state="needs-translation">minutes</target>
+        <target state="translated">minute</target>
       </trans-unit>
       <trans-unit id="duration.hour" resname="duration.hour">
         <source>hour</source>
-        <target state="needs-translation">hour</target>
+        <target state="translated">oră</target>
       </trans-unit>
       <trans-unit id="duration.hours" resname="duration.hours">
         <source>hours</source>
-        <target state="needs-translation">hours</target>
+        <target state="translated">ore</target>
       </trans-unit>
       <trans-unit id="duration.day" resname="duration.day">
         <source>day</source>
-        <target state="needs-translation">day</target>
+        <target state="translated">zi</target>
       </trans-unit>
       <trans-unit id="duration.days" resname="duration.days">
         <source>days</source>
-        <target state="needs-translation">days</target>
+        <target state="translated">zile</target>
       </trans-unit>
       <trans-unit id="duration.month" resname="duration.month">
         <source>month</source>
-        <target state="needs-translation">month</target>
+        <target state="translated">lună</target>
       </trans-unit>
       <trans-unit id="duration.months" resname="duration.months">
         <source>months</source>
-        <target state="needs-translation">months</target>
+        <target state="translated">luni</target>
       </trans-unit>
       <trans-unit id="duration.year" resname="duration.year">
         <source>year</source>
-        <target state="needs-translation">year</target>
+        <target state="translated">an</target>
       </trans-unit>
       <trans-unit id="duration.years" resname="duration.years">
         <source>years</source>
-        <target state="needs-translation">years</target>
+        <target state="translated">ani</target>
       </trans-unit>
       <trans-unit id="active" resname="active">
         <source>active</source>
-        <target state="needs-translation">active</target>
+        <target state="translated">activ</target>
       </trans-unit>
       <trans-unit id="alwaysactive" resname="alwaysactive">
         <source>always active</source>
