@@ -1,0 +1,3 @@
+# we push after tesing in .github/workflows/unit-tests.yml
+coverage_clover: Build/clover.xml
+json_path: Build/coveralls-upload.json

@@ -10,4 +10,9 @@ jobs:
             -   name: composer
                 run: composer update
             -   name: execute unit tests
-                run: Build/Scripts/runTests.sh -p 7.2
+                run: Build/Scripts/runTests.sh -p 7.2 -x
+            -   name: coveralls
+                run: |
+                    COVERALLS_REPO_TOKEN=${{ secrets.COVERALLS_REPO_TOKEN }} \
+                        .build/bin/php-coveralls \
+                        --verbose
