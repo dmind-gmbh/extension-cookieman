@@ -1,3 +1,34 @@
+# 2.1.12
+
+## MISC
+- remove  from templates (small is really small...) a41709a
+- fix missing DataProcessor 361cc9d
+- fix xdebug (again...) 0d132a9
+- fix docker-env 58f97c7
+- backport master c822703
+- make bootstrap4-modal default 115d7b7
+- New translations locallang.xlf (Romanian) 39b69a2
+- New translations locallang.xlf (Spanish) eb8643b
+- New translations locallang.xlf (Romanian) bd13355
+- New translations locallang.xlf (French) 0ab08c1
+- New translations locallang.xlf (Romanian) 1aeed96
+- New translations locallang.xlf (German) 8e274df
+- New translations locallang.xlf (Danish) 4a00104
+- New translations locallang.xlf (Danish) af52513
+- ignore yarn error logs 5f21d30
+- add notice about CDNs cd41459
+- document defaults 2141866
+- document showOnce() 1b58dcf
+- format docs d86e331
+- document minify 71a51c8
+- explain extensing types 016da48
+- add notice about weird versioning 6f453dc
+- format documentation aca62fd
+- add TER link d89f696
+- remove title branding... 8234025
+- more documentation 021c2bb
+- more documentation f238744
+
 # 2.1.6
 
 ## MISC
