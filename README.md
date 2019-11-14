@@ -1,6 +1,6 @@
 [![Crowdin](https://badges.crowdin.net/typo3-extension-cookieman/localized.svg)](https://crowdin.com/project/typo3-extension-cookieman)
 [![Coverage Status](https://coveralls.io/repos/github/dmind-gmbh/extension-cookieman/badge.svg?branch=9lts)](https://coveralls.io/github/dmind-gmbh/extension-cookieman?branch=9lts)
-![Unit Tests](ttps://github.com/dmind-gmbh/extension-cookieman/workflows/Tests/badge.svg?branch=9lts)
+![Unit Tests](https://github.com/dmind-gmbh/extension-cookieman/workflows/Tests/badge.svg?branch=9lts)
 
 # TYPO3 extension Cookieman
 
