@@ -141,6 +141,8 @@ There are some things that are not adjustable via TypoScript constants. See a fu
 > "cookie_http+html": an HTML (=HTTP+HTML) cookie which is also readable from JavaScript
 > 
 > "cookie_http": an HTTP cookie
+> 
+> You can add your own types by adding a localization string "type.‹you type key›"
 
 #### *trackingObjects*.*‹tracking object key›*.*show*.*‹tracking item key›*.*provider*: String
 > the provider, e.g. Google
