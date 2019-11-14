@@ -40,7 +40,7 @@ Each version **only supports** either TYPO3v8/v9/v10. This might be a bit confus
 ## Integration
 Include the shipped TypoScript as usual (either by including it from a sys_template \["Cookieman"\] or by referencing the files from your site package).
 
-### TypoScript constants
+### TypoScript **constants**
 Adjust the TypoScript constants (again, either in a sys_template record or in a file in your site package):
 
 ***plugin.tx_cookieman.settings.*** ...
@@ -80,6 +80,9 @@ Adjust the TypoScript constants (again, either in a sys_template record or in a 
 
 #### *links*.*imprintAnchor*: ?String
 > an anchor (TYPO3-lingua "section") on that page, if needed
+
+#### *minify*: int(0,1)
+> If *1*, includes the minified versions of .css and .js
 
 ### TypoScript setup 
 There are some things that are not adjustable via TypoScript constants. See a full TypoScript configuration example below.
