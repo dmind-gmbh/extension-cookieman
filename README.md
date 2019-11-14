@@ -72,13 +72,13 @@ Adjust the TypoScript constants (again, either in a sys_template record or in a 
 > ![bootstrap4-modal](Documentation/Images/bs4-modal-colors.png)
 
 #### *links*.*dataProtectionDeclarationPid*: int
-> page UID of data privacy statement page - the *cookieman* modal will not be automatically opened on this page (See "When is it shown?")
+> page UID of data privacy statement page - the *cookieman* modal will not be automatically opened on this page (See ["When is it shown?"](#when-is-it-shown))
 
 #### *links*.*dataProtectionDeclarationAnchor*: ?String
 > an anchor (TYPO3-lingua "section") on that page, if needed
 
 #### *links*.*imprintPid*: int
-> page UID of imprint page - the *cookieman* modal will not be automatically opened on this page (See "When is it shown?")
+> page UID of imprint page - the *cookieman* modal will not be automatically opened on this page (See ["When is it shown?"](#when-is-it-shown))
 
 #### *links*.*imprintAnchor*: ?String
 > an anchor (TYPO3-lingua "section") on that page, if needed
@@ -87,7 +87,7 @@ Adjust the TypoScript constants (again, either in a sys_template record or in a 
 > If *1*, includes the minified versions of .css and .js
 
 ### TypoScript **setup** 
-See a full TypoScript configuration example below.
+See a full [TypoScript configuration example](#typoscript-configuration-example-setup-part) below.
 
 ***plugin.tx_cookieman.settings.*** ...
 
@@ -156,7 +156,7 @@ See a full TypoScript configuration example below.
 
 All strings are translatable. Translations are managed on Crowdin: [![Crowdin](https://badges.crowdin.net/typo3-extension-cookieman/localized.svg)](https://crowdin.com/project/typo3-extension-cookieman). Click the button to help translating!
 
-You can override translations by the usual means (.xlf-files or TypoScript *_LOCAL_LANG*, see below for an example).
+You can override translations by the usual means (.xlf-files or TypoScript *_LOCAL_LANG*, see below for an [example](#typoscript-configuration-example-setup-part)).
 
 **If you have added groups or tracking objects**, you will have to add these translation strings:
 
@@ -285,7 +285,7 @@ They can appear multiple times and also together on the same element.
 cookieman.js exposes these methods:
 
 #### *cookieman.showOnce()*: void
-> Shows the confirmation modal when consent has not been saved yet. It is automatically called on each page from `cookieman-init.js` (with an aditional condition, see "When is it shown?").
+> Shows the confirmation modal when consent has not been saved yet. It is automatically called on each page from `cookieman-init.js` (with an aditional condition, see ["When is it shown?"](#when-is-it-shown)).
 
 #### *cookieman.show()*: void
 > Shows the confirmation modal. You can call that from anywhere you need it (e.g. with a link from your data protection declaration page). 
