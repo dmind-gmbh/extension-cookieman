@@ -84,8 +84,8 @@ Adjust the TypoScript constants (again, either in a sys_template record or in a 
 #### *minify*: int(0,1)
 > If *1*, includes the minified versions of .css and .js
 
-### TypoScript setup 
-There are some things that are not adjustable via TypoScript constants. See a full TypoScript configuration example below.
+### TypoScript **setup** 
+See a full TypoScript configuration example below.
 
 ***plugin.tx_cookieman.settings.*** ...
 
@@ -177,7 +177,7 @@ It is recommended to include a snippet like the following on your data privacy s
 </pre>
 
 
-## TypoScript configuration example ("setup" part):
+## TypoScript configuration example (**setup** part):
 <pre>
 temp.tx_cookieman.settings.groups.mandatory < plugin.tx_cookieman.settings.groups.mandatory
 
