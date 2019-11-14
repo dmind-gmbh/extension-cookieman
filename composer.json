@@ -1,7 +1,7 @@
 {
     "name": "dmind/cookieman",
     "type": "typo3-cms-extension",
-    "description": "A GDPR tracking consent popup. It asks for approval to include tracking objects (cookies, images or any HTML) and includes the objects when consented.",
+    "description": "A GDPR tracking consent popup. It asks for approval to include tracking objects (cookies, images or any HTML) and includes the objects when consented. Notice: Supports TYPO3v8/v9/v10, but each unique version only supports one!",
     "homepage": "https://github.com/dmind-gmbh/extension-cookieman",
     "support": {
         "issues": "https://github.com/dmind-gmbh/extension-cookieman/issues",
