@@ -51,7 +51,7 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
         );
 
         $subject = $this->getMockBuilder(TypoScriptSettingsProcessor::class)
-            ->onlyMethods(['getConfigurationManager'])
+            ->setMethods(['getConfigurationManager']) // setMethods() for PHPUnit 6.5
             ->setMockClassName('ConfigurationManagerInterface')->getMock();
         $subject->expects(self::once())->method('getConfigurationManager')->willReturn($configurationManager);
 
