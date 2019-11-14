@@ -45,10 +45,10 @@ Adjust the TypoScript constants (again, either in a sys_template record or in a 
 
 ***plugin.tx_cookieman.settings.*** ...
 
-#### *resourcesBasePath*: String
+#### *resourcesBasePath*: String (default: EXT:cookieman/Resources)
 > see below ("Create new theme") - the default enables the shipped demo themes
 
-#### *theme*: String
+#### *theme*: String (default: bootstrap4-modal)
 > the theme name. These default themes are shipped:
 >
 > **bootstrap3-banner:**
@@ -81,7 +81,7 @@ Adjust the TypoScript constants (again, either in a sys_template record or in a 
 #### *links*.*imprintAnchor*: ?String
 > an anchor (TYPO3-lingua "section") on that page, if needed
 
-#### *minify*: int(0,1)
+#### *minify*: int(0,1) (default: 1)
 > If *1*, includes the minified versions of .css and .js
 
 ### TypoScript **setup** 
@@ -89,7 +89,7 @@ See a full TypoScript configuration example below.
 
 ***plugin.tx_cookieman.settings.*** ...
 
-#### *groups*: Array
+#### *groups*: Array (default: example groups - you should override that, see below for a full TypoScript example)
 > holds the group configurations. A group contains several tracking objects.
 
 #### *groups*.*‹group key›*: Array
@@ -117,7 +117,7 @@ See a full TypoScript configuration example below.
 #### *groups*.*‹group key›*.*showDntMessage*: int(0,1)
 > If *1* AND the ["Do-not-track" setting of the browser](https://en.wikipedia.org/wiki/Do_Not_Track) is enabled, a message about that is shown. 
 
-#### *trackingObjects*: Array
+#### *trackingObjects*: Array (default: example tracking objects, you can use them, but override its `.inject`)
 > holds the tracking object configurations. Have a look at the included examples here <https://github.com/dmind-gmbh/extension-cookieman/tree/master/Configuration/TypoScript/TrackingObjects>
 
 #### *trackingObjects*.*‹tracking object key›*: Array
