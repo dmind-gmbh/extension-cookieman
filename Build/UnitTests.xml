@@ -24,4 +24,7 @@
 			<directory suffix=".php">../Classes/</directory>
 		</whitelist>
 	</filter>
+    <logging>
+        <log type="coverage-clover" target="clover.xml"/>
+    </logging>
 </phpunit>
