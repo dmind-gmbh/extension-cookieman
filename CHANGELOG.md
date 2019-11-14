@@ -1,3 +1,31 @@
+# 2.1.14
+
+## MISC
+- remove  from templates (small is really small...) addbc59
+- fix xdebug (again...) 3d659dd
+- fix docker-env e9c071d
+- ignore yarn error logs bd544e3
+- add notice about CDNs 675704e
+- document defaults 578b423
+- document showOnce() b78a527
+- format docs 8d9ee59
+- document minify b4a3d5a
+- explain extensing types b2677d8
+- add notice about weird versioning a5f7c7a
+- New translations locallang.xlf (Romanian) ff8cc5f
+- New translations locallang.xlf (Spanish) 5a4d06f
+- New translations locallang.xlf (Romanian) 41add10
+- New translations locallang.xlf (French) 73338a9
+- New translations locallang.xlf (Romanian) 5a318b1
+- New translations locallang.xlf (German) a5afdbe
+- New translations locallang.xlf (Danish) 7c59cfd
+- New translations locallang.xlf (Danish) 7b54170
+- format documentation ab04282
+- add TER link c4d7c0c
+- remove title branding... 7eb84e1
+- more documentation 1fc6af0
+- more documentation 1c4e8a3
+
 # 2.1.8
 
 ## MISC
