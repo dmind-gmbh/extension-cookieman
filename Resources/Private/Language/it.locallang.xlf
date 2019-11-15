@@ -49,7 +49,7 @@
       </trans-unit>
       <trans-unit id="tableheader.purpose" resname="tableheader.purpose">
         <source>Purpose</source>
-        <target state="needs-translation">Purpose</target>
+        <target state="translated">Scopo</target>
       </trans-unit>
       <trans-unit id="tableheader.duration" resname="tableheader.duration">
         <source>Lifetime</source>
@@ -81,7 +81,7 @@
       </trans-unit>
       <trans-unit id="type.cookie_http" resname="type.cookie_http">
         <source>HTTP</source>
-        <target state="needs-translation">HTTP</target>
+        <target state="translated">HTTP</target>
       </trans-unit>
       <trans-unit id="group.marketing" resname="group.marketing">
         <source>Marketing</source>
@@ -167,7 +167,7 @@
       </trans-unit>
       <trans-unit id="duration.hours" resname="duration.hours">
         <source>hours</source>
-        <target state="needs-translation">hours</target>
+        <target state="translated">ore</target>
       </trans-unit>
       <trans-unit id="duration.day" resname="duration.day">
         <source>day</source>
@@ -187,7 +187,7 @@
       </trans-unit>
       <trans-unit id="duration.year" resname="duration.year">
         <source>year</source>
-        <target state="needs-translation">year</target>
+        <target state="translated">anno</target>
       </trans-unit>
       <trans-unit id="duration.years" resname="duration.years">
         <source>years</source>
