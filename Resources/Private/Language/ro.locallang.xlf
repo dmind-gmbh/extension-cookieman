@@ -77,7 +77,7 @@
       </trans-unit>
       <trans-unit id="duration.session" resname="duration.session">
         <source>session</source>
-        <target state="needs-translation">session</target>
+        <target state="translated">sesiune</target>
       </trans-unit>
       <trans-unit id="type.cookie_http" resname="type.cookie_http" approved="yes">
         <source>HTTP</source>
@@ -199,7 +199,7 @@
       </trans-unit>
       <trans-unit id="alwaysactive" resname="alwaysactive">
         <source>always active</source>
-        <target state="needs-translation">always active</target>
+        <target state="translated">mereu activ</target>
       </trans-unit>
       <trans-unit id="inactive" resname="inactive" approved="yes">
         <source>inactive</source>
@@ -207,7 +207,7 @@
       </trans-unit>
       <trans-unit id="alwaysinactive" resname="alwaysinactive">
         <source>always inactive</source>
-        <target state="needs-translation">always inactive</target>
+        <target state="translated">mereu inactiv</target>
       </trans-unit>
     </body>
   </file>
