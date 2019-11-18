@@ -43,9 +43,9 @@
         <source>These cookies are needed for a smooth operation of our website.</source>
         <target state="needs-translation">These cookies are needed for a smooth operation of our website.</target>
       </trans-unit>
-      <trans-unit id="tableheader.name" resname="tableheader.name" approved="yes">
+      <trans-unit id="tableheader.name" resname="tableheader.name">
         <source>Name</source>
-        <target state="final">Nom</target>
+        <target state="translated">Nom</target>
       </trans-unit>
       <trans-unit id="tableheader.purpose" resname="tableheader.purpose" approved="yes">
         <source>Purpose</source>
@@ -57,7 +57,7 @@
       </trans-unit>
       <trans-unit id="tableheader.type" resname="tableheader.type">
         <source>Type</source>
-        <target state="needs-translation">Type</target>
+        <target state="translated">Type</target>
       </trans-unit>
       <trans-unit id="tableheader.provider" resname="tableheader.provider">
         <source>Provider</source>
@@ -69,7 +69,7 @@
       </trans-unit>
       <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html">
         <source>HTML</source>
-        <target state="needs-translation">HTML</target>
+        <target state="translated">HTML</target>
       </trans-unit>
       <trans-unit id="trackingobject.fe_typo_user.desc" resname="trackingobject.fe_typo_user.desc">
         <source>Assigns your browser to a session on the server.</source>
@@ -173,17 +173,17 @@
         <source>day</source>
         <target state="final">jour</target>
       </trans-unit>
-      <trans-unit id="duration.days" resname="duration.days" approved="yes">
+      <trans-unit id="duration.days" resname="duration.days">
         <source>days</source>
-        <target state="final">jours</target>
+        <target state="translated">jours</target>
       </trans-unit>
       <trans-unit id="duration.month" resname="duration.month" approved="yes">
         <source>month</source>
         <target state="final">mois</target>
       </trans-unit>
-      <trans-unit id="duration.months" resname="duration.months" approved="yes">
+      <trans-unit id="duration.months" resname="duration.months">
         <source>months</source>
-        <target state="final">mois</target>
+        <target state="translated">mois</target>
       </trans-unit>
       <trans-unit id="duration.year" resname="duration.year" approved="yes">
         <source>year</source>
