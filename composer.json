@@ -100,7 +100,7 @@
             "typo3 extension:activate -n introduction",
             "typo3 extension:activate -n cookieman",
             "typo3 extension:activate -n cookieman_test_crowdin_link",
-            "typo3 extension:activate -n cookieman_test_bootstrap4_modal"
+            "@cookieman:bootstrap4-modal"
         ],
         "cookieman:bootstrap3-banner": [
             "typo3 extension:deactivate -n cookieman_test_bootstrap3_modal",
