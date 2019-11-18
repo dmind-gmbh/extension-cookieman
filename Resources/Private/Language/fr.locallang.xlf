@@ -31,9 +31,9 @@
         <source>Accept all cookies</source>
         <target state="needs-translation">Accept all cookies</target>
       </trans-unit>
-      <trans-unit id="save" resname="save" approved="yes">
+      <trans-unit id="save" resname="save">
         <source>Save</source>
-        <target state="final">Sauvegarder</target>
+        <target state="translated">Sauveguarder</target>
       </trans-unit>
       <trans-unit id="group.mandatory" resname="group.mandatory" approved="yes">
         <source>Mandatory</source>
@@ -67,9 +67,9 @@
         <source>Saves your consent to using cookies.</source>
         <target state="needs-translation">Saves your consent to using cookies.</target>
       </trans-unit>
-      <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html">
+      <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html" approved="yes">
         <source>HTML</source>
-        <target state="translated">HTML</target>
+        <target state="final">HTML</target>
       </trans-unit>
       <trans-unit id="trackingobject.fe_typo_user.desc" resname="trackingobject.fe_typo_user.desc">
         <source>Assigns your browser to a session on the server.</source>
