@@ -14,7 +14,9 @@ jobs:
                 run: composer update --no-progress
             -   name: execute unit tests
                 run: Build/Scripts/runTests.sh -p ${{ matrix.php-version }} -x
-            -   run: |
+            -   name: Coveralls
+                if: ${{ secrets.COVERALLS_REPO_TOKEN }}
+                run: |
                     COVERALLS_REPO_TOKEN=${{ secrets.COVERALLS_REPO_TOKEN }} \
                         .build/bin/php-coveralls \
                         --verbose
