@@ -10,9 +10,26 @@
         else: 0
     )}"
 />
+<f:variable name="dataProtectionDeclarationLink">
+    <a href="{f:uri.page(
+        pageUid: settings.links.dataProtectionDeclarationPid,
+        section: settings.links.dataProtectionDeclarationAnchor
+    )}"
+    >{f:translate(key: 'dataProtectionDeclaration')}</a>
+</f:variable>
+
+<f:variable name="imprintLink">
+    <a href="{f:uri.page(
+        pageUid: settings.links.imprintPid,
+        section: settings.links.imprintAnchor
+    )}"
+    >{f:translate(key: 'imprint')}</a>
+</f:variable>
+
+
 <div id="cookieman-modal"
      data-cookieman-showonce="{isShowOnce}"
-     data-cookieman-settings="{settings.exportToHtml -> f:format.json()}"
+     data-cookieman-settings="{f:format.json(value: '{groups: settings.groups, trackingObjects: settings.trackingObjects}')}"
      class="modal fade" tabindex="-1" role="dialog"
 >
     <f:render section="Content"/>

@@ -1,7 +1,7 @@
 {
     "name": "dmind/cookieman",
     "type": "typo3-cms-extension",
-    "description": "Provides cookie opt-in by loading JavaScript only when consented",
+    "description": "A GDPR tracking consent popup. It asks for approval to include tracking objects (cookies, images or any HTML) and includes the objects when consented. Notice: Supports TYPO3v8/v9/v10, but each unique version only supports one!",
     "homepage": "https://github.com/dmind-gmbh/extension-cookieman",
     "support": {
         "issues": "https://github.com/dmind-gmbh/extension-cookieman/issues",
@@ -12,7 +12,7 @@
     "repositories": [
         {
             "type": "path",
-            "url": "Build/cookieman_test"
+            "url": "Build/*"
         }
     ],
     "authors": [
@@ -25,15 +25,21 @@
         "GPL-2.0-or-later"
     ],
     "require": {
-        "typo3/cms-core": "^9.5.0"
+        "php": "^7.0",
+        "typo3/cms-core": "^9.5.8"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.14",
         "roave/security-advisories": "dev-master",
-        "dmind/cookieman-test": "@dev",
         "helhum/typo3-console": "^5.7",
+        "dmind/cookieman-test-bootstrap3-banner": "@dev",
+        "dmind/cookieman-test-bootstrap3-modal": "@dev",
+        "dmind/cookieman-test-bootstrap4-modal": "@dev",
+        "dmind/cookieman-test-customtheme": "@dev",
+        "dmind/cookieman-test-crowdin-link": "@dev",
         "typo3/testing-framework": "^4.9",
-        "bk2k/extension-helper": "^1.0"
+        "bk2k/extension-helper": "^1.0",
+        "php-coveralls/php-coveralls": "^2.1"
     },
     "autoload": {
         "psr-4": {
@@ -47,7 +53,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-9lts": "2.0.x-dev"
+            "dev-9lts": "2.1.x-dev"
         },
         "typo3/cms": {
             "extension-key": "cookieman",
@@ -64,6 +70,7 @@
             "phpunit -c Build/UnitTests.xml"
         ],
         "cookieman:test": [
+            "@cookieman:cgl:test",
             "@cookieman:test:php:unit"
         ],
         "cookieman:cgl:test": [
@@ -72,20 +79,55 @@
         "cookieman:cgl:fix": [
             "php-cs-fixer --config=.php_cs.dist fix --using-cache=no"
         ],
+        "cookieman:build:prod": [
+            "yarn --cwd=Build/ run prod"
+        ],
         "install-typo3": [
             "typo3cms install:setup --admin-user-name=admin --admin-password=adminadmin --no-interaction"
         ],
+        "cookieman:release:prepare": [
+            "@cookieman:build:prod",
+            "[ -z \"$(git status --porcelain)\" ] || ( echo Working copy not clean; exit 1 )",
+            "@cookieman:test"
+        ],
         "cookieman:release:create": [
-            "extension-helper release:create"
+            "composer cookieman:release:prepare || exit $?",
+            "extension-helper release:create",
+            "mv cookieman_*.zip .build || exit $?"
         ],
         "install-extensions": [
-            "typo3 extensionmanager:extension:install bootstrap_package",
-            "typo3 extensionmanager:extension:install introduction",
-            "typo3 extensionmanager:extension:install cookieman",
-            "typo3 extensionmanager:extension:install cookieman_test"
+            "typo3 extension:activate -n bootstrap_package",
+            "typo3 extension:activate -n introduction",
+            "typo3 extension:activate -n cookieman",
+            "typo3 extension:activate -n cookieman_test_crowdin_link",
+            "typo3 extension:activate -n cookieman_test_bootstrap4_modal"
+        ],
+        "cookieman:bootstrap3-banner": [
+            "typo3 extension:deactivate -n cookieman_test_bootstrap3_modal",
+            "typo3 extension:deactivate -n cookieman_test_bootstrap4_modal",
+            "typo3 extension:deactivate -n cookieman_test_customtheme",
+            "typo3 extension:activate -n cookieman_test_bootstrap3_banner"
+        ],
+        "cookieman:bootstrap3-modal": [
+            "typo3 extension:deactivate -n cookieman_test_bootstrap3_banner",
+            "typo3 extension:deactivate -n cookieman_test_bootstrap4_modal",
+            "typo3 extension:deactivate -n cookieman_test_customtheme",
+            "typo3 extension:activate -n cookieman_test_bootstrap3_modal"
+        ],
+        "cookieman:bootstrap4-modal": [
+            "typo3 extension:deactivate -n cookieman_test_bootstrap3_banner",
+            "typo3 extension:deactivate -n cookieman_test_bootstrap3_modal",
+            "typo3 extension:deactivate -n cookieman_test_customtheme",
+            "typo3 extension:activate -n cookieman_test_bootstrap4_modal"
+        ],
+        "cookieman:customtheme": [
+            "typo3 extension:deactivate -n cookieman_test_bootstrap3_banner",
+            "typo3 extension:deactivate -n cookieman_test_bootstrap3_modal",
+            "typo3 extension:deactivate -n cookieman_test_bootstrap4_modal",
+            "typo3 extension:activate -n cookieman_test_customtheme"
         ],
         "post-autoload-dump": [
-            "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
+            "[ -L .build/public/typo3conf/ext/cookieman ] || ln -snvf ../../../../. .build/public/typo3conf/ext/cookieman"
         ]
     }
 }

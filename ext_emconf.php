@@ -8,8 +8,8 @@
  */
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'd-mind Cookieman',
-    'description' => 'Provides cookie opt-in by loading JavaScript only when consented',
+    'title' => 'Cookieman',
+    'description' => 'A GDPR tracking consent popup. It asks for approval to include tracking objects (cookies, images or any HTML) and includes the objects when consented. Notice: Supports TYPO3v8/v9/v10, but each unique version only supports one!',
     'category' => 'frontend',
     'author' => 'Jonas Eberle',
     'author_email' => 'jonas.eberle@d-mind.de',
@@ -18,9 +18,11 @@ $EM_CONF[$_EXTKEY] = [
     'uploadfolder' => '0',
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '2.0.4',
+    'version' => '2.1.13',
     'constraints' => [
-        'depends' => [],
+        'depends' => [
+            'typo3' => '9.5.0-9.5.99',
+        ],
         'conflicts' => [],
         'suggests' => [],
     ],

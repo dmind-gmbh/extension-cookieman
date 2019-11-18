@@ -1,5 +1,5 @@
 APIVersion: v1.11.2
-name: extension-cookieman
+name: extension-cookieman-9lts
 type: typo3
 docroot: .build/public
 php_version: "7.2"
@@ -20,8 +20,9 @@ timezone: ""
 hooks:
     pre-start:
         - exec-host: mkdir -p .build/public/typo3conf/
+        - exec-host: .ddev/commands/copy-git-config
     post-start:
-        - exec: yarn install
+        - exec: yarn install --save-dev --cwd=Build/
         - composer: update
         - exec: |
             if [[ $(mysql -e "SHOW TABLES" | wc -l) -eq 0 ]]; then

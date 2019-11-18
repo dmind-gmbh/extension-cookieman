@@ -3,46 +3,212 @@
   <file source-language="en" datatype="plaintext" original="Frontend" date="2019-10-28T12:20:51Z" product-name="cookieman" target-language="da">
     <header/>
     <body>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        </body>
+      <trans-unit id="heading" resname="heading" approved="yes">
+        <source>About Cookies</source>
+        <target state="final">Om cookies</target>
+      </trans-unit>
+      <trans-unit id="dataProtectionDeclaration" resname="dataProtectionDeclaration" approved="yes">
+        <source>Data Protection Declaration</source>
+        <target state="final">Databeskyttelseserklæring</target>
+      </trans-unit>
+      <trans-unit id="imprint" resname="imprint" approved="yes">
+        <source>Imprint</source>
+        <target state="final">Impressum</target>
+      </trans-unit>
+      <trans-unit id="introText" resname="introText" approved="yes">
+        <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
+        <target state="final">Denne webside bruger cookies. De har to funktioner: For det første leverer de grundlæggende funktionalitet til websiden. For det andet giver de os mulighed for at forbedre vores indhold, målrettet dig, ved at gemme og analysere anonymiserede brugerdata. Du kan til enhver tid trække din tilladelse til cookies tilbage. Du finder mere information om cookies på vores %1$s og mere om os på %2$s.</target>
+      </trans-unit>
+      <trans-unit id="settings" resname="settings" approved="yes">
+        <source>Settings</source>
+        <target state="final">Indstillinger</target>
+      </trans-unit>
+      <trans-unit id="settingsText" resname="settingsText" approved="yes">
+        <source>Click here for Cookie %1$s.</source>
+        <target state="final">Kliok her for cookies %1$s.</target>
+      </trans-unit>
+      <trans-unit id="accept" resname="accept" approved="yes">
+        <source>Accept all cookies</source>
+        <target state="final">Acceptér alle cookies</target>
+      </trans-unit>
+      <trans-unit id="save" resname="save" approved="yes">
+        <source>Save</source>
+        <target state="final">Gem</target>
+      </trans-unit>
+      <trans-unit id="group.mandatory" resname="group.mandatory" approved="yes">
+        <source>Mandatory</source>
+        <target state="final">Obligatorisk</target>
+      </trans-unit>
+      <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc" approved="yes">
+        <source>These cookies are needed for a smooth operation of our website.</source>
+        <target state="final">Disse cookies er nødvendige for at websiden fungerer optimalt.</target>
+      </trans-unit>
+      <trans-unit id="tableheader.name" resname="tableheader.name" approved="yes">
+        <source>Name</source>
+        <target state="final">Navn</target>
+      </trans-unit>
+      <trans-unit id="tableheader.purpose" resname="tableheader.purpose" approved="yes">
+        <source>Purpose</source>
+        <target state="final">Formål</target>
+      </trans-unit>
+      <trans-unit id="tableheader.duration" resname="tableheader.duration" approved="yes">
+        <source>Lifetime</source>
+        <target state="final">Levetid</target>
+      </trans-unit>
+      <trans-unit id="tableheader.type" resname="tableheader.type" approved="yes">
+        <source>Type</source>
+        <target state="final">Type</target>
+      </trans-unit>
+      <trans-unit id="tableheader.provider" resname="tableheader.provider" approved="yes">
+        <source>Provider</source>
+        <target state="final">Udbyder</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc" approved="yes">
+        <source>Saves your consent to using cookies.</source>
+        <target state="final">Gem din tilladelse til at bruge cookies.</target>
+      </trans-unit>
+      <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html" approved="yes">
+        <source>HTML</source>
+        <target state="final">HTML</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.fe_typo_user.desc" resname="trackingobject.fe_typo_user.desc" approved="yes">
+        <source>Assigns your browser to a session on the server.</source>
+        <target state="final">Tildel din browser en session på serveren.</target>
+      </trans-unit>
+      <trans-unit id="duration.session" resname="duration.session" approved="yes">
+        <source>session</source>
+        <target state="final">session</target>
+      </trans-unit>
+      <trans-unit id="type.cookie_http" resname="type.cookie_http" approved="yes">
+        <source>HTTP</source>
+        <target state="final">HTTP</target>
+      </trans-unit>
+      <trans-unit id="group.marketing" resname="group.marketing" approved="yes">
+        <source>Marketing</source>
+        <target state="final">Markedsføring</target>
+      </trans-unit>
+      <trans-unit id="group.marketing.desc" resname="group.marketing" approved="yes">
+        <source>With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</source>
+        <target state="final">Ved hjælp af disse cookies, arbejder vi målrettet på at forbedre vores indhold for vores brugere. Ved hjælp af anonymiserede data fra websidens brugere, kan vi optimere brugerflowet. Det gør os i stand til at forbedre reklamer og indhold.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._pk_id.desc" resname="trackingobject._pk_id.desc">
+        <source>Used to store a few details about the user such as the unique visitor ID.</source>
+        <target state="needs-translation">Used to store a few details about the user such as the unique visitor ID.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._pk_ref.desc" resname="trackingobject._pk_ref.desc">
+        <source>Used to store the attribution information, the referrer initially used to visit the website.</source>
+        <target state="needs-translation">Used to store the attribution information, the referrer initially used to visit the website.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._pk_ses.desc" resname="trackingobject._pk_ses.desc">
+        <source>Short lived cookie used to temporarily store data for the visit.</source>
+        <target state="needs-translation">Short lived cookie used to temporarily store data for the visit.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._pk_cvar.desc" resname="trackingobject._pk_cvar.desc">
+        <source>Short lived cookie used to temporarily store data for the visit.</source>
+        <target state="needs-translation">Short lived cookie used to temporarily store data for the visit.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._pk_hsr.desc" resname="trackingobject._pk_hsr.desc">
+        <source>Short lived cookie used to temporarily store data for the visit.</source>
+        <target state="needs-translation">Short lived cookie used to temporarily store data for the visit.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._ga.desc" resname="trackingobject._ga.desc">
+        <source>Used to distinguish users.</source>
+        <target state="needs-translation">Used to distinguish users.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.AMP_TOKEN.desc" resname="trackingobject.AMP_TOKEN.desc">
+        <source>Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID
+                    service.</source>
+        <target state="needs-translation">Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID
+                    service.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gac_--property-id--.desc" resname="trackingobject._gac_--property-id--.desc">
+        <source>Contains campaign related information for the user. If you have linked your Google Analytics and Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.</source>
+        <target state="needs-translation">Contains campaign related information for the user. If you have linked your Google Analytics and Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gat.desc" resname="trackingobject._gat.desc">
+        <source>Used to throttle request rate.</source>
+        <target state="needs-translation">Used to throttle request rate.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._ga_--container-id--.desc" resname="trackingobject._ga_--container-id--.desc">
+        <source>Persists session state.</source>
+        <target state="needs-translation">Persists session state.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gcl_au.desc" resname="trackingobject._gcl_au.desc">
+        <source>Used by Google AdSense to experiment with advertisement efficiency.</source>
+        <target state="needs-translation">Used by Google AdSense to experiment with advertisement efficiency.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gid.desc" resname="trackingobject._gid.desc">
+        <source>Used to distinguish users.</source>
+        <target state="needs-translation">Used to distinguish users.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.MUID.desc" resname="trackingobject.MUID.desc">
+        <source>Used as unique user identifier. The cookie allows user tracking across many Microsoft domains</source>
+        <target state="needs-translation">Used as unique user identifier. The cookie allows user tracking across many Microsoft domains</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.MUIDB.desc" resname="trackingobject.MUIDB.desc">
+        <source>Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</source>
+        <target state="needs-translation">Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</target>
+      </trans-unit>
+      <trans-unit id="browser.dnt-enabled" resname="browser.dnt-enabled">
+        <source><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></source>
+        <target state="needs-translation"><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></target>
+      </trans-unit>
+      <trans-unit id="duration.minute" resname="duration.minute">
+        <source>minute</source>
+        <target state="needs-translation">minute</target>
+      </trans-unit>
+      <trans-unit id="duration.minutes" resname="duration.minutes">
+        <source>minutes</source>
+        <target state="needs-translation">minutes</target>
+      </trans-unit>
+      <trans-unit id="duration.hour" resname="duration.hour">
+        <source>hour</source>
+        <target state="needs-translation">hour</target>
+      </trans-unit>
+      <trans-unit id="duration.hours" resname="duration.hours">
+        <source>hours</source>
+        <target state="needs-translation">hours</target>
+      </trans-unit>
+      <trans-unit id="duration.day" resname="duration.day">
+        <source>day</source>
+        <target state="needs-translation">day</target>
+      </trans-unit>
+      <trans-unit id="duration.days" resname="duration.days">
+        <source>days</source>
+        <target state="needs-translation">days</target>
+      </trans-unit>
+      <trans-unit id="duration.month" resname="duration.month">
+        <source>month</source>
+        <target state="needs-translation">month</target>
+      </trans-unit>
+      <trans-unit id="duration.months" resname="duration.months">
+        <source>months</source>
+        <target state="needs-translation">months</target>
+      </trans-unit>
+      <trans-unit id="duration.year" resname="duration.year">
+        <source>year</source>
+        <target state="needs-translation">year</target>
+      </trans-unit>
+      <trans-unit id="duration.years" resname="duration.years">
+        <source>years</source>
+        <target state="needs-translation">years</target>
+      </trans-unit>
+      <trans-unit id="active" resname="active">
+        <source>active</source>
+        <target state="needs-translation">active</target>
+      </trans-unit>
+      <trans-unit id="alwaysactive" resname="alwaysactive">
+        <source>always active</source>
+        <target state="needs-translation">always active</target>
+      </trans-unit>
+      <trans-unit id="inactive" resname="inactive">
+        <source>inactive</source>
+        <target state="needs-translation">inactive</target>
+      </trans-unit>
+      <trans-unit id="alwaysinactive" resname="alwaysinactive">
+        <source>always inactive</source>
+        <target state="needs-translation">always inactive</target>
+      </trans-unit>
+    </body>
   </file>
 </xliff>

@@ -1,0 +1,17 @@
+{
+    "name": "dmind/cookieman-test-bootstrap4-modal",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "license": [
+        "GPL-2.0-or-later"
+    ],
+    "require": {
+        "dmind/cookieman": "@dev",
+        "bk2k/bootstrap-package": "*",
+        "typo3/cms-introduction": "*",
+        "typo3/cms-tstemplate": "*"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    }
+}

@@ -1,14 +1,20 @@
 plugin.tx_cookieman.settings.trackingObjects {
     GoogleTagManager {
         inject (
-<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'GA_MEASUREMENT_ID');
-</script>
+            <script>
+            console.log('cookieman: I would inject GTM now...')
+            </script>
         )
+        # example:
+#        inject (
+#<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+#<script>
+#  window.dataLayer = window.dataLayer || [];
+#  function gtag(){dataLayer.push(arguments);}
+#  gtag('js', new Date());
+#  gtag('config', 'GA_MEASUREMENT_ID');
+#</script>
+#        )
         show {
             # https://developers.google.com/analytics/devguides/collection/gtagjs/cookie-usage
             _gcl_au {
@@ -25,7 +31,10 @@ plugin.tx_cookieman.settings.trackingObjects {
                 provider = Google
             }
             _dc_gtm_--property-id-- {
-
+                duration = 2
+                durationUnit = years
+                type = cookie_http+html
+                provider = Google
             }
         }
     }
