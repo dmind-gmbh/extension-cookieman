@@ -9,6 +9,8 @@ jobs:
             matrix:
                 php-version: [7.2, 7.3]
         steps:
+            -   name: check if this gets run
+                run: sleep 60
             -   uses: actions/checkout@v1
             -   name: composer
                 run: composer update --no-progress
