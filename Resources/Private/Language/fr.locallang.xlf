@@ -57,7 +57,7 @@
       </trans-unit>
       <trans-unit id="tableheader.type" resname="tableheader.type">
         <source>Type</source>
-        <target state="needs-translation">Type</target>
+        <target state="translated">Type</target>
       </trans-unit>
       <trans-unit id="tableheader.provider" resname="tableheader.provider">
         <source>Provider</source>
@@ -81,7 +81,7 @@
       </trans-unit>
       <trans-unit id="type.cookie_http" resname="type.cookie_http">
         <source>HTTP</source>
-        <target state="needs-translation">HTTP</target>
+        <target state="translated">HTTP</target>
       </trans-unit>
       <trans-unit id="group.marketing" resname="group.marketing">
         <source>Marketing</source>
