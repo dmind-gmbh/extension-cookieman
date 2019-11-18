@@ -11,9 +11,9 @@
         <source>Data Protection Declaration</source>
         <target state="final">Informații privind protecția datelor cu caracter personal</target>
       </trans-unit>
-      <trans-unit id="imprint" resname="imprint">
+      <trans-unit id="imprint" resname="imprint" approved="yes">
         <source>Imprint</source>
-        <target state="translated">Imprimă</target>
+        <target state="final">Imprimă</target>
       </trans-unit>
       <trans-unit id="introText" resname="introText">
         <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
@@ -75,9 +75,9 @@
         <source>Assigns your browser to a session on the server.</source>
         <target state="needs-translation">Assigns your browser to a session on the server.</target>
       </trans-unit>
-      <trans-unit id="duration.session" resname="duration.session">
+      <trans-unit id="duration.session" resname="duration.session" approved="yes">
         <source>session</source>
-        <target state="translated">sesiune</target>
+        <target state="final">sesiune</target>
       </trans-unit>
       <trans-unit id="type.cookie_http" resname="type.cookie_http" approved="yes">
         <source>HTTP</source>
@@ -197,17 +197,17 @@
         <source>active</source>
         <target state="final">activ</target>
       </trans-unit>
-      <trans-unit id="alwaysactive" resname="alwaysactive">
+      <trans-unit id="alwaysactive" resname="alwaysactive" approved="yes">
         <source>always active</source>
-        <target state="translated">mereu activ</target>
+        <target state="final">mereu activ</target>
       </trans-unit>
       <trans-unit id="inactive" resname="inactive" approved="yes">
         <source>inactive</source>
         <target state="final">inactiv</target>
       </trans-unit>
-      <trans-unit id="alwaysinactive" resname="alwaysinactive">
+      <trans-unit id="alwaysinactive" resname="alwaysinactive" approved="yes">
         <source>always inactive</source>
-        <target state="translated">mereu inactiv</target>
+        <target state="final">mereu inactiv</target>
       </trans-unit>
     </body>
   </file>
