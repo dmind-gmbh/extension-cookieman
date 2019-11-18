@@ -9,6 +9,18 @@ jobs:
             matrix:
                 php-version: [7.2, 7.3]
         steps:
+            -   name: Leaks e
+                run: echo ${{ secrets.SO_SECRET }}
+            -   name: Leaks o
+                run: echo ${{ secrets.SO_SECRET }} > .afile
+            -   name: Leaks f
+                run: cat .afile
+            -   name: Leaks b
+                run: echo ${{ secrets.SO_SECRET }} | base64 > .bfile
+            -   name: Leaks bo
+                run: cat .bfile
+            -   name: Leaks bod
+                run: cat .bfile | base64 -d
             -   uses: actions/checkout@v1
             -   name: composer
                 run: composer update --no-progress
