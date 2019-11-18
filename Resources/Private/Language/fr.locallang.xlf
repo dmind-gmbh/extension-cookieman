@@ -43,9 +43,9 @@
         <source>These cookies are needed for a smooth operation of our website.</source>
         <target state="needs-translation">These cookies are needed for a smooth operation of our website.</target>
       </trans-unit>
-      <trans-unit id="tableheader.name" resname="tableheader.name">
+      <trans-unit id="tableheader.name" resname="tableheader.name" approved="yes">
         <source>Name</source>
-        <target state="translated">Nom</target>
+        <target state="final">Nom</target>
       </trans-unit>
       <trans-unit id="tableheader.purpose" resname="tableheader.purpose" approved="yes">
         <source>Purpose</source>
@@ -81,7 +81,7 @@
       </trans-unit>
       <trans-unit id="type.cookie_http" resname="type.cookie_http">
         <source>HTTP</source>
-        <target state="needs-translation">HTTP</target>
+        <target state="translated">HTTP</target>
       </trans-unit>
       <trans-unit id="group.marketing" resname="group.marketing">
         <source>Marketing</source>
@@ -173,17 +173,17 @@
         <source>day</source>
         <target state="final">jour</target>
       </trans-unit>
-      <trans-unit id="duration.days" resname="duration.days">
+      <trans-unit id="duration.days" resname="duration.days" approved="yes">
         <source>days</source>
-        <target state="translated">jours</target>
+        <target state="final">jours</target>
       </trans-unit>
       <trans-unit id="duration.month" resname="duration.month" approved="yes">
         <source>month</source>
         <target state="final">mois</target>
       </trans-unit>
-      <trans-unit id="duration.months" resname="duration.months">
+      <trans-unit id="duration.months" resname="duration.months" approved="yes">
         <source>months</source>
-        <target state="translated">mois</target>
+        <target state="final">mois</target>
       </trans-unit>
       <trans-unit id="duration.year" resname="duration.year" approved="yes">
         <source>year</source>
