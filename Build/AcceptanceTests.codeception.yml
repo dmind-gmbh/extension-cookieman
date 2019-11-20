@@ -9,9 +9,9 @@ suites:
             enabled:
                 -   Asserts:
                 -   WebDriver:
-                        url: http://extension-cookieman-master.test
+                        url: http://extension-cookieman-9lts.test
                         browser: chrome
-                        host: ddev-extension-cookieman-master-chrome
+                        host: ddev-extension-cookieman-9lts-chrome
                         wait: 1
                         window_size: 1280x960
                         restart: true
