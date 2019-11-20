@@ -118,7 +118,7 @@
             "typo3 extensionmanager:extension:uninstall cookieman_test_bootstrap3_banner",
             "typo3 extensionmanager:extension:uninstall cookieman_test_bootstrap4_modal",
             "typo3 extensionmanager:extension:uninstall cookieman_test_customtheme",
-            "typo3 extensionmanager:extension:installn cookieman_test_bootstrap3_modal"
+            "typo3 extensionmanager:extension:install cookieman_test_bootstrap3_modal"
         ],
         "cookieman:bootstrap4-modal": [
             "typo3 extensionmanager:extension:uninstall cookieman_test_bootstrap3_banner",
