@@ -41,7 +41,7 @@ class PopupInteractionsCest
         $I->executeJS('cookieman.hide()');
         $I->wait(0.5);
         $I->dontSee('About Cookies');
-        $I->moveMouseOver('[href="/pages"]'); // hover over menu
+        $I->moveMouseOver('[href$="/pages"],[href$="?id=66"]'); // hover over menu
         $I->see('2 Columns 50/50');
     }
 
