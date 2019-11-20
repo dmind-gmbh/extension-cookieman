@@ -127,6 +127,10 @@
             "typo3 extension:deactivate -n cookieman_test_bootstrap4_modal",
             "typo3 extension:activate -n cookieman_test_customtheme"
         ],
+        "typo3:flush": [
+            "typo3 extension:activate -n felogin",
+            "typo3 extension:deactivate -n felogin"
+        ],
         "post-autoload-dump": [
             "[ -L .build/public/typo3conf/ext/cookieman ] || ln -snvf ../../../../. .build/public/typo3conf/ext/cookieman"
         ]
