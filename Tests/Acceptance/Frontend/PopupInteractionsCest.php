@@ -135,20 +135,26 @@ class PopupInteractionsCest
         $I->amOnPage('/pages');
         $I->setCookie('CookieConsent', 'mandatory|marketing', ['path' => '/']);
         $I->amOnPage('/content-examples');
+        $I->wait(0.5);
         $I->dontSee('About Cookies');
         $I->executeJS('cookieman.showOnce()');
+        $I->wait(0.5);
         $I->dontSee('About Cookies');
         $I->executeJS('cookieman.show()');
+        $I->wait(0.5);
         $I->see('About Cookies');
         $I->tryToClick('Settings');
+        $I->wait(0.5);
         $I->see('Marketing');
         $I->tryToClick('Marketing');
+        $I->wait(0.5);
         $I->seeCheckboxIsChecked('[name=marketing]');
         if (!$I->tryToUncheckOption('[name=marketing]')) { // theme: *-modal
             $I->executeJS('$("[name=marketing]").click()'); // theme: bootstrap3-banner
         }
         $I->dontSeeCheckboxIsChecked('[name=marketing]');
         $I->click('Save');
+        $I->wait(0.5);
         $I->dontSee('About Cookies');
         $I->seeCookie('CookieConsent');
         $I->assertEquals(
