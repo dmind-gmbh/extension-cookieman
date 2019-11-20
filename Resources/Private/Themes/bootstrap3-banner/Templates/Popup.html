@@ -21,7 +21,7 @@
 
                     <f:variable name="settingsLink">
                         <a href="#cookieman-settings"
-                           onclick="document.querySelector('[data-cookieman-save]').style.display = 'inline-block';
+                           onclick="document.querySelector('[data-cookieman-accept-all]').style.display = 'inline-block';
                                     return false"
                            data-toggle="collapse" aria-expanded="false" aria-controls="cookieman-settings"
                         >{f:translate(key: 'settings')}</a>
@@ -59,7 +59,7 @@
                                             <div class="checkbox-wrapper">
                                                 <div class="checkbox">
                                                     <label>
-                                                        <input name="marketing" value="1" type="checkbox"
+                                                        <input name="{groupId}" value="1" type="checkbox"
                                                                {f:if(condition: group.preselected, then:
                                                         'checked="checked"')}
                                                         {f:if(condition: group.disabled, then: 'disabled="disabled"')}
@@ -125,14 +125,16 @@
                 <div class="pull-right">
                     <a data-cookieman-save
                        class="btn btn-default"
-                       style="display:none"
                        href="" rel="nofollow"
                     >
                         {f:translate(key: 'save')}
                     </a>
                 </div>
                 <a data-cookieman-accept-all data-cookieman-save
-                   href="" rel="nofollow" class="btn btn-primary">
+                   class="btn btn-primary"
+                   style="display:none"
+                   href="" rel="nofollow"
+                >
                     {f:translate(key: 'accept')}
                 </a>
                 <div class="clearfix"></div>
