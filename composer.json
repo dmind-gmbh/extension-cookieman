@@ -69,17 +69,21 @@
         "bin-dir": ".build/bin"
     },
     "scripts": {
-        "cookieman:test:php:unit": [
-            "phpunit -c Build/UnitTests.xml"
-        ],
         "cookieman:test": [
-            "@cookieman:cgl:test",
-            "@cookieman:test:php:unit"
+            "@cookieman:test:cgl",
+            "@cookieman:test:unit",
+            "@cookieman:test:acceptance"
         ],
-        "cookieman:cgl:test": [
+        "cookieman:test:cgl": [
             "php-cs-fixer --config=.php_cs.dist fix -v --dry-run --using-cache=no"
         ],
-        "cookieman:cgl:fix": [
+        "cookieman:test:unit": [
+            "phpunit -c Build/UnitTests.phpunit.xml"
+        ],
+        "cookieman:test:acceptance": [
+            "codecept run acceptance -d -c Build/AcceptanceTests.codeception.yml"
+        ],
+        "cookieman:fix:cgl": [
             "php-cs-fixer --config=.php_cs.dist fix --using-cache=no"
         ],
         "cookieman:build:prod": [
