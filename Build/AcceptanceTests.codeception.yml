@@ -1,0 +1,34 @@
+namespace: Dmind\Cookieman\Tests\Acceptance\Support
+suites:
+    acceptance:
+        actor: AcceptanceTester
+        step_decorators:
+            - \Codeception\Step\TryTo
+        path: .
+        modules:
+            enabled:
+                -   Asserts:
+                -   WebDriver:
+                        url: http://extension-cookieman-master.test
+                        browser: chrome
+                        host: ddev-extension-cookieman-master-chrome
+                        wait: 1
+                        window_size: 1280x960
+                        restart: true
+extensions:
+    enabled:
+        -   Codeception\Extension\RunFailed:
+        -   Codeception\Extension\Recorder:
+                delete_successful: false
+                delete_orphaned: true
+
+paths:
+    tests: ../Tests/Acceptance
+    output: ../Build/AcceptanceReports
+    data: ../Tests
+    support: ../Tests/Acceptance/Support
+
+settings:
+    shuffle: false
+    lint: true
+    colors: true

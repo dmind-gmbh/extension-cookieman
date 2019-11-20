@@ -13,6 +13,8 @@
 /Build/testing-docker/.env
 /Build/clover.xml
 /Build/coveralls-upload.json
+/Build/AcceptanceReports
+/Tests/Acceptance/Support/_generated/
 
 # CGL Fixer
 /.php_cs.cache

@@ -38,7 +38,8 @@
         "dmind/cookieman-test-crowdin-link": "@dev",
         "typo3/testing-framework": "^5.0",
         "bk2k/extension-helper": "^1.0",
-        "php-coveralls/php-coveralls": "^2.1"
+        "php-coveralls/php-coveralls": "^2.1",
+        "codeception/codeception": "^3.1"
     },
     "autoload": {
         "psr-4": {
