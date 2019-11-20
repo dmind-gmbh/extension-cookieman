@@ -23,7 +23,7 @@ hooks:
         - exec-host: .ddev/commands/copy-git-config
     post-start:
         - exec: yarn install --save-dev --cwd=Build/
-        - composer: update
+        - composer: update --no-progress
         # quick-and-dirty TYPO3 setup; typo3-console would be very handy but it is not ready for TYPO3v10 yet
         - exec: |
             if [[ $(mysql -e "SHOW TABLES" | wc -l) -eq 0 ]]; then
