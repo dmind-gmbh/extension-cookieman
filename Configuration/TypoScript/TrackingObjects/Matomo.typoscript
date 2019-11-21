@@ -27,35 +27,35 @@ plugin.tx_cookieman.settings.trackingObjects {
                 duration = 13
                 durationUnit = months
                 type = cookie_http+html
-                provider = Bing
+                provider = Matomo
             }
 
             _pk_ref {
                 duration = 6
                 durationUnit = months
                 type = cookie_http+html
-                provider = Bing
+                provider = Matomo
             }
 
             _pk_ses {
                 duration = 30
                 durationUnit = minutes
                 type = cookie_http+html
-                provider = Bing
+                provider = Matomo
             }
 
             _pk_cvar {
                 duration = 30
                 durationUnit = minutes
                 type = cookie_http+html
-                provider = Bing
+                provider = Matomo
             }
 
             _pk_hsr {
                 duration = 30
                 durationUnit = minutes
                 type = cookie_http+html
-                provider = Bing
+                provider = Matomo
             }
         }
     }
