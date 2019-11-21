@@ -22,7 +22,6 @@ hooks:
         - exec-host: mkdir -p .build/public/typo3conf/
         - exec-host: .ddev/commands/copy-git-config
     post-start:
-        - exec: yarn install --save-dev --cwd=Build/
         - composer: update --no-progress
         - exec: |
             if [[ $(mysql -e "SHOW TABLES" | wc -l) -eq 0 ]]; then
