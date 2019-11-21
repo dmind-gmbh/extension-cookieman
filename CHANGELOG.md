@@ -1,3 +1,45 @@
+# 2.2.0
+
+## MISC
+- give animations more time 409168f
+- use PHP 7.3 locally ffa06de
+- generalize URL for non-site package testing 718d666
+- update README badges 56de0b0
+- split Github actions into ‹CGL & unit› and ‹acceptance› tests. Use ddev with a patch to run acceptance tests in Github actions. ef44cc6
+- align pre-commit with new composer {scripts} 04714de
+- add composer typo3:flush command de4c6c2
+- refactor composer {scripts} 0f5c552
+- bump PHP version for TYPO3v10 f73d324
+- fix bootstrap3-banner aa3d1ab
+- use codeception to run acceptance tests 0313d3a
+- manual 3-way merge to align translations (#25) c0bef29
+- New translations locallang.xlf (French) (#20) 453cce9
+- Revert "run coveralls only when secret is available" f5843e0
+- run coveralls only when secret is available d5143d3
+- New translations locallang.xlf (French) (#17) 9bdad89
+- New Crowdin translations (#14) 083dccd
+- New Crowdin translations (#11) b64f79d
+- New Crowdin translations (#9) 2c95642
+- remove unused .crowdin.yml 6141ccf
+- Update Crowdin configuration file 9e319c5
+- New Crowdin translations (#6) fc802c2
+- add links 1270a32
+- fix test badge 2848a18
+- remove workflow dependency 9d0a210
+- revert last idea 0fa6e8f
+- run composer and coveralls only one in workflow a45385e
+- add unit test badge 03f1e72
+- use deprecated method to stay compatible with PHPUnit 6.5 1950d49
+- run unit tests with PHP 7.2 + 7.3 69c3c32
+- add code coverage checking 0b43503
+- add composer 145cf66
+- add docker test container 24358de
+- add DataProcessor test 0108fbd
+- use relative symlink to make it work host- and ddev-wise 50dbe04
+- shorten local startup time 4657b4e
+- add .gitconfig for local dev e466687
+- remove .crowdin.yaml from export 2d6cf24
+
 # 2.1.14
 
 ## MISC
