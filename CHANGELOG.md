@@ -1,6 +1,27 @@
-# 2.2.1
+# 2.2.4
+
+# 2.2.4
 
 ## MISC
+- fix #31 split TypoScript into Base + Examples 8d2860a
+- fix #33 sort group.trackingsObjects by key and prevent JSON-object-cast 706581d
+- remove outdated reference to test extension e26a249
+- run composer normalize 97aede0
+- add composer-normalize 3e7bd74
+- add composer normalize 1e1e576
+- speed-up startup d7fdabd
+- docs b73db37
+- make examples CSP-ready 924eaaa
+- copy all nodes from injects() - get rid of container 9eef9e5
+- configure bootstrap-package to not use inline WebFontLoader (breaks CSP) 9f2c284
+- remove dependencies from test extension 3596d5f
+- minify & cleanup 77024cd
+- fix TypoScript inclusion for v8 81ac84b
+- include Content-Security-Policy in our test extensions & use our Crowdin Widget as test case cb934a6
+- fix #28 s attributes not properly inserted 5723d2e
+- customize TypoScript in test extension 260a440
+- fix typo fe2f033
+- make JS more error-tolerant (here: arbitrary cookie values) 2e80761
 - give animations more time 9272669
 - fix typo e742922
 - allow introduction-package ^3.0 to pass tests 7e2a9d9
