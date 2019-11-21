@@ -105,27 +105,26 @@ var cookieman = (function () {
             // https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML
 
             // Let the DOM parse our inject-HTML...
-            var pseudo = document.createElement('span')
+            var pseudo = document.createElement('div'),
+                _script
             pseudo.innerHTML = trackingObjectSettings.inject
 
-            // ...and insert <script>s manually
-            var pseudoScripts = pseudo.querySelectorAll('script'),
-                _script
-            for (var _i = 0; _i < pseudoScripts.length; _i++) {
-                var pseudoScript = pseudoScripts[_i]
-                _script = document.createElement('script')
-                _script.textContent = pseudoScript.textContent
-                for (var _iAttr = 0; _iAttr < pseudoScript.attributes.length; _iAttr++) {
-                    var _attr = pseudoScript.attributes[_iAttr];
-                    _script.setAttribute(_attr.name, _attr.value);
+            // ... insert each node ...
+            for (var _i = 0; _i < pseudo.children.length; _i++) {
+                var node = pseudo.children[_i]
+                console.log(node)
+                // ... and give special treatment to <script>s
+                if (node.tagName === 'SCRIPT') {
+                    _script = document.createElement('script')
+                    _script.textContent = node.textContent
+                    for (var _iAttr = 0; _iAttr < node.attributes.length; _iAttr++) {
+                        var _attr = node.attributes[_iAttr];
+                        _script.setAttribute(_attr.name, _attr.value);
+                    }
+                    node = _script
                 }
-
-                document.body.appendChild(_script)
-                pseudo.removeChild(pseudoScript) // remove from pseudo
+                document.body.appendChild(node)
             }
-
-            // append the rest of pseudo
-            document.body.appendChild(pseudo)
 
             // keep track what we injected
             injectedTrackingObjects.push(trackingObjectId)
