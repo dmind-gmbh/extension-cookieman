@@ -76,7 +76,7 @@ class PopupInteractionsCest
         $I->wait(0.5);
         $I->dontSee('About Cookies');
         $I->seeCookie('CookieConsent');
-        $I->assertEquals(
+        $I->assertStringStartsWith(
             'mandatory|marketing',
             $I->grabCookie('CookieConsent', ['path' => '/'])
         );
