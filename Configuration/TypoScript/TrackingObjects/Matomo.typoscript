@@ -2,10 +2,9 @@
 # https://matomo.org/faq/general/faq_146/
 plugin.tx_cookieman.settings.trackingObjects {
     Matomo {
+        # recommendation: do not use inline scripts when you are planning to deploy a Content-Security-Policy once.
         inject (
-            <script>
-            console.log('cookieman: I would inject Matomo now...')
-            </script>
+            <script data-what="Matomo" src="/typo3conf/ext/cookieman/Resources/Public/Js/example-inject.js"></script>
         )
         # example:
 #        inject (
