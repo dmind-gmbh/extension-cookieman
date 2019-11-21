@@ -12,26 +12,7 @@ plugin.tx_cookieman {
         }
 
         groups {
-            mandatory {
-                preselected = 1
-                disabled = 1
-                trackingObjects {
-                    0 = CookieConsent
-                    1 = fe_typo_user
-                }
-            }
-
-            marketing {
-                trackingObjects {
-                    0 = Matomo
-                    1 = GoogleAnalytics
-                    2 = GoogleTagManager
-                    3 = Bing
-                }
-
-                respectDnt = 1
-                showDntMessage = 1
-            }
+            # see an example in Example/setup.typoscript
         }
     }
 }
