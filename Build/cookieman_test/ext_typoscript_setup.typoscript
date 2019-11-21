@@ -1,4 +1,5 @@
 @import 'EXT:cookieman/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:cookieman/Configuration/TypoScript/Example/setup.typoscript'
 
 temp.tx_cookieman.settings.groups.mandatory < plugin.tx_cookieman.settings.groups.mandatory
 
