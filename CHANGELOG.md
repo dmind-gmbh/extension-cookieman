@@ -1,7 +1,5 @@
 # 2.2.4
 
-# 2.2.4
-
 ## MISC
 - fix #31 split TypoScript into Base + Examples 8d2860a
 - fix #33 sort group.trackingsObjects by key and prevent JSON-object-cast 706581d
