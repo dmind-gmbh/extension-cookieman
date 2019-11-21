@@ -1,6 +1,7 @@
 plugin.tx_cookieman.settings.trackingObjects {
     GoogleTagManager {
-        # recommendation: do not use inline scripts when you are planning to deploy a Content-Security-Policy once.
+        # inline scripts would break Content-Security-Policy: script-src
+        # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src
         inject (
             <script data-what="GoogleTagManager" src="/typo3conf/ext/cookieman/Resources/Public/Js/example-inject.js"></script>
         )
