@@ -1,9 +1,8 @@
 plugin.tx_cookieman.settings.trackingObjects {
     Bing {
+        # recommendation: do not use inline scripts when you are planning to deploy a Content-Security-Policy once.
         inject (
-            <script>
-            console.log('cookieman: I would inject Bing now...')
-            </script>
+            <script data-what="Bing" src="/typo3conf/ext/cookieman/Resources/Public/Js/example-inject.js"></script>
         )
         # example:
 #        inject (

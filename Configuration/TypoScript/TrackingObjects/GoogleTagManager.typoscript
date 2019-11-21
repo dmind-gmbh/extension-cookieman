@@ -1,9 +1,8 @@
 plugin.tx_cookieman.settings.trackingObjects {
     GoogleTagManager {
+        # recommendation: do not use inline scripts when you are planning to deploy a Content-Security-Policy once.
         inject (
-            <script>
-            console.log('cookieman: I would inject GTM now...')
-            </script>
+            <script data-what="GoogleTagManager" src="/typo3conf/ext/cookieman/Resources/Public/Js/example-inject.js"></script>
         )
         # example:
 #        inject (
