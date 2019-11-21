@@ -86,6 +86,13 @@
         "cookieman:fix:cgl": [
             "php-cs-fixer --config=.php_cs.dist fix --using-cache=no"
         ],
+        "cookieman:build": [
+            "@cookieman:build:prepare",
+            "@cookieman:build:prod"
+        ],
+        "cookieman:build:prepare": [
+            "yarn install --save-dev --cwd=Build/"
+        ],
         "cookieman:build:prod": [
             "yarn --cwd=Build/ run prod"
         ],
@@ -93,7 +100,7 @@
             "typo3cms install:setup --admin-user-name=admin --admin-password=adminadmin --no-interaction"
         ],
         "cookieman:release:prepare": [
-            "@cookieman:build:prod",
+            "@cookieman:build",
             "[ -z \"$(git status --porcelain)\" ] || ( echo Working copy not clean; exit 1 )",
             "@cookieman:test"
         ],
