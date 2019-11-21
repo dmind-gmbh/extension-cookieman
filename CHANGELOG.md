@@ -1,374 +1,428 @@
+# 2.2.2
+
+## MISC
+- give animations more time 08139c9
+- use PHP 7.3 locally 667cc3f
+- use typo3-console for v8/v9 e7ef835
+- cleanup 97918f7
+- add v9-link-without-site-package d140322
+- adapt for 9lts 98c2fbe
+- update README badges 0a479cd
+- split Github actions into ‹CGL & unit› and ‹acceptance› tests. Use ddev with a patch to run acceptance tests in Github actions. 4b5256b
+- align pre-commit with new composer {scripts} b44b984
+- add composer typo3:flush command de7cd1a
+- refactor composer {scripts} 998f598
+- bump PHP version for TYPO3v9 634213e
+- fix bootstrap3-banner a9cd45f
+- use codeception to run acceptance tests e9de1be
+- manual 3-way merge to align translations (#26) e36a563
+- New Crowdin translations (#22) a861367
+- New translations locallang.xlf (French) (#19) 904b68b
+- fix 9lts bootstrapping of test extensions 1322841
+- New translations locallang.xlf (Romanian) 96bc972
+- New translations locallang.xlf (Italian) b858838
+- New translations locallang.xlf (Romanian) 9f18cac
+- New translations locallang.xlf (Italian) daeab8c
+- New Crowdin translations (#13) 85246dc
+- New translations locallang.xlf (Italian) 47c3561
+- New translations locallang.xlf (Romanian) e0c41ac
+- New translations locallang.xlf (Romanian) fcbe141
+- New translations locallang.xlf (Italian) dc6f5c0
+- New Crowdin translations (#8) 5003bd1
+- remove unused .crowdin.yml 0fe0ffa
+- New translations locallang.xlf (Danish) 882e754
+- New translations locallang.xlf (Romanian) 53a1855
+- Update Crowdin configuration file b3c1989
+- add links 2c281ea
+- fix typo 34fcf3c
+- fix test badge a351329
+- remove workflow dependency 1874a89
+- revert last idea 1fe799e
+- run composer and coveralls only one in workflow 99b88db
+- add unit test badge 8c59f9b
+- revert broken version f5af939
+- use deprecated method to stay compatible with PHPUnit 6.5 700f251
+- run unit tests with PHP 7.2 + 7.3 acfd2fb
+- add code coverage checking ac8b1a2
+- add composer 09566e3
+- add docker test container 109f45d
+- add DataProcessor test 8142a07
+- use relative symlink to make it work host- and ddev-wise 89cd5fe
+- shorten local startup time 0eeba3e
+- add .gitconfig for local dev f98dbc0
+- remove .crowdin.yaml from export 233641c
+
 # 2.1.13
 
 ## MISC
-- remove  from templates (small is really small...) 98aa8e68
-- fix xdebug (again...) c5293545
-- fix docker-env 5866624a
-- backport master 69c7f1c3
-- ignore yarn error logs 8d9f99d0
-- add notice about CDNs 942df3f1
-- document defaults 32eb05e0
-- document showOnce() 1488574f
-- format docs abcc58a9
-- document minify 7b79824f
-- explain extensing types bed8cf93
-- add notice about weird versioning 7629f354
-- New translations locallang.xlf (Romanian) dbaaa256
-- New translations locallang.xlf (Spanish) a70baff0
-- New translations locallang.xlf (Romanian) 0a555b61
-- New translations locallang.xlf (French) 523fc15b
-- New translations locallang.xlf (Romanian) 10d58ffe
-- New translations locallang.xlf (German) 14934fc0
-- New translations locallang.xlf (Danish) 6899712d
-- New translations locallang.xlf (Danish) 63796976
-- format documentation 44731f34
-- add TER link 4a9e0cd9
-- remove title branding... 348c010b
-- more documentation a227a035
-- more documentation 2b0c797d
+- remove  from templates (small is really small...) 98aa8e6
+- fix xdebug (again...) c529354
+- fix docker-env 5866624
+- backport master 69c7f1c
+- ignore yarn error logs 8d9f99d
+- add notice about CDNs 942df3f
+- document defaults 32eb05e
+- document showOnce() 1488574
+- format docs abcc58a
+- document minify 7b79824
+- explain extensing types bed8cf9
+- add notice about weird versioning 7629f35
+- New translations locallang.xlf (Romanian) dbaaa25
+- New translations locallang.xlf (Spanish) a70baff
+- New translations locallang.xlf (Romanian) 0a555b6
+- New translations locallang.xlf (French) 523fc15
+- New translations locallang.xlf (Romanian) 10d58ff
+- New translations locallang.xlf (German) 14934fc
+- New translations locallang.xlf (Danish) 6899712
+- New translations locallang.xlf (Danish) 6379697
+- format documentation 44731f3
+- add TER link 4a9e0cd
+- remove title branding... 348c010
+- more documentation a227a03
+- more documentation 2b0c797
 
 # 2.1.7
 
 ## MISC
-- showcase theme customizing 75482661
-- cleanup a5e9cd7c
-- describe theme customizing 95111827
-- change description b0ef7ba7
+- showcase theme customizing 7548266
+- cleanup a5e9cd7
+- describe theme customizing 9511182
+- change description b0ef7ba
 
 # 2.1.4
 
 ## MISC
-- adapt release script 5fb06617
+- adapt release script 5fb0661
 
 # 2.1.1
 
 ## MISC
-- README (2) 68690182
-- README ce08b7cd
-- New translations locallang.xlf (Vietnamese) 75c15a9e
-- New translations locallang.xlf (Catalan) c55c74c8
-- New translations locallang.xlf (Chinese Simplified) c0108757
-- New translations locallang.xlf (Czech) ab142188
-- New translations locallang.xlf (Danish) 8b1a606b
-- New translations locallang.xlf (Dutch) 4a7eb5ac
-- New translations locallang.xlf (Finnish) 84cafea3
-- New translations locallang.xlf (French) b76d2ca4
-- New translations locallang.xlf (German) 458fddd2
-- New translations locallang.xlf (Greek) b6861207
-- New translations locallang.xlf (Hebrew) ef525f1b
-- New translations locallang.xlf (Hungarian) 026d5881
-- New translations locallang.xlf (Arabic) adbafc4c
-- New translations locallang.xlf (Italian) 0d098cdf
-- New translations locallang.xlf (Korean) 3b9c67eb
-- New translations locallang.xlf (Norwegian) b881e298
-- New translations locallang.xlf (Polish) bc53940d
-- New translations locallang.xlf (Portuguese) 93531f82
-- New translations locallang.xlf (Romanian) 223f682b
-- New translations locallang.xlf (Russian) d6047850
-- New translations locallang.xlf (Serbian (Cyrillic)) e6786af1
-- New translations locallang.xlf (Spanish) fe214a50
-- New translations locallang.xlf (Swedish) 383c4b2c
-- New translations locallang.xlf (Turkish) 2a474f5f
-- New translations locallang.xlf (Ukrainian) b130533a
-- New translations locallang.xlf (Japanese) c186c863
-- New translations locallang.xlf (Afrikaans) 7b65107c
-- use SEL for Typo3v9+ f01a71c6
-- make minify configurable 51e892d9
+- README (2) 6869018
+- README ce08b7c
+- New translations locallang.xlf (Vietnamese) 75c15a9
+- New translations locallang.xlf (Catalan) c55c74c
+- New translations locallang.xlf (Chinese Simplified) c010875
+- New translations locallang.xlf (Czech) ab14218
+- New translations locallang.xlf (Danish) 8b1a606
+- New translations locallang.xlf (Dutch) 4a7eb5a
+- New translations locallang.xlf (Finnish) 84cafea
+- New translations locallang.xlf (French) b76d2ca
+- New translations locallang.xlf (German) 458fddd
+- New translations locallang.xlf (Greek) b686120
+- New translations locallang.xlf (Hebrew) ef525f1
+- New translations locallang.xlf (Hungarian) 026d588
+- New translations locallang.xlf (Arabic) adbafc4
+- New translations locallang.xlf (Italian) 0d098cd
+- New translations locallang.xlf (Korean) 3b9c67e
+- New translations locallang.xlf (Norwegian) b881e29
+- New translations locallang.xlf (Polish) bc53940
+- New translations locallang.xlf (Portuguese) 93531f8
+- New translations locallang.xlf (Romanian) 223f682
+- New translations locallang.xlf (Russian) d604785
+- New translations locallang.xlf (Serbian (Cyrillic)) e6786af
+- New translations locallang.xlf (Spanish) fe214a5
+- New translations locallang.xlf (Swedish) 383c4b2
+- New translations locallang.xlf (Turkish) 2a474f5
+- New translations locallang.xlf (Ukrainian) b130533
+- New translations locallang.xlf (Japanese) c186c86
+- New translations locallang.xlf (Afrikaans) 7b65107
+- use SEL for Typo3v9+ f01a71c
+- make minify configurable 51e892d
 
 # 2.0.11
 
 ## MISC
-- compile JS 8ed5fa7f
-- fix HTML reflow 61dba255
+- compile JS 8ed5fa7
+- fix HTML reflow 61dba25
 
 # 2.0.8
 
 ## MISC
-- edit example - finally had the idea how to fix the translation-via-TypoScript issue. 25300fe3
-- add example 193ebc9c
+- edit example - finally had the idea how to fix the translation-via-TypoScript issue. 25300fe
+- add example 193ebc9
 
 # 2.0.7
 
 ## MISC
-- use DataProcessor to enable settings overwritability ebf1e035
-- fix duplicate key f93ced98
+- use DataProcessor to enable settings overwritability ebf1e03
+- fix duplicate key f93ced9
 
 # 2.0.6
 
 ## MISC
-- add release process to composer 7f5fe5a3
-- compile JS 4a330b8b
-- add minify config ca0e42b8
-- add screenshots 71cade7f
-- add Matomo cookie descriptions 99f8a542
-- Update Crowdin configuration file 37ebfad8
-- New translations locallang.xlf (German) 6b6321da
-- New translations locallang.xlf (German) f3387a3a
-- New translations locallang.xlf (Vietnamese) 10787dd8
-- New translations locallang.xlf (Afrikaans) 9de0d264
-- New translations locallang.xlf (Arabic) d26dfa6c
-- New translations locallang.xlf (Catalan) e1db675a
-- New translations locallang.xlf (Chinese Simplified) 371c483e
-- New translations locallang.xlf (Chinese Traditional) bd4cbda5
-- New translations locallang.xlf (Czech) 053b7f97
-- New translations locallang.xlf (Danish) b7805b17
-- New translations locallang.xlf (Dutch) 56641c72
-- New translations locallang.xlf (Finnish) 6dd5c28a
-- New translations locallang.xlf (Greek) 261dd4d2
-- New translations locallang.xlf (Hebrew) ee081077
-- New translations locallang.xlf (Hungarian) d1674a90
-- New translations locallang.xlf (Italian) 93b32095
-- New translations locallang.xlf (Korean) 54fbb066
-- New translations locallang.xlf (Norwegian) ab16b221
-- New translations locallang.xlf (Polish) df4c3f7c
-- New translations locallang.xlf (Portuguese, Brazilian) ebd0e067
-- New translations locallang.xlf (Romanian) fe03b66b
-- New translations locallang.xlf (Russian) 8e34ac9d
-- New translations locallang.xlf (Serbian (Cyrillic)) 20feb06e
-- New translations locallang.xlf (Spanish) 451daa2d
-- New translations locallang.xlf (Swedish) b1253f80
-- New translations locallang.xlf (Turkish) e23eca6e
-- New translations locallang.xlf (Ukrainian) 16af6794
-- New translations locallang.xlf (Japanese) a343b831
-- New translations locallang.xlf (French) 9bc12afe
-- add more bs4-accordion fixes 4df87ec3
-- fix dependencies 557fbc0f
-- add group description 4ec5ce85
-- gear bootstrap4-modal towards conservative example 23cc1d52
-- dynamify bootstrap3-modal 776275f8
-- add TypoScript docs and starter kit, rename, clean up b3632f1d
-- add TODO 446d4326
-- add test extensions for each theme and crowdin link; enable bootstrap4-modal by default ff7df9d1
-- dynamify bootstrap3-banner 4492034e
-- use partial for table rows 7f9bba1c
-- factor common variables out of template 872e137f
-- add some more translations 69e88c10
-- toggle tags instead of ::after (make it translatable) 11a91313
-- beautify bootstrap4-modal 7b4b6640
-- fix HTML reflow, refactor db2dbfb5
-- use bootstrap_package ^11 for 9lts 98ae1582
-- ddev 9lts 9e932258
-- fix typo a7df3b16
-- beautify xlf 08c0bd77
-- test crowdin - changing source language string 4e0cca33
-- New translations locallang.xlf (Vietnamese) f4421f31
-- New translations locallang.xlf (Afrikaans) 5c3ef11b
-- New translations locallang.xlf (Arabic) 91f81291
-- New translations locallang.xlf (Catalan) e7c0d79c
-- New translations locallang.xlf (Chinese Simplified) 749d1001
-- New translations locallang.xlf (Chinese Traditional) 7c80f97e
-- New translations locallang.xlf (Czech) 09991951
-- New translations locallang.xlf (Danish) cce2d006
-- New translations locallang.xlf (Dutch) 2b36f445
-- New translations locallang.xlf (Finnish) 6c8abe43
-- New translations locallang.xlf (Greek) c5c66d8c
-- New translations locallang.xlf (Hebrew) 0663ae9f
-- New translations locallang.xlf (Hungarian) f856bf6f
-- New translations locallang.xlf (Italian) 697ccd31
-- New translations locallang.xlf (Korean) 322a15ae
-- New translations locallang.xlf (Norwegian) 14530342
-- New translations locallang.xlf (Polish) d163fc7b
-- New translations locallang.xlf (Portuguese) 77e93228
-- New translations locallang.xlf (Portuguese, Brazilian) fc7adcf6
-- New translations locallang.xlf (Romanian) cf53ab7a
-- New translations locallang.xlf (Russian) 26aa0f1b
-- New translations locallang.xlf (Serbian (Cyrillic)) 1059dc2a
-- New translations locallang.xlf (Spanish) 57262125
-- New translations locallang.xlf (Swedish) 864a598c
-- New translations locallang.xlf (Turkish) d4278874
-- New translations locallang.xlf (Ukrainian) 03dddbfb
-- New translations locallang.xlf (Japanese) 8db392de
-- New translations locallang.xlf (French) 7e6ce2bf
-- New translations locallang.xlf (Vietnamese) 81bc8d98
-- New translations locallang.xlf (German) 52ea1fb3
-- New translations locallang.xlf (Afrikaans) db7aca55
-- New translations locallang.xlf (Arabic) bd583cae
-- New translations locallang.xlf (Catalan) ca8dc83a
-- New translations locallang.xlf (Chinese Simplified) 4e16b3c8
-- New translations locallang.xlf (Chinese Traditional) cbc853b4
-- New translations locallang.xlf (Czech) 32490474
-- New translations locallang.xlf (Danish) fe82db02
-- New translations locallang.xlf (Dutch) 4442dda9
-- New translations locallang.xlf (Finnish) b83eacf7
-- New translations locallang.xlf (Greek) 4a8b61e4
-- New translations locallang.xlf (Hebrew) b766e903
-- New translations locallang.xlf (Hungarian) 20a0a779
-- New translations locallang.xlf (Italian) 7b9b0a80
-- New translations locallang.xlf (Korean) cca7f50c
-- New translations locallang.xlf (Norwegian) 5add6fc9
-- New translations locallang.xlf (Polish) a8f2234d
-- New translations locallang.xlf (Portuguese) b399d8de
-- New translations locallang.xlf (Portuguese, Brazilian) 37690776
-- New translations locallang.xlf (Romanian) 3da090a2
-- New translations locallang.xlf (Russian) bcdc7003
-- New translations locallang.xlf (Serbian (Cyrillic)) 7900a923
-- New translations locallang.xlf (Spanish) 6f7385e0
-- New translations locallang.xlf (Swedish) 316cc492
-- New translations locallang.xlf (Turkish) 31b21246
-- New translations locallang.xlf (Ukrainian) f756882c
-- New translations locallang.xlf (Japanese) 9f9a2fe5
-- New translations locallang.xlf (German) c20d20c0
-- New translations locallang.xlf (French) b92a530e
-- New translations locallang.xlf (English) de499acf
-- New translations locallang.xlf (German) 006ff4e4
-- New translations locallang.xlf (French) 508c1f2a
-- New translations locallang.xlf (English) 7cacbeb4
-- New translations locallang.xlf (German) 299fd90d
-- New translations locallang.xlf (French) 9ac33dc4
-- New translations locallang.xlf (English) 8db13a20
-- New translations locallang.xlf (German) 76aedf1a
-- New translations locallang.xlf (French) c06de870
-- New translations locallang.xlf (English) 76b9c21b
-- New translations locallang.xlf (German) a402f13f
-- New translations locallang.xlf (French) 385e99ec
-- New translations locallang.xlf (English) 231cb3f3
-- New translations locallang.xlf (German) 8a47b9b7
-- New translations locallang.xlf (German) 0eac0f50
-- New translations locallang.xlf (German) 3d5150c6
-- New translations locallang.xlf (French) d046e514
-- New translations locallang.xlf (English) 60cd66cb
-- New translations locallang.xlf (German) f6dff60c
-- New translations locallang.xlf (French) 0d342bc0
-- Update Crowdin configuration file 3af9b859
-- refactor TypoScript, add TypoScript examples b16b1a6d
-- config via TypoScript; translation cf28bd2e
-- cleanup a2379451
-- add TODO 7f34d6e4
+- add release process to composer 7f5fe5a
+- compile JS 4a330b8
+- add minify config ca0e42b
+- add screenshots 71cade7
+- add Matomo cookie descriptions 99f8a54
+- Update Crowdin configuration file 37ebfad
+- New translations locallang.xlf (German) 6b6321d
+- New translations locallang.xlf (German) f3387a3
+- New translations locallang.xlf (Vietnamese) 10787dd
+- New translations locallang.xlf (Afrikaans) 9de0d26
+- New translations locallang.xlf (Arabic) d26dfa6
+- New translations locallang.xlf (Catalan) e1db675
+- New translations locallang.xlf (Chinese Simplified) 371c483
+- New translations locallang.xlf (Chinese Traditional) bd4cbda
+- New translations locallang.xlf (Czech) 053b7f9
+- New translations locallang.xlf (Danish) b7805b1
+- New translations locallang.xlf (Dutch) 56641c7
+- New translations locallang.xlf (Finnish) 6dd5c28
+- New translations locallang.xlf (Greek) 261dd4d
+- New translations locallang.xlf (Hebrew) ee08107
+- New translations locallang.xlf (Hungarian) d1674a9
+- New translations locallang.xlf (Italian) 93b3209
+- New translations locallang.xlf (Korean) 54fbb06
+- New translations locallang.xlf (Norwegian) ab16b22
+- New translations locallang.xlf (Polish) df4c3f7
+- New translations locallang.xlf (Portuguese, Brazilian) ebd0e06
+- New translations locallang.xlf (Romanian) fe03b66
+- New translations locallang.xlf (Russian) 8e34ac9
+- New translations locallang.xlf (Serbian (Cyrillic)) 20feb06
+- New translations locallang.xlf (Spanish) 451daa2
+- New translations locallang.xlf (Swedish) b1253f8
+- New translations locallang.xlf (Turkish) e23eca6
+- New translations locallang.xlf (Ukrainian) 16af679
+- New translations locallang.xlf (Japanese) a343b83
+- New translations locallang.xlf (French) 9bc12af
+- add more bs4-accordion fixes 4df87ec
+- fix dependencies 557fbc0
+- add group description 4ec5ce8
+- gear bootstrap4-modal towards conservative example 23cc1d5
+- dynamify bootstrap3-modal 776275f
+- add TypoScript docs and starter kit, rename, clean up b3632f1
+- add TODO 446d432
+- add test extensions for each theme and crowdin link; enable bootstrap4-modal by default ff7df9d
+- dynamify bootstrap3-banner 4492034
+- use partial for table rows 7f9bba1
+- factor common variables out of template 872e137
+- add some more translations 69e88c1
+- toggle tags instead of ::after (make it translatable) 11a9131
+- beautify bootstrap4-modal 7b4b664
+- fix HTML reflow, refactor db2dbfb
+- use bootstrap_package ^11 for 9lts 98ae158
+- ddev 9lts 9e93225
+- fix typo a7df3b1
+- beautify xlf 08c0bd7
+- test crowdin - changing source language string 4e0cca3
+- New translations locallang.xlf (Vietnamese) f4421f3
+- New translations locallang.xlf (Afrikaans) 5c3ef11
+- New translations locallang.xlf (Arabic) 91f8129
+- New translations locallang.xlf (Catalan) e7c0d79
+- New translations locallang.xlf (Chinese Simplified) 749d100
+- New translations locallang.xlf (Chinese Traditional) 7c80f97
+- New translations locallang.xlf (Czech) 0999195
+- New translations locallang.xlf (Danish) cce2d00
+- New translations locallang.xlf (Dutch) 2b36f44
+- New translations locallang.xlf (Finnish) 6c8abe4
+- New translations locallang.xlf (Greek) c5c66d8
+- New translations locallang.xlf (Hebrew) 0663ae9
+- New translations locallang.xlf (Hungarian) f856bf6
+- New translations locallang.xlf (Italian) 697ccd3
+- New translations locallang.xlf (Korean) 322a15a
+- New translations locallang.xlf (Norwegian) 1453034
+- New translations locallang.xlf (Polish) d163fc7
+- New translations locallang.xlf (Portuguese) 77e9322
+- New translations locallang.xlf (Portuguese, Brazilian) fc7adcf
+- New translations locallang.xlf (Romanian) cf53ab7
+- New translations locallang.xlf (Russian) 26aa0f1
+- New translations locallang.xlf (Serbian (Cyrillic)) 1059dc2
+- New translations locallang.xlf (Spanish) 5726212
+- New translations locallang.xlf (Swedish) 864a598
+- New translations locallang.xlf (Turkish) d427887
+- New translations locallang.xlf (Ukrainian) 03dddbf
+- New translations locallang.xlf (Japanese) 8db392d
+- New translations locallang.xlf (French) 7e6ce2b
+- New translations locallang.xlf (Vietnamese) 81bc8d9
+- New translations locallang.xlf (German) 52ea1fb
+- New translations locallang.xlf (Afrikaans) db7aca5
+- New translations locallang.xlf (Arabic) bd583ca
+- New translations locallang.xlf (Catalan) ca8dc83
+- New translations locallang.xlf (Chinese Simplified) 4e16b3c
+- New translations locallang.xlf (Chinese Traditional) cbc853b
+- New translations locallang.xlf (Czech) 3249047
+- New translations locallang.xlf (Danish) fe82db0
+- New translations locallang.xlf (Dutch) 4442dda
+- New translations locallang.xlf (Finnish) b83eacf
+- New translations locallang.xlf (Greek) 4a8b61e
+- New translations locallang.xlf (Hebrew) b766e90
+- New translations locallang.xlf (Hungarian) 20a0a77
+- New translations locallang.xlf (Italian) 7b9b0a8
+- New translations locallang.xlf (Korean) cca7f50
+- New translations locallang.xlf (Norwegian) 5add6fc
+- New translations locallang.xlf (Polish) a8f2234
+- New translations locallang.xlf (Portuguese) b399d8d
+- New translations locallang.xlf (Portuguese, Brazilian) 3769077
+- New translations locallang.xlf (Romanian) 3da090a
+- New translations locallang.xlf (Russian) bcdc700
+- New translations locallang.xlf (Serbian (Cyrillic)) 7900a92
+- New translations locallang.xlf (Spanish) 6f7385e
+- New translations locallang.xlf (Swedish) 316cc49
+- New translations locallang.xlf (Turkish) 31b2124
+- New translations locallang.xlf (Ukrainian) f756882
+- New translations locallang.xlf (Japanese) 9f9a2fe
+- New translations locallang.xlf (German) c20d20c
+- New translations locallang.xlf (French) b92a530
+- New translations locallang.xlf (English) de499ac
+- New translations locallang.xlf (German) 006ff4e
+- New translations locallang.xlf (French) 508c1f2
+- New translations locallang.xlf (English) 7cacbeb
+- New translations locallang.xlf (German) 299fd90
+- New translations locallang.xlf (French) 9ac33dc
+- New translations locallang.xlf (English) 8db13a2
+- New translations locallang.xlf (German) 76aedf1
+- New translations locallang.xlf (French) c06de87
+- New translations locallang.xlf (English) 76b9c21
+- New translations locallang.xlf (German) a402f13
+- New translations locallang.xlf (French) 385e99e
+- New translations locallang.xlf (English) 231cb3f
+- New translations locallang.xlf (German) 8a47b9b
+- New translations locallang.xlf (German) 0eac0f5
+- New translations locallang.xlf (German) 3d5150c
+- New translations locallang.xlf (French) d046e51
+- New translations locallang.xlf (English) 60cd66c
+- New translations locallang.xlf (German) f6dff60
+- New translations locallang.xlf (French) 0d342bc
+- Update Crowdin configuration file 3af9b85
+- refactor TypoScript, add TypoScript examples b16b1a6
+- config via TypoScript; translation cf28bd2
+- cleanup a237945
+- add TODO 7f34d6e
 
 # 2.0.4
 
 ## MISC
-- mention w.i.p. in README 30eb235f
-- remove debug 0773bc55
-- inject HTML, take special care of  13ddaacd
-- add TODOs 0eb5102e
-- fix exportToHtml 43db0cb3
-- add translations (w.i.p.) e6e7d3f6
-- adapt to new TypoScript structure a3dc1eea
-- export some settings to HTML c62fa517
-- refactor TypoScript, add TypoScript examples 1a87776b
-- use partial across default themes 29b60cc8
-- add rootPaths sequence resourceBasePath › default themes › default f1dbecf8
+- mention w.i.p. in README 30eb235
+- remove debug 0773bc5
+- inject HTML, take special care of  13ddaac
+- add TODOs 0eb5102
+- fix exportToHtml 43db0cb
+- add translations (w.i.p.) e6e7d3f
+- adapt to new TypoScript structure a3dc1ee
+- export some settings to HTML c62fa51
+- refactor TypoScript, add TypoScript examples 1a87776
+- use partial across default themes 29b60cc
+- add rootPaths sequence resourceBasePath › default themes › default f1dbecf
 
 # 2.0.1
 
 ## MISC
-- use release:create 5202f8a4
-- add release:publish script 7291b89f
-- enable bootstrap_package compatiblity 95c599e0
-- config via TypoScript; translation 0907105f
-- modernize TypoScript include e2b8c38d
-- style card-body 8ffe8cdb
-- amend TODO f0c8bc5f
-- amend TODO 59027eb3
-- cleanup 2a807bda
+- use release:create 5202f8a
+- add release:publish script 7291b89
+- enable bootstrap_package compatiblity 95c599e
+- config via TypoScript; translation 0907105
+- modernize TypoScript include e2b8c38
+- style card-body 8ffe8cd
+- amend TODO f0c8bc5
+- amend TODO 59027eb
+- cleanup 2a807bd
 
 # 1.3.3
 
 ## MISC
-- add TODO section 438eb602
-- add extension-helper c9946c96
-- use composer update ec5f372b
-- Bootstrap 4 theme 2f0a6c4c
-- alias branches to 2.x-dev 477aef97
-- remove private Satis 56888ef7
-- fix .md syntax 04028be1
-- fix homepage 4436c26e
-- clarify versions 24e74132
-- set new default template 520f2fd8
-- remove private Satis ecfb3a69
-- use typo3-console for v9 setup 43cb5e59
-- add cookieman test config 8f4331da
-- adapt to missing Configuration/TypoScript 3ec05dbe
-- add v9 templates 17b2ec53
-- fix extension nomenclature babe7c27
-- set TYPO3 v9 c9705b44
-- reorder extension installation b35fa68d
-- export data from ddev dump-db into writable fs b1488a5e
-- clean up ddev config 0c82b865
-- composer.json dependencies and scripts ecff94ae
-- add GPLv2 0c1e3c25
-- prevent php-cs exporting 676a8eeb
-- fix PHP d95f80ed
-- setup TypoScript in cookieman_test 303e2557
-- add pre-commit CGL hook 84ac1542
-- add unit tests skeleton fc281839
-- emconf f93b49f7
-- .gitignore fcefdb92
-- github issue templates 88c7e7c4
-- php-cs-fixer 3a00558c
-- basic JS/CSS build config 5f0674b4
-- configure git eol and export aeef693b
-- .editorconfig 1a957865
-- beautify 68196ca1
-- ddev config aa42acac
-- add testing extension b3a7f4c4
-- change default theme e736baaa
-- use default bootstrap colors // justify text b5a8e8b0
-- justify text 383f07e1
-- vertically center collapse indicators 2a8cbd8f
-- translate common texts 4dfb1a55
-- use more usual colors for default theme dec42867
-- lint 96f9d9fd
-- refactor initialisation and JS theme integration e666a7ed
-- add .gitignore a53d38f8
+- add TODO section 438eb60
+- add extension-helper c9946c9
+- use composer update ec5f372
+- Bootstrap 4 theme 2f0a6c4
+- alias branches to 2.x-dev 477aef9
+- remove private Satis 56888ef
+- fix .md syntax 04028be
+- fix homepage 4436c26
+- clarify versions 24e7413
+- set new default template 520f2fd
+- remove private Satis ecfb3a6
+- use typo3-console for v9 setup 43cb5e5
+- add cookieman test config 8f4331d
+- adapt to missing Configuration/TypoScript 3ec05db
+- add v9 templates 17b2ec5
+- fix extension nomenclature babe7c2
+- set TYPO3 v9 c9705b4
+- reorder extension installation b35fa68
+- export data from ddev dump-db into writable fs b1488a5
+- clean up ddev config 0c82b86
+- composer.json dependencies and scripts ecff94a
+- add GPLv2 0c1e3c2
+- prevent php-cs exporting 676a8ee
+- fix PHP d95f80e
+- setup TypoScript in cookieman_test 303e255
+- add pre-commit CGL hook 84ac154
+- add unit tests skeleton fc28183
+- emconf f93b49f
+- .gitignore fcefdb9
+- github issue templates 88c7e7c
+- php-cs-fixer 3a00558
+- basic JS/CSS build config 5f0674b
+- configure git eol and export aeef693
+- .editorconfig 1a95786
+- beautify 68196ca
+- ddev config aa42aca
+- add testing extension b3a7f4c
+- change default theme e736baa
+- use default bootstrap colors // justify text b5a8e8b
+- justify text 383f07e
+- vertically center collapse indicators 2a8cbd8
+- translate common texts 4dfb1a5
+- use more usual colors for default theme dec4286
+- lint 96f9d9f
+- refactor initialisation and JS theme integration e666a7e
+- add .gitignore a53d38f
 
 # 1.3.1
 
 ## MISC
-- drop double e.preventDefault() 6b3afee8
+- drop double e.preventDefault() 6b3afee
 
 # 1.3.0
 
 ## MISC
-- bump version f6357d35
-- remove styling 68fc52aa
+- bump version f6357d3
+- remove styling 68fc52a
 
 # 1.2.2
 
 ## MISC
-- Bump version afd1c169
-- docs 74009aa3
-- docs 62a6e788
-- docs f0f0d59c
-- remove client specific texts e3c20d3f
-- remove client specific texts 114bb6b9
+- Bump version afd1c16
+- docs 74009aa
+- docs 62a6e78
+- docs f0f0d59
+- remove client specific texts e3c20d3
+- remove client specific texts 114bb6b
 
 # 1.2.1
 
 ## MISC
-- bump version 74e447a4
+- bump version 74e447a
 
 # 1.2.0
 
 ## MISC
-- docs 9c89b3d4
-- streamline examples (2) 4573e788
-- streamline examples (1) 1d17bcc5
-- include fallback for Fluid paths 3de8f0fe
+- docs 9c89b3d
+- streamline examples (2) 4573e78
+- streamline examples (1) 1d17bcc
+- include fallback for Fluid paths 3de8f0f
 
 # 1.1.1
 
 ## MISC
-- bump version f906f2c8
-- bump version 712f71e8
+- bump version f906f2c
+- bump version 712f71e
 
 # 1.1.0
 
 ## MISC
-- bump version 50c9c8f6
-- add imprint PID to constants; suppress showing popup on imprint/data declaration pages 683fc490
-- docs a3cd1e54
+- bump version 50c9c8f
+- add imprint PID to constants; suppress showing popup on imprint/data declaration pages 683fc49
+- docs a3cd1e5
 
 # 1.0.0
 
 ## MISC
-- version constraints 8c5c5e4a
-- v1.0.0 965dd216
+- version constraints 8c5c5e4
+- v1.0.0 965dd21
 
 # 0.1.0
 
 ## MISC
-- pre-stable b89fc5ec
-- initial 165ae213
+- pre-stable b89fc5e
+- initial 165ae21
 
