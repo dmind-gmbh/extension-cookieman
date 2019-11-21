@@ -34,11 +34,11 @@
         "friendsofphp/php-cs-fixer": "^2.14",
         "roave/security-advisories": "dev-master",
         "helhum/typo3-console": "^5.7",
+        "dmind/cookieman-test": "@dev",
         "dmind/cookieman-test-bootstrap3-banner": "@dev",
         "dmind/cookieman-test-bootstrap3-modal": "@dev",
         "dmind/cookieman-test-bootstrap4-modal": "@dev",
         "dmind/cookieman-test-customtheme": "@dev",
-        "dmind/cookieman-test-crowdin-link": "@dev",
         "typo3/testing-framework": "^2.0.4",
         "bk2k/extension-helper": "^1.0",
         "php-coveralls/php-coveralls": "^2.1",
@@ -106,7 +106,8 @@
             "typo3 extensionmanager:extension:install bootstrap_package",
             "typo3 extensionmanager:extension:install introduction",
             "typo3 extensionmanager:extension:install cookieman",
-            "typo3 extensionmanager:extension:install cookieman_test_crowdin_link"
+            "typo3 extensionmanager:extension:install cookieman_test",
+            "typo3 extensionmanager:extension:install cookieman_test_bootstrap4_modal"
         ],
         "cookieman:bootstrap3-banner": [
             "typo3 extensionmanager:extension:uninstall cookieman_test_bootstrap3_modal",

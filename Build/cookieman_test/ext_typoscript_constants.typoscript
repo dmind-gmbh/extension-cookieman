@@ -1,10 +1,19 @@
-# use Bootstrap 3
-<INCLUDE_TYPOSCRIPT: source="FILE:EXT:bootstrap_package/Configuration/TypoScript/Bootstrap3/constants.typoscript">
+@import 'EXT:cookieman/Configuration/TypoScript/constants.typoscript'
+
+# disable compression and concatenation of CSS and JS files
+config {
+    compressJs = 0
+    compressCss = 0
+    concatenateJs = 0
+    concatenateCss = 0
+}
+
+# test config for bootstrap_package
+page.theme.cookieconsent.enable = 0
 
 # test config for cookieman
 plugin.tx_cookieman {
     settings {
-        theme = bootstrap3-banner
         links {
             dataProtectionDeclarationPid = 9
             dataProtectionDeclarationAnchor = dataProtectionDeclarationAnchor
