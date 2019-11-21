@@ -31,11 +31,11 @@
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^2.14",
         "roave/security-advisories": "dev-master",
+        "dmind/cookieman-test": "@dev",
         "dmind/cookieman-test-bootstrap3-banner": "@dev",
         "dmind/cookieman-test-bootstrap3-modal": "@dev",
         "dmind/cookieman-test-bootstrap4-modal": "@dev",
         "dmind/cookieman-test-customtheme": "@dev",
-        "dmind/cookieman-test-crowdin-link": "@dev",
         "typo3/testing-framework": "^5.0",
         "bk2k/extension-helper": "^1.0",
         "php-coveralls/php-coveralls": "^2.1",
@@ -100,7 +100,7 @@
             "typo3 extension:activate -n bootstrap_package",
             "typo3 extension:activate -n introduction",
             "typo3 extension:activate -n cookieman",
-            "typo3 extension:activate -n cookieman_test_crowdin_link",
+            "typo3 extension:activate -n cookieman_test",
             "typo3 extension:activate -n cookieman_test_bootstrap4_modal"
         ],
         "cookieman:bootstrap3-banner": [
