@@ -112,10 +112,16 @@ var cookieman = (function () {
             var pseudoScripts = pseudo.querySelectorAll('script'),
                 _script
             for (var _i = 0; _i < pseudoScripts.length; _i++) {
+                var pseudoScript = pseudoScripts[_i]
                 _script = document.createElement('script')
-                _script.textContent = pseudoScripts[_i].textContent
+                _script.textContent = pseudoScript.textContent
+                for (var _iAttr = 0; _iAttr < pseudoScript.attributes.length; _iAttr++) {
+                    var _attr = pseudoScript.attributes[_iAttr];
+                    _script.setAttribute(_attr.name, _attr.value);
+                }
+
                 document.body.appendChild(_script)
-                pseudo.removeChild(pseudoScripts[_i]) // remove from pseudo
+                pseudo.removeChild(pseudoScript) // remove from pseudo
             }
 
             // append the rest of pseudo
