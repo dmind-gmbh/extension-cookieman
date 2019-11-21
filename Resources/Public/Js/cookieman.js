@@ -55,6 +55,9 @@ var cookieman = (function () {
         return consentedSelections().filter(
             function (consented) {
                 var aGroup = settings.groups[consented]
+                if (typeof aGroup === 'undefined') {
+                    return false
+                }
                 return !aGroup.respectDnt || (navigator.doNotTrack !== '1')
             }
         )
