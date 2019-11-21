@@ -112,7 +112,6 @@ var cookieman = (function () {
             // ... insert each node ...
             for (var _i = 0; _i < pseudo.children.length; _i++) {
                 var node = pseudo.children[_i]
-                console.log(node)
                 // ... and give special treatment to <script>s
                 if (node.tagName === 'SCRIPT') {
                     _script = document.createElement('script')
