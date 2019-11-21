@@ -4,7 +4,7 @@ composer cookieman:test:cgl
 result=$?
 if [ $result -eq 127 ];then
     # this normally means that composer could not find the command
-    echo "php-cs-fixer is not installed. Please run ‹composer install› to do so."
+    echo "CGL tools are not installed. Please run ‹composer install› to do so."
     # be kind
     exit 0
 elif [ $result -ne 0 ];then
