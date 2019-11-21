@@ -1,4 +1,4 @@
-@import 'EXT:cookieman/Configuration/TypoScript/constants.typoscript'
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cookieman/Configuration/TypoScript/constants.typoscript">
 
 # disable compression and concatenation of CSS and JS files
 config {
