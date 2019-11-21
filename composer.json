@@ -39,7 +39,10 @@
         "typo3/testing-framework": "^5.0",
         "bk2k/extension-helper": "^1.0",
         "php-coveralls/php-coveralls": "^2.1",
-        "codeception/codeception": "^3.1"
+        "codeception/codeception": "^3.1",
+        "bk2k/bootstrap-package": "^11.0",
+        "typo3/cms-introduction": "^4.2",
+        "typo3/cms-tstemplate": "10.*@dev"
     },
     "autoload": {
         "psr-4": {
