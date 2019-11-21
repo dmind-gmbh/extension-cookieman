@@ -46,6 +46,8 @@ class TypoScriptSettingsProcessor implements DataProcessorInterface
             $settings = [];
         }
 
+        $settings = $this->sanitizeSettings($settings);
+
         $processedData['settings'] = $settings;
 
         return $processedData;
@@ -57,5 +59,22 @@ class TypoScriptSettingsProcessor implements DataProcessorInterface
     protected function getConfigurationManager(): ConfigurationManagerInterface
     {
         return GeneralUtility::makeInstance(ConfigurationManager::class);
+    }
+
+    /**
+     * @param array $settings
+     * @return array
+     */
+    protected function sanitizeSettings(array $settings)
+    {
+        // ignore keys on groups.trackingObjects - this makes sure it does not get output as an object in JSON
+        foreach (($settings['groups'] ?? []) as $groupId => $group) {
+            $trackingObjects = $group['trackingObjects'] ?? [];
+            // sort to allow using TypoScript-style .20 .10 .40 etc.
+            ksort($trackingObjects);
+            $settings['groups'][$groupId]['trackingObjects'] = array_values($trackingObjects);
+        }
+
+        return $settings;
     }
 }
