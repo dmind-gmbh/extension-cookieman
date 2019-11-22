@@ -184,7 +184,7 @@ var cookieman = (function () {
             }
         },
         hasConsented: function (selection) {
-            var consented = consentedSelections()
+            var consented = consentedSelectionsRespectDnt()
             for (var i = 0; i < consented.length; i++) {
                 if (consented[i] === selection) {
                     return true
