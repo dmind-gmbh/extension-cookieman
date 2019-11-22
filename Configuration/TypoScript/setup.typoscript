@@ -1,8 +1,8 @@
-# load TrackingObjects. Extend them in your site package/extension/... as needed.
-<INCLUDE_TYPOSCRIPT: source="DIR:EXT:cookieman/Configuration/TypoScript/TrackingObjects/" extensions="typoscript">
+# include definition of "CookieConsent" TrackingObject
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cookieman/Configuration/TypoScript/TrackingObjects/CookieConsent.typoscript">
 
 plugin.tx_cookieman {
-    # see documentation: https://github.com/dmind-gmbh/extension-cookieman
+    # documentation: https://github.com/dmind-gmbh/extension-cookieman
     settings {
         links {
             dataProtectionDeclarationPid = {$plugin.tx_cookieman.settings.links.dataProtectionDeclarationPid}
@@ -12,7 +12,13 @@ plugin.tx_cookieman {
         }
 
         groups {
-            # see an example in Example/setup.typoscript
+            mandatory {
+                preselected = 1
+                disabled = 1
+                trackingObjects {
+                    0 = CookieConsent
+                }
+            }
         }
     }
 }
