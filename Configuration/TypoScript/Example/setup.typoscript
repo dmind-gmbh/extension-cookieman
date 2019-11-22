@@ -1,5 +1,5 @@
 # load TrackingObjects. Extend them in your site package, extension, ... as needed.
-@import 'EXT:cookieman/Configuration/TypoScript/TrackingObjects/*.typoscript'
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:cookieman/Configuration/TypoScript/TrackingObjects/" extensions="typoscript">
 
 plugin.tx_cookieman {
     # see documentation: https://github.com/dmind-gmbh/extension-cookieman
