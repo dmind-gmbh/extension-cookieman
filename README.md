@@ -302,8 +302,11 @@ cookieman.js exposes these methods:
 #### *cookieman.hide()*: void
 > Hides the confirmation modal. 
 
-#### *cookieman.hasConsented(selection)*: Boolean
-> Returns true if the user has consented to the given selection, else false. A selection is any name of a checkbox in the popup, e.g. 'marketing'. This respects the group configuration for *groups*.*‹group key›*.*respectDnt*.
+#### *cookieman.consenteds*: Array
+> Returns all groups keys the user has consented to. Example: `["mandatory", "ads"]`
+
+#### *cookieman.hasConsented(groupKey)*: Boolean
+> Returns true if the user has consented to the given group key (e.g. 'marketing'), else false. This respects the group configuration for *groups*.*‹group key›*.*respectDnt*.
  
 Cookieman also includes the (1kB) cookie library [JavaScript Cookie](https://github.com/js-cookie/js-cookie) that also exposes its API and makes it easier to work with cookies.
 
