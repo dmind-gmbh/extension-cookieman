@@ -1,25 +1,24 @@
-# load TrackingObjects. Extend them in your site package, extension, ... as needed.
+# include definition of TrackingObjects
 @import 'EXT:cookieman/Configuration/TypoScript/TrackingObjects/*.typoscript'
 
 plugin.tx_cookieman {
     # see documentation: https://github.com/dmind-gmbh/extension-cookieman
     settings {
         groups {
+            # extend group (already configured in the base template)
             mandatory {
-                preselected = 1
-                disabled = 1
                 trackingObjects {
-                    0 = CookieConsent
-                    1 = fe_typo_user
+                    10 = fe_typo_user
                 }
             }
 
+            # a new group
             marketing {
                 trackingObjects {
                     0 = Matomo
-                    1 = GoogleAnalytics
-                    2 = GoogleTagManager
-                    3 = Bing
+                    10 = GoogleAnalytics
+                    20 = GoogleTagManager
+                    30 = Bing
                 }
 
                 respectDnt = 1
