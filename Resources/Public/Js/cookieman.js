@@ -87,9 +87,11 @@ var cookieman = (function () {
     }
 
     function setDntTextIfEnabled() {
-        var dnt = document.querySelector('[data-cookieman-dnt]')
-        if (dnt && (navigator.doNotTrack === '1')) {
-            dnt.innerHTML = form.dataset.cookiemanDntEnabled
+        if (navigator.doNotTrack === '1') {
+            var dnts = document.querySelectorAll('[data-cookieman-dnt]')
+            for (var _i = 0; _i < dnts.length; _i++) {
+                dnts[_i].innerHTML = form.dataset.cookiemanDntEnabled
+            }
         }
     }
 
