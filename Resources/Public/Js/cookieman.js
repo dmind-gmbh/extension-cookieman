@@ -46,13 +46,13 @@ var cookieman = (function () {
         }
     }
 
-    function consentedSelections() {
+    function consentedSelectionsAll() {
         var cookie = Cookies.get(cookieName)
         return cookie ? cookie.split('|') : []
     }
 
     function consentedSelectionsRespectDnt() {
-        return consentedSelections().filter(
+        return consentedSelectionsAll().filter(
             function (consented) {
                 var aGroup = settings.groups[consented]
                 if (typeof aGroup === 'undefined') {
@@ -64,7 +64,7 @@ var cookieman = (function () {
     }
 
     function loadCheckboxStates() {
-        var consented = consentedSelections()
+        var consented = consentedSelectionsAll()
         selectNone()
         for (var _i = 0; _i < consented.length; _i++) {
             var _checkbox = form.querySelector('[name=' + consented[_i] + ']')
@@ -191,6 +191,7 @@ var cookieman = (function () {
                 }
             }
             return false
-        }
+        },
+        consenteds: consentedSelectionsRespectDnt
     }
 }())
