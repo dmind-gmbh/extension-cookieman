@@ -162,4 +162,50 @@ class PopupInteractionsCest
             $I->grabCookie('CookieConsent', ['path' => '/'])
         );
     }
+
+    /**
+     * @param AcceptanceTester $I
+     */
+    public function onScriptLoadedEventHandler(AcceptanceTester $I)
+    {
+        $I->amOnPage('/');
+        $I->setCookie('CookieConsent', 'mandatory|testgroup', ['path' => '/']);
+        $I->amOnPage('/');
+
+        // test onScriptLoaded() callback
+        $onScriptLoadedArgs = ['Crowdin', 0];
+        $I->executeJS(
+            "
+                cookieman.onScriptLoaded(
+                    arguments[0],
+                    arguments[1],
+                    function (trackingObjectKey, scriptId) {
+                        alert(arguments[0] + ':' + arguments[1] + ' loaded')
+                    }
+                );
+            ",
+            $onScriptLoadedArgs
+        );
+        $I->wait(1);
+        $I->seeInPopup($onScriptLoadedArgs[0] . ':' . $onScriptLoadedArgs[1] . ' loaded');
+        $I->acceptPopup();
+
+        // test onScriptLoaded() callback (when already loaded)
+        $onScriptLoadedArgs = ['Crowdin', 1];
+        $I->executeJS(
+            "
+                cookieman.onScriptLoaded(
+                    arguments[0],
+                    arguments[1],
+                    function (trackingObjectKey, scriptId) {
+                        alert(arguments[0] + ':' + arguments[1] + ' loaded')
+                    }
+                );
+            ",
+            $onScriptLoadedArgs
+        );
+        $I->wait(1);
+        $I->seeInPopup($onScriptLoadedArgs[0] . ':' . $onScriptLoadedArgs[1] . ' loaded');
+    }
+
 }

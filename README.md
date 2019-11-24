@@ -302,11 +302,32 @@ cookieman.js exposes these methods:
 #### *cookieman.hide()*: void
 > Hides the confirmation modal. 
 
-#### *cookieman.consenteds*: Array
+#### *cookieman.consenteds()*: Array
 > Returns all groups keys the user has consented to. Example: `["mandatory", "ads"]`
 
-#### *cookieman.hasConsented(groupKey)*: Boolean
+#### *cookieman.hasConsented(String groupKey)*: Boolean
 > Returns true if the user has consented to the given group key (e.g. 'marketing'), else false. This respects the group configuration for *groups*.*‹group key›*.*respectDnt*.
+
+#### *cookieman.onScriptLoaded(String trackingObjectKey, int scriptId, function callback)*: void
+> Do things after an external script has been loaded. This is useful if you are interacting with external scripts that are loaded by *cookieman*.
+>
+> *trackingObjectKey* is the *trackingObjects*.*‹tracking object key›* from TypoScript, e.g. 'Matomo'. 
+>
+> *scriptId* is the number of the &lt;script&gt; inside your *trackingObjects*.*‹tracking object key›*.*inject* (starting from 0 with the first). 
+>
+> *callback* is a function reference. It receives *trackingObjectKey* and *scriptId* (see example below).
+> 
+> *callback* is called immediately if the referred to &lt;script&gt; has already finished loading.
+>
+> Example: 
+> 
+>     cookieman.onScriptLoaded(
+>         'Matomo',
+>         0, // first script in 'inject'
+>         function (trackingObjectKey, scriptId) { 
+>             _paq.push(['trackConversion'])
+>         }
+>     )
  
 Cookieman also includes the (1kB) cookie library [JavaScript Cookie](https://github.com/js-cookie/js-cookie) that also exposes its API and makes it easier to work with cookies.
 
