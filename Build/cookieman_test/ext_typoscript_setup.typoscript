@@ -3,14 +3,21 @@
 
 temp.tx_cookieman.settings.groups.mandatory < plugin.tx_cookieman.settings.groups.mandatory
 
-# Test out JS against a CSP script-src policy that disallows inlining JS
+# Test our JS against a CSP script-src policy that disallows inlining JS
 config.additionalHeaders.14543.header = Content-Security-Policy: script-src 'self' https://crowdin.com
+
+# subscribe to events
+page.includeJSFooter {
+    subscribe-events = EXT:cookieman_test/Resources/Public/Js/subscribe-events.js
+}
 
 plugin.tx_cookieman.settings {
     trackingObjects {
         # add the Crowdin translation integration of cookieman as "TrackingObject" - actually a neat way to test if or JS inclusion works ;)
         Crowdin {
             inject (
+<script data-what="Crowdin (1st script)" src="/typo3conf/ext/cookieman/Resources/Public/Js/example-inject.js"></script>
+<script data-what="Crowdin (2nd script)" src="/typo3conf/ext/cookieman/Resources/Public/Js/example-inject.js"></script>
 <script
   type="text/javascript"
   src="https://crowdin.com/js/crowdjet/crowdjet.js">
