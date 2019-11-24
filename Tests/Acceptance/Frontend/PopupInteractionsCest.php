@@ -207,5 +207,4 @@ class PopupInteractionsCest
         $I->wait(1);
         $I->seeInPopup($onScriptLoadedArgs[0] . ':' . $onScriptLoadedArgs[1] . ' loaded');
     }
-
 }
