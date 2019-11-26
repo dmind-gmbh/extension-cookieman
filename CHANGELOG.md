@@ -1,3 +1,14 @@
+# 2.3.0
+
+## MISC
+- fix cgl c246b61
+- closes #35 add API call onScriptLoaded() to register script onload callbacks. (#28) c55ee8f
+- fix #37 DNT message is only rendered once d022c51
+- add API to get all consented groups (3) 9d3c398
+- add API to get all consented groups (2) d3a3690
+- add API to get all consented groups 17b11a0
+- #31 add configuration of CookieConsent to base TypoScript 1bd54eb
+
 # 2.2.3
 
 ## MISC
