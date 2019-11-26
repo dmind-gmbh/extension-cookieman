@@ -1,3 +1,16 @@
+# 2.3.1
+
+## MISC
+- fix cgl b12e8cb
+- closes #35 add API call onScriptLoaded() to register script onload callbacks. (#28) 2071f59
+- fix #37 DNT message is only rendered once (2) 68d16f7
+- fix #37 DNT message is only rendered once 8b3dae1
+- add API to get all consented groups (2) 996354d
+- add API to get all consented groups 0bfcc3c
+- respect DNT in API method cookieman.hasConsented() 79fb402
+- #31 add configuration of CookieConsent to base TypoScript 71b447e
+- fix #36 TypoScript include 2f3a8e1
+
 # 2.2.4
 
 ## MISC
@@ -20,6 +33,10 @@
 - customize TypoScript in test extension 260a440
 - fix typo fe2f033
 - make JS more error-tolerant (here: arbitrary cookie values) 2e80761
+
+# 2.2.1
+
+## MISC
 - give animations more time 9272669
 - fix typo e742922
 - allow introduction-package ^3.0 to pass tests 7e2a9d9
