@@ -44,7 +44,10 @@ Get it from packagist <https://packagist.org/packages/dmind/cookieman> via compo
 Each version **only supports** either TYPO3v8/v9/v10. This might be a bit confusing but makes development and testing easier. 
 
 ## Integration
-Include the shipped TypoScript as usual (either by including it from a sys_template \["Cookieman"\] or by referencing the files from your site package).
+Include the shipped TypoScript (`EXT:cookieman/Configuration/TypoScript/setup.typoscript` and `EXT:cookieman/Configuration/TypoScript/constants.typoscript`) as usual (either by including it from a sys_template \["Cookieman"\] or by referencing the files from your site package).
+This includes the base configuration with a group `mandatory` with the tracking object `CookieConsent`.
+
+If you want to see a full example, you can include the "Cookieman (Example configuration of groups and tracking objects)".
 
 ### TypoScript **constants**
 Adjust the TypoScript constants (again, either in a sys_template record or in a file in your site package):
@@ -130,7 +133,7 @@ See a full [TypoScript configuration example](#typoscript-configuration-example-
 > a single tracking object configuration
 
 #### *trackingObjects*.*‹tracking object key›*.*inject*: String
-> everything in here will be appended to the page when the respective group is consented. This can be &lt;script&gt;, &lt;img&gt; or anything else
+> each HTML tag in here will be appended to the page when the respective group is consented. This can be &lt;script&gt;, &lt;img&gt; or anything else
 
 #### *trackingObjects*.*‹tracking object key›*.*show*: Array
 > the actual rows of the table, each representing one "tracking item" (commonly a cookie)
@@ -184,8 +187,12 @@ It is recommended to include a snippet like the following on your data privacy s
 
 
 ## TypoScript configuration example (**setup** part):
+
+This example configuration is based on the base TypoScript configuration (See above, [Integration](#integration)) without the example template.
+ 
 <pre>
-temp.tx_cookieman.settings.groups.mandatory < plugin.tx_cookieman.settings.groups.mandatory
+# include definition of TrackingObjects
+@import 'EXT:cookieman/Configuration/TypoScript/TrackingObjects/*.typoscript'
 
 plugin.tx_cookieman.settings {
   trackingObjects {
@@ -208,9 +215,11 @@ plugin.tx_cookieman.settings {
     }
   
     # add my own custom tracking solution
+    # if you have a useful configuration and want to share, we would be happy if you did a pull request!
     MyOwnTrackingPixel {
       inject (
-&lt;div&gt;Here be dragons &lt;img src="/typo3conf/ext/mytracker/pixel.php"&gt;&lt;/div&gt;
+&lt;div&gt;Here be dragons &lt;img src="https://via.placeholder.com/200x200?text=Tracking pixel..."&gt;&lt;/div&gt;
+&lt;script&gt;alert('oh la la!')&lt;/script&gt;
       )
       show {
         # each element here represents one line of information in the consent popup
@@ -225,11 +234,7 @@ plugin.tx_cookieman.settings {
   }
   
   # reset existing groups
-  groups >
   groups {
-    # copy of default group 'mandatory'
-    mandatory < temp.tx_cookieman.settings.groups.mandatory
-    
     # my new group
     mygroup {
       trackingObjects {
@@ -245,8 +250,9 @@ plugin.tx_cookieman._LOCAL_LANG {
     trackingobject\.pixelphp = You can translate the name, but you do not have to.
     trackingobject\.pixelphp\.desc = My own tracking pixel does not really track you. It's just here to cheer you up.
     group\.mygroup = My group is my castle.
+    type\.pixel = Tracking pixel
   }
-  default < .en
+  default &lt; .en
 }
 </pre>
 
