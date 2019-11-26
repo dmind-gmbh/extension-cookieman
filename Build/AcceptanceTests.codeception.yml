@@ -11,10 +11,21 @@ suites:
                 -   WebDriver:
                         url: http://extension-cookieman-master.test
                         browser: chrome
-                        host: ddev-extension-cookieman-master-chrome
+                        host: selenium-hub
+                        port: 4444
                         wait: 1
                         window_size: 1280x960
                         restart: true
+
+env:
+    chrome:
+
+    firefox:
+        modules:
+            config:
+                WebDriver:
+                    browser: firefox
+
 extensions:
     enabled:
         -   Codeception\Extension\RunFailed:
