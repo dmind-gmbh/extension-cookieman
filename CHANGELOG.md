@@ -1,3 +1,14 @@
+# 2.3.2
+
+## MISC
+- fix cgl 4e6cf6a8
+- closes #35 add API call onScriptLoaded() to register script onload callbacks. (#28) fab9bc18
+- fix #37 DNT message is only rendered once 74edceb1
+- add API to get all consented groups (3) fa28b0a1
+- add API to get all consented groups (2) 5a5e4737
+- add API to get all consented groups d71fbcd5
+- #31 add configuration of CookieConsent to base TypoScript 49d9635f
+
 # 2.2.5
 
 ## MISC
@@ -21,6 +32,10 @@
 - fix typo 3de85c57
 - make JS more error-tolerant (here: arbitrary cookie values) 550ae1e1
 - fix all test extensions being active c4141946
+
+# 2.2.2
+
+## MISC
 - give animations more time 08139c99
 - use PHP 7.3 locally 667cc3f1
 - use typo3-console for v8/v9 e7ef8351
