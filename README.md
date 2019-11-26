@@ -154,7 +154,7 @@ See a full [TypoScript configuration example](#typoscript-configuration-example-
 > 
 > "cookie_http": an HTTP cookie
 > 
-> You can add your own types by adding a localization string "type.‹you type key›"
+> You can add your own types by adding a localization string "type.‹your type key›"
 
 #### *trackingObjects*.*‹tracking object key›*.*show*.*‹tracking item key›*.*provider*: String
 > the provider, e.g. Google
@@ -175,6 +175,9 @@ You can override translations by the usual means (.xlf-files or TypoScript *_LOC
 
 #### *trackingobject*.*‹tracking object key›*.desc 
 > shown in the table column "Purpose"
+
+#### *type*.*‹your custom type key›* 
+> shown in the table column "Type"
 
 
 ## Make the consent revokable
