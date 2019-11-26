@@ -124,7 +124,13 @@
             "@cookieman:test:acceptance"
         ],
         "cookieman:test:acceptance": [
-            "codecept run acceptance -d -c Build/AcceptanceTests.codeception.yml"
+            "@cookieman:test:acceptance:chrome"
+        ],
+        "cookieman:test:acceptance:chrome": [
+            "codecept run acceptance --env chrome -d -c Build/AcceptanceTests.codeception.yml"
+        ],
+        "cookieman:test:acceptance:firefox": [
+            "codecept run acceptance --env firefox -d -c Build/AcceptanceTests.codeception.yml"
         ],
         "cookieman:test:cgl": [
             "php-cs-fixer --config=.php_cs.dist fix -v --using-cache=no --dry-run",

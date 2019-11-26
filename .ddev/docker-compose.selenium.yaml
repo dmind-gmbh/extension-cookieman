@@ -1,0 +1,56 @@
+version: '3.6'
+
+services:
+    selenium-chrome:
+        container_name: ddev-${DDEV_SITENAME}-selenium-chrome
+        image: selenium/node-chrome:3.141.59-xenon
+        depends_on:
+            - selenium-hub
+        labels:
+            com.ddev.site-name: ${DDEV_SITENAME}
+            com.ddev.platform: ddev
+            com.ddev.app-type: typo3
+            com.ddev.approot: $DDEV_APPROOT
+        environment:
+            - HUB_HOST=selenium-hub
+            - HUB_PORT=4444
+        links:
+            - selenium-hub:selenium-hub
+        external_links:
+            - ddev-router:$DDEV_HOSTNAME
+        volumes:
+            - /dev/shm:/dev/shm
+
+#    selenium-firefox:
+#        container_name: ddev-${DDEV_SITENAME}-selenium-firefox
+#        image: selenium/node-firefox:3.141.59-xenon
+#        depends_on:
+#            - selenium-hub
+#        labels:
+#            com.ddev.site-name: ${DDEV_SITENAME}
+#            com.ddev.platform: ddev
+#            com.ddev.app-type: typo3
+#            com.ddev.approot: $DDEV_APPROOT
+#        environment:
+#            - HUB_HOST=selenium-hub
+#            - HUB_PORT=4444
+#        links:
+#            - selenium-hub:selenium-hub
+#        external_links:
+#            - ddev-router:$DDEV_HOSTNAME
+#        volumes:
+#            - /dev/shm:/dev/shm
+
+    selenium-hub:
+        container_name: ddev-${DDEV_SITENAME}-selenium-hub
+        image: selenium/hub:3.141.59-xenon
+        labels:
+            com.ddev.site-name: ${DDEV_SITENAME}
+            com.ddev.platform: ddev
+            com.ddev.app-type: typo3
+            com.ddev.approot: $DDEV_APPROOT
+        environment:
+            - VIRTUAL_HOST=$DDEV_HOSTNAME
+            - HTTP_EXPOSE=4444
+        external_links:
+            - ddev-router:$DDEV_HOSTNAME
