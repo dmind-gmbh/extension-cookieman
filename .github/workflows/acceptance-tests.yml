@@ -11,32 +11,12 @@ jobs:
                 php-version: [7.3]
                 theme: [bootstrap3-banner, bootstrap3-modal, bootstrap4-modal, customtheme]
         steps:
-            -   name: Checking out {{ github.ref }}
-                uses: actions/checkout@v1
-            # update docker
-            -   run: echo "::set-env name=DEBIAN_FRONTEND::noninteractive"
-            -   run: curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-            -   run: sudo -E add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-            -   run: sudo -E apt-get update
-            -   run: sudo -E apt-get -y -o Dpkg::Options::="--force-confnew" install docker-ce
-            # install linuxbrew
-            -   run: sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
-            -   run: echo "::add-path::/home/linuxbrew/.linuxbrew/bin"
-            # install ddev + docker-compose
-            -   run: brew tap drud/ddev && brew install ddev docker-compose
-            -   run: ddev config global --instrumentation-opt-in=false
-            -   run: ddev config global --omit-containers=dba,ddev-ssh-agent
+            -   name: actions/checkout@v1
             # Set PHP version
             -   run: |
                     sed -i -e 's/^php_version:.*/php_version: ${{ matrix.php-version }}/g' .ddev/config.yaml
             # Start ddev
-            # see https://stackoverflow.com/questions/58934735/using-ddev-in-github-actions-workflows/58943183
-            -   run: |
-                    ddev start \
-                    || ( \
-                        docker cp .ddev/patches/ddev-router/nginx.tmpl ddev-router:/app/nginx.tmpl \
-                        && ddev start \
-                    )
+            -   uses: jonaseberle/github-action-setup-ddev@v1
             # Setup tests
             -   run: ddev composer cookieman:${{ matrix.theme }}
             # Run tests
