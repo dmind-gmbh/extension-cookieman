@@ -1,0 +1,59 @@
+namespace: Dmind\Cookieman\Tests\Acceptance\Support
+suites:
+    acceptance:
+        actor: AcceptanceTester
+        step_decorators:
+            - \Codeception\Step\TryTo
+        path: .
+        modules:
+            enabled:
+                -   Asserts:
+            config:
+                WebDriver:
+                    url: http://extension-cookieman-9lts.test
+                    host: selenium-hub
+                    port: 4444
+                    wait: 1
+                    window_size: 1280x960
+                    restart: true
+
+env:
+    chrome:
+        modules:
+            enabled:
+                - WebDriver
+            config:
+                WebDriver:
+                    browser: chrome
+                    capabilities:
+                        browserName: chrome
+
+    firefox:
+        modules:
+            enabled:
+                - WebDriver
+            config:
+                WebDriver:
+                    browser: firefox
+                    capabilities:
+                        browserName: firefox
+
+
+extensions:
+    enabled:
+        -   Codeception\Extension\Recorder:
+    config:
+        Codeception\Extension\Recorder:
+            delete_successful: false
+            delete_orphaned: true
+
+paths:
+    tests: ../Tests/Acceptance
+    output: ../Build/AcceptanceReports
+    data: ../Tests
+    support: ../Tests/Acceptance/Support
+
+settings:
+    shuffle: false
+    lint: false
+    colors: true
