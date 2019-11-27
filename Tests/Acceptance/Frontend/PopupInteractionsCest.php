@@ -30,20 +30,60 @@ use Dmind\Cookieman\Tests\Acceptance\Support\AcceptanceTester;
  */
 class PopupInteractionsCest
 {
+    public const PATH_ROOT = '/';
+    public const PATH_2NDPAGE = '/customize';
+    public const PATH_3RDPAGE = '/?id=10';
+    public const PATH_4THPAGE = '/pages';
+    public const PATH_5THPAGE = '/content-examples';
+
+    public const MODAL_TITLE_EN = 'About Cookies';
+
+    public const SELECTOR_BUTTON_SAVE_NOT_SAVEALL = '[data-cookieman-save]:not([data-cookieman-accept-all])';
+    public const SELECTOR_BUTTON_SAVEALL = '[data-cookieman-accept-all]';
+    public const SETTINGS_LINK_TEXT = 'Settings';
+    public const BUTTON_TITLE_SAVE = 'Save';
+
+    public const COOKIENAME = 'CookieConsent';
+    public const COOKIE_VALUE_SEPARATOR = '|';
+
+    public const BS_PACKAGE_MENUITEM_SELECTOR = '[href$="/pages"],[href$="?id=66"]';
+    public const BS_PACKAGE_SUBMENUITEM_TEXT = '2 Columns 50/50';
+
+    public const JS_SHOW_COOKIEMAN = 'cookieman.show()';
+    public const JS_SHOWONCE_COOKIEMAN = 'cookieman.showOnce()';
+    public const JS_HIDE_COOKIEMAN = 'cookieman.hide()';
+    public const JS_ONSCRIPTLOADED_COOKIEMAN = "
+            cookieman.onScriptLoaded(
+                arguments[0],
+                arguments[1],
+                function (trackingObjectKey, scriptId) {
+                    alert(arguments[0] + ':' + arguments[1] + ' loaded')
+                }
+            );
+        ";
+
+    public const GROUP_KEY_MANDATORY = 'mandatory';
+
+    public const GROUP_KEY_2ND = 'marketing';
+    public const GROUP_TITLE_2ND = 'Marketing';
+    public const COOKIE_TITLE_IN_2ND_GROUP = '_gat';
+
+    public const GROUP_KEY_TESTGROUP = 'testgroup';
+    public const TRACKINGOBJECT_IN_TESTGROUP_WITH_2SCRIPTS = 'Crowdin';
+
     /**
      * @param AcceptanceTester $I
      */
     public function doesNotBreakBootstrapPackage(AcceptanceTester $I)
     {
-        $I->amOnPage('/');
+        $I->amOnPage(self::PATH_ROOT);
         $I->wait(0.5);
-        $I->see('About Cookies');
-        $I->executeJS('cookieman.hide()');
+        $I->see(self::MODAL_TITLE_EN);
+        $I->executeJS(self::JS_HIDE_COOKIEMAN);
         $I->wait(0.5);
-        $I->dontSee('About Cookies');
-
-        if ($I->tryToMoveMouseOver('[href$="/pages"],[href$="?id=66"]')) { // hover over menu
-            $I->see('2 Columns 50/50');
+        $I->dontSee(self::MODAL_TITLE_EN);
+        if ($I->tryToMoveMouseOver(self::BS_PACKAGE_MENUITEM_SELECTOR)) { // hover over menu
+            $I->see(self::BS_PACKAGE_SUBMENUITEM_TEXT);
         } else { // introduction-package ^3.0
             $I->moveMouseOver('[href$="?id=51"]');
             $I->see('Form elements');
@@ -55,16 +95,16 @@ class PopupInteractionsCest
      */
     public function save(AcceptanceTester $I)
     {
-        $I->amOnPage('/');
+        $I->amOnPage(self::PATH_ROOT);
         $I->wait(0.5);
-        $I->see('About Cookies');
-        $I->click('[data-cookieman-save]:not([data-cookieman-accept-all])');
+        $I->see(self::MODAL_TITLE_EN);
+        $I->click(self::SELECTOR_BUTTON_SAVE_NOT_SAVEALL);
         $I->wait(0.5);
-        $I->dontSee('About Cookies');
-        $I->seeCookie('CookieConsent');
+        $I->dontSee(self::MODAL_TITLE_EN);
+        $I->seeCookie(self::COOKIENAME);
         $I->assertEquals(
-            'mandatory',
-            $I->grabCookie('CookieConsent', ['path' => '/'])
+            self::GROUP_KEY_MANDATORY,
+            $I->grabCookie(self::COOKIENAME, ['path' => self::PATH_ROOT])
         );
     }
 
@@ -73,17 +113,17 @@ class PopupInteractionsCest
      */
     public function saveAll(AcceptanceTester $I)
     {
-        $I->amOnPage('/customize');
+        $I->amOnPage(self::PATH_2NDPAGE);
         $I->wait(0.5);
-        $I->see('About Cookies');
-        $I->tryToClick('Settings'); // customtheme doesn't have an accordion
-        $I->click('[data-cookieman-accept-all]');
+        $I->see(self::MODAL_TITLE_EN);
+        $I->tryToClick(self::SETTINGS_LINK_TEXT); // customtheme doesn't have an accordion
+        $I->click(self::SELECTOR_BUTTON_SAVEALL);
         $I->wait(0.5);
-        $I->dontSee('About Cookies');
-        $I->seeCookie('CookieConsent');
+        $I->dontSee(self::MODAL_TITLE_EN);
+        $I->seeCookie(self::COOKIENAME);
         $I->assertStringStartsWith(
-            'mandatory|marketing',
-            $I->grabCookie('CookieConsent', ['path' => '/'])
+            $this->cookieValueForGroups([self::GROUP_KEY_MANDATORY, self::GROUP_KEY_2ND]),
+            $I->grabCookie(self::COOKIENAME, ['path' => self::PATH_ROOT])
         );
     }
 
@@ -92,9 +132,9 @@ class PopupInteractionsCest
      */
     public function notShownOnImprint(AcceptanceTester $I)
     {
-        $I->amOnPage('/?id=10');
+        $I->amOnPage(self::PATH_3RDPAGE);
         $I->wait(0.5);
-        $I->dontSee('About Cookies');
+        $I->dontSee(self::MODAL_TITLE_EN);
     }
 
     /**
@@ -102,28 +142,28 @@ class PopupInteractionsCest
      */
     public function selectGroupAndSaveMobile(AcceptanceTester $I)
     {
-        $I->amOnPage('/pages');
+        $I->amOnPage(self::PATH_4THPAGE);
         $I->resizeWindow(480, 800);
         $I->wait(0.5);
-        $I->see('About Cookies');
-        if ($I->tryToClick('Settings')) {
+        $I->see(self::MODAL_TITLE_EN);
+        if ($I->tryToClick(self::SETTINGS_LINK_TEXT)) {
             $I->wait(0.5);
         }
-        $I->see('Marketing');
-        $I->tryToClick('Marketing');
+        $I->see(self::GROUP_TITLE_2ND);
+        $I->tryToClick(self::GROUP_TITLE_2ND);
         $I->wait(0.5);
-        $I->see('_gat'); // a single row in the table
-        if (!$I->tryToCheckOption('[name=marketing]')) { // theme: *-modal
-            $I->executeJS('$("[name=marketing]").click()'); // theme: bootstrap3-banner
+        $I->see(self::COOKIE_TITLE_IN_2ND_GROUP); // a single row in the table
+        if (!$I->tryToCheckOption('[name=' . self::GROUP_KEY_2ND . ']')) { // theme: *-modal
+            $I->executeJS('$("[name=' . self::GROUP_KEY_2ND . ']").click()'); // theme: bootstrap3-banner
         }
-        $I->seeCheckboxIsChecked('[name=marketing]');
-        $I->click('Save');
+        $I->seeCheckboxIsChecked('[name=' . self::GROUP_KEY_2ND . ']');
+        $I->click(self::BUTTON_TITLE_SAVE);
         $I->wait(0.5);
-        $I->dontSee('About Cookies');
-        $I->seeCookie('CookieConsent');
+        $I->dontSee(self::MODAL_TITLE_EN);
+        $I->seeCookie(self::COOKIENAME);
         $I->assertEquals(
-            'mandatory|marketing',
-            $I->grabCookie('CookieConsent', ['path' => '/'])
+            $this->cookieValueForGroups([self::GROUP_KEY_MANDATORY, self::GROUP_KEY_2ND]),
+            $I->grabCookie(self::COOKIENAME, ['path' => self::PATH_ROOT])
         );
     }
 
@@ -132,58 +172,61 @@ class PopupInteractionsCest
      */
     public function reopenAndRevoke(AcceptanceTester $I)
     {
-        $I->amOnPage('/pages');
-        $I->setCookie('CookieConsent', 'mandatory|marketing', ['path' => '/']);
-        $I->amOnPage('/content-examples');
+        $I->amOnPage(self::PATH_4THPAGE);
+        $I->setCookie(
+            self::COOKIENAME,
+            $this->cookieValueForGroups([self::GROUP_KEY_MANDATORY, self::GROUP_KEY_2ND]),
+            ['path' => self::PATH_ROOT]
+        );
+        $I->amOnPage(self::PATH_5THPAGE);
         $I->wait(0.5);
-        $I->dontSee('About Cookies');
-        $I->executeJS('cookieman.showOnce()');
+        $I->dontSee(self::MODAL_TITLE_EN);
+        $I->executeJS(self::JS_SHOWONCE_COOKIEMAN);
         $I->wait(0.5);
-        $I->dontSee('About Cookies');
-        $I->executeJS('cookieman.show()');
+        $I->dontSee(self::MODAL_TITLE_EN);
+        $I->executeJS(self::JS_SHOW_COOKIEMAN);
         $I->wait(0.5);
-        $I->see('About Cookies');
-        $I->tryToClick('Settings');
+        $I->see(self::MODAL_TITLE_EN);
+        $I->tryToClick(self::SETTINGS_LINK_TEXT);
         $I->wait(0.5);
-        $I->see('Marketing');
-        $I->tryToClick('Marketing');
+        $I->see(self::GROUP_TITLE_2ND);
+        $I->tryToClick(self::GROUP_TITLE_2ND);
         $I->wait(0.5);
-        $I->seeCheckboxIsChecked('[name=marketing]');
-        if (!$I->tryToUncheckOption('[name=marketing]')) { // theme: *-modal
-            $I->executeJS('$("[name=marketing]").click()'); // theme: bootstrap3-banner
+        $I->seeCheckboxIsChecked('[name=' . self::GROUP_KEY_2ND . ']');
+        if (!$I->tryToUncheckOption('[name=' . self::GROUP_KEY_2ND . ']')) { // theme: *-modal
+            $I->executeJS('$("[name=' . self::GROUP_KEY_2ND . ']").click()'); // theme: bootstrap3-banner
         }
-        $I->dontSeeCheckboxIsChecked('[name=marketing]');
+        $I->dontSeeCheckboxIsChecked('[name=' . self::GROUP_KEY_2ND . ']');
         $I->click('Save');
         $I->wait(0.5);
-        $I->dontSee('About Cookies');
-        $I->seeCookie('CookieConsent');
+        $I->dontSee(self::MODAL_TITLE_EN);
+        $I->seeCookie(self::COOKIENAME);
         $I->assertEquals(
-            'mandatory',
-            $I->grabCookie('CookieConsent', ['path' => '/'])
+            $this->cookieValueForGroups([self::GROUP_KEY_MANDATORY]),
+            $I->grabCookie(self::COOKIENAME, ['path' => self::PATH_ROOT])
         );
     }
 
     /**
      * @param AcceptanceTester $I
+     * @throws \Codeception\Exception\ModuleException
      */
     public function onScriptLoadedEventHandler(AcceptanceTester $I)
     {
-        $I->amOnPage('/');
-        $I->setCookie('CookieConsent', 'mandatory|testgroup', ['path' => '/']);
-        $I->amOnPage('/');
+        $I->amOnPage(self::PATH_ROOT);
+        $I->setCookie(
+            self::COOKIENAME,
+            $this->cookieValueForGroups(
+                [self::GROUP_KEY_MANDATORY, self::GROUP_KEY_TESTGROUP]
+            ),
+            ['path' => self::PATH_ROOT]
+        );
+        $I->amOnPage(self::PATH_ROOT);
 
         // test onScriptLoaded() callback
-        $onScriptLoadedArgs = ['Crowdin', 0];
+        $onScriptLoadedArgs = [self::TRACKINGOBJECT_IN_TESTGROUP_WITH_2SCRIPTS, 0];
         $I->executeJS(
-            "
-                cookieman.onScriptLoaded(
-                    arguments[0],
-                    arguments[1],
-                    function (trackingObjectKey, scriptId) {
-                        alert(arguments[0] + ':' + arguments[1] + ' loaded')
-                    }
-                );
-            ",
+            self::JS_ONSCRIPTLOADED_COOKIEMAN,
             $onScriptLoadedArgs
         );
         $I->wait(1);
@@ -191,20 +234,21 @@ class PopupInteractionsCest
         $I->acceptPopup();
 
         // test onScriptLoaded() callback (when already loaded)
-        $onScriptLoadedArgs = ['Crowdin', 1];
+        $onScriptLoadedArgs = [self::TRACKINGOBJECT_IN_TESTGROUP_WITH_2SCRIPTS, 1];
         $I->executeJS(
-            "
-                cookieman.onScriptLoaded(
-                    arguments[0],
-                    arguments[1],
-                    function (trackingObjectKey, scriptId) {
-                        alert(arguments[0] + ':' + arguments[1] + ' loaded')
-                    }
-                );
-            ",
+            self::JS_ONSCRIPTLOADED_COOKIEMAN,
             $onScriptLoadedArgs
         );
         $I->wait(1);
         $I->seeInPopup($onScriptLoadedArgs[0] . ':' . $onScriptLoadedArgs[1] . ' loaded');
+    }
+
+    /**
+     * @param array $groupKeys
+     * @return string
+     */
+    protected function cookieValueForGroups(array $groupKeys)
+    {
+        return implode(self::COOKIE_VALUE_SEPARATOR, $groupKeys);
     }
 }
