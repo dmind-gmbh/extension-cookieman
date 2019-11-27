@@ -30,29 +30,32 @@ use Dmind\Cookieman\Tests\Acceptance\Support\AcceptanceTester;
  */
 class PopupInteractionsCest
 {
-    public const PATH_ROOT = '/';
-    public const PATH_2NDPAGE = '/customize';
-    public const PATH_3RDPAGE = '/?id=10';
-    public const PATH_4THPAGE = '/pages';
-    public const PATH_5THPAGE = '/content-examples';
+    const PATH_ROOT = '/';
+    const PATH_2NDPAGE = '/customize';
+    const PATH_3RDPAGE = '/?id=10';
+    const PATH_4THPAGE = '/pages';
+    const PATH_5THPAGE = '/content-examples';
 
-    public const MODAL_TITLE_EN = 'About Cookies';
+    const MODAL_TITLE_EN = 'About Cookies';
 
-    public const SELECTOR_BUTTON_SAVE_NOT_SAVEALL = '[data-cookieman-save]:not([data-cookieman-accept-all])';
-    public const SELECTOR_BUTTON_SAVEALL = '[data-cookieman-accept-all]';
-    public const SETTINGS_LINK_TEXT = 'Settings';
-    public const BUTTON_TITLE_SAVE = 'Save';
+    const SELECTOR_BUTTON_SAVE_NOT_SAVEALL = '[data-cookieman-save]:not([data-cookieman-accept-all])';
+    const SELECTOR_BUTTON_SAVEALL = '[data-cookieman-accept-all]';
+    const SETTINGS_LINK_TEXT = 'Settings';
+    const BUTTON_TITLE_SAVE = 'Save';
 
-    public const COOKIENAME = 'CookieConsent';
-    public const COOKIE_VALUE_SEPARATOR = '|';
+    const COOKIENAME = 'CookieConsent';
+    const COOKIE_VALUE_SEPARATOR = '|';
 
-    public const BS_PACKAGE_MENUITEM_SELECTOR = '[href$="/pages"],[href$="?id=66"]';
-    public const BS_PACKAGE_SUBMENUITEM_TEXT = '2 Columns 50/50';
+    const BS_PACKAGE_MENUITEM_SELECTOR = '[href$="/pages"],[href$="?id=66"]';
+    const BS_PACKAGE_SUBMENUITEM_TEXT = '2 Columns 50/50';
+    // for introduction-package ^3.0
+    const BS_PACKAGE_INTRO3_MENUITEM_SELECTOR = '[href$="?id=51"]';
+    const BS_PACKAGE_INTRO3_SUBMENUITEM_TEXT = 'Form elements';
 
-    public const JS_SHOW_COOKIEMAN = 'cookieman.show()';
-    public const JS_SHOWONCE_COOKIEMAN = 'cookieman.showOnce()';
-    public const JS_HIDE_COOKIEMAN = 'cookieman.hide()';
-    public const JS_ONSCRIPTLOADED_COOKIEMAN = "
+    const JS_SHOW_COOKIEMAN = 'cookieman.show()';
+    const JS_SHOWONCE_COOKIEMAN = 'cookieman.showOnce()';
+    const JS_HIDE_COOKIEMAN = 'cookieman.hide()';
+    const JS_ONSCRIPTLOADED_COOKIEMAN = "
             cookieman.onScriptLoaded(
                 arguments[0],
                 arguments[1],
@@ -62,14 +65,14 @@ class PopupInteractionsCest
             );
         ";
 
-    public const GROUP_KEY_MANDATORY = 'mandatory';
+    const GROUP_KEY_MANDATORY = 'mandatory';
 
-    public const GROUP_KEY_2ND = 'marketing';
-    public const GROUP_TITLE_2ND = 'Marketing';
-    public const COOKIE_TITLE_IN_2ND_GROUP = '_gat';
+    const GROUP_KEY_2ND = 'marketing';
+    const GROUP_TITLE_2ND = 'Marketing';
+    const COOKIE_TITLE_IN_2ND_GROUP = '_gat';
 
-    public const GROUP_KEY_TESTGROUP = 'testgroup';
-    public const TRACKINGOBJECT_IN_TESTGROUP_WITH_2SCRIPTS = 'Crowdin';
+    const GROUP_KEY_TESTGROUP = 'testgroup';
+    const TRACKINGOBJECT_IN_TESTGROUP_WITH_2SCRIPTS = 'Crowdin';
 
     /**
      * @param AcceptanceTester $I
@@ -85,8 +88,8 @@ class PopupInteractionsCest
         if ($I->tryToMoveMouseOver(self::BS_PACKAGE_MENUITEM_SELECTOR)) { // hover over menu
             $I->see(self::BS_PACKAGE_SUBMENUITEM_TEXT);
         } else { // introduction-package ^3.0
-            $I->moveMouseOver('[href$="?id=51"]');
-            $I->see('Form elements');
+            $I->moveMouseOver(self::BS_PACKAGE_INTRO3_MENUITEM_SELECTOR);
+            $I->see(self::BS_PACKAGE_INTRO3_SUBMENUITEM_TEXT);
         }
     }
 
