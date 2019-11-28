@@ -208,9 +208,9 @@
           <target>Wird verwendet, um Benutzer zu unterscheiden.</target>
         </alt-trans>
       </trans-unit>
-      <trans-unit id="trackingobject.AMP_TOKEN.desc" resname="trackingobject.AMP_TOKEN.desc">
+      <trans-unit id="trackingobject.AMP_TOKEN.desc" resname="trackingobject.AMP_TOKEN.desc" approved="yes">
         <source>Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID service.</source>
-        <target state="needs-translation">Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID service.</target>
+        <target state="final">Ent<![CDATA[&amp;shy;]]>hält ei<![CDATA[&amp;shy;]]>nen To<![CDATA[&amp;shy;]]>ken, der ver<![CDATA[&amp;shy;]]>wen<![CDATA[&amp;shy;]]>det wer<![CDATA[&amp;shy;]]>den kann, um ei<![CDATA[&amp;shy;]]>ne Client-ID vom AMP-Client-ID-Dienst ab<![CDATA[&amp;shy;]]>zu<![CDATA[&amp;shy;]]>ru<![CDATA[&amp;shy;]]>fen.</target>
       </trans-unit>
       <trans-unit id="trackingobject._gac_--property-id--.desc" resname="trackingobject._gac_--property-id--.desc" approved="yes">
         <source>Contains campaign related information for the user. If you have linked your Google Analytics and Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.</source>
