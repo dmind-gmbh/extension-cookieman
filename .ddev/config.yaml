@@ -2,7 +2,7 @@ APIVersion: v1.11.2
 name: extension-cookieman-9lts
 type: typo3
 docroot: .build/public
-php_version: "7.2"
+php_version: "7.3"
 webserver_type: nginx-fpm
 router_http_port: "80"
 router_https_port: "443"
@@ -22,13 +22,15 @@ hooks:
         - exec-host: mkdir -p .build/public/typo3conf/
         - exec-host: .ddev/commands/copy-git-config
     post-start:
-        - exec: yarn install --save-dev --cwd=Build/
-        - composer: update
+        # ignore composer.lock
+        - composer: update --no-progress
+        - exec: rm composer.lock
         - exec: |
             if [[ $(mysql -e "SHOW TABLES" | wc -l) -eq 0 ]]; then
               composer install-typo3
             fi
         - composer: install-extensions
+        - composer: cookieman:bootstrap4-modal
 
 # This config.yaml was created with ddev version v1.11.2
 # webimage: drud/ddev-webserver:v1.11.0

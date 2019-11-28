@@ -1,6 +1,10 @@
 [![Crowdin](https://badges.crowdin.net/typo3-extension-cookieman/localized.svg)](https://crowdin.com/project/typo3-extension-cookieman)
-[![Coverage Status](https://coveralls.io/repos/github/dmind-gmbh/extension-cookieman/badge.svg?branch=9lts)](https://coveralls.io/github/dmind-gmbh/extension-cookieman?branch=9lts)
-![Unit Tests](https://github.com/dmind-gmbh/extension-cookieman/workflows/Tests/badge.svg?branch=9lts)
+[![Coverage Status](https://coveralls.io/repos/github/dmind-gmbh/extension-cookieman/badge.svg?branch=master)](https://coveralls.io/github/dmind-gmbh/extension-cookieman?branch=master)
+[![Unit Tests](https://github.com/dmind-gmbh/extension-cookieman/workflows/CGL%20&%20unit%20tests/badge.svg?event=push&branch=9lts)](https://github.com/dmind-gmbh/extension-cookieman/actions)
+[![Acceptance Tests](https://github.com/dmind-gmbh/extension-cookieman/workflows/acceptance%20tests/badge.svg?event=push&branch=9lts)](https://github.com/dmind-gmbh/extension-cookieman/actions)
+[![Latest Stable Version](https://poser.pugx.org/dmind/cookieman/v/stable)](https://packagist.org/packages/dmind/cookieman)
+[![License](https://poser.pugx.org/dmind/cookieman/license)](https://packagist.org/packages/dmind/cookieman)
+
 
 # TYPO3 extension Cookieman
 
@@ -40,7 +44,10 @@ Get it from packagist <https://packagist.org/packages/dmind/cookieman> via compo
 Each version **only supports** either TYPO3v8/v9/v10. This might be a bit confusing but makes development and testing easier. 
 
 ## Integration
-Include the shipped TypoScript as usual (either by including it from a sys_template \["Cookieman"\] or by referencing the files from your site package).
+Include the shipped TypoScript (`EXT:cookieman/Configuration/TypoScript/setup.typoscript` and `EXT:cookieman/Configuration/TypoScript/constants.typoscript`) as usual (either by including it from a sys_template \["Cookieman"\] or by referencing the files from your site package).
+This includes the base configuration with a group `mandatory` with the tracking object `CookieConsent`.
+
+If you want to see a full example, you can include the "Cookieman (Example configuration of groups and tracking objects)".
 
 ### TypoScript **constants**
 Adjust the TypoScript constants (again, either in a sys_template record or in a file in your site package):
@@ -126,7 +133,7 @@ See a full [TypoScript configuration example](#typoscript-configuration-example-
 > a single tracking object configuration
 
 #### *trackingObjects*.*‹tracking object key›*.*inject*: String
-> everything in here will be appended to the page when the respective group is consented. This can be &lt;script&gt;, &lt;img&gt; or anything else
+> each HTML tag in here will be appended to the page when the respective group is consented. This can be &lt;script&gt;, &lt;img&gt; or anything else
 
 #### *trackingObjects*.*‹tracking object key›*.*show*: Array
 > the actual rows of the table, each representing one "tracking item" (commonly a cookie)
@@ -147,7 +154,7 @@ See a full [TypoScript configuration example](#typoscript-configuration-example-
 > 
 > "cookie_http": an HTTP cookie
 > 
-> You can add your own types by adding a localization string "type.‹you type key›"
+> You can add your own types by adding a localization string "type.‹your type key›"
 
 #### *trackingObjects*.*‹tracking object key›*.*show*.*‹tracking item key›*.*provider*: String
 > the provider, e.g. Google
@@ -169,6 +176,9 @@ You can override translations by the usual means (.xlf-files or TypoScript *_LOC
 #### *trackingobject*.*‹tracking object key›*.desc 
 > shown in the table column "Purpose"
 
+#### *type*.*‹your custom type key›* 
+> shown in the table column "Type"
+
 
 ## Make the consent revokable
 It is recommended to include a snippet like the following on your data privacy statement page to allow your users to adjust their cookie preferences: 
@@ -180,8 +190,12 @@ It is recommended to include a snippet like the following on your data privacy s
 
 
 ## TypoScript configuration example (**setup** part):
+
+This example configuration is based on the base TypoScript configuration (See above, [Integration](#integration)) without the example template.
+ 
 <pre>
-temp.tx_cookieman.settings.groups.mandatory < plugin.tx_cookieman.settings.groups.mandatory
+# include definition of TrackingObjects
+@import 'EXT:cookieman/Configuration/TypoScript/TrackingObjects/*.typoscript'
 
 plugin.tx_cookieman.settings {
   trackingObjects {
@@ -204,9 +218,11 @@ plugin.tx_cookieman.settings {
     }
   
     # add my own custom tracking solution
+    # if you have a useful configuration and want to share, we would be happy if you did a pull request!
     MyOwnTrackingPixel {
       inject (
-&lt;div&gt;Here be dragons &lt;img src="/typo3conf/ext/mytracker/pixel.php"&gt;&lt;/div&gt;
+&lt;div&gt;Here be dragons &lt;img src="https://via.placeholder.com/200x200?text=Tracking pixel..."&gt;&lt;/div&gt;
+&lt;script&gt;alert('oh la la!')&lt;/script&gt;
       )
       show {
         # each element here represents one line of information in the consent popup
@@ -221,11 +237,7 @@ plugin.tx_cookieman.settings {
   }
   
   # reset existing groups
-  groups >
   groups {
-    # copy of default group 'mandatory'
-    mandatory < temp.tx_cookieman.settings.groups.mandatory
-    
     # my new group
     mygroup {
       trackingObjects {
@@ -241,15 +253,16 @@ plugin.tx_cookieman._LOCAL_LANG {
     trackingobject\.pixelphp = You can translate the name, but you do not have to.
     trackingobject\.pixelphp\.desc = My own tracking pixel does not really track you. It's just here to cheer you up.
     group\.mygroup = My group is my castle.
+    type\.pixel = Tracking pixel
   }
-  default < .en
+  default &lt; .en
 }
 </pre>
 
 ## Create a new theme or adapt an existing one
 We are happy to receive pull-requests for new themes!
 
-This is a recommendation how to set up your template structure for a custom extension. It looks like this: <https://github.com/dmind-gmbh/extension-cookieman/tree/master/Build/cookieman_test_customtheme>.
+This is a recommendation how to set up your template structure for a custom extension. 
 
 Set your base path in TypoScript constants:
 <pre>
@@ -298,8 +311,32 @@ cookieman.js exposes these methods:
 #### *cookieman.hide()*: void
 > Hides the confirmation modal. 
 
-#### *cookieman.hasConsented(selection)*: Boolean
-> Returns true if the user has consented to the given selection, else false. A selection is any name of a checkbox in the popup, e.g. 'marketing'
+#### *cookieman.consenteds()*: Array
+> Returns all groups keys the user has consented to. Example: `["mandatory", "ads"]`
+
+#### *cookieman.hasConsented(String groupKey)*: Boolean
+> Returns true if the user has consented to the given group key (e.g. 'marketing'), else false. This respects the group configuration for *groups*.*‹group key›*.*respectDnt*.
+
+#### *cookieman.onScriptLoaded(String trackingObjectKey, int scriptId, function callback)*: void
+> Do things after an external script has been loaded. This is useful if you are interacting with external scripts that are loaded by *cookieman*.
+>
+> *trackingObjectKey* is the *trackingObjects*.*‹tracking object key›* from TypoScript, e.g. 'Matomo'. 
+>
+> *scriptId* is the number of the &lt;script&gt; inside your *trackingObjects*.*‹tracking object key›*.*inject* (starting from 0 with the first). 
+>
+> *callback* is a function reference. It receives *trackingObjectKey* and *scriptId* (see example below).
+> 
+> *callback* is called immediately if the referred to &lt;script&gt; has already finished loading.
+>
+> Example: 
+> 
+>     cookieman.onScriptLoaded(
+>         'Matomo',
+>         0, // first script in 'inject'
+>         function (trackingObjectKey, scriptId) { 
+>             _paq.push(['trackConversion'])
+>         }
+>     )
  
 Cookieman also includes the (1kB) cookie library [JavaScript Cookie](https://github.com/js-cookie/js-cookie) that also exposes its API and makes it easier to work with cookies.
 

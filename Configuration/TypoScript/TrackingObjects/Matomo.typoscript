@@ -2,10 +2,10 @@
 # https://matomo.org/faq/general/faq_146/
 plugin.tx_cookieman.settings.trackingObjects {
     Matomo {
+        # inline scripts would break Content-Security-Policy: script-src
+        # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src
         inject (
-            <script>
-            console.log('cookieman: I would inject Matomo now...')
-            </script>
+            <script data-what="Matomo" src="/typo3conf/ext/cookieman/Resources/Public/Js/example-inject.js"></script>
         )
         # example:
 #        inject (
@@ -27,35 +27,35 @@ plugin.tx_cookieman.settings.trackingObjects {
                 duration = 13
                 durationUnit = months
                 type = cookie_http+html
-                provider = Bing
+                provider = Matomo
             }
 
             _pk_ref {
                 duration = 6
                 durationUnit = months
                 type = cookie_http+html
-                provider = Bing
+                provider = Matomo
             }
 
             _pk_ses {
                 duration = 30
                 durationUnit = minutes
                 type = cookie_http+html
-                provider = Bing
+                provider = Matomo
             }
 
             _pk_cvar {
                 duration = 30
                 durationUnit = minutes
                 type = cookie_http+html
-                provider = Bing
+                provider = Matomo
             }
 
             _pk_hsr {
                 duration = 30
                 durationUnit = minutes
                 type = cookie_http+html
-                provider = Bing
+                provider = Matomo
             }
         }
     }

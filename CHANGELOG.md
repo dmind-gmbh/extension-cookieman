@@ -1,3 +1,92 @@
+# 2.3.2
+
+## MISC
+- fix cgl 4e6cf6a8
+- closes #35 add API call onScriptLoaded() to register script onload callbacks. (#28) fab9bc18
+- fix #37 DNT message is only rendered once 74edceb1
+- add API to get all consented groups (3) fa28b0a1
+- add API to get all consented groups (2) 5a5e4737
+- add API to get all consented groups d71fbcd5
+- #31 add configuration of CookieConsent to base TypoScript 49d9635f
+
+# 2.2.5
+
+## MISC
+- fix #31 split TypoScript into Base + Examples a0da8b6c
+- fix #33 sort group.trackingsObjects by key and prevent JSON-object-cast dae2d401
+- remove outdated reference to test extension 3f67c60a
+- run composer-normalize 15e94730
+- add composer-normalize 527e3f93
+- add composer-normalize 1c481397
+- speed-up startup 52b4d6e8
+- depend on the test setup (--dev) 4a91ad6d
+- docs 3d81f419
+- fix #32 make examples CSP-ready 837280db
+- copy all nodes from injects() - get rid of container 47656efe
+- configure bootstrap-package to not use inline WebFontLoader (breaks CSP) 6034c0a0
+- remove dependencies from test extension cafaf0b7
+- minify 0187a6ce
+- include Content-Security-Policy in our test extensions & use our Crowdin Widget as test case 6558b48c
+- fix #28 s attributes not properly inserted b595ae17
+- customize TypoScript in test extension 571e4050
+- fix typo 3de85c57
+- make JS more error-tolerant (here: arbitrary cookie values) 550ae1e1
+- fix all test extensions being active c4141946
+
+# 2.2.2
+
+## MISC
+- give animations more time 08139c99
+- use PHP 7.3 locally 667cc3f1
+- use typo3-console for v8/v9 e7ef8351
+- cleanup 97918f74
+- add v9-link-without-site-package d1403229
+- adapt for 9lts 98c2fbed
+- update README badges 0a479cda
+- split Github actions into ‹CGL & unit› and ‹acceptance› tests. Use ddev with a patch to run acceptance tests in Github actions. 4b5256b0
+- align pre-commit with new composer {scripts} b44b9843
+- add composer typo3:flush command de7cd1ac
+- refactor composer {scripts} 998f5980
+- bump PHP version for TYPO3v9 634213e2
+- fix bootstrap3-banner a9cd45fc
+- use codeception to run acceptance tests e9de1bed
+- manual 3-way merge to align translations (#26) e36a563d
+- New Crowdin translations (#22) a8613674
+- New translations locallang.xlf (French) (#19) 904b68b1
+- fix 9lts bootstrapping of test extensions 13228417
+- New translations locallang.xlf (Romanian) 96bc972d
+- New translations locallang.xlf (Italian) b858838f
+- New translations locallang.xlf (Romanian) 9f18cac2
+- New translations locallang.xlf (Italian) daeab8ca
+- New Crowdin translations (#13) 85246dc1
+- New translations locallang.xlf (Italian) 47c35610
+- New translations locallang.xlf (Romanian) e0c41ac6
+- New translations locallang.xlf (Romanian) fcbe1416
+- New translations locallang.xlf (Italian) dc6f5c0b
+- New Crowdin translations (#8) 5003bd14
+- remove unused .crowdin.yml 0fe0ffa9
+- New translations locallang.xlf (Danish) 882e7543
+- New translations locallang.xlf (Romanian) 53a18554
+- Update Crowdin configuration file b3c19896
+- add links 2c281eae
+- fix typo 34fcf3cf
+- fix test badge a351329c
+- remove workflow dependency 1874a89b
+- revert last idea 1fe799eb
+- run composer and coveralls only one in workflow 99b88db1
+- add unit test badge 8c59f9ba
+- revert broken version f5af9396
+- use deprecated method to stay compatible with PHPUnit 6.5 700f2514
+- run unit tests with PHP 7.2 + 7.3 acfd2fb5
+- add code coverage checking ac8b1a2d
+- add composer 09566e3c
+- add docker test container 109f45de
+- add DataProcessor test 8142a076
+- use relative symlink to make it work host- and ddev-wise 89cd5fec
+- shorten local startup time 0eeba3e2
+- add .gitconfig for local dev f98dbc03
+- remove .crowdin.yaml from export 233641c8
+
 # 2.1.13
 
 ## MISC
