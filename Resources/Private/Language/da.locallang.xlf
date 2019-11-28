@@ -116,10 +116,8 @@
         <target state="needs-translation">Used to distinguish users.</target>
       </trans-unit>
       <trans-unit id="trackingobject.AMP_TOKEN.desc" resname="trackingobject.AMP_TOKEN.desc">
-        <source>Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID
-                    service.</source>
-        <target state="needs-translation">Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID
-                    service.</target>
+        <source>Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID service.</source>
+        <target state="needs-translation">Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID service.</target>
       </trans-unit>
       <trans-unit id="trackingobject._gac_--property-id--.desc" resname="trackingobject._gac_--property-id--.desc">
         <source>Contains campaign related information for the user. If you have linked your Google Analytics and Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.</source>
@@ -171,27 +169,27 @@
       </trans-unit>
       <trans-unit id="duration.day" resname="duration.day">
         <source>day</source>
-        <target state="needs-translation">day</target>
+        <target state="translated">dag</target>
       </trans-unit>
       <trans-unit id="duration.days" resname="duration.days">
         <source>days</source>
-        <target state="needs-translation">days</target>
+        <target state="translated">dage</target>
       </trans-unit>
       <trans-unit id="duration.month" resname="duration.month">
         <source>month</source>
-        <target state="needs-translation">month</target>
+        <target state="translated">måned</target>
       </trans-unit>
       <trans-unit id="duration.months" resname="duration.months">
         <source>months</source>
-        <target state="needs-translation">months</target>
+        <target state="translated">måneder</target>
       </trans-unit>
       <trans-unit id="duration.year" resname="duration.year">
         <source>year</source>
-        <target state="needs-translation">year</target>
+        <target state="translated">år</target>
       </trans-unit>
       <trans-unit id="duration.years" resname="duration.years">
         <source>years</source>
-        <target state="needs-translation">years</target>
+        <target state="translated">år</target>
       </trans-unit>
       <trans-unit id="active" resname="active">
         <source>active</source>
