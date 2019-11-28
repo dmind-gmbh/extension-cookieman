@@ -108,7 +108,6 @@
             "composer normalize --no-update-lock"
         ],
         "cookieman:release:create": [
-            "composer cookieman:release:prepare || exit $?",
             "extension-helper release:create",
             "mv cookieman_*.zip .build || exit $?"
         ],
