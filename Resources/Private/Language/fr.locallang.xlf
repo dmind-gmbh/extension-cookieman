@@ -31,9 +31,9 @@
         <source>Accept all cookies</source>
         <target state="needs-translation">Accept all cookies</target>
       </trans-unit>
-      <trans-unit id="save" resname="save" approved="yes">
+      <trans-unit id="save" resname="save">
         <source>Save</source>
-        <target state="final">Sauvegarder</target>
+        <target state="translated">Sauveguarder</target>
       </trans-unit>
       <trans-unit id="group.mandatory" resname="group.mandatory" approved="yes">
         <source>Mandatory</source>
@@ -81,7 +81,7 @@
       </trans-unit>
       <trans-unit id="type.cookie_http" resname="type.cookie_http">
         <source>HTTP</source>
-        <target state="needs-translation">HTTP</target>
+        <target state="translated">HTTP</target>
       </trans-unit>
       <trans-unit id="group.marketing" resname="group.marketing">
         <source>Marketing</source>

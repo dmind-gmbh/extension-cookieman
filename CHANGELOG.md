@@ -1,3 +1,92 @@
+# 2.3.1
+
+## MISC
+- fix cgl b12e8cb
+- closes #35 add API call onScriptLoaded() to register script onload callbacks. (#28) 2071f59
+- fix #37 DNT message is only rendered once (2) 68d16f7
+- fix #37 DNT message is only rendered once 8b3dae1
+- add API to get all consented groups (2) 996354d
+- add API to get all consented groups 0bfcc3c
+- respect DNT in API method cookieman.hasConsented() 79fb402
+- #31 add configuration of CookieConsent to base TypoScript 71b447e
+- fix #36 TypoScript include 2f3a8e1
+
+# 2.2.4
+
+## MISC
+- fix #31 split TypoScript into Base + Examples 8d2860a
+- fix #33 sort group.trackingsObjects by key and prevent JSON-object-cast 706581d
+- remove outdated reference to test extension e26a249
+- run composer normalize 97aede0
+- add composer-normalize 3e7bd74
+- add composer normalize 1e1e576
+- speed-up startup d7fdabd
+- docs b73db37
+- make examples CSP-ready 924eaaa
+- copy all nodes from injects() - get rid of container 9eef9e5
+- configure bootstrap-package to not use inline WebFontLoader (breaks CSP) 9f2c284
+- remove dependencies from test extension 3596d5f
+- minify & cleanup 77024cd
+- fix TypoScript inclusion for v8 81ac84b
+- include Content-Security-Policy in our test extensions & use our Crowdin Widget as test case cb934a6
+- fix #28 s attributes not properly inserted 5723d2e
+- customize TypoScript in test extension 260a440
+- fix typo fe2f033
+- make JS more error-tolerant (here: arbitrary cookie values) 2e80761
+
+# 2.2.1
+
+## MISC
+- give animations more time 9272669
+- fix typo e742922
+- allow introduction-package ^3.0 to pass tests 7e2a9d9
+- remove dependencies to allow upgrading bs-p 8304a86
+- use PHP 7.3 locally f674b0f
+- adapt for 8lts c445297
+- generalize URL for non-site package testing 5556b76
+- update README badges 6d973e2
+- split Github actions into ‹CGL & unit› and ‹acceptance› tests. Use ddev with a patch to run acceptance tests in Github actions. 628101e
+- align pre-commit with new composer {scripts} 769a3d6
+- use typo3-console for v8/v9 ed04697
+- add composer typo3:flush command 0103f44
+- refactor composer {scripts} 5c459c1
+- fix bootstrap3-banner e51d769
+- use codeception to run acceptance tests f8fc32c
+- manual 3-way merge to align translations (#27) d8c2f21
+- New Crowdin translations (#21) 358859e
+- New translations locallang.xlf (French) (#18) 3601587
+- Revert "shorten local startup time" cdcd36e
+- New translations locallang.xlf (Romanian) bd916dd
+- New translations locallang.xlf (Italian) b280f05
+- New Crowdin translations (#12) 2e6e467
+- New translations locallang.xlf (Italian) cdb5da4
+- New translations locallang.xlf (Romanian) 95ffa8b
+- New translations locallang.xlf (Romanian) f192edf
+- New translations locallang.xlf (Italian) 7150e47
+- New Crowdin translations (#10) 2e7cd59
+- New Crowdin translations (#7) 1197ab8
+- remove unused .crowdin.yml 795de11
+- New translations locallang.xlf (Danish) 6c985be
+- New translations locallang.xlf (Romanian) a8f2ee4
+- Update Crowdin configuration file a4abd8b
+- add links 6538a5a
+- Revert "try out coverall's github action" 62766a4
+- try out coverall's github action 2a14744
+- fix test badge bf2448f
+- remove workflow dependency b89ffd7
+- revert last idea 6c4f3a5
+- run composer and coveralls only one in workflow 2cbfe86
+- add test badge 35fe824
+- use deprecated method to stay compatible with PHPUnit 6.5 2d14049
+- run unit tests with PHP 7.2 + 7.3 f6c1eda
+- add code coverage checking 2021bd3
+- add composer a41856e
+- add docker test container ba2f38b
+- add DataProcessor test 1bcf9b9
+- shorten local startup time 8972904
+- add .gitconfig for local dev 877b227
+- remove .crowdin.yaml from export 20c7961
+
 # 2.1.12
 
 ## MISC
