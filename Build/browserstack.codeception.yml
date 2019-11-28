@@ -10,7 +10,7 @@ suites:
                 -   Asserts:
             config:
                 \Dmind\Cookieman\Tests\Acceptance\Driver\BrowserStackLocalWebDriver:
-                    url: http://extension-cookieman-9lts.test
+                    url: http://extension-cookieman-master.test
                     host: 'hub-cloud.browserstack.com'
                     port: 80
                     wait: 1
