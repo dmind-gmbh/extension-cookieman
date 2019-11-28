@@ -1,3 +1,21 @@
+# 2.3.4
+
+## MISC
+- New Crowdin translations (#45) 8dee7a3
+- remove unnecessary catch {} 1651e45
+- New Crowdin translations (#41) bd8b500
+- update docs 6f6a35b
+- fix whitespace 2dd700e
+- Add reStructuredText documentation (#40) c9dd0d1
+- use constants in acceptance tests (PHP 7.0 and introduction-package 3 compatible) 9019d5b
+- ignore .lock 9720c46
+- use constants in acceptance tests 1c83c85
+- update docs (type translation) 6151bf7
+- update docs d8577de
+- update selenium, add selenium-hub and prepare firefox 5a95d7e
+- fix acceptance-tests.yml 191af44
+- use reusable github-action-setup-ddev 5bc2aa3
+
 # 2.3.1
 
 ## MISC
