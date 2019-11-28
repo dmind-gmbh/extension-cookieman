@@ -78,4 +78,3 @@ It provides a stable API to read out consents with JavaScript.
    Developer/Index
    Links/Index
    Sitemap
-
