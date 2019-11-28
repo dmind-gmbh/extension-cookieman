@@ -1,3 +1,23 @@
+# 2.3.3
+
+## MISC
+- New translations locallang.xlf (German) (#44) 3e2069c
+- remove unnecessary catch {} 75ed927
+- New Crowdin translations (#43) bdcb83f
+- update docs bba83d8
+- trigger docs rendering 254cc94
+- fix whitespace 80c51b4
+- Add reStructuredText documentation (#40) c534d1d
+- use constants in acceptance tests (PHP 7.0 and introduction-package 3 compatible) 617fc9c
+- ignore .lock 43b479c
+- use constants in acceptance tests f948dfc
+- update docs (type translation) 58bb0ba
+- update docs 6b131b1
+- update selenium, add selenium-hub and prepare firefox 916701c
+- fix acceptance-tests.yml 66a5889
+- use reusable github-action-setup-ddev c7e76c9
+- oops cb7096b
+
 # 2.3.0
 
 ## MISC
