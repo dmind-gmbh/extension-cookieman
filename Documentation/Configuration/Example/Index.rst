@@ -18,7 +18,8 @@ This example configuration is based on the base TypoScript configuration
 
 .. code-block:: typoscript
 
-   temp.tx_cookieman.settings.groups.mandatory < plugin.tx_cookieman.settings.groups.mandatory
+   # include definition of TrackingObjects
+   @import 'EXT:cookieman/Configuration/TypoScript/TrackingObjects/*.typoscript'
 
    plugin.tx_cookieman.settings {
        trackingObjects {
@@ -59,12 +60,7 @@ This example configuration is based on the base TypoScript configuration
            }
        }
 
-       # reset existing groups
-       groups >
        groups {
-           # copy of default group 'mandatory'
-           mandatory < temp.tx_cookieman.settings.groups.mandatory
-
            # my new group
            mygroup {
                trackingObjects {
@@ -77,10 +73,10 @@ This example configuration is based on the base TypoScript configuration
 
    plugin.tx_cookieman._LOCAL_LANG {
        en {
-           trackingobject.pixelphp = You can translate the name, but you do not have to.
-           trackingobject.pixelphp.desc = My own tracking pixel does not really track you. It's just here to cheer you up.
-           group.mygroup = My group is my castle.
-           type.pixel = Tracking pixel
+           trackingobject\.pixelphp = You can translate the name, but you do not have to.
+           trackingobject\.pixelphp\.desc = My own tracking pixel does not really track you. It's just here to cheer you up.
+           group\.mygroup = My group is my castle.
+           type\.pixel = Tracking pixel
        }
        default < .en
    }
