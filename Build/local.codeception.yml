@@ -13,9 +13,12 @@ suites:
                     url: http://extension-cookieman-master.test
                     host: selenium-hub
                     port: 4444
-                    wait: 1
+                    wait: 5
                     window_size: 1280x960
                     restart: true
+                    pageload_timeout: 15
+                    log_js_errors: true
+                    clear_cookies: true
 
 env:
     chrome:

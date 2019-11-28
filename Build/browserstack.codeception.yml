@@ -13,7 +13,10 @@ suites:
                     url: http://extension-cookieman-master.test
                     host: 'hub-cloud.browserstack.com'
                     port: 80
-                    wait: 1
+                    wait: 5
+                    pageload_timeout: 15
+                    log_js_errors: true
+                    clear_cookies: true
                     capabilities: # https://www.browserstack.com/automate/capabilities
                         browserstack.local: true
                         browserstack.console: verbose # or disable, errors, warnings, info
