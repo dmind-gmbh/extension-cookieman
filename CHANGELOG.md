@@ -1,3 +1,15 @@
+# 2.3.8
+
+## MISC
+- New Crowdin translations (#52) a44f284
+- maybe again improve links display bd3ec9c
+- maybe improve links display 60b347d
+- reduce README.md 51fdead
+- fix ext_emconf category 433be02
+- get more debug form selenium drivers da18017
+- test sanitizedSettings() e5255ad
+- remove release:prepare from mandatory steps for release:create 69989b7
+
 # 2.3.5
 
 ## MISC
