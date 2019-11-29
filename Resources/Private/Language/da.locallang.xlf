@@ -93,7 +93,7 @@
       </trans-unit>
       <trans-unit id="trackingobject._pk_id.desc" resname="trackingobject._pk_id.desc">
         <source>Used to store a few details about the user such as the unique visitor ID.</source>
-        <target state="needs-translation">Used to store a few details about the user such as the unique visitor ID.</target>
+        <target state="translated">Bruges til at gemme enkelte detaljer om brugeren, eksempelvis unik besøgs ID.</target>
       </trans-unit>
       <trans-unit id="trackingobject._pk_ref.desc" resname="trackingobject._pk_ref.desc">
         <source>Used to store the attribution information, the referrer initially used to visit the website.</source>
