@@ -23,14 +23,16 @@ hooks:
         - exec-host: .ddev/commands/copy-git-config
     post-start:
         # this looks extra-weird... It works around typo3/cms-introduction depend on bs-p ^8.0 while I want ^10.0
-        - composer: require --dev typo3/cms-introduction:^3.0.2
+        - composer: rem --dev bk2k/bootstrap-package
+        - composer: req --dev typo3/cms-introduction:^3.0.2
         - exec: |
             if [[ $(mysql -e "SHOW TABLES" | wc -l) -eq 0 ]]; then
               composer install-typo3
             fi
         - composer: install-extensions
-        - composer: remove --dev typo3/cms-introduction
-        - composer: update bk2k/bootstrap-package
+        - composer: rem --dev typo3/cms-introduction
+        - composer: req --dev bk2k/bootstrap-package:^10.0
+        - composer: normalize --no-update-lock
         - composer: cookieman:bootstrap3-banner
         - exec: rm composer.lock
 

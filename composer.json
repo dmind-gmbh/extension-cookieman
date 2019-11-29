@@ -17,8 +17,9 @@
         "typo3/cms-core": "^8.7.0"
     },
     "require-dev": {
-        "bk2k/bootstrap-package": "^8.0 || ^10.0",
+        "bk2k/bootstrap-package": "^10.0",
         "bk2k/extension-helper": "^1.0",
+        "browserstack/browserstack-local": "dev-master",
         "codeception/codeception": "^3.1",
         "dmind/cookieman-test": "@dev",
         "dmind/cookieman-test-bootstrap3-banner": "@dev",
@@ -30,7 +31,9 @@
         "localheinz/composer-normalize": "^1.3",
         "php-coveralls/php-coveralls": "^2.1",
         "roave/security-advisories": "dev-master",
-        "typo3/cms-tstemplate": "*",
+        "typo3/cms-impexp": "^8.7.0",
+        "typo3/cms-rte-ckeditor": "^8.7.0",
+        "typo3/cms-tstemplate": "^8.7.0",
         "typo3/testing-framework": "^2.0.4"
     },
     "config": {
@@ -108,7 +111,6 @@
             "composer normalize --no-update-lock"
         ],
         "cookieman:release:create": [
-            "composer cookieman:release:prepare || exit $?",
             "extension-helper release:create",
             "mv cookieman_*.zip .build || exit $?"
         ],
@@ -125,11 +127,23 @@
         "cookieman:test:acceptance": [
             "@cookieman:test:acceptance:chrome"
         ],
+        "cookieman:test:acceptance:browserstack_chrome": [
+            "codecept run --env browserstack_chrome -d -c Build/browserstack.codeception.yml -- acceptance"
+        ],
+        "cookieman:test:acceptance:browserstack_ie11": [
+            "codecept run --env browserstack_ie11 -d -c Build/browserstack.codeception.yml -- acceptance"
+        ],
+        "cookieman:test:acceptance:browserstack_iphone": [
+            "codecept run --env browserstack_iPhone8 --skip-group desktop -d -c Build/browserstack.codeception.yml -- acceptance"
+        ],
+        "cookieman:test:acceptance:browserstack_safari": [
+            "codecept run --env browserstack_safari -d -c Build/browserstack.codeception.yml -- acceptance"
+        ],
         "cookieman:test:acceptance:chrome": [
-            "codecept run acceptance --env chrome -d -c Build/AcceptanceTests.codeception.yml"
+            "codecept run --env chrome -d -c Build/local.codeception.yml -- acceptance"
         ],
         "cookieman:test:acceptance:firefox": [
-            "codecept run acceptance --env firefox -d -c Build/AcceptanceTests.codeception.yml"
+            "codecept run --env firefox -d -c Build/local.codeception.yml -- acceptance"
         ],
         "cookieman:test:cgl": [
             "php-cs-fixer --config=.php_cs.dist fix -v --using-cache=no --dry-run",

@@ -1,0 +1,105 @@
+namespace: Dmind\Cookieman\Tests\Acceptance\Support
+suites:
+    acceptance:
+        actor: AcceptanceTester
+        step_decorators:
+            - \Codeception\Step\TryTo
+        path: .
+        modules:
+            enabled:
+                -   Asserts:
+            config:
+                \Dmind\Cookieman\Tests\Acceptance\Driver\BrowserStackLocalWebDriver:
+                    url: http://extension-cookieman-8lts.test
+                    host: 'hub-cloud.browserstack.com'
+                    port: 80
+                    wait: 5
+                    pageload_timeout: 15
+                    log_js_errors: true
+                    clear_cookies: true
+                    capabilities: # https://www.browserstack.com/automate/capabilities
+                        browserstack.local: true
+                        browserstack.console: verbose # or disable, errors, warnings, info
+                        browserstack.debug: true
+                        browserstack.video: true
+                        browserstack.networkLogs: true
+                        #browserstack.networkProfile: 3g-umts-good # 2g-gprs-good, 2g-gprs-lossy, 3g-umts-good, etc.
+                        browserstack.use_w3c: true
+                        project: 'EXT:cookieman'
+                        build: 'Acceptance Tests'
+                        name: 'Acceptance Tests'
+                        browserstack.selenium_version: '3.141.59'
+
+env:
+    browserstack_chrome:
+        modules:
+            enabled:
+                - \Dmind\Cookieman\Tests\Acceptance\Driver\BrowserStackLocalWebDriver
+            config:
+                \Dmind\Cookieman\Tests\Acceptance\Driver\BrowserStackLocalWebDriver:
+                    browser: chrome
+                    capabilities:
+                        resolution: 1280x1024
+                        os: Windows
+                        os_version: 10
+
+    browserstack_ie11:
+        modules:
+            enabled:
+                - \Dmind\Cookieman\Tests\Acceptance\Driver\BrowserStackLocalWebDriver
+            config:
+                \Dmind\Cookieman\Tests\Acceptance\Driver\BrowserStackLocalWebDriver:
+                    browser: IE
+                    capabilities:
+                        resolution: 1280x1024
+                        browser_version: 11.0
+                        os: Windows
+                        os_version: 7
+
+    browserstack_iPhone8:
+        modules:
+            enabled:
+                - \Dmind\Cookieman\Tests\Acceptance\Driver\BrowserStackLocalWebDriver
+            config:
+                \Dmind\Cookieman\Tests\Acceptance\Driver\BrowserStackLocalWebDriver:
+                    browser: Safari
+                    capabilities:
+                        browserName: iPhone
+                        device: iPhone 8 Plus
+                        realMobile: false
+                        os_version: 12
+
+    browserstack_safari:
+        modules:
+            enabled:
+                - \Dmind\Cookieman\Tests\Acceptance\Driver\BrowserStackLocalWebDriver
+            config:
+                \Dmind\Cookieman\Tests\Acceptance\Driver\BrowserStackLocalWebDriver:
+                    browser: Safari
+                    capabilities:
+                        resolution: 1280x1024
+                        browserName: safari
+                        os: OS X
+                        os_version: Catalina
+                        browser: Safari
+                        browser_version: 13.0
+
+extensions:
+    enabled:
+        -   Codeception\Extension\Recorder:
+    config:
+        Codeception\Extension\Recorder:
+            module: \Dmind\Cookieman\Tests\Acceptance\Driver\BrowserStackLocalWebDriver
+            delete_successful: false
+            delete_orphaned: true
+
+paths:
+    tests: ../Tests/Acceptance
+    output: ../Build/AcceptanceReports
+    data: ../Tests
+    support: ../Tests/Acceptance/Support
+
+settings:
+    shuffle: false
+    lint: false
+    colors: true
