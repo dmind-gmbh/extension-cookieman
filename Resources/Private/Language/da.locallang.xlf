@@ -91,9 +91,9 @@
         <source>With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</source>
         <target state="final">Ved hjælp af disse cookies, arbejder vi målrettet på at forbedre vores indhold for vores brugere. Ved hjælp af anonymiserede data fra websidens brugere, kan vi optimere brugerflowet. Det gør os i stand til at forbedre reklamer og indhold.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._pk_id.desc" resname="trackingobject._pk_id.desc">
+      <trans-unit id="trackingobject._pk_id.desc" resname="trackingobject._pk_id.desc" approved="yes">
         <source>Used to store a few details about the user such as the unique visitor ID.</source>
-        <target state="translated">Bruges til at gemme enkelte detaljer om brugeren, eksempelvis unik besøgs ID.</target>
+        <target state="final">Bruges til at gemme enkelte detaljer om brugeren, eksempelvis unik besøgs ID.</target>
       </trans-unit>
       <trans-unit id="trackingobject._pk_ref.desc" resname="trackingobject._pk_ref.desc">
         <source>Used to store the attribution information, the referrer initially used to visit the website.</source>
