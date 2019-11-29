@@ -33,26 +33,21 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
     }
 
     /**
+     * @dataProvider settingsProvider
      * @test
+     * @throws \TYPO3\CMS\Extbase\Configuration\Exception\InvalidConfigurationTypeException
      */
-    public function returnsSettings()
+    public function returnsSettings($pluginConfiguration, $returnedSettings)
     {
         $configurationManager = $this->getMockBuilder(ConfigurationManagerInterface::class)->getMockForAbstractClass();
         $configurationManager->expects(self::once())->method('getConfiguration')->willReturn(
-            [
-                'settings' => [
-                    'groups' => [
-                        'mandatory' => [
-                            'preselected' => 1,
-                        ],
-                    ],
-                ]
-            ]
+            $pluginConfiguration
         );
 
         $subject = $this->getMockBuilder(TypoScriptSettingsProcessor::class)
             ->setMethods(['getConfigurationManager']) // setMethods() for PHPUnit 6.5
-            ->setMockClassName('ConfigurationManagerInterface')->getMock();
+            ->setMockClassName('ConfigurationManagerInterface')
+            ->getMock();
         $subject->expects(self::once())->method('getConfigurationManager')->willReturn($configurationManager);
 
         $result = $subject->process(
@@ -63,19 +58,117 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
         );
 
         self::assertEquals(
+            $returnedSettings,
+            $result
+        );
+    }
+
+    public function settingsProvider()
+    {
+        return [
             [
-                'data' => [],
-                'settings' => [
+                [
+                    'groups' => [
+                        'mandatory' => [
+                            'preselected' => 1,
+                            'trackingObjects' => [ // unordered object
+                                10 => 'fe_typo_user',
+                                0 => 'CookieConsent',
+                            ],
+                        ],
+                    ],
+                    'trackingObjects' => [
+                        'CookieConsent' => [
+                            'show' => [
+                                [
+                                    'CookieConsent' => [
+                                        'duration' => '1',
+                                        'durationUnit' => 'year',
+                                        'type' => 'cookie_http+html',
+                                        'provider' => 'Website',
+                                    ]
+                                ]
+                            ]
+                        ],
+                        'fe_typo_user' => [
+                            'show' => [
+                                [
+                                    'fe_typo_user' => [
+                                        'duration' => '',
+                                        'durationUnit' => 'session',
+                                        'type' => 'cookie_http',
+                                        'provider' => 'Website',
+                                    ]
+                                ],
+                            ]
+                        ],
+                        'another' => [ // unused
+                            'show' => [
+                                [
+                                    'another' => [
+                                        'duration' => '',
+                                        'durationUnit' => 'session',
+                                        'type' => 'cookie_http',
+                                        'provider' => 'Website',
+                                    ]
+                                ],
+                            ]
+                        ],
+                    ]
+                ],
+                [
+                    'data' => [],
                     'settings' => [
                         'groups' => [
                             'mandatory' => [
                                 'preselected' => 1,
+                                'trackingObjects' => [ // ordered list
+                                    'CookieConsent',
+                                    'fe_typo_user',
+                                ],
                             ],
                         ],
-                    ],
+                        'trackingObjects' => [
+                            'CookieConsent' => [
+                                'show' => [
+                                    [
+                                        'CookieConsent' => [
+                                            'duration' => '1',
+                                            'durationUnit' => 'year',
+                                            'type' => 'cookie_http+html',
+                                            'provider' => 'Website',
+                                        ]
+                                    ]
+                                ]
+                            ],
+                            'fe_typo_user' => [
+                                'show' => [
+                                    [
+                                        'fe_typo_user' => [
+                                            'duration' => '',
+                                            'durationUnit' => 'session',
+                                            'type' => 'cookie_http',
+                                            'provider' => 'Website',
+                                        ]
+                                    ],
+                                ]
+                            ],
+                            'another' => [ // unused
+                                'show' => [
+                                    [
+                                        'another' => [
+                                            'duration' => '',
+                                            'durationUnit' => 'session',
+                                            'type' => 'cookie_http',
+                                            'provider' => 'Website',
+                                        ]
+                                    ],
+                                ]
+                            ],
+                        ]
+                    ]
                 ],
-            ],
-            $result
-        );
+            ]
+        ];
     }
 }
