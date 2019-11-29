@@ -17,7 +17,6 @@
         "typo3/cms-core": "^8.7.0"
     },
     "require-dev": {
-        "bk2k/bootstrap-package": "^10.0",
         "bk2k/extension-helper": "^1.0",
         "browserstack/browserstack-local": "dev-master",
         "codeception/codeception": "^3.1",
@@ -34,7 +33,8 @@
         "typo3/cms-impexp": "^8.7.0",
         "typo3/cms-rte-ckeditor": "^8.7.0",
         "typo3/cms-tstemplate": "^8.7.0",
-        "typo3/testing-framework": "^2.0.4"
+        "typo3/testing-framework": "^2.0.4",
+        "typo3/cms-introduction": "^3.0.2"
     },
     "config": {
         "bin-dir": ".build/bin",
