@@ -31,10 +31,10 @@
         "php-coveralls/php-coveralls": "^2.1",
         "roave/security-advisories": "dev-master",
         "typo3/cms-impexp": "^8.7.0",
+        "typo3/cms-introduction": "^3.0.2",
         "typo3/cms-rte-ckeditor": "^8.7.0",
         "typo3/cms-tstemplate": "^8.7.0",
-        "typo3/testing-framework": "^2.0.4",
-        "typo3/cms-introduction": "^3.0.2"
+        "typo3/testing-framework": "^2.0.4"
     },
     "config": {
         "bin-dir": ".build/bin",
