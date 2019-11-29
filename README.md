@@ -14,11 +14,13 @@ A GDPR tracking consent popup. It asks for approval to include tracking objects 
 You can click around the 3 included demo themes [here](http://cookieman.d-mind.de/). Have a look at the JavaScript console to see when tracking gets enabled. You can also try out the ["Do-not-track" setting of your browser](https://en.wikipedia.org/wiki/Do_Not_Track) which triggers a message inside the popup (in the "marketing" group) when enabled.
 
 ## Links
-| Documentation / Manual: | <https://docs.typo3.org/p/dmind/cookieman/master/en-us/> |
+| | |
 | --- | --- |
-| TYPO3 extension repository: |	<https://extensions.typo3.org/extension/cookieman> |
-| CI: | <https://github.com/dmind-gmbh/extension-cookieman/actions> |
-| Packagist: | <https://packagist.org/packages/dmind/cookieman> |
+| Features / Documentation / Manual | <https://docs.typo3.org/p/dmind/cookieman/master/en-us/> |
+| Demo | <http://cookieman.d-mind.de/> |
+| TYPO3 extension repository |	<https://extensions.typo3.org/extension/cookieman> |
+| CI | <https://github.com/dmind-gmbh/extension-cookieman/actions> |
+| Packagist | <https://packagist.org/packages/dmind/cookieman> |
 
 ## Contact
 For **bugs** and **feature** requests use the [Github bug tracker](https://github.com/dmind-gmbh/extension-cookieman/issues).
