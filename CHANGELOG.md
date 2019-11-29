@@ -1,3 +1,22 @@
+# 2.3.6
+
+## MISC
+- New Crowdin translations (#50) c78cb49
+- maybe again improve links display 27b0cd8
+- maybe improve links display 2f2c377
+- reduce README.md acad8ac
+- give credit to an awesome person bf773a8
+- fix ext_emconf category 6427d1a
+- Revert "add PHP 7.4 to testing matrix for master" b5d288c
+- add PHP 7.4 to testing matrix for master 3d4c36d
+- gte more debugging from selenium drivers e634b00
+- use browserstack for iPhone and Safari 32537c6
+- use browserstack for iPhone and Safari f0a99b1
+- use browserstack for iPhone and Safari cde3d35
+- fix TYPO3v10 bootstrapping 015b420
+- test sanitizedSettings() ac1c72a
+- remove release:prepare from mandatory steps for release:create 58efd32
+
 # 2.3.3
 
 ## MISC
