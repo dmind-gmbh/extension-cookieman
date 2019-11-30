@@ -1,4 +1,7 @@
 // requires: cookieman.js, Bootstrap-JS, jQuery
+/** global: cookieman */
+/** global: jQuery */
+
 cookieman.theme = (function () {
     "use strict";
     var showBackdrop = true
