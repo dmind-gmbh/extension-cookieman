@@ -1,4 +1,5 @@
 // requires: js.cookie
+/** global: Cookies */
 var cookieman = (function () {
     "use strict";
     // remember: write IE11-compatible JavaScript
@@ -60,7 +61,7 @@ var cookieman = (function () {
                 if (typeof aGroup === 'undefined') {
                     return false
                 }
-                return !aGroup.respectDnt || (navigator.doNotTrack !== '1')
+                return !aGroup.respectDnt || (window.navigator.doNotTrack !== '1')
             }
         )
     }
@@ -89,7 +90,7 @@ var cookieman = (function () {
     }
 
     function setDntTextIfEnabled() {
-        if (navigator.doNotTrack === '1') {
+        if (window.navigator.doNotTrack === '1') {
             var dnts = document.querySelectorAll('[data-cookieman-dnt]')
             for (var _i = 0; _i < dnts.length; _i++) {
                 dnts[_i].innerHTML = form.dataset.cookiemanDntEnabled
@@ -195,7 +196,7 @@ var cookieman = (function () {
         polyfillCustomEvent()
 
         eventsEl.dispatchEvent(
-            new CustomEvent(typeArg, customEventInit)
+            new window.CustomEvent(typeArg, customEventInit)
         )
     }
 
