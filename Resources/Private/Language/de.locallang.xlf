@@ -218,12 +218,9 @@
           <target>Ent<![CDATA[&amp;shy;]]>hält ei<![CDATA[&amp;shy;]]>nen To<![CDATA[&amp;shy;]]>ken, der ver<![CDATA[&amp;shy;]]>wen<![CDATA[&amp;shy;]]>det wer<![CDATA[&amp;shy;]]>den kann, um ei<![CDATA[&amp;shy;]]>ne Client-ID vom AMP-Client-ID-Dienst ab<![CDATA[&amp;shy;]]>zu<![CDATA[&amp;shy;]]>ru<![CDATA[&amp;shy;]]>fen.</target>
         </alt-trans>
       </trans-unit>
-      <trans-unit id="trackingobject._dc_gtm_--property-id--.desc" resname="trackingobject._dc_gtm_--property-id--.desc" approved="yes">
-        <source>Used to help identify the visitors by either age, gender, or interests by DoubleClick - Google Tag Manager</source>
-        <target state="final">Wird von DoubleClick - Google Tag Manager verwendet, um die Besucher nach Alter, Geschlecht oder Interessen zu identifizieren.</target>
-        <alt-trans>
-          <target>Wird verwendet, um die Besucher nach Alter, Geschlecht oder Interessen von DoubleClick - Google Tag Manager zu identifizieren</target>
-        </alt-trans>
+      <trans-unit id="trackingobject._dc_gtm_--property-id--.desc" resname="trackingobject._dc_gtm_--property-id--.desc">
+        <source>Used by DoubleClick (Google Tag Manager) to help identify the visitors by either age, gender or interests.</source>
+        <target state="needs-translation">Used by DoubleClick (Google Tag Manager) to help identify the visitors by either age, gender or interests.</target>
       </trans-unit>
       <trans-unit id="trackingobject._gac_--property-id--.desc" resname="trackingobject._gac_--property-id--.desc" approved="yes">
         <source>Contains campaign related information for the user. If you have linked your Google Analytics and Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.</source>
