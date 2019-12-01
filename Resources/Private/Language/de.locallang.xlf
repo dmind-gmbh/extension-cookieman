@@ -6,44 +6,26 @@
       <trans-unit id="heading" resname="heading" approved="yes">
         <source>About Cookies</source>
         <target state="final">Hinweis zu Cookies</target>
-        <alt-trans>
-          <target>Hin<![CDATA[&amp;shy;]]>weis zu Coo<![CDATA[&amp;shy;]]>kies</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="dataProtectionDeclaration" resname="dataProtectionDeclaration" approved="yes">
         <source>Data Protection Declaration</source>
         <target state="final">Datenschutzerklärung</target>
-        <alt-trans>
-          <target>Da<![CDATA[&amp;shy;]]>ten<![CDATA[&amp;shy;]]>schutz<![CDATA[&amp;shy;]]>er<![CDATA[&amp;shy;]]>klä<![CDATA[&amp;shy;]]>rung</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="imprint" resname="imprint" approved="yes">
         <source>Imprint</source>
         <target state="final">Impressum</target>
-        <alt-trans>
-          <target>Im<![CDATA[&amp;shy;]]>pres<![CDATA[&amp;shy;]]>sum</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="introText" resname="introText" approved="yes">
         <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
         <target state="final">Unsere Webseite verwendet Cookies. Diese haben zwei Funktionen: Zum einen sind sie erforderlich für die grundlegende Funktionalität unserer Website. Zum anderen können wir mit Hilfe der Cookies unsere Inhalte für Sie immer weiter verbessern. Hierzu werden pseudonymisierte Daten von Website-Besuchern gesammelt und ausgewertet. Das Einverständnis in die Verwendung der Cookies können Sie jederzeit widerrufen. Weitere Informationen zu Cookies auf auf Website finden Sie in unserer %1$s und zu uns im %2$s.</target>
-        <alt-trans>
-          <target>Unsere Webseite verwendet Cookies. Diese haben zwei Funk<![CDATA[&amp;shy;]]>tionen: Zum einen sind sie er<![CDATA[&amp;shy;]]>for<![CDATA[&amp;shy;]]>der<![CDATA[&amp;shy;]]>lich für die grund<![CDATA[&amp;shy;]]>legende Funk<![CDATA[&amp;shy;]]>tiona<![CDATA[&amp;shy;]]>lität unserer Website. Zum an<![CDATA[&amp;shy;]]>deren kön<![CDATA[&amp;shy;]]>nen wir mit Hilfe der Cookies unsere In<![CDATA[&amp;shy;]]>halte für Sie immer weiter ver<![CDATA[&amp;shy;]]>bessern. Hierzu werden pseudo<![CDATA[&amp;shy;]]>nymi<![CDATA[&amp;shy;]]>sierte Daten von Website-Be<![CDATA[&amp;shy;]]>such<![CDATA[&amp;shy;]]>ern ge<![CDATA[&amp;shy;]]>sam<![CDATA[&amp;shy;]]>melt und aus<![CDATA[&amp;shy;]]>ge<![CDATA[&amp;shy;]]>wer<![CDATA[&amp;shy;]]>tet. Ihr Ein<![CDATA[&amp;shy;]]>ver<![CDATA[&amp;shy;]]>ständ<![CDATA[&amp;shy;]]>nis in die Ver<![CDATA[&amp;shy;]]>wendung der Cookies können Sie je<![CDATA[&amp;shy;]]>der<![CDATA[&amp;shy;]]>zeit Wider<![CDATA[&amp;shy;]]>rufen.<![CDATA[<br />]]>Weitere In<![CDATA[&amp;shy;]]>formationen zu Cookies finden Sie auf unserer Website unter %1$s und im %2$s.</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="settings" resname="settings" approved="yes">
         <source>Settings</source>
         <target state="final">Einstellungen</target>
-        <alt-trans>
-          <target>Ein<![CDATA[&amp;shy;]]>stel<![CDATA[&amp;shy;]]>lun<![CDATA[&amp;shy;]]>gen</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="settingsText" resname="settingsText" approved="yes">
         <source>Click here for Cookie %1$s.</source>
         <target state="final">Hier gelangen Sie zu den Cookie-%1$s.</target>
-        <alt-trans>
-          <target>Hier ge<![CDATA[&amp;shy;]]>lan<![CDATA[&amp;shy;]]>gen Sie zu den Coo<![CDATA[&amp;shy;]]>kie-%1$s.</target>
-        </alt-trans>
         <alt-trans>
           <target>Klicken Sie hier für Cooke %1$s.</target>
         </alt-trans>
@@ -54,40 +36,22 @@
       <trans-unit id="accept" resname="accept" approved="yes">
         <source>Accept all cookies</source>
         <target state="final">Alle Cookies akzeptieren</target>
-        <alt-trans>
-          <target>Al<![CDATA[&amp;shy;]]>le Coo<![CDATA[&amp;shy;]]>kies ak<![CDATA[&amp;shy;]]>zep<![CDATA[&amp;shy;]]>tie<![CDATA[&amp;shy;]]>ren</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="save" resname="save" approved="yes">
         <source>Save</source>
         <target state="final">Speichern</target>
-        <alt-trans>
-          <target>Spei<![CDATA[&amp;shy;]]>chern</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="group.mandatory" resname="group.mandatory" approved="yes">
         <source>Mandatory</source>
         <target state="final">Erforderlich</target>
-        <alt-trans>
-          <target>Er<![CDATA[&amp;shy;]]>for<![CDATA[&amp;shy;]]>der<![CDATA[&amp;shy;]]>lich</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc" approved="yes">
         <source>These cookies are needed for a smooth operation of our website.</source>
         <target state="final">Diese Cookies werden für eine reibungslose Funktion unserer Website benötigt.</target>
-        <alt-trans>
-          <target>Die<![CDATA[&amp;shy;]]>se Coo<![CDATA[&amp;shy;]]>kies wer<![CDATA[&amp;shy;]]>den für ei<![CDATA[&amp;shy;]]>ne rei<![CDATA[&amp;shy;]]>bungs<![CDATA[&amp;shy;]]>lo<![CDATA[&amp;shy;]]>se Funk<![CDATA[&amp;shy;]]>ti<![CDATA[&amp;shy;]]>on un<![CDATA[&amp;shy;]]>se<![CDATA[&amp;shy;]]>rer Web<![CDATA[&amp;shy;]]>site be<![CDATA[&amp;shy;]]>nö<![CDATA[&amp;shy;]]>tigt.</target>
-        </alt-trans>
-        <alt-trans>
-          <target>Die<![CDATA[&amp;shy;]]>se Cookies wer<![CDATA[&amp;shy;]]>den für ei<![CDATA[&amp;shy;]]>ne rei<![CDATA[&amp;shy;]]>bungs<![CDATA[&amp;shy;]]>lose Funk<![CDATA[&amp;shy;]]>tion<![CDATA[&amp;shy;]]>ali<![CDATA[&amp;shy;]]>tät un<![CDATA[&amp;shy;]]>se<![CDATA[&amp;shy;]]>rer Web<![CDATA[&amp;shy;]]>site be<![CDATA[&amp;shy;]]>nö<![CDATA[&amp;shy;]]>tigt.</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="tableheader.name" resname="tableheader.name" approved="yes">
         <source>Name</source>
         <target state="final">Name</target>
-        <alt-trans>
-          <target>Na<![CDATA[&amp;shy;]]>me</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="tableheader.purpose" resname="tableheader.purpose" approved="yes">
         <source>Purpose</source>
@@ -96,9 +60,6 @@
       <trans-unit id="tableheader.duration" resname="tableheader.duration" approved="yes">
         <source>Lifetime</source>
         <target state="final">Ablauf</target>
-        <alt-trans>
-          <target>Gül<![CDATA[&amp;shy;]]>tig<![CDATA[&amp;shy;]]>keit</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="tableheader.type" resname="tableheader.type" approved="yes">
         <source>Type</source>
@@ -107,16 +68,10 @@
       <trans-unit id="tableheader.provider" resname="tableheader.provider" approved="yes">
         <source>Provider</source>
         <target state="final">Anbieter</target>
-        <alt-trans>
-          <target>An<![CDATA[&amp;shy;]]>bie<![CDATA[&amp;shy;]]>ter</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc" approved="yes">
         <source>Saves your consent to using cookies.</source>
         <target state="final">Speichert Ihre Einwilligung zur Verwendung von Cookies.</target>
-        <alt-trans>
-          <target>Spei<![CDATA[&amp;shy;]]>chert Ih<![CDATA[&amp;shy;]]>re Ein<![CDATA[&amp;shy;]]>wil<![CDATA[&amp;shy;]]>li<![CDATA[&amp;shy;]]>gung zur Ver<![CDATA[&amp;shy;]]>wen<![CDATA[&amp;shy;]]>dung von Coo<![CDATA[&amp;shy;]]>kies.</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html" approved="yes">
         <source>HTML</source>
@@ -125,16 +80,10 @@
       <trans-unit id="trackingobject.fe_typo_user.desc" resname="trackingobject.fe_typo_user.desc" approved="yes">
         <source>Assigns your browser to a session on the server.</source>
         <target state="final">Ordnet Ihren Browser einer Session auf dem Server zu. Dies beeinflusst nur die Inhalte, die Sie sehen und wird von uns nicht ausgewertet oder weiterverarbeitet.</target>
-        <alt-trans>
-          <target>Ord<![CDATA[&amp;shy;]]>net Ih<![CDATA[&amp;shy;]]>ren Brow<![CDATA[&amp;shy;]]>ser ei<![CDATA[&amp;shy;]]>ner Ses<![CDATA[&amp;shy;]]>si<![CDATA[&amp;shy;]]>on auf dem Ser<![CDATA[&amp;shy;]]>ver zu. Dies be<![CDATA[&amp;shy;]]>ein<![CDATA[&amp;shy;]]>flusst nur die In<![CDATA[&amp;shy;]]>hal<![CDATA[&amp;shy;]]>te, die Sie se<![CDATA[&amp;shy;]]>hen und wird von uns nicht aus<![CDATA[&amp;shy;]]>ge<![CDATA[&amp;shy;]]>wer<![CDATA[&amp;shy;]]>tet oder wei<![CDATA[&amp;shy;]]>ter<![CDATA[&amp;shy;]]>ver<![CDATA[&amp;shy;]]>ar<![CDATA[&amp;shy;]]>bei<![CDATA[&amp;shy;]]>tet.</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="duration.session" resname="duration.session" approved="yes">
         <source>session</source>
         <target state="final">Session</target>
-        <alt-trans>
-          <target>Ses<![CDATA[&amp;shy;]]>si<![CDATA[&amp;shy;]]>on</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="type.cookie_http" resname="type.cookie_http" approved="yes">
         <source>HTTP</source>
@@ -143,16 +92,10 @@
       <trans-unit id="group.marketing" resname="group.marketing" approved="yes">
         <source>Marketing</source>
         <target state="final">Marketing</target>
-        <alt-trans>
-          <target>Mar<![CDATA[&amp;shy;]]>ke<![CDATA[&amp;shy;]]>ting</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="group.marketing.desc" resname="group.marketing" approved="yes">
         <source>With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</source>
         <target state="final">Mithilfe dieser Cookies sind wir bemüht unser Angebot für Sie zu verbessern. Mittels pseudonymisierter Daten von Websitenutzern kann der Nutzerfluss analysiert und beurteilt werden. Dies gibt uns die Möglichkeit, Werbe- und Websiteinhalte zu optimieren.</target>
-        <alt-trans>
-          <target>Mit<![CDATA[&amp;shy;]]>hil<![CDATA[&amp;shy;]]>fe die<![CDATA[&amp;shy;]]>ser Coo<![CDATA[&amp;shy;]]>kies sind wir be<![CDATA[&amp;shy;]]>müht un<![CDATA[&amp;shy;]]>ser An<![CDATA[&amp;shy;]]>ge<![CDATA[&amp;shy;]]>bot für Sie zu ver<![CDATA[&amp;shy;]]>bes<![CDATA[&amp;shy;]]>sern. Mit<![CDATA[&amp;shy;]]>tels pseud<![CDATA[&amp;shy;]]>ony<![CDATA[&amp;shy;]]>mi<![CDATA[&amp;shy;]]>sier<![CDATA[&amp;shy;]]>ter Da<![CDATA[&amp;shy;]]>ten von Web<![CDATA[&amp;shy;]]>site<![CDATA[&amp;shy;]]>nut<![CDATA[&amp;shy;]]>zern kann der Nut<![CDATA[&amp;shy;]]>zer<![CDATA[&amp;shy;]]>fluss ana<![CDATA[&amp;shy;]]>ly<![CDATA[&amp;shy;]]>siert und be<![CDATA[&amp;shy;]]>ur<![CDATA[&amp;shy;]]>teilt wer<![CDATA[&amp;shy;]]>den. Dies gibt uns die Mög<![CDATA[&amp;shy;]]>lich<![CDATA[&amp;shy;]]>keit, Werbe- und Web<![CDATA[&amp;shy;]]>site<![CDATA[&amp;shy;]]>in<![CDATA[&amp;shy;]]>hal<![CDATA[&amp;shy;]]>te zu op<![CDATA[&amp;shy;]]>ti<![CDATA[&amp;shy;]]>mie<![CDATA[&amp;shy;]]>ren.</target>
-        </alt-trans>
         <alt-trans>
           <target>Mit Hilfe dieser Cookies sind wir bemüht unser Angebot für Sie noch attraktiver zu gestalten. Mittels pseudonymisierter Daten von Websitenutzern kann der Nutzerfluss analysiert und beurteilt werden. Dies gibt uns die Möglichkeit Werbe- und Websiteinhalte zu optimieren.</target>
         </alt-trans>
@@ -160,19 +103,10 @@
       <trans-unit id="trackingobject._pk_id.desc" resname="trackingobject._pk_id.desc" approved="yes">
         <source>Used to store a few details about the user such as the unique visitor ID.</source>
         <target state="final">Wird verwendet, um ein paar Details über den Benutzer wie die eindeutige Besucher-ID zu speichern.</target>
-        <alt-trans>
-          <target>Wird ver<![CDATA[&amp;shy;]]>wen<![CDATA[&amp;shy;]]>det, um ein paar De<![CDATA[&amp;shy;]]>tails über den Be<![CDATA[&amp;shy;]]>nut<![CDATA[&amp;shy;]]>zer wie die ein<![CDATA[&amp;shy;]]>deu<![CDATA[&amp;shy;]]>ti<![CDATA[&amp;shy;]]>ge Be<![CDATA[&amp;shy;]]>su<![CDATA[&amp;shy;]]>cher-ID zu spei<![CDATA[&amp;shy;]]>chern.</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="trackingobject._pk_ref.desc" resname="trackingobject._pk_ref.desc" approved="yes">
         <source>Used to store the attribution information, the referrer initially used to visit the website.</source>
         <target state="final">Wird verwendet, um die Informationen der Herkunftswebsite des Benutzers zu speichern.</target>
-        <alt-trans>
-          <target>Wird ver<![CDATA[&amp;shy;]]>wen<![CDATA[&amp;shy;]]>det, um die In<![CDATA[&amp;shy;]]>for<![CDATA[&amp;shy;]]>ma<![CDATA[&amp;shy;]]>tio<![CDATA[&amp;shy;]]>nen zu spei<![CDATA[&amp;shy;]]>chern, die die Her<![CDATA[&amp;shy;]]>kunfts<![CDATA[&amp;shy;]]>web<![CDATA[&amp;shy;]]>site ur<![CDATA[&amp;shy;]]>sprüng<![CDATA[&amp;shy;]]>lich für den Be<![CDATA[&amp;shy;]]>such der Web<![CDATA[&amp;shy;]]>site ver<![CDATA[&amp;shy;]]>wen<![CDATA[&amp;shy;]]>det hat.</target>
-        </alt-trans>
-        <alt-trans>
-          <target>Wird ver<![CDATA[&amp;shy;]]>wen<![CDATA[&amp;shy;]]>det, um die In<![CDATA[&amp;shy;]]>for<![CDATA[&amp;shy;]]>ma<![CDATA[&amp;shy;]]>tio<![CDATA[&amp;shy;]]>nen der Her<![CDATA[&amp;shy;]]>kunfts<![CDATA[&amp;shy;]]>web<![CDATA[&amp;shy;]]>site des Be<![CDATA[&amp;shy;]]>nut<![CDATA[&amp;shy;]]>zers zu spei<![CDATA[&amp;shy;]]>chern.</target>
-        </alt-trans>
         <alt-trans>
           <target>Wird verwendet, um die Informationen zu speichern, die die Herkunftswebsite ursprünglich für den Besuch der Website verwendet hat.</target>
         </alt-trans>
@@ -183,44 +117,26 @@
       <trans-unit id="trackingobject._pk_ses.desc" resname="trackingobject._pk_ses.desc" approved="yes">
         <source>Short lived cookie used to temporarily store data for the visit.</source>
         <target state="final">Kurzzeitiges Cookie, um vorübergehende Daten des Besuchs zu speichern.</target>
-        <alt-trans>
-          <target>Kurz<![CDATA[&amp;shy;]]>zei<![CDATA[&amp;shy;]]>ti<![CDATA[&amp;shy;]]>ges Coo<![CDATA[&amp;shy;]]>kie, um vor<![CDATA[&amp;shy;]]>über<![CDATA[&amp;shy;]]>ge<![CDATA[&amp;shy;]]>hen<![CDATA[&amp;shy;]]>de Da<![CDATA[&amp;shy;]]>ten des Be<![CDATA[&amp;shy;]]>suchs zu spei<![CDATA[&amp;shy;]]>chern.</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="trackingobject._pk_cvar.desc" resname="trackingobject._pk_cvar.desc" approved="yes">
         <source>Short lived cookie used to temporarily store data for the visit.</source>
         <target state="final">Kurzzeitiges Cookie, um vorübergehende Daten des Besuchs zu speichern.</target>
-        <alt-trans>
-          <target>Kurz<![CDATA[&amp;shy;]]>zei<![CDATA[&amp;shy;]]>ti<![CDATA[&amp;shy;]]>ges Coo<![CDATA[&amp;shy;]]>kie, um vor<![CDATA[&amp;shy;]]>über<![CDATA[&amp;shy;]]>ge<![CDATA[&amp;shy;]]>hen<![CDATA[&amp;shy;]]>de Da<![CDATA[&amp;shy;]]>ten des Be<![CDATA[&amp;shy;]]>suchs zu spei<![CDATA[&amp;shy;]]>chern.</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="trackingobject._pk_hsr.desc" resname="trackingobject._pk_hsr.desc" approved="yes">
         <source>Short lived cookie used to temporarily store data for the visit.</source>
         <target state="final">Kurzzeitiges Cookie, um vorübergehende Daten des Besuchs zu speichern.</target>
-        <alt-trans>
-          <target>Kurz<![CDATA[&amp;shy;]]>zei<![CDATA[&amp;shy;]]>ti<![CDATA[&amp;shy;]]>ges Coo<![CDATA[&amp;shy;]]>kie, um vor<![CDATA[&amp;shy;]]>über<![CDATA[&amp;shy;]]>ge<![CDATA[&amp;shy;]]>hen<![CDATA[&amp;shy;]]>de Da<![CDATA[&amp;shy;]]>ten des Be<![CDATA[&amp;shy;]]>suchs zu spei<![CDATA[&amp;shy;]]>chern.</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="trackingobject._ga.desc" resname="trackingobject._ga.desc" approved="yes">
         <source>Used to distinguish users.</source>
         <target state="final">Wird verwendet, um Benutzer zu unterscheiden.</target>
-        <alt-trans>
-          <target>Wird ver<![CDATA[&amp;shy;]]>wen<![CDATA[&amp;shy;]]>det, um Be<![CDATA[&amp;shy;]]>nut<![CDATA[&amp;shy;]]>zer zu un<![CDATA[&amp;shy;]]>ter<![CDATA[&amp;shy;]]>schei<![CDATA[&amp;shy;]]>den.</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="trackingobject.AMP_TOKEN.desc" resname="trackingobject.AMP_TOKEN.desc" approved="yes">
         <source>Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID service.</source>
         <target state="final">Enthält ein Token, das verwendet werden kann, um eine Client-ID vom AMP-Client-Dienst abzurufen.</target>
-        <alt-trans>
-          <target>Enthält ein Token, das verwendet werden kann, um eine Client-ID vom AMP-Client-en.</target>
-        </alt-trans>
-        <alt-trans>
-          <target>Ent<![CDATA[&amp;shy;]]>hält ei<![CDATA[&amp;shy;]]>nen To<![CDATA[&amp;shy;]]>ken, der ver<![CDATA[&amp;shy;]]>wen<![CDATA[&amp;shy;]]>det wer<![CDATA[&amp;shy;]]>den kann, um ei<![CDATA[&amp;shy;]]>ne Client-ID vom AMP-Client-ID-Dienst ab<![CDATA[&amp;shy;]]>zu<![CDATA[&amp;shy;]]>ru<![CDATA[&amp;shy;]]>fen.</target>
-        </alt-trans>
       </trans-unit>
-      <trans-unit id="trackingobject._dc_gtm_--property-id--.desc" resname="trackingobject._dc_gtm_--property-id--.desc">
+      <trans-unit id="trackingobject._dc_gtm_--property-id--.desc" resname="trackingobject._dc_gtm_--property-id--.desc" approved="yes">
         <source>Used by DoubleClick (Google Tag Manager) to help identify the visitors by either age, gender or interests.</source>
-        <target state="translated">Wird von DoubleClick (Google Tag Manager) ver<![CDATA[&amp;shy;]]>wen<![CDATA[&amp;shy;]]>det, um die Be<![CDATA[&amp;shy;]]>su<![CDATA[&amp;shy;]]>cher nach Al<![CDATA[&amp;shy;]]>ter, Ge<![CDATA[&amp;shy;]]>schlecht und In<![CDATA[&amp;shy;]]>ter<![CDATA[&amp;shy;]]>essen zu iden<![CDATA[&amp;shy;]]>ti<![CDATA[&amp;shy;]]>fi<![CDATA[&amp;shy;]]>zie<![CDATA[&amp;shy;]]>ren.</target>
+        <target state="final">Wird von DoubleClick (Google Tag Manager) verwendet, um die Besucher nach Alter, Geschlecht oder Interessen zu identifizieren.</target>
       </trans-unit>
       <trans-unit id="trackingobject._gac_--property-id--.desc" resname="trackingobject._gac_--property-id--.desc" approved="yes">
         <source>Contains campaign related information for the user. If you have linked your Google Analytics and Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.</source>
