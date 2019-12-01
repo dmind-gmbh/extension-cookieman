@@ -90,6 +90,10 @@ to allow your users to adjust their cookie preferences:
 
 .. code-block:: HTML
 
-   <button onclick="cookieman.show(); return false">
+   <button onclick="cookieman.show()">
      Adjust your cookie preferences
    </button>
+
+.. attention::
+
+   If your website uses a strict `Content-Security-Policy` (see `Mozilla Developer Network <https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP>`__) the onclick= needs to be replaced with registering a click-handler from an external <script> (also :ref:`see <content-security-policy>`).
