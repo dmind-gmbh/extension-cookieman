@@ -69,7 +69,7 @@ Example:
 
 .. code-block:: HTML
 
-   <button rel="nofollow" class="btn btn-primary"
+   <button class="btn btn-primary"
            data-cookieman-accept-all
            data-cookieman-save>
                {f:translate(key: 'accept')}
