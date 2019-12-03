@@ -43,7 +43,7 @@
       </trans-unit>
       <trans-unit id="group.mandatory" resname="group.mandatory" approved="yes">
         <source>Mandatory</source>
-        <target state="final">Erforderlich</target>
+        <target state="final">Technisch notwendig</target>
       </trans-unit>
       <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc" approved="yes">
         <source>These cookies are needed for a smooth operation of our website.</source>
