@@ -1,6 +1,12 @@
 name: CGL & unit tests
 
-on: [push, pull_request]
+on:
+    push:
+        branches:
+            - '!l10n_*'
+    pull_request:
+        branches:
+            - '!l10n_*'
 
 jobs:
     unit-tests:
