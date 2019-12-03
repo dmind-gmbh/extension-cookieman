@@ -1,6 +1,8 @@
 name: acceptance tests
 
 on: [push, pull_request]
+    branches:
+        - '!l10n_*'
 
 jobs:
     acceptance-tests:
