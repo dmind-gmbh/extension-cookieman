@@ -175,7 +175,10 @@
       </trans-unit>
       <trans-unit id="trackingobject.MUID.desc" resname="trackingobject.MUID.desc" approved="yes">
         <source>Used as unique user identifier. The cookie allows user tracking across many Microsoft domains.</source>
-        <target state="final">Wird als eindeutige Benutzer-ID verwendet. Der Cookie ermöglicht Benutzer-Tracking durch Synchronisieren der Id in vielen Microsoft-Domänen.</target>
+        <target state="final">Wird als eindeutige Benutzer-ID verwendet. Der Cookie ermöglicht Benutzer-Tracking durch Synchronisieren der ID in vielen Microsoft-Domänen.</target>
+        <alt-trans>
+          <target>Wird als eindeutige Benutzer-ID verwendet. Der Cookie ermöglicht Benutzer-Tracking durch Synchronisieren der Id in vielen Microsoft-Domänen.</target>
+        </alt-trans>
       </trans-unit>
       <trans-unit id="trackingobject.MUIDB.desc" resname="trackingobject.MUIDB.desc" approved="yes">
         <source>Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</source>
