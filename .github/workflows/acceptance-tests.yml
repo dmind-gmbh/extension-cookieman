@@ -19,7 +19,7 @@ jobs:
                 php-version: [7.3]
                 theme: [bootstrap3-banner, bootstrap3-modal, bootstrap4-modal, customtheme]
         steps:
-            -   uses: actions/checkout@v1
+            -   uses: actions/checkout@v2
             # Set PHP version
             -   run: |
                     sed -i -e 's/^php_version:.*/php_version: ${{ matrix.php-version }}/g' .ddev/config.yaml
