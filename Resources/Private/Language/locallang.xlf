@@ -110,7 +110,7 @@
                 <source>Used to distinguish users.</source>
             </trans-unit>
             <trans-unit id="trackingobject.MUID.desc" resname="trackingobject.MUID.desc">
-                <source>Used as unique user identifier. The cookie allows user tracking across many Microsoft domains</source>
+                <source>Used as unique user identifier. The cookie allows user tracking across many Microsoft domains.</source>
             </trans-unit>
             <trans-unit id="trackingobject.MUIDB.desc" resname="trackingobject.MUIDB.desc">
                 <source>Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</source>
