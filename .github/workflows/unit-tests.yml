@@ -16,7 +16,7 @@ jobs:
             matrix:
                 php-version: [7.2, 7.3]
         steps:
-            -   uses: actions/checkout@v1
+            -   uses: actions/checkout@v2
             # apt
             -   run: echo "::set-env name=DEBIAN_FRONTEND::noninteractive"
             -   run: sudo -E add-apt-repository -y ppa:ondrej/php
