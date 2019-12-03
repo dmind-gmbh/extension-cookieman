@@ -144,8 +144,8 @@
         <target>crwdns80794:0crwdne80794:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.MUID.desc" resname="trackingobject.MUID.desc">
-        <source>Used as unique user identifier. The cookie allows user tracking across many Microsoft domains</source>
-        <target>crwdns80796:0crwdne80796:0</target>
+        <source>Used as unique user identifier. The cookie allows user tracking across many Microsoft domains.</source>
+        <target>crwdns84009:0crwdne84009:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.MUIDB.desc" resname="trackingobject.MUIDB.desc">
         <source>Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</source>
