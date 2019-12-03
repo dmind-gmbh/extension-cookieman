@@ -97,27 +97,27 @@
       </trans-unit>
       <trans-unit id="trackingobject._pk_ref.desc" resname="trackingobject._pk_ref.desc">
         <source>Used to store the attribution information, the referrer initially used to visit the website.</source>
-        <target state="needs-translation">Used to store the attribution information, the referrer initially used to visit the website.</target>
+        <target state="translated">Bruges til at gemme information om egenskaber, som henviseren brugte indledningsvis ved besøg på website.</target>
       </trans-unit>
       <trans-unit id="trackingobject._pk_ses.desc" resname="trackingobject._pk_ses.desc">
         <source>Short lived cookie used to temporarily store data for the visit.</source>
-        <target state="needs-translation">Short lived cookie used to temporarily store data for the visit.</target>
+        <target state="translated">Temporær cookie til at gemme data om besøg.</target>
       </trans-unit>
       <trans-unit id="trackingobject._pk_cvar.desc" resname="trackingobject._pk_cvar.desc">
         <source>Short lived cookie used to temporarily store data for the visit.</source>
-        <target state="needs-translation">Short lived cookie used to temporarily store data for the visit.</target>
+        <target state="translated">Temporær cookie til at gemme data om besøg.</target>
       </trans-unit>
       <trans-unit id="trackingobject._pk_hsr.desc" resname="trackingobject._pk_hsr.desc">
         <source>Short lived cookie used to temporarily store data for the visit.</source>
-        <target state="needs-translation">Short lived cookie used to temporarily store data for the visit.</target>
+        <target state="translated">Temporær cookie til at gemme data om besøg.</target>
       </trans-unit>
       <trans-unit id="trackingobject._ga.desc" resname="trackingobject._ga.desc">
         <source>Used to distinguish users.</source>
-        <target state="needs-translation">Used to distinguish users.</target>
+        <target state="translated">Bruges til at adskille brugere.</target>
       </trans-unit>
       <trans-unit id="trackingobject.AMP_TOKEN.desc" resname="trackingobject.AMP_TOKEN.desc">
         <source>Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID service.</source>
-        <target state="needs-translation">Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID service.</target>
+        <target state="translated">Indeholder et token som kan bruges til at hente et klient ID fra AMP klient ID service. Andre mulige værdier indikerer fravalg, indkomne forespørgsler eller en fejl inder hentning af klient ID fra AMP klient ID service.</target>
       </trans-unit>
       <trans-unit id="trackingobject._dc_gtm_--property-id--.desc" resname="trackingobject._dc_gtm_--property-id--.desc">
         <source>Used by DoubleClick (Google Tag Manager) to help identify the visitors by either age, gender or interests.</source>
