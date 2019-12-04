@@ -19,11 +19,8 @@ jobs:
                 php-version: [7.2, 7.3]
         steps:
             -   uses: actions/checkout@v2-beta
-            # apt
-            -   run: echo "::set-env name=DEBIAN_FRONTEND::noninteractive"
-            -   run: sudo -E add-apt-repository -y ppa:ondrej/php
-            -   run: sudo -E apt-get update
-            -   run: sudo -E apt-get -y install php${{ matrix.php-version }}
+            # PHP 7.1, 7.2 and 7.3 are available in ubuntu-18.04
+            # https://help.github.com/en/actions/automating-your-workflow-with-github-actions/software-installed-on-github-hosted-runners#ubuntu-1804-lts
             -   run: sudo update-alternatives --set php /usr/bin/php${{ matrix.php-version }}
             # composer
             -   run: composer update --no-progress --no-suggest
@@ -44,11 +41,8 @@ jobs:
                 php-version: [7.2, 7.3]
         steps:
             -   uses: actions/checkout@v2-beta
-            # apt
-            -   run: echo "::set-env name=DEBIAN_FRONTEND::noninteractive"
-            -   run: sudo -E add-apt-repository -y ppa:ondrej/php
-            -   run: sudo -E apt-get update
-            -   run: sudo -E apt-get -y install php${{ matrix.php-version }}
+            # PHP 7.1, 7.2 and 7.3 are available in ubuntu-18.04
+            # https://help.github.com/en/actions/automating-your-workflow-with-github-actions/software-installed-on-github-hosted-runners#ubuntu-1804-lts
             -   run: sudo update-alternatives --set php /usr/bin/php${{ matrix.php-version }}
             # composer
             -   run: composer update --prefer-lowest --no-progress --no-suggest
