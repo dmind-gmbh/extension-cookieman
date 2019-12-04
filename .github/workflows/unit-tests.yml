@@ -43,7 +43,7 @@ jobs:
             matrix:
                 php-version: [7.2, 7.3]
         steps:
-            -   uses: actions/checkout@v1
+            -   uses: actions/checkout@v2-beta
             # apt
             -   run: echo "::set-env name=DEBIAN_FRONTEND::noninteractive"
             -   run: sudo -E add-apt-repository -y ppa:ondrej/php
@@ -54,9 +54,3 @@ jobs:
             -   run: composer update --prefer-lowest --no-progress --no-suggest
             # Run tests
             -   run: composer cookieman:test:unit
-            # Push to coveralls
-            -   run: |
-                    COVERALLS_REPO_TOKEN=${{ secrets.COVERALLS_REPO_TOKEN }} \
-                        .build/bin/php-coveralls \
-                        --root_dir=. --env=prod --verbose
-                if: github.ref == 'master'
