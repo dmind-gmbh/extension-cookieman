@@ -20,7 +20,7 @@ Cookieman
    en
 
 :Authors:
-   Jonas Eberle
+   Jonas Eberle, Sebastian Klein
 
 :Email:
    projekt-cookieman@d-mind.de

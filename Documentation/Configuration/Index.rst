@@ -26,3 +26,4 @@ Learn how to configure Cookieman:
    Example/Index
    Reference/Index
    Customization/Index
+   How-To/Index
