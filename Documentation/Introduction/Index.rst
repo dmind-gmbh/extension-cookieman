@@ -75,7 +75,9 @@ which triggers a message inside the popup (in the "marketing" group) when enable
 Screenshots
 ===========
 
-You can click on the screenshots to open the full resolution.
+You can find some notes about the differences among the example themes here: :ref:`theme`.
+
+(Click on the screenshots to open the full resolution.)
 
 .. figure:: ../Images/bs4-modal-initial.png
    :class: with-shadow

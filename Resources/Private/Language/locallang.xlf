@@ -91,6 +91,9 @@
             <trans-unit id="trackingobject.AMP_TOKEN.desc" resname="trackingobject.AMP_TOKEN.desc">
                 <source>Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID service.</source>
             </trans-unit>
+            <trans-unit id="trackingobject._dc_gtm_--property-id--.desc" resname="trackingobject._dc_gtm_--property-id--.desc">
+                <source>Used by DoubleClick (Google Tag Manager) to help identify the visitors by either age, gender or interests.</source>
+            </trans-unit>
             <trans-unit id="trackingobject._gac_--property-id--.desc" resname="trackingobject._gac_--property-id--.desc">
                 <source>Contains campaign related information for the user. If you have linked your Google Analytics and Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.</source>
             </trans-unit>
@@ -107,7 +110,7 @@
                 <source>Used to distinguish users.</source>
             </trans-unit>
             <trans-unit id="trackingobject.MUID.desc" resname="trackingobject.MUID.desc">
-                <source>Used as unique user identifier. The cookie allows user tracking across many Microsoft domains</source>
+                <source>Used as unique user identifier. The cookie allows user tracking across many Microsoft domains.</source>
             </trans-unit>
             <trans-unit id="trackingobject.MUIDB.desc" resname="trackingobject.MUIDB.desc">
                 <source>Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</source>

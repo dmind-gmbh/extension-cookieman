@@ -1,6 +1,14 @@
 name: CGL & unit tests
 
-on: [push, pull_request]
+on:
+    push:
+        branches:
+            - '**'
+            - '!l10n_*'
+    pull_request:
+        branches:
+            - '**'
+            - '!l10n_*'
 
 jobs:
     unit-tests:
@@ -10,7 +18,7 @@ jobs:
             matrix:
                 php-version: [7.2, 7.3]
         steps:
-            -   uses: actions/checkout@v1
+            -   uses: actions/checkout@v2-beta
             # apt
             -   run: echo "::set-env name=DEBIAN_FRONTEND::noninteractive"
             -   run: sudo -E add-apt-repository -y ppa:ondrej/php

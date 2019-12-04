@@ -1,3 +1,5 @@
+/** global: cookieman */
+
 // using cookieman API
 console.log('cookieman_test: using onScriptLoaded() API')
 cookieman.onScriptLoaded(

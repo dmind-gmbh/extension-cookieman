@@ -1,3 +1,18 @@
+# 2.3.7
+
+## MISC
+- New Crowdin translations (#51) 8e0a538
+- maybe again improve links display 0cc211c
+- maybe improve links display f00d3e7
+- reduce README.md e2a5bd8
+- fix ext_emconf category 20a344e
+- gte more debugging from selenium drivers 6b39744
+- use browserstack for iPhone and Safari d0495a9
+- use browserstack for iPhone and Safari c268821
+- make TYPO3v8 bootstrapping idempotent 805c47d
+- test sanitizedSettings() c5c3f9b
+- remove release:prepare from mandatory steps for release:create 61b9d7a
+
 # 2.3.4
 
 ## MISC
