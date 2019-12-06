@@ -182,9 +182,9 @@
       </trans-unit>
       <trans-unit id="trackingobject.MUIDB.desc" resname="trackingobject.MUIDB.desc" approved="yes">
         <source>Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</source>
-        <target state="final">Registriert anonyme Daten über Besucher von mehreren Besuchen und auf mehreren Webseiten. Diese Informationen werden verwendet, um die Effizienz der Werbung auf Webseiten zu messen.</target>
+        <target state="final">Speichert anonyme Daten über Besucher von mehreren Besuchen und auf mehreren Webseiten. Diese Informationen werden verwendet, um die Effizienz der Werbung auf Webseiten zu messen.</target>
         <alt-trans>
-          <target>Speichert anonyme Daten über Besucher von mehreren Besuchen und auf mehreren Webseiten. Diese Informationen werden verwendet, um die Effizienz der Werbung auf Webseiten zu messen.</target>
+          <target>Registriert anonyme Daten über Besucher von mehreren Besuchen und auf mehreren Webseiten. Diese Informationen werden verwendet, um die Effizienz der Werbung auf Webseiten zu messen.</target>
         </alt-trans>
       </trans-unit>
       <trans-unit id="browser.dnt-enabled" resname="browser.dnt-enabled" approved="yes">
