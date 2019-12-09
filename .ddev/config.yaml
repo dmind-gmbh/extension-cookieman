@@ -1,4 +1,4 @@
-APIVersion: v1.11.2
+APIVersion: v1.12.0
 name: extension-cookieman-master
 type: typo3
 docroot: .build/public
@@ -12,33 +12,30 @@ additional_fqdns: []
 mariadb_version: "10.2"
 nfs_mount_enabled: false
 provider: default
+hooks:
+  post-start:
+  - composer: update --no-progress
+  - exec: rm composer.lock
+  - exec: |
+      if [[ $(mysql -e "SHOW TABLES" | wc -l) -eq 0 ]]; then
+          /mnt/ddev_config/commands/web/deploy-db ddev --force
+          cp /mnt/ddev_config/template/LocalConfiguration.php /mnt/ddev_config/template/PackageStates.php .build/public/typo3conf/
+      fi
+  - composer: install-extensions
+  - composer: cookieman:bootstrap4-modal
+  pre-start:
+  - exec-host: mkdir -p .build/public/typo3conf/
+  - exec-host: .ddev/commands/copy-git-config
 project_tld: test
 use_dns_when_possible: true
 timezone: ""
-# impexp aka EXT:introduction wants the command rsvg-convert
-#webimage_extra_packages: [librsvg2-bin]
-hooks:
-    pre-start:
-        - exec-host: mkdir -p .build/public/typo3conf/
-        - exec-host: .ddev/commands/copy-git-config
-    post-start:
-        # ignore composer.lock
-        - composer: update --no-progress
-        - exec: rm composer.lock
-        # quick-and-dirty TYPO3 setup; typo3-console would be very handy but it is not ready for TYPO3v10 yet
-        - exec: |
-            if [[ $(mysql -e "SHOW TABLES" | wc -l) -eq 0 ]]; then
-                /mnt/ddev_config/commands/web/deploy-db ddev --force
-                cp /mnt/ddev_config/template/LocalConfiguration.php /mnt/ddev_config/template/PackageStates.php .build/public/typo3conf/
-            fi
-        - composer: install-extensions
-        - composer: cookieman:bootstrap4-modal
 
-# This config.yaml was created with ddev version v1.11.2
-# webimage: drud/ddev-webserver:v1.11.0
-# dbimage: drud/ddev-dbserver:v1.11.0-10.2
-# dbaimage: drud/phpmyadmin:v1.11.0
-# bgsyncimage: drud/ddev-bgsync:v1.11.0
+
+# This config.yaml was created with ddev version v1.12.0
+# webimage: drud/ddev-webserver:v1.12.1
+# dbimage: drud/ddev-dbserver-mariadb-10.2:v1.12.0
+# dbaimage: drud/phpmyadmin:v1.12.0
+# bgsyncimage: drud/ddev-bgsync:v1.12.0
 # However we do not recommend explicitly wiring these images into the
 # config.yaml as they may break future versions of ddev.
 # You can update this config.yaml using 'ddev config'.
@@ -62,6 +59,12 @@ hooks:
 # dbimage: <docker_image>  # mariadb docker image.
 # dbaimage: <docker_image>
 # bgsyncimage: <docker_image>
+
+# mariadb_version and mysql_version
+# ddev can use many versions of mariadb and mysql
+# However these directives are mutually exclusive
+# mariadb_version: 10.2
+# mysql_version: 8.0
 
 # router_http_port: <port>  # Port to be used for http (defaults to port 80)
 # router_https_port: <port> # Port for https (defaults to 443)
@@ -113,7 +116,7 @@ hooks:
 
 # webcache_enabled: false (deprecated)
 # Was only for macOS, but now deprecated.
-# See https://ddev.readthedocs.io/en/stable/users/performance/#using-webcache_enabled-to-cache-the-project-directory
+# See https://ddev.readthedocs.io/en/stable/users/performance/#webcache
 
 # host_https_port: "59002"
 # The host port binding for https can be explicitly specified. It is
