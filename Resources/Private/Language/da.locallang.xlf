@@ -121,11 +121,11 @@
       </trans-unit>
       <trans-unit id="trackingobject._dc_gtm_--property-id--.desc" resname="trackingobject._dc_gtm_--property-id--.desc">
         <source>Used by DoubleClick (Google Tag Manager) to help identify the visitors by either age, gender or interests.</source>
-        <target state="needs-translation">Used by DoubleClick (Google Tag Manager) to help identify the visitors by either age, gender or interests.</target>
+        <target state="translated">Bruges af DoubleClick (Google Tag Manager) til at identificere besøgende via enten alder, køn eller interesser.</target>
       </trans-unit>
       <trans-unit id="trackingobject._gac_--property-id--.desc" resname="trackingobject._gac_--property-id--.desc">
         <source>Contains campaign related information for the user. If you have linked your Google Analytics and Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.</source>
-        <target state="needs-translation">Contains campaign related information for the user. If you have linked your Google Analytics and Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.</target>
+        <target state="translated">Indeholder kampagnerelateret information om brugeren. Hvis du har koblet din Goolge Analytics og Google Ads konti til, vil Google Ads webside konverteringstags læse denne cookie, med mindre du framelder.</target>
       </trans-unit>
       <trans-unit id="trackingobject._gat.desc" resname="trackingobject._gat.desc">
         <source>Used to throttle request rate.</source>
