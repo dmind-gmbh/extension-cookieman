@@ -1,0 +1,40 @@
+name: acceptance tests
+
+on:
+    push:
+        branches:
+            - '**'
+            - '!l10n_*'
+    pull_request:
+        branches:
+            - '**'
+            - '!l10n_*'
+
+jobs:
+    acceptance-tests:
+        runs-on: ubuntu-18.04
+        env:
+            BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
+            BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+        strategy:
+            fail-fast: false
+            matrix:
+                php-version: [7.3]
+                theme: [bootstrap3-banner, bootstrap3-modal, bootstrap4-modal, customtheme]
+        steps:
+            -   uses: actions/checkout@v2-beta
+            # Set PHP version
+            -   run: |
+                    sed -i -e 's/^php_version:.*/php_version: ${{ matrix.php-version }}/g' .ddev/config.yaml
+            # Start ddev
+            -   uses: jonaseberle/github-action-setup-ddev@v1
+            # Setup tests
+            -   run: ddev composer cookieman:${{ matrix.theme }}
+            # Run tests
+            -   run: ddev composer cookieman:test:acceptance
+            # Save acceptance reports
+            -   uses: actions/upload-artifact@master
+                with:
+                    name: ${{ matrix.theme }}-${{ matrix.php-version }}-ar
+                    path: Build/AcceptanceReports
+                if: always()
