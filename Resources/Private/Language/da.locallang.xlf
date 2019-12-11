@@ -119,57 +119,57 @@
         <source>Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID service.</source>
         <target state="final">Indeholder et token som kan bruges til at hente et klient ID fra AMP klient ID service. Andre mulige værdier indikerer fravalg, indkomne forespørgsler eller en fejl inder hentning af klient ID fra AMP klient ID service.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._dc_gtm_--property-id--.desc" resname="trackingobject._dc_gtm_--property-id--.desc">
+      <trans-unit id="trackingobject._dc_gtm_--property-id--.desc" resname="trackingobject._dc_gtm_--property-id--.desc" approved="yes">
         <source>Used by DoubleClick (Google Tag Manager) to help identify the visitors by either age, gender or interests.</source>
-        <target state="needs-translation">Used by DoubleClick (Google Tag Manager) to help identify the visitors by either age, gender or interests.</target>
+        <target state="final">Bruges af DoubleClick (Google Tag Manager) til at identificere besøgende via enten alder, køn eller interesser.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._gac_--property-id--.desc" resname="trackingobject._gac_--property-id--.desc">
+      <trans-unit id="trackingobject._gac_--property-id--.desc" resname="trackingobject._gac_--property-id--.desc" approved="yes">
         <source>Contains campaign related information for the user. If you have linked your Google Analytics and Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.</source>
-        <target state="needs-translation">Contains campaign related information for the user. If you have linked your Google Analytics and Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.</target>
+        <target state="final">Indeholder kampagnerelateret information om brugeren. Hvis du har koblet din Google Analytics og Google Ads konti til, vil Google Ads webside konverteringstags læse denne cookie, med mindre du framelder.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._gat.desc" resname="trackingobject._gat.desc">
+      <trans-unit id="trackingobject._gat.desc" resname="trackingobject._gat.desc" approved="yes">
         <source>Used to throttle request rate.</source>
-        <target state="needs-translation">Used to throttle request rate.</target>
+        <target state="final">Bruges til at styre forespøgselsniveauet.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._ga_--container-id--.desc" resname="trackingobject._ga_--container-id--.desc">
+      <trans-unit id="trackingobject._ga_--container-id--.desc" resname="trackingobject._ga_--container-id--.desc" approved="yes">
         <source>Persists session state.</source>
-        <target state="needs-translation">Persists session state.</target>
+        <target state="final">Fasthold sessions-tilstand.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._gcl_au.desc" resname="trackingobject._gcl_au.desc">
+      <trans-unit id="trackingobject._gcl_au.desc" resname="trackingobject._gcl_au.desc" approved="yes">
         <source>Used by Google AdSense to experiment with advertisement efficiency.</source>
-        <target state="needs-translation">Used by Google AdSense to experiment with advertisement efficiency.</target>
+        <target state="final">Bruges af Google AdSense til at eksperimentere med markedsførings-effektivitet.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._gid.desc" resname="trackingobject._gid.desc">
+      <trans-unit id="trackingobject._gid.desc" resname="trackingobject._gid.desc" approved="yes">
         <source>Used to distinguish users.</source>
-        <target state="needs-translation">Used to distinguish users.</target>
+        <target state="final">Bruges til at adskille brugere.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.MUID.desc" resname="trackingobject.MUID.desc">
+      <trans-unit id="trackingobject.MUID.desc" resname="trackingobject.MUID.desc" approved="yes">
         <source>Used as unique user identifier. The cookie allows user tracking across many Microsoft domains.</source>
-        <target state="needs-translation">Used as unique user identifier. The cookie allows user tracking across many Microsoft domains.</target>
+        <target state="final">Bruges som unik identifikation af bruger. Cookien tillader bruger-tracking på tværs af mange Microsoft domæner.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.MUIDB.desc" resname="trackingobject.MUIDB.desc">
+      <trans-unit id="trackingobject.MUIDB.desc" resname="trackingobject.MUIDB.desc" approved="yes">
         <source>Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</source>
-        <target state="needs-translation">Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</target>
+        <target state="final">Gemmer anonyme brugerdata fra flere webside-besøg på flere websider for at teste markedsførings-effektivitet.</target>
       </trans-unit>
-      <trans-unit id="browser.dnt-enabled" resname="browser.dnt-enabled">
+      <trans-unit id="browser.dnt-enabled" resname="browser.dnt-enabled" approved="yes">
         <source><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></source>
-        <target state="needs-translation"><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></target>
+        <target state="final"><![CDATA[Du har allerede afmeldt dig bruger-tracking via din <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browsers Do-not-track funktion</a>. Vi accepterer dette. Du kan ændre det via din browsers indstillinger.]]></target>
       </trans-unit>
-      <trans-unit id="duration.minute" resname="duration.minute">
+      <trans-unit id="duration.minute" resname="duration.minute" approved="yes">
         <source>minute</source>
-        <target state="needs-translation">minute</target>
+        <target state="final">minut</target>
       </trans-unit>
-      <trans-unit id="duration.minutes" resname="duration.minutes">
+      <trans-unit id="duration.minutes" resname="duration.minutes" approved="yes">
         <source>minutes</source>
-        <target state="needs-translation">minutes</target>
+        <target state="final">minutter</target>
       </trans-unit>
-      <trans-unit id="duration.hour" resname="duration.hour">
+      <trans-unit id="duration.hour" resname="duration.hour" approved="yes">
         <source>hour</source>
-        <target state="needs-translation">hour</target>
+        <target state="final">time</target>
       </trans-unit>
-      <trans-unit id="duration.hours" resname="duration.hours">
+      <trans-unit id="duration.hours" resname="duration.hours" approved="yes">
         <source>hours</source>
-        <target state="needs-translation">hours</target>
+        <target state="final">timer</target>
       </trans-unit>
       <trans-unit id="duration.day" resname="duration.day" approved="yes">
         <source>day</source>
@@ -195,21 +195,21 @@
         <source>years</source>
         <target state="final">år</target>
       </trans-unit>
-      <trans-unit id="active" resname="active">
+      <trans-unit id="active" resname="active" approved="yes">
         <source>active</source>
-        <target state="needs-translation">active</target>
+        <target state="final">aktiv</target>
       </trans-unit>
-      <trans-unit id="alwaysactive" resname="alwaysactive">
+      <trans-unit id="alwaysactive" resname="alwaysactive" approved="yes">
         <source>always active</source>
-        <target state="needs-translation">always active</target>
+        <target state="final">altid aktiv</target>
       </trans-unit>
-      <trans-unit id="inactive" resname="inactive">
+      <trans-unit id="inactive" resname="inactive" approved="yes">
         <source>inactive</source>
-        <target state="needs-translation">inactive</target>
+        <target state="final">inaktiv</target>
       </trans-unit>
-      <trans-unit id="alwaysinactive" resname="alwaysinactive">
+      <trans-unit id="alwaysinactive" resname="alwaysinactive" approved="yes">
         <source>always inactive</source>
-        <target state="needs-translation">always inactive</target>
+        <target state="final">altid inaktiv</target>
       </trans-unit>
     </body>
   </file>
