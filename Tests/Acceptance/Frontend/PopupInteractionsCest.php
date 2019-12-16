@@ -145,7 +145,7 @@ class PopupInteractionsCest
      * @group desktop
      * @param AcceptanceTester $I
      */
-    public function selectGroupAndSaveMobile(AcceptanceTester $I, \Codeception\Scenario $scenario)
+    public function selectGroupAndSaveMobile(AcceptanceTester $I)
     {
         $I->amOnPage(self::PATH_4THPAGE);
         $I->resizeWindow(480, 800);
