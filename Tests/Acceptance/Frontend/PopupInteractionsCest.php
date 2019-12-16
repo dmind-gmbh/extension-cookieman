@@ -37,6 +37,7 @@ class PopupInteractionsCest
     const PATH_5THPAGE = '/content-examples';
 
     const MODAL_TITLE_EN = 'About Cookies';
+    const MODAL_TEXT_EN = 'This website uses cookies.';
 
     const SELECTOR_BUTTON_SAVE_NOT_SAVEALL = '[data-cookieman-save]:not([data-cookieman-accept-all])';
     const SELECTOR_BUTTON_SAVEALL = '[data-cookieman-accept-all]';
@@ -84,7 +85,7 @@ class PopupInteractionsCest
         $I->see(self::MODAL_TITLE_EN);
         $I->executeJS(self::JS_HIDE_COOKIEMAN);
         $I->wait(0.5);
-        $I->dontSee(self::MODAL_TITLE_EN);
+        $I->dontSee(self::MODAL_TEXT_EN);
         if ($I->tryToMoveMouseOver(self::BS_PACKAGE_MENUITEM_SELECTOR)) { // hover over menu
             $I->see(self::BS_PACKAGE_SUBMENUITEM_TEXT);
         } else { // introduction-package ^3.0
@@ -103,7 +104,7 @@ class PopupInteractionsCest
         $I->see(self::MODAL_TITLE_EN);
         $I->click(self::SELECTOR_BUTTON_SAVE_NOT_SAVEALL);
         $I->wait(0.5);
-        $I->dontSee(self::MODAL_TITLE_EN);
+        $I->dontSee(self::MODAL_TEXT_EN);
         $I->seeCookie(self::COOKIENAME);
         $I->assertEquals(
             self::GROUP_KEY_MANDATORY,
@@ -122,7 +123,7 @@ class PopupInteractionsCest
         $I->tryToClick(self::SETTINGS_LINK_TEXT); // customtheme doesn't have an accordion
         $I->click(self::SELECTOR_BUTTON_SAVEALL);
         $I->wait(0.5);
-        $I->dontSee(self::MODAL_TITLE_EN);
+        $I->dontSee(self::MODAL_TEXT_EN);
         $I->seeCookie(self::COOKIENAME);
         $I->assertStringStartsWith(
             $this->cookieValueForGroups([self::GROUP_KEY_MANDATORY, self::GROUP_KEY_2ND]),
@@ -137,10 +138,11 @@ class PopupInteractionsCest
     {
         $I->amOnPage(self::PATH_3RDPAGE);
         $I->wait(0.5);
-        $I->dontSee(self::MODAL_TITLE_EN);
+        $I->dontSee(self::MODAL_TEXT_EN);
     }
 
     /**
+     * @group desktop
      * @param AcceptanceTester $I
      */
     public function selectGroupAndSaveMobile(AcceptanceTester $I)
@@ -162,7 +164,7 @@ class PopupInteractionsCest
         $I->seeCheckboxIsChecked('[name=' . self::GROUP_KEY_2ND . ']');
         $I->click(self::BUTTON_TITLE_SAVE);
         $I->wait(0.5);
-        $I->dontSee(self::MODAL_TITLE_EN);
+        $I->dontSee(self::MODAL_TEXT_EN);
         $I->seeCookie(self::COOKIENAME);
         $I->assertEquals(
             $this->cookieValueForGroups([self::GROUP_KEY_MANDATORY, self::GROUP_KEY_2ND]),
@@ -183,10 +185,10 @@ class PopupInteractionsCest
         );
         $I->amOnPage(self::PATH_5THPAGE);
         $I->wait(0.5);
-        $I->dontSee(self::MODAL_TITLE_EN);
+        $I->dontSee(self::MODAL_TEXT_EN);
         $I->executeJS(self::JS_SHOWONCE_COOKIEMAN);
         $I->wait(0.5);
-        $I->dontSee(self::MODAL_TITLE_EN);
+        $I->dontSee(self::MODAL_TEXT_EN);
         $I->executeJS(self::JS_SHOW_COOKIEMAN);
         $I->wait(0.5);
         $I->see(self::MODAL_TITLE_EN);
@@ -202,7 +204,7 @@ class PopupInteractionsCest
         $I->dontSeeCheckboxIsChecked('[name=' . self::GROUP_KEY_2ND . ']');
         $I->click('Save');
         $I->wait(0.5);
-        $I->dontSee(self::MODAL_TITLE_EN);
+        $I->dontSee(self::MODAL_TEXT_EN);
         $I->seeCookie(self::COOKIENAME);
         $I->assertEquals(
             $this->cookieValueForGroups([self::GROUP_KEY_MANDATORY]),
@@ -244,6 +246,7 @@ class PopupInteractionsCest
         );
         $I->wait(1);
         $I->seeInPopup($onScriptLoadedArgs[0] . ':' . $onScriptLoadedArgs[1] . ' loaded');
+        $I->acceptPopup();
     }
 
     /**
