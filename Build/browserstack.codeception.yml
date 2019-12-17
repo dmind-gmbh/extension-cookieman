@@ -14,6 +14,7 @@ suites:
                     host: 'hub-cloud.browserstack.com'
                     port: 80
                     wait: 5
+                    restart: true
                     pageload_timeout: 15
                     log_js_errors: true
                     clear_cookies: true
