@@ -34,7 +34,6 @@ class PopupInteractionsCest
     const PATH_2NDPAGE = '/customize';
     const PATH_3RDPAGE = '/?id=10';
     const PATH_4THPAGE = '/pages';
-    const PATH_5THPAGE = '/content-examples';
 
     const MODAL_TITLE_EN = 'About Cookies';
     const MODAL_TEXT_EN = 'This website uses cookies.';
