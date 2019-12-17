@@ -180,10 +180,12 @@ class PopupInteractionsCest
         $I->amOnPage(self::PATH_4THPAGE);
         $I->setCookie(
             self::COOKIENAME,
-            $this->cookieValueForGroups([self::GROUP_KEY_MANDATORY, self::GROUP_KEY_2ND]),
+            $this->cookieValueForGroups(
+                [self::GROUP_KEY_MANDATORY, self::GROUP_KEY_2ND]
+            ),
             ['path' => self::PATH_ROOT]
         );
-        $I->amOnPage(self::PATH_5THPAGE);
+        $I->reloadPage();
         $I->wait(0.5);
         $I->dontSee(self::MODAL_TEXT_EN);
         $I->executeJS(self::JS_SHOWONCE_COOKIEMAN);
@@ -226,7 +228,7 @@ class PopupInteractionsCest
             ),
             ['path' => self::PATH_ROOT]
         );
-        $I->amOnPage(self::PATH_ROOT);
+        $I->reloadPage();
 
         // test onScriptLoaded() callback
         $onScriptLoadedArgs = [self::TRACKINGOBJECT_IN_TESTGROUP_WITH_2SCRIPTS, 0];
