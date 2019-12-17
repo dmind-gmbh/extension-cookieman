@@ -61,7 +61,7 @@ class PopupInteractionsCest
                 arguments[0],
                 arguments[1],
                 function (trackingObjectKey, scriptId) {
-                    alert(arguments[0] + ':' + arguments[1] + ' loaded')
+                    document.title += (arguments[0] + ':' + arguments[1] + ' loaded; ')
                 }
             );
         ";
@@ -230,25 +230,16 @@ class PopupInteractionsCest
         );
         $I->reloadPage();
 
-        // test onScriptLoaded() callback
-        $onScriptLoadedArgs = [self::TRACKINGOBJECT_IN_TESTGROUP_WITH_2SCRIPTS, 0];
-        $I->executeJS(
-            self::JS_ONSCRIPTLOADED_COOKIEMAN,
-            $onScriptLoadedArgs
-        );
-        $I->wait(1);
-        $I->seeInPopup($onScriptLoadedArgs[0] . ':' . $onScriptLoadedArgs[1] . ' loaded');
-        $I->acceptPopup();
-
-        // test onScriptLoaded() callback (when already loaded)
-        $onScriptLoadedArgs = [self::TRACKINGOBJECT_IN_TESTGROUP_WITH_2SCRIPTS, 1];
-        $I->executeJS(
-            self::JS_ONSCRIPTLOADED_COOKIEMAN,
-            $onScriptLoadedArgs
-        );
-        $I->wait(1);
-        $I->seeInPopup($onScriptLoadedArgs[0] . ':' . $onScriptLoadedArgs[1] . ' loaded');
-        $I->acceptPopup();
+        // test onScriptLoaded() (once as a callback and once when already loaded)
+        foreach ([0, 1] as $iScript) {
+            $onScriptLoadedArgs = [self::TRACKINGOBJECT_IN_TESTGROUP_WITH_2SCRIPTS, $iScript];
+            $I->executeJS(
+                self::JS_ONSCRIPTLOADED_COOKIEMAN,
+                $onScriptLoadedArgs
+            );
+            $I->wait(5);
+            $I->seeInTitle($onScriptLoadedArgs[0] . ':' . $onScriptLoadedArgs[1] . ' loaded');
+        }
     }
 
     /**
