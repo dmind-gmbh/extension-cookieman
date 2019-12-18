@@ -6,6 +6,8 @@ on:
             - '**'
             - '!l10n_*'
     pull_request:
+        # this reduces the hundreds of CI triggers when Crowdin keeps adding changes to an existing PR
+        types: [opened]
         branches:
             - '**'
             - '!l10n_*'
