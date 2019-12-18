@@ -65,7 +65,7 @@
       </trans-unit>
       <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc">
         <source>Saves your consent to using cookies.</source>
-        <target state="needs-translation">Saves your consent to using cookies.</target>
+        <target state="translated">Îți salvează consimțământul de a utiliza cookie-uri.</target>
       </trans-unit>
       <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html" approved="yes">
         <source>HTML</source>
