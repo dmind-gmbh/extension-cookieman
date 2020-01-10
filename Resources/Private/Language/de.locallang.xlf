@@ -134,7 +134,7 @@
       </trans-unit>
       <trans-unit id="trackingobject._et_coid--localstorage" resname="trackingobject._et_coid--localstorage">
         <source>_et_coid</source>
-        <target state="needs-translation">_et_coid</target>
+        <target state="translated">_et_coid</target>
       </trans-unit>
       <trans-unit id="trackingobject._et_coid--localstorage.desc" resname="trackingobject._et_coid--localstorage.desc">
         <source>Cookie detection, see corresponding cookie.</source>
@@ -142,7 +142,7 @@
       </trans-unit>
       <trans-unit id="trackingobject.et_oi_v2--localstorage" resname="trackingobject.et_oi_v2--localstorage">
         <source>et_oi_v2</source>
-        <target state="needs-translation">et_oi_v2</target>
+        <target state="translated">et_oi_v2</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oi_v2--localstorage.desc" resname="trackingobject.et_oi_v2--localstorage.desc">
         <source>OptIn-cookie, see corresponding cookie.</source>
@@ -150,7 +150,7 @@
       </trans-unit>
       <trans-unit id="trackingobject.et_oip--localstorage" resname="trackingobject.et_oip--localstorage">
         <source>et_oip</source>
-        <target state="needs-translation">et_oip</target>
+        <target state="translated">et_oip</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip--localstorage.desc" resname="trackingobject.et_oip--localstorage.desc">
         <source>OptIn-cookie for Signalize, see corresponding cookie.</source>
