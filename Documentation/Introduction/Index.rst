@@ -14,6 +14,7 @@ What does it do?
 A GDPR tracking consent popup. It asks for approval to include tracking objects (cookies, images or any HTML) and includes the objects when consented.
 It enables tracking from the very first page (including referrer). Consents are shown in groups and saved to a cookie.
 It provides a stable API to read out consents with JavaScript.
+From version 2.3.9+ it removes configured tracking cookies when the user revokes consent.
 
 
 .. _when-is-it-shown:
@@ -36,13 +37,13 @@ The page UIDs can be set in TypoScript. This also allows to link to these pages 
 Features
 --------
 
-* Cookies: **Render detailed information** about your cookies: Name, Purpose, Lifetime, Type, Provider
-* Cookies: Commonly used cookies are **already supported** with configuration and information text
-* Cookies: **Add, sort or remove cookies** as needed
-* Groups: **Sort your cookies into groups** (e.g. "Mandatory", "Marketing", "Analytics")
-* Groups: **Add or remove groups** as needed
+* Tracking objects: Render detailed information about your cookies, tracking pixels, LocalStorage entries...: Name, Purpose, Lifetime, Type, Provider
+* Tracking objects: Commonly used tracking objects are already supported with configuration and information text
+* Tracking objects: Extendable as needed
+* Tracking objects: HTML Cookies will be removed from the user's browser
+* Groups: **Group your tracking objects** (e.g. "Mandatory", "Marketing", "Analytics")
 * Groups: **Preselect and/or disable groups**, e.g. the group for mandatory technical cookies
-* A note about the **"Do-not-track"** setting can be shown inside the popup
+* A note about the **"Do-not-track"** setting can be shown inside the popup and this setting can also be respected (configurable on a per-group level)
 
 * The extension includes **3 ready-made themes** based on Bootstrap
 * **Customization:** Fluid templates and all texts can be adjusted to your needs

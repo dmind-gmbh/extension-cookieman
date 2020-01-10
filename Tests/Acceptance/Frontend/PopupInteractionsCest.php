@@ -180,8 +180,19 @@ class PopupInteractionsCest
             ),
             ['path' => self::PATH_ROOT]
         );
+
+        // set a cookie that is configured as tracking object and of type HTML
+        $I->setCookie(
+            self::COOKIE_TITLE_IN_2ND_GROUP,
+            'someValue',
+            [
+                'path' => self::PATH_ROOT,
+                'httpOnly' => false,
+            ]
+        );
         $I->reloadPage();
         $I->wait(0.5);
+        $I->seeCookie(self::COOKIE_TITLE_IN_2ND_GROUP);
         $I->dontSeeElement(self::SELECTOR_MODAL);
         $I->executeJS(self::JS_SHOWONCE_COOKIEMAN);
         $I->wait(0.5);
@@ -199,7 +210,10 @@ class PopupInteractionsCest
         $I->dontSeeCheckboxIsChecked('[name=' . self::GROUP_KEY_2ND . ']');
         $I->click('Save');
         $I->waitForElementNotVisible(self::SELECTOR_MODAL);
-        $I->seeCookie(self::COOKIENAME);
+
+        // cookieman should have deleted this non-consented cookie
+        $I->dontSeeCookie(self::COOKIE_TITLE_IN_2ND_GROUP);
+
         $I->assertEquals(
             $this->cookieValueForGroups([self::GROUP_KEY_MANDATORY]),
             $I->grabCookie(self::COOKIENAME, ['path' => self::PATH_ROOT])
