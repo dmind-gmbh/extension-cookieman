@@ -3,7 +3,7 @@ version: '3.6'
 services:
     selenium-chrome:
         container_name: ddev-${DDEV_SITENAME}-selenium-chrome
-        image: selenium/node-chrome:3.141.59-xenon
+        image: flightvision/selenium-node-chrome-with-mkcert:3.141.59-xenon
         depends_on:
             - selenium-hub
         labels:
@@ -14,32 +14,36 @@ services:
         environment:
             - HUB_HOST=selenium-hub
             - HUB_PORT=4444
+            - CAROOT=/mnt/ddev-global-cache/mkcert
         links:
             - selenium-hub:selenium-hub
         external_links:
             - ddev-router:$DDEV_HOSTNAME
         volumes:
             - /dev/shm:/dev/shm
+            - ddev-global-cache:/mnt/ddev-global-cache
 
-#    selenium-firefox:
-#        container_name: ddev-${DDEV_SITENAME}-selenium-firefox
-#        image: selenium/node-firefox:3.141.59-xenon
-#        depends_on:
-#            - selenium-hub
-#        labels:
-#            com.ddev.site-name: ${DDEV_SITENAME}
-#            com.ddev.platform: ddev
-#            com.ddev.app-type: typo3
-#            com.ddev.approot: $DDEV_APPROOT
-#        environment:
-#            - HUB_HOST=selenium-hub
-#            - HUB_PORT=4444
-#        links:
-#            - selenium-hub:selenium-hub
-#        external_links:
-#            - ddev-router:$DDEV_HOSTNAME
-#        volumes:
-#            - /dev/shm:/dev/shm
+    selenium-firefox:
+        container_name: ddev-${DDEV_SITENAME}-selenium-firefox
+        image: flightvision/selenium-node-firefox-with-mkcert:3.141.59-xenon
+        depends_on:
+            - selenium-hub
+        labels:
+            com.ddev.site-name: ${DDEV_SITENAME}
+            com.ddev.platform: ddev
+            com.ddev.app-type: typo3
+            com.ddev.approot: $DDEV_APPROOT
+        environment:
+            - HUB_HOST=selenium-hub
+            - HUB_PORT=4444
+            - CAROOT=/mnt/ddev-global-cache/mkcert
+        links:
+            - selenium-hub:selenium-hub
+        external_links:
+            - ddev-router:$DDEV_HOSTNAME
+        volumes:
+            - /dev/shm:/dev/shm
+            - ddev-global-cache:/mnt/ddev-global-cache
 
     selenium-hub:
         container_name: ddev-${DDEV_SITENAME}-selenium-hub
