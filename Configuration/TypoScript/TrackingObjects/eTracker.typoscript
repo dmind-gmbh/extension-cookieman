@@ -1,0 +1,149 @@
+plugin.tx_cookieman.settings.trackingObjects {
+    etracker {
+        # You can inject eTracker without cookies: https://www.etracker.com/en/support/block-etracker-cookies/
+        # So you would inject this normally (alaways) ...
+        #
+        #    <!-- Copyright (c) 2000-2019 etracker GmbH. All rights reserved. -->
+        #    <!-- This material may not be reproduced, displayed, modified or distributed -->
+        #    <!-- without the express prior written permission of the copyright holder. -->
+        #    <!-- etracker tracklet 4.1 -->
+        #    <script type="text/javascript">
+        #    //var et_pagename = "";
+#    //var et_areas = "";
+#    //var et_url = "";
+#    //var et_target = "";
+#    //var et_tval = "";
+#    //var et_tonr = "";
+#    //var et_tsale = 0;
+#    //var et_basket = "";
+#    //var et_cust = 0;
+#    </script>
+#    <script id="_etLoader" type="text/javascript" charset="UTF-8" data-block-cookies="true" data-respect-dnt="true" data-secure-code="ZPKvl3" src="//static.etracker.com/code/e.js"></script>
+#    <!-- etracker tracklet 4.1 end -->
+
+        # ... then when cookie usage is consented (put this into a file if your CSP does not allow inline scripts):
+        inject (
+            <script>
+                _etracker.enableCookies()
+            </script>
+        )
+
+        # yes, the amount of tracking object items for eTracker is insane...
+        show {
+            # https://www.etracker.com/support/verwendete-cookies-zaehlung/ (only German)
+            cntcookie {
+                duration = 4
+                durationUnit = years
+                type = cookie_http+html
+                provider = etracker
+            }
+
+            GS3_v {
+                duration = 1
+                durationUnit = years
+                type = cookie_http+html
+                provider = etracker
+            }
+
+            _et_coid {
+                duration = 2
+                durationUnit = years
+                type = cookie_http+html
+                provider = etracker
+            }
+
+            et_oi_v2 {
+                # sic! 50 years
+                duration = 50
+                durationUnit = years
+                type = cookie_http+html
+                provider = etracker
+            }
+
+            et_oip {
+                duration = 50
+                durationUnit = years
+                type = cookie_http+html
+                provider = etracker
+            }
+
+            et_allow_cookies {
+                duration = 16
+                durationUnit = months
+                type = cookie_http+html
+                provider = etracker
+            }
+
+            isSdEnabled {
+                duration = 1
+                durationUnit = day
+                type = cookie_http+html
+                provider = etracker
+            }
+
+            BT_ctst {
+                duration =
+                durationUnit = session
+                type = cookie_http+html
+                provider = etracker
+            }
+
+            BT_sdc {
+                duration =
+                durationUnit = session
+                type = cookie_http+html
+                provider = etracker
+            }
+
+            BT_pdc {
+                duration = 1
+                durationUnit = year
+                type = cookie_http+html
+                provider = etracker
+            }
+
+            BT_ecl {
+                duration = 30
+                durationUnit = days
+                type = cookie_http+html
+                provider = etracker
+            }
+
+            et_scroll_depth {
+                duration =
+                durationUnit =
+                type = localstorage
+                provider = etracker
+            }
+
+            targetingAPISession {
+                duration =
+                durationUnit =
+                type = localstorage
+                provider = etracker
+            }
+
+            _et_coid--localstorage {
+                duration =
+                durationUnit =
+                type = localstorage
+                provider = etracker
+            }
+
+            et_oi_v2--localstorage {
+                duration =
+                durationUnit =
+                type = localstorage
+                provider = etracker
+            }
+
+            et_oip--localstorage {
+                duration =
+                durationUnit =
+                type = localstorage
+                provider = etracker
+            }
+        }
+    }
+}
+
