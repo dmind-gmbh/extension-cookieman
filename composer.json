@@ -125,11 +125,23 @@
         "cookieman:test:acceptance": [
             "@cookieman:test:acceptance:chrome"
         ],
+        "cookieman:test:acceptance:browserstack_chrome": [
+            "codecept run --env browserstack_chrome -d -c Build/browserstack.codeception.yml -- acceptance"
+        ],
+        "cookieman:test:acceptance:browserstack_ie11": [
+            "codecept run --env browserstack_ie11 -d -c Build/browserstack.codeception.yml -- acceptance"
+        ],
+        "cookieman:test:acceptance:browserstack_iphone": [
+            "codecept run --env browserstack_iPhone8 --skip-group desktop -d -c Build/browserstack.codeception.yml -- acceptance"
+        ],
+        "cookieman:test:acceptance:browserstack_safari": [
+            "codecept run --env browserstack_safari -d -c Build/browserstack.codeception.yml -- acceptance"
+        ],
         "cookieman:test:acceptance:chrome": [
-            "codecept run acceptance --env chrome -d -c Build/AcceptanceTests.codeception.yml"
+            "codecept run --env chrome -d -c Build/local.codeception.yml -- acceptance"
         ],
         "cookieman:test:acceptance:firefox": [
-            "codecept run acceptance --env firefox -d -c Build/AcceptanceTests.codeception.yml"
+            "codecept run --env firefox -d -c Build/local.codeception.yml -- acceptance"
         ],
         "cookieman:test:cgl": [
             "php-cs-fixer --config=.php_cs.dist fix -v --using-cache=no --dry-run",

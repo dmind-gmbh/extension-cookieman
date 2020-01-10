@@ -38,11 +38,15 @@ cookieman.show()
 :aspect:`Description`
    Shows the confirmation modal. You can call that from anywhere you need it (e.g. with a link from your data protection declaration page).
 
-   .. code-block:: js
+   .. code-block:: HTML
 
-      <a href="" onclick="cookieman.show(); return false">
-        Cookie settings
-      </a>
+      <button onclick="cookieman.show()">
+        Adjust your cookie preferences
+      </button>
+
+   .. attention::
+
+      If your website uses a strict `Content-Security-Policy` (see `Mozilla Developer Network <https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP>`__) the onclick= needs to be replaced with registering a click-handler from an external <script> (also see :ref:`how cookieman supports Content-Security-Policy <content-security-policy>`).
 
 
 cookieman.hide()
