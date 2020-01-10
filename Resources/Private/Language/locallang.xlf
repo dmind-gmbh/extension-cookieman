@@ -52,6 +52,66 @@
             <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc">
                 <source>Saves your consent to using cookies.</source>
             </trans-unit>
+            <trans-unit id="trackingobject.cntcookie.desc" resname="trackingobject.cntcookie.desc">
+                <source>Exclusion from counting (as a list of Account IDs)</source>
+            </trans-unit>
+            <trans-unit id="trackingobject.GS3_v.desc" resname="trackingobject.GS3_v.desc">
+                <source>Set by Optimizer webservice. Contains the same Visitor ID as BT_pdc.</source>
+            </trans-unit>
+            <trans-unit id="trackingobject._et_coid.desc" resname="trackingobject._et_coid.desc">
+                <source>Cookie detection</source>
+            </trans-unit>
+            <trans-unit id="trackingobject.et_oi_v2.desc" resname="trackingobject.et_oi_v2.desc">
+                <source>Opt-In cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</source>
+            </trans-unit>
+            <trans-unit id="trackingobject.et_oip.desc" resname="trackingobject.et_oip.desc">
+                <source>Opt-In cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</source>
+            </trans-unit>
+            <trans-unit id="trackingobject.et_allow_cookies.desc" resname="trackingobject.et_allow_cookies.desc">
+                <source>If the parameter "data-block-cookies" is used, this cookie is called by the API Call _etracker.enableCookies() to indicate that etracker is allowed to set cookies.</source>
+            </trans-unit>
+            <trans-unit id="trackingobject.isSdEnabled.desc" resname="trackingobject.isSdEnabled.desc">
+                <source>Detection whether the scrolling depth is measured for the visitor.</source>
+            </trans-unit>
+            <trans-unit id="trackingobject.BT_ctst.desc" resname="trackingobject.BT_ctst.desc">
+                <source>Is only used to detect whether cookies are activated in the visitor's browser or not.</source>
+            </trans-unit>
+            <trans-unit id="trackingobject.BT_sdc.desc" resname="trackingobject.BT_sdc.desc">
+                <source>Contains base64 encoded data of the current visitor session (referrer, number of pages, number of seconds since session started) used for personalization purposes.</source>
+            </trans-unit>
+            <trans-unit id="trackingobject.BT_pdc.desc" resname="trackingobject.BT_pdc.desc">
+                <source>Contains base64-coded visitor history data (is customer, newsletter recipient etc.) for personalization.</source>
+            </trans-unit>
+            <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_pdc.desc">
+                <source>Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</source>
+            </trans-unit>
+            <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_ecl.desc">
+                <source>Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</source>
+            </trans-unit>
+            <trans-unit id="trackingobject.et_scroll_depth.desc" resname="trackingobject.et_scroll_depth.desc">
+                <source>Data for scrolling depth measurement</source>
+            </trans-unit>
+            <trans-unit id="trackingobject.targetingAPISession.desc" resname="trackingobject.targetingAPISession.desc">
+                <source>Data collected in the current session for the optimiser</source>
+            </trans-unit>
+            <trans-unit id="trackingobject._et_coid--localstorage" resname="trackingobject._et_coid--localstorage">
+                <source>_et_coid</source>
+            </trans-unit>
+            <trans-unit id="trackingobject._et_coid--localstorage.desc" resname="trackingobject._et_coid--localstorage.desc">
+                <source>Cookie detection, see corresponding cookie.</source>
+            </trans-unit>
+            <trans-unit id="trackingobject.et_oi_v2--localstorage" resname="trackingobject.et_oi_v2--localstorage">
+                <source>et_oi_v2</source>
+            </trans-unit>
+            <trans-unit id="trackingobject.et_oi_v2--localstorage.desc" resname="trackingobject.et_oi_v2--localstorage.desc">
+                <source>OptIn-cookie, see corresponding cookie.</source>
+            </trans-unit>
+            <trans-unit id="trackingobject.et_oip--localstorage" resname="trackingobject.et_oip--localstorage">
+                <source>et_oip</source>
+            </trans-unit>
+            <trans-unit id="trackingobject.et_oip--localstorage.desc" resname="trackingobject.et_oip--localstorage.desc">
+                <source>OptIn-cookie for Signalize, see corresponding cookie.</source>
+            </trans-unit>
             <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html">
                 <source>HTML</source>
             </trans-unit>
@@ -63,6 +123,9 @@
             </trans-unit>
             <trans-unit id="type.cookie_http" resname="type.cookie_http">
                 <source>HTTP</source>
+            </trans-unit>
+            <trans-unit id="type.localstorage" resname="type.localstorage">
+                <source>Local Storage</source>
             </trans-unit>
             <trans-unit id="group.marketing" resname="group.marketing">
                 <source>Marketing</source>
