@@ -4,7 +4,7 @@
 temp.tx_cookieman.settings.groups.mandatory < plugin.tx_cookieman.settings.groups.mandatory
 
 # Test our JS against a CSP script-src policy that disallows inlining JS
-config.additionalHeaders.14543.header = Content-Security-Policy: script-src 'self' https://crowdin.com
+config.additionalHeaders.14543.header = Content-Security-Policy: script-src 'self' https://crowdin.com nonce-EDNnf03nceIOfn39fn3e9h3sdfa
 
 # subscribe to events
 page.includeJSFooter {
@@ -20,6 +20,7 @@ plugin.tx_cookieman.settings {
 <script data-what="Crowdin (2nd script)" src="/typo3conf/ext/cookieman/Resources/Public/Js/example-inject.js"></script>
 <script
   type="text/javascript"
+  nonce="EDNnf03nceIOfn39fn3e9h3sdfa"
   src="https://crowdin.com/js/crowdjet/crowdjet.js">
 </script>
 <div
