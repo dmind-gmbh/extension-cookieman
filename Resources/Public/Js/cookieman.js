@@ -49,6 +49,16 @@ var cookieman = (function () {
         }
     }
 
+    function hasConsented(groupKey) {
+        var consented = consentedSelectionsRespectDnt()
+        for (var i = 0; i < consented.length; i++) {
+            if (consented[i] === groupKey) {
+                return true
+            }
+        }
+        return false
+    }
+
     function consentedSelectionsAll() {
         var cookie = Cookies.get(cookieName)
         return cookie ? cookie.split('|') : []
@@ -81,6 +91,7 @@ var cookieman = (function () {
         e.preventDefault()
         saveSelections()
         cookieman.hide()
+        removeDisabledTrackingObjects()
         injectNewTrackingObjects()
     }
 
@@ -101,7 +112,7 @@ var cookieman = (function () {
     /**
      * inject the HTML for a given tracking object
      * @param trackingObjectKey string e.g. 'Matomo'
-     * @param trackingObjectSettings array (e.g. the array plugin.tx_cookieman.settings.trackingObjects.Matomo
+     * @param trackingObjectSettings object (e.g. the array plugin.tx_cookieman.settings.trackingObjects.Matomo
      * from TypoScript)
      */
     function injectTrackingObject(trackingObjectKey, trackingObjectSettings) {
@@ -163,14 +174,69 @@ var cookieman = (function () {
     }
 
     /**
+     * remove tracking objects that are not consented.
+     * See removeTrackingObjectItem() for supported types.
+     */
+    function removeDisabledTrackingObjects() {
+        for (var groupKey in settings.groups) {
+            if (!Object.prototype.hasOwnProperty.call(settings.groups, groupKey)) {
+                continue
+            }
+
+            if (!hasConsented(groupKey)) {
+                var oGroup = settings.groups[groupKey]
+                for (var _j = 0; _j < oGroup.trackingObjects.length; _j++) {
+                    var trackingObjectKey = oGroup.trackingObjects[_j]
+                    removeTrackingObject(trackingObjectKey, settings.trackingObjects[trackingObjectKey])
+                }
+            }
+        }
+    }
+
+    /**
+     * remove a given tracking object
+     * See removeTrackingObjectItem() for supported types.
+     * @param trackingObjectKey string e.g. 'Matomo'
+     * @param trackingObjectSettings object (e.g. the array plugin.tx_cookieman.settings.trackingObjects.Matomo
+     * from TypoScript)
+     */
+    function removeTrackingObject(trackingObjectKey, trackingObjectSettings) {
+        for (var itemKey in trackingObjectSettings.show) {
+            if (!Object.prototype.hasOwnProperty.call(trackingObjectSettings.show, itemKey)) {
+                continue
+            }
+            var oItem = trackingObjectSettings.show[itemKey]
+
+            removeTrackingObjectItem(itemKey, oItem)
+        }
+    }
+
+    /**
+     * remove a given single tracking object item
+     * Supported types: cookie_http+html
+     * @param itemKey string, e.g. '_ga'
+     * @param oItem object the settings for a single item (e.g. the array
+     * plugin.tx_cookieman.settings.trackingObjects.GoogleAnalytics.show._ga from TypoScript)
+     * @return boolean successful?
+     */
+    function removeTrackingObjectItem(itemKey, oItem) {
+        if (oItem.type === 'cookie_http+html') {
+            Cookies.remove(itemKey)
+            return true
+        }
+        // unsupported type
+        return false
+    }
+
+    /**
      * inject not-yet-injected tracking objects if consented and matching DNT constraints
      */
     function injectNewTrackingObjects() {
         var consenteds = consentedSelectionsRespectDnt()
         for (var _i = 0; _i < consenteds.length; _i++) {
-            var aGroup = settings.groups[consenteds[_i]]
-            for (var _j = 0; _j < aGroup.trackingObjects.length; _j++) {
-                var trackingObjectKey = aGroup.trackingObjects[_j]
+            var oGroup = settings.groups[consenteds[_i]]
+            for (var _j = 0; _j < oGroup.trackingObjects.length; _j++) {
+                var trackingObjectKey = oGroup.trackingObjects[_j]
                 if (injectedTrackingObjects.indexOf(trackingObjectKey) === -1) {
                     injectTrackingObject(trackingObjectKey, settings.trackingObjects[trackingObjectKey])
                 }
@@ -251,15 +317,7 @@ var cookieman = (function () {
          * @param {string} groupKey
          * @returns {boolean}
          */
-        hasConsented: function (groupKey) {
-            var consented = consentedSelectionsRespectDnt()
-            for (var i = 0; i < consented.length; i++) {
-                if (consented[i] === groupKey) {
-                    return true
-                }
-            }
-            return false
-        },
+        hasConsented: hasConsented,
         /**
          * @api
          */
@@ -280,7 +338,7 @@ var cookieman = (function () {
                 // attach ourselves to the "scriptLoaded" event
                 eventsEl.addEventListener(
                     'scriptLoaded',
-                    function(ev) {
+                    function (ev) {
                         if (ev.detail.trackingObjectKey === trackingObjectKey && ev.detail.scriptId === scriptId) {
                             callback(ev.detail.trackingObjectKey, ev.detail.scriptId)
                         }
