@@ -111,6 +111,9 @@
       <trans-unit id="trackingobject.BT_sdc.desc" resname="trackingobject.BT_sdc.desc" approved="yes">
         <source>Contains base64 encoded data of the current visitor session (referrer, number of pages, number of seconds since session started) used for personalization purposes.</source>
         <target state="final">Enthält Base64-codierte Daten der aktuellen Besuchersitzung (Referrer, Anzahl der Seiten, Anzahl der Sekunden seit Beginn der Sitzung), die für Personalisierungszwecke verwendet werden.</target>
+        <alt-trans>
+          <target>Enthält Base64-codierte Daten der aktuellen Besuchersitzung (Referrer, Anzahl der Seiten, Anzahl der Sekunden seit Beginn der Sitzung), die zur Personalisierung verwendet werden.</target>
+        </alt-trans>
       </trans-unit>
       <trans-unit id="trackingobject.BT_pdc.desc" resname="trackingobject.BT_pdc.desc" approved="yes">
         <source>Contains base64-coded visitor history data (is customer, newsletter recipient etc.) for personalization.</source>
@@ -120,6 +123,9 @@
         <source>Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</source>
         <target state="final">Enthält Base64-kodierte Daten der Besucherhistorie (ist Kunde, Newsletter-Empfänger etc.) zur Personalisierung.</target>
         <alt-trans>
+          <target>Enthält eine Liste von Projekt-IDs, für die der Besucher ausgeschlossen ist. Dieses Cookie wird vom Webservice gesetzt, wenn der Client konfiguriert hat, dass nicht alle Besucher einem Test, sondern nur einem bestimmten Bruchteil zugeordnet sind.</target>
+        </alt-trans>
+        <alt-trans>
           <target>Enthält eine Liste von Projekt IDs, für die der Besucher ausgeschlossen ist. Dieser Cookie wird vom Webservice gesetzt, wenn der Client konfiguriert hat, dass nicht alle Besucher einem Test, sondern nur einem bestimmten Bruchteil zugeordnet sind.</target>
         </alt-trans>
       </trans-unit>
@@ -127,12 +133,18 @@
         <source>Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</source>
         <target state="final">Enthält Base64-kodierte Daten der Besucherhistorie (ist Kunde, Newsletter-Empfänger etc.) zur Personalisierung.</target>
         <alt-trans>
+          <target>Enthält eine Liste von Projekt-IDs, für die der Besucher ausgeschlossen ist. Dieses Cookie wird vom Webservice gesetzt, wenn der Client konfiguriert hat, dass nicht alle Besucher einem Test, sondern nur einem bestimmten Bruchteil zugeordnet sind.</target>
+        </alt-trans>
+        <alt-trans>
           <target>Enthält eine Liste von Projekt IDs, für die der Besucher ausgeschlossen ist. Dieser Cookie wird vom Webservice gesetzt, wenn der Client konfiguriert hat, dass nicht alle Besucher einem Test, sondern nur einem bestimmten Bruchteil zugeordnet sind.</target>
         </alt-trans>
       </trans-unit>
       <trans-unit id="trackingobject.et_scroll_depth.desc" resname="trackingobject.et_scroll_depth.desc" approved="yes">
         <source>Data for scrolling depth measurement</source>
         <target state="final">Daten für die Scrolltiefemessung</target>
+        <alt-trans>
+          <target>Daten für die Messung der Scrolltiefe</target>
+        </alt-trans>
       </trans-unit>
       <trans-unit id="trackingobject.targetingAPISession.desc" resname="trackingobject.targetingAPISession.desc" approved="yes">
         <source>Data collected in the current session for the optimiser</source>
@@ -145,6 +157,9 @@
       <trans-unit id="trackingobject._et_coid--localstorage.desc" resname="trackingobject._et_coid--localstorage.desc" approved="yes">
         <source>Cookie detection, see corresponding cookie.</source>
         <target state="final">Cookieerkennung, siehe entsprechendes Cookie.</target>
+        <alt-trans>
+          <target>Cookie-Erkennung, siehe entsprechendes Cookie.</target>
+        </alt-trans>
       </trans-unit>
       <trans-unit id="trackingobject.et_oi_v2--localstorage" resname="trackingobject.et_oi_v2--localstorage" approved="yes">
         <source>et_oi_v2</source>
@@ -153,6 +168,9 @@
       <trans-unit id="trackingobject.et_oi_v2--localstorage.desc" resname="trackingobject.et_oi_v2--localstorage.desc" approved="yes">
         <source>OptIn-cookie, see corresponding cookie.</source>
         <target state="final">OptIn-Cookie, siehe entsprechendes Cookie.</target>
+        <alt-trans>
+          <target>Op-tIn-Cookie, siehe entsprechendes Cookie.</target>
+        </alt-trans>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip--localstorage" resname="trackingobject.et_oip--localstorage" approved="yes">
         <source>et_oip</source>
@@ -161,6 +179,9 @@
       <trans-unit id="trackingobject.et_oip--localstorage.desc" resname="trackingobject.et_oip--localstorage.desc" approved="yes">
         <source>OptIn-cookie for Signalize, see corresponding cookie.</source>
         <target state="final">OptIn-Cookie für signalize, siehe entsprechendes Cookie.</target>
+        <alt-trans>
+          <target>Opt-In-Cookie für Signalize, siehe entsprechendes Cookie.</target>
+        </alt-trans>
       </trans-unit>
       <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html" approved="yes">
         <source>HTML</source>
@@ -181,6 +202,9 @@
       <trans-unit id="type.localstorage" resname="type.localstorage" approved="yes">
         <source>Local Storage</source>
         <target state="final">Local Storage</target>
+        <alt-trans>
+          <target>Lokaler Speicher</target>
+        </alt-trans>
       </trans-unit>
       <trans-unit id="group.marketing" resname="group.marketing" approved="yes">
         <source>Marketing</source>
