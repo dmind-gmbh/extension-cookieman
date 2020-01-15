@@ -9,7 +9,7 @@
 
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Cookieman',
-    'description' => 'A GDPR tracking consent popup. It asks for approval to include tracking objects (cookies, images or any HTML) and includes the objects when consented. Notice: Supports TYPO3v8/v9/v10, but each unique version only supports one!',
+    'description' => 'A GDPR tracking consent popup. It asks for approval to include tracking objects (cookies, images or any HTML) and includes the objects when consented. Notice: Supports TYPO3v6, but each unique version only supports one!',
     'category' => 'fe',
     'author' => 'Jonas Eberle',
     'author_email' => 'jonas.eberle@d-mind.de',
@@ -18,10 +18,10 @@ $EM_CONF[$_EXTKEY] = [
     'uploadfolder' => '0',
     'createDirs' => '',
     'clearCacheOnLoad' => 0,
-    'version' => '2.3.6',
+    'version' => '6.0.0-dev',
     'constraints' => [
         'depends' => [
-            'typo3' => '10.0.0-10.4.99',
+            'typo3' => '6.2.0-6.2.99',
         ],
         'conflicts' => [],
         'suggests' => [],

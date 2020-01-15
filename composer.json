@@ -13,8 +13,8 @@
         }
     ],
     "require": {
-        "php": "^7.2",
-        "typo3/cms-core": "dev-master"
+        "php": "^5.6",
+        "typo3/cms-core": "^7.2.0"
     },
     "require-dev": {
         "bk2k/bootstrap-package": "^11.0",
