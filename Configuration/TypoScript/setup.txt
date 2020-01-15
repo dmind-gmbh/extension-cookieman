@@ -46,11 +46,6 @@ page {
         extbase.controllerExtensionName = cookieman
 
         settings < plugin.tx_cookieman.settings
-
-        # evaluate settings during rendering. With FLUIDTEMPLATE.settings we would prevent overwritability
-        dataProcessing {
-        #    1 = Dmind\Cookieman\DataProcessing\TypoScriptSettingsProcessor
-        }
     }
 }
 
