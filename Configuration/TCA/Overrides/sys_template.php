@@ -10,7 +10,7 @@
 defined('TYPO3_MODE') || die();
 
 // static TypoScript
-(static function () {
+static function () {
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
         'cookieman',
         'Configuration/TypoScript',
@@ -21,4 +21,4 @@ defined('TYPO3_MODE') || die();
         'Configuration/TypoScript/Example',
         'Cookieman (Example configuration of groups and tracking objects)'
     );
-})();
+};

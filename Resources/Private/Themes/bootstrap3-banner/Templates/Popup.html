@@ -1,3 +1,4 @@
+{namespace cm=Dmind\Cookieman\ViewHelpers}
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
 <f:layout name="PopupLayout"/>
@@ -10,12 +11,16 @@
                     {f:translate(key: 'heading')}
                 </h4>
                 <p>
-                    {f:translate(
-                    key: 'introText',
-                    arguments: {
-                    1: "{dataProtectionDeclarationLink -> f:spaceless()}",
-                    2: "{imprintLink -> f:spaceless()}"
-                    }) -> f:format.raw()}
+                    <f:alias map="{dataProtectionDeclarationLink: '<a href=\'{f:uri.page(pageUid: settings.links.dataProtectionDeclarationPid, section: settings.links.dataProtectionDeclarationAnchor)}\'>{f:translate(key: \'dataProtectionDeclaration\')}</a>'}">
+                        <f:alias map="{imprintLink: '<a href=\'{f:uri.page(pageUid: settings.links.imprintPid, section: settings.links.imprintAnchor)}\'>{f:translate(key: \'imprint\')}</a>'}">
+                            {f:translate(
+                            key: 'introText',
+                            arguments: {
+                            1: "{dataProtectionDeclarationLink -> cm:spaceless()}",
+                            2: "{imprintLink -> cm:spaceless()}"
+                            }) -> f:format.raw()}
+                        </f:alias>
+                    </f:alias>
                 </p>
                 <p>
 
@@ -27,7 +32,7 @@
 
                     {f:translate(
                     key: 'settingsText',
-                    arguments: {1: "{settingsLink -> f:spaceless()}"
+                    arguments: {1: "{settingsLink -> cm:spaceless()}"
                     }) -> f:format.raw()}
                 </p>
 

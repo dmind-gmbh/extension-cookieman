@@ -1,5 +1,5 @@
 # include definition of "CookieConsent" TrackingObject
-@import 'EXT:cookieman/Configuration/TypoScript/TrackingObjects/CookieConsent.typoscript'
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:cookieman/Configuration/TypoScript/TrackingObjects/CookieConsent.typoscript">
 
 plugin.tx_cookieman {
     # documentation: https://github.com/dmind-gmbh/extension-cookieman
@@ -37,31 +37,19 @@ page {
 
     1365499 = FLUIDTEMPLATE
     1365499 {
-        templateName = Popup
-        templateRootPaths {
-            0 = EXT:cookieman/Resources/Private/Templates/
-            10 = EXT:cookieman/Resources/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Templates/
-            100 = {$plugin.tx_cookieman.settings.resourcesBasePath}/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Templates/
-        }
-
-        partialRootPaths {
-            0 = EXT:cookieman/Resources/Private/Partials/
-            10 = EXT:cookieman/Resources/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Partials/
-            100 = {$plugin.tx_cookieman.settings.resourcesBasePath}/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Partials/
-        }
-
-        layoutRootPaths {
-            0 = EXT:cookieman/Resources/Private/Layouts/
-            10 = EXT:cookieman/Resources/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Layouts/
-            100 = {$plugin.tx_cookieman.settings.resourcesBasePath}/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Layouts/
-        }
+        template = FILE
+        template.file = EXT:cookieman/Resources/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Templates/Popup.html
+        partialRootPath = EXT:cookieman/Resources/Private/Partials/
+        layoutRootPath = EXT:cookieman/Resources/Private/Layouts/
 
         // allows to omit extension name in f:translate ViewHelpers
         extbase.controllerExtensionName = cookieman
 
+        settings < plugin.tx_cookieman.settings
+
         # evaluate settings during rendering. With FLUIDTEMPLATE.settings we would prevent overwritability
         dataProcessing {
-            1 = Dmind\Cookieman\DataProcessing\TypoScriptSettingsProcessor
+        #    1 = Dmind\Cookieman\DataProcessing\TypoScriptSettingsProcessor
         }
     }
 }

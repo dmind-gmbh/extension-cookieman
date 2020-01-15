@@ -1,9 +1,9 @@
+{namespace cm=Dmind\Cookieman\ViewHelpers}
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
 <f:section name="content">
     <f:for each="{group.trackingObjects}" as="trackingObjectId">
-        <f:for each="{settings.trackingObjects.{trackingObjectId}.show}"
-               key="trackingItemId" as="trackingItem">
+        <f:for each="{cm:accessArray(array:'{settings.trackingObjects}', keys:'{0: trackingObjectId, 1: \'show\'}')}" key="trackingItemId" as="trackingItem">
             <tr>
                 <td>
                     {f:translate(

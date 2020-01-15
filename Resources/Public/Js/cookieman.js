@@ -232,11 +232,11 @@ var cookieman = (function () {
      * inject not-yet-injected tracking objects if consented and matching DNT constraints
      */
     function injectNewTrackingObjects() {
-        var consenteds = consentedSelectionsRespectDnt()
+        var consenteds = consentedSelectionsRespectDnt();
         for (var _i = 0; _i < consenteds.length; _i++) {
-            var oGroup = settings.groups[consenteds[_i]]
+            var oGroup = settings.groups[consenteds[_i]];
             for (var _j = 0; _j < oGroup.trackingObjects.length; _j++) {
-                var trackingObjectKey = oGroup.trackingObjects[_j]
+                var trackingObjectKey = oGroup.trackingObjects[_j];
                 if (injectedTrackingObjects.indexOf(trackingObjectKey) === -1) {
                     injectTrackingObject(trackingObjectKey, settings.trackingObjects[trackingObjectKey])
                 }
