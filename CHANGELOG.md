@@ -1,7 +1,118 @@
+# 2.3.11
+
+## MISC
+- add data-cookieman-accept-none option #83 0f69ba7
+- New Crowdin translations (#80) 4816753
+- New Crowdin translations (#77) 11c7827
+- New Crowdin translations (#74) 8e500d3
+- add eTracker example configuration and texts 536a656
+- remove cookies when consent is revoked #65 c018201
+- improve extension icon PNG quality 1a53ecd
+- New Crowdin translations (#70) c39dad3
+- use docker hub for the "mkcert-enhanced selenium-node" images 4b73cae
+- install and run `mkcert -install` on selenium nodes, run acceptance tests via https c8c3002
+- backport from master 8490136
+- cleanup ddev-router template (now in external github action) 12670ce
+- use actions/checkout@v2 a9e3469
+- New Crowdin translations (#68) a868060
+- update ddev config 7481bd0
+- upgrade yarn packages bf0d558
+- Add logo 7c1b8cd
+- speed up unit tests 3294c2b
+- inhibit push to coveralls on composer-lowest stage b4ebe02
+- use  instead of  where applicable 44b05f7
+- New Crowdin translations (#63) ee77b60
+- New Crowdin translations (#59) 18ab80b
+- bring in the other languages again df8ee02
+- try actions/checkout@v2-beta... 97a3183
+- use actions/checkout@v2 (2) 927a195
+- fix github action branch exclusion e15fd7a
+- use actions/checkout@v2 744a4e6
+- inhibit tests on l10n_* branches (2) 1f71ca1
+- inhibit tests on l10n_* branches 124272e
+- reduce crowdin export languages b050fdd
+- set crowdin commit message 460fabe
+- fixed source string c9bfac0
+
 # 2.3.8
 
 ## MISC
+- give credit to an awesome person c19e6cb
+- help scrutinizer ffc65a7
+- set the docs branch c99d03a
+- document the differences among the example themes 6a33cb6
+- fix typo 1edcaaa
+- remove button-group in bootstrap3-modal example theme 98a3133
+- use  instead of  in example themes bc23dcf
+- remove button rel="nofollow" 894667d
+- add warning to inline-JS 6bf8302
+- Merge remote-tracking branch 'origin/l10n_9lts' into 9lts 28b4d01
+- Add How-To section to documentation (#56) 6855278
+- New translations locallang.xlf (German) 82000de
+- New translations locallang.xlf (German) 151dad6
+- New translations locallang.xlf (Vietnamese) 78201ae
+- New translations locallang.xlf (Finnish) 22e1070
+- New translations locallang.xlf (French) 3124f55
+- New translations locallang.xlf (German) 23bfa72
+- New translations locallang.xlf (Greek) 609865c
+- New translations locallang.xlf (Hebrew) 717b85a
+- New translations locallang.xlf (Hungarian) 7c0c9f6
+- New translations locallang.xlf (Japanese) 6c63771
+- New translations locallang.xlf (Korean) 5d5384d
+- New translations locallang.xlf (Norwegian) b7e51ba
+- New translations locallang.xlf (Italian) 0e670ab
+- New translations locallang.xlf (Portuguese) 5336ea1
+- New translations locallang.xlf (Romanian) b187b36
+- New translations locallang.xlf (Russian) 9e21fdf
+- New translations locallang.xlf (Serbian (Cyrillic)) b95423c
+- New translations locallang.xlf (Spanish) 5464960
+- New translations locallang.xlf (Swedish) 4e146ad
+- New translations locallang.xlf (Turkish) 553dea4
+- New translations locallang.xlf (Ukrainian) aa82662
+- New translations locallang.xlf (Polish) f5d76a2
+- New translations locallang.xlf (Arabic) d93fa72
+- New translations locallang.xlf (Dutch) 9a4e997
+- New translations locallang.xlf (Danish) edabe45
+- New translations locallang.xlf (Czech) 84d0eb3
+- New translations locallang.xlf (Chinese Simplified) f610fd5
+- New translations locallang.xlf (Catalan) 44c369a
+- New translations locallang.xlf (Afrikaans) 93aedae
+- fix en source string e135cd8
+- New translations locallang.xlf (German) 9a397ef
+- New translations locallang.xlf (Danish) 25cbd3d
+- New translations locallang.xlf (German) e047e88
+- New translations locallang.xlf (Danish) 30f27b1
+- New translations locallang.xlf (Vietnamese) c1aadba
+- New translations locallang.xlf (Catalan) d81d14d
+- New translations locallang.xlf (Chinese Simplified) 5472bbd
+- New translations locallang.xlf (Czech) b5c4640
+- New translations locallang.xlf (Danish) 591d559
+- New translations locallang.xlf (Dutch) ff0c637
+- New translations locallang.xlf (Finnish) 25dbad5
+- New translations locallang.xlf (French) ed734b8
+- New translations locallang.xlf (German) e8c8f15
+- New translations locallang.xlf (Greek) 63822ee
+- New translations locallang.xlf (Hebrew) 57493ea
+- New translations locallang.xlf (Hungarian) e62213d
+- New translations locallang.xlf (Arabic) 2ef13b4
+- New translations locallang.xlf (Italian) dfbc745
+- New translations locallang.xlf (Korean) f5d99bf
+- New translations locallang.xlf (Norwegian) 625a39f
+- New translations locallang.xlf (Polish) c3858bb
+- New translations locallang.xlf (Portuguese) e79baf2
+- New translations locallang.xlf (Romanian) 58941e0
+- New translations locallang.xlf (Russian) 04a0980
+- New translations locallang.xlf (Serbian (Cyrillic)) c6a788e
+- New translations locallang.xlf (Spanish) b1638e4
+- New translations locallang.xlf (Swedish) 84821b8
+- New translations locallang.xlf (Turkish) 19d7416
+- New translations locallang.xlf (Ukrainian) 41c1767
+- New translations locallang.xlf (Japanese) e1ea0e0
+- New translations locallang.xlf (Afrikaans) 693e392
+- add Google Tag Manager cookie _dc_gtm description 49fb563
 - New Crowdin translations (#52) a44f284
+- New translations locallang.xlf (German) 227cf6a
+- New translations locallang.xlf (Danish) 64ce475
 - maybe again improve links display bd3ec9c
 - maybe improve links display 60b347d
 - reduce README.md 51fdead
@@ -9,6 +120,39 @@
 - get more debug form selenium drivers da18017
 - test sanitizedSettings() e5255ad
 - remove release:prepare from mandatory steps for release:create 69989b7
+- New translations locallang.xlf (German) 7922cba
+- New translations locallang.xlf (Vietnamese) dec76c9
+- New translations locallang.xlf (Japanese) d0afcb1
+- New translations locallang.xlf (Korean) bd448ba
+- New translations locallang.xlf (Norwegian) b80f795
+- New translations locallang.xlf (Polish) 7d91842
+- New translations locallang.xlf (Portuguese) eeed049
+- New translations locallang.xlf (Romanian) db03c55
+- New translations locallang.xlf (Italian) 3a2c5f2
+- New translations locallang.xlf (Serbian (Cyrillic)) 49d0e8d
+- New translations locallang.xlf (Spanish) 74382b9
+- New translations locallang.xlf (Swedish) 22b0c48
+- New translations locallang.xlf (Turkish) 517cb6a
+- New translations locallang.xlf (Ukrainian) ffe1ef6
+- New translations locallang.xlf (Russian) 569db47
+- New translations locallang.xlf (Catalan) aded1d1
+- New translations locallang.xlf (Chinese Simplified) a4797e4
+- New translations locallang.xlf (Czech) f40f862
+- New translations locallang.xlf (Danish) 78d47c8
+- New translations locallang.xlf (Dutch) 7868e90
+- New translations locallang.xlf (Finnish) a3ac35e
+- New translations locallang.xlf (German) 74f11f6
+- New translations locallang.xlf (Greek) 50ce987
+- New translations locallang.xlf (Hebrew) dfa80b4
+- New translations locallang.xlf (Hungarian) 859ee90
+- New translations locallang.xlf (Arabic) 1af3a58
+- New translations locallang.xlf (French) c2a37b2
+- New translations locallang.xlf (Afrikaans) d2d2c67
+- New translations locallang.xlf (German) 77a691d
+- New translations locallang.xlf (Danish) e18b4bb
+- manual 3-way merge to align translations ffc2b8d
+- New translations locallang.xlf (French) 5500ab9
+- New translations locallang.xlf (French) b704e07
 
 # 2.3.5
 
