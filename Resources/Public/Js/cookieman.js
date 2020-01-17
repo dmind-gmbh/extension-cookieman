@@ -12,6 +12,7 @@ var cookieman = (function () {
         checkboxes = form.querySelectorAll('[type=checkbox][name]'),
         saveButtons = document.querySelectorAll('[data-cookieman-save]'),
         acceptAllButtons = document.querySelectorAll('[data-cookieman-accept-all]'),
+        acceptNoneButtons = document.querySelectorAll('[data-cookieman-accept-none]'),
         injectedTrackingObjects = [],
         loadedTrackingObjectScripts = {}
 
@@ -98,6 +99,11 @@ var cookieman = (function () {
     function onAcceptAllClick(e) {
         e.preventDefault()
         selectAll()
+    }
+
+    function onAcceptNoneClick(e) {
+        e.preventDefault()
+        selectNone()
     }
 
     function setDntTextIfEnabled() {
@@ -272,6 +278,12 @@ var cookieman = (function () {
             acceptAllButtons[i].addEventListener(
                 'click',
                 onAcceptAllClick
+            )
+        }
+        for (i = 0; i < acceptNoneButtons.length; i++) {
+            acceptNoneButtons[i].addEventListener(
+                'click',
+                onAcceptNoneClick
             )
         }
         for (i = 0; i < saveButtons.length; i++) {
