@@ -1,6 +1,126 @@
+# 2.3.9
+
+## MISC
+- add data-cookieman-accept-none option #83 2709859
+- New Crowdin translations (#78) dda0365
+- New translations locallang.xlf (German) (#75) 8901f3b
+- New Crowdin translations (#72) e1640f9
+- add eTracker example configuration and texts feaa0ef
+- add CSP nonce to testing environment ce89a58
+- remove cookies when consent is revoked #65 e1650d6
+- improve extension icon PNG quality ddef031
+- New translations locallang.xlf (Romanian) (#71) 883b0e0
+- restrict acceptance tests to opening PRs bf7c189
+- sppedup acceptance tests d7958e9
+- enable browserstack Mac OS Safari ce39e0d
+- cleanup 8d51125
+- use title instead of alert due to browserstack not interacting with popups 77c9814
+- force restart for browserstack 6dc75d3
+- use reloadPage() after setting cookies b709aa5
+- hint at firefox debugging 3fb051d
+- use docker hub for the "mkcert-enhanced selenium-node" images 85bbbfe
+- install and run `mkcert -install` on selenium nodes, run acceptance tests via https 6203d52
+- remove unused variable, adjust docs 8c86917
+- cleanup ddev-router template (now in external github action) 2c5f8bd
+- use actions/checkout@v2 22f8473
+- New Crowdin translations (#66) d1c3885
+- update ddev config 3457ed9
+- upgrade yarn packages 68d4c7d
+- Add logo 5a3e138
+- new translation (manual merge) 3d3ddb6
+- speed up unit tests 1a277ba
+- inhibit push to coveralls on composer-lowest stage 8111de1
+- use  instead of  where applicable 5570acb
+- New translations locallang.xlf (Danish) (#61) 3dd5169
+- New Crowdin translations (#57) e2b4576
+- bring in the other languages again d00c87e
+- try actions/checkout@v2-beta... 29f9d6e
+- use actions/checkout@v2 (2) c835007
+- fix github action branch exclusion 7d0b792
+- use actions/checkout@v2 c82a1f6
+- inhibit tests on l10n_* branches (2) 682cd6d
+- inhibit tests on l10n_* branches 4d2707d
+- reduce crowdin export languages bcd078a
+- set crowdin commit message 98172f4
+- fixed source string f3943f0
+
 # 2.3.6
 
 ## MISC
+- retrigger docs rendering bf4b27e
+- retrigger docs rendering 40009f9
+- retrigger docs rendering d5e1385
+- document the differences among the example themes 54668ac
+- fix typo 99916c1
+- remove button-group in bootstrap3-modal example theme 889fcce
+- use  instead of  in example themes fa438c4
+- remove button rel="nofollow" 94c73b7
+- add warning to inline-JS 121e07a
+- Merge remote-tracking branch 'origin/l10n_master' 5df8d86
+- Add How-To section to documentation (#56) 748bb2f
+- New translations locallang.xlf (German) 5a36dab
+- New translations locallang.xlf (German) ab6dc80
+- New translations locallang.xlf (Vietnamese) 963722b
+- New translations locallang.xlf (Catalan) d576e61
+- New translations locallang.xlf (Chinese Simplified) be9ecea
+- New translations locallang.xlf (Czech) 6f08cad
+- New translations locallang.xlf (Danish) 7ca59dd
+- New translations locallang.xlf (Dutch) af70dea
+- New translations locallang.xlf (Finnish) 1acb538
+- New translations locallang.xlf (French) aebff6a
+- New translations locallang.xlf (German) 4bc1f8d
+- New translations locallang.xlf (Greek) 1d543cc
+- New translations locallang.xlf (Hebrew) 5c15bef
+- New translations locallang.xlf (Hungarian) 9403afa
+- New translations locallang.xlf (Arabic) b7b7742
+- New translations locallang.xlf (Italian) c48d67b
+- New translations locallang.xlf (Korean) 9f8ca6e
+- New translations locallang.xlf (Norwegian) 3b281f4
+- New translations locallang.xlf (Polish) 80c45ef
+- New translations locallang.xlf (Portuguese) d7a9aa9
+- New translations locallang.xlf (Romanian) 3e74c2a
+- New translations locallang.xlf (Russian) 748f1f6
+- New translations locallang.xlf (Serbian (Cyrillic)) ad34d63
+- New translations locallang.xlf (Spanish) 791a76e
+- New translations locallang.xlf (Swedish) ba21431
+- New translations locallang.xlf (Turkish) 7e0f787
+- New translations locallang.xlf (Ukrainian) b0aaed7
+- New translations locallang.xlf (Japanese) 484e182
+- New translations locallang.xlf (Afrikaans) 7dbbd6b
+- fix en source string 74d1afd
+- help scrutinizer 3dd7ad8
+- New translations locallang.xlf (German) a7f1845
+- New translations locallang.xlf (Danish) f61fbfa
+- New translations locallang.xlf (German) 29b0f3f
+- New translations locallang.xlf (Danish) ad4b32f
+- New translations locallang.xlf (Vietnamese) 4d8b20b
+- New translations locallang.xlf (Catalan) e73447c
+- New translations locallang.xlf (Chinese Simplified) e9c171f
+- New translations locallang.xlf (Czech) 9ce3f6f
+- New translations locallang.xlf (Danish) 66261a2
+- New translations locallang.xlf (Dutch) cfcee86
+- New translations locallang.xlf (Finnish) 26fe920
+- New translations locallang.xlf (French) b4a9913
+- New translations locallang.xlf (German) 5388eae
+- New translations locallang.xlf (Greek) 8febb7b
+- New translations locallang.xlf (Hebrew) c699d17
+- New translations locallang.xlf (Hungarian) 1cf8a9d
+- New translations locallang.xlf (Arabic) ba0e479
+- New translations locallang.xlf (Italian) f1c0b9a
+- New translations locallang.xlf (Korean) ed564a3
+- New translations locallang.xlf (Norwegian) 0a0e7f3
+- New translations locallang.xlf (Polish) f5106b1
+- New translations locallang.xlf (Portuguese) b9df38e
+- New translations locallang.xlf (Romanian) 285a86a
+- New translations locallang.xlf (Russian) 0fe0674
+- New translations locallang.xlf (Serbian (Cyrillic)) 67f3aa5
+- New translations locallang.xlf (Spanish) e959973
+- New translations locallang.xlf (Swedish) a1b27da
+- New translations locallang.xlf (Turkish) 66c37ac
+- New translations locallang.xlf (Ukrainian) c4722cd
+- New translations locallang.xlf (Japanese) bbfddba
+- New translations locallang.xlf (Afrikaans) e9b3e71
+- add Google Tag Manager cookie _dc_gtm description d1c3e40
 - New Crowdin translations (#50) c78cb49
 - maybe again improve links display 27b0cd8
 - maybe improve links display 2f2c377
