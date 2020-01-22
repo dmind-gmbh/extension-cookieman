@@ -14,7 +14,7 @@
     ],
     "require": {
         "php": "^7.2",
-        "typo3/cms-core": "dev-master"
+        "typo3/cms-core": "^10.0 || dev-master"
     },
     "require-dev": {
         "bk2k/bootstrap-package": "^11.0",
@@ -31,7 +31,7 @@
         "php-coveralls/php-coveralls": "^2.1",
         "roave/security-advisories": "dev-master",
         "typo3/cms-introduction": "dev-master",
-        "typo3/cms-tstemplate": "dev-master",
+        "typo3/cms-tstemplate": "^10.0 || dev-master",
         "typo3/testing-framework": "^5.0"
     },
     "config": {
