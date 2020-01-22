@@ -78,6 +78,10 @@ var cookieman = (function () {
     }
 
     function loadCheckboxStates() {
+        // do not change checkbox states if there are no saved settings yet
+        if (typeof Cookies.get(cookieName) === 'undefined') {
+            return
+        }
         var consented = consentedSelectionsAll()
         selectNone()
         for (var _i = 0; _i < consented.length; _i++) {
