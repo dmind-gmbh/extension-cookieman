@@ -231,7 +231,28 @@ var cookieman = (function () {
      */
     function removeTrackingObjectItem(itemKey, oItem) {
         if (oItem.type === 'cookie_http+html') {
-            Cookies.remove(itemKey)
+            if (Object.prototype.hasOwnProperty.call(oItem, 'htmlCookieRemovalPattern') && oItem['htmlCookieRemovalPattern'] !== '') {
+                var regex,
+                    currentCookies = Cookies.get(),
+                    matches
+                    
+                try {
+            		//Put in try/catch in case user set malformed regex
+                    regex = RegExp(oItem['htmlCookieRemovalPattern'])
+                } catch (e) {
+            		console.log('Malformed pattern for cookie deletion on trackingobject item "' + itemKey + '": ' + e.message)
+            		//Do not try the malformed pattern on the other cookie names
+            		return false
+            	}
+                
+                for (var cookieName in currentCookies) {
+                    if (cookieName.match(regex) !== null) {
+                    	Cookies.remove(cookieName)
+                    }
+                }
+            } else {
+                Cookies.remove(itemKey)
+            }
             return true
         }
         // unsupported type
