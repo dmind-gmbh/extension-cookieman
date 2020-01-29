@@ -237,17 +237,17 @@ var cookieman = (function () {
                     matches
                     
                 try {
-            		//Put in try/catch in case user set malformed regex
+                    //Put in try/catch in case user set malformed regex
                     regex = RegExp(oItem['htmlCookieRemovalPattern'])
                 } catch (e) {
-            		console.log('Malformed pattern for cookie deletion on trackingobject item "' + itemKey + '": ' + e.message)
-            		//Do not try the malformed pattern on the other cookie names
-            		return false
-            	}
+                    console.error('Malformed pattern for cookie deletion on trackingObjectItem "' + itemKey + '": ' + e.message)
+                    //Do not try the malformed pattern on the other cookie names
+                    return false
+                }
                 
                 for (var cookieName in currentCookies) {
                     if (cookieName.match(regex) !== null) {
-                    	Cookies.remove(cookieName)
+                        Cookies.remove(cookieName)
                     }
                 }
             } else {
