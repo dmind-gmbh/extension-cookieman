@@ -146,15 +146,12 @@ var cookieman = (function () {
      * @return array
      */
     function findGroupsByTrackingObjectKey(trackingObjectKey) {
-        for (var groupKey in settings.groups) {
-            if (!Object.prototype.hasOwnProperty.call(settings.groups, groupKey)) {
-                continue
+        return Object.keys(settings.groups).filter(
+            function (groupKey) {
+                return Object.prototype.hasOwnProperty.call(settings.groups[groupKey], 'trackingObjects') 
+                       && settings.groups[groupKey].trackingObjects.indexOf(trackingObjectKey) > -1
             }
-            
-            if (Object.prototype.hasOwnProperty.call(settings.groups[groupKey], trackingObjectKey)) {
-                groups.push(groupKey)
-            }
-        }
+        )
     }
 
     /**
@@ -378,12 +375,6 @@ var cookieman = (function () {
          * @returns {boolean}
          */
         hasConsentedTrackingObject: hasConsentedTrackingObject,
-        /**
-         * @api
-         * @param {string} itemKey
-         * @returns {boolean}
-         */
-        hasConsentedTrackingObjectItem: hasConsentedTrackingObjectItem,
         /**
          * @api
          */
