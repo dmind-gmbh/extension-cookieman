@@ -60,6 +60,70 @@ var cookieman = (function () {
         return false
     }
 
+    /**
+     * Checks if consent was given for all groups, in which a trackingObject 
+     * with the given key is defined. Normally each trackingObject should only
+     * be present in one group.
+     * 
+     * @param trackingObjectKey string e.g. 'Matomo'
+     * @return boolean consent given for all groups. If the trackingObject is 
+     * not defined in any group, this function will return false
+     */
+    function hasConsentedTrackingObject(trackingObjectKey) {
+        var groups = []
+        
+        for (var groupKey in settings.groups) {
+            if (!Object.prototype.hasOwnProperty.call(settings.groups, groupKey)) {
+                continue
+            }
+            
+            if (Object.prototype.hasOwnProperty.call(settings.groups[groupKey], trackingObjectKey)) {
+                groups.push(groupKey)
+            }
+        }
+        
+        return groups.reduce(
+            function (consentGiven, groupKey) { 
+                return consentGiven && hasConsented(groupKey)
+            },
+            groups.length > 0
+        )
+    }
+
+
+    /**
+     * Checks if consent was given for all trackingobjects, in which a 
+     * trackingObjectItem with the given key is defined. 
+     * Normally each trackingObjectItem should only be present in one 
+     * trackingObject.
+     * 
+     * @param itemKey string e.g. '_pk_id'
+     * @return boolean consent given for all trackingobjects. If the 
+     * trackingObjectItem is not defined in any trackingobject, this function 
+     * will return false
+     */
+    function hasConsentedTrackingObjectItem(itemKey) {
+        var trackingObjects = []
+        
+        for (var trackingObjectKey in settings.trackingObjects) {
+            if (!Object.prototype.hasOwnProperty.call(settings.trackingObjects, trackingObjectKey)
+                || !Object.prototype.hasOwnProperty.call(settings.trackingObjects[trackingObjectKey], 'show')) {
+                continue
+            }
+            
+            if (Object.prototype.hasOwnProperty.call(settings.trackingObjects[trackingObjectKey]['show'], itemKey)) {
+                trackingObjects.push(trackingObjectKey)
+            }
+        }
+        
+        return trackingObjects.reduce(
+            function (consentGiven, trackingObjectKey) {
+                return consentGiven && hasConsentedTrackingObject(trackingObjectKey)
+            },
+            trackingObjects.length > 0
+        )
+    }
+
     function consentedSelectionsAll() {
         var cookie = Cookies.get(cookieName)
         return cookie ? cookie.split('|') : []
@@ -334,6 +398,18 @@ var cookieman = (function () {
          * @returns {boolean}
          */
         hasConsented: hasConsented,
+        /**
+         * @api
+         * @param {string} trackingObjectKey
+         * @returns {boolean}
+         */
+        hasConsentedTrackingObject: hasConsentedTrackingObject,
+        /**
+         * @api
+         * @param {string} itemKey
+         * @returns {boolean}
+         */
+        hasConsentedTrackingObjectItem: hasConsentedTrackingObjectItem,
         /**
          * @api
          */
