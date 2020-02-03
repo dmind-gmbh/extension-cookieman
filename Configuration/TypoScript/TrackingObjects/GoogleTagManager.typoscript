@@ -35,6 +35,7 @@ plugin.tx_cookieman.settings.trackingObjects {
                 durationUnit = years
                 type = cookie_http+html
                 provider = Google
+                htmlCookieRemovalPattern = ^_dc_gtm_UA\-\d+\-\d+$
             }
         }
     }

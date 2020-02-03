@@ -28,6 +28,8 @@ plugin.tx_cookieman.settings.trackingObjects {
                 durationUnit = months
                 type = cookie_http+html
                 provider = Matomo
+                #Pattern searches for all cookies that are named like _pk_id.{website ID}.{user hash}
+                htmlCookieRemovalPattern = ^_pk_id\.\d+\.[a-fA-F0-9]+$
             }
 
             _pk_ref {
@@ -35,6 +37,7 @@ plugin.tx_cookieman.settings.trackingObjects {
                 durationUnit = months
                 type = cookie_http+html
                 provider = Matomo
+                htmlCookieRemovalPattern = ^_pk_ref\.\d+\.[a-fA-F0-9]+$
             }
 
             _pk_ses {
@@ -42,6 +45,7 @@ plugin.tx_cookieman.settings.trackingObjects {
                 durationUnit = minutes
                 type = cookie_http+html
                 provider = Matomo
+                htmlCookieRemovalPattern = ^_pk_ses\.\d+\.[a-fA-F0-9]+$
             }
 
             _pk_cvar {
@@ -49,6 +53,7 @@ plugin.tx_cookieman.settings.trackingObjects {
                 durationUnit = minutes
                 type = cookie_http+html
                 provider = Matomo
+                htmlCookieRemovalPattern = ^_pk_cvar\.\d+\.[a-fA-F0-9]+$
             }
 
             _pk_hsr {
@@ -56,6 +61,7 @@ plugin.tx_cookieman.settings.trackingObjects {
                 durationUnit = minutes
                 type = cookie_http+html
                 provider = Matomo
+                htmlCookieRemovalPattern = ^_pk_hsr\.\d+\.[a-fA-F0-9]+$
             }
         }
     }
