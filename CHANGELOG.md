@@ -1,3 +1,11 @@
+# 2.4.1
+
+## MISC
+- minify 9f3ff32
+- Delete cookies by regex pattern (#88) 26db500
+- Create api endpoint to check user consent for a specific trackingobject (#89) 2589c15
+- Prevent changing checkbox states when there is no settings cookie yet. Fixes #85 b484d41
+
 # 2.3.10
 
 ## MISC
