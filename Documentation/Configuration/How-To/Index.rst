@@ -176,10 +176,15 @@ A new TrackingObject of course needs some additional configuration:
                            durationUnit = session
                            type = cookie_http
                            provider = Website
+                           # 1b. Set a Regular Expression pattern that matches the name of the cookie, 
+                           #     if the cookie name or parts of it are dynamic, so the cookie can be automatically 
+                           #     removed in case the user revokes the consent. (optional)
+                           #     Please note that you must not provide regex delimiters and can not set options
+                           # htmlCookieRemovalPattern = ^regex\.\d+\.[a-fA-F0-9]+$
                        }
                    }
 
-                   # 1b. Add the tracking code (optional):
+                   # 1c. Add the tracking code (optional):
                    #inject (
                    #    <!-- optional HTML tracking code -->
                    #)
@@ -204,6 +209,10 @@ A new TrackingObject of course needs some additional configuration:
        }
    }
 
+
+.. important::
+
+   If you provide a Regular Expression in the `htmlCookieRemovalPattern` option, please be aware of `Catastrophic Backtracking <https://www.rexegg.com/regex-explosive-quantifiers.html>`__ and make sure that your pattern is safe. Otherwise your page might slow down or even crash the users browser.
 
 .. _howto-groups:
 
