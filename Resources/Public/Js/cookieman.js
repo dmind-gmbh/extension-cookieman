@@ -60,6 +60,26 @@ var cookieman = (function () {
         return false
     }
 
+    /**
+     * Checks if consent was given for all groups, in which a trackingObject 
+     * with the given key is defined. Normally each trackingObject should only
+     * be present in one group.
+     * 
+     * @param trackingObjectKey string e.g. 'Matomo'
+     * @return boolean consent given for all groups. If the trackingObject is 
+     * not defined in any group, this function will return false
+     */
+    function hasConsentedTrackingObject(trackingObjectKey) {
+        var groups = findGroupsByTrackingObjectKey(trackingObjectKey)
+        
+        return groups.reduce(
+            function (consentGiven, groupKey) { 
+                return consentGiven && hasConsented(groupKey)
+            },
+            groups.length > 0
+        )
+    }
+
     function consentedSelectionsAll() {
         var cookie = Cookies.get(cookieName)
         return cookie ? cookie.split('|') : []
@@ -117,6 +137,21 @@ var cookieman = (function () {
                 dnts[_i].innerHTML = form.dataset.cookiemanDntEnabled
             }
         }
+    }
+    
+    /**
+     * Returns all groups, in which a trackingObject with the given key is defined.
+     * 
+     * @param trackingObjectKey string e.g. 'Matomo'
+     * @return array
+     */
+    function findGroupsByTrackingObjectKey(trackingObjectKey) {
+        return Object.keys(settings.groups).filter(
+            function (groupKey) {
+                return Object.prototype.hasOwnProperty.call(settings.groups[groupKey], 'trackingObjects') 
+                       && settings.groups[groupKey].trackingObjects.indexOf(trackingObjectKey) > -1
+            }
+        )
     }
 
     /**
@@ -334,6 +369,12 @@ var cookieman = (function () {
          * @returns {boolean}
          */
         hasConsented: hasConsented,
+        /**
+         * @api
+         * @param {string} trackingObjectKey
+         * @returns {boolean}
+         */
+        hasConsentedTrackingObject: hasConsentedTrackingObject,
         /**
          * @api
          */
