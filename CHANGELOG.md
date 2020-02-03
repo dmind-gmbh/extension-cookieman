@@ -1,3 +1,12 @@
+# 2.4.0
+
+## MISC
+- minify 7c4f58b
+- Delete cookies by regex pattern (#88) 7780dd0
+- Create api endpoint to check user consent for a specific trackingobject (#89) 8d5b6f7
+- allow stable TYPO3v10 releases 066f948
+- Prevent changing checkbox states when there is no settings cookie yet. Fixes #85 0b804cd
+
 # 2.3.9
 
 ## MISC
