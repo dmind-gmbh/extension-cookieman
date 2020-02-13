@@ -1,5 +1,5 @@
 <?php
-declare(strict_types = 1);
+declare(strict_types=1);
 
 /*
  * This file is part of the package dmind/cookieman.
@@ -27,8 +27,24 @@ use Dmind\Cookieman\Tests\Acceptance\Support\_generated\AcceptanceTesterActions;
 
 /**
  * Default acceptance tester
-*/
+ */
 class AcceptanceTester extends \Codeception\Actor
 {
     use AcceptanceTesterActions;
+
+    /*
+     * Use JavaScript because Chrome/Webdriver's (?) setCookie() does not set to the correct domain.
+     * $params are not supported yet.
+     *
+    * @param $name
+    * @param $val
+    * //@param array $params
+    *
+    * @return mixed
+    * @see \Codeception\Module\WebDriver::setCookie()
+    */
+    public function setCookie($cookie, $value /*, $params = null, $showDebug = null */)
+    {
+        $this->executeJS('Cookies.set("' . $cookie . '", "' . $value . '", { path: "/" })');
+    }
 }
