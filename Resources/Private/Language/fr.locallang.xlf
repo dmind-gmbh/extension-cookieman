@@ -13,11 +13,14 @@
       </trans-unit>
       <trans-unit id="imprint" resname="imprint">
         <source>Imprint</source>
-        <target state="needs-translation">Imprint</target>
+        <target state="translated">Politique de confidentialité</target>
       </trans-unit>
       <trans-unit id="introText" resname="introText">
         <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
-        <target state="needs-translation">This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</target>
+        <target state="translated">Ce site web utilise des cookies. Ceux-ci ont deux fonctions : d'une part, ils fournissent des fonctionnalités de base pour le site web. D'un autre côté, ils nous permettent d'améliorer notre contenu en enregistrant et en analysant les données anonymes des utilisateurs. Vous pouvez à tout moment réconsiderer votre consentement à l'utilisation de ces cookies. Trouvez plus d'informations sur les cookies sur notre %1$s et sur notre %2$s.</target>
+        <alt-trans>
+          <target>Ce site Web utilise des cookies. Ceux-ci ont deux fonctions : d'une part, ils fournissent des fonctionnalités de base pour le site web. D'un autre côté, ils nous permettent d'améliorer notre contenu en enregistrant et en analysant les données anonymes des utilisateurs. Vous pouvez réitérer votre consentement à tout moment à l'utilisation de ces cookies. Trouvez plus d'informations sur les cookies sur notre %1$s et sur notre %2$s.</target>
+        </alt-trans>
       </trans-unit>
       <trans-unit id="settings" resname="settings" approved="yes">
         <source>Settings</source>
@@ -25,11 +28,11 @@
       </trans-unit>
       <trans-unit id="settingsText" resname="settingsText">
         <source>Click here for Cookie %1$s.</source>
-        <target state="needs-translation">Click here for Cookie %1$s.</target>
+        <target state="translated">Cliquez ici pour le cookie %1$s.</target>
       </trans-unit>
       <trans-unit id="accept" resname="accept">
         <source>Accept all cookies</source>
-        <target state="needs-translation">Accept all cookies</target>
+        <target state="translated">Accepter tous les cookies</target>
       </trans-unit>
       <trans-unit id="save" resname="save" approved="yes">
         <source>Save</source>
@@ -44,7 +47,7 @@
       </trans-unit>
       <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc">
         <source>These cookies are needed for a smooth operation of our website.</source>
-        <target state="needs-translation">These cookies are needed for a smooth operation of our website.</target>
+        <target state="translated">Ces cookies sont nécessaires au bon fonctionnement de notre site web.</target>
       </trans-unit>
       <trans-unit id="tableheader.name" resname="tableheader.name" approved="yes">
         <source>Name</source>
@@ -56,7 +59,7 @@
       </trans-unit>
       <trans-unit id="tableheader.duration" resname="tableheader.duration">
         <source>Lifetime</source>
-        <target state="needs-translation">Lifetime</target>
+        <target state="translated">Expiration</target>
       </trans-unit>
       <trans-unit id="tableheader.type" resname="tableheader.type" approved="yes">
         <source>Type</source>
@@ -64,43 +67,43 @@
       </trans-unit>
       <trans-unit id="tableheader.provider" resname="tableheader.provider">
         <source>Provider</source>
-        <target state="needs-translation">Provider</target>
+        <target state="translated">Fournisseur</target>
       </trans-unit>
       <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc">
         <source>Saves your consent to using cookies.</source>
-        <target state="needs-translation">Saves your consent to using cookies.</target>
+        <target state="translated">Enregistre votre consentement à l'utilisation des cookies.</target>
       </trans-unit>
       <trans-unit id="trackingobject.cntcookie.desc" resname="trackingobject.cntcookie.desc">
         <source>Exclusion from counting (as a list of Account IDs)</source>
-        <target state="needs-translation">Exclusion from counting (as a list of Account IDs)</target>
+        <target state="translated">Exclure du comptage (par exemple une liste de Compte IDs)</target>
       </trans-unit>
       <trans-unit id="trackingobject.GS3_v.desc" resname="trackingobject.GS3_v.desc">
         <source>Set by Optimizer webservice. Contains the same Visitor ID as BT_pdc.</source>
-        <target state="needs-translation">Set by Optimizer webservice. Contains the same Visitor ID as BT_pdc.</target>
+        <target state="translated">Défini par le service Web Optimisateur. Contient le même ID de visiteur que BT_pdc.</target>
       </trans-unit>
       <trans-unit id="trackingobject._et_coid.desc" resname="trackingobject._et_coid.desc">
         <source>Cookie detection</source>
-        <target state="needs-translation">Cookie detection</target>
+        <target state="translated">Détection des cookies</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oi_v2.desc" resname="trackingobject.et_oi_v2.desc">
         <source>Opt-In cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</source>
-        <target state="needs-translation">Opt-In cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</target>
+        <target state="translated">Cookie opt-in qui stocke la décision du visiteur lorsque l'opt-in de suivi est affiché du côté du client. Il est aussi utilisé pour un éventuel opt-out.</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip.desc" resname="trackingobject.et_oip.desc">
         <source>Opt-In cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</source>
-        <target state="needs-translation">Opt-In cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</target>
+        <target state="translated">Cookie opt-in utilisé par "signalize". Si le client choisit "non", le cookie est réglé avec la valeur "non" et une durée de 50 x 365 jours. Si le client choisit "x" ou appuie sur la touche ESC (aucune décision), le cookie est défini avec la valeur "non" pour la validité d'un jour. Une valeur "oui" n'est pas requise, car elle est implicitement donnée par le consentement à la poussée réelle du navigateur.</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_allow_cookies.desc" resname="trackingobject.et_allow_cookies.desc">
         <source>If the parameter "data-block-cookies" is used, this cookie is called by the API Call _etracker.enableCookies() to indicate that etracker is allowed to set cookies.</source>
-        <target state="needs-translation">If the parameter "data-block-cookies" is used, this cookie is called by the API Call _etracker.enableCookies() to indicate that etracker is allowed to set cookies.</target>
+        <target state="translated">Si le paramètre "data-block-cookies" est utilisé, ce cookie est appelé par l'API Call _etracker.enableCookies() pour indiquer que etracker est autorisé à définir des cookies.</target>
       </trans-unit>
       <trans-unit id="trackingobject.isSdEnabled.desc" resname="trackingobject.isSdEnabled.desc">
         <source>Detection whether the scrolling depth is measured for the visitor.</source>
-        <target state="needs-translation">Detection whether the scrolling depth is measured for the visitor.</target>
+        <target state="translated">Détecte si la profondeur de défilement est mesurée pour le visiteur.</target>
       </trans-unit>
       <trans-unit id="trackingobject.BT_ctst.desc" resname="trackingobject.BT_ctst.desc">
         <source>Is only used to detect whether cookies are activated in the visitor's browser or not.</source>
-        <target state="needs-translation">Is only used to detect whether cookies are activated in the visitor's browser or not.</target>
+        <target state="translated">Est uniquement utilisé pour détecter si les cookies sont activés dans le navigateur du visiteur ou pas.</target>
       </trans-unit>
       <trans-unit id="trackingobject.BT_sdc.desc" resname="trackingobject.BT_sdc.desc">
         <source>Contains base64 encoded data of the current visitor session (referrer, number of pages, number of seconds since session started) used for personalization purposes.</source>
