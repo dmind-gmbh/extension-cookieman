@@ -17,7 +17,10 @@
       </trans-unit>
       <trans-unit id="introText" resname="introText">
         <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
-        <target state="translated">Ce site web utilise des cookies. Ceux-ci ont deux fonctions : d'une part, ils fournissent des fonctionnalités de base pour le site web. D'un autre côté, ils nous permettent d'améliorer notre contenu en enregistrant et en analysant les données anonymes des utilisateurs. Vous pouvez à tout moment réconsiderer votre consentement à l'utilisation de ces cookies. Trouvez plus d'informations sur les cookies sur notre %1$s et sur notre %2$s.</target>
+        <target state="translated">Ce site web utilise des cookies. Ceux-ci ont deux fonctions : d'une part, ils fournissent des fonctionnalités de base pour le site web. D'un autre côté, ils nous permettent d'améliorer notre contenu en enregistrant et en analysant les données anonymes des utilisateurs. Vous pouvez à tout moment reconsidérer votre consentement à l'utilisation des cookies. Trouvez plus d'informations sur les cookies sur notre %1$s et sur notre %2$s.</target>
+        <alt-trans>
+          <target>Ce site web utilise des cookies. Ceux-ci ont deux fonctions : d'une part, ils fournissent des fonctionnalités de base pour le site web. D'un autre côté, ils nous permettent d'améliorer notre contenu en enregistrant et en analysant les données anonymes des utilisateurs. Vous pouvez à tout moment réconsiderer votre consentement à l'utilisation de ces cookies. Trouvez plus d'informations sur les cookies sur notre %1$s et sur notre %2$s.</target>
+        </alt-trans>
         <alt-trans>
           <target>Ce site Web utilise des cookies. Ceux-ci ont deux fonctions : d'une part, ils fournissent des fonctionnalités de base pour le site web. D'un autre côté, ils nous permettent d'améliorer notre contenu en enregistrant et en analysant les données anonymes des utilisateurs. Vous pouvez réitérer votre consentement à tout moment à l'utilisation de ces cookies. Trouvez plus d'informations sur les cookies sur notre %1$s et sur notre %2$s.</target>
         </alt-trans>
@@ -107,51 +110,51 @@
       </trans-unit>
       <trans-unit id="trackingobject.BT_sdc.desc" resname="trackingobject.BT_sdc.desc">
         <source>Contains base64 encoded data of the current visitor session (referrer, number of pages, number of seconds since session started) used for personalization purposes.</source>
-        <target state="needs-translation">Contains base64 encoded data of the current visitor session (referrer, number of pages, number of seconds since session started) used for personalization purposes.</target>
+        <target state="translated">Contient les données encodées en base64 de la session visiteur courante (référence, nombre de pages, nombre de secondes depuis le début de la session) utilisées à des fins de personnalisation.</target>
       </trans-unit>
       <trans-unit id="trackingobject.BT_pdc.desc" resname="trackingobject.BT_pdc.desc">
         <source>Contains base64-coded visitor history data (is customer, newsletter recipient etc.) for personalization.</source>
-        <target state="needs-translation">Contains base64-coded visitor history data (is customer, newsletter recipient etc.) for personalization.</target>
+        <target state="translated">Contient des données d'historique des visiteurs codées en base64 (client, destinataire de la newsletter, etc.) à des fins de personnalisation.</target>
       </trans-unit>
       <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_pdc.desc">
         <source>Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</source>
-        <target state="needs-translation">Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</target>
+        <target state="translated">Contient une liste des identifiants de projet pour lesquels le visiteur est exclu. Ce cookie est défini par le service web au cas que le client a configuré que tous les visiteurs ne sont pas affectés à un test, mais seulement pour une partie.</target>
       </trans-unit>
       <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_ecl.desc">
         <source>Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</source>
-        <target state="needs-translation">Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</target>
+        <target state="translated">Contient une liste des identifiants de projet pour lesquels le visiteur est exclu. Ce cookie est défini par le service web au cas que le client a configuré que tous les visiteurs ne sont pas affectés à un test, mais seulement pour une partie.</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_scroll_depth.desc" resname="trackingobject.et_scroll_depth.desc">
         <source>Data for scrolling depth measurement</source>
-        <target state="needs-translation">Data for scrolling depth measurement</target>
+        <target state="translated">Données pour la mesure de profondeur de défilement</target>
       </trans-unit>
       <trans-unit id="trackingobject.targetingAPISession.desc" resname="trackingobject.targetingAPISession.desc">
         <source>Data collected in the current session for the optimiser</source>
-        <target state="needs-translation">Data collected in the current session for the optimiser</target>
+        <target state="translated">Données collectées dans la session courante pour optimalisation</target>
       </trans-unit>
       <trans-unit id="trackingobject._et_coid--localstorage" resname="trackingobject._et_coid--localstorage">
         <source>_et_coid</source>
-        <target state="needs-translation">_et_coid</target>
+        <target state="translated">_et_coid</target>
       </trans-unit>
       <trans-unit id="trackingobject._et_coid--localstorage.desc" resname="trackingobject._et_coid--localstorage.desc">
         <source>Cookie detection, see corresponding cookie.</source>
-        <target state="needs-translation">Cookie detection, see corresponding cookie.</target>
+        <target state="translated">Détection des cookies, voir le cookie correspondant.</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oi_v2--localstorage" resname="trackingobject.et_oi_v2--localstorage">
         <source>et_oi_v2</source>
-        <target state="needs-translation">et_oi_v2</target>
+        <target state="translated">et_oi_v2</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oi_v2--localstorage.desc" resname="trackingobject.et_oi_v2--localstorage.desc">
         <source>OptIn-cookie, see corresponding cookie.</source>
-        <target state="needs-translation">OptIn-cookie, see corresponding cookie.</target>
+        <target state="translated">OptIn-cookie, voir le cookie correspondant.</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip--localstorage" resname="trackingobject.et_oip--localstorage">
         <source>et_oip</source>
-        <target state="needs-translation">et_oip</target>
+        <target state="translated">et_oip</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip--localstorage.desc" resname="trackingobject.et_oip--localstorage.desc">
         <source>OptIn-cookie for Signalize, see corresponding cookie.</source>
-        <target state="needs-translation">OptIn-cookie for Signalize, see corresponding cookie.</target>
+        <target state="translated">OptIn-cookie pour "Signalize", voir le cookie correspondant.</target>
       </trans-unit>
       <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html" approved="yes">
         <source>HTML</source>
@@ -159,91 +162,91 @@
       </trans-unit>
       <trans-unit id="trackingobject.fe_typo_user.desc" resname="trackingobject.fe_typo_user.desc">
         <source>Assigns your browser to a session on the server.</source>
-        <target state="needs-translation">Assigns your browser to a session on the server.</target>
+        <target state="translated">Attribue votre navigateur à une session sur le serveur.</target>
       </trans-unit>
       <trans-unit id="duration.session" resname="duration.session">
         <source>session</source>
-        <target state="needs-translation">session</target>
+        <target state="translated">session</target>
       </trans-unit>
       <trans-unit id="type.cookie_http" resname="type.cookie_http">
         <source>HTTP</source>
-        <target state="needs-translation">HTTP</target>
+        <target state="translated">HTTP</target>
       </trans-unit>
       <trans-unit id="type.localstorage" resname="type.localstorage">
         <source>Local Storage</source>
-        <target state="needs-translation">Local Storage</target>
+        <target state="translated">Stockage local</target>
       </trans-unit>
       <trans-unit id="group.marketing" resname="group.marketing">
         <source>Marketing</source>
-        <target state="needs-translation">Marketing</target>
+        <target state="translated">Marketing</target>
       </trans-unit>
       <trans-unit id="group.marketing.desc" resname="group.marketing">
         <source>With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</source>
-        <target state="needs-translation">With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</target>
+        <target state="translated">Avec l'aide de ces cookies, nous nous efforçons d'améliorer notre offre pour nos utilisateurs. Par le biais de données anonymes des utilisateurs du site web, nous pouvons optimiser le flux de l'utilisateur, ce qui nous permet d'améliorer les publicités et le contenu du site.</target>
       </trans-unit>
       <trans-unit id="trackingobject._pk_id.desc" resname="trackingobject._pk_id.desc">
         <source>Used to store a few details about the user such as the unique visitor ID.</source>
-        <target state="needs-translation">Used to store a few details about the user such as the unique visitor ID.</target>
+        <target state="translated">Utilisé pour stocker certains détails de l'utilisateur tel que l'identifiant de l'unique visiteur.</target>
       </trans-unit>
       <trans-unit id="trackingobject._pk_ref.desc" resname="trackingobject._pk_ref.desc">
         <source>Used to store the attribution information, the referrer initially used to visit the website.</source>
-        <target state="needs-translation">Used to store the attribution information, the referrer initially used to visit the website.</target>
+        <target state="translated">Utilisé pour stocker les informations d'attribution, le référant initialement utilisé pour visiter le site web.</target>
       </trans-unit>
       <trans-unit id="trackingobject._pk_ses.desc" resname="trackingobject._pk_ses.desc">
         <source>Short lived cookie used to temporarily store data for the visit.</source>
-        <target state="needs-translation">Short lived cookie used to temporarily store data for the visit.</target>
+        <target state="translated">Cookie de courte durée utilisé pour stocker temporairement des données de la visite.</target>
       </trans-unit>
       <trans-unit id="trackingobject._pk_cvar.desc" resname="trackingobject._pk_cvar.desc">
         <source>Short lived cookie used to temporarily store data for the visit.</source>
-        <target state="needs-translation">Short lived cookie used to temporarily store data for the visit.</target>
+        <target state="translated">Cookie de courte durée utilisé pour stocker temporairement des données de la visite.</target>
       </trans-unit>
       <trans-unit id="trackingobject._pk_hsr.desc" resname="trackingobject._pk_hsr.desc">
         <source>Short lived cookie used to temporarily store data for the visit.</source>
-        <target state="needs-translation">Short lived cookie used to temporarily store data for the visit.</target>
+        <target state="translated">Cookie de courte durée utilisé pour stocker temporairement des données de la visite.</target>
       </trans-unit>
       <trans-unit id="trackingobject._ga.desc" resname="trackingobject._ga.desc">
         <source>Used to distinguish users.</source>
-        <target state="needs-translation">Used to distinguish users.</target>
+        <target state="translated">Utilisé pour distinguer les utilisateurs.</target>
       </trans-unit>
       <trans-unit id="trackingobject.AMP_TOKEN.desc" resname="trackingobject.AMP_TOKEN.desc">
         <source>Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID service.</source>
-        <target state="needs-translation">Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID service.</target>
+        <target state="translated">Contient un token qui peut être utilisé pour récupérer un ID client à partir du service ID client AMP. D'autres valeurs possibles indiquent l'opt-out, la requête "inflight" ou une erreur lors de la récupération d'un ID client à partir du service AMP Client ID.</target>
       </trans-unit>
       <trans-unit id="trackingobject._dc_gtm_--property-id--.desc" resname="trackingobject._dc_gtm_--property-id--.desc">
         <source>Used by DoubleClick (Google Tag Manager) to help identify the visitors by either age, gender or interests.</source>
-        <target state="needs-translation">Used by DoubleClick (Google Tag Manager) to help identify the visitors by either age, gender or interests.</target>
+        <target state="translated">Utilisé par DoubleClick (Google Tag Manager) pour aider à identifier les visiteurs par âge, sexe ou intérêts.</target>
       </trans-unit>
       <trans-unit id="trackingobject._gac_--property-id--.desc" resname="trackingobject._gac_--property-id--.desc">
         <source>Contains campaign related information for the user. If you have linked your Google Analytics and Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.</source>
-        <target state="needs-translation">Contains campaign related information for the user. If you have linked your Google Analytics and Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.</target>
+        <target state="translated">Contient des informations liées à la campagne pour l'utilisateur. Si vous avez lié vos comptes Google Analytics et Google Ads, les balises de conversion du site Web Google Ads lisent ce cookie à moins que vous vous désengagiez.</target>
       </trans-unit>
       <trans-unit id="trackingobject._gat.desc" resname="trackingobject._gat.desc">
         <source>Used to throttle request rate.</source>
-        <target state="needs-translation">Used to throttle request rate.</target>
+        <target state="translated">Utilisé pour limiter la demande d'accélération.</target>
       </trans-unit>
       <trans-unit id="trackingobject._ga_--container-id--.desc" resname="trackingobject._ga_--container-id--.desc">
         <source>Persists session state.</source>
-        <target state="needs-translation">Persists session state.</target>
+        <target state="translated">Stade de la session persistante.</target>
       </trans-unit>
       <trans-unit id="trackingobject._gcl_au.desc" resname="trackingobject._gcl_au.desc">
         <source>Used by Google AdSense to experiment with advertisement efficiency.</source>
-        <target state="needs-translation">Used by Google AdSense to experiment with advertisement efficiency.</target>
+        <target state="translated">Utilisé par Google AdSense pour expérimenter l'efficacité de la publicité.</target>
       </trans-unit>
       <trans-unit id="trackingobject._gid.desc" resname="trackingobject._gid.desc">
         <source>Used to distinguish users.</source>
-        <target state="needs-translation">Used to distinguish users.</target>
+        <target state="translated">Utilisé pour distinguer les utilisateurs.</target>
       </trans-unit>
       <trans-unit id="trackingobject.MUID.desc" resname="trackingobject.MUID.desc">
         <source>Used as unique user identifier. The cookie allows user tracking across many Microsoft domains.</source>
-        <target state="needs-translation">Used as unique user identifier. The cookie allows user tracking across many Microsoft domains.</target>
+        <target state="translated">Utilisé comme identifiant d'utilisateur unique, le cookie permet le suivi des utilisateurs dans de nombreux domaines Microsoft.</target>
       </trans-unit>
       <trans-unit id="trackingobject.MUIDB.desc" resname="trackingobject.MUIDB.desc">
         <source>Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</source>
-        <target state="needs-translation">Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</target>
+        <target state="translated">Sauvegarde les données anonymes des utilisateurs à partir de plusieurs visites de sites web sur plusieurs sites pour tester l'efficacité de la publicité.</target>
       </trans-unit>
       <trans-unit id="browser.dnt-enabled" resname="browser.dnt-enabled">
         <source><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></source>
-        <target state="needs-translation"><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></target>
+        <target state="translated"><![CDATA[Vous avez déjà choisi de ne plus suivre les utilisateurs avec la fonction <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">Ne pas suivre</a>de votre navigateur. Nous respectons cela. Vous pouvez modifier cela à tous moments dans les paramètres de votre navigateur.]]></target>
       </trans-unit>
       <trans-unit id="duration.minute" resname="duration.minute" approved="yes">
         <source>minute</source>
