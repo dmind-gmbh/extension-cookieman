@@ -9,7 +9,7 @@
       </trans-unit>
       <trans-unit id="dataProtectionDeclaration" resname="dataProtectionDeclaration">
         <source>Data Protection Declaration</source>
-        <target state="needs-translation">Data Protection Declaration</target>
+        <target state="translated">Déclaration relative aux cookies</target>
       </trans-unit>
       <trans-unit id="imprint" resname="imprint">
         <source>Imprint</source>
@@ -38,6 +38,9 @@
       <trans-unit id="group.mandatory" resname="group.mandatory" approved="yes">
         <source>Mandatory</source>
         <target state="final">Obligatoire</target>
+        <alt-trans>
+          <target>Nécessaires</target>
+        </alt-trans>
       </trans-unit>
       <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc">
         <source>These cookies are needed for a smooth operation of our website.</source>
