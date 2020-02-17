@@ -67,6 +67,86 @@
         <source>Saves your consent to using cookies.</source>
         <target>crwdns80978:0crwdne80978:0</target>
       </trans-unit>
+      <trans-unit id="trackingobject.cntcookie.desc" resname="trackingobject.cntcookie.desc">
+        <source>Exclusion from counting (as a list of Account IDs)</source>
+        <target>crwdns85297:0crwdne85297:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.GS3_v.desc" resname="trackingobject.GS3_v.desc">
+        <source>Set by Optimizer webservice. Contains the same Visitor ID as BT_pdc.</source>
+        <target>crwdns85299:0crwdne85299:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._et_coid.desc" resname="trackingobject._et_coid.desc">
+        <source>Cookie detection</source>
+        <target>crwdns85301:0crwdne85301:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oi_v2.desc" resname="trackingobject.et_oi_v2.desc">
+        <source>Opt-In cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</source>
+        <target>crwdns85303:0crwdne85303:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oip.desc" resname="trackingobject.et_oip.desc">
+        <source>Opt-In cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</source>
+        <target>crwdns85305:0crwdne85305:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_allow_cookies.desc" resname="trackingobject.et_allow_cookies.desc">
+        <source>If the parameter "data-block-cookies" is used, this cookie is called by the API Call _etracker.enableCookies() to indicate that etracker is allowed to set cookies.</source>
+        <target>crwdns85307:0crwdne85307:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.isSdEnabled.desc" resname="trackingobject.isSdEnabled.desc">
+        <source>Detection whether the scrolling depth is measured for the visitor.</source>
+        <target>crwdns85309:0crwdne85309:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.BT_ctst.desc" resname="trackingobject.BT_ctst.desc">
+        <source>Is only used to detect whether cookies are activated in the visitor's browser or not.</source>
+        <target>crwdns85311:0crwdne85311:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.BT_sdc.desc" resname="trackingobject.BT_sdc.desc">
+        <source>Contains base64 encoded data of the current visitor session (referrer, number of pages, number of seconds since session started) used for personalization purposes.</source>
+        <target>crwdns85313:0crwdne85313:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.BT_pdc.desc" resname="trackingobject.BT_pdc.desc">
+        <source>Contains base64-coded visitor history data (is customer, newsletter recipient etc.) for personalization.</source>
+        <target>crwdns85315:0crwdne85315:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_pdc.desc">
+        <source>Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</source>
+        <target>crwdns85317:0crwdne85317:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_ecl.desc">
+        <source>Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</source>
+        <target>crwdns85317:0crwdne85317:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_scroll_depth.desc" resname="trackingobject.et_scroll_depth.desc">
+        <source>Data for scrolling depth measurement</source>
+        <target>crwdns85321:0crwdne85321:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.targetingAPISession.desc" resname="trackingobject.targetingAPISession.desc">
+        <source>Data collected in the current session for the optimiser</source>
+        <target>crwdns85323:0crwdne85323:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._et_coid--localstorage" resname="trackingobject._et_coid--localstorage">
+        <source>_et_coid</source>
+        <target>crwdns85325:0crwdne85325:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._et_coid--localstorage.desc" resname="trackingobject._et_coid--localstorage.desc">
+        <source>Cookie detection, see corresponding cookie.</source>
+        <target>crwdns85327:0crwdne85327:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oi_v2--localstorage" resname="trackingobject.et_oi_v2--localstorage">
+        <source>et_oi_v2</source>
+        <target>crwdns85329:0crwdne85329:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oi_v2--localstorage.desc" resname="trackingobject.et_oi_v2--localstorage.desc">
+        <source>OptIn-cookie, see corresponding cookie.</source>
+        <target>crwdns85331:0crwdne85331:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oip--localstorage" resname="trackingobject.et_oip--localstorage">
+        <source>et_oip</source>
+        <target>crwdns85333:0crwdne85333:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oip--localstorage.desc" resname="trackingobject.et_oip--localstorage.desc">
+        <source>OptIn-cookie for Signalize, see corresponding cookie.</source>
+        <target>crwdns85335:0crwdne85335:0</target>
+      </trans-unit>
       <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html">
         <source>HTML</source>
         <target>crwdns80980:0crwdne80980:0</target>
@@ -82,6 +162,10 @@
       <trans-unit id="type.cookie_http" resname="type.cookie_http">
         <source>HTTP</source>
         <target>crwdns80986:0crwdne80986:0</target>
+      </trans-unit>
+      <trans-unit id="type.localstorage" resname="type.localstorage">
+        <source>Local Storage</source>
+        <target>crwdns85337:0crwdne85337:0</target>
       </trans-unit>
       <trans-unit id="group.marketing" resname="group.marketing">
         <source>Marketing</source>
