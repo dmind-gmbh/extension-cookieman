@@ -63,6 +63,11 @@ These **HTML element attributes** control the functionality:
 
    Mark all checkboxes
 
+<* data-cookieman-accept-none>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+   Uncheck all checkboxes (will just leave the groups with the options preselected=1, disabled=1 checked)
+
 They can appear multiple times and also together on the same element.
 
 Example:
