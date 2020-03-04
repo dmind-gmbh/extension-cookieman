@@ -31,6 +31,7 @@ plugin.tx_cookieman.settings.trackingObjects {
                 durationUnit = day
                 type = cookie_http+html
                 provider = Google
+                htmlCookieRemovalPattern = ^_gat(?:_UA\-\d+\-\d+)?$
             }
 
             _gid {
@@ -45,6 +46,7 @@ plugin.tx_cookieman.settings.trackingObjects {
                 durationUnit = years
                 type = cookie_http+html
                 provider = Google
+                htmlCookieRemovalPattern = ^_ga_GTM\-\d+$
             }
 
             _gac_--property-id-- {
@@ -52,6 +54,7 @@ plugin.tx_cookieman.settings.trackingObjects {
                 durationUnit = months
                 type = cookie_http+html
                 provider = Google
+                htmlCookieRemovalPattern = ^_gac_UA\-\d+\-\d+$
             }
         }
     }

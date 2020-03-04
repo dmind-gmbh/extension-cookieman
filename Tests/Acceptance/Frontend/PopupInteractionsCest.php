@@ -177,18 +177,13 @@ class PopupInteractionsCest
             self::COOKIENAME,
             $this->cookieValueForGroups(
                 [self::GROUP_KEY_MANDATORY, self::GROUP_KEY_2ND]
-            ),
-            ['path' => self::PATH_ROOT]
+            )
         );
 
         // set a cookie that is configured as tracking object and of type HTML
         $I->setCookie(
             self::COOKIE_TITLE_IN_2ND_GROUP,
-            'someValue',
-            [
-                'path' => self::PATH_ROOT,
-                'httpOnly' => false,
-            ]
+            'someValue'
         );
         $I->reloadPage();
         $I->wait(0.5);
@@ -232,8 +227,7 @@ class PopupInteractionsCest
             self::COOKIENAME,
             $this->cookieValueForGroups(
                 [self::GROUP_KEY_MANDATORY, self::GROUP_KEY_TESTGROUP]
-            ),
-            ['path' => self::PATH_ROOT]
+            )
         );
         $I->reloadPage();
 

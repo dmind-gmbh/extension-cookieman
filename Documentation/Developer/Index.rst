@@ -84,6 +84,19 @@ cookieman.hasConsented(selection)
    A selection is any name of a checkbox in the popup, e.g. 'marketing'.
 
 
+cookieman.hasConsentedTrackingObject(trackingObjectKey)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+:aspect:`Data type`
+   boolean
+
+:aspect:`Description`
+   Returns `true` if the user has consented to all groups (A group is any name of a checkbox in the popup, e.g. 
+   'marketing') that contain the given trackingObject, else false.
+
+   `trackingObjectKey` is the trackingObjects.‹tracking object key› from TypoScript, e.g. 'Matomo'.
+
+
 cookieman.onScriptLoaded(String trackingObjectKey, int scriptId, function callback)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

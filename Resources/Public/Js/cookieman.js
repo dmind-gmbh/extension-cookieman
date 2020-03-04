@@ -12,6 +12,7 @@ var cookieman = (function () {
         checkboxes = form.querySelectorAll('[type=checkbox][name]'),
         saveButtons = document.querySelectorAll('[data-cookieman-save]'),
         acceptAllButtons = document.querySelectorAll('[data-cookieman-accept-all]'),
+        acceptNoneButtons = document.querySelectorAll('[data-cookieman-accept-none]'),
         injectedTrackingObjects = [],
         loadedTrackingObjectScripts = {}
 
@@ -59,6 +60,26 @@ var cookieman = (function () {
         return false
     }
 
+    /**
+     * Checks if consent was given for all groups, in which a trackingObject 
+     * with the given key is defined. Normally each trackingObject should only
+     * be present in one group.
+     * 
+     * @param trackingObjectKey string e.g. 'Matomo'
+     * @return boolean consent given for all groups. If the trackingObject is 
+     * not defined in any group, this function will return false
+     */
+    function hasConsentedTrackingObject(trackingObjectKey) {
+        var groups = findGroupsByTrackingObjectKey(trackingObjectKey)
+        
+        return groups.reduce(
+            function (consentGiven, groupKey) { 
+                return consentGiven && hasConsented(groupKey)
+            },
+            groups.length > 0
+        )
+    }
+
     function consentedSelectionsAll() {
         var cookie = Cookies.get(cookieName)
         return cookie ? cookie.split('|') : []
@@ -77,6 +98,10 @@ var cookieman = (function () {
     }
 
     function loadCheckboxStates() {
+        // do not change checkbox states if there are no saved settings yet
+        if (typeof Cookies.get(cookieName) === 'undefined') {
+            return
+        }
         var consented = consentedSelectionsAll()
         selectNone()
         for (var _i = 0; _i < consented.length; _i++) {
@@ -100,6 +125,11 @@ var cookieman = (function () {
         selectAll()
     }
 
+    function onAcceptNoneClick(e) {
+        e.preventDefault()
+        selectNone()
+    }
+
     function setDntTextIfEnabled() {
         if (window.navigator.doNotTrack === '1') {
             var dnts = document.querySelectorAll('[data-cookieman-dnt]')
@@ -107,6 +137,21 @@ var cookieman = (function () {
                 dnts[_i].innerHTML = form.dataset.cookiemanDntEnabled
             }
         }
+    }
+    
+    /**
+     * Returns all groups, in which a trackingObject with the given key is defined.
+     * 
+     * @param trackingObjectKey string e.g. 'Matomo'
+     * @return array
+     */
+    function findGroupsByTrackingObjectKey(trackingObjectKey) {
+        return Object.keys(settings.groups).filter(
+            function (groupKey) {
+                return Object.prototype.hasOwnProperty.call(settings.groups[groupKey], 'trackingObjects') 
+                       && settings.groups[groupKey].trackingObjects.indexOf(trackingObjectKey) > -1
+            }
+        )
     }
 
     /**
@@ -221,7 +266,28 @@ var cookieman = (function () {
      */
     function removeTrackingObjectItem(itemKey, oItem) {
         if (oItem.type === 'cookie_http+html') {
-            Cookies.remove(itemKey)
+            if (Object.prototype.hasOwnProperty.call(oItem, 'htmlCookieRemovalPattern') && oItem['htmlCookieRemovalPattern'] !== '') {
+                var regex,
+                    currentCookies = Cookies.get(),
+                    matches
+                    
+                try {
+                    //Put in try/catch in case user set malformed regex
+                    regex = RegExp(oItem['htmlCookieRemovalPattern'])
+                } catch (e) {
+                    console.error('Malformed pattern for cookie deletion on trackingObjectItem "' + itemKey + '": ' + e.message)
+                    //Do not try the malformed pattern on the other cookie names
+                    return false
+                }
+                
+                for (var cookieName in currentCookies) {
+                    if (cookieName.match(regex) !== null) {
+                        Cookies.remove(cookieName)
+                    }
+                }
+            } else {
+                Cookies.remove(itemKey)
+            }
             return true
         }
         // unsupported type
@@ -274,6 +340,12 @@ var cookieman = (function () {
                 onAcceptAllClick
             )
         }
+        for (i = 0; i < acceptNoneButtons.length; i++) {
+            acceptNoneButtons[i].addEventListener(
+                'click',
+                onAcceptNoneClick
+            )
+        }
         for (i = 0; i < saveButtons.length; i++) {
             saveButtons[i].addEventListener(
                 'click',
@@ -318,6 +390,12 @@ var cookieman = (function () {
          * @returns {boolean}
          */
         hasConsented: hasConsented,
+        /**
+         * @api
+         * @param {string} trackingObjectKey
+         * @returns {boolean}
+         */
+        hasConsentedTrackingObject: hasConsentedTrackingObject,
         /**
          * @api
          */
