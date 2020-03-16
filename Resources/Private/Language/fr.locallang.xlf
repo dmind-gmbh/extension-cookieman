@@ -16,14 +16,8 @@
         <target state="final">Politique de confidentialité</target>
       </trans-unit>
       <trans-unit id="introText" resname="introText" approved="yes">
-        <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
-        <target state="final">Ce site web utilise des cookies. Ceux-ci ont deux fonctions : d'une part, ils fournissent des fonctionnalités de base pour le site web. D'un autre côté, ils nous permettent d'améliorer notre contenu en enregistrant et en analysant les données anonymes des utilisateurs. Vous pouvez à tout moment reconsidérer votre consentement à l'utilisation des cookies. Trouvez plus d'informations sur les cookies sur notre %1$s et sur notre %2$s.</target>
-        <alt-trans>
-          <target>Ce site web utilise des cookies. Ceux-ci ont deux fonctions : d'une part, ils fournissent des fonctionnalités de base pour le site web. D'un autre côté, ils nous permettent d'améliorer notre contenu en enregistrant et en analysant les données anonymes des utilisateurs. Vous pouvez à tout moment réconsiderer votre consentement à l'utilisation de ces cookies. Trouvez plus d'informations sur les cookies sur notre %1$s et sur notre %2$s.</target>
-        </alt-trans>
-        <alt-trans>
-          <target>Ce site Web utilise des cookies. Ceux-ci ont deux fonctions : d'une part, ils fournissent des fonctionnalités de base pour le site web. D'un autre côté, ils nous permettent d'améliorer notre contenu en enregistrant et en analysant les données anonymes des utilisateurs. Vous pouvez réitérer votre consentement à tout moment à l'utilisation de ces cookies. Trouvez plus d'informations sur les cookies sur notre %1$s et sur notre %2$s.</target>
-        </alt-trans>
+        <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
+        <target state="final">Ce site web utilise des cookies. Ceux-ci ont deux fonctions: d'une part, ils fournissent des fonctionnalités de base pour le site web. D'un autre côté, ils nous permettent d'améliorer notre contenu en enregistrant et en analysant les données anonymes des utilisateurs. Vous pouvez à tout moment reconsidérer votre consentement à l'utilisation des cookies. Trouvez plus d'informations sur les cookies sur notre %1$s et sur notre %2$s.</target>
       </trans-unit>
       <trans-unit id="settings" resname="settings" approved="yes">
         <source>Settings</source>
