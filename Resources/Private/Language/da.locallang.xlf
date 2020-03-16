@@ -16,7 +16,7 @@
         <target state="final">Impressum</target>
       </trans-unit>
       <trans-unit id="introText" resname="introText" approved="yes">
-        <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
+        <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
         <target state="final">Denne webside bruger cookies. De har to funktioner: For det første leverer de grundlæggende funktionalitet til websiden. For det andet giver de os mulighed for at forbedre vores indhold, målrettet dig, ved at gemme og analysere anonymiserede brugerdata. Du kan til enhver tid trække din tilladelse til cookies tilbage. Du finder mere information om cookies på vores %1$s og mere om os på %2$s.</target>
       </trans-unit>
       <trans-unit id="settings" resname="settings" approved="yes">
