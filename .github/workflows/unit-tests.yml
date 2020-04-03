@@ -25,8 +25,8 @@ jobs:
             # composer
             -   run: composer update --no-progress --no-suggest
             # Run tests
-            -   run: composer cookieman:test:cgl
-            -   run: composer cookieman:test:unit
+            -   run: composer test:cgl
+            -   run: composer test:unit
             # Push to coveralls
             -   run: |
                     COVERALLS_REPO_TOKEN=${{ secrets.COVERALLS_REPO_TOKEN }} \
@@ -47,4 +47,4 @@ jobs:
             # composer
             -   run: composer update --prefer-lowest --no-progress --no-suggest
             # Run tests
-            -   run: composer cookieman:test:unit
+            -   run: composer test:unit

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-composer cookieman:test:cgl
+composer test:cgl
 result=$?
 if [ $result -eq 127 ];then
     # this normally means that composer could not find the command
@@ -18,7 +18,7 @@ elif [ $result -ne 0 ];then
      echo "   [2] https://docs.typo3.org/typo3cms/ContributionWorkflowGuide/   "
      echo "--------------------------------------------------------------------"
      echo "   Your commit is being aborted ... Fix and try again!"
-     echo "   You can try automatic fixing with the composer script ‹composer cookieman:fix:cgl›"
+     echo "   You can try automatic fixing with the composer script ‹composer fix:cgl›"
      exit 1
 fi
 exit 0

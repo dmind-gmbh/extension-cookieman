@@ -5,5 +5,5 @@ if [ -e ~/.gitconfig ]; then
   echo copying your .gitconfig...
   cp -L ~/.gitconfig .ddev/homeadditions/
 else
-  echo ".gitconfig not found (you should not commit or use ‹composer cookieman:release:create› in the container before adding it)"
+  echo ".gitconfig not found (you should not commit or use ‹composer release:create› in the container before adding it)"
 fi

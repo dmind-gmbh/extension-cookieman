@@ -69,6 +69,16 @@
         "post-autoload-dump": [
             "[ -L .build/public/typo3conf/ext/cookieman ] || ln -snvf ../../../../. .build/public/typo3conf/ext/cookieman"
         ],
+        "build": [
+            "@build:prepare",
+            "@build:prod"
+        ],
+        "build:prepare": [
+            "yarn install --save-dev --cwd=Build/"
+        ],
+        "build:prod": [
+            "yarn --cwd=Build/ run prod"
+        ],
         "cookieman:bootstrap3-banner": [
             "typo3 extension:deactivate -n cookieman_test_bootstrap3_modal",
             "typo3 extension:deactivate -n cookieman_test_bootstrap4_modal",
@@ -87,67 +97,15 @@
             "typo3 extension:deactivate -n cookieman_test_customtheme",
             "typo3 extension:activate -n cookieman_test_bootstrap4_modal"
         ],
-        "cookieman:build": [
-            "@cookieman:build:prepare",
-            "@cookieman:build:prod"
-        ],
-        "cookieman:build:prepare": [
-            "yarn install --save-dev --cwd=Build/"
-        ],
-        "cookieman:build:prod": [
-            "yarn --cwd=Build/ run prod"
-        ],
         "cookieman:customtheme": [
             "typo3 extension:deactivate -n cookieman_test_bootstrap3_banner",
             "typo3 extension:deactivate -n cookieman_test_bootstrap3_modal",
             "typo3 extension:deactivate -n cookieman_test_bootstrap4_modal",
             "typo3 extension:activate -n cookieman_test_customtheme"
         ],
-        "cookieman:fix:cgl": [
+        "fix:cgl": [
             "php-cs-fixer --config=.php_cs.dist fix --using-cache=no",
             "composer normalize --no-update-lock"
-        ],
-        "cookieman:release:create": [
-            "extension-helper release:create",
-            "mv cookieman_*.zip .build || exit $?"
-        ],
-        "cookieman:release:prepare": [
-            "@cookieman:build",
-            "[ -z \"$(git status --porcelain)\" ] || ( echo Working copy not clean; exit 1 )",
-            "@cookieman:test"
-        ],
-        "cookieman:test": [
-            "@cookieman:test:cgl",
-            "@cookieman:test:unit",
-            "@cookieman:test:acceptance"
-        ],
-        "cookieman:test:acceptance": [
-            "@cookieman:test:acceptance:chrome"
-        ],
-        "cookieman:test:acceptance:browserstack_chrome": [
-            "codecept run --env browserstack_chrome -d -c Build/browserstack.codeception.yml -- acceptance"
-        ],
-        "cookieman:test:acceptance:browserstack_ie11": [
-            "codecept run --env browserstack_ie11 -d -c Build/browserstack.codeception.yml -- acceptance"
-        ],
-        "cookieman:test:acceptance:browserstack_iphone": [
-            "codecept run --env browserstack_iPhone8 --skip-group desktop -d -c Build/browserstack.codeception.yml -- acceptance"
-        ],
-        "cookieman:test:acceptance:browserstack_safari": [
-            "codecept run --env browserstack_safari -d -c Build/browserstack.codeception.yml -- acceptance"
-        ],
-        "cookieman:test:acceptance:chrome": [
-            "codecept run --env chrome -d -c Build/local.codeception.yml -- acceptance"
-        ],
-        "cookieman:test:acceptance:firefox": [
-            "codecept run --env firefox -d -c Build/local.codeception.yml -- acceptance"
-        ],
-        "cookieman:test:cgl": [
-            "php-cs-fixer --config=.php_cs.dist fix -v --using-cache=no --dry-run",
-            "composer normalize --no-update-lock --dry-run"
-        ],
-        "cookieman:test:unit": [
-            "phpunit -c Build/UnitTests.phpunit.xml"
         ],
         "install-extensions": [
             "typo3 extension:activate -n bootstrap_package",
@@ -158,6 +116,48 @@
         ],
         "install-typo3": [
             "typo3cms install:setup --admin-user-name=admin --admin-password=adminadmin --no-interaction"
+        ],
+        "release:create": [
+            "extension-helper release:create",
+            "mv cookieman_*.zip .build || exit $?"
+        ],
+        "release:prepare": [
+            "@build",
+            "[ -z \"$(git status --porcelain)\" ] || ( echo Working copy not clean; exit 1 )",
+            "@test"
+        ],
+        "test": [
+            "@test:cgl",
+            "@test:unit",
+            "@test:acceptance"
+        ],
+        "test:acceptance": [
+            "@test:acceptance:chrome"
+        ],
+        "test:acceptance:browserstack_chrome": [
+            "codecept run --env browserstack_chrome -d -c Build/browserstack.codeception.yml -- acceptance"
+        ],
+        "test:acceptance:browserstack_ie11": [
+            "codecept run --env browserstack_ie11 -d -c Build/browserstack.codeception.yml -- acceptance"
+        ],
+        "test:acceptance:browserstack_iphone": [
+            "codecept run --env browserstack_iPhone8 --skip-group desktop -d -c Build/browserstack.codeception.yml -- acceptance"
+        ],
+        "test:acceptance:browserstack_safari": [
+            "codecept run --env browserstack_safari -d -c Build/browserstack.codeception.yml -- acceptance"
+        ],
+        "test:acceptance:chrome": [
+            "codecept run --env chrome -d -c Build/local.codeception.yml -- acceptance"
+        ],
+        "test:acceptance:firefox": [
+            "codecept run --env firefox -d -c Build/local.codeception.yml -- acceptance"
+        ],
+        "test:cgl": [
+            "php-cs-fixer --config=.php_cs.dist fix -v --using-cache=no --dry-run",
+            "composer normalize --no-update-lock --dry-run"
+        ],
+        "test:unit": [
+            "phpunit -c Build/UnitTests.phpunit.xml"
         ],
         "typo3:flush": [
             "typo3cms cache:flush"
