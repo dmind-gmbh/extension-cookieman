@@ -11,6 +11,7 @@ declare(strict_types=1);
 namespace Dmind\Cookieman\DataProcessing;
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Extbase\Object\ObjectManager;
 use TYPO3\CMS\Extbase\Configuration\ConfigurationManager;
 use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
@@ -54,7 +55,8 @@ class TypoScriptSettingsProcessor implements DataProcessorInterface
      */
     protected function getConfigurationManager(): ConfigurationManagerInterface
     {
-        return GeneralUtility::makeInstance(ConfigurationManager::class);
+        $objectManager = GeneralUtility::makeInstance(ObjectManager::class);
+        return $objectManager->get(ConfigurationManager::class);
     }
 
     /**
