@@ -109,6 +109,16 @@
             "php-cs-fixer --config=.php_cs.dist fix --using-cache=no",
             "composer normalize --no-update-lock"
         ],
+        "install-extensions": [
+            "typo3 extensionmanager:extension:install bootstrap_package",
+            "typo3 extensionmanager:extension:install introduction",
+            "typo3 extensionmanager:extension:install cookieman",
+            "typo3 extensionmanager:extension:install cookieman_test",
+            "typo3 extensionmanager:extension:install cookieman_test_bootstrap4_modal"
+        ],
+        "install-typo3": [
+            "typo3cms install:setup --admin-user-name=admin --admin-password=adminadmin --no-interaction"
+        ],
         "release:create": [
             "extension-helper release:create",
             "mv cookieman_*.zip .build || exit $?"
@@ -150,16 +160,6 @@
         ],
         "test:unit": [
             "phpunit -c Build/UnitTests.phpunit.xml"
-        ],
-        "install-extensions": [
-            "typo3 extensionmanager:extension:install bootstrap_package",
-            "typo3 extensionmanager:extension:install introduction",
-            "typo3 extensionmanager:extension:install cookieman",
-            "typo3 extensionmanager:extension:install cookieman_test",
-            "typo3 extensionmanager:extension:install cookieman_test_bootstrap4_modal"
-        ],
-        "install-typo3": [
-            "typo3cms install:setup --admin-user-name=admin --admin-password=adminadmin --no-interaction"
         ],
         "typo3:flush": [
             "typo3cms cache:flush"
