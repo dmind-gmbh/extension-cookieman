@@ -65,7 +65,8 @@ return PhpCsFixer\Config::create()
     ])
     ->setFinder(
         PhpCsFixer\Finder::create()
-            ->exclude('.build')
-            ->exclude('Tests/Acceptance/Support/_generated')
+            ->ignoreVCS(true)
+            ->ignoreVCSIgnored(true)
+            ->notName(['ext_localconf.php', 'ext_tables.php', 'ext_emconf.php'])
             ->in(__DIR__)
     );
