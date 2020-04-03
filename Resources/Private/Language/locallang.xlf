@@ -112,8 +112,17 @@
             <trans-unit id="trackingobject.et_oip--localstorage.desc" resname="trackingobject.et_oip--localstorage.desc">
                 <source>OptIn-cookie for Signalize, see corresponding cookie.</source>
             </trans-unit>
+            <trans-unit id="type.pixel" resname="type.pixel">
+                <source>Pixel</source>
+            </trans-unit>
             <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html">
                 <source>HTML</source>
+            </trans-unit>
+            <trans-unit id="trackingobject._fbp.desc" resname="trackingobject._fbp.desc">
+                <source>Stores the unique visitor ID.</source>
+            </trans-unit>
+            <trans-unit id="trackingobject.facebookPixel.desc" resname="trackingobject.FacebookPixel.desc">
+                <source>If JavaScript is not enabled, this pixel initiates a connection to facebook.</source>
             </trans-unit>
             <trans-unit id="trackingobject.fe_typo_user.desc" resname="trackingobject.fe_typo_user.desc">
                 <source>Assigns your browser to a session on the server.</source>
@@ -180,6 +189,9 @@
             </trans-unit>
             <trans-unit id="browser.dnt-enabled" resname="browser.dnt-enabled">
                 <source><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></source>
+            </trans-unit>
+            <trans-unit id="duration.none" resname="duration.empty">
+                <source>none</source>
             </trans-unit>
             <trans-unit id="duration.minute" resname="duration.minute">
                 <source>minute</source>
