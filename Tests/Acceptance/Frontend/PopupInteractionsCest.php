@@ -76,6 +76,8 @@ class PopupInteractionsCest
     const GROUP_KEY_TESTGROUP = 'testgroup';
     const TRACKINGOBJECT_IN_TESTGROUP_WITH_2SCRIPTS = 'Crowdin';
 
+    const WAITFOR_TIMEOUT = 5;
+
     /**
      * @param AcceptanceTester $I
      * @throws \Exception
@@ -83,7 +85,7 @@ class PopupInteractionsCest
     public function doesNotBreakBootstrapPackage(AcceptanceTester $I)
     {
         $I->amOnPage(self::PATH_ROOT);
-        $I->waitForElementVisible(self::SELECTOR_MODAL);
+        $I->waitForElementVisible(self::SELECTOR_MODAL, self::WAITFOR_TIMEOUT);
         $I->executeJS(self::JS_HIDE_COOKIEMAN);
         $I->waitForElementNotVisible(self::SELECTOR_MODAL);
         if ($I->tryToMoveMouseOver(self::BS_PACKAGE_MENUITEM_SELECTOR)) { // hover over menu
@@ -101,7 +103,7 @@ class PopupInteractionsCest
     public function save(AcceptanceTester $I)
     {
         $I->amOnPage(self::PATH_ROOT);
-        $I->waitForElementVisible(Locator::contains('*', self::MODAL_TITLE_EN));
+        $I->waitForElementVisible(Locator::contains('*', self::MODAL_TITLE_EN), self::WAITFOR_TIMEOUT);
         $I->click(self::SELECTOR_BUTTON_SAVE_NOT_SAVEALL);
         $I->waitForElementNotVisible(self::SELECTOR_MODAL);
         $I->seeCookie(self::COOKIENAME);
@@ -118,7 +120,7 @@ class PopupInteractionsCest
     public function saveAll(AcceptanceTester $I)
     {
         $I->amOnPage(self::PATH_2NDPAGE);
-        $I->waitForElementVisible(Locator::contains('*', self::MODAL_TEXT_EN));
+        $I->waitForElementVisible(Locator::contains('*', self::MODAL_TEXT_EN), self::WAITFOR_TIMEOUT);
         $I->tryToClick(self::SETTINGS_LINK_TEXT); // customtheme doesn't have an accordion
         $I->click(self::SELECTOR_BUTTON_SAVEALL);
         $I->waitForElementNotVisible(self::SELECTOR_MODAL);
@@ -148,11 +150,11 @@ class PopupInteractionsCest
     {
         $I->amOnPage(self::PATH_4THPAGE);
         $I->resizeWindow(480, 800);
-        $I->waitForElementVisible(self::SELECTOR_MODAL);
+        $I->waitForElementVisible(self::SELECTOR_MODAL, self::WAITFOR_TIMEOUT);
         $I->tryToClick(self::SETTINGS_LINK_TEXT);
-        $I->waitForElementVisible(Locator::contains('*', self::GROUP_TITLE_2ND));
+        $I->waitForElementVisible(Locator::contains('*', self::GROUP_TITLE_2ND), self::WAITFOR_TIMEOUT);
         $I->tryToClick(self::GROUP_TITLE_2ND);
-        $I->waitForElementVisible(Locator::contains('*', self::COOKIE_TITLE_IN_2ND_GROUP)); // a single row in the table
+        $I->waitForElementVisible(Locator::contains('*', self::COOKIE_TITLE_IN_2ND_GROUP), self::WAITFOR_TIMEOUT); // a single row in the table
         if (!$I->tryToCheckOption('[name=' . self::GROUP_KEY_2ND . ']')) { // theme: *-modal
             $I->executeJS('$("[name=' . self::GROUP_KEY_2ND . ']").click()'); // theme: bootstrap3-banner
         }
@@ -193,9 +195,9 @@ class PopupInteractionsCest
         $I->wait(0.5);
         $I->dontSeeElement(self::SELECTOR_MODAL);
         $I->executeJS(self::JS_SHOW_COOKIEMAN);
-        $I->waitForElementVisible(self::SELECTOR_MODAL);
+        $I->waitForElementVisible(self::SELECTOR_MODAL, self::WAITFOR_TIMEOUT);
         $I->tryToClick(self::SETTINGS_LINK_TEXT);
-        $I->waitForElementVisible(Locator::contains('*', self::GROUP_TITLE_2ND));
+        $I->waitForElementVisible(Locator::contains('*', self::GROUP_TITLE_2ND), self::WAITFOR_TIMEOUT);
         $I->tryToClick(self::GROUP_TITLE_2ND);
         $I->wait(0.5);
         $I->seeCheckboxIsChecked('[name=' . self::GROUP_KEY_2ND . ']');
