@@ -33,7 +33,7 @@ jobs:
             # Setup tests
             -   run: ddev composer cookieman:${{ matrix.theme }}
             # Run tests
-            -   run: ddev composer cookieman:test:acceptance
+            -   run: ddev composer test:acceptance
             # Save acceptance reports
             -   uses: actions/upload-artifact@master
                 with:
