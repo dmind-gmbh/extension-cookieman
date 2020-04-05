@@ -55,10 +55,12 @@ It provides a stable API to read out consents with JavaScript. From version 2.3.
 
 
 
-**For Contributors**
+**Contributing To This Manual**
 
    You are welcome to help improve this guide. Just click on "Edit me on GitHub"
    on the top right to submit your change request.
+
+   For contributing code, see the section :ref:`contributors`.
 
 
 **Sitemap:**
@@ -76,6 +78,7 @@ It provides a stable API to read out consents with JavaScript. From version 2.3.
    Configuration/Index
    Translation/Index
    Developer/Index
+   Contributors/Index
    Links/Index
    Sitemap
 
