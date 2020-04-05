@@ -69,31 +69,31 @@ We usually release for all supported TYPO3 APIs at the same time and use consecu
 Run locally
 ~~~~~~~~~~
 
-`ddev start && ddev launch` will install a TYPO3 with example content and `cookieman`.
+:command:`ddev start && ddev launch` will install a TYPO3 with example content and cookieman.
 This installs helper extensions that automatically enable a certain theme and some TypoScript setup to facilitate
 development.
 The admin user is "admin", password "adminadmin".
 
-The ddev custom command `ddev install-git-hooks` installs CGL checkers as pre-commit hooks (only tested on Linux
+The ddev custom command :command:`ddev install-git-hooks` installs CGL checkers as pre-commit hooks (only tested on Linux
 so far - the script runs under the container environment so good chances that this would work for other OSs as
 well).
 
-To throw away the database and restart cleanly, run `ddev rm -ORU && git clean -fdX -e '!.idea' && ddev start`
+To throw away the database and restart cleanly, run :command:`ddev rm -ORU && git clean -fdX -e '!.idea' && ddev start`
 
 Composer scripts
 ~~~~~~~~~~
 
 Have a look at the `composer.json`'s `script` section. This is the main entry point for any commands needed
-during development. Use `ddev composer` from outside the container or just `composer` from inside.
+during development. Use :command:`ddev composer` from outside the container or just :command:`composer` from inside.
 
-- `ddev composer cookieman:...` enables an official cookieman theme. The "customtheme" shall resemble an integrator
+- :command:`ddev composer cookieman:...` enables an official cookieman theme. The "customtheme" shall resemble an integrator
   following our documentation.
-- `ddev composer cookieman:build` generates minified JS/CSS.
-- `ddev composer cookieman:test` runs all important tests. You do not strictly have to run tests before opening a
+- :command:`ddev composer cookieman:build` generates minified JS/CSS.
+- :command:`ddev composer cookieman:test` runs all important tests. You do not strictly have to run tests before opening a
   pull request - they are also run post-commit on
-  `Github actions <https://github.com/dmind-gmbh/extension-cookieman/actions>`.
-- `ddev composer fix:xgl` tries to fix CGL problems.
-- `ddev composer build:docs` [+ any parameters, defaults to "makehtml"] builds documentation using the official
-  `TYPO3 docs team docker image <https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/RenderingDocs/Quickstart.html>`
-  (experimental feature, feedback is welcome). Unfortunately, the parameter `--help` is masked by composer.
-  `composer build:docs -- --help` should work, but it doesn't.
+  `Github actions <https://github.com/dmind-gmbh/extension-cookieman/actions>`__.
+- :command:`ddev composer fix:xgl` tries to fix CGL problems.
+- :command:`ddev composer build:docs` [+ any parameters, defaults to "makehtml"] builds documentation using the official
+  `TYPO3 docs team docker image <https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/RenderingDocs/Quickstart.html>`__
+  (experimental feature, feedback is welcome). Unfortunately, the parameter :command:`--help` is masked by composer.
+  :command:`composer build:docs -- --help` should work, but it doesn't.
