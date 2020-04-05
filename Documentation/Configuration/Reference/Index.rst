@@ -440,6 +440,8 @@ trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›
 
 :aspect:`Description`
    A single "tracking item" (e.g. the name of a cookie).
+   A cookie that matches this name will be removed when consent for the group in which this tracking object is included
+   is revoked. (see also :ref:`_trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.htmlCookieRemovalPattern`)
 
 
 .. _trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.duration:
@@ -521,3 +523,21 @@ trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.provider
    The provider of the cookie or tracking object.
 
 
+.. _trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.htmlCookieRemovalPattern:
+
+trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.htmlCookieRemovalPattern
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+:aspect:`Property`
+   trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.htmlCookieRemovalPattern
+
+:aspect:`Data type`
+   :ref:`data-type-string`
+
+:aspect:`Example`
+   ^_gat(?:_UA\-\d+\-\d+)?$
+
+:aspect:`Description`
+   You can (optionally) set a regex pattern for cookie names here. It will be used during cookie removal.
+   If would remove all matched cookies when consent for the group in which this tracking object is included is revoked.
+   If this is empty, the tracking object key is used for deletion (see :ref:`_trackingObjects.‹tracking-object-key›`).
