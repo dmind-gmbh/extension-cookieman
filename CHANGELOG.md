@@ -1,3 +1,35 @@
+# 2.4.3
+
+## MISC
+- add the "composer build:docs" command 45207dd
+- Add documentation for contributing to cookieman be149bf
+- add htmlCookieRemovalPattern documentation Fixes #90 89d8be4
+- New Crowdin translations (#116) 8f33977
+- re-adjust CI (acceptance was not run with normal pulls) dc4be9c
+- fix the ConfigurationManager call 7046e99
+- fix CGL 87a2111
+- add strict_types CGL 8c09006
+- fix docs 24dd96d
+- composer normalize a557896
+- simplify composer command namespaces ad3a175
+- increase CodeCeption waitFor* timeout f132c59
+- add facebook Pixel example configuration c3b0bf2
+- use example TypoScript setup for testing 235ee5a
+- Add PHP 7.1 and 7.4 to unit tests e9b6125
+- New Crowdin translations (#114) fb9ae84
+- New Crowdin translations (#112) 5b4bfa0
+- update description 78e6583
+- fix typo in locallang.xlf. Fixes #109 41e9e37
+- upgrade yarn-lock e64a83f
+- Bump acorn from 6.4.0 to 6.4.1 in /Build (#110) 73bb204
+- New Crowdin translations (#105) c1bae8f
+- update ddev config cf2f493
+- New Crowdin translations (#102) 6776063
+- New Crowdin translations (#98) 4a085c3
+- re-enable unconditional Crowdin language export (fixes missing Dutch language) 87b5319
+- New Crowdin translations (#94) aa19563
+- Codeception/Chrome/WebDriver (one of those?) is not setting cookies correctly. This implements a JS-function to take care of that. f57091a
+
 # 2.4.1
 
 ## MISC
@@ -45,10 +77,6 @@
 - help scrutinizer 7b6e63c
 - New translations locallang.xlf (French) bdabece
 - give credit to an awesome person 023d9a4
-
-# 2.3.7
-
-## MISC
 - set the docs branch 64f307f
 - document the differences among the example themes 808b222
 - fix typo d2771e6
@@ -121,19 +149,8 @@
 - New translations locallang.xlf (Afrikaans) 28af6ab
 - add Google Tag Manager cookie _dc_gtm description a409ec5
 - normalize composer.json a280a1c
-- New Crowdin translations (#51) 8e0a538
 - New translations locallang.xlf (German) cc58011
 - New translations locallang.xlf (Danish) 1a0eceb
-- maybe again improve links display 0cc211c
-- maybe improve links display f00d3e7
-- reduce README.md e2a5bd8
-- fix ext_emconf category 20a344e
-- gte more debugging from selenium drivers 6b39744
-- use browserstack for iPhone and Safari d0495a9
-- use browserstack for iPhone and Safari c268821
-- make TYPO3v8 bootstrapping idempotent 805c47d
-- test sanitizedSettings() c5c3f9b
-- remove release:prepare from mandatory steps for release:create 61b9d7a
 - New translations locallang.xlf (German) 13dc0d8
 - New translations locallang.xlf (Vietnamese) bbc6760
 - New translations locallang.xlf (Catalan) d969b58
@@ -167,6 +184,21 @@
 - manual 3-way merge to align translations 668982b
 - New translations locallang.xlf (French) dbd019d
 - New translations locallang.xlf (French) b676abb
+
+# 2.3.7
+
+## MISC
+- New Crowdin translations (#51) 8e0a538
+- maybe again improve links display 0cc211c
+- maybe improve links display f00d3e7
+- reduce README.md e2a5bd8
+- fix ext_emconf category 20a344e
+- gte more debugging from selenium drivers 6b39744
+- use browserstack for iPhone and Safari d0495a9
+- use browserstack for iPhone and Safari c268821
+- make TYPO3v8 bootstrapping idempotent 805c47d
+- test sanitizedSettings() c5c3f9b
+- remove release:prepare from mandatory steps for release:create 61b9d7a
 
 # 2.3.4
 
