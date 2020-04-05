@@ -91,7 +91,7 @@ cookieman.hasConsentedTrackingObject(trackingObjectKey)
    boolean
 
 :aspect:`Description`
-   Returns `true` if the user has consented to all groups (A group is any name of a checkbox in the popup, e.g. 
+   Returns `true` if the user has consented to all groups (A group is any name of a checkbox in the popup, e.g.
    'marketing') that contain the given trackingObject, else false.
 
    `trackingObjectKey` is the trackingObjects.‹tracking object key› from TypoScript, e.g. 'Matomo'.
@@ -132,25 +132,3 @@ cookieman.onScriptLoaded(String trackingObjectKey, int scriptId, function callba
 
    Cookieman also includes the (1kB) cookie library `JavaScript Cookie <https://github.com/js-cookie/js-cookie>`__
    that also exposes its API and makes it easier to work with cookies.
-
-
-.. _development:
-
-Development
-===========
-
-Choose your branch:
-
-* 8lts (TYPO3 8.7)
-* 9lts (TYPO3 9.5)
-* master (TYPO3 10.x).
-
-To try it: just run `ddev start` which will install a TYPO3 with example content and `cookieman`.
-This installs helper extensions that automatically enable a certain theme and some TypoScript setup to facilitate development.
-The admin user is "admin", password "adminadmin".
-
-After switching branches, you might need a `git clean -fdX -e '!.idea'`.
-
-To throw away the database and restart cleanly, run `ddev rm -ORU && git clean -fdX -e '!.idea' && ddev start`
-
-`ddev install-git-hooks` will install the CGL tools as a pre-commit hook.
