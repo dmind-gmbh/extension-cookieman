@@ -93,4 +93,7 @@ during development. Use `ddev composer` from outside the container or just `comp
   pull request - they are also run post-commit on
   `Github actions <https://github.com/dmind-gmbh/extension-cookieman/actions>`.
 - `ddev composer fix:xgl` tries to fix CGL problems.
-- `ddev composer build:docs` builds documentation (experimental feature)
+- `ddev composer build:docs` [+ any parameters, defaults to "makehtml"] builds documentation using the official
+  `TYPO3 docs team docker image <https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/RenderingDocs/Quickstart.html>`
+  (experimental feature, feedback is welcome). Unfortunately, the parameter `--help` is masked by composer.
+  `composer build:docs -- --help` should work, but it doesn't.

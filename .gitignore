@@ -15,6 +15,8 @@
 /Build/coveralls-upload.json
 /Build/AcceptanceReports
 /Tests/Acceptance/Support/_generated/
+/temp-*/
+/Documentation-GENERATED-temp/
 
 # CGL Fixer
 /.php_cs.cache

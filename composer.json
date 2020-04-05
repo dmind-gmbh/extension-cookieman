@@ -73,6 +73,9 @@
             "@build:prepare",
             "@build:prod"
         ],
+        "build:docs": [
+            "bash -c 'echo \"${@:-makehtml}\" | netcat docs 7000' --"
+        ],
         "build:prepare": [
             "yarn install --save-dev --cwd=Build/"
         ],
