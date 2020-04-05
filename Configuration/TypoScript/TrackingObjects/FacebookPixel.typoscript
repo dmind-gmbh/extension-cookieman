@@ -1,0 +1,47 @@
+# https://de-de.facebook.com/business/help/952192354843755?id=1205376682832142
+plugin.tx_cookieman.settings.trackingObjects {
+    FacebookPixel {
+        # inline scripts would break Content-Security-Policy: script-src
+        # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src
+        inject (
+            <script data-what="FacebookPixel" src="/typo3conf/ext/cookieman/Resources/Public/Js/example-inject.js"></script>
+        )
+        # example:
+#        inject (
+#<script>
+#!function(f,b,e,v,n,t,s)
+#{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+#n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+#if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+#n.queue=[];t=b.createElement(e);t.async=!0;
+#t.src=v;s=b.getElementsByTagName(e)[0];
+#s.parentNode.insertBefore(t,s)}(window,document,'script',
+#'https://connect.facebook.net/en_US/fbevents.js');
+#fbq('init', 'YOUR_FACEBOOK_CODE');
+#fbq('track', 'PageView');
+#</script>
+# This actually does not make a lot of sense: cookieman needs JavaScript - if you want non-JavaScript tracking,
+# you should include this somewhere else:
+#<noscript>
+#<img height="1" width="1" src="https://www.facebook.com/tr?id=YOUR_FACEBOOK_CODE&ev=PageView&noscript=1"/>
+#</noscript>
+#        )
+        show {
+            # this might be incomplete. I did not find an official list of cookies...
+            # Please give us a notice https://github.com/dmind-gmbh/extension-cookieman/issues if you have better information!
+            _fbp {
+                duration = 28
+                durationUnit = days
+                type = cookie_http+html
+                provider = facebook
+            }
+
+            facebookPixel {
+                duration =
+                durationUnit = none
+                type = pixel
+                provider = facebook
+            }
+        }
+    }
+}
