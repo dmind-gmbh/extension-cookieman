@@ -1,3 +1,33 @@
+# 2.4.5
+
+## MISC
+- add the "composer build:docs" command 03cfd86
+- Add documentation for contributing to cookieman d5f56e1
+- add htmlCookieRemovalPattern documentation Fixes #90 9d573d6
+- New Crowdin translations (#120) 985a3c1
+- re-adjust CI (acceptance was not run with normal pulls) 2442522
+- fix the ConfigurationManager call cf2d328
+- fix CGL 27add8e
+- add strict_types CGL c73b110
+- add docs rendering to Github actions f3ab254
+- simplify composer command namespaces ab43328
+- increase CodeCeption waitFor* timeout 8e8c25d
+- add facebook Pixel example configuration 36d8aea
+- use example TypoScript setup for testing c2e3769
+- Add PHP 7.4 to unit tests 71d85a9
+- New Crowdin translations (#111) 30e715a
+- update description 9b4644a
+- fix typo in locallang.xlf. Fixes #109 136e463
+- upgrade yarn-lock 0236445
+- Bump acorn from 6.4.0 to 6.4.1 in /Build (#110) 01185d9
+- New translations locallang.xlf (Danish) (#104) f29945a
+- update ddev config f90ea9d
+- New Crowdin translations (#101) f37e112
+- New Crowdin translations (#97) b237b5a
+- re-enable unconditional Crowdin language export (fixes missing Dutch language) 44ecb21
+- New Crowdin translations (#93) 37b4cde
+- Codeception/Chrome/WebDriver (one of those?) is not setting cookies correctly. This implements a JS-function to take care of that. 3885ac3
+
 # 2.4.0
 
 ## MISC
@@ -52,10 +82,6 @@
 - reduce crowdin export languages bcd078a
 - set crowdin commit message 98172f4
 - fixed source string f3943f0
-
-# 2.3.6
-
-## MISC
 - retrigger docs rendering bf4b27e
 - retrigger docs rendering 40009f9
 - retrigger docs rendering d5e1385
@@ -130,6 +156,10 @@
 - New translations locallang.xlf (Japanese) bbfddba
 - New translations locallang.xlf (Afrikaans) e9b3e71
 - add Google Tag Manager cookie _dc_gtm description d1c3e40
+
+# 2.3.6
+
+## MISC
 - New Crowdin translations (#50) c78cb49
 - maybe again improve links display 27b0cd8
 - maybe improve links display 2f2c377
