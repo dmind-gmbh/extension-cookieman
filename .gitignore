@@ -17,6 +17,7 @@
 /Tests/Acceptance/Support/_generated/
 /temp-*/
 /Documentation-GENERATED-temp/
+/Resources/Public/Js/mix-manifest.json
 
 # CGL Fixer
 /.php_cs.cache
