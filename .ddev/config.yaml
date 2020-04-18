@@ -14,7 +14,7 @@ nfs_mount_enabled: false
 provider: default
 hooks:
   post-start:
-  - composer: update --no-progress
+  - composer: update --with-dependencies --no-progress
   - exec: rm composer.lock
   - exec: |
       if [[ $(mysql -e "SHOW TABLES" | wc -l) -eq 0 ]]; then
