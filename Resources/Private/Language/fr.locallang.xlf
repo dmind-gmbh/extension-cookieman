@@ -38,9 +38,6 @@
       <trans-unit id="group.mandatory" resname="group.mandatory" approved="yes">
         <source>Mandatory</source>
         <target state="final">Nécessaires</target>
-        <alt-trans>
-          <target>Obligatoire</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc" approved="yes">
         <source>These cookies are needed for a smooth operation of our website.</source>
@@ -57,9 +54,6 @@
       <trans-unit id="tableheader.duration" resname="tableheader.duration" approved="yes">
         <source>Lifetime</source>
         <target state="final">Durée de vie</target>
-        <alt-trans>
-          <target>Expiration</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="tableheader.type" resname="tableheader.type" approved="yes">
         <source>Type</source>
