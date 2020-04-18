@@ -26,6 +26,7 @@
         "dmind/cookieman-test-bootstrap4-modal": "@dev",
         "dmind/cookieman-test-customtheme": "@dev",
         "friendsofphp/php-cs-fixer": "^2.14",
+        "helhum/typo3-console": "^5.8",
         "localheinz/composer-normalize": "^1.3",
         "php-coveralls/php-coveralls": "^2.1",
         "roave/security-advisories": "dev-master",
