@@ -70,9 +70,6 @@
       <trans-unit id="trackingobject.cntcookie.desc" resname="trackingobject.cntcookie.desc" approved="yes">
         <source>Exclusion from counting (as a list of Account IDs)</source>
         <target state="final">Udelad fra optælling (som en liste af konto IDer)</target>
-        <alt-trans>
-          <target>Udelad fra optælling (som en liste af konto ID'er)</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="trackingobject.GS3_v.desc" resname="trackingobject.GS3_v.desc" approved="yes">
         <source>Set by Optimizer webservice. Contains the same Visitor ID as BT_pdc.</source>
@@ -97,9 +94,6 @@
       <trans-unit id="trackingobject.isSdEnabled.desc" resname="trackingobject.isSdEnabled.desc" approved="yes">
         <source>Detection whether the scrolling depth is measured for the visitor.</source>
         <target state="final">Afgør om scrollings-dybde måles for brugeren.</target>
-        <alt-trans>
-          <target>Afgør om scrolling-dybde måles for brugeren.</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="trackingobject.BT_ctst.desc" resname="trackingobject.BT_ctst.desc" approved="yes">
         <source>Is only used to detect whether cookies are activated in the visitor's browser or not.</source>
@@ -128,9 +122,6 @@
       <trans-unit id="trackingobject.targetingAPISession.desc" resname="trackingobject.targetingAPISession.desc" approved="yes">
         <source>Data collected in the current session for the optimiser</source>
         <target state="final">Data indsamlet i den aktuelle session til brug for optimizer</target>
-        <alt-trans>
-          <target>Data indsamlet i den aktuelle session til brug for omtimizer</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="trackingobject._et_coid--localstorage" resname="trackingobject._et_coid--localstorage" approved="yes">
         <source>_et_coid</source>
@@ -147,9 +138,6 @@
       <trans-unit id="trackingobject.et_oi_v2--localstorage.desc" resname="trackingobject.et_oi_v2--localstorage.desc" approved="yes">
         <source>OptIn-cookie, see corresponding cookie.</source>
         <target state="final">Tilvalgs-cookie, se korresponderende cookie.</target>
-        <alt-trans>
-          <target>Tilvalg-cookie, se korresponderende cookie.</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip--localstorage" resname="trackingobject.et_oip--localstorage" approved="yes">
         <source>et_oip</source>
@@ -158,9 +146,6 @@
       <trans-unit id="trackingobject.et_oip--localstorage.desc" resname="trackingobject.et_oip--localstorage.desc" approved="yes">
         <source>OptIn-cookie for Signalize, see corresponding cookie.</source>
         <target state="final">Tilvalgs-cookie for Signalize, se korresponderende cookie.</target>
-        <alt-trans>
-          <target>Tilvalgs-cookie for Signalize, se korrepsponderende cookie.</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="type.pixel" resname="type.pixel">
         <source>Pixel</source>
