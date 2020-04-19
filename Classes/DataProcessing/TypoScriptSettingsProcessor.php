@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 /*
@@ -10,15 +11,23 @@ declare(strict_types=1);
 
 namespace Dmind\Cookieman\DataProcessing;
 
-use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Configuration\ConfigurationManager;
 use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
-use TYPO3\CMS\Extbase\Object\ObjectManager;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
 
 class TypoScriptSettingsProcessor implements DataProcessorInterface
 {
+    /**
+     * @var \TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface
+     */
+    protected $configurationManager;
+
+    public function __construct(ConfigurationManager $configurationManager)
+    {
+        $this->configurationManager = $configurationManager;
+    }
+
     /**
      * insert 'settings' key with plugin settings at rendering time
      *
@@ -35,10 +44,7 @@ class TypoScriptSettingsProcessor implements DataProcessorInterface
         array $processorConfiguration,
         array $processedData
     ): array {
-        // TODO: use DI for v10
-
-        $configurationManager = $this->getConfigurationManager();
-        $settings = $configurationManager->getConfiguration(
+        $settings = $this->configurationManager->getConfiguration(
             ConfigurationManagerInterface::CONFIGURATION_TYPE_SETTINGS,
             'cookieman'
         );
@@ -51,17 +57,7 @@ class TypoScriptSettingsProcessor implements DataProcessorInterface
     }
 
     /**
-     * @return ConfigurationManagerInterface
-     */
-    protected function getConfigurationManager(): ConfigurationManagerInterface
-    {
-        $objectManager = GeneralUtility::makeInstance(ObjectManager::class);
-        return $objectManager->get(ConfigurationManager::class);
-    }
-
-    /**
-     * @param array $settings
-     * @return array
+     * Prepare TypoScript for the frontend.
      */
     protected function sanitizeSettings(array $settings)
     {
