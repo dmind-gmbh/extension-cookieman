@@ -70,9 +70,6 @@
       <trans-unit id="trackingobject.cntcookie.desc" resname="trackingobject.cntcookie.desc" approved="yes">
         <source>Exclusion from counting (as a list of Account IDs)</source>
         <target state="final">Udelad fra optælling (som en liste af konto IDer)</target>
-        <alt-trans>
-          <target>Udelad fra optælling (som en liste af konto ID'er)</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="trackingobject.GS3_v.desc" resname="trackingobject.GS3_v.desc" approved="yes">
         <source>Set by Optimizer webservice. Contains the same Visitor ID as BT_pdc.</source>
@@ -97,9 +94,6 @@
       <trans-unit id="trackingobject.isSdEnabled.desc" resname="trackingobject.isSdEnabled.desc" approved="yes">
         <source>Detection whether the scrolling depth is measured for the visitor.</source>
         <target state="final">Afgør om scrollings-dybde måles for brugeren.</target>
-        <alt-trans>
-          <target>Afgør om scrolling-dybde måles for brugeren.</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="trackingobject.BT_ctst.desc" resname="trackingobject.BT_ctst.desc" approved="yes">
         <source>Is only used to detect whether cookies are activated in the visitor's browser or not.</source>
@@ -128,9 +122,6 @@
       <trans-unit id="trackingobject.targetingAPISession.desc" resname="trackingobject.targetingAPISession.desc" approved="yes">
         <source>Data collected in the current session for the optimiser</source>
         <target state="final">Data indsamlet i den aktuelle session til brug for optimizer</target>
-        <alt-trans>
-          <target>Data indsamlet i den aktuelle session til brug for omtimizer</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="trackingobject._et_coid--localstorage" resname="trackingobject._et_coid--localstorage" approved="yes">
         <source>_et_coid</source>
@@ -147,9 +138,6 @@
       <trans-unit id="trackingobject.et_oi_v2--localstorage.desc" resname="trackingobject.et_oi_v2--localstorage.desc" approved="yes">
         <source>OptIn-cookie, see corresponding cookie.</source>
         <target state="final">Tilvalgs-cookie, se korresponderende cookie.</target>
-        <alt-trans>
-          <target>Tilvalg-cookie, se korresponderende cookie.</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip--localstorage" resname="trackingobject.et_oip--localstorage" approved="yes">
         <source>et_oip</source>
@@ -158,9 +146,10 @@
       <trans-unit id="trackingobject.et_oip--localstorage.desc" resname="trackingobject.et_oip--localstorage.desc" approved="yes">
         <source>OptIn-cookie for Signalize, see corresponding cookie.</source>
         <target state="final">Tilvalgs-cookie for Signalize, se korresponderende cookie.</target>
-        <alt-trans>
-          <target>Tilvalgs-cookie for Signalize, se korrepsponderende cookie.</target>
-        </alt-trans>
+      </trans-unit>
+      <trans-unit id="type.pixel" resname="type.pixel" approved="yes">
+        <source>Pixel</source>
+        <target state="final">Pixel</target>
       </trans-unit>
       <trans-unit id="type.pixel" resname="type.pixel">
         <source>Pixel</source>
@@ -170,13 +159,13 @@
         <source>HTML</source>
         <target state="final">HTML</target>
       </trans-unit>
-      <trans-unit id="trackingobject._fbp.desc" resname="trackingobject._fbp.desc">
+      <trans-unit id="trackingobject._fbp.desc" resname="trackingobject._fbp.desc" approved="yes">
         <source>Stores the unique visitor ID.</source>
-        <target state="needs-translation">Stores the unique visitor ID.</target>
+        <target state="final">Gemmer det unikke bruger ID.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.facebookPixel.desc" resname="trackingobject.FacebookPixel.desc">
+      <trans-unit id="trackingobject.facebookPixel.desc" resname="trackingobject.FacebookPixel.desc" approved="yes">
         <source>If JavaScript is not enabled, this pixel initiates a connection to facebook.</source>
-        <target state="needs-translation">If JavaScript is not enabled, this pixel initiates a connection to facebook.</target>
+        <target state="final">Hvis JavaScript ikke er aktiveret, initierer dette pixel en forbindelse til Facebook.</target>
       </trans-unit>
       <trans-unit id="trackingobject.fe_typo_user.desc" resname="trackingobject.fe_typo_user.desc" approved="yes">
         <source>Assigns your browser to a session on the server.</source>
@@ -266,9 +255,9 @@
         <source><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></source>
         <target state="final"><![CDATA[Du har allerede afmeldt dig bruger-tracking via din <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browsers Do-not-track funktion</a>. Vi accepterer dette. Du kan ændre det via din browsers indstillinger.]]></target>
       </trans-unit>
-      <trans-unit id="duration.none" resname="duration.empty">
+      <trans-unit id="duration.none" resname="duration.empty" approved="yes">
         <source>none</source>
-        <target state="needs-translation">none</target>
+        <target state="final">ingen</target>
       </trans-unit>
       <trans-unit id="duration.minute" resname="duration.minute" approved="yes">
         <source>minute</source>

@@ -10,9 +10,6 @@
       <trans-unit id="dataProtectionDeclaration" resname="dataProtectionDeclaration" approved="yes">
         <source>Data Protection Declaration</source>
         <target state="final">Cookieverklaring</target>
-        <alt-trans>
-          <target>Privacy- en gegevensbescherming</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="imprint" resname="imprint" approved="yes">
         <source>Imprint</source>
@@ -25,9 +22,6 @@
       <trans-unit id="settings" resname="settings" approved="yes">
         <source>Settings</source>
         <target state="final">Voorkeuren beheren</target>
-        <alt-trans>
-          <target>Voorkeuren</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="settingsText" resname="settingsText" approved="yes">
         <source>Click here for Cookie %1$s.</source>
@@ -252,9 +246,6 @@
       <trans-unit id="trackingobject.MUIDB.desc" resname="trackingobject.MUIDB.desc" approved="yes">
         <source>Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</source>
         <target state="final">Slaat anonieme gebruikersgegevens op van meerdere websites bezoeken over meerdere sites om advertentie-optimalisatie te testen.</target>
-        <alt-trans>
-          <target>Slaat anonieme gebruikersgegevens op van meerdere websites bezoeken over meerdere sites om advertentie-efficiëntie te testen.</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="browser.dnt-enabled" resname="browser.dnt-enabled" approved="yes">
         <source><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></source>
