@@ -57,9 +57,6 @@
       <trans-unit id="tableheader.duration" resname="tableheader.duration" approved="yes">
         <source>Lifetime</source>
         <target state="final">Durée de vie</target>
-        <alt-trans>
-          <target>Expiration</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="tableheader.type" resname="tableheader.type" approved="yes">
         <source>Type</source>
