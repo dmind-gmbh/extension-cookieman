@@ -26,9 +26,6 @@
       <trans-unit id="settingsText" resname="settingsText" approved="yes">
         <source>Click here for Cookie %1$s.</source>
         <target state="final">Hier gelangen Sie zu den Cookie-%1$s.</target>
-        <alt-trans>
-          <target>Hier gelangen Sie zu den Cookie %1$s.</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="accept" resname="accept" approved="yes">
         <source>Accept all cookies</source>
@@ -105,9 +102,6 @@
       <trans-unit id="trackingobject.BT_sdc.desc" resname="trackingobject.BT_sdc.desc" approved="yes">
         <source>Contains base64 encoded data of the current visitor session (referrer, number of pages, number of seconds since session started) used for personalization purposes.</source>
         <target state="final">Enthält Base64-codierte Daten der aktuellen Besuchersitzung (Referrer, Anzahl der Seiten, Anzahl der Sekunden seit Beginn der Sitzung), die zur Personalisierung verwendet werden.</target>
-        <alt-trans>
-          <target>Enthält Base64-codierte Daten der aktuellen Besuchersitzung (Referrer, Anzahl der Seiten, Anzahl der Sekunden seit Beginn der Sitzung), die für Personalisierungszwecke verwendet werden.</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="trackingobject.BT_pdc.desc" resname="trackingobject.BT_pdc.desc" approved="yes">
         <source>Contains base64-coded visitor history data (is customer, newsletter recipient etc.) for personalization.</source>
@@ -192,9 +186,6 @@
       <trans-unit id="group.marketing.desc" resname="group.marketing" approved="yes">
         <source>With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</source>
         <target state="final">Mit Hilfe dieser Cookies sind wir bemüht unser Angebot für Sie noch attraktiver zu gestalten. Mittels pseudonymisierter Daten von Websitenutzern kann der Nutzerfluss analysiert und beurteilt werden. Dies gibt uns die Möglichkeit Werbe- und Websiteinhalte zu optimieren.</target>
-        <alt-trans>
-          <target>Mithilfe dieser Cookies sind wir bemüht unser Angebot für Sie zu verbessern. Mittels pseudonymisierter Daten von Websitenutzern kann der Nutzerfluss analysiert und beurteilt werden. Dies gibt uns die Möglichkeit, Werbe- und Websiteinhalte zu optimieren.</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="trackingobject._pk_id.desc" resname="trackingobject._pk_id.desc" approved="yes">
         <source>Used to store a few details about the user such as the unique visitor ID.</source>
@@ -247,16 +238,10 @@
       <trans-unit id="trackingobject._gid.desc" resname="trackingobject._gid.desc" approved="yes">
         <source>Used to distinguish users.</source>
         <target state="final">Wird verwendet, um Benutzer zu unterscheiden.</target>
-        <alt-trans>
-          <target>Wird für die Nutzerunterscheidung genutzt.</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="trackingobject.MUID.desc" resname="trackingobject.MUID.desc" approved="yes">
         <source>Used as unique user identifier. The cookie allows user tracking across many Microsoft domains.</source>
         <target state="final">Wird als eindeutige Benutzer-ID verwendet. Der Cookie ermöglicht Benutzer-Tracking durch Synchronisieren der ID in vielen Microsoft-Domänen.</target>
-        <alt-trans>
-          <target>Wird als eindeutige Benutzer-ID verwendet. Der Cookie ermöglicht Benutzer-Tracking durch Synchronisieren der Id in vielen Microsoft-Domänen.</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="trackingobject.MUIDB.desc" resname="trackingobject.MUIDB.desc" approved="yes">
         <source>Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</source>
@@ -265,9 +250,6 @@
       <trans-unit id="browser.dnt-enabled" resname="browser.dnt-enabled" approved="yes">
         <source><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></source>
         <target state="final"><![CDATA[Sie haben bereits über die <a target="_blank" rel="noopener" href="https://de.wikipedia.org/wiki/Do_Not_Track_(Software)">Do-Not-Track-Funktion Ihres Browsers</a> der Erstellung von Nutzungsprofilen widersprochen. Dies akzeptieren wir. Sie können diese Funktion über die Einstellungen Ihres Browsers anpassen.]]></target>
-        <alt-trans>
-          <target><![CDATA[Sie haben über die <a target="_blank" rel="noopener" href="https://de.wikipedia.org/wiki/Do_Not_Track_(Software)">Do-not-track-Funktion Ihres Browsers</a> bereits der Erstellung von Nutzungsprofilen widersprochen. Das akzeptieren wir. Sie können diese Funktion über die Einstellungen Ihres Browsers beeinflussen.]]></target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="duration.none" resname="duration.empty" approved="yes">
         <source>none</source>
