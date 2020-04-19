@@ -138,9 +138,6 @@
       <trans-unit id="trackingobject.et_oi_v2--localstorage.desc" resname="trackingobject.et_oi_v2--localstorage.desc" approved="yes">
         <source>OptIn-cookie, see corresponding cookie.</source>
         <target state="final">Tilvalgs-cookie, se korresponderende cookie.</target>
-        <alt-trans>
-          <target>Tilvalg-cookie, se korresponderende cookie.</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip--localstorage" resname="trackingobject.et_oip--localstorage" approved="yes">
         <source>et_oip</source>
@@ -153,10 +150,6 @@
       <trans-unit id="type.pixel" resname="type.pixel" approved="yes">
         <source>Pixel</source>
         <target state="final">Pixel</target>
-      </trans-unit>
-      <trans-unit id="type.pixel" resname="type.pixel">
-        <source>Pixel</source>
-        <target state="needs-translation">Pixel</target>
       </trans-unit>
       <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html" approved="yes">
         <source>HTML</source>
