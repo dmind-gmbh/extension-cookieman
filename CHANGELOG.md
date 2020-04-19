@@ -1,3 +1,34 @@
+# 2.4.4
+
+## MISC
+- add the "composer build:docs" command 56e647e
+- Add documentation for contributing to cookieman befa82a
+- add htmlCookieRemovalPattern documentation Fixes #90 f3e93e1
+- New Crowdin translations (#117) 7c093e9
+- re-adjust CI (acceptance was not run with normal pulls) b82a5c1
+- fix the ConfigurationManager call cb43173
+- fix CGL cf3c5e7
+- add strict_types CGL f8df741
+- add docs rendering to Github actions 1f2eee3
+- simplify composer command namespaces fdc8f2c
+- increase CodeCeption waitFor* timeout 454e337
+- add facebook Pixel example configuration 36f2748
+- use example TypoScript setup for testing c7710c8
+- Add PHP 7.4 to unit tests 154c924
+- New Crowdin translations (#115) 341c4f9
+- New Crowdin translations (#113) 777f88a
+- update description fa08a7d
+- fix typo in locallang.xlf. Fixes #109 26b457e
+- upgrade yarn-lock 5c231fb
+- Bump acorn from 6.4.0 to 6.4.1 in /Build (#110) c95afaa
+- New Crowdin translations (#106) 2e5789f
+- update ddev config 77901ed
+- New Crowdin translations (#103) 5abdeba
+- New Crowdin translations (#99) 5d52411
+- re-enable unconditional Crowdin language export (fixes missing Dutch language) 8dd1488
+- New Crowdin translations (#95) e274ab7
+- Codeception/Chrome/WebDriver (one of those?) is not setting cookies correctly. This implements a JS-function to take care of that. 828a750
+
 # 2.4.2
 
 ## MISC
@@ -41,10 +72,6 @@
 - reduce crowdin export languages b050fdd
 - set crowdin commit message 460fabe
 - fixed source string c9bfac0
-
-# 2.3.8
-
-## MISC
 - give credit to an awesome person c19e6cb
 - help scrutinizer ffc65a7
 - set the docs branch c99d03a
@@ -118,16 +145,8 @@
 - New translations locallang.xlf (Japanese) e1ea0e0
 - New translations locallang.xlf (Afrikaans) 693e392
 - add Google Tag Manager cookie _dc_gtm description 49fb563
-- New Crowdin translations (#52) a44f284
 - New translations locallang.xlf (German) 227cf6a
 - New translations locallang.xlf (Danish) 64ce475
-- maybe again improve links display bd3ec9c
-- maybe improve links display 60b347d
-- reduce README.md 51fdead
-- fix ext_emconf category 433be02
-- get more debug form selenium drivers da18017
-- test sanitizedSettings() e5255ad
-- remove release:prepare from mandatory steps for release:create 69989b7
 - New translations locallang.xlf (German) 7922cba
 - New translations locallang.xlf (Vietnamese) dec76c9
 - New translations locallang.xlf (Japanese) d0afcb1
@@ -161,6 +180,18 @@
 - manual 3-way merge to align translations ffc2b8d
 - New translations locallang.xlf (French) 5500ab9
 - New translations locallang.xlf (French) b704e07
+
+# 2.3.8
+
+## MISC
+- New Crowdin translations (#52) a44f284
+- maybe again improve links display bd3ec9c
+- maybe improve links display 60b347d
+- reduce README.md 51fdead
+- fix ext_emconf category 433be02
+- get more debug form selenium drivers da18017
+- test sanitizedSettings() e5255ad
+- remove release:prepare from mandatory steps for release:create 69989b7
 
 # 2.3.5
 

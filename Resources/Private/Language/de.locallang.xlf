@@ -255,6 +255,10 @@
         <source>none</source>
         <target state="final">keine</target>
       </trans-unit>
+      <trans-unit id="duration.none" resname="duration.empty" approved="yes">
+        <source>none</source>
+        <target state="final">keine</target>
+      </trans-unit>
       <trans-unit id="duration.minute" resname="duration.minute" approved="yes">
         <source>minute</source>
         <target state="final">Minute</target>

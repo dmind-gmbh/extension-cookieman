@@ -1,8 +1,6 @@
 @import 'EXT:cookieman/Configuration/TypoScript/setup.typoscript'
 @import 'EXT:cookieman/Configuration/TypoScript/Example/setup.typoscript'
 
-temp.tx_cookieman.settings.groups.mandatory < plugin.tx_cookieman.settings.groups.mandatory
-
 # Test our JS against a CSP script-src policy that disallows inlining JS
 config.additionalHeaders.14543.header = Content-Security-Policy: script-src 'self' https://crowdin.com
 
@@ -43,22 +41,7 @@ plugin.tx_cookieman.settings {
         }
     }
 
-    # reset existing groups
-    groups >
     groups {
-        # copy of default group 'marketing'
-        mandatory < temp.tx_cookieman.settings.groups.mandatory
-
-        # my tracking objects
-        marketing {
-            trackingObjects {
-                0 = GoogleAnalytics
-            }
-
-            respectDnt = 1
-            showDntMessage = 1
-        }
-
         testgroup {
             trackingObjects {
                 0 = Crowdin

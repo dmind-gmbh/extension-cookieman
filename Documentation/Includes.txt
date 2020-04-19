@@ -22,3 +22,5 @@
 .. highlight:: php
 
 .. role:: aspect (emphasis)
+
+.. default-role:: code
