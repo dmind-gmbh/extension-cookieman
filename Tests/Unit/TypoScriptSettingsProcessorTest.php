@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 /*
@@ -11,7 +12,7 @@ declare(strict_types=1);
 namespace Dmind\Cookieman\Tests\Unit;
 
 use Dmind\Cookieman\DataProcessing\TypoScriptSettingsProcessor;
-use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
+use TYPO3\CMS\Extbase\Configuration\ConfigurationManager;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
 
@@ -39,16 +40,17 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
      */
     public function returnsSettings($pluginConfiguration, $returnedSettings)
     {
-        $configurationManager = $this->getMockBuilder(ConfigurationManagerInterface::class)->getMockForAbstractClass();
+        $configurationManager = $this->getMockBuilder(ConfigurationManager::class)
+            ->disableOriginalConstructor()
+            ->getMock();
         $configurationManager->expects(self::once())->method('getConfiguration')->willReturn(
             $pluginConfiguration
         );
 
         $subject = $this->getMockBuilder(TypoScriptSettingsProcessor::class)
+            ->setConstructorArgs([$configurationManager])
             ->setMethods(['getConfigurationManager']) // setMethods() for PHPUnit 6.5
-            ->setMockClassName('ConfigurationManagerInterface')
             ->getMock();
-        $subject->expects(self::once())->method('getConfigurationManager')->willReturn($configurationManager);
 
         $result = $subject->process(
             $this->contentObjectRenderer,

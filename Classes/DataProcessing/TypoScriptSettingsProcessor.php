@@ -19,7 +19,7 @@ use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
 class TypoScriptSettingsProcessor implements DataProcessorInterface
 {
     /**
-     * @var \TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface
+     * @var ConfigurationManagerInterface
      */
     protected $configurationManager;
 
