@@ -31,9 +31,9 @@
         <source>Accept all cookies</source>
         <target state="final">Acceptér alle cookies</target>
       </trans-unit>
-      <trans-unit id="deny" resname="deny">
+      <trans-unit id="deny" resname="deny" approved="yes">
         <source>Deny all cookies</source>
-        <target state="needs-translation">Deny all cookies</target>
+        <target state="final">Afvis alle cookies</target>
       </trans-unit>
       <trans-unit id="save" resname="save" approved="yes">
         <source>Save</source>
