@@ -85,6 +85,7 @@ class PopupInteractionsCest
     public function doesNotBreakBootstrapPackage(AcceptanceTester $I)
     {
         $I->amOnPage(self::PATH_ROOT);
+        $I->wait(3);
         $I->waitForElementVisible(self::SELECTOR_MODAL, self::WAITFOR_TIMEOUT);
         $I->executeJS(self::JS_HIDE_COOKIEMAN);
         $I->waitForElementNotVisible(self::SELECTOR_MODAL);
@@ -103,6 +104,7 @@ class PopupInteractionsCest
     public function save(AcceptanceTester $I)
     {
         $I->amOnPage(self::PATH_ROOT);
+        $I->wait(3);
         $I->waitForElementVisible(Locator::contains('*', self::MODAL_TITLE_EN), self::WAITFOR_TIMEOUT);
         $I->click(self::SELECTOR_BUTTON_SAVE_NOT_SAVEALL);
         $I->waitForElementNotVisible(self::SELECTOR_MODAL);
@@ -120,6 +122,7 @@ class PopupInteractionsCest
     public function saveAll(AcceptanceTester $I)
     {
         $I->amOnPage(self::PATH_2NDPAGE);
+        $I->wait(3);
         $I->waitForElementVisible(Locator::contains('*', self::MODAL_TEXT_EN), self::WAITFOR_TIMEOUT);
         $I->tryToClick(self::SETTINGS_LINK_TEXT); // customtheme doesn't have an accordion
         $I->click(self::SELECTOR_BUTTON_SAVEALL);
@@ -137,7 +140,7 @@ class PopupInteractionsCest
     public function notShownOnImprint(AcceptanceTester $I)
     {
         $I->amOnPage(self::PATH_3RDPAGE);
-        $I->wait(0.5);
+        $I->wait(3);
         $I->dontSeeElement(self::SELECTOR_MODAL);
     }
 
@@ -149,6 +152,7 @@ class PopupInteractionsCest
     public function selectGroupAndSaveMobile(AcceptanceTester $I)
     {
         $I->amOnPage(self::PATH_4THPAGE);
+        $I->wait(3);
         $I->resizeWindow(480, 800);
         $I->waitForElementVisible(self::SELECTOR_MODAL, self::WAITFOR_TIMEOUT);
         $I->tryToClick(self::SETTINGS_LINK_TEXT);
@@ -175,6 +179,7 @@ class PopupInteractionsCest
     public function reopenAndRevoke(AcceptanceTester $I)
     {
         $I->amOnPage(self::PATH_4THPAGE);
+        $I->wait(3);
         $I->setCookie(
             self::COOKIENAME,
             $this->cookieValueForGroups(
