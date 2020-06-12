@@ -5,11 +5,15 @@ cookieman.theme = (function () {
     "use strict";
     var showBackdrop = true
 
-    // show "accept all" after opening settings
-    document.querySelector('[href="#cookieman-settings"]')
-        .addEventListener('click', function () {
-            document.querySelector('[data-cookieman-accept-all]').style.display = 'inline-block'
-        })
+    // show "save" after opening settings
+    jQuery(function () {
+        jQuery('[aria-controls="cookieman-settings"]').on(
+            'click',
+            function () {
+                jQuery('[data-cookieman-save]').show()
+            }
+        )
+    })
 
     cookieman.show = function () {
         jQuery(function () {

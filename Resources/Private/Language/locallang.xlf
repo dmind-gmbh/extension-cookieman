@@ -25,6 +25,9 @@
             <trans-unit id="accept" resname="accept">
                 <source>Accept all cookies</source>
             </trans-unit>
+            <trans-unit id="deny" resname="deny">
+                <source>Deny all cookies</source>
+            </trans-unit>
             <trans-unit id="save" resname="save">
                 <source>Save</source>
             </trans-unit>
