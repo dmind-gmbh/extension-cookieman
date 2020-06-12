@@ -31,6 +31,10 @@
         <source>Accept all cookies</source>
         <target>crwdns80960:0crwdne80960:0</target>
       </trans-unit>
+      <trans-unit id="deny" resname="deny">
+        <source>Deny all cookies</source>
+        <target>crwdns109376:0crwdne109376:0</target>
+      </trans-unit>
       <trans-unit id="save" resname="save">
         <source>Save</source>
         <target>crwdns80962:0crwdne80962:0</target>
