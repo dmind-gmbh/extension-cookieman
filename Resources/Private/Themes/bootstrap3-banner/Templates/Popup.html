@@ -1,4 +1,5 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:c="http://typo3.org/ns/Dmind/Cookieman/ViewHelpers"
       xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
 <f:layout name="PopupLayout"/>
 
@@ -96,23 +97,26 @@
                                             <p>
                                                 {f:translate(key: 'group.{groupId}.desc')}
                                             </p>
-                                            <div class="table-responsive">
-                                                <table class="table table-hover table-condensed">
-                                                    <thead>
-                                                    <tr>
-                                                        <th>{f:translate(key: 'tableheader.name')}</th>
-                                                        <th>{f:translate(key: 'tableheader.purpose')}</th>
-                                                        <th>{f:translate(key: 'tableheader.duration')}</th>
-                                                        <th>{f:translate(key: 'tableheader.type')}</th>
-                                                        <th>{f:translate(key: 'tableheader.provider')}</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <f:render partial="TableRowsByGroup" section="content"
-                                                              arguments="{_all}"/>
-                                                    </tbody>
-                                                </table>
-                                            </div>
+
+                                            <f:if condition="{group -> c:shownTrackingObjects() -> f:count()} > 0">
+                                                <div class="table-responsive">
+                                                    <table class="table table-hover table-condensed">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>{f:translate(key: 'tableheader.name')}</th>
+                                                            <th>{f:translate(key: 'tableheader.purpose')}</th>
+                                                            <th>{f:translate(key: 'tableheader.duration')}</th>
+                                                            <th>{f:translate(key: 'tableheader.type')}</th>
+                                                            <th>{f:translate(key: 'tableheader.provider')}</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                        <f:render partial="TableRowsByGroup" section="content"
+                                                                  arguments="{_all}"/>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </f:if>
                                         </div>
                                     </div>
                                 </div>

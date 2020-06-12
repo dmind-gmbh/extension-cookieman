@@ -151,6 +151,10 @@
         <source>Pixel</source>
         <target state="final">Pixel</target>
       </trans-unit>
+      <trans-unit id="type.pixel" resname="type.pixel" approved="yes">
+        <source>Pixel</source>
+        <target state="final">Pixel</target>
+      </trans-unit>
       <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html" approved="yes">
         <source>HTML</source>
         <target state="final">HTML</target>
