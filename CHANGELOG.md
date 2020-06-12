@@ -1,6 +1,29 @@
+# 2.5.2
+
+## MISC
+- New Crowdin translations (#141) 346bbec
+- New Crowdin translations (#139) 6a3f7e6
+- Move example-inject.js to Js/Injects/ d34908c
+- Wait longer for modal to cater for the delay we added 1c859e5
+- Provide "Deny all cookies" button #132 c888674
+- Set SameSite: lax for the CookieConsent cookie #135 a8420b5
+- Inhibit init() to get out of the main rendering thread and prevent early page reflow #138 fed21b7
+- Bump websocket-extensions from 0.1.3 to 0.1.4 in /Build 0ede112
+- New translations locallang.xlf (Danish) [Crowdin pull request] 2bd97e4
+- upgrade testing-framework, adapt unit tests ee1487a
+- inject dependencies in DataProcessor (v10 only) 1a15c4a
+- followup: add missing ViewHelper namespace 0573936
+- Hide tables if no rows are to be output #118 e13c142
+- New Crowdin translations (#126) b9ac4f5
+- simplify TYPO3v10 setup as we now have typo3-console for v10 (yay!) 152e0d6
+- update composer dependencies on start ad57780
+- upgrade vulnerable js-cookie version to 2.2.1 use yarn package and webpack to build Fixes #124 2356c2b
+- update all yarn packages 8a50402
+
 # 2.4.5
 
 ## MISC
+- improve docs 6574dbc
 - add the "composer build:docs" command 03cfd86
 - Add documentation for contributing to cookieman d5f56e1
 - add htmlCookieRemovalPattern documentation Fixes #90 9d573d6
@@ -82,6 +105,10 @@
 - reduce crowdin export languages bcd078a
 - set crowdin commit message 98172f4
 - fixed source string f3943f0
+
+# 2.3.6
+
+## MISC
 - retrigger docs rendering bf4b27e
 - retrigger docs rendering 40009f9
 - retrigger docs rendering d5e1385
@@ -156,10 +183,6 @@
 - New translations locallang.xlf (Japanese) bbfddba
 - New translations locallang.xlf (Afrikaans) e9b3e71
 - add Google Tag Manager cookie _dc_gtm description d1c3e40
-
-# 2.3.6
-
-## MISC
 - New Crowdin translations (#50) c78cb49
 - maybe again improve links display 27b0cd8
 - maybe improve links display 2f2c377
