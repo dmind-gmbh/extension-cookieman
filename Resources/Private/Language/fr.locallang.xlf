@@ -38,9 +38,6 @@
       <trans-unit id="group.mandatory" resname="group.mandatory" approved="yes">
         <source>Mandatory</source>
         <target state="final">Nécessaires</target>
-        <alt-trans>
-          <target>Obligatoire</target>
-        </alt-trans>
       </trans-unit>
       <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc" approved="yes">
         <source>These cookies are needed for a smooth operation of our website.</source>
