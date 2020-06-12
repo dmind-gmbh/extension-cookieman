@@ -5,27 +5,27 @@
     <body>
       <trans-unit id="heading" resname="heading" approved="yes">
         <source>About Cookies</source>
-        <target state="final">Om cookies</target>
+        <target state="final">Dig og dine data</target>
       </trans-unit>
       <trans-unit id="dataProtectionDeclaration" resname="dataProtectionDeclaration" approved="yes">
         <source>Data Protection Declaration</source>
-        <target state="final">Databeskyttelseserklæring</target>
+        <target state="final">cookiepolitik</target>
       </trans-unit>
       <trans-unit id="imprint" resname="imprint" approved="yes">
         <source>Imprint</source>
-        <target state="final">Impressum</target>
+        <target state="final">Om os</target>
       </trans-unit>
       <trans-unit id="introText" resname="introText" approved="yes">
         <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
-        <target state="final">Denne webside bruger cookies. De har to funktioner: For det første leverer de grundlæggende funktionalitet til websiden. For det andet giver de os mulighed for at forbedre vores indhold, målrettet dig, ved at gemme og analysere anonymiserede brugerdata. Du kan til enhver tid trække din tilladelse til cookies tilbage. Du finder mere information om cookies på vores %1$s og mere om os på %2$s.</target>
+        <target state="final">Denne webside bruger cookies. De har to funktioner: For det første leverer de grundlæggende funktionalitet til websiden. For det andet giver de os mulighed for at forbedre vores indhold målrettet dig, ved at gemme og analysere anonymiserede brugerdata. Du kan til enhver tid trække din tilladelse til cookies tilbage. Du finder mere information om cookies på vores %1$s og om hvem vi er på %2$s.</target>
       </trans-unit>
       <trans-unit id="settings" resname="settings" approved="yes">
         <source>Settings</source>
-        <target state="final">Indstillinger</target>
+        <target state="final">indstillinger</target>
       </trans-unit>
       <trans-unit id="settingsText" resname="settingsText" approved="yes">
         <source>Click here for Cookie %1$s.</source>
-        <target state="final">Kliok her for cookies %1$s.</target>
+        <target state="final">Klik her for cookie %1$s.</target>
       </trans-unit>
       <trans-unit id="accept" resname="accept" approved="yes">
         <source>Accept all cookies</source>
@@ -65,7 +65,7 @@
       </trans-unit>
       <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc" approved="yes">
         <source>Saves your consent to using cookies.</source>
-        <target state="final">Gem din tilladelse til at bruge cookies.</target>
+        <target state="final">Gemmer din tilladelse til at bruge cookies.</target>
       </trans-unit>
       <trans-unit id="trackingobject.cntcookie.desc" resname="trackingobject.cntcookie.desc" approved="yes">
         <source>Exclusion from counting (as a list of Account IDs)</source>
@@ -151,17 +151,13 @@
         <source>Pixel</source>
         <target state="final">Pixel</target>
       </trans-unit>
-      <trans-unit id="type.pixel" resname="type.pixel">
-        <source>Pixel</source>
-        <target state="needs-translation">Pixel</target>
-      </trans-unit>
       <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html" approved="yes">
         <source>HTML</source>
         <target state="final">HTML</target>
       </trans-unit>
       <trans-unit id="trackingobject._fbp.desc" resname="trackingobject._fbp.desc" approved="yes">
         <source>Stores the unique visitor ID.</source>
-        <target state="final">Gemmer det unikke bruger ID.</target>
+        <target state="final">Gemmer det unikke Facebook bruger ID.</target>
       </trans-unit>
       <trans-unit id="trackingobject.facebookPixel.desc" resname="trackingobject.FacebookPixel.desc" approved="yes">
         <source>If JavaScript is not enabled, this pixel initiates a connection to facebook.</source>
