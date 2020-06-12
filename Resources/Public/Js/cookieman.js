@@ -27,7 +27,7 @@ var cookieman = (function () {
         Cookies.set(
             cookieName,
             consented.join('|'),
-            {expires: cookieLifetimeDays}
+            {expires: cookieLifetimeDays, sameSite: 'lax'}
         )
     }
 
