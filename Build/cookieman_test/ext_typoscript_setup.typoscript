@@ -14,8 +14,8 @@ plugin.tx_cookieman.settings {
         # add the Crowdin translation integration of cookieman as "TrackingObject" - actually a neat way to test if or JS inclusion works ;)
         Crowdin {
             inject (
-<script data-what="Crowdin (1st script)" src="/typo3conf/ext/cookieman/Resources/Public/Js/example-inject.js"></script>
-<script data-what="Crowdin (2nd script)" src="/typo3conf/ext/cookieman/Resources/Public/Js/example-inject.js"></script>
+<script data-what="Crowdin (1st script)" src="/typo3conf/ext/cookieman/Resources/Public/Js/Injects/example-inject.js"></script>
+<script data-what="Crowdin (2nd script)" src="/typo3conf/ext/cookieman/Resources/Public/Js/Injects/example-inject.js"></script>
 <script
   type="text/javascript"
   src="https://crowdin.com/js/crowdjet/crowdjet.js">
