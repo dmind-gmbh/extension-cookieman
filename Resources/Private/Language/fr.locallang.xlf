@@ -257,7 +257,7 @@
       </trans-unit>
       <trans-unit id="duration.none" resname="duration.empty">
         <source>none</source>
-        <target state="needs-translation">none</target>
+        <target state="translated">aucun</target>
       </trans-unit>
       <trans-unit id="duration.minute" resname="duration.minute" approved="yes">
         <source>minute</source>
