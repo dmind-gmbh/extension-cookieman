@@ -1,6 +1,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:c="http://typo3.org/ns/Dmind/Cookieman/ViewHelpers"
-      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
+    xmlns:c="http://typo3.org/ns/Dmind/Cookieman/ViewHelpers"
+    xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
 <f:layout name="PopupLayout"/>
 
 <f:section name="Content">
@@ -22,7 +22,7 @@
 
                     <f:variable name="settingsLink">
                         <a href="#cookieman-settings"
-                           data-toggle="collapse" aria-expanded="false" aria-controls="cookieman-settings"
+                            data-toggle="collapse" aria-expanded="false" aria-controls="cookieman-settings"
                         >{f:translate(key: 'settings')}</a>
                     </f:variable>
 
@@ -37,18 +37,18 @@
 
                 <div class="collapse" id="cookieman-settings">
                     <form data-cookieman-form
-                          data-cookieman-dnt-enabled="{f:translate(key: 'browser.dnt-enabled')}"
+                        data-cookieman-dnt-enabled="{f:translate(key: 'browser.dnt-enabled')}"
                     >
                         <div class="panel-group"
-                             id="cookieman-acco" role="tablist" aria-multiselectable="true">
+                            id="cookieman-acco" role="tablist" aria-multiselectable="true">
                             <f:for each="{settings.groups}" key="groupId" as="group">
                                 <div class="panel panel-default">
                                     <div class="panel-heading" role="tab">
                                         <div class="panel-title">
                                             <a class="collapsed" role="button" data-toggle="collapse"
-                                               data-parent="#cookieman-acco" data-target="#cookieman-acco-{groupId}"
-                                               aria-expanded="true"
-                                               aria-controls="cookieman-acco-{groupId}">
+                                                data-parent="#cookieman-acco" data-target="#cookieman-acco-{groupId}"
+                                                aria-expanded="true"
+                                                aria-controls="cookieman-acco-{groupId}">
                                                 {f:translate(key: 'group.{groupId}', default: groupId)}
                                             </a>
                                         </div>
@@ -59,7 +59,7 @@
                                                 <div class="checkbox">
                                                     <label>
                                                         <input name="{groupId}" value="1" type="checkbox"
-                                                               {f:if(condition: group.preselected, then:
+                                                            {f:if(condition: group.preselected, then:
                                                         'checked="checked"')}
                                                         {f:if(condition: group.disabled, then: 'disabled="disabled"')}
                                                         >
@@ -112,7 +112,7 @@
                                                         </thead>
                                                         <tbody>
                                                         <f:render partial="TableRowsByGroup" section="content"
-                                                                  arguments="{_all}"/>
+                                                            arguments="{_all}"/>
                                                         </tbody>
                                                     </table>
                                                 </div>
@@ -124,17 +124,21 @@
                         </div>
                     </form>
                 </div>
-                <div class="pull-right">
-                    <button
-                        data-cookieman-save
-                        class="btn btn-default"
-                    >
-                        {f:translate(key: 'save')}
-                    </button>
-                </div>
+                <button
+                    data-cookieman-accept-none data-cookieman-save
+                    class="btn btn-primary"
+                >
+                    {f:translate(key: 'deny')}
+                </button>
+                <button
+                    data-cookieman-save
+                    class="btn btn-default" style="display: none"
+                >
+                    {f:translate(key: 'save')}
+                </button>
                 <button
                     data-cookieman-accept-all data-cookieman-save
-                    class="btn btn-primary" style="display:none"
+                    class="btn btn-primary"
                 >
                     {f:translate(key: 'accept')}
                 </button>

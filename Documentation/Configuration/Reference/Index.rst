@@ -370,7 +370,7 @@ trackingObjects.‹tracking-object-key›
           Matomo {
               // injected code, if consent is given:
               inject (
-                  <script data-what="Matomo" src="/typo3conf/ext/cookieman/Resources/Public/Js/example-inject.js"></script>
+                  <script data-what="Matomo" src="/typo3conf/ext/cookieman/Resources/Public/Js/Injects/example-inject.js"></script>
               )
 
               show {

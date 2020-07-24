@@ -10,6 +10,6 @@ successC=$greenb
 errorC=$red
 
 echo Installing git hooks...
-rsync -a /mnt/ddev_config/template/git-hooks/ "$WEBSERVER_DOCROOT"/.git/hooks/ \
+rsync -a /mnt/ddev_config/template/git-hooks/ "/var/www/html"/.git/hooks/ \
   && printf "${successC}✓${endC} OK.\n" \
   || printf "${errorC}🞩${endC} Error.\n"

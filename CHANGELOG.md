@@ -1,3 +1,164 @@
+# 2.5.0
+
+## MISC
+- New Crowdin translations (#142) 0ea3799
+- Move example-inject.js to Js/Injects/ 9a095ae
+- Wait longer for modal to cater for the delay we added 7a48a3b
+- Provide "Deny all cookies" button #132 7ade7cc
+- Set SameSite: lax for the CookieConsent cookie #135 50a4f1b
+- Inhibit init() to get out of the main rendering thread and prevent early page reflow #138 dc4dbfe
+- Bump websocket-extensions from 0.1.3 to 0.1.4 in /Build 81445d6
+- New translations locallang.xlf (Danish) [Crowdin pull request] 5817fa5
+- followup: add missing ViewHelper namespace d85b356
+- Hide tables if no rows are to be output #118 72d359b
+- New translations locallang.xlf (Danish) [Crowdin pull request] 5f412b8
+- New translations locallang.xlf (German) [Crowdin pull request] 449994d
+- New Crowdin translations (#122) 94ca7b0
+- New translations locallang.xlf (Danish) [Crowdin pull request] d87f9bf
+- New translations locallang.xlf (Danish) [Crowdin pull request] ad62aee
+- New translations locallang.xlf (Dutch) [Crowdin pull request] 4d4fbfa
+- New translations locallang.xlf (French) [Crowdin pull request] 7ad0c5e
+- New translations locallang.xlf (German) [Crowdin pull request] 0ae7567
+- upgrade vulnerable js-cookie version to 2.2.1 use yarn package and webpack to build Fixes #124 abcbc14
+- update all yarn packages 81fca4a
+- improve docs 796dacb
+- New translations locallang.xlf (German) [Crowdin pull request] 407e4e9
+- New translations locallang.xlf (German) [Crowdin pull request] 96afc75
+- New translations locallang.xlf (TYPO3 In-Context Localization) [Crowdin pull request] 24bb593
+- New translations locallang.xlf (Catalan) [Crowdin pull request] dbb4b25
+- New translations locallang.xlf (Chinese Simplified) [Crowdin pull request] 9e29f03
+- New translations locallang.xlf (Czech) [Crowdin pull request] c76f8db
+- New translations locallang.xlf (Danish) [Crowdin pull request] 90ac0ea
+- New translations locallang.xlf (Dutch) [Crowdin pull request] 16dc21f
+- New translations locallang.xlf (Finnish) [Crowdin pull request] 8f161e9
+- New translations locallang.xlf (French) [Crowdin pull request] 173c440
+- New translations locallang.xlf (German) [Crowdin pull request] 9d113bd
+- New translations locallang.xlf (Greek) [Crowdin pull request] 5cb9c73
+- New translations locallang.xlf (Hebrew) [Crowdin pull request] 3ba4201
+- New translations locallang.xlf (Hungarian) [Crowdin pull request] 3a57acc
+- New translations locallang.xlf (Italian) [Crowdin pull request] 9097eb5
+- New translations locallang.xlf (Arabic) [Crowdin pull request] 4f5812a
+- New translations locallang.xlf (Japanese) [Crowdin pull request] 42beb89
+- New translations locallang.xlf (Norwegian) [Crowdin pull request] 30d28df
+- New translations locallang.xlf (Polish) [Crowdin pull request] 7839d91
+- New translations locallang.xlf (Portuguese) [Crowdin pull request] f5cf480
+- New translations locallang.xlf (Romanian) [Crowdin pull request] 085f87a
+- New translations locallang.xlf (Russian) [Crowdin pull request] 6d4e4b8
+- New translations locallang.xlf (Serbian (Cyrillic)) [Crowdin pull request] 734c3d8
+- New translations locallang.xlf (Spanish) [Crowdin pull request] c974f2b
+- New translations locallang.xlf (Swedish) [Crowdin pull request] 11c17bf
+- New translations locallang.xlf (Turkish) [Crowdin pull request] eb24dad
+- New translations locallang.xlf (Ukrainian) [Crowdin pull request] d078516
+- New translations locallang.xlf (Vietnamese) [Crowdin pull request] a642d30
+- New translations locallang.xlf (Korean) [Crowdin pull request] a6219e3
+- New translations locallang.xlf (Afrikaans) [Crowdin pull request] d5e3000
+- New translations locallang.xlf (TYPO3 In-Context Localization) [Crowdin pull request] f29137b
+- New translations locallang.xlf (Catalan) [Crowdin pull request] c3eb944
+- New translations locallang.xlf (Chinese Simplified) [Crowdin pull request] 80e941c
+- New translations locallang.xlf (Czech) [Crowdin pull request] 98c7326
+- New translations locallang.xlf (Danish) [Crowdin pull request] 9a7b6b1
+- New translations locallang.xlf (Dutch) [Crowdin pull request] 179edf7
+- New translations locallang.xlf (Finnish) [Crowdin pull request] aaf0b37
+- New translations locallang.xlf (French) [Crowdin pull request] 8d93d6a
+- New translations locallang.xlf (German) [Crowdin pull request] 6c9a9cc
+- New translations locallang.xlf (Greek) [Crowdin pull request] a0d5260
+- New translations locallang.xlf (Hebrew) [Crowdin pull request] 58d708d
+- New translations locallang.xlf (Hungarian) [Crowdin pull request] 0f8ceec
+- New translations locallang.xlf (Italian) [Crowdin pull request] 72c8655
+- New translations locallang.xlf (Arabic) [Crowdin pull request] c40a314
+- New translations locallang.xlf (Japanese) [Crowdin pull request] da751e2
+- New translations locallang.xlf (Norwegian) [Crowdin pull request] ff86c61
+- New translations locallang.xlf (Polish) [Crowdin pull request] 26902de
+- New translations locallang.xlf (Portuguese) [Crowdin pull request] 411de3b
+- New translations locallang.xlf (Romanian) [Crowdin pull request] 4e136dc
+- New translations locallang.xlf (Russian) [Crowdin pull request] 2f4df3b
+- New translations locallang.xlf (Serbian (Cyrillic)) [Crowdin pull request] d726c7a
+- New translations locallang.xlf (Spanish) [Crowdin pull request] c684ecb
+- New translations locallang.xlf (Swedish) [Crowdin pull request] 2c5ca8b
+- New translations locallang.xlf (Turkish) [Crowdin pull request] 5b9fa19
+- New translations locallang.xlf (Ukrainian) [Crowdin pull request] 0a70117
+- New translations locallang.xlf (Vietnamese) [Crowdin pull request] 3b1c647
+- New translations locallang.xlf (Korean) [Crowdin pull request] 1ac3792
+- New translations locallang.xlf (Afrikaans) [Crowdin pull request] 53c1102
+- New translations locallang.xlf (Danish) [Crowdin pull request] d184a56
+- New translations locallang.xlf (Danish) [Crowdin pull request] c5074f0
+- New translations locallang.xlf (Danish) [Crowdin pull request] 4f75bf6
+- New translations locallang.xlf (TYPO3 In-Context Localization) [Crowdin pull request] 7a223b3
+- New translations locallang.xlf (Catalan) [Crowdin pull request] 0badd0b
+- New translations locallang.xlf (Chinese Simplified) [Crowdin pull request] 2b04084
+- New translations locallang.xlf (Czech) [Crowdin pull request] da57aaa
+- New translations locallang.xlf (Dutch) [Crowdin pull request] 902d66c
+- New translations locallang.xlf (Finnish) [Crowdin pull request] 173e81d
+- New translations locallang.xlf (Greek) [Crowdin pull request] cb5d648
+- New translations locallang.xlf (Hebrew) [Crowdin pull request] a9bbcb3
+- New translations locallang.xlf (Hungarian) [Crowdin pull request] 9b29977
+- New translations locallang.xlf (Japanese) [Crowdin pull request] e76376e
+- New translations locallang.xlf (Arabic) [Crowdin pull request] 7f21c89
+- New translations locallang.xlf (Korean) [Crowdin pull request] da0ee20
+- New translations locallang.xlf (Polish) [Crowdin pull request] 482dad8
+- New translations locallang.xlf (Portuguese) [Crowdin pull request] 0a3e038
+- New translations locallang.xlf (Russian) [Crowdin pull request] c47cd31
+- New translations locallang.xlf (Serbian (Cyrillic)) [Crowdin pull request] 16c0aca
+- New translations locallang.xlf (Spanish) [Crowdin pull request] 7e7083c
+- New translations locallang.xlf (Swedish) [Crowdin pull request] cda7cfe
+- New translations locallang.xlf (Turkish) [Crowdin pull request] 10792ee
+- New translations locallang.xlf (Ukrainian) [Crowdin pull request] 42fbf31
+- New translations locallang.xlf (Vietnamese) [Crowdin pull request] d1454f5
+- New translations locallang.xlf (Norwegian) [Crowdin pull request] eac8f17
+- New translations locallang.xlf (Afrikaans) [Crowdin pull request] 1b1c4d7
+- New translations locallang.xlf (French) [crowdin] 5353bc0
+- New translations locallang.xlf (French) [crowdin] f2bce39
+- New translations locallang.xlf (French) [crowdin] 4fe484f
+- New translations locallang.xlf (French) [crowdin] bf35547
+- New translations locallang.xlf (German) [crowdin] 37d6350
+- New translations locallang.xlf (German) [crowdin] f017e20
+- New translations locallang.xlf (German) [crowdin] f9e76cc
+- New translations locallang.xlf (Romanian) [crowdin] b40cffe
+- New translations locallang.xlf (Italian) [crowdin] 3a0218d
+- New translations locallang.xlf (German) [crowdin] 71a99c7
+- New translations locallang.xlf (French) [crowdin] 7f85cef
+- New translations locallang.xlf (Danish) [crowdin] b57369a
+- New translations locallang.xlf (Romanian) [crowdin] 02d82d7
+- New translations locallang.xlf (Romanian) [crowdin] f1909be
+- New translations locallang.xlf (Danish) [crowdin] c17cd9b
+- Revert "remove CI from l10n_* branches" a3108d8
+- New translations locallang.xlf (Danish) [crowdin] 442005e
+- New translations locallang.xlf (Danish) [crowdin] 8475c45
+- remove CI from l10n_* branches ca3e92b
+- New translations locallang.xlf (Danish) [crowdin] 2cf1590
+- New translations locallang.xlf (Danish) [crowdin] 94ad536
+- New translations locallang.xlf (German) [crowdin] 3edec08
+- New translations locallang.xlf (German) bdc9461
+- New translations locallang.xlf (TYPO3 In-Context Localization) a996600
+- New translations locallang.xlf (Catalan) c47f91a
+- New translations locallang.xlf (Chinese Simplified) 9c5a717
+- New translations locallang.xlf (Czech) 4c304b1
+- New translations locallang.xlf (Danish) 71eff28
+- New translations locallang.xlf (Dutch) bb3f268
+- New translations locallang.xlf (Finnish) 339ccf7
+- New translations locallang.xlf (French) 7fe5f1c
+- New translations locallang.xlf (German) 32db0c0
+- New translations locallang.xlf (Greek) d8fd897
+- New translations locallang.xlf (Hebrew) 484ee0c
+- New translations locallang.xlf (Hungarian) 9b3fc41
+- New translations locallang.xlf (Italian) 27e0d10
+- New translations locallang.xlf (Arabic) 794f3bb
+- New translations locallang.xlf (Japanese) fb73c4b
+- New translations locallang.xlf (Norwegian) 2809d1e
+- New translations locallang.xlf (Polish) b41b5d6
+- New translations locallang.xlf (Portuguese) f1dea9b
+- New translations locallang.xlf (Romanian) f52a6f9
+- New translations locallang.xlf (Russian) fb96012
+- New translations locallang.xlf (Serbian (Cyrillic)) a67821b
+- New translations locallang.xlf (Spanish) e5e8dc1
+- New translations locallang.xlf (Swedish) 108e674
+- New translations locallang.xlf (Turkish) 4d4919d
+- New translations locallang.xlf (Ukrainian) 675ed78
+- New translations locallang.xlf (Vietnamese) a35a8a2
+- New translations locallang.xlf (Korean) 6696752
+- New translations locallang.xlf (Afrikaans) a0cb86a
+- New translations locallang.xlf (TYPO3 In-Context Localization) a54a440
+
 # 2.4.3
 
 ## MISC
@@ -77,6 +238,10 @@
 - help scrutinizer 7b6e63c
 - New translations locallang.xlf (French) bdabece
 - give credit to an awesome person 023d9a4
+
+# 2.3.7
+
+## MISC
 - set the docs branch 64f307f
 - document the differences among the example themes 808b222
 - fix typo d2771e6
@@ -149,8 +314,19 @@
 - New translations locallang.xlf (Afrikaans) 28af6ab
 - add Google Tag Manager cookie _dc_gtm description a409ec5
 - normalize composer.json a280a1c
+- New Crowdin translations (#51) 8e0a538
 - New translations locallang.xlf (German) cc58011
 - New translations locallang.xlf (Danish) 1a0eceb
+- maybe again improve links display 0cc211c
+- maybe improve links display f00d3e7
+- reduce README.md e2a5bd8
+- fix ext_emconf category 20a344e
+- gte more debugging from selenium drivers 6b39744
+- use browserstack for iPhone and Safari d0495a9
+- use browserstack for iPhone and Safari c268821
+- make TYPO3v8 bootstrapping idempotent 805c47d
+- test sanitizedSettings() c5c3f9b
+- remove release:prepare from mandatory steps for release:create 61b9d7a
 - New translations locallang.xlf (German) 13dc0d8
 - New translations locallang.xlf (Vietnamese) bbc6760
 - New translations locallang.xlf (Catalan) d969b58
@@ -184,21 +360,6 @@
 - manual 3-way merge to align translations 668982b
 - New translations locallang.xlf (French) dbd019d
 - New translations locallang.xlf (French) b676abb
-
-# 2.3.7
-
-## MISC
-- New Crowdin translations (#51) 8e0a538
-- maybe again improve links display 0cc211c
-- maybe improve links display f00d3e7
-- reduce README.md e2a5bd8
-- fix ext_emconf category 20a344e
-- gte more debugging from selenium drivers 6b39744
-- use browserstack for iPhone and Safari d0495a9
-- use browserstack for iPhone and Safari c268821
-- make TYPO3v8 bootstrapping idempotent 805c47d
-- test sanitizedSettings() c5c3f9b
-- remove release:prepare from mandatory steps for release:create 61b9d7a
 
 # 2.3.4
 

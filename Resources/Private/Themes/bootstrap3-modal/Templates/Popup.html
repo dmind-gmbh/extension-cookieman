@@ -94,8 +94,14 @@
 
             <div class="modal-footer">
                 <button
+                    data-cookieman-accept-none data-cookieman-save
+                    class="btn btn-primary"
+                >
+                    {f:translate(key: 'deny')}
+                </button>
+                <button
                     data-cookieman-save
-                    class="btn btn-default"
+                    class="btn btn-default" style="display: none"
                 >
                     {f:translate(key: 'save')}
                 </button>
