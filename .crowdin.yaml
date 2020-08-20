@@ -1,6 +1,4 @@
 files:
   - source: Resources/Private/Language/locallang*.xlf
     translation: /%original_path%/%two_letters_code%.%original_file_name%
-commit_message: "[Crowdin pull request]"
-#"export_languages": [
-#]
+commit_message: '[Crowdin pull request]'
