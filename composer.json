@@ -13,7 +13,6 @@
     ],
     "require": {
         "php": "^7.2",
-        "helhum/typo3-console": "^6.3",
         "typo3/cms-core": "^10.4.0"
     },
     "require-dev": {
@@ -28,6 +27,7 @@
         "dmind/cookieman-test-customtheme": "@dev",
         "ergebnis/composer-normalize": "^2.3",
         "friendsofphp/php-cs-fixer": "^2.14",
+        "helhum/typo3-console": "^6.3",
         "php-coveralls/php-coveralls": "^2.1",
         "roave/security-advisories": "dev-master",
         "typo3/cms-introduction": "dev-master",
