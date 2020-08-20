@@ -1,6 +1,23 @@
+# 2.6.3
+
+## MISC
+- remove typo3-console 620e115
+- disable acceptance tests for master (2) edd7d3c
+- cater for typo3-console not supporting TYPO3 master yet efc1932
+- disable acceptance tests for master 6f9313a
+- branch off 10lts c368fe8
+- upgrade npm packages 18108ba
+- lint 9642f38
+- Try multiple cookie domains and paths during HTML cookie deletion. Fixes #137 708f0ed
+- Bump elliptic from 6.5.2 to 6.5.3 in /Build (#152) 62118da
+- New Crowdin updates (#144) b4d0c9b
+- Bump lodash from 4.17.15 to 4.17.19 in /Build (#148) ee99dcc
+- get ready for ddev 1.15 dec0154
+
 # 2.5.2
 
 ## MISC
+- add ViewHelper namespace c: to Partial as well ad0a9a7
 - New Crowdin translations (#141) 346bbec
 - New Crowdin translations (#139) 6a3f7e6
 - Move example-inject.js to Js/Injects/ d34908c
