@@ -1,6 +1,17 @@
+# 2.6.1
+
+## MISC
+- upgrade npm packages 7d7a5d3
+- lint 03e1b73
+- Try multiple cookie domains and paths during HTML cookie deletion. Fixes #137 c14111f
+- New Crowdin updates (#151) 27a487b
+- New Crowdin updates (#146) 0cab706
+- get ready for ddev 1.15 778466a
+
 # 2.5.1
 
 ## MISC
+- add ViewHelper namespace c: to Partial as well cbd54ef
 - New Crowdin translations (#143) 42a5c26
 - New translations locallang.xlf (Danish) (#140) 9d59f83
 - Move example-inject.js to Js/Injects/ c043e1b
