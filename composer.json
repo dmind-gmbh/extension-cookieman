@@ -13,10 +13,9 @@
     ],
     "require": {
         "php": "^7.2",
-        "typo3/cms-core": "dev-master as 10.4.x-dev"
+        "typo3/cms-core": "^11.0 || 11.0.x-dev || dev-master"
     },
     "require-dev": {
-        "bk2k/bootstrap-package": "^11.0",
         "bk2k/extension-helper": "^1.0",
         "browserstack/browserstack-local": "dev-master",
         "codeception/codeception": "^3.1",
@@ -29,9 +28,9 @@
         "friendsofphp/php-cs-fixer": "^2.14",
         "php-coveralls/php-coveralls": "^2.1",
         "roave/security-advisories": "dev-master",
-        "typo3/cms-introduction": "dev-master",
-        "typo3/cms-tstemplate": "^10.0 || dev-master",
-        "typo3/testing-framework": "^6.2"
+        "typo3/cms-tstemplate": "^11.0 || 11.0.x-dev || dev-master",
+        "typo3/cms-install": "^11.0 || 11.0.x-dev || dev-master",
+        "typo3/testing-framework": "dev-master"
     },
     "config": {
         "bin-dir": ".build/bin",
