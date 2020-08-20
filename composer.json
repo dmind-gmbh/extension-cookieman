@@ -28,8 +28,8 @@
         "friendsofphp/php-cs-fixer": "^2.14",
         "php-coveralls/php-coveralls": "^2.1",
         "roave/security-advisories": "dev-master",
-        "typo3/cms-tstemplate": "^11.0 || 11.0.x-dev || dev-master",
         "typo3/cms-install": "^11.0 || 11.0.x-dev || dev-master",
+        "typo3/cms-tstemplate": "^11.0 || 11.0.x-dev || dev-master",
         "typo3/testing-framework": "dev-master"
     },
     "config": {
