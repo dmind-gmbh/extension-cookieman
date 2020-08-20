@@ -5,315 +5,315 @@
     <body>
       <trans-unit id="heading" resname="heading">
         <source>About Cookies</source>
-        <target>crwdns80742:0crwdne80742:0</target>
+        <target>crwdns110402:0crwdne110402:0</target>
       </trans-unit>
       <trans-unit id="dataProtectionDeclaration" resname="dataProtectionDeclaration">
         <source>Data Protection Declaration</source>
-        <target>crwdns80744:0crwdne80744:0</target>
+        <target>crwdns110404:0crwdne110404:0</target>
       </trans-unit>
       <trans-unit id="imprint" resname="imprint">
         <source>Imprint</source>
-        <target>crwdns80746:0crwdne80746:0</target>
+        <target>crwdns110406:0crwdne110406:0</target>
       </trans-unit>
       <trans-unit id="introText" resname="introText">
         <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
-        <target>crwdns85840:0%1$scrwdnd85840:0%2$scrwdne85840:0</target>
+        <target>crwdns110408:0%1$scrwdnd110408:0%2$scrwdne110408:0</target>
       </trans-unit>
       <trans-unit id="settings" resname="settings">
         <source>Settings</source>
-        <target>crwdns80750:0crwdne80750:0</target>
+        <target>crwdns110410:0crwdne110410:0</target>
       </trans-unit>
       <trans-unit id="settingsText" resname="settingsText">
         <source>Click here for Cookie %1$s.</source>
-        <target>crwdns80752:0%1$scrwdne80752:0</target>
+        <target>crwdns110412:0%1$scrwdne110412:0</target>
       </trans-unit>
       <trans-unit id="accept" resname="accept">
         <source>Accept all cookies</source>
-        <target>crwdns80754:0crwdne80754:0</target>
+        <target>crwdns110414:0crwdne110414:0</target>
       </trans-unit>
       <trans-unit id="deny" resname="deny">
         <source>Deny all cookies</source>
-        <target>crwdns109372:0crwdne109372:0</target>
+        <target>crwdns110416:0crwdne110416:0</target>
       </trans-unit>
       <trans-unit id="save" resname="save">
         <source>Save</source>
-        <target>crwdns80756:0crwdne80756:0</target>
+        <target>crwdns110418:0crwdne110418:0</target>
       </trans-unit>
       <trans-unit id="group.mandatory" resname="group.mandatory">
         <source>Mandatory</source>
-        <target>crwdns80758:0crwdne80758:0</target>
+        <target>crwdns110420:0crwdne110420:0</target>
       </trans-unit>
       <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc">
         <source>These cookies are needed for a smooth operation of our website.</source>
-        <target>crwdns80824:0crwdne80824:0</target>
+        <target>crwdns110422:0crwdne110422:0</target>
       </trans-unit>
       <trans-unit id="tableheader.name" resname="tableheader.name">
         <source>Name</source>
-        <target>crwdns80760:0crwdne80760:0</target>
+        <target>crwdns110424:0crwdne110424:0</target>
       </trans-unit>
       <trans-unit id="tableheader.purpose" resname="tableheader.purpose">
         <source>Purpose</source>
-        <target>crwdns80762:0crwdne80762:0</target>
+        <target>crwdns110426:0crwdne110426:0</target>
       </trans-unit>
       <trans-unit id="tableheader.duration" resname="tableheader.duration">
         <source>Lifetime</source>
-        <target>crwdns80764:0crwdne80764:0</target>
+        <target>crwdns110428:0crwdne110428:0</target>
       </trans-unit>
       <trans-unit id="tableheader.type" resname="tableheader.type">
         <source>Type</source>
-        <target>crwdns80766:0crwdne80766:0</target>
+        <target>crwdns110430:0crwdne110430:0</target>
       </trans-unit>
       <trans-unit id="tableheader.provider" resname="tableheader.provider">
         <source>Provider</source>
-        <target>crwdns80768:0crwdne80768:0</target>
+        <target>crwdns110432:0crwdne110432:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc">
         <source>Saves your consent to using cookies.</source>
-        <target>crwdns80770:0crwdne80770:0</target>
+        <target>crwdns110434:0crwdne110434:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.cntcookie.desc" resname="trackingobject.cntcookie.desc">
         <source>Exclusion from counting (as a list of Account IDs)</source>
-        <target>crwdns85213:0crwdne85213:0</target>
+        <target>crwdns110436:0crwdne110436:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.GS3_v.desc" resname="trackingobject.GS3_v.desc">
         <source>Set by Optimizer webservice. Contains the same Visitor ID as BT_pdc.</source>
-        <target>crwdns85215:0crwdne85215:0</target>
+        <target>crwdns110438:0crwdne110438:0</target>
       </trans-unit>
       <trans-unit id="trackingobject._et_coid.desc" resname="trackingobject._et_coid.desc">
         <source>Cookie detection</source>
-        <target>crwdns85217:0crwdne85217:0</target>
+        <target>crwdns110440:0crwdne110440:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oi_v2.desc" resname="trackingobject.et_oi_v2.desc">
         <source>Opt-In cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</source>
-        <target>crwdns85219:0crwdne85219:0</target>
+        <target>crwdns110442:0crwdne110442:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip.desc" resname="trackingobject.et_oip.desc">
         <source>Opt-In cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</source>
-        <target>crwdns85221:0crwdne85221:0</target>
+        <target>crwdns110444:0crwdne110444:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_allow_cookies.desc" resname="trackingobject.et_allow_cookies.desc">
         <source>If the parameter "data-block-cookies" is used, this cookie is called by the API Call _etracker.enableCookies() to indicate that etracker is allowed to set cookies.</source>
-        <target>crwdns85223:0crwdne85223:0</target>
+        <target>crwdns110446:0crwdne110446:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.isSdEnabled.desc" resname="trackingobject.isSdEnabled.desc">
         <source>Detection whether the scrolling depth is measured for the visitor.</source>
-        <target>crwdns85225:0crwdne85225:0</target>
+        <target>crwdns110448:0crwdne110448:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.BT_ctst.desc" resname="trackingobject.BT_ctst.desc">
         <source>Is only used to detect whether cookies are activated in the visitor's browser or not.</source>
-        <target>crwdns85227:0crwdne85227:0</target>
+        <target>crwdns110450:0crwdne110450:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.BT_sdc.desc" resname="trackingobject.BT_sdc.desc">
         <source>Contains base64 encoded data of the current visitor session (referrer, number of pages, number of seconds since session started) used for personalization purposes.</source>
-        <target>crwdns85229:0crwdne85229:0</target>
+        <target>crwdns110452:0crwdne110452:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.BT_pdc.desc" resname="trackingobject.BT_pdc.desc">
         <source>Contains base64-coded visitor history data (is customer, newsletter recipient etc.) for personalization.</source>
-        <target>crwdns85231:0crwdne85231:0</target>
+        <target>crwdns110454:0crwdne110454:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_pdc.desc">
         <source>Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</source>
-        <target>crwdns85233:0crwdne85233:0</target>
+        <target>crwdns110456:0crwdne110456:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_ecl.desc">
         <source>Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</source>
-        <target>crwdns85233:0crwdne85233:0</target>
+        <target>crwdns110456:0crwdne110456:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_scroll_depth.desc" resname="trackingobject.et_scroll_depth.desc">
         <source>Data for scrolling depth measurement</source>
-        <target>crwdns85237:0crwdne85237:0</target>
+        <target>crwdns110460:0crwdne110460:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.targetingAPISession.desc" resname="trackingobject.targetingAPISession.desc">
         <source>Data collected in the current session for the optimiser</source>
-        <target>crwdns85239:0crwdne85239:0</target>
+        <target>crwdns110462:0crwdne110462:0</target>
       </trans-unit>
       <trans-unit id="trackingobject._et_coid--localstorage" resname="trackingobject._et_coid--localstorage">
         <source>_et_coid</source>
-        <target>crwdns85241:0crwdne85241:0</target>
+        <target>crwdns110464:0crwdne110464:0</target>
       </trans-unit>
       <trans-unit id="trackingobject._et_coid--localstorage.desc" resname="trackingobject._et_coid--localstorage.desc">
         <source>Cookie detection, see corresponding cookie.</source>
-        <target>crwdns85243:0crwdne85243:0</target>
+        <target>crwdns110466:0crwdne110466:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oi_v2--localstorage" resname="trackingobject.et_oi_v2--localstorage">
         <source>et_oi_v2</source>
-        <target>crwdns85245:0crwdne85245:0</target>
+        <target>crwdns110468:0crwdne110468:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oi_v2--localstorage.desc" resname="trackingobject.et_oi_v2--localstorage.desc">
         <source>OptIn-cookie, see corresponding cookie.</source>
-        <target>crwdns85247:0crwdne85247:0</target>
+        <target>crwdns110470:0crwdne110470:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip--localstorage" resname="trackingobject.et_oip--localstorage">
         <source>et_oip</source>
-        <target>crwdns85249:0crwdne85249:0</target>
+        <target>crwdns110472:0crwdne110472:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip--localstorage.desc" resname="trackingobject.et_oip--localstorage.desc">
         <source>OptIn-cookie for Signalize, see corresponding cookie.</source>
-        <target>crwdns85251:0crwdne85251:0</target>
+        <target>crwdns110474:0crwdne110474:0</target>
       </trans-unit>
       <trans-unit id="type.pixel" resname="type.pixel">
         <source>Pixel</source>
-        <target>crwdns85938:0crwdne85938:0</target>
+        <target>crwdns110476:0crwdne110476:0</target>
       </trans-unit>
       <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html">
         <source>HTML</source>
-        <target>crwdns80772:0crwdne80772:0</target>
+        <target>crwdns110478:0crwdne110478:0</target>
       </trans-unit>
       <trans-unit id="trackingobject._fbp.desc" resname="trackingobject._fbp.desc">
         <source>Stores the unique visitor ID.</source>
-        <target>crwdns85940:0crwdne85940:0</target>
+        <target>crwdns110480:0crwdne110480:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.facebookPixel.desc" resname="trackingobject.FacebookPixel.desc">
         <source>If JavaScript is not enabled, this pixel initiates a connection to facebook.</source>
-        <target>crwdns85942:0crwdne85942:0</target>
+        <target>crwdns110482:0crwdne110482:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.fe_typo_user.desc" resname="trackingobject.fe_typo_user.desc">
         <source>Assigns your browser to a session on the server.</source>
-        <target>crwdns80774:0crwdne80774:0</target>
+        <target>crwdns110484:0crwdne110484:0</target>
       </trans-unit>
       <trans-unit id="duration.session" resname="duration.session">
         <source>session</source>
-        <target>crwdns80776:0crwdne80776:0</target>
+        <target>crwdns110486:0crwdne110486:0</target>
       </trans-unit>
       <trans-unit id="type.cookie_http" resname="type.cookie_http">
         <source>HTTP</source>
-        <target>crwdns80778:0crwdne80778:0</target>
+        <target>crwdns110488:0crwdne110488:0</target>
       </trans-unit>
       <trans-unit id="type.localstorage" resname="type.localstorage">
         <source>Local Storage</source>
-        <target>crwdns85253:0crwdne85253:0</target>
+        <target>crwdns110490:0crwdne110490:0</target>
       </trans-unit>
       <trans-unit id="group.marketing" resname="group.marketing">
         <source>Marketing</source>
-        <target>crwdns80780:0crwdne80780:0</target>
+        <target>crwdns110492:0crwdne110492:0</target>
       </trans-unit>
       <trans-unit id="group.marketing.desc" resname="group.marketing">
         <source>With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</source>
-        <target>crwdns80826:0crwdne80826:0</target>
+        <target>crwdns110494:0crwdne110494:0</target>
       </trans-unit>
       <trans-unit id="trackingobject._pk_id.desc" resname="trackingobject._pk_id.desc">
         <source>Used to store a few details about the user such as the unique visitor ID.</source>
-        <target>crwdns80836:0crwdne80836:0</target>
+        <target>crwdns110496:0crwdne110496:0</target>
       </trans-unit>
       <trans-unit id="trackingobject._pk_ref.desc" resname="trackingobject._pk_ref.desc">
         <source>Used to store the attribution information, the referrer initially used to visit the website.</source>
-        <target>crwdns80838:0crwdne80838:0</target>
+        <target>crwdns110498:0crwdne110498:0</target>
       </trans-unit>
       <trans-unit id="trackingobject._pk_ses.desc" resname="trackingobject._pk_ses.desc">
         <source>Short lived cookie used to temporarily store data for the visit.</source>
-        <target>crwdns80840:0crwdne80840:0</target>
+        <target>crwdns110500:0crwdne110500:0</target>
       </trans-unit>
       <trans-unit id="trackingobject._pk_cvar.desc" resname="trackingobject._pk_cvar.desc">
         <source>Short lived cookie used to temporarily store data for the visit.</source>
-        <target>crwdns80842:0crwdne80842:0</target>
+        <target>crwdns110502:0crwdne110502:0</target>
       </trans-unit>
       <trans-unit id="trackingobject._pk_hsr.desc" resname="trackingobject._pk_hsr.desc">
         <source>Short lived cookie used to temporarily store data for the visit.</source>
-        <target>crwdns80844:0crwdne80844:0</target>
+        <target>crwdns110504:0crwdne110504:0</target>
       </trans-unit>
       <trans-unit id="trackingobject._ga.desc" resname="trackingobject._ga.desc">
         <source>Used to distinguish users.</source>
-        <target>crwdns80782:0crwdne80782:0</target>
+        <target>crwdns110506:0crwdne110506:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.AMP_TOKEN.desc" resname="trackingobject.AMP_TOKEN.desc">
         <source>Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID service.</source>
-        <target>crwdns82993:0crwdne82993:0</target>
+        <target>crwdns110508:0crwdne110508:0</target>
       </trans-unit>
       <trans-unit id="trackingobject._dc_gtm_--property-id--.desc" resname="trackingobject._dc_gtm_--property-id--.desc">
         <source>Used by DoubleClick (Google Tag Manager) to help identify the visitors by either age, gender or interests.</source>
-        <target>crwdns83459:0crwdne83459:0</target>
+        <target>crwdns110510:0crwdne110510:0</target>
       </trans-unit>
       <trans-unit id="trackingobject._gac_--property-id--.desc" resname="trackingobject._gac_--property-id--.desc">
         <source>Contains campaign related information for the user. If you have linked your Google Analytics and Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.</source>
-        <target>crwdns80786:0crwdne80786:0</target>
+        <target>crwdns110512:0crwdne110512:0</target>
       </trans-unit>
       <trans-unit id="trackingobject._gat.desc" resname="trackingobject._gat.desc">
         <source>Used to throttle request rate.</source>
-        <target>crwdns80788:0crwdne80788:0</target>
+        <target>crwdns110514:0crwdne110514:0</target>
       </trans-unit>
       <trans-unit id="trackingobject._ga_--container-id--.desc" resname="trackingobject._ga_--container-id--.desc">
         <source>Persists session state.</source>
-        <target>crwdns80790:0crwdne80790:0</target>
+        <target>crwdns110516:0crwdne110516:0</target>
       </trans-unit>
       <trans-unit id="trackingobject._gcl_au.desc" resname="trackingobject._gcl_au.desc">
         <source>Used by Google AdSense to experiment with advertisement efficiency.</source>
-        <target>crwdns80792:0crwdne80792:0</target>
+        <target>crwdns110518:0crwdne110518:0</target>
       </trans-unit>
       <trans-unit id="trackingobject._gid.desc" resname="trackingobject._gid.desc">
         <source>Used to distinguish users.</source>
-        <target>crwdns80794:0crwdne80794:0</target>
+        <target>crwdns110520:0crwdne110520:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.MUID.desc" resname="trackingobject.MUID.desc">
         <source>Used as unique user identifier. The cookie allows user tracking across many Microsoft domains.</source>
-        <target>crwdns84009:0crwdne84009:0</target>
+        <target>crwdns110522:0crwdne110522:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.MUIDB.desc" resname="trackingobject.MUIDB.desc">
         <source>Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</source>
-        <target>crwdns80798:0crwdne80798:0</target>
+        <target>crwdns110524:0crwdne110524:0</target>
       </trans-unit>
       <trans-unit id="browser.dnt-enabled" resname="browser.dnt-enabled">
         <source><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></source>
-        <target><![CDATA[crwdns80822:0crwdne80822:0]]></target>
+        <target><![CDATA[crwdns110526:0crwdne110526:0]]></target>
       </trans-unit>
       <trans-unit id="duration.none" resname="duration.empty">
         <source>none</source>
-        <target>crwdns85944:0crwdne85944:0</target>
+        <target>crwdns110528:0crwdne110528:0</target>
       </trans-unit>
       <trans-unit id="duration.minute" resname="duration.minute">
         <source>minute</source>
-        <target>crwdns80802:0crwdne80802:0</target>
+        <target>crwdns110530:0crwdne110530:0</target>
       </trans-unit>
       <trans-unit id="duration.minutes" resname="duration.minutes">
         <source>minutes</source>
-        <target>crwdns80804:0crwdne80804:0</target>
+        <target>crwdns110532:0crwdne110532:0</target>
       </trans-unit>
       <trans-unit id="duration.hour" resname="duration.hour">
         <source>hour</source>
-        <target>crwdns80806:0crwdne80806:0</target>
+        <target>crwdns110534:0crwdne110534:0</target>
       </trans-unit>
       <trans-unit id="duration.hours" resname="duration.hours">
         <source>hours</source>
-        <target>crwdns80808:0crwdne80808:0</target>
+        <target>crwdns110536:0crwdne110536:0</target>
       </trans-unit>
       <trans-unit id="duration.day" resname="duration.day">
         <source>day</source>
-        <target>crwdns80810:0crwdne80810:0</target>
+        <target>crwdns110538:0crwdne110538:0</target>
       </trans-unit>
       <trans-unit id="duration.days" resname="duration.days">
         <source>days</source>
-        <target>crwdns80812:0crwdne80812:0</target>
+        <target>crwdns110540:0crwdne110540:0</target>
       </trans-unit>
       <trans-unit id="duration.month" resname="duration.month">
         <source>month</source>
-        <target>crwdns80814:0crwdne80814:0</target>
+        <target>crwdns110542:0crwdne110542:0</target>
       </trans-unit>
       <trans-unit id="duration.months" resname="duration.months">
         <source>months</source>
-        <target>crwdns80816:0crwdne80816:0</target>
+        <target>crwdns110544:0crwdne110544:0</target>
       </trans-unit>
       <trans-unit id="duration.year" resname="duration.year">
         <source>year</source>
-        <target>crwdns80818:0crwdne80818:0</target>
+        <target>crwdns110546:0crwdne110546:0</target>
       </trans-unit>
       <trans-unit id="duration.years" resname="duration.years">
         <source>years</source>
-        <target>crwdns80820:0crwdne80820:0</target>
+        <target>crwdns110548:0crwdne110548:0</target>
       </trans-unit>
       <trans-unit id="active" resname="active">
         <source>active</source>
-        <target>crwdns80828:0crwdne80828:0</target>
+        <target>crwdns110550:0crwdne110550:0</target>
       </trans-unit>
       <trans-unit id="alwaysactive" resname="alwaysactive">
         <source>always active</source>
-        <target>crwdns80830:0crwdne80830:0</target>
+        <target>crwdns110552:0crwdne110552:0</target>
       </trans-unit>
       <trans-unit id="inactive" resname="inactive">
         <source>inactive</source>
-        <target>crwdns80832:0crwdne80832:0</target>
+        <target>crwdns110554:0crwdne110554:0</target>
       </trans-unit>
       <trans-unit id="alwaysinactive" resname="alwaysinactive">
         <source>always inactive</source>
-        <target>crwdns80834:0crwdne80834:0</target>
+        <target>crwdns110556:0crwdne110556:0</target>
       </trans-unit>
     </body>
   </file>
