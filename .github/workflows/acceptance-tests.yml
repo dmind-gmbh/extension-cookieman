@@ -1,14 +1,14 @@
 name: acceptance tests
 
-on:
-    push:
-        branches:
-            - '**'
-            - '!l10n_*'
-    pull_request:
-        branches:
-            - '**'
-            - '!l10n_*'
+on: []
+#    push:
+#        branches:
+#            - '**'
+#            - '!l10n_*'
+#    pull_request:
+#        branches:
+#            - '**'
+#            - '!l10n_*'
 
 jobs:
     acceptance-tests:
