@@ -1,6 +1,20 @@
+# 2.6.2
+
+## MISC
+- remove typo3-console from --dev 05cb557
+- branch off 10lts 3bdad16
+- upgrade npm packages 18108ba
+- lint 9642f38
+- Try multiple cookie domains and paths during HTML cookie deletion. Fixes #137 708f0ed
+- Bump elliptic from 6.5.2 to 6.5.3 in /Build (#152) 62118da
+- New Crowdin updates (#144) b4d0c9b
+- Bump lodash from 4.17.15 to 4.17.19 in /Build (#148) ee99dcc
+- get ready for ddev 1.15 dec0154
+
 # 2.5.2
 
 ## MISC
+- add ViewHelper namespace c: to Partial as well ad0a9a7
 - New Crowdin translations (#141) 346bbec
 - New Crowdin translations (#139) 6a3f7e6
 - Move example-inject.js to Js/Injects/ d34908c
