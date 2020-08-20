@@ -13,7 +13,8 @@
     ],
     "require": {
         "php": "^7.2",
-        "typo3/cms-core": "^10.0 || dev-master"
+        "typo3/cms-core": "^11.0 || dev-master",
+        "helhum/typo3-console": "@dev"
     },
     "require-dev": {
         "bk2k/bootstrap-package": "^11.0",
@@ -27,7 +28,6 @@
         "dmind/cookieman-test-customtheme": "@dev",
         "ergebnis/composer-normalize": "^2.3",
         "friendsofphp/php-cs-fixer": "^2.14",
-        "helhum/typo3-console": "^5.8",
         "php-coveralls/php-coveralls": "^2.1",
         "roave/security-advisories": "dev-master",
         "typo3/cms-introduction": "dev-master",
