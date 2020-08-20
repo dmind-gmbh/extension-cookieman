@@ -282,11 +282,11 @@ var cookieman = (function () {
                 
                 for (var cookieName in currentCookies) {
                     if (cookieName.match(regex) !== null) {
-                        Cookies.remove(cookieName)
+                        removeHtmlCookie(cookieName)
                     }
                 }
             } else {
-                Cookies.remove(itemKey)
+                removeHtmlCookie(cookieName)
             }
             return true
         }
@@ -330,6 +330,23 @@ var cookieman = (function () {
         eventsEl.dispatchEvent(
             new window.CustomEvent(typeArg, customEventInit)
         )
+    }
+
+    /**
+     * Remove HTML cookie.
+     * In order to catch wildcard cookies like domain=.xxx.yy try different path and domains.
+     * @link https://github.com/dmind-gmbh/extension-cookieman/issues/137
+     * @param name
+     */
+    function removeHtmlCookie(name) {
+        // www.xxx.yy
+        var fullDomain = document.location.host
+        // xxx.yy
+        var secondLevelDomain = fullDomain.split('.').slice(-2).join('.')
+        Cookies.remove(name)
+        Cookies.remove(name, {path: ''})
+        Cookies.remove(name, {path: '', domain: fullDomain})
+        Cookies.remove(name, {path: '', domain: '.' + secondLevelDomain})
     }
 
     function init() {
