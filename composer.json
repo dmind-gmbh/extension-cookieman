@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": "^7.2",
-        "typo3/cms-core": "dev-master",
+        "typo3/cms-core": "dev-master as 10.4.x-dev",
         "helhum/typo3-console": "dev-develop"
     },
     "require-dev": {
