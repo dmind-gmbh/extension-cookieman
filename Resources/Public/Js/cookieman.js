@@ -61,19 +61,19 @@ var cookieman = (function () {
     }
 
     /**
-     * Checks if consent was given for all groups, in which a trackingObject 
+     * Checks if consent was given for all groups, in which a trackingObject
      * with the given key is defined. Normally each trackingObject should only
      * be present in one group.
-     * 
+     *
      * @param trackingObjectKey string e.g. 'Matomo'
-     * @return boolean consent given for all groups. If the trackingObject is 
+     * @return boolean consent given for all groups. If the trackingObject is
      * not defined in any group, this function will return false
      */
     function hasConsentedTrackingObject(trackingObjectKey) {
         var groups = findGroupsByTrackingObjectKey(trackingObjectKey)
-        
+
         return groups.reduce(
-            function (consentGiven, groupKey) { 
+            function (consentGiven, groupKey) {
                 return consentGiven && hasConsented(groupKey)
             },
             groups.length > 0
@@ -138,18 +138,18 @@ var cookieman = (function () {
             }
         }
     }
-    
+
     /**
      * Returns all groups, in which a trackingObject with the given key is defined.
-     * 
+     *
      * @param trackingObjectKey string e.g. 'Matomo'
      * @return array
      */
     function findGroupsByTrackingObjectKey(trackingObjectKey) {
         return Object.keys(settings.groups).filter(
             function (groupKey) {
-                return Object.prototype.hasOwnProperty.call(settings.groups[groupKey], 'trackingObjects') 
-                       && settings.groups[groupKey].trackingObjects.indexOf(trackingObjectKey) > -1
+                return Object.prototype.hasOwnProperty.call(settings.groups[groupKey], 'trackingObjects')
+                    && settings.groups[groupKey].trackingObjects.indexOf(trackingObjectKey) > -1
             }
         )
     }
@@ -270,7 +270,7 @@ var cookieman = (function () {
                 var regex,
                     currentCookies = Cookies.get(),
                     matches
-                    
+
                 try {
                     //Put in try/catch in case user set malformed regex
                     regex = RegExp(oItem['htmlCookieRemovalPattern'])
@@ -279,7 +279,7 @@ var cookieman = (function () {
                     //Do not try the malformed pattern on the other cookie names
                     return false
                 }
-                
+
                 for (var cookieName in currentCookies) {
                     if (cookieName.match(regex) !== null) {
                         removeHtmlCookie(cookieName)
