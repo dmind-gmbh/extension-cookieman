@@ -34,7 +34,8 @@
     },
     "config": {
         "bin-dir": ".build/bin",
-        "vendor-dir": ".build/vendor"
+        "vendor-dir": ".build/vendor",
+        "sort-packages": true
     },
     "extra": {
         "branch-alias": {
