@@ -419,6 +419,16 @@ var cookieman = (function () {
         consenteds: consentedSelectionsRespectDnt,
         /**
          * @api
+         * @param {string} groupKey
+         */
+        consent: function (groupKey) {
+            var checkbox = form.querySelector('[type=checkbox][name="' + groupKey + '"]')
+            setChecked(checkbox, true)
+            saveSelections()
+            injectNewTrackingObjects()
+        },
+        /**
+         * @api
          * @param {string} trackingObjectKey
          * @param {number} scriptId
          * @param {function} callback
