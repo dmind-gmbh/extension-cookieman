@@ -59,6 +59,18 @@ cookieman.hide()
    Hides the confirmation modal.
 
 
+cookieman.consent(groupKey)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+:aspect:`Description`
+   Adds the given group (e.g. 'marketing') to the consented groups, updates the CookieConsent cookie
+   and injects all items given each corresponding trackingObject's `inject` section.
+
+   This is meant as a programmatic way to implement banners before showing content from external sources such as YouTube
+   videos, Google Maps, facebook posts, ... – clicking the "yes, show the content"-button would call this function and a
+   `<script>` in trackingObject's `inject` section would take care of actually loading the content.
+
+
 cookieman.consenteds()
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -72,16 +84,14 @@ cookieman.consenteds()
    Returns all groups keys the user has consented to.
 
 
-cookieman.hasConsented(selection)
+cookieman.hasConsented(groupKey)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 :aspect:`Data type`
    boolean
 
 :aspect:`Description`
-   Returns `true` if the user has consented to the given selection, else false.
-
-   A selection is any name of a checkbox in the popup, e.g. 'marketing'.
+   Returns `true` if the user has consented to the given group (e.g. 'marketing'), else false.
 
 
 cookieman.hasConsentedTrackingObject(trackingObjectKey)
