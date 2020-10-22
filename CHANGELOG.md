@@ -1,3 +1,16 @@
+# 2.7.0
+
+## MISC
+- yarn upgrade 1a24349
+- yarn update 8f0c517
+- update actions/upload-artifact 20a619c
+- New Crowdin updates (#159) 1097884
+- fix missing js.cookie.js 750d2e2
+- add API for consenting #158 37b7f61
+- New Crowdin updates (#155) f3c93da
+- composer normalize 8a98a13
+- add composer config sort-packages a486928
+
 # 2.6.0
 
 ## MISC
