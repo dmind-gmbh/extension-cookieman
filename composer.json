@@ -65,7 +65,6 @@
             "url": "Build/*"
         }
     ],
-    "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
         "post-autoload-dump": [
