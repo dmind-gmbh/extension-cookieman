@@ -41,7 +41,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-10lts": "2.6.x-dev"
+            "dev-10lts": "2.7.x-dev"
         },
         "typo3/cms": {
             "extension-key": "cookieman",
@@ -65,7 +65,6 @@
             "url": "Build/*"
         }
     ],
-    "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
         "post-autoload-dump": [

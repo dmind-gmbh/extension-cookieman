@@ -1,3 +1,17 @@
+# 2.7.2
+
+## MISC
+- yarn upgrade 3533474
+- yarn update c1aee28
+- update actions/upload-artifact 819bb23
+- New translations locallang.xlf (TYPO3 In-Context Localization) (#161) d6ac866
+- fix missing js.cookie.js f0784a9
+- add API for consenting #158 b65c800
+- composer normalize d07443c
+- add composer config sort-packages b66e2c4
+- New translations locallang.xlf (TYPO3 In-Context Localization) (#154) bc5570d
+- Update Crowdin configuration file 086f531
+
 # 2.6.2
 
 ## MISC
