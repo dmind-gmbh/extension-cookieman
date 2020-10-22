@@ -1,3 +1,17 @@
+# 2.7.3
+
+## MISC
+- yarn upgrade d0e0829
+- yarn update 4da0f24
+- update actions/upload-artifact fcd5ccd
+- fix missing js.cookie.js 1693fb5
+- add API for consenting #158 0bfbf0f
+- Use https for demo link (#157) 7105e4d
+- composer normalize d55564c
+- add composer config sort-packages 022527e
+- composer normalize 51477fa
+- fix TYPO3 master dependencies 0a5eb1e
+
 # 2.6.3
 
 ## MISC
