@@ -3,7 +3,7 @@ version: '3.6'
 services:
     selenium-chrome:
         container_name: ddev-${DDEV_SITENAME}-selenium-chrome
-        image: flightvision/selenium-node-chrome-with-mkcert:stable
+        image: flightvision/selenium-node-chrome-with-mkcert:latest
         depends_on:
             - selenium-hub
         labels:
@@ -25,7 +25,7 @@ services:
 
     selenium-firefox:
         container_name: ddev-${DDEV_SITENAME}-selenium-firefox
-        image: flightvision/selenium-node-firefox-with-mkcert:stable
+        image: flightvision/selenium-node-firefox-with-mkcert:latest
         depends_on:
             - selenium-hub
         labels:
