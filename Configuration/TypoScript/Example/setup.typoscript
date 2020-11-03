@@ -20,7 +20,6 @@ plugin.tx_cookieman {
                     20 = GoogleTagManager
                     30 = Bing
                     40 = FacebookPixel
-                    50 = MicrosoftForms
                 }
 
                 respectDnt = 1
