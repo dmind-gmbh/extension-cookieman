@@ -1,0 +1,45 @@
+plugin.tx_cookieman.settings.trackingObjects {
+    MicrosoftForms {
+        # inline scripts would break Content-Security-Policy: script-src
+        # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src
+        show {
+            # https://www.microsoft.com/de-de/trust-center/privacy/gdpr-overview
+            __RequestVerificationToken {
+                duration =
+                durationUnit = session
+                type = cookie_http
+                provider = Microsoft
+            }
+            
+            AADNonce.forms {
+                duration =
+                durationUnit = session
+                type = cookie_http
+                provider = Microsoft
+            }
+
+            DcLcid {
+                duration = 3
+                durationUnit = months
+                type = cookie_http
+                provider = Microsoft
+            }
+
+            MSFPC
+             {
+                duration = 1
+                durationUnit = year
+                type = cookie_http
+                provider = Microsoft
+            }
+
+            MUID
+             {
+                duration = 1
+                durationUnit = year
+                type = cookie_http
+                provider = Microsoft
+            }
+        }
+    }
+}
