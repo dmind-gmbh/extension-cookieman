@@ -232,7 +232,7 @@
             <trans-unit id="browser.dnt-enabled" resname="browser.dnt-enabled">
                 <source><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></source>
             </trans-unit>
-            <trans-unit id="duration.none" resname="duration.none">
+            <trans-unit id="duration.none" resname="duration.empty">
                 <source>none</source>
             </trans-unit>
             <trans-unit id="duration.minute" resname="duration.minute">
