@@ -21,6 +21,18 @@ plugin.tx_cookieman {
                     30 = Bing
                     40 = FacebookPixel
                     50 = MicrosoftForms
+                    60 = SlideShare
+                }
+
+                respectDnt = 1
+                showDntMessage = 1
+            }
+
+            # external content
+            external {
+                trackingObjects {
+                    0 = GoogleMaps
+                    10 = YouTube
                 }
 
                 respectDnt = 1
