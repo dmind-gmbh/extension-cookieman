@@ -5,7 +5,7 @@ plugin.tx_cookieman.settings.trackingObjects {
         show {
             # https://www.microsoft.com/de-de/trust-center/privacy/gdpr-overview
             GoogleMaps {
-                duration = empty
+                duration = none
                 durationUnit =
                 type = connection
                 provider = Google
