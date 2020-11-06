@@ -11,7 +11,7 @@ plugin.tx_cookieman.settings.trackingObjects {
                 provider = Microsoft
             }
             
-            AADNonce.forms {
+            AADNonce\.forms {
                 duration =
                 durationUnit = session
                 type = cookie_http
