@@ -1,0 +1,36 @@
+plugin.tx_cookieman.settings.trackingObjects {
+    MicrosoftForms {
+        # inline scripts would break Content-Security-Policy: script-src
+        # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src
+        show {
+            # https://www.slideshare.net/privacy
+            UID {
+                duration = 2
+                durationUnit = years
+                type = cookie_http
+                provider = Slideshare
+            }
+            
+            UIDR {
+                duration = 2
+                durationUnit = years
+                type = cookie_http
+                provider = Slideshare
+            }
+
+            bcookie {
+                duration = 2
+                durationUnit = years
+                type = cookie_http
+                provider = Slideshare
+            }
+
+            lang {
+                duration =
+                durationUnit = session
+                type = cookie_http
+                provider = Slideshare
+            }
+        }
+    }
+}

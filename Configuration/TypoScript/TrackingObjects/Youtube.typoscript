@@ -1,0 +1,15 @@
+plugin.tx_cookieman.settings.trackingObjects {
+    YouTube {
+        # inline scripts would break Content-Security-Policy: script-src
+        # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src
+        show {
+            # https://policies.google.com/privacy
+            YouTube {
+                duration =
+                durationUnit = none
+                type = connection
+                provider = YouTube
+            }
+        }
+    }
+}
