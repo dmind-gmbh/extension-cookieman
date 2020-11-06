@@ -5,8 +5,8 @@ plugin.tx_cookieman.settings.trackingObjects {
         show {
             # https://policies.google.com/technologies/cookies?hl=de
             GoogleMaps {
-                duration =
-                durationUnit = none
+                duration = none
+                durationUnit =
                 type = connection
                 provider = Google
             }

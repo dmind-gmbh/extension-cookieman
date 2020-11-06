@@ -33,6 +33,7 @@ plugin.tx_cookieman {
                 trackingObjects {
                     0 = GoogleMaps
                     10 = YouTube
+                    20 = MicrosoftStream
                 }
 
                 respectDnt = 1

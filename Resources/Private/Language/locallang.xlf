@@ -228,7 +228,25 @@
             </trans-unit>
             <trans-unit id="trackingobject.GoogleMaps.desc" resname="trackingobject.GoogleMaps.desc">
                 <source>Is used to connect to Google Maps and to display those maps.</source>
-            </trans-unit>            
+            </trans-unit>    
+            <trans-unit id="trackingobject.MicrosoftStream.desc" resname="trackingobject.MicrosoftStream.desc">
+                <source>Is used to connect to Microsoft Stream and display to videos.</source>
+            </trans-unit>    
+            <trans-unit id="trackingobject.Signature_Api.desc" resname="trackingobject.Signature_Api.desc">
+                <source>Is used to connect to the Microsoft signature API.</source>
+            </trans-unit>    
+            <trans-unit id="trackingobject.Authorization_Api.desc" resname="trackingobject.Authorization_Api.desc">
+                <source>Is used to connect to the Microsoft authorization API.</source>
+            </trans-unit>    
+            <trans-unit id="trackingobject.RedirectToThinEmbed.desc" resname="trackingobject.RedirectToThinEmbed.desc">
+                <source>Is used to embed Microsoft Stream videos.</source>
+            </trans-unit>
+            <trans-unit id="trackingobject.UserSession_Api.desc" resname="trackingobject.UserSession_Api.desc">
+                <source>Is used to store the user session of the Microsoft API.</source>
+            </trans-unit>    
+            <trans-unit id="trackingobject.wfeSessionId.desc" resname="trackingobject.wfeSessionId.desc">
+                <source>Is used to store the Web Front End Session ID of Microsoft Stream.</source>
+            </trans-unit>    
             <trans-unit id="browser.dnt-enabled" resname="browser.dnt-enabled">
                 <source><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></source>
             </trans-unit>
