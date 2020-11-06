@@ -25,16 +25,14 @@ plugin.tx_cookieman.settings.trackingObjects {
                 provider = Microsoft
             }
 
-            MSFPC
-             {
+            MSFPC {
                 duration = 1
                 durationUnit = year
                 type = cookie_http
                 provider = Microsoft
             }
 
-            MUID
-             {
+            MUID {
                 duration = 1
                 durationUnit = year
                 type = cookie_http
