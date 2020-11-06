@@ -1,0 +1,50 @@
+plugin.tx_cookieman.settings.trackingObjects {
+    MicrosoftStream {
+        # inline scripts would break Content-Security-Policy: script-src
+        # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src
+        show {
+            # https://www.microsoft.com/de-de/trust-center/privacy/gdpr-overview
+            MicrosoftStream {
+                duration =
+                durationUnit = none
+                type = connection
+                provider = MicrosoftStream
+            }
+            
+            Signature_Api {
+                duration =
+                durationUnit = session
+                type = cookie_http
+                provider = MicrosoftStream
+            }
+
+            Authorization_Api {
+                duration =
+                durationUnit = session
+                type = cookie_http
+                provider = MicrosoftStream
+            }
+
+            RedirectToThinEmbed {
+                duration =
+                durationUnit = session
+                type = cookie_http
+                provider = MicrosoftStream
+            }
+
+            UserSession_Api {
+                duration =
+                durationUnit = session
+                type = cookie_http
+                provider = MicrosoftStream
+            }
+
+            wfeSessionId {
+                duration =
+                durationUnit = session
+                type = cookie_http
+                provider = MicrosoftStream
+            }
+        }
+    }
+}
