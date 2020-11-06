@@ -11,7 +11,7 @@ plugin.tx_cookieman.settings.trackingObjects {
                 provider = Microsoft
             }
             
-            AADNonce.forms {
+            AADNonce\.forms {
                 duration =
                 durationUnit = session
                 type = cookie_http
@@ -25,16 +25,14 @@ plugin.tx_cookieman.settings.trackingObjects {
                 provider = Microsoft
             }
 
-            MSFPC
-             {
+            MSFPC {
                 duration = 1
                 durationUnit = year
                 type = cookie_http
                 provider = Microsoft
             }
 
-            MUID
-             {
+            MUID {
                 duration = 1
                 durationUnit = year
                 type = cookie_http
