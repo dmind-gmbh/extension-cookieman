@@ -1,7 +1,14 @@
 plugin.tx_cookieman.settings.trackingObjects {
     YouTube {
-        # inline scripts would break Content-Security-Policy: script-src
-        # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src
+        inject (
+            <script data-what="YouTube" src="/typo3conf/ext/cookieman/Resources/Public/Js/Injects/example-inject.js"></script>
+        )
+# example:
+#        inject (
+# We are planning to support Youtube out-of-the-box with cookieman. Stay tuned. 
+# Until then please add your own logic (e.g. replacing your consent message including a 
+# <button onclick="cookieman.consent('YouTube'); return false"> with the actual HTML for the video).
+#        )
         show {
             # https://policies.google.com/privacy
             YouTube {
