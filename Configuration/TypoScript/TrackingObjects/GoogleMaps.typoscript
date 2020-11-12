@@ -1,7 +1,12 @@
 plugin.tx_cookieman.settings.trackingObjects {
     GoogleMaps {
-        # inline scripts would break Content-Security-Policy: script-src
-        # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src
+        inject (
+            <script data-what="GoogleMaps" src="/typo3conf/ext/cookieman/Resources/Public/Js/Injects/example-inject.js"></script>
+        )
+# example:
+#        inject (
+# We are planning to support Google Maps out-of-the-box with cookieman. Stay tuned.
+#        )
         show {
             # https://www.microsoft.com/de-de/trust-center/privacy/gdpr-overview
             GoogleMaps {
