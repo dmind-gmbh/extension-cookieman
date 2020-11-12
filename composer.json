@@ -13,7 +13,6 @@
     ],
     "require": {
         "php": "^7.2",
-        "symfony/event-dispatcher": "^4",
         "typo3/cms-core": "^11.0 || 11.0.x-dev || dev-master"
     },
     "require-dev": {
@@ -30,6 +29,7 @@
         "friendsofphp/php-cs-fixer": "^2.16",
         "php-coveralls/php-coveralls": "^2.1",
         "roave/security-advisories": "dev-master",
+        "symfony/event-dispatcher": "^4",
         "typo3/cms-install": "^11.0 || 11.0.x-dev || dev-master",
         "typo3/cms-tstemplate": "^11.0 || 11.0.x-dev || dev-master",
         "typo3/testing-framework": "dev-master"
