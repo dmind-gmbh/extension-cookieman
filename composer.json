@@ -27,7 +27,6 @@
         "dmind/cookieman-test-customtheme": "@dev",
         "friendsofphp/php-cs-fixer": "^2.14",
         "helhum/typo3-console": "^5.7",
-        "localheinz/composer-normalize": "^1.3",
         "php-coveralls/php-coveralls": "^2.1",
         "roave/security-advisories": "dev-master",
         "typo3/cms-impexp": "^8.7.0",
@@ -109,7 +108,7 @@
             "typo3 extensionmanager:extension:install cookieman_test_customtheme"
         ],
         "fix:cgl": [
-            "php-cs-fixer --config=.php_cs.dist fix --using-cache=no",
+            "php-cs-fixer --config=.php_cs.dist fix --using-cache=no"
         ],
         "install-extensions": [
             "typo3 extensionmanager:extension:install bootstrap_package",
@@ -157,7 +156,7 @@
             "codecept run --env firefox -d -c Build/local.codeception.yml -- acceptance"
         ],
         "test:cgl": [
-            "php-cs-fixer --config=.php_cs.dist fix -v --using-cache=no --dry-run",
+            "php-cs-fixer --config=.php_cs.dist fix -v --using-cache=no --dry-run"
         ],
         "test:unit": [
             "phpunit -c Build/UnitTests.phpunit.xml"
