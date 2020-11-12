@@ -24,6 +24,8 @@ jobs:
             -   run: sudo update-alternatives --set php /usr/bin/php${{ matrix.php-version }}
             # composer
             -   run: composer update --no-interaction --no-progress
+            # Show versions
+            -   run: composer show
             # Run tests
             -   run: composer tests-for:ci
             # Push to coveralls
