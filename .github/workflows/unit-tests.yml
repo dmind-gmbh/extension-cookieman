@@ -25,8 +25,7 @@ jobs:
             # composer
             -   run: composer update --no-progress --no-suggest
             # Run tests
-            -   run: composer test:cgl
-            -   run: composer test:unit
+            -   run: composer tests-for:ci
             # Push to coveralls
             -   run: |
                     COVERALLS_REPO_TOKEN=${{ secrets.COVERALLS_REPO_TOKEN }} \
