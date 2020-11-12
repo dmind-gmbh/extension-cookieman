@@ -1,7 +1,12 @@
 plugin.tx_cookieman.settings.trackingObjects {
     MicrosoftForms {
-        # inline scripts would break Content-Security-Policy: script-src
-        # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src
+        inject (
+            <script data-what="MicrosoftForms" src="/typo3conf/ext/cookieman/Resources/Public/Js/Injects/example-inject.js"></script>
+        )
+# example:
+#        inject (
+# no example available yet. We are happy to receive a pull request if you have one.
+#        )
         show {
             # https://www.microsoft.com/de-de/trust-center/privacy/gdpr-overview
             __RequestVerificationToken {
