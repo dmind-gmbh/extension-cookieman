@@ -1,8 +1,13 @@
 plugin.tx_cookieman.settings.trackingObjects {
     MicrosoftStream {
-        # inline scripts would break Content-Security-Policy: script-src
-        # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src
-        show {
+        inject (
+            <script data-what="MicrosoftStrean" src="/typo3conf/ext/cookieman/Resources/Public/Js/Injects/example-inject.js"></script>
+        )
+# example:
+#        inject (
+# no example available yet. We are happy to receive a pull request if you have one.
+#        )
+         show {
             # https://www.microsoft.com/de-de/trust-center/privacy/gdpr-overview
             MicrosoftStream {
                 duration =
