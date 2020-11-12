@@ -28,7 +28,7 @@ jobs:
             -   run: composer show
             # Run tests
             -   run: composer tests-for:ci
-            # Push to coveralls
+            # Push to coveralls (master only)
             -   run: |
                         .build/bin/php-coveralls \
                         --root_dir=. --env=prod --verbose
