@@ -23,7 +23,7 @@ jobs:
             # https://help.github.com/en/actions/automating-your-workflow-with-github-actions/software-installed-on-github-hosted-runners#ubuntu-1804-lts
             -   run: sudo update-alternatives --set php /usr/bin/php${{ matrix.php-version }}
             # composer
-            -   run: composer update --no-progress --no-suggest
+            -   run: composer update --no-interaction --no-progress
             # Run tests
             -   run: composer test:cgl
             -   run: composer test:unit
