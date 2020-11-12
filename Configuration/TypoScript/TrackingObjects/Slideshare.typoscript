@@ -1,34 +1,41 @@
 plugin.tx_cookieman.settings.trackingObjects {
-    MicrosoftForms {
-        # inline scripts would break Content-Security-Policy: script-src
-        # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src
-        show {
+    Slideshare {
+        inject (
+            <script data-what="Slideshare" src="/typo3conf/ext/cookieman/Resources/Public/Js/Injects/example-inject.js"></script>
+        )
+# example:
+#        inject (
+# You would use your own JavaScript to transform your placeholder elements into this:
+# <iframe src="//www.slideshare.net/slideshow/embed_code/key/EAvVlu6VpOr6u1" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen></iframe> 
+#        )
+
+         show {
             # https://www.slideshare.net/privacy
             UID {
                 duration = 2
                 durationUnit = years
-                type = cookie_http
+                type = cookie_http+html
                 provider = Slideshare
             }
             
             UIDR {
                 duration = 2
                 durationUnit = years
-                type = cookie_http
+                type = cookie_http+html
                 provider = Slideshare
             }
 
             bcookie {
                 duration = 2
                 durationUnit = years
-                type = cookie_http
+                type = cookie_http+html
                 provider = Slideshare
             }
 
             lang {
                 duration =
                 durationUnit = session
-                type = cookie_http
+                type = cookie_http+html
                 provider = Slideshare
             }
         }
