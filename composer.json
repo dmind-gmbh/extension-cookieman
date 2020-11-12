@@ -20,6 +20,8 @@
         "bk2k/extension-helper": "^1.0",
         "browserstack/browserstack-local": "dev-master",
         "codeception/codeception": "^4.1",
+        "codeception/module-asserts": "^1.3",
+        "codeception/module-webdriver": "^1.1",
         "dmind/cookieman-test": "@dev",
         "dmind/cookieman-test-bootstrap3-banner": "@dev",
         "dmind/cookieman-test-bootstrap3-modal": "@dev",
