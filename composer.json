@@ -106,7 +106,7 @@
             "typo3 extension:activate -n cookieman_test_customtheme"
         ],
         "fix:cgl": [
-            "php-cs-fixer --config=.php_cs.dist fix --using-cache=no",
+            "php-cs-fixer --config=.php_cs.dist fix --using-cache=no"
         ],
         "install-extensions": [
             "typo3 extension:activate -n impexp",
@@ -155,7 +155,7 @@
             "codecept run --env firefox -d -c Build/local.codeception.yml -- acceptance"
         ],
         "test:cgl": [
-            "php-cs-fixer --config=.php_cs.dist fix -v --using-cache=no --dry-run",
+            "php-cs-fixer --config=.php_cs.dist fix -v --using-cache=no --dry-run"
         ],
         "test:unit": [
             "phpunit -c Build/UnitTests.phpunit.xml"
