@@ -31,12 +31,12 @@ jobs:
                 run: |
                         .build/bin/php-coveralls \
                         --root_dir=. --env=prod --verbose
-                if: github.ref == 'refs/heads/master' && php-version == '7.4'
+                if: github.ref == 'refs/heads/master' && matrix.php-version == '7.4'
                 env:
                     COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
             - name: Upload coveralls result
               uses: actions/upload-artifact@v2
-              if: github.ref == 'refs/heads/master' && php-version == '7.4'
+              if: github.ref == 'refs/heads/master' && matrix.php-version == '7.4'
               with:
                   name: Coveralls result
                   path: ./Build/coveralls-upload.json
