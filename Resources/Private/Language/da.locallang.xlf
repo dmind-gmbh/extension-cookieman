@@ -183,11 +183,15 @@
         <source>Local Storage</source>
         <target state="final">Lokalt lager</target>
       </trans-unit>
+      <trans-unit id="type.connection" resname="type.connection" approved="yes">
+        <source>Connection</source>
+        <target state="final">Forbindelse</target>
+      </trans-unit>
       <trans-unit id="group.marketing" resname="group.marketing" approved="yes">
         <source>Marketing</source>
         <target state="final">Markedsføring</target>
       </trans-unit>
-      <trans-unit id="group.marketing.desc" resname="group.marketing" approved="yes">
+      <trans-unit id="group.marketing.desc" resname="group.marketing.desc" approved="yes">
         <source>With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</source>
         <target state="final">Ved hjælp af disse cookies, arbejder vi målrettet på at forbedre vores indhold for vores brugere. Ved hjælp af anonymiserede data fra websidens brugere, kan vi optimere brugerflowet. Det gør os i stand til at forbedre reklamer og indhold.</target>
       </trans-unit>
@@ -250,6 +254,78 @@
       <trans-unit id="trackingobject.MUIDB.desc" resname="trackingobject.MUIDB.desc" approved="yes">
         <source>Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</source>
         <target state="final">Gemmer anonyme brugerdata fra flere webside-besøg på flere websider for at teste markedsførings-effektivitet.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.MSFPC.desc" resname="trackingobject.MSFPC.desc" approved="yes">
+        <source>The cookie allows user tracking across many Microsoft domains and is used for Bing Analytics.</source>
+        <target state="final">Cookien giver brugeren mulighed for sporing på tværs af mange Microsoft-domæner og bruges til Bing Analytics.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.DcLcid.desc" resname="trackingobject.DcLcid.desc" approved="yes">
+        <source>The cookie is used to implement Microsoft-forms on the website.</source>
+        <target state="final">Cookien bruges til at implementere Microsoft-formularer på hjemmesiden.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.AADNonce.forms.desc" resname="trackingobject.AADNonce.forms.desc" approved="yes">
+        <source>The cookie is used to implement Microsoft-forms on the website.</source>
+        <target state="final">Cookien bruges til at implementere Microsoft-formularer på hjemmesiden.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__RequestVerificationToken.desc" resname="trackingobject.__RequestVerificationToken.desc" approved="yes">
+        <source>The cookie is used to implement anti-forgery concerning Microsoft-forms on the website.</source>
+        <target state="final">Cookien bruges til at implementere anti-forfalskning vedrørende Microsoft-formularer på hjemmesiden.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.UID.desc" resname="trackingobject.UID.desc" approved="yes">
+        <source>The cookie is used for market and user research (Scorecard Research).</source>
+        <target state="final">Cookien bruges til markeds- og brugerundersøgelser (Scorecard Research).</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.UIDR.desc" resname="trackingobject.UIDR.desc" approved="yes">
+        <source>The cookie is used for market and user research (Scorecard Research).</source>
+        <target state="final">Cookien bruges til markeds- og brugerundersøgelser (Scorecard Research).</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.bcookie.desc" resname="trackingobject.bcookie.desc" approved="yes">
+        <source>Browser Identifier cookie to uniquely identify devices accessing LinkedIn to detect abuse on the platform.</source>
+        <target state="final">Browser Identifier cookie til entydigt identificere enheder, der får adgang til LinkedIn for at opdage misbrug på platformen.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.lang.desc" resname="trackingobject.lang.desc" approved="yes">
+        <source>Used to remember a user's language setting.</source>
+        <target state="final">Bruges til at huske en brugers sprogindstilling.</target>
+      </trans-unit>
+      <trans-unit id="group.external" resname="group.external" approved="yes">
+        <source>External content</source>
+        <target state="final">Eksternt indhold</target>
+      </trans-unit>
+      <trans-unit id="group.external.desc" resname="group.external.desc" approved="yes">
+        <source>With the help of these cookies we strive to improve our offer for our users. By means of providing video content or other useful content like maps to enhance the user experience.</source>
+        <target state="final">Ved hjælp af disse cookies, bestræber vi os på at forbedre vores tilbud til vores brugere. Det gør vi ved at levere videoindhold eller andet nyttigt indhold, såsom kort, til at forbedre brugeroplevelsen.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.YouTube.desc" resname="trackingobject.YouTube.desc" approved="yes">
+        <source>Is used to connect to YouTube and display to videos.</source>
+        <target state="final">Bruges til at oprette forbindelse til YouTube og vise videoer.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.GoogleMaps.desc" resname="trackingobject.GoogleMaps.desc" approved="yes">
+        <source>Is used to connect to Google Maps and to display those maps.</source>
+        <target state="final">Anvendes til at oprette forbindelse til Google Maps og til at vise kort.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.MicrosoftStream.desc" resname="trackingobject.MicrosoftStream.desc" approved="yes">
+        <source>Is used to connect to Microsoft Stream and display to videos.</source>
+        <target state="final">Bruges til at oprette forbindelse til Microsoft Stream og vise videoer.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.Signature_Api.desc" resname="trackingobject.Signature_Api.desc" approved="yes">
+        <source>Is used to connect to the Microsoft signature API.</source>
+        <target state="final">Bruges til at oprette forbindelse til Microsoft signatur API.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.Authorization_Api.desc" resname="trackingobject.Authorization_Api.desc" approved="yes">
+        <source>Is used to connect to the Microsoft authorization API.</source>
+        <target state="final">Bruges til at oprette forbindelse til Microsoft autorisations API.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.RedirectToThinEmbed.desc" resname="trackingobject.RedirectToThinEmbed.desc" approved="yes">
+        <source>Is used to embed Microsoft Stream videos.</source>
+        <target state="final">Bruges til at integrere Microsoft Stream videoer.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.UserSession_Api.desc" resname="trackingobject.UserSession_Api.desc" approved="yes">
+        <source>Is used to store the user session of the Microsoft API.</source>
+        <target state="final">Bruges til at gemme brugersessionen fra Microsoft API.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.wfeSessionId.desc" resname="trackingobject.wfeSessionId.desc" approved="yes">
+        <source>Is used to store the Web Front End Session ID of Microsoft Stream.</source>
+        <target state="final">Anvendes til at gemme Web Front End Session ID fra Microsoft Stream.</target>
       </trans-unit>
       <trans-unit id="browser.dnt-enabled" resname="browser.dnt-enabled" approved="yes">
         <source><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></source>
