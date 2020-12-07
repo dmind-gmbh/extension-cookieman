@@ -261,15 +261,15 @@
       </trans-unit>
       <trans-unit id="trackingobject.DcLcid.desc" resname="trackingobject.DcLcid.desc">
         <source>The cookie is used to implement Microsoft-forms on the website.</source>
-        <target state="needs-translation">The cookie is used to implement Microsoft-forms on the website.</target>
+        <target state="translated">Deze cookie wordt gebruikt voor website integratie van Microsoft-formulieren.</target>
       </trans-unit>
       <trans-unit id="trackingobject.AADNonce.forms.desc" resname="trackingobject.AADNonce.forms.desc">
         <source>The cookie is used to implement Microsoft-forms on the website.</source>
-        <target state="needs-translation">The cookie is used to implement Microsoft-forms on the website.</target>
+        <target state="translated">Deze cookie wordt gebruikt voor website integratie van Microsoft-formulieren.</target>
       </trans-unit>
       <trans-unit id="trackingobject.__RequestVerificationToken.desc" resname="trackingobject.__RequestVerificationToken.desc">
         <source>The cookie is used to implement anti-forgery concerning Microsoft-forms on the website.</source>
-        <target state="needs-translation">The cookie is used to implement anti-forgery concerning Microsoft-forms on the website.</target>
+        <target state="translated">Deze cookie wordt gebruikt om antivervalsing te detecteren met betrekking tot Microsoft-formulieren op de website.</target>
       </trans-unit>
       <trans-unit id="trackingobject.UID.desc" resname="trackingobject.UID.desc">
         <source>The cookie is used for market and user research (Scorecard Research).</source>
