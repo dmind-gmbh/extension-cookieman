@@ -28,7 +28,6 @@
         "friendsofphp/php-cs-fixer": "^2.14",
         "helhum/typo3-console": "^5.7",
         "php-coveralls/php-coveralls": "^2.1",
-        "roave/security-advisories": "dev-master",
         "typo3/cms-impexp": "^8.7.0",
         "typo3/cms-rte-ckeditor": "^8.7.0",
         "typo3/cms-tstemplate": "^8.7.0",
@@ -84,41 +83,41 @@
             "yarn --cwd=Build/ run prod"
         ],
         "cookieman:bootstrap3-banner": [
-            "typo3 extensionmanager:extension:uninstall cookieman_test_bootstrap3_modal",
-            "typo3 extensionmanager:extension:uninstall cookieman_test_bootstrap4_modal",
-            "typo3 extensionmanager:extension:uninstall cookieman_test_customtheme",
-            "typo3 extensionmanager:extension:install cookieman_test_bootstrap3_banner"
+            "@typo3 extensionmanager:extension:uninstall cookieman_test_bootstrap3_modal",
+            "@typo3 extensionmanager:extension:uninstall cookieman_test_bootstrap4_modal",
+            "@typo3 extensionmanager:extension:uninstall cookieman_test_customtheme",
+            "@typo3 extensionmanager:extension:install cookieman_test_bootstrap3_banner"
         ],
         "cookieman:bootstrap3-modal": [
-            "typo3 extensionmanager:extension:uninstall cookieman_test_bootstrap3_banner",
-            "typo3 extensionmanager:extension:uninstall cookieman_test_bootstrap4_modal",
-            "typo3 extensionmanager:extension:uninstall cookieman_test_customtheme",
-            "typo3 extensionmanager:extension:install cookieman_test_bootstrap3_modal"
+            "@typo3 extensionmanager:extension:uninstall cookieman_test_bootstrap3_banner",
+            "@typo3 extensionmanager:extension:uninstall cookieman_test_bootstrap4_modal",
+            "@typo3 extensionmanager:extension:uninstall cookieman_test_customtheme",
+            "@typo3 extensionmanager:extension:install cookieman_test_bootstrap3_modal"
         ],
         "cookieman:bootstrap4-modal": [
-            "typo3 extensionmanager:extension:uninstall cookieman_test_bootstrap3_banner",
-            "typo3 extensionmanager:extension:uninstall cookieman_test_bootstrap3_modal",
-            "typo3 extensionmanager:extension:uninstall cookieman_test_customtheme",
-            "typo3 extensionmanager:extension:install cookieman_test_bootstrap4_modal"
+            "@typo3 extensionmanager:extension:uninstall cookieman_test_bootstrap3_banner",
+            "@typo3 extensionmanager:extension:uninstall cookieman_test_bootstrap3_modal",
+            "@typo3 extensionmanager:extension:uninstall cookieman_test_customtheme",
+            "@typo3 extensionmanager:extension:install cookieman_test_bootstrap4_modal"
         ],
         "cookieman:customtheme": [
-            "typo3 extensionmanager:extension:uninstall cookieman_test_bootstrap3_banner",
-            "typo3 extensionmanager:extension:uninstall cookieman_test_bootstrap3_modal",
-            "typo3 extensionmanager:extension:uninstall cookieman_test_bootstrap4_modal",
-            "typo3 extensionmanager:extension:install cookieman_test_customtheme"
+            "@typo3 extensionmanager:extension:uninstall cookieman_test_bootstrap3_banner",
+            "@typo3 extensionmanager:extension:uninstall cookieman_test_bootstrap3_modal",
+            "@typo3 extensionmanager:extension:uninstall cookieman_test_bootstrap4_modal",
+            "@typo3 extensionmanager:extension:install cookieman_test_customtheme"
         ],
         "fix:cgl": [
             "php-cs-fixer --config=.php_cs.dist fix --using-cache=no"
         ],
         "install-extensions": [
-            "typo3 extensionmanager:extension:install bootstrap_package",
-            "typo3 extensionmanager:extension:install introduction",
-            "typo3 extensionmanager:extension:install cookieman",
-            "typo3 extensionmanager:extension:install cookieman_test",
-            "typo3 extensionmanager:extension:install cookieman_test_bootstrap4_modal"
+            "@typo3 extensionmanager:extension:install bootstrap_package",
+            "@typo3 extensionmanager:extension:install introduction",
+            "@typo3 extensionmanager:extension:install cookieman",
+            "@typo3 extensionmanager:extension:install cookieman_test",
+            "@typo3 extensionmanager:extension:install cookieman_test_bootstrap4_modal"
         ],
         "install-typo3": [
-            "typo3cms install:setup --admin-user-name=admin --admin-password=adminadmin --no-interaction"
+            "@typo3cms install:setup --admin-user-name=admin --admin-password=adminadmin --no-interaction"
         ],
         "release:create": [
             "extension-helper release:create",
@@ -165,8 +164,14 @@
             "@test:cgl",
             "@test:unit"
         ],
+        "typo3": [
+            ".build/bin/typo3"
+        ],
         "typo3:flush": [
-            "typo3cms cache:flush"
+            "@typo3cms cache:flush"
+        ],
+        "typo3cms": [
+            ".build/bin/typo3cms"
         ]
     },
     "support": {
