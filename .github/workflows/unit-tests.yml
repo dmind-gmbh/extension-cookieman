@@ -42,6 +42,7 @@ jobs:
                   path: ./Build/coveralls-upload.json
     unit-tests-lowest:
         runs-on: ubuntu-18.04
+        continue-on-error: true
         strategy:
             fail-fast: false
             matrix:
