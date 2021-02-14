@@ -19,14 +19,15 @@
         "bk2k/bootstrap-package": "^11.0",
         "bk2k/extension-helper": "^1.0",
         "browserstack/browserstack-local": "dev-master",
-        "codeception/codeception": "^3.1",
+        "codeception/codeception": "^4.1",
+        "codeception/module-asserts": "^1.3",
+        "codeception/module-webdriver": "^1.1",
         "dmind/cookieman-test": "@dev",
         "dmind/cookieman-test-bootstrap3-banner": "@dev",
         "dmind/cookieman-test-bootstrap3-modal": "@dev",
         "dmind/cookieman-test-bootstrap4-modal": "@dev",
         "dmind/cookieman-test-customtheme": "@dev",
-        "ergebnis/composer-normalize": "^2.3",
-        "friendsofphp/php-cs-fixer": "^2.14",
+        "friendsofphp/php-cs-fixer": "^2.16",
         "helhum/typo3-console": "^6.3",
         "php-coveralls/php-coveralls": "^2.1",
         "roave/security-advisories": "dev-master",
@@ -36,11 +37,12 @@
     },
     "config": {
         "bin-dir": ".build/bin",
+        "sort-packages": true,
         "vendor-dir": ".build/vendor"
     },
     "extra": {
         "branch-alias": {
-            "dev-10lts": "2.6.x-dev"
+            "dev-10lts": "2.7.x-dev"
         },
         "typo3/cms": {
             "extension-key": "cookieman",
@@ -64,7 +66,6 @@
             "url": "Build/*"
         }
     ],
-    "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
         "post-autoload-dump": [
@@ -108,8 +109,7 @@
             "typo3 extension:activate -n cookieman_test_customtheme"
         ],
         "fix:cgl": [
-            "php-cs-fixer --config=.php_cs.dist fix --using-cache=no",
-            "composer normalize --no-update-lock"
+            "php-cs-fixer --config=.php_cs.dist fix --using-cache=no"
         ],
         "install-extensions": [
             "typo3 extension:activate -n impexp",
@@ -158,11 +158,14 @@
             "codecept run --env firefox -d -c Build/local.codeception.yml -- acceptance"
         ],
         "test:cgl": [
-            "php-cs-fixer --config=.php_cs.dist fix -v --using-cache=no --dry-run",
-            "composer normalize --no-update-lock --dry-run"
+            "php-cs-fixer --config=.php_cs.dist fix -v --using-cache=no --dry-run"
         ],
         "test:unit": [
             "phpunit -c Build/UnitTests.phpunit.xml"
+        ],
+        "tests-for:ci": [
+            "@test:cgl",
+            "@test:unit"
         ],
         "typo3:flush": [
             "typo3 extension:activate -n felogin",

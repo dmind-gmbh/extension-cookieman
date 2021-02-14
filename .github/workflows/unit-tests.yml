@@ -21,18 +21,25 @@ jobs:
             -   uses: actions/checkout@v2
             # PHP 7.1-.4 are available in ubuntu-18.04
             # https://help.github.com/en/actions/automating-your-workflow-with-github-actions/software-installed-on-github-hosted-runners#ubuntu-1804-lts
+            -   run: git branch
+            -   run: git symbolic-ref HEAD
             -   run: sudo update-alternatives --set php /usr/bin/php${{ matrix.php-version }}
-            # composer
-            -   run: composer update --no-progress --no-suggest
-            # Run tests
-            -   run: composer test:cgl
-            -   run: composer test:unit
-            # Push to coveralls
-            -   run: |
-                    COVERALLS_REPO_TOKEN=${{ secrets.COVERALLS_REPO_TOKEN }} \
+            -   run: composer update --no-interaction --no-progress
+            -   run: composer show
+            -   run: composer tests-for:ci
+            -   name: Push to coveralls (master only)
+                run: |
                         .build/bin/php-coveralls \
                         --root_dir=. --env=prod --verbose
-                if: github.ref == 'refs/heads/master'
+                if: github.ref == 'refs/heads/master' && matrix.php-version == '7.4'
+                env:
+                    COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+            - name: Upload coveralls result
+              uses: actions/upload-artifact@v2
+              if: github.ref == 'refs/heads/master' && matrix.php-version == '7.4'
+              with:
+                  name: Coveralls result
+                  path: ./Build/coveralls-upload.json
     unit-tests-lowest:
         runs-on: ubuntu-18.04
         strategy:
@@ -44,7 +51,5 @@ jobs:
             # PHP 7.1, 7.2 and 7.3 are available in ubuntu-18.04
             # https://help.github.com/en/actions/automating-your-workflow-with-github-actions/software-installed-on-github-hosted-runners#ubuntu-1804-lts
             -   run: sudo update-alternatives --set php /usr/bin/php${{ matrix.php-version }}
-            # composer
-            -   run: composer update --prefer-lowest --no-progress --no-suggest
-            # Run tests
-            -   run: composer test:unit
+            -   run: composer update --no-interaction --prefer-lowest --no-progress
+            -   run: composer tests-for:ci
