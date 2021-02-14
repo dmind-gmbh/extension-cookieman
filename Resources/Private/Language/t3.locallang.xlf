@@ -183,11 +183,15 @@
         <source>Local Storage</source>
         <target>crwdns85337:0crwdne85337:0</target>
       </trans-unit>
+      <trans-unit id="type.connection" resname="type.connection">
+        <source>Connection</source>
+        <target>crwdns132432:0crwdne132432:0</target>
+      </trans-unit>
       <trans-unit id="group.marketing" resname="group.marketing">
         <source>Marketing</source>
         <target>crwdns80988:0crwdne80988:0</target>
       </trans-unit>
-      <trans-unit id="group.marketing.desc" resname="group.marketing">
+      <trans-unit id="group.marketing.desc" resname="group.marketing.desc">
         <source>With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</source>
         <target>crwdns80990:0crwdne80990:0</target>
       </trans-unit>
@@ -250,6 +254,78 @@
       <trans-unit id="trackingobject.MUIDB.desc" resname="trackingobject.MUIDB.desc">
         <source>Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</source>
         <target>crwdns81018:0crwdne81018:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.MSFPC.desc" resname="trackingobject.MSFPC.desc">
+        <source>The cookie allows user tracking across many Microsoft domains and is used for Bing Analytics.</source>
+        <target>crwdns132434:0crwdne132434:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.DcLcid.desc" resname="trackingobject.DcLcid.desc">
+        <source>The cookie is used to implement Microsoft-forms on the website.</source>
+        <target>crwdns132436:0crwdne132436:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.AADNonce.forms.desc" resname="trackingobject.AADNonce.forms.desc">
+        <source>The cookie is used to implement Microsoft-forms on the website.</source>
+        <target>crwdns132438:0crwdne132438:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__RequestVerificationToken.desc" resname="trackingobject.__RequestVerificationToken.desc">
+        <source>The cookie is used to implement anti-forgery concerning Microsoft-forms on the website.</source>
+        <target>crwdns132440:0crwdne132440:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.UID.desc" resname="trackingobject.UID.desc">
+        <source>The cookie is used for market and user research (Scorecard Research).</source>
+        <target>crwdns132442:0crwdne132442:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.UIDR.desc" resname="trackingobject.UIDR.desc">
+        <source>The cookie is used for market and user research (Scorecard Research).</source>
+        <target>crwdns132444:0crwdne132444:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.bcookie.desc" resname="trackingobject.bcookie.desc">
+        <source>Browser Identifier cookie to uniquely identify devices accessing LinkedIn to detect abuse on the platform.</source>
+        <target>crwdns132446:0crwdne132446:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.lang.desc" resname="trackingobject.lang.desc">
+        <source>Used to remember a user's language setting.</source>
+        <target>crwdns132448:0crwdne132448:0</target>
+      </trans-unit>
+      <trans-unit id="group.external" resname="group.external">
+        <source>External content</source>
+        <target>crwdns132450:0crwdne132450:0</target>
+      </trans-unit>
+      <trans-unit id="group.external.desc" resname="group.external.desc">
+        <source>With the help of these cookies we strive to improve our offer for our users. By means of providing video content or other useful content like maps to enhance the user experience.</source>
+        <target>crwdns132452:0crwdne132452:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.YouTube.desc" resname="trackingobject.YouTube.desc">
+        <source>Is used to connect to YouTube and display to videos.</source>
+        <target>crwdns132454:0crwdne132454:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.GoogleMaps.desc" resname="trackingobject.GoogleMaps.desc">
+        <source>Is used to connect to Google Maps and to display those maps.</source>
+        <target>crwdns132456:0crwdne132456:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.MicrosoftStream.desc" resname="trackingobject.MicrosoftStream.desc">
+        <source>Is used to connect to Microsoft Stream and display to videos.</source>
+        <target>crwdns132458:0crwdne132458:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.Signature_Api.desc" resname="trackingobject.Signature_Api.desc">
+        <source>Is used to connect to the Microsoft signature API.</source>
+        <target>crwdns132460:0crwdne132460:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.Authorization_Api.desc" resname="trackingobject.Authorization_Api.desc">
+        <source>Is used to connect to the Microsoft authorization API.</source>
+        <target>crwdns132462:0crwdne132462:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.RedirectToThinEmbed.desc" resname="trackingobject.RedirectToThinEmbed.desc">
+        <source>Is used to embed Microsoft Stream videos.</source>
+        <target>crwdns132464:0crwdne132464:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.UserSession_Api.desc" resname="trackingobject.UserSession_Api.desc">
+        <source>Is used to store the user session of the Microsoft API.</source>
+        <target>crwdns132466:0crwdne132466:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.wfeSessionId.desc" resname="trackingobject.wfeSessionId.desc">
+        <source>Is used to store the Web Front End Session ID of Microsoft Stream.</source>
+        <target>crwdns132468:0crwdne132468:0</target>
       </trans-unit>
       <trans-unit id="browser.dnt-enabled" resname="browser.dnt-enabled">
         <source><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></source>
