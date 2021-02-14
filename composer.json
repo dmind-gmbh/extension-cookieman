@@ -162,6 +162,7 @@
             "php-cs-fixer --config=.php_cs.dist fix -v --using-cache=no --dry-run"
         ],
         "test:unit": [
+            "@putenv XDEBUG_MODE=coverage",
             "phpunit -c Build/UnitTests.phpunit.xml"
         ],
         "tests-for:ci": [
