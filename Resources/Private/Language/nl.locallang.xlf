@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="Frontend" date="2019-10-28T12:20:51Z" product-name="cookieman" target-language="nl">
+    <header/>
+    <body>
+      <trans-unit id="heading" resname="heading" approved="yes">
+        <source>About Cookies</source>
+        <target state="final">Over Cookies</target>
+      </trans-unit>
+      <trans-unit id="dataProtectionDeclaration" resname="dataProtectionDeclaration" approved="yes">
+        <source>Data Protection Declaration</source>
+        <target state="final">Cookieverklaring</target>
+      </trans-unit>
+      <trans-unit id="imprint" resname="imprint" approved="yes">
+        <source>Imprint</source>
+        <target state="final">Privacybeleid</target>
+      </trans-unit>
+      <trans-unit id="introText" resname="introText" approved="yes">
+        <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
+        <target state="final">Deze website maakt gebruik van cookies. Deze hebben twee functies: enerzijds bieden ze basisfunctionaliteiten voor het gebruik van de website. Anderzijds kunnen ze ons helpen de inhoud voor u te verbeteren door geanonimiseerde gebruikersgegevens op te slaan en te analyseren. U kunt uw toestemming voor het gebruik van deze cookies op elk moment aanpassen. U vindt meer informatie over cookies op onze %1$s en over ons %2$s.</target>
+      </trans-unit>
+      <trans-unit id="settings" resname="settings" approved="yes">
+        <source>Settings</source>
+        <target state="final">Voorkeuren beheren</target>
+      </trans-unit>
+      <trans-unit id="settingsText" resname="settingsText" approved="yes">
+        <source>Click here for Cookie %1$s.</source>
+        <target state="final">Klik hier voor Cookie %1$s.</target>
+      </trans-unit>
+      <trans-unit id="accept" resname="accept" approved="yes">
+        <source>Accept all cookies</source>
+        <target state="final">Aanvaard alle cookies</target>
+      </trans-unit>
+      <trans-unit id="deny" resname="deny">
+        <source>Deny all cookies</source>
+        <target state="translated">Alle cookies weigeren</target>
+      </trans-unit>
+      <trans-unit id="save" resname="save" approved="yes">
+        <source>Save</source>
+        <target state="final">Bewaar</target>
+      </trans-unit>
+      <trans-unit id="group.mandatory" resname="group.mandatory" approved="yes">
+        <source>Mandatory</source>
+        <target state="final">Verplicht</target>
+      </trans-unit>
+      <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc" approved="yes">
+        <source>These cookies are needed for a smooth operation of our website.</source>
+        <target state="final">Noodzakelijke cookies zijn nodig voor de goede werking van onze website.</target>
+      </trans-unit>
+      <trans-unit id="tableheader.name" resname="tableheader.name" approved="yes">
+        <source>Name</source>
+        <target state="final">Naam</target>
+      </trans-unit>
+      <trans-unit id="tableheader.purpose" resname="tableheader.purpose" approved="yes">
+        <source>Purpose</source>
+        <target state="final">Doel</target>
+      </trans-unit>
+      <trans-unit id="tableheader.duration" resname="tableheader.duration" approved="yes">
+        <source>Lifetime</source>
+        <target state="final">Levensduur</target>
+      </trans-unit>
+      <trans-unit id="tableheader.type" resname="tableheader.type" approved="yes">
+        <source>Type</source>
+        <target state="final">Type</target>
+      </trans-unit>
+      <trans-unit id="tableheader.provider" resname="tableheader.provider" approved="yes">
+        <source>Provider</source>
+        <target state="final">Aanbieder</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc" approved="yes">
+        <source>Saves your consent to using cookies.</source>
+        <target state="final">Bewaar uw toestemming voor het gebruik van cookies.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.cntcookie.desc" resname="trackingobject.cntcookie.desc" approved="yes">
+        <source>Exclusion from counting (as a list of Account IDs)</source>
+        <target state="final">Uitsluiting van tellen (als een lijst met klanten-IDs)</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.GS3_v.desc" resname="trackingobject.GS3_v.desc" approved="yes">
+        <source>Set by Optimizer webservice. Contains the same Visitor ID as BT_pdc.</source>
+        <target state="final">Ingesteld door Optimizer webservice. Bevat dezelfde Bezoekers ID als BT_pdc.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._et_coid.desc" resname="trackingobject._et_coid.desc" approved="yes">
+        <source>Cookie detection</source>
+        <target state="final">Cookie detectie</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oi_v2.desc" resname="trackingobject.et_oi_v2.desc" approved="yes">
+        <source>Opt-In cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</source>
+        <target state="final">Opt-In cookie dat de beslissing van de bezoeker opslaat wanneer de tracking opt-in wordt weergegeven aan de klantzijde. Wordt ook gebruikt voor een mogelijke opt-out.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oip.desc" resname="trackingobject.et_oip.desc" approved="yes">
+        <source>Opt-In cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</source>
+        <target state="final">Opt-In cookie gebruikt door "signalize". Als de klant "nee" kiest, wordt de cookie ingesteld met de waarde "nee" en een duur van 50 x 365 dagen. Als de klant "x" kiest of op de ESC-toets drukt (geen besluit), het cookie is ingesteld met de waarde "nee" voor de geldigheid van 1 dag. Een waarde van "ja" is niet vereist, aangezien dit impliciet wordt gegeven door de toestemming voor de werkelijke browser push.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_allow_cookies.desc" resname="trackingobject.et_allow_cookies.desc" approved="yes">
+        <source>If the parameter "data-block-cookies" is used, this cookie is called by the API Call _etracker.enableCookies() to indicate that etracker is allowed to set cookies.</source>
+        <target state="final">Als de parameter "data-block-cookies" wordt gebruikt, wordt deze cookie opgeroepen door de API Call _etracker.enableCookies() om aan te geven dat etracker toestemming heeft om cookies te plaatsen.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.isSdEnabled.desc" resname="trackingobject.isSdEnabled.desc" approved="yes">
+        <source>Detection whether the scrolling depth is measured for the visitor.</source>
+        <target state="final">Detectie of de scroll-diepte van de bezoeker gemeten wordt.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.BT_ctst.desc" resname="trackingobject.BT_ctst.desc" approved="yes">
+        <source>Is only used to detect whether cookies are activated in the visitor's browser or not.</source>
+        <target state="final">Wordt alleen gebruikt om te bepalen of cookies in de browser van de bezoeker worden geactiveerd of niet.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.BT_sdc.desc" resname="trackingobject.BT_sdc.desc" approved="yes">
+        <source>Contains base64 encoded data of the current visitor session (referrer, number of pages, number of seconds since session started) used for personalization purposes.</source>
+        <target state="final">Bevat base64 gecodeerde gegevens van de huidige bezoekerssessie (verwijzing, aantal pagina's, aantal seconden sinds het starten van de sessie) gebruikt voor gepersonaliseerde doeleinden.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.BT_pdc.desc" resname="trackingobject.BT_pdc.desc" approved="yes">
+        <source>Contains base64-coded visitor history data (is customer, newsletter recipient etc.) for personalization.</source>
+        <target state="final">Bevat base64-gecodeerde bezoekergeschiedenis (is klant, nieuwsbriefontvanger, enz.) voor personalisatie.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_pdc.desc" approved="yes">
+        <source>Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</source>
+        <target state="final">Bevat een lijst van project ID's waarvan de bezoeker is uitgesloten. Deze cookie wordt door de webservice geplaatst indien de client niet alle bezoekers aan een test heeft toegewezen, maar slechts aan een bepaald deel ervan.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_ecl.desc" approved="yes">
+        <source>Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</source>
+        <target state="final">Bevat een lijst van project ID's waarvan de bezoeker is uitgesloten. Deze cookie wordt door de webservice geplaatst indien de client niet alle bezoekers aan een test heeft toegewezen, maar slechts aan een bepaald deel ervan.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_scroll_depth.desc" resname="trackingobject.et_scroll_depth.desc" approved="yes">
+        <source>Data for scrolling depth measurement</source>
+        <target state="final">Data voor meting van scrollediepte</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.targetingAPISession.desc" resname="trackingobject.targetingAPISession.desc" approved="yes">
+        <source>Data collected in the current session for the optimiser</source>
+        <target state="final">In de huidige sessie verzamelde data voor het optimaliseren</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._et_coid--localstorage" resname="trackingobject._et_coid--localstorage" approved="yes">
+        <source>_et_coid</source>
+        <target state="final">_et_coid</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._et_coid--localstorage.desc" resname="trackingobject._et_coid--localstorage.desc" approved="yes">
+        <source>Cookie detection, see corresponding cookie.</source>
+        <target state="final">Cookie detectie, zie de bijbehorende cookie.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oi_v2--localstorage" resname="trackingobject.et_oi_v2--localstorage" approved="yes">
+        <source>et_oi_v2</source>
+        <target state="final">et_oi_v2</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oi_v2--localstorage.desc" resname="trackingobject.et_oi_v2--localstorage.desc" approved="yes">
+        <source>OptIn-cookie, see corresponding cookie.</source>
+        <target state="final">OptIn-cookie, zie bijbehorende cookie.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oip--localstorage" resname="trackingobject.et_oip--localstorage" approved="yes">
+        <source>et_oip</source>
+        <target state="final">et_oip</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oip--localstorage.desc" resname="trackingobject.et_oip--localstorage.desc" approved="yes">
+        <source>OptIn-cookie for Signalize, see corresponding cookie.</source>
+        <target state="final">OptIn-cookie voor "Signalize", zie bijbehorende cookie.</target>
+      </trans-unit>
+      <trans-unit id="type.pixel" resname="type.pixel">
+        <source>Pixel</source>
+        <target state="translated">Pixel</target>
+      </trans-unit>
+      <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html" approved="yes">
+        <source>HTML</source>
+        <target state="final">HTML</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._fbp.desc" resname="trackingobject._fbp.desc">
+        <source>Stores the unique visitor ID.</source>
+        <target state="translated">Bewaart het unieke bezoekers-ID.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.facebookPixel.desc" resname="trackingobject.FacebookPixel.desc">
+        <source>If JavaScript is not enabled, this pixel initiates a connection to facebook.</source>
+        <target state="translated">Als JavaScript niet is ingeschakeld, dan maakt deze pixel een verbinding met facebook.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.fe_typo_user.desc" resname="trackingobject.fe_typo_user.desc" approved="yes">
+        <source>Assigns your browser to a session on the server.</source>
+        <target state="final">Wijst uw browser toe aan een sessie op de server.</target>
+      </trans-unit>
+      <trans-unit id="duration.session" resname="duration.session" approved="yes">
+        <source>session</source>
+        <target state="final">sessie</target>
+      </trans-unit>
+      <trans-unit id="type.cookie_http" resname="type.cookie_http" approved="yes">
+        <source>HTTP</source>
+        <target state="final">HTTP</target>
+      </trans-unit>
+      <trans-unit id="type.localstorage" resname="type.localstorage" approved="yes">
+        <source>Local Storage</source>
+        <target state="final">Lokale opslag</target>
+      </trans-unit>
+      <trans-unit id="type.connection" resname="type.connection">
+        <source>Connection</source>
+        <target state="translated">Connectie</target>
+      </trans-unit>
+      <trans-unit id="group.marketing" resname="group.marketing" approved="yes">
+        <source>Marketing</source>
+        <target state="final">Marketing</target>
+      </trans-unit>
+      <trans-unit id="group.marketing.desc" resname="group.marketing.desc" approved="yes">
+        <source>With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</source>
+        <target state="final">Met behulp van deze cookies proberen we ons aanbod voor onze gebruikers te verbeteren. Door middel van geanonimiseerde gegevens van website gebruikers kunnen we de stroom van gebruikers optimaliseren. Dit stelt ons in staat om de inhoud van advertenties en websites te verbeteren.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._pk_id.desc" resname="trackingobject._pk_id.desc" approved="yes">
+        <source>Used to store a few details about the user such as the unique visitor ID.</source>
+        <target state="final">Wordt gebruikt om een bepaalde details op te slaan over de gebruiker zoals bijvoorbeeld de unieke bezoekers-ID.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._pk_ref.desc" resname="trackingobject._pk_ref.desc" approved="yes">
+        <source>Used to store the attribution information, the referrer initially used to visit the website.</source>
+        <target state="final">Wordt gebruikt om de 'attribution information' op te slaan, de 'referrer' wordt in eerste instantie gebruikt om de website te bezoeken.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._pk_ses.desc" resname="trackingobject._pk_ses.desc" approved="yes">
+        <source>Short lived cookie used to temporarily store data for the visit.</source>
+        <target state="final">Korte termijn cookie, wordt gebruikt om tijdelijk gegevens van de bezoeker op te slaan.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._pk_cvar.desc" resname="trackingobject._pk_cvar.desc" approved="yes">
+        <source>Short lived cookie used to temporarily store data for the visit.</source>
+        <target state="final">Korte termijn cookie, wordt gebruikt om tijdelijk gegevens van de bezoeker op te slaan.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._pk_hsr.desc" resname="trackingobject._pk_hsr.desc" approved="yes">
+        <source>Short lived cookie used to temporarily store data for the visit.</source>
+        <target state="final">Korte termijn cookie, wordt gebruikt om tijdelijk gegevens van de bezoeker op te slaan.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._ga.desc" resname="trackingobject._ga.desc" approved="yes">
+        <source>Used to distinguish users.</source>
+        <target state="final">Gebruikt om gebruikers te onderscheiden.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.AMP_TOKEN.desc" resname="trackingobject.AMP_TOKEN.desc" approved="yes">
+        <source>Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID service.</source>
+        <target state="final">Bevat een token dat kan worden gebruikt om een Client-ID op te halen van AMP Client-ID-service. Andere mogelijke waarden duiden op opt-out, inflight-verzoek of een fout bij het ophalen van een client-ID van AMP client-ID.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._dc_gtm_--property-id--.desc" resname="trackingobject._dc_gtm_--property-id--.desc" approved="yes">
+        <source>Used by DoubleClick (Google Tag Manager) to help identify the visitors by either age, gender or interests.</source>
+        <target state="final">Gebruikt door DoubleClick (Google Tag Manager) om de bezoekers te identificeren op leeftijd, geslacht of interesses.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gac_--property-id--.desc" resname="trackingobject._gac_--property-id--.desc" approved="yes">
+        <source>Contains campaign related information for the user. If you have linked your Google Analytics and Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.</source>
+        <target state="final">Bevat campagne gerelateerde informatie voor de gebruiker. Als u uw Google Analytics en Google Ads-accounts heeft gekoppeld, zullen de conversie van de Google Ads-website tags deze cookie lezen, tenzij u zich afmeldt met opt-out.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gat.desc" resname="trackingobject._gat.desc" approved="yes">
+        <source>Used to throttle request rate.</source>
+        <target state="final">Gebruikt om aanvraagsnelheid af te zwakken.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._ga_--container-id--.desc" resname="trackingobject._ga_--container-id--.desc" approved="yes">
+        <source>Persists session state.</source>
+        <target state="final">Persistente sessie status.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gcl_au.desc" resname="trackingobject._gcl_au.desc" approved="yes">
+        <source>Used by Google AdSense to experiment with advertisement efficiency.</source>
+        <target state="final">Gebruikt door Google AdSense om te experimenteren met advertentie-optimalisatie.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gid.desc" resname="trackingobject._gid.desc" approved="yes">
+        <source>Used to distinguish users.</source>
+        <target state="final">Gebruikt om gebruikers te onderscheiden.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.MUID.desc" resname="trackingobject.MUID.desc" approved="yes">
+        <source>Used as unique user identifier. The cookie allows user tracking across many Microsoft domains.</source>
+        <target state="final">Gebruikt als unieke gebruikersidentificator. Deze cookie laat toe de gebruiker te volgen over verschillende Microsoft-domeinen.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.MUIDB.desc" resname="trackingobject.MUIDB.desc" approved="yes">
+        <source>Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</source>
+        <target state="final">Slaat anonieme gebruikersgegevens op van meerdere websites bezoeken over meerdere sites om advertentie-optimalisatie te testen.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.MSFPC.desc" resname="trackingobject.MSFPC.desc">
+        <source>The cookie allows user tracking across many Microsoft domains and is used for Bing Analytics.</source>
+        <target state="translated">Deze cookie laat gebruikersopvolging toe over meerdere Microsoft-domeinen en wordt gebruikt voor Bing Analytics.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.DcLcid.desc" resname="trackingobject.DcLcid.desc">
+        <source>The cookie is used to implement Microsoft-forms on the website.</source>
+        <target state="translated">Deze cookie wordt gebruikt voor website integratie van Microsoft-formulieren.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.AADNonce.forms.desc" resname="trackingobject.AADNonce.forms.desc">
+        <source>The cookie is used to implement Microsoft-forms on the website.</source>
+        <target state="translated">Deze cookie wordt gebruikt voor website integratie van Microsoft-formulieren.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__RequestVerificationToken.desc" resname="trackingobject.__RequestVerificationToken.desc">
+        <source>The cookie is used to implement anti-forgery concerning Microsoft-forms on the website.</source>
+        <target state="translated">Deze cookie wordt gebruikt om antivervalsing te detecteren met betrekking tot Microsoft-formulieren op de website.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.UID.desc" resname="trackingobject.UID.desc">
+        <source>The cookie is used for market and user research (Scorecard Research).</source>
+        <target state="translated">Deze cookie wordt gebruikt voor marktstudie en gebruikersonderzoek (Scorecard Research).</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.UIDR.desc" resname="trackingobject.UIDR.desc">
+        <source>The cookie is used for market and user research (Scorecard Research).</source>
+        <target state="translated">Deze cookie wordt gebruikt voor marktstudie en gebruikersonderzoek (Scorecard Research).</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.bcookie.desc" resname="trackingobject.bcookie.desc">
+        <source>Browser Identifier cookie to uniquely identify devices accessing LinkedIn to detect abuse on the platform.</source>
+        <target state="translated">Browser ID-cookie om unieke apparaten te identificeren die toegang hebben tot LinkedIn. Wordt gebruikt om misbruik op het platform te detecteren.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.lang.desc" resname="trackingobject.lang.desc">
+        <source>Used to remember a user's language setting.</source>
+        <target state="translated">Hiermee kan je de taalinstelling van een gebruiker onthouden.</target>
+      </trans-unit>
+      <trans-unit id="group.external" resname="group.external">
+        <source>External content</source>
+        <target state="translated">Externe inhoud</target>
+      </trans-unit>
+      <trans-unit id="group.external.desc" resname="group.external.desc">
+        <source>With the help of these cookies we strive to improve our offer for our users. By means of providing video content or other useful content like maps to enhance the user experience.</source>
+        <target state="translated">Met behulp van deze cookies proberen we ons aanbod voor onze gebruikers te verbeteren. Door video-inhoud of andere nuttige inhoud te bieden, zoals kaarten om de gebruikerservaring te verbeteren.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.YouTube.desc" resname="trackingobject.YouTube.desc">
+        <source>Is used to connect to YouTube and display to videos.</source>
+        <target state="translated">Wordt gebruikt om verbinding te maken met YouTube en video weer te geven.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.GoogleMaps.desc" resname="trackingobject.GoogleMaps.desc">
+        <source>Is used to connect to Google Maps and to display those maps.</source>
+        <target state="translated">Wordt gebruikt om verbinding te maken met Google Maps en deze kaarten weer te geven.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.MicrosoftStream.desc" resname="trackingobject.MicrosoftStream.desc">
+        <source>Is used to connect to Microsoft Stream and display to videos.</source>
+        <target state="translated">Wordt gebruikt om verbinding te maken met Microsoft Stream en video weer te geven.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.Signature_Api.desc" resname="trackingobject.Signature_Api.desc">
+        <source>Is used to connect to the Microsoft signature API.</source>
+        <target state="translated">Wordt gebruikt om verbinding te maken met de Microsoft handtekening API.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.Authorization_Api.desc" resname="trackingobject.Authorization_Api.desc">
+        <source>Is used to connect to the Microsoft authorization API.</source>
+        <target state="translated">Wordt gebruikt om verbinding te maken met de Microsoft authentificatie API.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.RedirectToThinEmbed.desc" resname="trackingobject.RedirectToThinEmbed.desc">
+        <source>Is used to embed Microsoft Stream videos.</source>
+        <target state="translated">Wordt gebruikt om Microsoft Stream video's in te sluiten.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.UserSession_Api.desc" resname="trackingobject.UserSession_Api.desc">
+        <source>Is used to store the user session of the Microsoft API.</source>
+        <target state="translated">Wordt gebruikt om de gebruikerssessie van Microsoft API op te slaan.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.wfeSessionId.desc" resname="trackingobject.wfeSessionId.desc">
+        <source>Is used to store the Web Front End Session ID of Microsoft Stream.</source>
+        <target state="translated">Wordt gebruikt om het Web Front End Sessie ID van Microsoft Stream op te slaan.</target>
+      </trans-unit>
+      <trans-unit id="browser.dnt-enabled" resname="browser.dnt-enabled" approved="yes">
+        <source><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></source>
+        <target state="final"><![CDATA[U heeft zich al afgemeld voor gebruikerstracking via uw <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track functie</a>. Wij begrijpen uw keuze. U kan dit steeds wijzigen via de browser-instellingen.]]></target>
+      </trans-unit>
+      <trans-unit id="duration.none" resname="duration.empty">
+        <source>none</source>
+        <target state="translated">Geen</target>
+      </trans-unit>
+      <trans-unit id="duration.minute" resname="duration.minute" approved="yes">
+        <source>minute</source>
+        <target state="final">minuut</target>
+      </trans-unit>
+      <trans-unit id="duration.minutes" resname="duration.minutes" approved="yes">
+        <source>minutes</source>
+        <target state="final">minuten</target>
+      </trans-unit>
+      <trans-unit id="duration.hour" resname="duration.hour" approved="yes">
+        <source>hour</source>
+        <target state="final">uur</target>
+      </trans-unit>
+      <trans-unit id="duration.hours" resname="duration.hours" approved="yes">
+        <source>hours</source>
+        <target state="final">uren</target>
+      </trans-unit>
+      <trans-unit id="duration.day" resname="duration.day" approved="yes">
+        <source>day</source>
+        <target state="final">dag</target>
+      </trans-unit>
+      <trans-unit id="duration.days" resname="duration.days" approved="yes">
+        <source>days</source>
+        <target state="final">dagen</target>
+      </trans-unit>
+      <trans-unit id="duration.month" resname="duration.month" approved="yes">
+        <source>month</source>
+        <target state="final">maand</target>
+      </trans-unit>
+      <trans-unit id="duration.months" resname="duration.months" approved="yes">
+        <source>months</source>
+        <target state="final">maanden</target>
+      </trans-unit>
+      <trans-unit id="duration.year" resname="duration.year" approved="yes">
+        <source>year</source>
+        <target state="final">jaar</target>
+      </trans-unit>
+      <trans-unit id="duration.years" resname="duration.years" approved="yes">
+        <source>years</source>
+        <target state="final">jaren</target>
+      </trans-unit>
+      <trans-unit id="active" resname="active" approved="yes">
+        <source>active</source>
+        <target state="final">actief</target>
+      </trans-unit>
+      <trans-unit id="alwaysactive" resname="alwaysactive" approved="yes">
+        <source>always active</source>
+        <target state="final">altijd actief</target>
+      </trans-unit>
+      <trans-unit id="inactive" resname="inactive" approved="yes">
+        <source>inactive</source>
+        <target state="final">inactief</target>
+      </trans-unit>
+      <trans-unit id="alwaysinactive" resname="alwaysinactive" approved="yes">
+        <source>always inactive</source>
+        <target state="final">atijd inactief</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
