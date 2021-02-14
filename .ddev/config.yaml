@@ -1,7 +1,7 @@
 name: extension-cookieman-10lts
 type: typo3
 docroot: .build/public
-php_version: "7.3"
+php_version: "7.2"
 webserver_type: nginx-fpm
 router_http_port: "80"
 router_https_port: "443"
