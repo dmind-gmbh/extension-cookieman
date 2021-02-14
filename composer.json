@@ -27,6 +27,7 @@
         "dmind/cookieman-test-bootstrap4-modal": "@dev",
         "dmind/cookieman-test-customtheme": "@dev",
         "friendsofphp/php-cs-fixer": "^2.16",
+        "helhum/typo3-console": "^6.4 || dev-master",
         "php-coveralls/php-coveralls": "^2.1",
         "roave/security-advisories": "dev-master",
         "symfony/event-dispatcher": "^4",
@@ -120,7 +121,7 @@
             "typo3 extension:activate -n cookieman_test_bootstrap4_modal"
         ],
         "install-typo3": [
-            "typo3cms install:setup --admin-user-name=admin --admin-password=adminadmin --no-interaction"
+            "@typo3cms install:setup --admin-user-name=admin --admin-password=adminadmin --no-interaction"
         ],
         "release:create": [
             "extension-helper release:create",
@@ -166,6 +167,9 @@
         "tests-for:ci": [
             "@test:cgl",
             "@test:unit"
+        ],
+        "typo3cms": [
+            ".build/bin/typo3cms"
         ],
         "typo3:flush": [
             "typo3 extension:activate -n felogin",
