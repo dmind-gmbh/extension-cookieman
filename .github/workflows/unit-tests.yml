@@ -26,7 +26,8 @@ jobs:
             -   name: Push to coveralls (master only)
                 run: |
                         .build/bin/php-coveralls \
-                        --root_dir=. --env=prod --verbose
+                        --root_dir=. --env=prod --verbose \
+                        || true
                 if: github.ref == 'refs/heads/master' && matrix.php-version == '7.4'
                 env:
                     COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
