@@ -42,8 +42,7 @@ class PopupInteractionsCest
     const SELECTOR_MODAL = '#cookieman-modal';
     const SELECTOR_BUTTON_SAVE_NOT_SAVEALL = '[data-cookieman-save]:not([data-cookieman-accept-all])';
     const SELECTOR_BUTTON_SAVEALL = '[data-cookieman-accept-all]';
-    const SETTINGS_LINK_TEXT = 'Settings';
-    const BUTTON_TITLE_SAVE = 'Save';
+    const SETTINGS_LINK_SELECTOR = '[aria-controls="cookieman-settings"]';
 
     const COOKIENAME = 'CookieConsent';
     const COOKIE_VALUE_SEPARATOR = '|';
@@ -126,7 +125,7 @@ class PopupInteractionsCest
         $I->waitForJS('return typeof cookieman === "object"', 10);
         $I->waitForElementVisible(Locator::contains('*', self::MODAL_TEXT_EN), self::WAITFOR_TIMEOUT);
         $I->wait(0.5); // animation
-        $I->tryToClick(self::SETTINGS_LINK_TEXT); // customtheme doesn't have an accordion
+        $I->tryToClickWithLeftButton(self::SETTINGS_LINK_SELECTOR); // customtheme doesn't have an accordion
         $I->wait(0.5); // animation
         $I->clickWithLeftButton(self::SELECTOR_BUTTON_SAVEALL);
         $I->waitForElementNotVisible(self::SELECTOR_MODAL);
@@ -158,7 +157,7 @@ class PopupInteractionsCest
         $I->waitForJS('return typeof cookieman === "object"', 10);
         $I->resizeWindow(480, 800);
         $I->waitForElementVisible(self::SELECTOR_MODAL, self::WAITFOR_TIMEOUT);
-        $I->tryToClick(self::SETTINGS_LINK_TEXT);
+        $I->tryToClickWithLeftButton(self::SETTINGS_LINK_SELECTOR);
         $I->waitForElementVisible(Locator::contains('*', self::GROUP_TITLE_2ND), self::WAITFOR_TIMEOUT);
         $I->tryToClick(self::GROUP_TITLE_2ND);
         $I->waitForElementVisible(Locator::contains('*', self::COOKIE_TITLE_IN_2ND_GROUP), self::WAITFOR_TIMEOUT); // a single row in the table
@@ -167,7 +166,7 @@ class PopupInteractionsCest
             $I->executeJS('$("[name=' . self::GROUP_KEY_2ND . ']").click()'); // theme: bootstrap3-banner
         }
         $I->seeCheckboxIsChecked('[name=' . self::GROUP_KEY_2ND . ']');
-        $I->clickWithLeftButton(self::BUTTON_TITLE_SAVE);
+        $I->clickWithLeftButton(self::SELECTOR_BUTTON_SAVE_NOT_SAVEALL);
         $I->waitForElementNotVisible(self::SELECTOR_MODAL);
         $I->seeCookie(self::COOKIENAME);
         $I->assertEquals(
