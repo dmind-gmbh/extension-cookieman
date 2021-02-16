@@ -21,7 +21,7 @@ plugin.tx_cookieman {
                     30 = Bing
                     40 = FacebookPixel
                     50 = MicrosoftForms
-                    60 = SlideShare
+                    60 = Slideshare
                 }
 
                 respectDnt = 1

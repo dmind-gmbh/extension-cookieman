@@ -161,6 +161,10 @@ var cookieman = (function () {
      * from TypoScript)
      */
     function injectTrackingObject(trackingObjectKey, trackingObjectSettings) {
+        if (typeof trackingObjectSettings === 'undefined') {
+            console.error('Used trackingObject ‹' + trackingObjectKey + '› is undefined.')
+            return
+        }
         if (typeof trackingObjectSettings.inject !== "undefined") {
             // <script>s inserted via innerHTML won't be executed
             // https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML
@@ -246,6 +250,10 @@ var cookieman = (function () {
      * from TypoScript)
      */
     function removeTrackingObject(trackingObjectKey, trackingObjectSettings) {
+        if (typeof trackingObjectSettings === 'undefined') {
+            console.error('Used trackingObject ‹' + trackingObjectKey + '› is undefined.')
+            return
+        }
         for (var itemKey in trackingObjectSettings.show) {
             if (!Object.prototype.hasOwnProperty.call(trackingObjectSettings.show, itemKey)) {
                 continue
