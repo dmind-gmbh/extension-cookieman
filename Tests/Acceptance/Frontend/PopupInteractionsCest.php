@@ -85,7 +85,7 @@ class PopupInteractionsCest
     public function doesNotBreakBootstrapPackage(AcceptanceTester $I)
     {
         $I->amOnPage(self::PATH_ROOT);
-        $I->wait(3);
+        $I->waitForJS('return typeof cookieman === "object"', 10);
         $I->waitForElementVisible(self::SELECTOR_MODAL, self::WAITFOR_TIMEOUT);
         $I->executeJS(self::JS_HIDE_COOKIEMAN);
         $I->waitForElementNotVisible(self::SELECTOR_MODAL);
@@ -104,8 +104,9 @@ class PopupInteractionsCest
     public function save(AcceptanceTester $I)
     {
         $I->amOnPage(self::PATH_ROOT);
-        $I->wait(3);
+        $I->waitForJS('return typeof cookieman === "object"', 10);
         $I->waitForElementVisible(Locator::contains('*', self::MODAL_TITLE_EN), self::WAITFOR_TIMEOUT);
+        $I->wait(0.5); // animation
         $I->click(self::SELECTOR_BUTTON_SAVE_NOT_SAVEALL);
         $I->waitForElementNotVisible(self::SELECTOR_MODAL);
         $I->seeCookie(self::COOKIENAME);
@@ -122,9 +123,11 @@ class PopupInteractionsCest
     public function saveAll(AcceptanceTester $I)
     {
         $I->amOnPage(self::PATH_2NDPAGE);
-        $I->wait(3);
+        $I->waitForJS('return typeof cookieman === "object"', 10);
         $I->waitForElementVisible(Locator::contains('*', self::MODAL_TEXT_EN), self::WAITFOR_TIMEOUT);
+        $I->wait(0.5); // animation
         $I->tryToClick(self::SETTINGS_LINK_TEXT); // customtheme doesn't have an accordion
+        $I->wait(0.5); // animation
         $I->click(self::SELECTOR_BUTTON_SAVEALL);
         $I->waitForElementNotVisible(self::SELECTOR_MODAL);
         $I->seeCookie(self::COOKIENAME);
@@ -140,7 +143,7 @@ class PopupInteractionsCest
     public function notShownOnImprint(AcceptanceTester $I)
     {
         $I->amOnPage(self::PATH_3RDPAGE);
-        $I->wait(3);
+        $I->waitForJS('return typeof cookieman === "object"', 10);
         $I->dontSeeElement(self::SELECTOR_MODAL);
     }
 
@@ -152,7 +155,7 @@ class PopupInteractionsCest
     public function selectGroupAndSaveMobile(AcceptanceTester $I)
     {
         $I->amOnPage(self::PATH_4THPAGE);
-        $I->wait(3);
+        $I->waitForJS('return typeof cookieman === "object"', 10);
         $I->resizeWindow(480, 800);
         $I->waitForElementVisible(self::SELECTOR_MODAL, self::WAITFOR_TIMEOUT);
         $I->tryToClick(self::SETTINGS_LINK_TEXT);
@@ -168,56 +171,6 @@ class PopupInteractionsCest
         $I->seeCookie(self::COOKIENAME);
         $I->assertEquals(
             $this->cookieValueForGroups([self::GROUP_KEY_MANDATORY, self::GROUP_KEY_2ND]),
-            $I->grabCookie(self::COOKIENAME, ['path' => self::PATH_ROOT])
-        );
-    }
-
-    /**
-     * @param AcceptanceTester $I
-     * @throws \Exception
-     */
-    public function reopenAndRevoke(AcceptanceTester $I)
-    {
-        $I->amOnPage(self::PATH_4THPAGE);
-        $I->wait(3);
-        $I->setCookie(
-            self::COOKIENAME,
-            $this->cookieValueForGroups(
-                [self::GROUP_KEY_MANDATORY, self::GROUP_KEY_2ND]
-            )
-        );
-
-        // set a cookie that is configured as tracking object and of type HTML
-        $I->setCookie(
-            self::COOKIE_TITLE_IN_2ND_GROUP,
-            'someValue'
-        );
-        $I->reloadPage();
-        $I->wait(0.5);
-        $I->seeCookie(self::COOKIE_TITLE_IN_2ND_GROUP);
-        $I->dontSeeElement(self::SELECTOR_MODAL);
-        $I->executeJS(self::JS_SHOWONCE_COOKIEMAN);
-        $I->wait(0.5);
-        $I->dontSeeElement(self::SELECTOR_MODAL);
-        $I->executeJS(self::JS_SHOW_COOKIEMAN);
-        $I->waitForElementVisible(self::SELECTOR_MODAL, self::WAITFOR_TIMEOUT);
-        $I->tryToClick(self::SETTINGS_LINK_TEXT);
-        $I->waitForElementVisible(Locator::contains('*', self::GROUP_TITLE_2ND), self::WAITFOR_TIMEOUT);
-        $I->tryToClick(self::GROUP_TITLE_2ND);
-        $I->wait(0.5);
-        $I->seeCheckboxIsChecked('[name=' . self::GROUP_KEY_2ND . ']');
-        if (!$I->tryToUncheckOption('[name=' . self::GROUP_KEY_2ND . ']')) { // theme: *-modal
-            $I->executeJS('$("[name=' . self::GROUP_KEY_2ND . ']").click()'); // theme: bootstrap3-banner
-        }
-        $I->dontSeeCheckboxIsChecked('[name=' . self::GROUP_KEY_2ND . ']');
-        $I->click('Save');
-        $I->waitForElementNotVisible(self::SELECTOR_MODAL);
-
-        // cookieman should have deleted this non-consented cookie
-        $I->dontSeeCookie(self::COOKIE_TITLE_IN_2ND_GROUP);
-
-        $I->assertEquals(
-            $this->cookieValueForGroups([self::GROUP_KEY_MANDATORY]),
             $I->grabCookie(self::COOKIENAME, ['path' => self::PATH_ROOT])
         );
     }
