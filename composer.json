@@ -117,7 +117,7 @@
             "@typo3 extensionmanager:extension:install cookieman_test_bootstrap4_modal"
         ],
         "install-typo3": [
-            "@typo3cms install:setup --admin-user-name=admin --admin-password=adminadmin --no-interaction"
+            "@typo3cms install:setup --admin-user-name=admin --admin-password=adminadmin --no-interaction --force"
         ],
         "release:create": [
             "extension-helper release:create",
