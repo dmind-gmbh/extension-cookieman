@@ -107,7 +107,7 @@ class PopupInteractionsCest
         $I->waitForJS('return typeof cookieman === "object"', 10);
         $I->waitForElementVisible(Locator::contains('*', self::MODAL_TITLE_EN), self::WAITFOR_TIMEOUT);
         $I->wait(0.5); // animation
-        $I->click(self::SELECTOR_BUTTON_SAVE_NOT_SAVEALL);
+        $I->clickWithLeftButton(self::SELECTOR_BUTTON_SAVE_NOT_SAVEALL);
         $I->waitForElementNotVisible(self::SELECTOR_MODAL);
         $I->seeCookie(self::COOKIENAME);
         $I->assertEquals(
@@ -128,7 +128,7 @@ class PopupInteractionsCest
         $I->wait(0.5); // animation
         $I->tryToClick(self::SETTINGS_LINK_TEXT); // customtheme doesn't have an accordion
         $I->wait(0.5); // animation
-        $I->click(self::SELECTOR_BUTTON_SAVEALL);
+        $I->clickWithLeftButton(self::SELECTOR_BUTTON_SAVEALL);
         $I->waitForElementNotVisible(self::SELECTOR_MODAL);
         $I->seeCookie(self::COOKIENAME);
         $I->assertStringStartsWith(
@@ -162,11 +162,12 @@ class PopupInteractionsCest
         $I->waitForElementVisible(Locator::contains('*', self::GROUP_TITLE_2ND), self::WAITFOR_TIMEOUT);
         $I->tryToClick(self::GROUP_TITLE_2ND);
         $I->waitForElementVisible(Locator::contains('*', self::COOKIE_TITLE_IN_2ND_GROUP), self::WAITFOR_TIMEOUT); // a single row in the table
+        $I->scrollTo('[name=' . self::GROUP_KEY_2ND . ']');
         if (!$I->tryToCheckOption('[name=' . self::GROUP_KEY_2ND . ']')) { // theme: *-modal
             $I->executeJS('$("[name=' . self::GROUP_KEY_2ND . ']").click()'); // theme: bootstrap3-banner
         }
         $I->seeCheckboxIsChecked('[name=' . self::GROUP_KEY_2ND . ']');
-        $I->click(self::BUTTON_TITLE_SAVE);
+        $I->clickWithLeftButton(self::BUTTON_TITLE_SAVE);
         $I->waitForElementNotVisible(self::SELECTOR_MODAL);
         $I->seeCookie(self::COOKIENAME);
         $I->assertEquals(
