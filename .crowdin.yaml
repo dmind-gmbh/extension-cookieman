@@ -1,5 +1,3 @@
 files:
   - source: Resources/Private/Language/locallang*.xlf
-commit_message: "[Crowdin pull request]"
-#"export_languages": [
-#]
+commit_message: '[Crowdin pull request]'
