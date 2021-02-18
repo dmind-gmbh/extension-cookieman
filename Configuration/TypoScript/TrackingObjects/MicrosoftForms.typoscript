@@ -1,0 +1,48 @@
+plugin.tx_cookieman.settings.trackingObjects {
+    MicrosoftForms {
+        inject (
+            <script data-what="MicrosoftForms" src="/typo3conf/ext/cookieman/Resources/Public/Js/Injects/example-inject.js"></script>
+        )
+# example:
+#        inject (
+# no example available yet. We are happy to receive a pull request if you have one.
+#        )
+        show {
+            # https://www.microsoft.com/de-de/trust-center/privacy/gdpr-overview
+            __RequestVerificationToken {
+                duration =
+                durationUnit = session
+                type = cookie_http
+                provider = Microsoft
+            }
+            
+            AADNonce\.forms {
+                duration =
+                durationUnit = session
+                type = cookie_http
+                provider = Microsoft
+            }
+
+            DcLcid {
+                duration = 3
+                durationUnit = months
+                type = cookie_http
+                provider = Microsoft
+            }
+
+            MSFPC {
+                duration = 1
+                durationUnit = year
+                type = cookie_http+html
+                provider = Microsoft
+            }
+
+            MUID {
+                duration = 1
+                durationUnit = year
+                type = cookie_http+html
+                provider = Microsoft
+            }
+        }
+    }
+}

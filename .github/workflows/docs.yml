@@ -40,7 +40,7 @@ jobs:
       - name: Verify rendering result
         run: stat Documentation-GENERATED-temp/Result/project/0.0.0/index.html || stat Documentation-GENERATED-temp/Result/project/0.0.0/Index.html
       - name: Upload
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2
         with:
           name: Rendering of ${{ github.event.repository.name }} (mode ${{ matrix.mode }})
           path: ./Documentation-GENERATED-temp/Result/project/0.0.0

@@ -12,5 +12,4 @@ mix
     .setPublicPath('../Resources/Public/Js/')
 
 mix
-    .minify('node_modules/js-cookie/src/js.cookie.js')
     .copy('node_modules/js-cookie/src/js.cookie.min.js', '../Resources/Public/Js/')

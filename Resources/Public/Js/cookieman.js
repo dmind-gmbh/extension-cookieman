@@ -61,19 +61,19 @@ var cookieman = (function () {
     }
 
     /**
-     * Checks if consent was given for all groups, in which a trackingObject 
+     * Checks if consent was given for all groups, in which a trackingObject
      * with the given key is defined. Normally each trackingObject should only
      * be present in one group.
-     * 
+     *
      * @param trackingObjectKey string e.g. 'Matomo'
-     * @return boolean consent given for all groups. If the trackingObject is 
+     * @return boolean consent given for all groups. If the trackingObject is
      * not defined in any group, this function will return false
      */
     function hasConsentedTrackingObject(trackingObjectKey) {
         var groups = findGroupsByTrackingObjectKey(trackingObjectKey)
-        
+
         return groups.reduce(
-            function (consentGiven, groupKey) { 
+            function (consentGiven, groupKey) {
                 return consentGiven && hasConsented(groupKey)
             },
             groups.length > 0
@@ -138,18 +138,18 @@ var cookieman = (function () {
             }
         }
     }
-    
+
     /**
      * Returns all groups, in which a trackingObject with the given key is defined.
-     * 
+     *
      * @param trackingObjectKey string e.g. 'Matomo'
      * @return array
      */
     function findGroupsByTrackingObjectKey(trackingObjectKey) {
         return Object.keys(settings.groups).filter(
             function (groupKey) {
-                return Object.prototype.hasOwnProperty.call(settings.groups[groupKey], 'trackingObjects') 
-                       && settings.groups[groupKey].trackingObjects.indexOf(trackingObjectKey) > -1
+                return Object.prototype.hasOwnProperty.call(settings.groups[groupKey], 'trackingObjects')
+                    && settings.groups[groupKey].trackingObjects.indexOf(trackingObjectKey) > -1
             }
         )
     }
@@ -161,6 +161,10 @@ var cookieman = (function () {
      * from TypoScript)
      */
     function injectTrackingObject(trackingObjectKey, trackingObjectSettings) {
+        if (typeof trackingObjectSettings === 'undefined') {
+            console.error('Used trackingObject ‹' + trackingObjectKey + '› is undefined.')
+            return
+        }
         if (typeof trackingObjectSettings.inject !== "undefined") {
             // <script>s inserted via innerHTML won't be executed
             // https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML
@@ -246,6 +250,10 @@ var cookieman = (function () {
      * from TypoScript)
      */
     function removeTrackingObject(trackingObjectKey, trackingObjectSettings) {
+        if (typeof trackingObjectSettings === 'undefined') {
+            console.error('Used trackingObject ‹' + trackingObjectKey + '› is undefined.')
+            return
+        }
         for (var itemKey in trackingObjectSettings.show) {
             if (!Object.prototype.hasOwnProperty.call(trackingObjectSettings.show, itemKey)) {
                 continue
@@ -270,7 +278,7 @@ var cookieman = (function () {
                 var regex,
                     currentCookies = Cookies.get(),
                     matches
-                    
+
                 try {
                     //Put in try/catch in case user set malformed regex
                     regex = RegExp(oItem['htmlCookieRemovalPattern'])
@@ -279,14 +287,14 @@ var cookieman = (function () {
                     //Do not try the malformed pattern on the other cookie names
                     return false
                 }
-                
+
                 for (var cookieName in currentCookies) {
                     if (cookieName.match(regex) !== null) {
-                        Cookies.remove(cookieName)
+                        removeHtmlCookie(cookieName)
                     }
                 }
             } else {
-                Cookies.remove(itemKey)
+                removeHtmlCookie(cookieName)
             }
             return true
         }
@@ -330,6 +338,23 @@ var cookieman = (function () {
         eventsEl.dispatchEvent(
             new window.CustomEvent(typeArg, customEventInit)
         )
+    }
+
+    /**
+     * Remove HTML cookie.
+     * In order to catch wildcard cookies like domain=.xxx.yy try different path and domains.
+     * @link https://github.com/dmind-gmbh/extension-cookieman/issues/137
+     * @param name
+     */
+    function removeHtmlCookie(name) {
+        // www.xxx.yy
+        var fullDomain = document.location.host
+        // xxx.yy
+        var secondLevelDomain = fullDomain.split('.').slice(-2).join('.')
+        Cookies.remove(name)
+        Cookies.remove(name, {path: ''})
+        Cookies.remove(name, {path: '', domain: fullDomain})
+        Cookies.remove(name, {path: '', domain: '.' + secondLevelDomain})
     }
 
     function init() {
@@ -400,6 +425,16 @@ var cookieman = (function () {
          * @api
          */
         consenteds: consentedSelectionsRespectDnt,
+        /**
+         * @api
+         * @param {string} groupKey
+         */
+        consent: function (groupKey) {
+            var checkbox = form.querySelector('[type=checkbox][name="' + groupKey + '"]')
+            setChecked(checkbox, true)
+            saveSelections()
+            injectNewTrackingObjects()
+        },
         /**
          * @api
          * @param {string} trackingObjectKey

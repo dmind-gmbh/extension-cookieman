@@ -1,6 +1,30 @@
+# 2.7.0
+
+## MISC
+- yarn upgrade 1a24349
+- yarn update 8f0c517
+- update actions/upload-artifact 20a619c
+- New Crowdin updates (#159) 1097884
+- fix missing js.cookie.js 750d2e2
+- add API for consenting #158 37b7f61
+- New Crowdin updates (#155) f3c93da
+- composer normalize 8a98a13
+- add composer config sort-packages a486928
+
+# 2.6.0
+
+## MISC
+- upgrade npm packages 1fde6a0
+- lint fa02b95
+- Try multiple cookie domains and paths during HTML cookie deletion. Fixes #137 af85f69
+- New Crowdin updates (#150) eb5bca2
+- New Crowdin updates (#145) 3bef6d4
+- get ready for ddev 1.15 d6df0a3
+
 # 2.5.0
 
 ## MISC
+- add ViewHelper namespace c: to Partial as well 066a595
 - New Crowdin translations (#142) 0ea3799
 - Move example-inject.js to Js/Injects/ 9a095ae
 - Wait longer for modal to cater for the delay we added 7a48a3b

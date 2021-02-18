@@ -35,9 +35,10 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
     /**
      * @dataProvider settingsProvider
      * @test
-     * @throws \TYPO3\CMS\Extbase\Configuration\Exception\InvalidConfigurationTypeException
+     * @param array $pluginConfiguration
+     * @param array $returnedSettings
      */
-    public function returnsSettings($pluginConfiguration, $returnedSettings)
+    public function returnsSettings(array $pluginConfiguration, array $returnedSettings): void
     {
         $configurationManager = $this->getMockBuilder(ConfigurationManagerInterface::class)->getMockForAbstractClass();
         $configurationManager->expects(self::once())->method('getConfiguration')->willReturn(
@@ -80,41 +81,35 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
                     'trackingObjects' => [
                         'CookieConsent' => [
                             'show' => [
-                                [
-                                    'CookieConsent' => [
-                                        'duration' => '1',
-                                        'durationUnit' => 'year',
-                                        'type' => 'cookie_http+html',
-                                        'provider' => 'Website',
-                                    ]
-                                ]
-                            ]
+                                'CookieConsent' => [
+                                    'duration' => '1',
+                                    'durationUnit' => 'year',
+                                    'type' => 'cookie_http+html',
+                                    'provider' => 'Website',
+                                ],
+                            ],
                         ],
                         'fe_typo_user' => [
                             'show' => [
-                                [
-                                    'fe_typo_user' => [
-                                        'duration' => '',
-                                        'durationUnit' => 'session',
-                                        'type' => 'cookie_http',
-                                        'provider' => 'Website',
-                                    ]
+                                'fe_typo_user' => [
+                                    'duration' => '',
+                                    'durationUnit' => 'session',
+                                    'type' => 'cookie_http',
+                                    'provider' => 'Website',
                                 ],
-                            ]
+                            ],
                         ],
                         'another' => [ // unused
                             'show' => [
-                                [
-                                    'another' => [
-                                        'duration' => '',
-                                        'durationUnit' => 'session',
-                                        'type' => 'cookie_http',
-                                        'provider' => 'Website',
-                                    ]
+                                'another' => [
+                                    'duration' => '',
+                                    'durationUnit' => 'session',
+                                    'type' => 'cookie_http',
+                                    'provider' => 'Website',
                                 ],
-                            ]
+                            ],
                         ],
-                    ]
+                    ],
                 ],
                 [
                     'data' => [],
@@ -131,44 +126,38 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
                         'trackingObjects' => [
                             'CookieConsent' => [
                                 'show' => [
-                                    [
-                                        'CookieConsent' => [
-                                            'duration' => '1',
-                                            'durationUnit' => 'year',
-                                            'type' => 'cookie_http+html',
-                                            'provider' => 'Website',
-                                        ]
-                                    ]
-                                ]
+                                    'CookieConsent' => [
+                                        'duration' => '1',
+                                        'durationUnit' => 'year',
+                                        'type' => 'cookie_http+html',
+                                        'provider' => 'Website',
+                                    ],
+                                ],
                             ],
                             'fe_typo_user' => [
                                 'show' => [
-                                    [
-                                        'fe_typo_user' => [
-                                            'duration' => '',
-                                            'durationUnit' => 'session',
-                                            'type' => 'cookie_http',
-                                            'provider' => 'Website',
-                                        ]
+                                    'fe_typo_user' => [
+                                        'duration' => '',
+                                        'durationUnit' => 'session',
+                                        'type' => 'cookie_http',
+                                        'provider' => 'Website',
                                     ],
-                                ]
+                                ],
                             ],
                             'another' => [ // unused
                                 'show' => [
-                                    [
-                                        'another' => [
-                                            'duration' => '',
-                                            'durationUnit' => 'session',
-                                            'type' => 'cookie_http',
-                                            'provider' => 'Website',
-                                        ]
+                                    'another' => [
+                                        'duration' => '',
+                                        'durationUnit' => 'session',
+                                        'type' => 'cookie_http',
+                                        'provider' => 'Website',
                                     ],
-                                ]
+                                ],
                             ],
-                        ]
-                    ]
+                        ],
+                    ],
                 ],
-            ]
+            ],
         ];
     }
 }
