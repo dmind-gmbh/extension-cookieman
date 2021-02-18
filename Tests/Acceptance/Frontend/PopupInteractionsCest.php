@@ -167,7 +167,7 @@ class PopupInteractionsCest
             $I->executeJS('$("[name=' . self::GROUP_KEY_2ND . ']").click()'); // theme: bootstrap3-banner
         }
         $I->seeCheckboxIsChecked('[name=' . self::GROUP_KEY_2ND . ']');
-        $I->clickWithLeftButton(self::BUTTON_TITLE_SAVE);
+        $I->clickWithLeftButton(self::SELECTOR_BUTTON_SAVE_NOT_SAVEALL);
         $I->waitForElementNotVisible(self::SELECTOR_MODAL);
         $I->seeCookie(self::COOKIENAME);
         $I->assertEquals(
