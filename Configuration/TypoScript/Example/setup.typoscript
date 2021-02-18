@@ -20,6 +20,20 @@ plugin.tx_cookieman {
                     20 = GoogleTagManager
                     30 = Bing
                     40 = FacebookPixel
+                    50 = MicrosoftForms
+                    60 = Slideshare
+                }
+
+                respectDnt = 1
+                showDntMessage = 1
+            }
+
+            # external content
+            external {
+                trackingObjects {
+                    0 = GoogleMaps
+                    10 = YouTube
+                    20 = MicrosoftStream
                 }
 
                 respectDnt = 1

@@ -20,6 +20,7 @@ Override translations
 =====================
 
 You can override translations by the usual means (.xlf-files or TypoScript :typoscript:`_LOCAL_LANG`).
+If you use the TypoScript approach please keep in mind that the default language is english and additional languages can be added via the language ISO-639-1 code (de, fr, ...).
 
 Example:
 --------

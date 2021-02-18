@@ -19,7 +19,9 @@
         "bk2k/bootstrap-package": "^10.0",
         "bk2k/extension-helper": "^1.0",
         "browserstack/browserstack-local": "dev-master",
-        "codeception/codeception": "^3.1",
+        "codeception/codeception": "^4.1",
+        "codeception/module-asserts": "^1.3",
+        "codeception/module-webdriver": "^1.1",
         "dmind/cookieman-test": "@dev",
         "dmind/cookieman-test-bootstrap3-banner": "@dev",
         "dmind/cookieman-test-bootstrap3-modal": "@dev",
@@ -27,7 +29,6 @@
         "dmind/cookieman-test-customtheme": "@dev",
         "friendsofphp/php-cs-fixer": "^2.14",
         "helhum/typo3-console": "^5.7",
-        "localheinz/composer-normalize": "^1.3",
         "php-coveralls/php-coveralls": "^2.1",
         "roave/security-advisories": "dev-master",
         "typo3/cms-introduction": "^4.0.1",
@@ -36,11 +37,12 @@
     },
     "config": {
         "bin-dir": ".build/bin",
+        "sort-packages": true,
         "vendor-dir": ".build/vendor"
     },
     "extra": {
         "branch-alias": {
-            "dev-9lts": "2.5.x-dev"
+            "dev-9lts": "2.7.x-dev"
         },
         "typo3/cms": {
             "extension-key": "cookieman",
@@ -64,7 +66,6 @@
             "url": "Build/*"
         }
     ],
-    "minimum-stability": "dev",
     "prefer-stable": true,
     "scripts": {
         "post-autoload-dump": [
@@ -108,8 +109,7 @@
             "typo3 extension:activate -n cookieman_test_customtheme"
         ],
         "fix:cgl": [
-            "php-cs-fixer --config=.php_cs.dist fix --using-cache=no",
-            "composer normalize --no-update-lock"
+            "php-cs-fixer --config=.php_cs.dist fix --using-cache=no"
         ],
         "install-extensions": [
             "typo3 extension:activate -n bootstrap_package",
@@ -119,7 +119,7 @@
             "typo3 extension:activate -n cookieman_test_bootstrap4_modal"
         ],
         "install-typo3": [
-            "typo3cms install:setup --admin-user-name=admin --admin-password=adminadmin --no-interaction"
+            "typo3cms install:setup --admin-user-name=admin --admin-password=adminadmin --no-interaction --force"
         ],
         "release:create": [
             "extension-helper release:create",
@@ -157,11 +157,15 @@
             "codecept run --env firefox -d -c Build/local.codeception.yml -- acceptance"
         ],
         "test:cgl": [
-            "php-cs-fixer --config=.php_cs.dist fix -v --using-cache=no --dry-run",
-            "composer normalize --no-update-lock --dry-run"
+            "php-cs-fixer --config=.php_cs.dist fix -v --using-cache=no --dry-run"
         ],
         "test:unit": [
+            "@putenv XDEBUG_MODE=coverage",
             "phpunit -c Build/UnitTests.phpunit.xml"
+        ],
+        "tests-for:ci": [
+            "@test:cgl",
+            "@test:unit"
         ],
         "typo3:flush": [
             "typo3cms cache:flush"
