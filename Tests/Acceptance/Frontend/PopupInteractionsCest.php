@@ -40,7 +40,7 @@ class PopupInteractionsCest
     const MODAL_TEXT_EN = 'This website uses cookies.';
 
     const SELECTOR_MODAL = '#cookieman-modal';
-    const SELECTOR_BUTTON_SAVE_NOT_SAVEALL = '[data-cookieman-save]:not([data-cookieman-accept-all]):not([data-cookieman-accept-none])';
+    const SELECTOR_BUTTON_SAVE_NOT_SAVEALL = '[data-cookieman-save]:not([data-cookieman-accept-all],[data-cookieman-accept-none])';
     const SELECTOR_BUTTON_SAVEALL = '[data-cookieman-accept-all]';
     const SETTINGS_LINK_SELECTOR = '[aria-controls="cookieman-settings"]';
 
