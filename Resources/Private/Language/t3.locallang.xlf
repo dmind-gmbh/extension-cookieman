@@ -391,6 +391,10 @@
         <source>always inactive</source>
         <target>crwdns80946:0crwdne80946:0</target>
       </trans-unit>
+      <trans-unit id="group.accept" resname="group.accept">
+        <source>accept</source>
+        <target>crwdns133946:0crwdne133946:0</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
