@@ -55,14 +55,14 @@
                                                 <div data-cookieman-dnt></div>
                                             </f:if>
                                             <div class="alert alert-info">
-                                                <div class="checkbox">
+                                                <div class="checkbox-inline">
                                                     <label>
-                                                        <input type="checkbox" value="option1"
+                                                        <input type="checkbox"
                                                                name="{groupId}"
                                                                {f:if(condition: group.preselected, then:
                                                         'checked="checked"')}
                                                         {f:if(condition: group.disabled, then: 'disabled="disabled"')}
-                                                        > Zustimmen
+                                                        > {f:translate(key: 'group.accept')}
                                                     </label>
                                                 </div>
                                             </div>
