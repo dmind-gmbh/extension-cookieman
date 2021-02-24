@@ -39,12 +39,7 @@
                                     <div class="panel-heading" role="tab">
                                         <h4 class="panel-title">
                                             <label>
-                                                <input type="checkbox"
-                                                       name="{groupId}"
-                                                       {f:if(condition: group.preselected, then:
-                                                'checked="checked"')}
-                                                {f:if(condition: group.disabled, then: 'disabled="disabled"')}
-                                                >
+
                                             </label>
                                             <a class="collapsed" role="button" data-toggle="collapse"
                                                data-parent="#cookieman-acco" data-target="#cookieman-acco-{groupId}"
@@ -59,11 +54,21 @@
                                             <f:if condition="{group.showDntMessage}">
                                                 <div data-cookieman-dnt></div>
                                             </f:if>
-
+                                            <div class="alert alert-info">
+                                                <div class="checkbox-inline">
+                                                    <label>
+                                                        <input type="checkbox"
+                                                               name="{groupId}"
+                                                               {f:if(condition: group.preselected, then:
+                                                        'checked="checked"')}
+                                                        {f:if(condition: group.disabled, then: 'disabled="disabled"')}
+                                                        > {f:translate(key: 'group.accept')}
+                                                    </label>
+                                                </div>
+                                            </div>
                                             <p>
                                                 {f:translate(key: 'group.{groupId}.desc')}
                                             </p>
-
                                             <f:if condition="{group -> c:shownTrackingObjects() -> f:count()} > 0">
                                                 <div class="table-responsive">
                                                     <table class="table table-hover table-condensed">
