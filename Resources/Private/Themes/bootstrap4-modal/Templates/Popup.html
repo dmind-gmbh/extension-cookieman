@@ -23,7 +23,6 @@
                         data-target="#cookieman-settings" aria-expanded="false" aria-controls="cookieman-settings">
                     {f:translate(key: 'settings')}
                 </button>
-
                 <div class="clearfix"></div>
 
                 <div class="collapse" id="cookieman-settings">
@@ -38,12 +37,6 @@
                             <f:for each="{settings.groups}" key="groupId" as="group">
                                 <div class="card">
                                     <div class="card-header" id="cookieman-acco-h-{groupId}">
-                                        <input class="float-right mr-5 mt-1" type="checkbox"
-                                               name="{groupId}"
-                                               {f:if(condition: group.preselected, then:
-                                        'checked="checked"')}
-                                        {f:if(condition: group.disabled, then: 'disabled="disabled"')}
-                                        >
                                         <a href="" class="collapsed" data-toggle="collapse"
                                            data-target="#cookieman-acco-{groupId}" role="button"
                                            aria-expanded="false" aria-controls="cookieman-acco-{groupId}">
@@ -57,11 +50,21 @@
                                         <f:if condition="{group.showDntMessage}">
                                             <div data-cookieman-dnt></div>
                                         </f:if>
-
+                                        <div class="alert alert-primary">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="{groupId}" name="{groupId}"
+                                                       {f:if(condition: group.preselected, then:
+                                                'checked="checked"')}
+                                                {f:if(condition: group.disabled, then: 'disabled="disabled"')}
+                                                >
+                                                <label class="form-check-label" for="{groupId}">
+                                                    Zustimmen
+                                                </label>
+                                            </div>
+                                        </div>
                                         <p>
                                             {f:translate(key: 'group.{groupId}.desc')}
                                         </p>
-
                                         <f:if condition="{group -> c:shownTrackingObjects() -> f:count()} > 0">
                                             <div class="table-responsive">
                                                 <table class="table table-hover table-sm">
