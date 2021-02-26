@@ -11,6 +11,9 @@
             "role": "Developer"
         }
     ],
+    "replace": {
+        "typo3-ter/cookieman": "self.version"
+    },
     "require": {
         "php": "^7.0",
         "typo3/cms-core": "^8.7.0"
