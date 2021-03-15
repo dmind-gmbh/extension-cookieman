@@ -9,9 +9,34 @@ Custom themes
 
 Target group: **Developers, Integrators**
 
+Adapt an existing theme
+=======================
 
-Create a new theme or adapt an existing one
-===========================================
+If you want to adapt an existing theme, and not necessarily create a new one, you may want to consider adding another path to the default templates via adapting the root paths as so:
+
+.. code-block:: typoscript
+
+  page {
+    1365499 = FLUIDTEMPLATE
+    1365499 {
+      templateRootPaths {
+        150 = EXT:my-ext/Resources/Private/cookieman/Templates/{$plugin.tx_cookieman.settings.theme}/
+      }
+      partialRootPaths {
+        150 = EXT:my-ext/Resources/Private/cookieman/Partials/
+      }
+      layoutRootPaths {
+        150 = EXT:my-ext/Resources/Private/cookieman/Layouts/
+      }
+    }
+  }
+  
+  
+This way, you also do not need to add a `cookieman-theme.css` and `cookieman-theme.js` file, which are necessary when creating a full custom theme.
+
+
+Create a new theme
+==================
 
 .. note::
 
