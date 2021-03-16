@@ -14,12 +14,12 @@ Target group: **Administrators**
 Requirements
 ============
 
-* If you reimplement your own theme, it has no requirements at all
-* for the example themes:
+*  If you reimplement your own theme, it has no requirements at all
+*  for the example themes:
 
-   * Bootstrap 3/4 CSS
-   * Bootstrap 3/4 JavaScript for *collapse* and *modal*
-   * jQuery
+   *  Bootstrap 3/4 CSS
+   *  Bootstrap 3/4 JavaScript for *collapse* and *modal*
+   *  jQuery
 
 
 .. _installation-steps:
