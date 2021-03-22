@@ -1,0 +1,114 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:c="http://typo3.org/ns/Dmind/Cookieman/ViewHelpers"
+    xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers">
+<f:layout name="PopupLayout"/>
+
+<f:section name="Content">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cookieman-modal-title">
+                    {f:translate(key: 'heading')}
+                </h5>
+            </div>
+            <div class="modal-body">
+                <p>
+                    {f:translate(
+                    key: 'introText',
+                    arguments: {
+                    1: "{dataProtectionDeclarationLink -> f:spaceless()}",
+                    2: "{imprintLink -> f:spaceless()}"
+                    }) -> f:format.raw()}
+                </p>
+                <button class="btn btn-secondary btn-sm float-right collapsed pr-5"
+                        type="button" data-bs-toggle="collapse"
+                        data-bs-target="#cookieman-settings" aria-expanded="false" aria-controls="cookieman-settings">
+                    {f:translate(key: 'settings')}
+                </button>
+
+                <div class="clearfix"></div>
+
+                <div class="collapse" id="cookieman-settings">
+                    <form data-cookieman-form class="mt-3 form-inline"
+                          data-cookieman-dnt-enabled="{f:translate(key: 'browser.dnt-enabled')}"
+                    >
+                        <div class="accordion" id="cookieman-acco">
+                            <f:for each="{settings.groups}" key="groupId" as="group">
+                                <div class="accordion-item">
+                                    <div class="accordion-header" id="cookieman-acco-h-{groupId}">
+                                      <a class="accordion-button input-group-text" role="button" data-bs-toggle="collapse"
+                                         data-bs-target="#cookieman-acco-{groupId}"
+                                         aria-expanded="true" aria-controls="cookieman-acco-{groupId}">
+                                         <input class="me-3" type="checkbox"
+                                                  name="{groupId}"
+                                                  {f:if(condition: group.preselected, then:
+                                           'checked="checked"')}
+                                           {f:if(condition: group.disabled, then: 'disabled="disabled"')}
+                                           >
+                                        {f:translate(key: 'group.{groupId}', default: groupId)}
+                                      </a>
+                                    </div>
+
+                                    <div id="cookieman-acco-{groupId}" class="accordion-collapse collapse show"
+                                         aria-labelledby="cookieman-acco-h-{groupId}"
+                                         data-bs-parent="#cookieman-acco">
+                                        <div class="accordion-body">
+                                        <f:if condition="{group.showDntMessage}">
+                                            <div data-cookieman-dnt></div>
+                                        </f:if>
+
+                                        <p>
+                                            {f:translate(key: 'group.{groupId}.desc')}
+                                        </p>
+
+                                        <f:if condition="{group -> c:shownTrackingObjects() -> f:count()} > 0">
+                                            <div class="table-responsive">
+                                                <table class="table table-hover table-sm">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>{f:translate(key: 'tableheader.name')}</th>
+                                                        <th>{f:translate(key: 'tableheader.purpose')}</th>
+                                                        <th>{f:translate(key: 'tableheader.duration')}</th>
+                                                        <th>{f:translate(key: 'tableheader.type')}</th>
+                                                        <th>{f:translate(key: 'tableheader.provider')}</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <f:render partial="TableRowsByGroup" section="content"
+                                                              arguments="{_all}"/>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </f:if>
+                                        </div>
+                                    </div>
+                                </div>
+                            </f:for>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button
+                    data-cookieman-accept-none data-cookieman-save
+                    class="btn btn-secondary"
+                >
+                    {f:translate(key: 'deny')}
+                </button>
+                <button
+                    data-cookieman-save
+                    class="btn btn-default" style="display: none"
+                >
+                    {f:translate(key: 'save')}
+                </button>
+                <button
+                    data-cookieman-accept-all data-cookieman-save
+                    class="btn btn-primary"
+                >
+                    {f:translate(key: 'accept')}
+                </button>
+            </div>
+        </div>
+    </div>
+</f:section>
