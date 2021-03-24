@@ -102,7 +102,8 @@ class PopupInteractionsCest
         $I->waitForJS('return typeof cookieman === "object"', 10);
         $I->waitForElementVisible(self::SELECTOR_modal);
         $I->click(self::SETTINGS_linkText);
-        $I->clickWithLeftButton(self::SELECTOR_btnSaveAll);
+        $I->scrollTo(['css' => self::SELECTOR_btnSaveAll]);
+        $I->clickWithLeftButton(['css' => self::SELECTOR_btnSaveAll]);
         $I->waitForElementNotVisible(self::SELECTOR_modal);
         $I->seeCookie(self::COOKIENAME);
         $I->assertStringStartsWith(
