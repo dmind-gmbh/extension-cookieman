@@ -391,6 +391,10 @@
         <source>always inactive</source>
         <target state="needs-translation">always inactive</target>
       </trans-unit>
+      <trans-unit id="group.accept" resname="group.accept">
+        <source>accept</source>
+        <target state="needs-translation">accept</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

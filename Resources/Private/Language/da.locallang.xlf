@@ -391,6 +391,10 @@
         <source>always inactive</source>
         <target state="final">altid inaktiv</target>
       </trans-unit>
+      <trans-unit id="group.accept" resname="group.accept" approved="yes">
+        <source>accept</source>
+        <target state="final">acceptér</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
