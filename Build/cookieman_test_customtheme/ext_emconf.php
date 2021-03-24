@@ -10,7 +10,4 @@
 $EM_CONF[$_EXTKEY] = [
     'title' => 'cookieman test environment (Custom theme integration)',
     'description' => '',
-    'constraints' => [
-        'suggests' => ['bootstrap_package' => '*'],
-    ],
 ];

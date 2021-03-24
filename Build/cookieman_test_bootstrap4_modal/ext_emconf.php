@@ -10,7 +10,4 @@
 $EM_CONF[$_EXTKEY] = [
     'title' => 'cookieman test environment (Theme bootstrap4-modal)',
     'description' => '',
-    'constraints' => [
-        'suggests' => ['bootstrap_package' => '*'],
-    ],
 ];
