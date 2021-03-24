@@ -9,8 +9,12 @@ cookieman.theme = (function () {
   // show "save" after opening settings
   if (showSettingsBtn) {
     showSettingsBtn.addEventListener('click', function (ev) {
-      var saveBtn = document.querySelector('[data-cookieman-save]')
-      saveBtn && saveBtn.show()
+      var saveBtn = document.querySelector(
+        '[data-cookieman-save]:not([data-cookieman-accept-all]):not([data-cookieman-accept-none])'
+      )
+      if (saveBtn) {
+        saveBtn.hidden = false
+      }
     })
   }
 
