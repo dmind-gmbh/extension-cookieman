@@ -106,7 +106,7 @@
       "@typo3:flush"
     ],
     "cookieman:customtheme": [
-      "@typo3cms install:generatepackagestates --excluded-extensions=cookieman_test_bootstrap3_banner,cookieman_test_bootstrap3_modal,cookieman_test_bootstrap4_modal",
+      "@typo3cms install:generatepackagestates --excluded-extensions=cookieman_test_bootstrap3_banner,cookieman_test_bootstrap3_modal,cookieman_test_bootstrap4_modal,cookieman_test_bootstrap5_modal",
       "@typo3:flush"
     ],
     "fix:cgl": [
