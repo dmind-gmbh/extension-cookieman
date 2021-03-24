@@ -31,7 +31,7 @@ Installation
 
    **Pay attention to the extension's version number!**
 
-   Each version of Cookieman **only supports a single LTS version of TYPO3** (TYPO3 v8/v9/v10).
+   Each version of Cookieman **only supports a single LTS version of TYPO3** (TYPO3 v8-*).
    This might be a bit confusing but makes development and testing easier.
 
 #. **Get the extension:**
