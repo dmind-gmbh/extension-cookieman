@@ -40,7 +40,7 @@ class PopupInteractionsCest
     const MODAL_TEXT_EN = 'This website uses cookies.';
 
     const SELECTOR_MODAL = '#cookieman-modal';
-    const SELECTOR_BUTTON_SAVE_NOT_SAVEALL = '[data-cookieman-save]:not([data-cookieman-accept-all])';
+    const SELECTOR_BUTTON_SAVE_NOT_SAVEALL = '[data-cookieman-save]:not([data-cookieman-accept-all]):not([data-cookieman-accept-none])';
     const SELECTOR_BUTTON_SAVEALL = '[data-cookieman-accept-all]';
     const SETTINGS_LINK_TEXT = 'Settings';
     const BUTTON_TITLE_SAVE = 'Save';
@@ -167,7 +167,7 @@ class PopupInteractionsCest
             $I->executeJS('$("[name=' . self::GROUP_KEY_2ND . ']").click()'); // theme: bootstrap3-banner
         }
         $I->seeCheckboxIsChecked('[name=' . self::GROUP_KEY_2ND . ']');
-        $I->clickWithLeftButton(self::BUTTON_TITLE_SAVE);
+        $I->clickWithLeftButton(self::SELECTOR_BUTTON_SAVE_NOT_SAVEALL);
         $I->waitForElementNotVisible(self::SELECTOR_MODAL);
         $I->seeCookie(self::COOKIENAME);
         $I->assertEquals(

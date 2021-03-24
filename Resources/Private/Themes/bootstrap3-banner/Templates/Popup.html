@@ -55,41 +55,17 @@
                                     </div>
                                     <div id="cookieman-acco-{groupId}" class="panel-collapse collapse" role="tabpanel">
                                         <div class="panel-body">
-                                            <div class="checkbox-wrapper">
-                                                <div class="checkbox">
+                                            <div class="alert alert-info">
+                                                <div class="checkbox-inline">
                                                     <label>
                                                         <input name="{groupId}" value="1" type="checkbox"
                                                             {f:if(condition: group.preselected, then:
                                                         'checked="checked"')}
                                                         {f:if(condition: group.disabled, then: 'disabled="disabled"')}
-                                                        >
-                                                        <span class="cookieman-check-icon">
-                                                            <span class="cookieman-check-block"></span>
-                                                        </span>
-                                                        <span class="cookieman-label-active">
-                                                            <f:if condition="{group.disabled}">
-                                                                <f:then>
-                                                                    {f:translate(key: 'alwaysactive')}
-                                                                </f:then>
-                                                                <f:else>
-                                                                    {f:translate(key: 'active')}
-                                                                </f:else>
-                                                            </f:if>
-                                                        </span>
-                                                        <span class="cookieman-label-inactive">
-                                                            <f:if condition="{group.disabled}">
-                                                                <f:then>
-                                                                    {f:translate(key: 'alwaysinactive')}
-                                                                </f:then>
-                                                                <f:else>
-                                                                    {f:translate(key: 'inactive')}
-                                                                </f:else>
-                                                            </f:if>
-                                                        </span>
+                                                        > {f:translate(key: 'group.accept')}
                                                     </label>
                                                 </div>
                                             </div>
-
                                             <f:if condition="{group.showDntMessage}">
                                                 <div data-cookieman-dnt></div>
                                             </f:if>
