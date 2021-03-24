@@ -8,23 +8,9 @@
  */
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'd-mind Cookieman test environment',
+    'title' => 'cookieman test environment',
     'description' => '',
-    'category' => 'frontend',
-    'author' => 'Jonas Eberle',
-    'author_email' => 'jonas.eberle@d-mind.de',
-    'state' => 'stable',
-    'internal' => '',
-    'uploadfolder' => '0',
-    'createDirs' => '',
-    'clearCacheOnLoad' => 0,
-    'version' => 'x.x.x-dev',
     'constraints' => [
-        'depends' => ['bootstrap_package' => '*'],
-        'conflicts' => [
-            'cookieman_test_bootstrap3_banner' => '*',
-            'cookieman_test_bootstrap3_modal' => '*'
-        ],
         'suggests' => ['bootstrap_package' => '*'],
     ],
 ];
