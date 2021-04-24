@@ -1,9 +1,6 @@
 @import 'EXT:cookieman/Configuration/TypoScript/setup.typoscript'
 @import 'EXT:cookieman/Configuration/TypoScript/Example/setup.typoscript'
 
-# Test our JS against a CSP script-src policy that disallows inlining JS
-config.additionalHeaders.14543.header = Content-Security-Policy: script-src 'self' https://crowdin.com nonce-EDNnf03nceIOfn39fn3e9h3sdfa
-
 # subscribe to events
 page.includeJSFooter {
     subscribe-events = EXT:cookieman_test/Resources/Public/Js/subscribe-events.js
@@ -11,7 +8,7 @@ page.includeJSFooter {
 
 plugin.tx_cookieman.settings {
     trackingObjects {
-        # add the Crowdin translation integration of cookieman as "TrackingObject" - actually a neat way to test if or JS inclusion works ;)
+        # add the Crowdin translation integration of cookieman as "TrackingObject" - actually a neat way to test if our JS inclusion works ;)
         Crowdin {
             inject (
 <script data-what="Crowdin (1st script)" src="/typo3conf/ext/cookieman/Resources/Public/Js/Injects/example-inject.js"></script>

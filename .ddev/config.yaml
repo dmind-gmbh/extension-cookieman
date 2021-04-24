@@ -1,29 +1,29 @@
 name: extension-cookieman-10lts
 type: typo3
 docroot: .build/public
-php_version: "7.2"
+php_version: "7.4"
 webserver_type: nginx-fpm
 router_http_port: "80"
 router_https_port: "443"
 xdebug_enabled: false
-additional_hostnames: []
-additional_fqdns: []
-mariadb_version: "10.2"
+additional_hostnames: [ ]
+additional_fqdns: [ ]
+mariadb_version: "10.3"
 mysql_version: ""
 provider: default
 hooks:
   post-start:
-  - composer: update --with-dependencies --no-progress
-  - exec: rm composer.lock
-  - exec: |
-      if [[ $(mysql -e "SHOW TABLES" | wc -l) -eq 0 ]]; then
-        composer install-typo3
-      fi
-  - composer: install-extensions
-  - composer: cookieman:bootstrap4-modal
+    - composer: update --with-dependencies --no-progress
+    - exec: rm composer.lock
+    - exec: |
+        if [[ $(mysql -e "SHOW TABLES" | wc -l) -eq 0 ]]; then
+          composer install-typo3
+          mysql <<< 'INSERT INTO pages SET uid=2, pid=1, title="Imprint", slug="/imprint"'
+          mysql <<< 'INSERT INTO pages SET uid=3, pid=1, title="Privacy Policy", slug="/privacy"'
+        fi
   pre-start:
-  - exec-host: mkdir -p .build/public/typo3conf/
-  - exec-host: .ddev/commands/copy-git-config
+    - exec-host: mkdir -p .build/public/typo3conf/
+    - exec-host: .ddev/commands/copy-git-config
 project_tld: test
 use_dns_when_possible: true
 composer_version: "2"

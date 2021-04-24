@@ -92,7 +92,7 @@ during development. Use :command:`ddev composer` from outside the container or j
 - :command:`ddev composer cookieman:test` runs all important tests. You do not strictly have to run tests before opening a
   pull request - they are also run post-commit on
   `Github actions <https://github.com/dmind-gmbh/extension-cookieman/actions>`__.
-- :command:`ddev composer fix:xgl` tries to fix CGL problems.
+- :command:`ddev composer fix:cgl` tries to fix CGL problems.
 - :command:`ddev composer build:docs` [+ any parameters, defaults to "makehtml"] builds documentation using the official
   `TYPO3 docs team docker image <https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/RenderingDocs/Quickstart.html>`__
   (experimental feature, feedback is welcome). Unfortunately, the parameter :command:`--help` is masked by composer.

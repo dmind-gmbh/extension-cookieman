@@ -23,7 +23,8 @@ When is the popup shown to users?
 ---------------------------------
 
 By default, the popup is shown once on every page load until the user saves the consent status.
-The user can close the popup by clicking the area outside in order to read the current page.
+In our demo themes, we allow closing the popup without making a selection by clicking outside or using the ESC key.
+This is to follow our interpretation of GDPR that a consenting decision should not be forced.
 
 When the user saves the consent status, a new cookie `CookieConsent` will be set with the approved cookie groups.
 
@@ -37,16 +38,16 @@ The page UIDs can be set in TypoScript. This also allows to link to these pages 
 Features
 --------
 
-* Tracking objects: Render detailed information about your cookies, tracking pixels, LocalStorage entries...: Name, Purpose, Lifetime, Type, Provider
-* Tracking objects: Commonly used tracking objects are already supported with configuration and information text
-* Tracking objects: Extendable as needed
-* Tracking objects: HTML Cookies will be removed from the user's browser
-* Groups: **Group your tracking objects** (e.g. "Mandatory", "Marketing", "Analytics")
-* Groups: **Preselect and/or disable groups**, e.g. the group for mandatory technical cookies
-* A note about the **"Do-not-track"** setting can be shown inside the popup and this setting can also be respected (configurable on a per-group level)
+*  Tracking objects: Render detailed information about your cookies, tracking pixels, LocalStorage entries...: Name, Purpose, Lifetime, Type, Provider
+*  Tracking objects: Commonly used tracking objects are already supported with configuration and information text
+*  Tracking objects: Extendable as needed
+*  Tracking objects: HTML Cookies will be removed from the user's browser
+*  Groups: **Group your tracking objects** (e.g. "Mandatory", "Marketing", "Analytics")
+*  Groups: **Preselect and/or disable groups**, e.g. the group for mandatory technical cookies
+*  A note about the **"Do-not-track"** setting can be shown inside the popup and this setting can also be respected (configurable on a per-group level)
 
-* The extension includes **3 ready-made themes** based on Bootstrap
-* **Customization:** Fluid templates and all texts can be adjusted to your needs
+*  The extension includes **3 ready-made themes** based on Bootstrap
+*  **Customization:** Fluid templates and all texts can be adjusted to your needs
 
 
 .. _compatibility:
@@ -54,9 +55,9 @@ Features
 Compatibility
 -------------
 
-* Supports all modern browsers and Internet Explorer 11
-* Can be configured to work with a strict `Content Security Policy <https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP>`__
-  (which means: all inline scripts are blocked)
+*  Supports all modern browsers and Internet Explorer 11
+*  Can be configured to work with a strict `Content Security Policy <https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP>`__
+   (no inline scripts are needed)
 
 
 .. _demo:
@@ -64,7 +65,7 @@ Compatibility
 Demo
 ====
 
-You can click around the three included demo themes `here <http://cookieman.d-mind.de/>`__.
+You can click around the included demo themes `here <http://cookieman.d-mind.de/>`__.
 Have a look at the JavaScript console to see when tracking gets enabled.
 
 You can also try out the `"Do-not-track" setting of your browser <https://en.wikipedia.org/wiki/Do_Not_Track>`__

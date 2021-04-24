@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 /*
@@ -25,38 +26,34 @@ namespace Dmind\Cookieman\Tests\Acceptance\Frontend;
 
 use Codeception\Util\Locator;
 use Dmind\Cookieman\Tests\Acceptance\Support\AcceptanceTester;
+use Exception;
 
 /**
  * Tests clicking through some frontend pages
  */
 class PopupInteractionsCest
 {
-    const PATH_ROOT = '/';
-    const PATH_2NDPAGE = '/customize';
-    const PATH_3RDPAGE = '/?id=10';
-    const PATH_4THPAGE = '/pages';
+    const PATH_root = '/';
+    const PATH_imprint = '/imprint';
+    const PATH_dataProtectionDeclaration = '/privacy';
 
-    const MODAL_TITLE_EN = 'About Cookies';
-    const MODAL_TEXT_EN = 'This website uses cookies.';
+    const MODAL_titleEn = 'About Cookies';
+    const MODAL_textEn = 'This website uses cookies.';
 
-    const SELECTOR_MODAL = '#cookieman-modal';
-    const SELECTOR_BUTTON_SAVE_NOT_SAVEALL = '[data-cookieman-save]:not([data-cookieman-accept-all]):not([data-cookieman-accept-none])';
-    const SELECTOR_BUTTON_SAVEALL = '[data-cookieman-accept-all]';
-    const SETTINGS_LINK_SELECTOR = '[aria-controls="cookieman-settings"]';
+    const SELECTOR_modal = '#cookieman-modal';
+    const SELECTOR_btnSaveNotSaveAll = '[data-cookieman-save]:not([data-cookieman-accept-all]):not([data-cookieman-accept-none])';
+    const SELECTOR_btnSaveNone = '[data-cookieman-save][data-cookieman-accept-none]';
+    const SELECTOR_btnSaveAll = '[data-cookieman-save][data-cookieman-accept-all]';
+    const SETTINGS_linkText = 'Settings';
+    const BUTTON_titleSave = 'Save';
 
     const COOKIENAME = 'CookieConsent';
-    const COOKIE_VALUE_SEPARATOR = '|';
+    const COOKIE_separator = '|';
 
-    const BS_PACKAGE_MENUITEM_SELECTOR = '[href$="/pages"],[href$="?id=66"]';
-    const BS_PACKAGE_SUBMENUITEM_TEXT = '2 Columns 50/50';
-    // for introduction-package ^3.0
-    const BS_PACKAGE_INTRO3_MENUITEM_SELECTOR = '[href$="?id=51"]';
-    const BS_PACKAGE_INTRO3_SUBMENUITEM_TEXT = 'Form elements';
-
-    const JS_SHOW_COOKIEMAN = 'cookieman.show()';
-    const JS_SHOWONCE_COOKIEMAN = 'cookieman.showOnce()';
-    const JS_HIDE_COOKIEMAN = 'cookieman.hide()';
-    const JS_ONSCRIPTLOADED_COOKIEMAN = "
+    const JS_showCookieman = 'cookieman.show()';
+    const JS_showOnceCookieman = 'cookieman.showOnce()';
+    const JS_hideCookieman = 'cookieman.hide()';
+    const JS_onScriptLoaded = "
             cookieman.onScriptLoaded(
                 arguments[0],
                 arguments[1],
@@ -66,73 +63,52 @@ class PopupInteractionsCest
             );
         ";
 
-    const GROUP_KEY_MANDATORY = 'mandatory';
+    const GROUP_keyMandatory = 'mandatory';
 
-    const GROUP_KEY_2ND = 'marketing';
-    const GROUP_TITLE_2ND = 'Marketing';
-    const COOKIE_TITLE_IN_2ND_GROUP = '_gat';
+    const GROUP_key2nd = 'marketing';
+    const GROUP_title2nd = 'Marketing';
+    const COOKIE_titleIn2ndGroup = '_gat';
 
-    const GROUP_KEY_TESTGROUP = 'testgroup';
-    const TRACKINGOBJECT_IN_TESTGROUP_WITH_2SCRIPTS = 'Crowdin';
+    const GROUP_keyTestgroup = 'testgroup';
+    const TRACKINGOBJECT_inTestgroupWith2Scripts = 'Crowdin';
 
-    const WAITFOR_TIMEOUT = 5;
-
-    /**
-     * @param AcceptanceTester $I
-     * @throws \Exception
-     */
-    public function doesNotBreakBootstrapPackage(AcceptanceTester $I)
-    {
-        $I->amOnPage(self::PATH_ROOT);
-        $I->waitForJS('return typeof cookieman === "object"', 10);
-        $I->waitForElementVisible(self::SELECTOR_MODAL, self::WAITFOR_TIMEOUT);
-        $I->executeJS(self::JS_HIDE_COOKIEMAN);
-        $I->waitForElementNotVisible(self::SELECTOR_MODAL);
-        if ($I->tryToMoveMouseOver(self::BS_PACKAGE_MENUITEM_SELECTOR)) { // hover over menu
-            $I->seeElement(Locator::contains('*', self::BS_PACKAGE_SUBMENUITEM_TEXT));
-        } else { // introduction-package ^3.0
-            $I->moveMouseOver(self::BS_PACKAGE_INTRO3_MENUITEM_SELECTOR);
-            $I->seeElement(Locator::contains('*', self::BS_PACKAGE_INTRO3_SUBMENUITEM_TEXT));
-        }
-    }
+    const WAITFOR_timeout = 5;
 
     /**
      * @param AcceptanceTester $I
-     * @throws \Exception
+     * @throws Exception
      */
     public function save(AcceptanceTester $I)
     {
-        $I->amOnPage(self::PATH_ROOT);
+        $I->amOnPage(self::PATH_root);
         $I->waitForJS('return typeof cookieman === "object"', 10);
-        $I->waitForElementVisible(Locator::contains('*', self::MODAL_TITLE_EN), self::WAITFOR_TIMEOUT);
-        $I->wait(0.5); // animation
-        $I->clickWithLeftButton(self::SELECTOR_BUTTON_SAVE_NOT_SAVEALL);
-        $I->waitForElementNotVisible(self::SELECTOR_MODAL);
+        $I->waitForElementVisible(self::SELECTOR_modal);
+        $I->click(self::SELECTOR_btnSaveNone);
+        $I->waitForElementNotVisible(self::SELECTOR_modal);
         $I->seeCookie(self::COOKIENAME);
         $I->assertEquals(
-            self::GROUP_KEY_MANDATORY,
-            $I->grabCookie(self::COOKIENAME, ['path' => self::PATH_ROOT])
+            self::GROUP_keyMandatory,
+            $I->grabCookie(self::COOKIENAME, ['path' => self::PATH_root])
         );
     }
 
     /**
      * @param AcceptanceTester $I
-     * @throws \Exception
+     * @throws Exception
      */
     public function saveAll(AcceptanceTester $I)
     {
-        $I->amOnPage(self::PATH_2NDPAGE);
+        $I->amOnPage(self::PATH_root);
         $I->waitForJS('return typeof cookieman === "object"', 10);
-        $I->waitForElementVisible(Locator::contains('*', self::MODAL_TEXT_EN), self::WAITFOR_TIMEOUT);
-        $I->wait(0.5); // animation
-        $I->tryToClickWithLeftButton(self::SETTINGS_LINK_SELECTOR); // customtheme doesn't have an accordion
-        $I->wait(0.5); // animation
-        $I->clickWithLeftButton(self::SELECTOR_BUTTON_SAVEALL);
-        $I->waitForElementNotVisible(self::SELECTOR_MODAL);
+        $I->waitForElementVisible(self::SELECTOR_modal);
+        $I->click(self::SETTINGS_linkText);
+        $I->scrollTo(['css' => self::SELECTOR_btnSaveAll]);
+        $I->clickWithLeftButton(['css' => self::SELECTOR_btnSaveAll]);
+        $I->waitForElementNotVisible(self::SELECTOR_modal);
         $I->seeCookie(self::COOKIENAME);
         $I->assertStringStartsWith(
-            $this->cookieValueForGroups([self::GROUP_KEY_MANDATORY, self::GROUP_KEY_2ND]),
-            $I->grabCookie(self::COOKIENAME, ['path' => self::PATH_ROOT])
+            $this->cookieValueForGroups([self::GROUP_keyMandatory, self::GROUP_key2nd]),
+            $I->grabCookie(self::COOKIENAME, ['path' => self::PATH_root])
         );
     }
 
@@ -141,61 +117,65 @@ class PopupInteractionsCest
      */
     public function notShownOnImprint(AcceptanceTester $I)
     {
-        $I->amOnPage(self::PATH_3RDPAGE);
+        $I->amOnPage(self::PATH_imprint);
         $I->waitForJS('return typeof cookieman === "object"', 10);
-        $I->dontSeeElement(self::SELECTOR_MODAL);
+        $I->dontSeeElement(self::SELECTOR_modal);
     }
 
     /**
      * @group desktop
      * @param AcceptanceTester $I
-     * @throws \Exception
+     * @throws Exception
      */
     public function selectGroupAndSaveMobile(AcceptanceTester $I)
     {
-        $I->amOnPage(self::PATH_4THPAGE);
-        $I->waitForJS('return typeof cookieman === "object"', 10);
         $I->resizeWindow(480, 800);
-        $I->waitForElementVisible(self::SELECTOR_MODAL, self::WAITFOR_TIMEOUT);
-        $I->tryToClickWithLeftButton(self::SETTINGS_LINK_SELECTOR);
-        $I->waitForElementVisible(Locator::contains('*', self::GROUP_TITLE_2ND), self::WAITFOR_TIMEOUT);
-        $I->tryToClick(self::GROUP_TITLE_2ND);
-        $I->waitForElementVisible(Locator::contains('*', self::COOKIE_TITLE_IN_2ND_GROUP), self::WAITFOR_TIMEOUT); // a single row in the table
-        $I->scrollTo('[name=' . self::GROUP_KEY_2ND . ']');
-        if (!$I->tryToCheckOption('[name=' . self::GROUP_KEY_2ND . ']')) { // theme: *-modal
-            $I->executeJS('$("[name=' . self::GROUP_KEY_2ND . ']").click()'); // theme: bootstrap3-banner
+        $I->amOnPage(self::PATH_root);
+        $I->waitForJS('return typeof cookieman === "object"', 10);
+        $I->waitForElementVisible(self::SELECTOR_modal, self::WAITFOR_timeout);
+        $I->tryToClick(self::SETTINGS_linkText);
+        $I->waitForElementVisible(Locator::contains('*', self::GROUP_title2nd), self::WAITFOR_timeout);
+        $I->tryToClick(self::GROUP_title2nd);
+        $I->waitForElementVisible(
+            Locator::contains('*', self::COOKIE_titleIn2ndGroup),
+            self::WAITFOR_timeout
+        ); // a single row in the table
+        $I->scrollTo('[name=' . self::GROUP_key2nd . ']');
+        if (!$I->tryToCheckOption('[name=' . self::GROUP_key2nd . ']')) { // theme: *-modal
+            $I->executeJS('$("[name=' . self::GROUP_key2nd . ']").click()'); // theme: bootstrap3-banner
         }
-        $I->seeCheckboxIsChecked('[name=' . self::GROUP_KEY_2ND . ']');
-        $I->clickWithLeftButton(self::SELECTOR_BUTTON_SAVE_NOT_SAVEALL);
-        $I->waitForElementNotVisible(self::SELECTOR_MODAL);
+        $I->seeCheckboxIsChecked('[name=' . self::GROUP_key2nd . ']');
+        $I->scrollTo(['css' => self::SELECTOR_btnSaveNotSaveAll]);
+        $I->clickWithLeftButton(['css' => self::SELECTOR_btnSaveNotSaveAll]);
+        $I->waitForElementNotVisible(self::SELECTOR_modal);
         $I->seeCookie(self::COOKIENAME);
         $I->assertEquals(
-            $this->cookieValueForGroups([self::GROUP_KEY_MANDATORY, self::GROUP_KEY_2ND]),
-            $I->grabCookie(self::COOKIENAME, ['path' => self::PATH_ROOT])
+            $this->cookieValueForGroups([self::GROUP_keyMandatory, self::GROUP_key2nd]),
+            $I->grabCookie(self::COOKIENAME, ['path' => self::PATH_root])
         );
     }
 
     /**
      * @param AcceptanceTester $I
      * @throws \Codeception\Exception\ModuleException
-     * @throws \Exception
+     * @throws Exception
      */
     public function onScriptLoadedEventHandler(AcceptanceTester $I)
     {
-        $I->amOnPage(self::PATH_ROOT);
+        $I->amOnPage(self::PATH_root);
         $I->setCookie(
             self::COOKIENAME,
             $this->cookieValueForGroups(
-                [self::GROUP_KEY_MANDATORY, self::GROUP_KEY_TESTGROUP]
+                [self::GROUP_keyMandatory, self::GROUP_keyTestgroup]
             )
         );
         $I->reloadPage();
 
         // test onScriptLoaded() (once as a callback and once when already loaded)
         foreach ([0, 1] as $iScript) {
-            $onScriptLoadedArgs = [self::TRACKINGOBJECT_IN_TESTGROUP_WITH_2SCRIPTS, $iScript];
+            $onScriptLoadedArgs = [self::TRACKINGOBJECT_inTestgroupWith2Scripts, $iScript];
             $I->executeJS(
-                self::JS_ONSCRIPTLOADED_COOKIEMAN,
+                self::JS_onScriptLoaded,
                 $onScriptLoadedArgs
             );
             $I->waitForText($onScriptLoadedArgs[0] . ':' . $onScriptLoadedArgs[1] . ' loaded');
@@ -208,6 +188,6 @@ class PopupInteractionsCest
      */
     protected function cookieValueForGroups(array $groupKeys)
     {
-        return implode(self::COOKIE_VALUE_SEPARATOR, $groupKeys);
+        return implode(self::COOKIE_separator, $groupKeys);
     }
 }
