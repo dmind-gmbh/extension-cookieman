@@ -1,6 +1,88 @@
+# 2.8.3
+
+## FEATURE
+
+- [FEATURE] use TYPO3 tailor to publish to TER a631684
+- [FEATURE] style settings buttons (bootstrap5-modal) 59c7053
+- [FEATURE] make bootstrap5-modal accessible da6d107
+- [FEATURE] add bootstrap5-modal to acceptance test matrix b90320e
+- [FEATURE] add new theme "bootstrap5-modal" (#207) 37054e3
+
+## TASK
+
+- [TASK] boast about our acceptance tests in README ;) ccd5c77
+- [TASK] upgrade npm packages be8ac29
+- [TASK] cleanup test extension "suggests" 5ed5d12
+- [TASK] add test setup for bootstrap5-modal 4cd90f0
+- [TASK] re-enable CI acceptance tests for TYPO3v11 7fdd7fb
+- [TASK] refactor test instance setup; remove dev-dependency bootstrap-package 1dabb09
+- [TASK] update .editorconfig 2d9186d
+- [TASK] add extension-key for test extensions 795927e
+- [TASK] facilitate testing with TYPO3 dev versions 1802336
+- [TASK] Adapt TYPO3 compatibility statements f88d672
+- [TASK] add typo3-ter replace 0a51bf6
+- [TASK] minify theme CSS b98699d
+- [TASK] adapt acceptance test button selector c102221
+- [TASK] use codeception's clickWithLeftButton since it seems to imply scrolling the page there 04a64af
+- [TASK] use distributed js.cookie.min.js a709a69
+- [TASK] remove finicky acceptance test; wait for cookieman.js to be loaded fa5b05e
+- [TASK] install TYPO3 if DB empty but LocalConfiguration.php present (ddev) 31861ce
+- [TASK] allow unit-tests-lowest to fail 94ca39a
+- [TASK] set XDEBUG_MODE=coverage 4d7634d
+- [TASK] remove local translation files for TYPO3v11 fd7f6e7
+- [TASK] allow Coverall upload to silently fail 2b47aa0
+- [TASK] remove local translation files for TYPO3v11 0b5b3f9
+- [TASK] upgrade yarn dependencies acafbed
+- [TASK] use composer shortcut for typo3cms a04f623
+- [TASK] upgrade ddev config 1ad26e3
+- [TASK] try to fix coveralls "detached head" (2) ba27623
+- [TASK] try to get fix coveralls "detached head" dcf3513
+- [TASK] upgrade phpunit 6c6551d
+- [TASK] add codeception modules for acceptance tests e743ad7
+- [TASK] show package versions in CI af9ccd0
+- [TASK] remove deprecated composer --no-suggest 7d20126
+
+## BUGFIX
+
+- [BUGFIX] Properly remove cookies without cookieRemovalPattern 3787a08
+- [BUGFIX] fix keyboard navigation and acceptance tests for bootstrap 3 themes 99dd455
+- [BUGFIX] fix bootstrap5-modal save button 6f01bc4
+- [BUGFIX] fix customtheme test setup d54bb66
+- [BUGFIX] fix acceptance tests for TYPO3v11 137aca1
+- [BUGFIX] make example templates accessible (#195) (#196) 456206d
+- [BUGFIX] adapt non-supported :not() selector chain ae98f96
+- [BUGFIX] fix typo; marketing group used non-existent "SlideShare" example config; harden against undefined trackingObjects (examples) a730c8d
+- [BUGFIX] run unit-tests-lowest on PHP 7.4 for TYPO3v11 73a54d9
+- [BUGFIX] limit CI unit tests to PHP 7.4 b7c6148
+- [BUGFIX] raise PHP version for TYPO3v11 c662823
+- [BUGFIX] fix workflow for pulls 3d306bb
+- [BUGFIX] move symfony/event-dispatcher to --dev d281629
+- [BUGFIX] add ViewHelper test 04eb092
+- [BUGFIX] fix DataProcessor test 19b95e1
+- [BUGFIX] Remove deprecated Github actions env for coveralls 070ab0f
+- [BUGFIX] fix version php-cs incompatibility 1e5769f
+- [BUGFIX] sanitize composer.json 4bf572d
+- [BUGFIX] remove composer-normalize (package installation unstable in composer 2) 8284fe8
+
+## MISC
+
+- [SECURITY] upgrade is-svg c3a4bfb
+- [DOCS] fix typos and rendering 88c0b28
+- [DOCS] Add section how to adapt existing theme (#202) 18de5af
+- Update Crowdin configuration file 825466d
+- Update Crowdin configuration file d9b9572
+- New Crowdin updates (#180) fefb0f8
+- Update Index.rst (#186) a0e430c
+- Bump ini from 1.3.5 to 1.3.8 in /Build (#183) 525ce1c
+- New Crowdin updates (#173) 79c7031
+- Add tracking objects for Microsoft Forms/-Stream/Slideshare/Youtube/Maps (#158) (#167) c9763c4
+- use selenium+mkcert automated docker hub builds (2) 894e8c7
+- use selenium+mkcert automated docker hub builds f359f59
+
 # 2.7.3
 
 ## MISC
+
 - yarn upgrade d0e0829
 - yarn update 4da0f24
 - update actions/upload-artifact fcd5ccd
@@ -15,6 +97,7 @@
 # 2.6.3
 
 ## MISC
+
 - remove typo3-console 620e115
 - disable acceptance tests for master (2) edd7d3c
 - cater for typo3-console not supporting TYPO3 master yet efc1932
@@ -31,6 +114,7 @@
 # 2.5.2
 
 ## MISC
+
 - add ViewHelper namespace c: to Partial as well ad0a9a7
 - New Crowdin translations (#141) 346bbec
 - New Crowdin translations (#139) 6a3f7e6
@@ -54,6 +138,7 @@
 # 2.4.5
 
 ## MISC
+
 - improve docs 6574dbc
 - add the "composer build:docs" command 03cfd86
 - Add documentation for contributing to cookieman d5f56e1
@@ -85,6 +170,7 @@
 # 2.4.0
 
 ## MISC
+
 - minify 7c4f58b
 - Delete cookies by regex pattern (#88) 7780dd0
 - Create api endpoint to check user consent for a specific trackingobject (#89) 8d5b6f7
@@ -94,6 +180,7 @@
 # 2.3.9
 
 ## MISC
+
 - add data-cookieman-accept-none option #83 2709859
 - New Crowdin translations (#78) dda0365
 - New translations locallang.xlf (German) (#75) 8901f3b
@@ -140,6 +227,7 @@
 # 2.3.6
 
 ## MISC
+
 - retrigger docs rendering bf4b27e
 - retrigger docs rendering 40009f9
 - retrigger docs rendering d5e1385
@@ -233,6 +321,7 @@
 # 2.3.3
 
 ## MISC
+
 - New translations locallang.xlf (German) (#44) 3e2069c
 - remove unnecessary catch {} 75ed927
 - New Crowdin translations (#43) bdcb83f
@@ -253,6 +342,7 @@
 # 2.3.0
 
 ## MISC
+
 - fix cgl c246b61
 - closes #35 add API call onScriptLoaded() to register script onload callbacks. (#28) c55ee8f
 - fix #37 DNT message is only rendered once d022c51
@@ -264,6 +354,7 @@
 # 2.2.3
 
 ## MISC
+
 - fix #31 split TypoScript into Base + Examples 449049f
 - fix #33 sort group.trackingsObjects by key and prevent JSON-object-cast e6dae65
 - remove outdated reference to test extension fa2cf1f
@@ -287,6 +378,7 @@
 # 2.2.0
 
 ## MISC
+
 - give animations more time 409168f
 - use PHP 7.3 locally ffa06de
 - generalize URL for non-site package testing 718d666
@@ -329,6 +421,7 @@
 # 2.1.14
 
 ## MISC
+
 - remove  from templates (small is really small...) addbc59
 - fix xdebug (again...) 3d659dd
 - fix docker-env e9c071d
@@ -357,6 +450,7 @@
 # 2.1.8
 
 ## MISC
+
 - showcase theme customizing aa94202
 - describe theme customizing 99ba259
 - change description 493d648
@@ -364,12 +458,14 @@
 # 2.1.5
 
 ## MISC
+
 - adapt release script 56412c2
 - add dependency to ext_emconf.php 505646e
 
 # 2.1.2
 
 ## MISC
+
 - README (2) 0ce5094
 - README fb0bcf0
 - use SEL for Typo3v9+ bc69c6e
@@ -436,6 +532,7 @@
 # 2.0.10
 
 ## MISC
+
 - compile JS 3465b0d
 - edit example - finally had the idea how to fix the translation-via-TypoScript issue. 4dedd42
 - add example e5b2132
@@ -590,6 +687,7 @@
 # 2.0.5
 
 ## MISC
+
 - use bootstrap4-modal as default theme b78fdd1
 - mention w.i.p. in README 6d33124
 - remove debug da9ba6d
@@ -607,6 +705,7 @@
 # 2.0.2-dev
 
 ## MISC
+
 - use release:create d3fb2a2
 - add release:publish script f208fb5
 - enable bootstrap_package compatiblity e94aece
@@ -621,6 +720,7 @@
 # 1.3.4
 
 ## MISC
+
 - add TODO section 19d353c
 - add extension-helper 95471be
 - use composer update e591a94
@@ -667,17 +767,20 @@
 # 1.3.1
 
 ## MISC
+
 - drop double e.preventDefault() 6b3afee
 
 # 1.3.0
 
 ## MISC
+
 - bump version f6357d3
 - remove styling 68fc52a
 
 # 1.2.2
 
 ## MISC
+
 - Bump version afd1c16
 - docs 74009aa
 - docs 62a6e78
@@ -688,11 +791,13 @@
 # 1.2.1
 
 ## MISC
+
 - bump version 74e447a
 
 # 1.2.0
 
 ## MISC
+
 - docs 9c89b3d
 - streamline examples (2) 4573e78
 - streamline examples (1) 1d17bcc
@@ -701,12 +806,14 @@
 # 1.1.1
 
 ## MISC
+
 - bump version f906f2c
 - bump version 712f71e
 
 # 1.1.0
 
 ## MISC
+
 - bump version 50c9c8f
 - add imprint PID to constants; suppress showing popup on imprint/data declaration pages 683fc49
 - docs a3cd1e5
@@ -714,12 +821,14 @@
 # 1.0.0
 
 ## MISC
+
 - version constraints 8c5c5e4
 - v1.0.0 965dd21
 
 # 0.1.0
 
 ## MISC
+
 - pre-stable b89fc5e
 - initial 165ae21
 
