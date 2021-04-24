@@ -8,9 +8,6 @@ config {
     concatenateCss = 0
 }
 
-# test config for bootstrap_package
-page.theme.cookieconsent.enable = 0
-
 # test config for cookieman
 plugin.tx_cookieman {
     settings {
