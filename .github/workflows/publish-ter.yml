@@ -2,7 +2,7 @@ name: publish to TER
 on:
   push:
     tags:
-      - *
+      - '*'
 jobs:
   publish:
     name: Publish new version to TER
