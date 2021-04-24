@@ -44,7 +44,7 @@ class PopupInteractionsCest
     const SELECTOR_btnSaveNotSaveAll = '[data-cookieman-save]:not([data-cookieman-accept-all]):not([data-cookieman-accept-none])';
     const SELECTOR_btnSaveNone = '[data-cookieman-save][data-cookieman-accept-none]';
     const SELECTOR_btnSaveAll = '[data-cookieman-save][data-cookieman-accept-all]';
-    const LOCATOR_settings = ['xpath' => '//button[contains(., "Settings")]'];
+    const LOCATOR_settings = ['xpath' => '//*[self::button or self::a][contains(., "Settings")]'];
     const BUTTON_titleSave = 'Save';
 
     const COOKIENAME = 'CookieConsent';
