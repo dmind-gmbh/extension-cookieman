@@ -102,7 +102,7 @@ class PopupInteractionsCest
         $I->waitForJS('return typeof cookieman === "object"', 10);
         $I->waitForElementVisible(self::SELECTOR_modal);
         $I->click(self::SETTINGS_linkText);
-        $I->scrollTo(['css' => self::SELECTOR_btnSaveAll]);
+        $I->scrollIntoView(self::SELECTOR_btnSaveAll);
         $I->clickWithLeftButton(['css' => self::SELECTOR_btnSaveAll]);
         $I->waitForElementNotVisible(self::SELECTOR_modal);
         $I->seeCookie(self::COOKIENAME);
@@ -119,6 +119,7 @@ class PopupInteractionsCest
     {
         $I->amOnPage(self::PATH_imprint);
         $I->waitForJS('return typeof cookieman === "object"', 10);
+        $I->wait(5);
         $I->dontSeeElement(self::SELECTOR_modal);
     }
 
@@ -140,12 +141,12 @@ class PopupInteractionsCest
             Locator::contains('*', self::COOKIE_titleIn2ndGroup),
             self::WAITFOR_timeout
         ); // a single row in the table
-        $I->scrollTo('[name=' . self::GROUP_key2nd . ']');
+        $I->scrollIntoView('[name=' . self::GROUP_key2nd . ']');
         if (!$I->tryToCheckOption('[name=' . self::GROUP_key2nd . ']')) { // theme: *-modal
             $I->executeJS('$("[name=' . self::GROUP_key2nd . ']").click()'); // theme: bootstrap3-banner
         }
         $I->seeCheckboxIsChecked('[name=' . self::GROUP_key2nd . ']');
-        $I->scrollTo(['css' => self::SELECTOR_btnSaveNotSaveAll]);
+        $I->scrollIntoView(self::SELECTOR_btnSaveNotSaveAll);
         $I->clickWithLeftButton(['css' => self::SELECTOR_btnSaveNotSaveAll]);
         $I->waitForElementNotVisible(self::SELECTOR_modal);
         $I->seeCookie(self::COOKIENAME);
