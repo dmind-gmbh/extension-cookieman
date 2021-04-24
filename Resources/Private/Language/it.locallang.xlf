@@ -9,7 +9,7 @@
       </trans-unit>
       <trans-unit id="dataProtectionDeclaration" resname="dataProtectionDeclaration">
         <source>Data Protection Declaration</source>
-        <target state="needs-translation">Data Protection Declaration</target>
+        <target state="translated">Informativa sulla Privacy</target>
       </trans-unit>
       <trans-unit id="imprint" resname="imprint">
         <source>Imprint</source>
@@ -17,7 +17,7 @@
       </trans-unit>
       <trans-unit id="introText" resname="introText">
         <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
-        <target state="needs-translation">This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</target>
+        <target state="translated">Questo sito web utilizza cookie. Questi hanno due funzioni: da un lato garantiscono le funzionalità di base per questo sito web. D'altra parte, salvando e analizzando i dati utente anonimizzati, ci permettono di migliorare i nostri contenuti per te. Puoi ritirare il tuo consenso all'utilizzo di questi cookie in qualsiasi momento. Trova ulteriori informazioni sui cookie visitando la pagina %1$s e riguardo a noi visitando la pagina %2$s.</target>
       </trans-unit>
       <trans-unit id="settings" resname="settings" approved="yes">
         <source>Settings</source>
@@ -33,7 +33,7 @@
       </trans-unit>
       <trans-unit id="deny" resname="deny">
         <source>Deny all cookies</source>
-        <target state="needs-translation">Deny all cookies</target>
+        <target state="translated">Nega tutti i cookie</target>
       </trans-unit>
       <trans-unit id="save" resname="save" approved="yes">
         <source>Save</source>
@@ -65,7 +65,7 @@
       </trans-unit>
       <trans-unit id="tableheader.provider" resname="tableheader.provider">
         <source>Provider</source>
-        <target state="needs-translation">Provider</target>
+        <target state="translated">Provider</target>
       </trans-unit>
       <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc" approved="yes">
         <source>Saves your consent to using cookies.</source>
@@ -73,7 +73,7 @@
       </trans-unit>
       <trans-unit id="trackingobject.cntcookie.desc" resname="trackingobject.cntcookie.desc">
         <source>Exclusion from counting (as a list of Account IDs)</source>
-        <target state="needs-translation">Exclusion from counting (as a list of Account IDs)</target>
+        <target state="translated">Esclusione dal conteggio (come elenco di ID Account)</target>
       </trans-unit>
       <trans-unit id="trackingobject.GS3_v.desc" resname="trackingobject.GS3_v.desc">
         <source>Set by Optimizer webservice. Contains the same Visitor ID as BT_pdc.</source>
@@ -169,7 +169,7 @@
       </trans-unit>
       <trans-unit id="trackingobject.fe_typo_user.desc" resname="trackingobject.fe_typo_user.desc">
         <source>Assigns your browser to a session on the server.</source>
-        <target state="needs-translation">Assigns your browser to a session on the server.</target>
+        <target state="translated">Assegna il tuo browser a una sessione sul server.</target>
       </trans-unit>
       <trans-unit id="duration.session" resname="duration.session" approved="yes">
         <source>session</source>
@@ -181,11 +181,11 @@
       </trans-unit>
       <trans-unit id="type.localstorage" resname="type.localstorage">
         <source>Local Storage</source>
-        <target state="needs-translation">Local Storage</target>
+        <target state="translated">Archivio Locale</target>
       </trans-unit>
       <trans-unit id="type.connection" resname="type.connection">
         <source>Connection</source>
-        <target state="needs-translation">Connection</target>
+        <target state="translated">Connessione</target>
       </trans-unit>
       <trans-unit id="group.marketing" resname="group.marketing" approved="yes">
         <source>Marketing</source>
