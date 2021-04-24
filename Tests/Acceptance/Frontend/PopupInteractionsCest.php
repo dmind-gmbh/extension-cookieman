@@ -137,7 +137,7 @@ class PopupInteractionsCest
         $I->amOnPage(self::PATH_root);
         $I->waitForJS('return typeof cookieman === "object"', 10);
         $I->waitForElementVisible(self::SELECTOR_modal, self::WAITFOR_timeout);
-        $I->tryToClickWithLeftButton(self::LOCATOR_settings);
+        $I->tryToClick(self::LOCATOR_settings);
         $I->waitForElementVisible(Locator::contains('*', self::GROUP_title2nd), self::WAITFOR_timeout);
         $I->tryToClickWithLeftButton(Locator::contains('*', self::GROUP_title2nd));
         $I->waitForElementVisible(
@@ -150,7 +150,7 @@ class PopupInteractionsCest
         }
         $I->seeCheckboxIsChecked('[name=' . self::GROUP_key2nd . ']');
         $I->scrollIntoView(self::SELECTOR_btnSaveNotSaveAll);
-        $I->clickWithLeftButton(['css' => self::SELECTOR_btnSaveNotSaveAll]);
+        $I->click(['css' => self::SELECTOR_btnSaveNotSaveAll]);
         $I->waitForElementNotVisible(self::SELECTOR_modal);
         $I->seeCookie(self::COOKIENAME);
         $I->assertEquals(
