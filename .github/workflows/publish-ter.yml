@@ -17,18 +17,18 @@ jobs:
 
       - name: Check tag
         run: |
-          if ! [[ ${{ github.ref }} =~ ^refs/tags/v[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}$ ]]; then
+          if ! [[ ${{ github.ref }} =~ ^refs/tags/[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}$ ]]; then
             exit 1
           fi
 
       - name: Get version
         id: get-version
-        run: echo ::set-output name=version::${GITHUB_REF#refs/tags/v}
+        run: echo ::set-output name=version::${GITHUB_REF/refs\/tags\//}
 
       - name: Get comment
         id: get-comment
         run: |
-          readonly local comment=$(git tag -n10 -l v${{ steps.get-version.outputs.version }} | sed "s/^v[0-9.]*[ ]*//g")
+          readonly local comment=$(git tag -n10 -l ${{ steps.get-version.outputs.version }} | sed "s/^[0-9.]*[ ]*//g")
 
           if [[ -z "${comment// }" ]]; then
             echo ::set-output name=comment::Released version ${{ steps.get-version.outputs.version }} of ${{ env.TYPO3_EXTENSION_KEY }}
