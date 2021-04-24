@@ -29,7 +29,7 @@ env:
                 WebDriver:
                     browser: chrome
                     capabilities:
-                        browserName: chrome
+                        acceptInsecureCerts: true
 
     firefox:
         modules:
@@ -39,8 +39,9 @@ env:
                 WebDriver:
                     browser: firefox
                     capabilities:
-                        browserName: firefox
-
+                        acceptInsecureCerts: true
+                        moz:firefoxOptions:
+                            args: ["-headless"]
 
 extensions:
     enabled:
