@@ -2,10 +2,6 @@
     z-index: 9999;
 }
 
-.modal-backdrop {
-    z-index: 9998;
-}
-
 @media (min-width: 768px) {
     #cookieman-modal .modal-dialog {
         margin: 80px auto 0;
@@ -13,17 +9,11 @@
 }
 
 #cookieman-modal label {
-
     margin-bottom: 0;
 }
 
 #cookieman-modal .panel-title {
     position: relative;
-}
-
-#cookieman-modal input[type=checkbox] {
-    margin: 0;
-    vertical-align: middle;
 }
 
 #cookieman-modal table {

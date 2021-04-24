@@ -14,6 +14,7 @@ suites:
                     host: 'hub-cloud.browserstack.com'
                     port: 80
                     wait: 5
+                    restart: true
                     pageload_timeout: 15
                     log_js_errors: true
                     clear_cookies: true
@@ -39,6 +40,7 @@ env:
                 \Dmind\Cookieman\Tests\Acceptance\Driver\BrowserStackLocalWebDriver:
                     browser: chrome
                     capabilities:
+                        # https://www.browserstack.com/automate/capabilities
                         resolution: 1280x1024
                         os: Windows
                         os_version: 10
@@ -51,6 +53,7 @@ env:
                 \Dmind\Cookieman\Tests\Acceptance\Driver\BrowserStackLocalWebDriver:
                     browser: IE
                     capabilities:
+                        # https://www.browserstack.com/automate/capabilities
                         resolution: 1280x1024
                         browser_version: 11.0
                         os: Windows
@@ -64,6 +67,7 @@ env:
                 \Dmind\Cookieman\Tests\Acceptance\Driver\BrowserStackLocalWebDriver:
                     browser: Safari
                     capabilities:
+                        # https://www.browserstack.com/automate/capabilities
                         browserName: iPhone
                         device: iPhone 8 Plus
                         realMobile: false
@@ -77,12 +81,14 @@ env:
                 \Dmind\Cookieman\Tests\Acceptance\Driver\BrowserStackLocalWebDriver:
                     browser: Safari
                     capabilities:
+                        # https://www.browserstack.com/automate/capabilities
                         resolution: 1280x1024
-                        browserName: safari
                         os: OS X
-                        os_version: Catalina
+                        os_version: Mojave
                         browser: Safari
-                        browser_version: 13.0
+                        browser_version: 12.0
+                        browserstack.safari.enablePopups: true
+                        browserstack.safari.allowAllCookies: true
 
 extensions:
     enabled:

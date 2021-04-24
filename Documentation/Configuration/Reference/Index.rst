@@ -331,12 +331,12 @@ trackingObjects
    This array holds the tracking object configurations.
    The Cookieman extension already provides several **preconfigured** tracking objects:
 
-   * Cookie Consent (Cookieman's settings cookie)
-   * fe_typo_user
-   * Google Analytics
-   * Google Tag Manager
-   * Matomo
-   * Bing
+   *  Cookie Consent (Cookieman's settings cookie)
+   *  fe_typo_user
+   *  Google Analytics
+   *  Google Tag Manager
+   *  Matomo
+   *  Bing
 
    .. important::
       If you add a preconfigured tracking object, you must at least **adapt** the `inject` code to your needs!

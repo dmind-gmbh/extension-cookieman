@@ -294,7 +294,7 @@ var cookieman = (function () {
                     }
                 }
             } else {
-                removeHtmlCookie(cookieName)
+                removeHtmlCookie(itemKey)
             }
             return true
         }

@@ -37,6 +37,7 @@ services:
             - HUB_HOST=selenium-hub
             - HUB_PORT=4444
             - CAROOT=/mnt/ddev-global-cache/mkcert
+#            - SE_OPTS=-debug
         links:
             - selenium-hub:selenium-hub
         external_links:
@@ -56,5 +57,6 @@ services:
         environment:
             - VIRTUAL_HOST=$DDEV_HOSTNAME
             - HTTP_EXPOSE=4444
+#            - SE_OPTS=-debug
         external_links:
             - ddev-router:$DDEV_HOSTNAME

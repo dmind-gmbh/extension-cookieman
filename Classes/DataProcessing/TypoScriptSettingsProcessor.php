@@ -35,8 +35,6 @@ class TypoScriptSettingsProcessor implements DataProcessorInterface
         array $processorConfiguration,
         array $processedData
     ): array {
-        // TODO: use DI for v10
-
         $configurationManager = $this->getConfigurationManager();
         $settings = $configurationManager->getConfiguration(
             ConfigurationManagerInterface::CONFIGURATION_TYPE_SETTINGS,

@@ -1,0 +1,10 @@
+{
+    "name": "dmind/cookieman-test-bootstrap5-modal",
+    "type": "typo3-cms-extension",
+    "description": "",
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "cookieman_test_bootstrap5_modal"
+        }
+    }
+}

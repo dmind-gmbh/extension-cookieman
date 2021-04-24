@@ -15,9 +15,9 @@ page.theme.cookieconsent.enable = 0
 plugin.tx_cookieman {
     settings {
         links {
-            dataProtectionDeclarationPid = 9
+            dataProtectionDeclarationPid = 3
             dataProtectionDeclarationAnchor = dataProtectionDeclarationAnchor
-            imprintPid = 10
+            imprintPid = 2
             imprintAnchor = imprintAnchor
         }
         minify = 0
