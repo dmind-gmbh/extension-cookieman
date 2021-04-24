@@ -77,11 +77,11 @@
       </trans-unit>
       <trans-unit id="trackingobject.GS3_v.desc" resname="trackingobject.GS3_v.desc">
         <source>Set by Optimizer webservice. Contains the same Visitor ID as BT_pdc.</source>
-        <target state="needs-translation">Set by Optimizer webservice. Contains the same Visitor ID as BT_pdc.</target>
+        <target state="translated">Impostato dal servizio web Optimizer. Contiene lo stesso ID Visitatore di BT_pdc.</target>
       </trans-unit>
       <trans-unit id="trackingobject._et_coid.desc" resname="trackingobject._et_coid.desc">
         <source>Cookie detection</source>
-        <target state="needs-translation">Cookie detection</target>
+        <target state="translated">Rilevamento dei cookie</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oi_v2.desc" resname="trackingobject.et_oi_v2.desc">
         <source>Opt-In cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</source>
