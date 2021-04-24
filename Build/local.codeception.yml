@@ -15,7 +15,7 @@ suites:
                     port: 4444
                     wait: 5
                     window_size: 1280x960
-                    restart: true
+                    #restart: true
                     pageload_timeout: 15
                     log_js_errors: true
                     clear_cookies: true
