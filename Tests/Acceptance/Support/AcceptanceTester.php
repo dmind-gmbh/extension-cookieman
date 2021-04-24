@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 /*
@@ -36,15 +37,20 @@ class AcceptanceTester extends \Codeception\Actor
      * Use JavaScript because Chrome/Webdriver's (?) setCookie() does not set to the correct domain.
      * $params are not supported yet.
      *
-    * @param $name
-    * @param $val
-    * //@param array $params
-    *
-    * @return mixed
-    * @see \Codeception\Module\WebDriver::setCookie()
-    */
-    public function setCookie($cookie, $value /*, $params = null, $showDebug = null */)
+     * @see \Codeception\Module\WebDriver::setCookie()
+     * @param $cookie
+     * @param $value
+     */
+    public function setCookie($cookie, $value /*, $params = null, $showDebug = null */): void
     {
         $this->executeJS('Cookies.set("' . $cookie . '", "' . $value . '", { path: "/" })');
+    }
+
+    /**
+     * Use JavaScript HTMLElement.scrollIntoView() because Geckodriver scrolls beyond normally possible bounds
+     */
+    public function scrollIntoView(string $cssSelector): void
+    {
+        $this->executeJS('document.querySelector("' . str_replace('"', '\\"', $cssSelector) . '").scrollIntoView()');
     }
 }
