@@ -2,10 +2,8 @@ version: '3.6'
 
 services:
     selenium-chrome:
-        #container_name: ddev-${DDEV_SITENAME}-selenium-chrome
+        container_name: ddev-${DDEV_SITENAME}-selenium-chrome
         image: selenium/node-chrome:3
-        #deploy:
-        #    replicas: 3
         depends_on:
             - selenium-hub
         labels:
@@ -24,10 +22,8 @@ services:
             - ddev-global-cache:/mnt/ddev-global-cache
 
     selenium-firefox:
-        #container_name: ddev-${DDEV_SITENAME}-selenium-firefox
+        container_name: ddev-${DDEV_SITENAME}-selenium-firefox
         image: selenium/node-firefox:3
-        #deploy:
-        #    replicas: 3
         depends_on:
             - selenium-hub
         labels:
@@ -47,7 +43,7 @@ services:
             - ddev-global-cache:/mnt/ddev-global-cache
 
     selenium-hub:
-        #container_name: ddev-${DDEV_SITENAME}-selenium-hub
+        container_name: ddev-${DDEV_SITENAME}-selenium-hub
         image: selenium/hub:3
         labels:
             com.ddev.site-name: ${DDEV_SITENAME}
