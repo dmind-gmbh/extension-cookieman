@@ -13,11 +13,14 @@ namespace Dmind\Cookieman\Tests\Unit;
 
 use Dmind\Cookieman\ViewHelpers\ShownTrackingObjectsViewHelper;
 use PHPUnit\Framework\MockObject\MockObject;
+use Prophecy\PhpUnit\ProphecyTrait;
 use TYPO3\TestingFramework\Fluid\Unit\ViewHelpers\ViewHelperBaseTestcase;
 use TYPO3Fluid\Fluid\Core\Variables\StandardVariableProvider;
 
 class ShownTrackingObjectsViewHelperTest extends ViewHelperBaseTestcase
 {
+    use ProphecyTrait;
+
     /**
      * @var ShownTrackingObjectsViewHelper
      */
