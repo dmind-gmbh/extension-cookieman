@@ -33,6 +33,7 @@
         "friendsofphp/php-cs-fixer": "^2.16",
         "helhum/typo3-console": "^6.4 || 6.x-dev || dev-latest",
         "php-coveralls/php-coveralls": "^2.1",
+        "phpspec/prophecy-phpunit": "^2.0",
         "roave/security-advisories": "dev-master",
         "symfony/event-dispatcher": "^4",
         "typo3/cms-install": "^11.0 || 11.*.x-dev || dev-master",
@@ -110,7 +111,7 @@
             "@typo3:flush"
         ],
         "fix:cgl": [
-            "php-cs-fixer --config=.php_cs.dist fix --using-cache=no"
+            "php-cs-fixer --config=.php_cs.dist.php fix --using-cache=no"
         ],
         "install-typo3": [
             "@typo3cms install:setup --admin-user-name=admin --admin-password=adminadmin --site-setup-type=site --no-interaction --force",
@@ -152,7 +153,7 @@
             "codecept run --env firefox -d -c Build/local.codeception.yml -- acceptance"
         ],
         "test:cgl": [
-            "php-cs-fixer --config=.php_cs.dist fix -v --using-cache=no --dry-run"
+            "php-cs-fixer --config=.php_cs.dist.php fix -v --using-cache=no --dry-run"
         ],
         "test:unit": [
             "@putenv XDEBUG_MODE=coverage",
