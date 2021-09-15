@@ -1,3 +1,37 @@
+# 2.9.2
+
+## FEATURE
+
+- [FEATURE] use WebDriver acceptInsecureCertificates, enable Firefox acceptance tests in CI 33246a8
+
+## TASK
+
+- [TASK] cleanup Selenium container configs bc092ae
+- [TASK] use WebDriver's clickWithLeftButton() since it includes moveMouseOver() 31a6fe1
+- [TASK] update php_cs config (remove deprecations) cf3865b
+- [TASK] use phpspec/prophecy-phpunit 58fe3b4
+- [TASK] upgrade and cleanup npm dependencies 21d7789
+- [TASK] upgrade dependencies b4f207d
+- [TASK] upgrade npm-dependencies 4bf6c1c
+- [TASK] cleanup 5cbfb4a
+- [TASK] use strict locators and clickWithLeftButton() 3f33f54
+- [TASK] reuse existing browser instance 1b9ae0a
+- [TASK] cleanup selenium docker-compose.yaml 53eb2ac
+- [TASK] use JavaScript's scrollIntoView() instead of CodeCeption's scrollTo() 8640ae6
+
+## BUGFIX
+
+- [BUGFIX] remove justified text for improved readability 207f2a3
+- [BUGFIX] fix Firefox acceptance tests d9cba06
+- [BUGFIX] fix Firefox acceptance tests (reason unknown...) 782f5d4
+- [BUGFIX] fix Firefox acceptance tests (reason unknown...) 724925b
+- [BUGFIX] fix strict locator 3875ac9
+
+## MISC
+
+- [DOCS] add supported versions information 9d038ef
+- Bump postcss from 8.2.8 to 8.2.10 in /Build (#217) 4671d30
+
 # 2.8.2
 
 ## FEATURE
@@ -675,11 +709,6 @@
 - use partial across default themes b9df4e4
 - add rootPaths sequence resourceBasePath › default themes › default a8c7985
 - set bootstrap 4 as default 3f41550
-
-# 2.0.2-dev
-
-## MISC
-
 - use release:create d3fb2a2
 - add release:publish script f208fb5
 - enable bootstrap_package compatiblity e94aece
@@ -737,11 +766,6 @@
 - lint 96f9d9f
 - refactor initialisation and JS theme integration e666a7e
 - add .gitignore a53d38f
-
-# 1.3.1
-
-## MISC
-
 - drop double e.preventDefault() 6b3afee
 
 # 1.3.0
@@ -767,11 +791,6 @@
 ## MISC
 
 - bump version 74e447a
-
-# 1.2.0
-
-## MISC
-
 - docs 9c89b3d
 - streamline examples (2) 4573e78
 - streamline examples (1) 1d17bcc
@@ -798,11 +817,6 @@
 
 - version constraints 8c5c5e4
 - v1.0.0 965dd21
-
-# 0.1.0
-
-## MISC
-
 - pre-stable b89fc5e
 - initial 165ae21
 
