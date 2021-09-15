@@ -393,7 +393,7 @@
       </trans-unit>
       <trans-unit id="group.accept" resname="group.accept">
         <source>accept</source>
-        <target state="needs-translation">accept</target>
+        <target state="translated">accepteren</target>
       </trans-unit>
     </body>
   </file>
