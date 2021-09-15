@@ -121,11 +121,11 @@
       </trans-unit>
       <trans-unit id="trackingobject.et_scroll_depth.desc" resname="trackingobject.et_scroll_depth.desc">
         <source>Data for scrolling depth measurement</source>
-        <target state="needs-translation">Data for scrolling depth measurement</target>
+        <target state="translated">Dati per la misurazione di quanto si scorre nella pagina</target>
       </trans-unit>
       <trans-unit id="trackingobject.targetingAPISession.desc" resname="trackingobject.targetingAPISession.desc">
         <source>Data collected in the current session for the optimiser</source>
-        <target state="needs-translation">Data collected in the current session for the optimiser</target>
+        <target state="translated">Dati raccolti nella sessione corrente per l'ottimizzatore</target>
       </trans-unit>
       <trans-unit id="trackingobject._et_coid--localstorage" resname="trackingobject._et_coid--localstorage">
         <source>_et_coid</source>
@@ -133,7 +133,7 @@
       </trans-unit>
       <trans-unit id="trackingobject._et_coid--localstorage.desc" resname="trackingobject._et_coid--localstorage.desc">
         <source>Cookie detection, see corresponding cookie.</source>
-        <target state="needs-translation">Cookie detection, see corresponding cookie.</target>
+        <target state="translated">Rilevamento dei cookie, vedi il cookie corrispondente.</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oi_v2--localstorage" resname="trackingobject.et_oi_v2--localstorage">
         <source>et_oi_v2</source>
@@ -141,7 +141,7 @@
       </trans-unit>
       <trans-unit id="trackingobject.et_oi_v2--localstorage.desc" resname="trackingobject.et_oi_v2--localstorage.desc">
         <source>OptIn-cookie, see corresponding cookie.</source>
-        <target state="needs-translation">OptIn-cookie, see corresponding cookie.</target>
+        <target state="translated">Cookie di attivazione, vedi il cookie corrispondenti.</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip--localstorage" resname="trackingobject.et_oip--localstorage">
         <source>et_oip</source>
@@ -149,7 +149,7 @@
       </trans-unit>
       <trans-unit id="trackingobject.et_oip--localstorage.desc" resname="trackingobject.et_oip--localstorage.desc">
         <source>OptIn-cookie for Signalize, see corresponding cookie.</source>
-        <target state="needs-translation">OptIn-cookie for Signalize, see corresponding cookie.</target>
+        <target state="translated">Cookie di attivazione per Signalize, vedi il cookie corrispondenti.</target>
       </trans-unit>
       <trans-unit id="type.pixel" resname="type.pixel">
         <source>Pixel</source>
