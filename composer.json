@@ -31,7 +31,7 @@
         "dmind/cookieman-test-bootstrap5-modal": "@dev",
         "dmind/cookieman-test-customtheme": "@dev",
         "friendsofphp/php-cs-fixer": "^2.16",
-        "helhum/typo3-console": "^6.4 || 6.x-dev || dev-latest",
+        "helhum/typo3-console": "^7.0 || 7.x-dev || dev-latest",
         "php-coveralls/php-coveralls": "^2.1",
         "phpspec/prophecy-phpunit": "^2.0",
         "roave/security-advisories": "dev-master",
@@ -91,23 +91,23 @@
             "yarn --cwd=Build/ run prod"
         ],
         "cookieman:bootstrap3-banner": [
-            "@typo3cms install:generatepackagestates --excluded-extensions=cookieman_test_bootstrap3_modal,cookieman_test_bootstrap4_modal,cookieman_test_bootstrap5_modal,cookieman_test_customtheme",
+            "echo TODO",
             "@typo3:flush"
         ],
         "cookieman:bootstrap3-modal": [
-            "@typo3cms install:generatepackagestates --excluded-extensions=cookieman_test_bootstrap3_banner,cookieman_test_bootstrap4_modal,cookieman_test_bootstrap5_modal,cookieman_test_customtheme",
+            "echo TODO",
             "@typo3:flush"
         ],
         "cookieman:bootstrap4-modal": [
-            "@typo3cms install:generatepackagestates --excluded-extensions=cookieman_test_bootstrap3_banner,cookieman_test_bootstrap3_modal,cookieman_test_bootstrap5_modal,cookieman_test_customtheme",
+            "echo TODO",
             "@typo3:flush"
         ],
         "cookieman:bootstrap5-modal": [
-            "@typo3cms install:generatepackagestates --excluded-extensions=cookieman_test_bootstrap3_banner,cookieman_test_bootstrap3_modal,cookieman_test_bootstrap4_modal,cookieman_test_customtheme",
+            "echo TODO",
             "@typo3:flush"
         ],
         "cookieman:customtheme": [
-            "@typo3cms install:generatepackagestates --excluded-extensions=cookieman_test_bootstrap3_banner,cookieman_test_bootstrap3_modal,cookieman_test_bootstrap4_modal,cookieman_test_bootstrap5_modal",
+            "echo TODO",
             "@typo3:flush"
         ],
         "fix:cgl": [

@@ -22,7 +22,7 @@ hooks:
           mysql <<< 'INSERT INTO pages SET uid=3, pid=1, title="Privacy Policy", slug="/privacy"'
         fi
   pre-start:
-    - exec-host: mkdir -p .build/public/typo3conf/
+    # - exec-host: mkdir -p .build/public/typo3conf/
     - exec-host: .ddev/commands/copy-git-config
 project_tld: test
 use_dns_when_possible: true
