@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+const mix = require('laravel-mix')
 
 mix
     .minify('../Resources/Public/Js/cookieman.js')
@@ -12,4 +12,5 @@ mix
     .setPublicPath('../Resources/Public/Js/')
 
 mix
-    .copy('node_modules/js-cookie/src/js.cookie.min.js', '../Resources/Public/Js/')
+  .minify('node_modules/js-cookie/src/js.cookie.js')
+  .copy('node_modules/js-cookie/src/js.cookie.min.js', '../Resources/Public/Js/')
