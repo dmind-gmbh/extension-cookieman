@@ -25,7 +25,7 @@
       </trans-unit>
       <trans-unit id="settingsText" resname="settingsText">
         <source>Click here for Cookie %1$s.</source>
-        <target state="needs-translation">Click here for Cookie %1$s.</target>
+        <target state="translated">Clicca qui per Cookie %1$s.</target>
       </trans-unit>
       <trans-unit id="accept" resname="accept" approved="yes">
         <source>Accept all cookies</source>
@@ -45,7 +45,7 @@
       </trans-unit>
       <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc">
         <source>These cookies are needed for a smooth operation of our website.</source>
-        <target state="needs-translation">These cookies are needed for a smooth operation of our website.</target>
+        <target state="translated">Questi cookie sono necessari per il buon funzionamento del nostro sito web.</target>
       </trans-unit>
       <trans-unit id="tableheader.name" resname="tableheader.name" approved="yes">
         <source>Name</source>
@@ -57,7 +57,7 @@
       </trans-unit>
       <trans-unit id="tableheader.duration" resname="tableheader.duration">
         <source>Lifetime</source>
-        <target state="needs-translation">Lifetime</target>
+        <target state="translated">Ciclo di vita</target>
       </trans-unit>
       <trans-unit id="tableheader.type" resname="tableheader.type" approved="yes">
         <source>Type</source>
@@ -85,11 +85,11 @@
       </trans-unit>
       <trans-unit id="trackingobject.et_oi_v2.desc" resname="trackingobject.et_oi_v2.desc">
         <source>Opt-In cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</source>
-        <target state="needs-translation">Opt-In cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</target>
+        <target state="translated">Cookie di attivazione che memorizza la decisione del visitatore quando il monitoraggio viene visualizzata sul lato del cliente. Viene utilizzato anche per un eventuale disattivazione.</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip.desc" resname="trackingobject.et_oip.desc">
         <source>Opt-In cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</source>
-        <target state="needs-translation">Opt-In cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</target>
+        <target state="translated">Cookie di attivazione utilizzato da "signalize". Se il cliente sceglie "no", il cookie viene impostato con il valore "no" per una durata di 50 x 365 giorni. Se il cliente sceglie "x" o preme il tasto ESC (nessuna decisione), il cookie viene impostato con il valore "no" per la validità di 1 giorno. Il valore "sì" non è richiesto, poiché questo è implicitamente dato dal consenso alla notifica del browser.</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_allow_cookies.desc" resname="trackingobject.et_allow_cookies.desc">
         <source>If the parameter "data-block-cookies" is used, this cookie is called by the API Call _etracker.enableCookies() to indicate that etracker is allowed to set cookies.</source>
@@ -153,7 +153,7 @@
       </trans-unit>
       <trans-unit id="type.pixel" resname="type.pixel">
         <source>Pixel</source>
-        <target state="needs-translation">Pixel</target>
+        <target state="translated">Pixel</target>
       </trans-unit>
       <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html" approved="yes">
         <source>HTML</source>
@@ -161,11 +161,11 @@
       </trans-unit>
       <trans-unit id="trackingobject._fbp.desc" resname="trackingobject._fbp.desc">
         <source>Stores the unique visitor ID.</source>
-        <target state="needs-translation">Stores the unique visitor ID.</target>
+        <target state="translated">Memorizza l'ID unico visitatore.</target>
       </trans-unit>
       <trans-unit id="trackingobject.facebookPixel.desc" resname="trackingobject.FacebookPixel.desc">
         <source>If JavaScript is not enabled, this pixel initiates a connection to facebook.</source>
-        <target state="needs-translation">If JavaScript is not enabled, this pixel initiates a connection to facebook.</target>
+        <target state="translated">Se JavaScript non è abilitato, questo pixel avvia una connessione a facebook.</target>
       </trans-unit>
       <trans-unit id="trackingobject.fe_typo_user.desc" resname="trackingobject.fe_typo_user.desc">
         <source>Assigns your browser to a session on the server.</source>
@@ -193,11 +193,11 @@
       </trans-unit>
       <trans-unit id="group.marketing.desc" resname="group.marketing.desc">
         <source>With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</source>
-        <target state="needs-translation">With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</target>
+        <target state="translated">Con l'aiuto di questi cookie ci sforziamo di migliorare la nostra offerta per i nostri utenti. Attraverso i dati anonimi degli utenti del sito web possiamo ottimizzare il flusso degli utenti. Questo ci consente di migliorare gli annunci e il contenuto del sito web.</target>
       </trans-unit>
       <trans-unit id="trackingobject._pk_id.desc" resname="trackingobject._pk_id.desc">
         <source>Used to store a few details about the user such as the unique visitor ID.</source>
-        <target state="needs-translation">Used to store a few details about the user such as the unique visitor ID.</target>
+        <target state="translated">Utilizzato per memorizzare alcuni dettagli sull'utente come l'ID visitatore univoco.</target>
       </trans-unit>
       <trans-unit id="trackingobject._pk_ref.desc" resname="trackingobject._pk_ref.desc">
         <source>Used to store the attribution information, the referrer initially used to visit the website.</source>
