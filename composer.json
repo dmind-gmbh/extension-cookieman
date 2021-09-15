@@ -46,7 +46,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-9lts": "2.8.x-dev"
+            "dev-9lts": "2.9.x-dev"
         },
         "typo3/cms": {
             "extension-key": "cookieman",
