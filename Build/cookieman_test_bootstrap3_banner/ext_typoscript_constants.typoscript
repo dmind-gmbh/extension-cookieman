@@ -1,7 +1,3 @@
-# use Bootstrap 3
-@import 'EXT:bootstrap_package/Configuration/TypoScript/Bootstrap3/constants.typoscript'
-
-# test config for cookieman
 plugin.tx_cookieman {
     settings {
         theme = bootstrap3-banner

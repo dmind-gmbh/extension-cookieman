@@ -19,10 +19,6 @@ jobs:
                 php-version: [7.2, 7.3, 7.4]
         steps:
             -   uses: actions/checkout@v2
-            # PHP 7.1-.4 are available in ubuntu-18.04
-            # https://help.github.com/en/actions/automating-your-workflow-with-github-actions/software-installed-on-github-hosted-runners#ubuntu-1804-lts
-            -   run: git branch
-            -   run: git symbolic-ref HEAD
             -   run: sudo update-alternatives --set php /usr/bin/php${{ matrix.php-version }}
             -   run: composer update --no-interaction --no-progress
             -   run: composer show
@@ -30,7 +26,8 @@ jobs:
             -   name: Push to coveralls (master only)
                 run: |
                         .build/bin/php-coveralls \
-                        --root_dir=. --env=prod --verbose
+                        --root_dir=. --env=prod --verbose \
+                        || true
                 if: github.ref == 'refs/heads/master' && matrix.php-version == '7.4'
                 env:
                     COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
@@ -49,8 +46,6 @@ jobs:
                 php-version: [7.2, 7.3]
         steps:
             -   uses: actions/checkout@v2
-            # PHP 7.1, 7.2 and 7.3 are available in ubuntu-18.04
-            # https://help.github.com/en/actions/automating-your-workflow-with-github-actions/software-installed-on-github-hosted-runners#ubuntu-1804-lts
             -   run: sudo update-alternatives --set php /usr/bin/php${{ matrix.php-version }}
             -   run: composer update --no-interaction --prefer-lowest --no-progress
             -   run: composer tests-for:ci

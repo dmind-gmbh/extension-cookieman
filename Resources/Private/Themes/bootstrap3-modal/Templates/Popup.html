@@ -4,7 +4,7 @@
 <f:layout name="PopupLayout"/>
 
 <f:section name="Content">
-    <div class="modal-dialog text-justify" role="document">
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">
@@ -38,11 +38,8 @@
                                 <div class="panel panel-default">
                                     <div class="panel-heading" role="tab">
                                         <h4 class="panel-title">
-                                            <label>
-
-                                            </label>
                                             <a class="collapsed" role="button" data-toggle="collapse"
-                                               data-parent="#cookieman-acco" data-target="#cookieman-acco-{groupId}"
+                                               data-parent="#cookieman-acco" href="#cookieman-acco-{groupId}"
                                                aria-expanded="true"
                                                aria-controls="cookieman-acco-{groupId}">
                                                 {f:translate(key: 'group.{groupId}', default: groupId)}

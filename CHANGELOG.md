@@ -1,6 +1,62 @@
+# 2.8.1
+
+## FEATURE
+
+- [FEATURE] use TYPO3 tailor to publish to TER 3d33601
+- [FEATURE] use TYPO3 tailor to publish to TER 993043d
+- [FEATURE] backport from master b354e27
+
+## TASK
+
+- [TASK] Adapt TYPO3 compatibility statements 1aa0a08
+- [TASK] add typo3-ter replace 2195af8
+- [TASK] minify theme CSS ccead07
+- [TASK] adapt acceptance test button selector 2e51d26
+- [TASK] use codeception's clickWithLeftButton since it seems to imply scrolling the page there 7ae31af
+- [TASK] use distributed js.cookie.min.js f09fe78
+- [TASK] remove finicky acceptance test; wait for cookieman.js to be loaded c2ca094
+- [TASK] install TYPO3 if DB empty but LocalConfiguration.php present (ddev) 28facb5
+- [TASK] set XDEBUG_MODE=coverage 19d87b8
+- [TASK] allow unit-tests-lowest to fail 592d20a
+- [TASK] use lowest PHP version for TYPO3v9 9c934b5
+- [TASK] upgrade yarn dependencies d51c5b2
+- [TASK] cleanup 2c0a29e
+- [TASK] try to fix coveralls "detached head" (2) 988aab0
+- [TASK] try to get fix coveralls "detached head" 0b7bcef
+- [TASK] upgrade phpunit 3c666d6
+- [TASK] show package versions in CI 38c3be4
+- [TASK] remove deprecated composer --no-suggest 94e3c61
+
+## BUGFIX
+
+- [BUGFIX] make example templates accessible (#195) (#196) 0de8453
+- [BUGFIX] adapt non-supported :not() selector chain 727321f
+- [BUGFIX] use selector for clickWithLeftButton() 96ba072
+- [BUGFIX] fix typo; marketing group used non-existent "SlideShare" example config; harden against undefined trackingObjects (examples) c15402f
+- [BUGFIX] add ViewHelper test 3c29692
+- [BUGFIX] fix DataProcessor test 91583ba
+- [BUGFIX] sanitize composer.json 6439b26
+- [BUGFIX] remove composer-normalize (package installation unstable in composer 2) 88956cc
+
+## MISC
+
+- New Crowdin updates (#198) 07e9587
+- [DOCS] Add section how to adapt existing theme (#202) b92bd5d
+- New Crowdin updates (#193) a8c51ed
+- New Crowdin updates (#188) 3d70297
+- Add tracking objects for Microsoft Forms/-Stream/Slideshare/Youtube/Maps (#158) (#167) f2f8974
+- Bump ini from 1.3.5 to 1.3.8 in /Build (#183) e8c4ddf
+- Update Index.rst (#186) 7cf8516
+- New Crowdin updates (#175) 9da17f7
+- use selenium+mkcert automated docker hub builds (2) b8772da
+- use selenium+mkcert automated docker hub builds 22cba05
+- New Crowdin updates (#164) ab97648
+- remove minimum-stability:dev 4518c7a
+
 # 2.7.1
 
 ## MISC
+
 - yarn upgrade 2487afd
 - yarn update 4adc6d2
 - update actions/upload-artifact 350be62
@@ -14,6 +70,7 @@
 # 2.6.1
 
 ## MISC
+
 - upgrade npm packages 7d7a5d3
 - lint 03e1b73
 - Try multiple cookie domains and paths during HTML cookie deletion. Fixes #137 c14111f
@@ -24,6 +81,7 @@
 # 2.5.1
 
 ## MISC
+
 - add ViewHelper namespace c: to Partial as well cbd54ef
 - New Crowdin translations (#143) 42a5c26
 - New translations locallang.xlf (Danish) (#140) 9d59f83
@@ -189,6 +247,7 @@
 # 2.4.4
 
 ## MISC
+
 - add the "composer build:docs" command 56e647e
 - Add documentation for contributing to cookieman befa82a
 - add htmlCookieRemovalPattern documentation Fixes #90 f3e93e1
@@ -220,6 +279,7 @@
 # 2.4.2
 
 ## MISC
+
 - minify 0cacc59
 - Delete cookies by regex pattern (#88) 744393b
 - Create api endpoint to check user consent for a specific trackingobject (#89) 73bbdb3
@@ -228,6 +288,7 @@
 # 2.3.11
 
 ## MISC
+
 - add data-cookieman-accept-none option #83 0f69ba7
 - New Crowdin translations (#80) 4816753
 - New Crowdin translations (#77) 11c7827
@@ -264,6 +325,7 @@
 # 2.3.8
 
 ## MISC
+
 - give credit to an awesome person c19e6cb
 - help scrutinizer ffc65a7
 - set the docs branch c99d03a
@@ -384,6 +446,7 @@
 # 2.3.5
 
 ## MISC
+
 - New Crowdin translations (#46) 76511ac
 - remove unnecessary catch {} bb2a91c
 - New Crowdin translations (#42) e2c3d6f
@@ -402,6 +465,7 @@
 # 2.3.2
 
 ## MISC
+
 - fix cgl 4e6cf6a
 - closes #35 add API call onScriptLoaded() to register script onload callbacks. (#28) fab9bc1
 - fix #37 DNT message is only rendered once 74edceb
@@ -413,6 +477,7 @@
 # 2.2.5
 
 ## MISC
+
 - fix #31 split TypoScript into Base + Examples a0da8b6
 - fix #33 sort group.trackingsObjects by key and prevent JSON-object-cast dae2d40
 - remove outdated reference to test extension 3f67c60
@@ -437,6 +502,7 @@
 # 2.2.2
 
 ## MISC
+
 - give animations more time 08139c9
 - use PHP 7.3 locally 667cc3f
 - use typo3-console for v8/v9 e7ef835
@@ -491,6 +557,7 @@
 # 2.1.13
 
 ## MISC
+
 - remove  from templates (small is really small...) 98aa8e6
 - fix xdebug (again...) c529354
 - fix docker-env 5866624
@@ -520,6 +587,7 @@
 # 2.1.7
 
 ## MISC
+
 - showcase theme customizing 7548266
 - cleanup a5e9cd7
 - describe theme customizing 9511182
@@ -528,11 +596,13 @@
 # 2.1.4
 
 ## MISC
+
 - adapt release script 5fb0661
 
 # 2.1.1
 
 ## MISC
+
 - README (2) 6869018
 - README ce08b7c
 - New translations locallang.xlf (Vietnamese) 75c15a9
@@ -568,24 +638,28 @@
 # 2.0.11
 
 ## MISC
+
 - compile JS 8ed5fa7
 - fix HTML reflow 61dba25
 
 # 2.0.8
 
 ## MISC
+
 - edit example - finally had the idea how to fix the translation-via-TypoScript issue. 25300fe
 - add example 193ebc9
 
 # 2.0.7
 
 ## MISC
+
 - use DataProcessor to enable settings overwritability ebf1e03
 - fix duplicate key f93ced9
 
 # 2.0.6
 
 ## MISC
+
 - add release process to composer 7f5fe5a
 - compile JS 4a330b8
 - add minify config ca0e42b
@@ -728,6 +802,7 @@
 # 2.0.4
 
 ## MISC
+
 - mention w.i.p. in README 30eb235
 - remove debug 0773bc5
 - inject HTML, take special care of  13ddaac
@@ -743,6 +818,7 @@
 # 2.0.1
 
 ## MISC
+
 - use release:create 5202f8a
 - add release:publish script 7291b89
 - enable bootstrap_package compatiblity 95c599e
@@ -756,6 +832,7 @@
 # 1.3.3
 
 ## MISC
+
 - add TODO section 438eb60
 - add extension-helper c9946c9
 - use composer update ec5f372
@@ -806,17 +883,20 @@
 # 1.3.1
 
 ## MISC
+
 - drop double e.preventDefault() 6b3afee
 
 # 1.3.0
 
 ## MISC
+
 - bump version f6357d3
 - remove styling 68fc52a
 
 # 1.2.2
 
 ## MISC
+
 - Bump version afd1c16
 - docs 74009aa
 - docs 62a6e78
@@ -827,11 +907,13 @@
 # 1.2.1
 
 ## MISC
+
 - bump version 74e447a
 
 # 1.2.0
 
 ## MISC
+
 - docs 9c89b3d
 - streamline examples (2) 4573e78
 - streamline examples (1) 1d17bcc
@@ -840,12 +922,14 @@
 # 1.1.1
 
 ## MISC
+
 - bump version f906f2c
 - bump version 712f71e
 
 # 1.1.0
 
 ## MISC
+
 - bump version 50c9c8f
 - add imprint PID to constants; suppress showing popup on imprint/data declaration pages 683fc49
 - docs a3cd1e5
@@ -853,12 +937,14 @@
 # 1.0.0
 
 ## MISC
+
 - version constraints 8c5c5e4
 - v1.0.0 965dd21
 
 # 0.1.0
 
 ## MISC
+
 - pre-stable b89fc5e
 - initial 165ae21
 

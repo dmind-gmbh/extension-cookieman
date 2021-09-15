@@ -19,7 +19,6 @@
         "typo3/cms-core": "^9.5.8"
     },
     "require-dev": {
-        "bk2k/bootstrap-package": "^10.0",
         "bk2k/extension-helper": "^1.0",
         "browserstack/browserstack-local": "dev-master",
         "codeception/codeception": "^4.1",
@@ -29,12 +28,14 @@
         "dmind/cookieman-test-bootstrap3-banner": "@dev",
         "dmind/cookieman-test-bootstrap3-modal": "@dev",
         "dmind/cookieman-test-bootstrap4-modal": "@dev",
+        "dmind/cookieman-test-bootstrap5-modal": "@dev",
         "dmind/cookieman-test-customtheme": "@dev",
         "friendsofphp/php-cs-fixer": "^2.14",
         "helhum/typo3-console": "^5.7",
         "php-coveralls/php-coveralls": "^2.1",
+        "phpspec/prophecy-phpunit": "^2.0",
         "roave/security-advisories": "dev-master",
-        "typo3/cms-introduction": "^4.0.1",
+        "typo3/cms-install": "^9.5.8",
         "typo3/cms-tstemplate": "^9.5.8",
         "typo3/testing-framework": "^4.9"
     },
@@ -45,7 +46,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-9lts": "2.7.x-dev"
+            "dev-9lts": "2.8.x-dev"
         },
         "typo3/cms": {
             "extension-key": "cookieman",
@@ -88,41 +89,31 @@
             "yarn --cwd=Build/ run prod"
         ],
         "cookieman:bootstrap3-banner": [
-            "typo3 extension:deactivate -n cookieman_test_bootstrap3_modal",
-            "typo3 extension:deactivate -n cookieman_test_bootstrap4_modal",
-            "typo3 extension:deactivate -n cookieman_test_customtheme",
-            "typo3 extension:activate -n cookieman_test_bootstrap3_banner"
+            "@typo3cms install:generatepackagestates --excluded-extensions=cookieman_test_bootstrap3_modal,cookieman_test_bootstrap4_modal,cookieman_test_bootstrap5_modal,cookieman_test_customtheme",
+            "@typo3:flush"
         ],
         "cookieman:bootstrap3-modal": [
-            "typo3 extension:deactivate -n cookieman_test_bootstrap3_banner",
-            "typo3 extension:deactivate -n cookieman_test_bootstrap4_modal",
-            "typo3 extension:deactivate -n cookieman_test_customtheme",
-            "typo3 extension:activate -n cookieman_test_bootstrap3_modal"
+            "@typo3cms install:generatepackagestates --excluded-extensions=cookieman_test_bootstrap3_banner,cookieman_test_bootstrap4_modal,cookieman_test_bootstrap5_modal,cookieman_test_customtheme",
+            "@typo3:flush"
         ],
         "cookieman:bootstrap4-modal": [
-            "typo3 extension:deactivate -n cookieman_test_bootstrap3_banner",
-            "typo3 extension:deactivate -n cookieman_test_bootstrap3_modal",
-            "typo3 extension:deactivate -n cookieman_test_customtheme",
-            "typo3 extension:activate -n cookieman_test_bootstrap4_modal"
+            "@typo3cms install:generatepackagestates --excluded-extensions=cookieman_test_bootstrap3_banner,cookieman_test_bootstrap3_modal,cookieman_test_bootstrap5_modal,cookieman_test_customtheme",
+            "@typo3:flush"
+        ],
+        "cookieman:bootstrap5-modal": [
+            "@typo3cms install:generatepackagestates --excluded-extensions=cookieman_test_bootstrap3_banner,cookieman_test_bootstrap3_modal,cookieman_test_bootstrap4_modal,cookieman_test_customtheme",
+            "@typo3:flush"
         ],
         "cookieman:customtheme": [
-            "typo3 extension:deactivate -n cookieman_test_bootstrap3_banner",
-            "typo3 extension:deactivate -n cookieman_test_bootstrap3_modal",
-            "typo3 extension:deactivate -n cookieman_test_bootstrap4_modal",
-            "typo3 extension:activate -n cookieman_test_customtheme"
+            "@typo3cms install:generatepackagestates --excluded-extensions=cookieman_test_bootstrap3_banner,cookieman_test_bootstrap3_modal,cookieman_test_bootstrap4_modal,cookieman_test_bootstrap5_modal",
+            "@typo3:flush"
         ],
         "fix:cgl": [
-            "php-cs-fixer --config=.php_cs.dist fix --using-cache=no"
-        ],
-        "install-extensions": [
-            "typo3 extension:activate -n bootstrap_package",
-            "typo3 extension:activate -n introduction",
-            "typo3 extension:activate -n cookieman",
-            "typo3 extension:activate -n cookieman_test",
-            "typo3 extension:activate -n cookieman_test_bootstrap4_modal"
+            "php-cs-fixer --config=.php_cs.dist.php fix --using-cache=no"
         ],
         "install-typo3": [
-            "typo3cms install:setup --admin-user-name=admin --admin-password=adminadmin --no-interaction --force"
+            "@typo3cms install:setup --admin-user-name=admin --admin-password=adminadmin --site-setup-type=site --no-interaction --force",
+            "@cookieman:bootstrap4-modal"
         ],
         "release:create": [
             "extension-helper release:create",
@@ -160,7 +151,7 @@
             "codecept run --env firefox -d -c Build/local.codeception.yml -- acceptance"
         ],
         "test:cgl": [
-            "php-cs-fixer --config=.php_cs.dist fix -v --using-cache=no --dry-run"
+            "php-cs-fixer --config=.php_cs.dist.php fix -v --using-cache=no --dry-run"
         ],
         "test:unit": [
             "@putenv XDEBUG_MODE=coverage",
@@ -170,8 +161,14 @@
             "@test:cgl",
             "@test:unit"
         ],
+        "typo3": [
+            ".build/bin/typo3 --ansi"
+        ],
+        "typo3cms": [
+            ".build/bin/typo3cms --ansi"
+        ],
         "typo3:flush": [
-            "typo3cms cache:flush"
+            "@typo3cms cache:flush"
         ]
     },
     "support": {
