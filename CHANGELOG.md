@@ -1,3 +1,39 @@
+# 2.9.3
+
+## FEATURE
+
+- [FEATURE] prepare for TYPO3v11 13994c6
+- [FEATURE] use WebDriver acceptInsecureCertificates, enable Firefox acceptance tests in CI f6be8cc
+
+## TASK
+
+- [TASK] use WebDriver's clickWithLeftButton() since it includes moveMouseOver() e08da18
+- [TASK] update php_cs config (remove deprecations) 9305751
+- [TASK] use phpspec/prophecy-phpunit bb952c0
+- [TASK] cleanup Selenium container configs 8c4653f
+- [TASK] upgrade and cleanup npm dependencies e0f7b8b
+- [TASK] upgrade dependencies 70e48e6
+- [TASK] upgrade npm-dependencies 699d360
+- [TASK] cleanup 2df468f
+- [TASK] use strict locators and clickWithLeftButton() b3c57b4
+- [TASK] reuse existing browser instance c848895
+- [TASK] cleanup selenium docker-compose.yaml e574bf6
+- [TASK] use JavaScript's scrollIntoView() instead of CodeCeption's scrollTo() 2fc1aa7
+
+## BUGFIX
+
+- [BUGFIX] remove justified text for improved readability 03e3726
+- [BUGFIX] adapt to TYPO3 v11 PHP requirements 7b2fa6b
+- [BUGFIX] fix Firefox acceptance tests 16ab904
+- [BUGFIX] fix Firefox acceptance tests (reason unknown...) bbcb10e
+- [BUGFIX] fix Firefox acceptance tests (reason unknown...) 5d3a6fe
+- [BUGFIX] fix strict locator 32a7d33
+
+## MISC
+
+- [DOCS] add supported versions information ea1a707
+- Bump postcss from 8.2.8 to 8.2.10 in /Build (#217) c2ad891
+
 # 2.8.3
 
 ## FEATURE
@@ -701,11 +737,6 @@
 - use partial across default themes b9df4e4
 - add rootPaths sequence resourceBasePath › default themes › default a8c7985
 - set bootstrap 4 as default 3f41550
-
-# 2.0.2-dev
-
-## MISC
-
 - use release:create d3fb2a2
 - add release:publish script f208fb5
 - enable bootstrap_package compatiblity e94aece
@@ -763,11 +794,6 @@
 - lint 96f9d9f
 - refactor initialisation and JS theme integration e666a7e
 - add .gitignore a53d38f
-
-# 1.3.1
-
-## MISC
-
 - drop double e.preventDefault() 6b3afee
 
 # 1.3.0
@@ -793,11 +819,6 @@
 ## MISC
 
 - bump version 74e447a
-
-# 1.2.0
-
-## MISC
-
 - docs 9c89b3d
 - streamline examples (2) 4573e78
 - streamline examples (1) 1d17bcc
@@ -824,11 +845,6 @@
 
 - version constraints 8c5c5e4
 - v1.0.0 965dd21
-
-# 0.1.0
-
-## MISC
-
 - pre-stable b89fc5e
 - initial 165ae21
 
