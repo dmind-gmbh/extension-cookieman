@@ -13,7 +13,7 @@
       </trans-unit>
       <trans-unit id="imprint" resname="imprint">
         <source>Imprint</source>
-        <target state="needs-translation">Imprint</target>
+        <target state="translated">Informazioni legali</target>
       </trans-unit>
       <trans-unit id="introText" resname="introText">
         <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
@@ -65,7 +65,7 @@
       </trans-unit>
       <trans-unit id="tableheader.provider" resname="tableheader.provider">
         <source>Provider</source>
-        <target state="translated">Provider</target>
+        <target state="translated">Fornitore</target>
       </trans-unit>
       <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc" approved="yes">
         <source>Saves your consent to using cookies.</source>
@@ -333,7 +333,7 @@
       </trans-unit>
       <trans-unit id="duration.none" resname="duration.empty">
         <source>none</source>
-        <target state="needs-translation">none</target>
+        <target state="translated">nessuno</target>
       </trans-unit>
       <trans-unit id="duration.minute" resname="duration.minute" approved="yes">
         <source>minute</source>
@@ -393,7 +393,7 @@
       </trans-unit>
       <trans-unit id="group.accept" resname="group.accept">
         <source>accept</source>
-        <target state="needs-translation">accept</target>
+        <target state="translated">accetta</target>
       </trans-unit>
     </body>
   </file>
