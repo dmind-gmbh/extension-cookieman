@@ -109,15 +109,15 @@
       </trans-unit>
       <trans-unit id="trackingobject.BT_pdc.desc" resname="trackingobject.BT_pdc.desc">
         <source>Contains base64-coded visitor history data (is customer, newsletter recipient etc.) for personalization.</source>
-        <target state="needs-translation">Contains base64-coded visitor history data (is customer, newsletter recipient etc.) for personalization.</target>
+        <target state="translated">Contiene dati di cronologia dei visitatori codificati base64 (è cliente, destinatario della newsletter, ecc.) per la personalizzazione.</target>
       </trans-unit>
       <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_pdc.desc">
         <source>Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</source>
-        <target state="needs-translation">Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</target>
+        <target state="translated">Contiene un elenco di ID dei progetti per cui il visitatore è escluso. Questo cookie viene impostato dal servizio web se il client ha configurato che non tutti i visitatori sono assegnati a un test, ma solo a una certa frazione.</target>
       </trans-unit>
       <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_ecl.desc">
         <source>Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</source>
-        <target state="needs-translation">Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</target>
+        <target state="translated">Contiene un elenco di ID dei progetti per cui il visitatore è escluso. Questo cookie viene impostato dal servizio web se il client ha configurato che non tutti i visitatori sono assegnati a un test, ma solo a una certa frazione.</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_scroll_depth.desc" resname="trackingobject.et_scroll_depth.desc">
         <source>Data for scrolling depth measurement</source>
