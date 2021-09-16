@@ -83,13 +83,13 @@
         <source>Cookie detection</source>
         <target state="final">Détection des cookies</target>
       </trans-unit>
-      <trans-unit id="trackingobject.et_oi_v2.desc" resname="trackingobject.et_oi_v2.desc" approved="yes">
-        <source>Opt-In cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</source>
-        <target state="final">Cookie opt-in qui stocke la décision du visiteur lorsque l'opt-in de suivi est affiché du côté du client. Il est aussi utilisé pour un éventuel opt-out.</target>
+      <trans-unit id="trackingobject.et_oi_v2.desc" resname="trackingobject.et_oi_v2.desc">
+        <source>Opt-in cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</source>
+        <target state="needs-translation">Opt-in cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.et_oip.desc" resname="trackingobject.et_oip.desc" approved="yes">
-        <source>Opt-In cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</source>
-        <target state="final">Cookie opt-in utilisé par "signalize". Si le client choisit "non", le cookie est réglé avec la valeur "non" et une durée de 50 x 365 jours. Si le client choisit "x" ou appuie sur la touche ESC (aucune décision), le cookie est défini avec la valeur "non" pour la validité d'un jour. Une valeur "oui" n'est pas requise, car elle est implicitement donnée par le consentement à la poussée réelle du navigateur.</target>
+      <trans-unit id="trackingobject.et_oip.desc" resname="trackingobject.et_oip.desc">
+        <source>Opt-in cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</source>
+        <target state="needs-translation">Opt-in cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_allow_cookies.desc" resname="trackingobject.et_allow_cookies.desc" approved="yes">
         <source>If the parameter "data-block-cookies" is used, this cookie is called by the API Call _etracker.enableCookies() to indicate that etracker is allowed to set cookies.</source>
@@ -139,17 +139,17 @@
         <source>et_oi_v2</source>
         <target state="final">et_oi_v2</target>
       </trans-unit>
-      <trans-unit id="trackingobject.et_oi_v2--localstorage.desc" resname="trackingobject.et_oi_v2--localstorage.desc" approved="yes">
-        <source>OptIn-cookie, see corresponding cookie.</source>
-        <target state="final">OptIn-cookie, voir le cookie correspondant.</target>
+      <trans-unit id="trackingobject.et_oi_v2--localstorage.desc" resname="trackingobject.et_oi_v2--localstorage.desc">
+        <source>Opt-in cookie, see corresponding cookie.</source>
+        <target state="needs-translation">Opt-in cookie, see corresponding cookie.</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip--localstorage" resname="trackingobject.et_oip--localstorage" approved="yes">
         <source>et_oip</source>
         <target state="final">et_oip</target>
       </trans-unit>
-      <trans-unit id="trackingobject.et_oip--localstorage.desc" resname="trackingobject.et_oip--localstorage.desc" approved="yes">
-        <source>OptIn-cookie for Signalize, see corresponding cookie.</source>
-        <target state="final">OptIn-cookie pour "Signalize", voir le cookie correspondant.</target>
+      <trans-unit id="trackingobject.et_oip--localstorage.desc" resname="trackingobject.et_oip--localstorage.desc">
+        <source>Opt-in cookie for Signalize, see corresponding cookie.</source>
+        <target state="needs-translation">Opt-in cookie for Signalize, see corresponding cookie.</target>
       </trans-unit>
       <trans-unit id="type.pixel" resname="type.pixel">
         <source>Pixel</source>
@@ -219,9 +219,9 @@
         <source>Used to distinguish users.</source>
         <target state="final">Utilisé pour distinguer les utilisateurs.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.AMP_TOKEN.desc" resname="trackingobject.AMP_TOKEN.desc" approved="yes">
-        <source>Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID service.</source>
-        <target state="final">Contient un token qui peut être utilisé pour récupérer un ID client à partir du service ID client AMP. D'autres valeurs possibles indiquent l'opt-out, la requête "inflight" ou une erreur lors de la récupération d'un ID client à partir du service AMP Client ID.</target>
+      <trans-unit id="trackingobject.AMP_TOKEN.desc" resname="trackingobject.AMP_TOKEN.desc">
+        <source>Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, request in progress or an error retrieving a Client ID from AMP Client ID service.</source>
+        <target state="needs-translation">Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, request in progress or an error retrieving a Client ID from AMP Client ID service.</target>
       </trans-unit>
       <trans-unit id="trackingobject._dc_gtm_--property-id--.desc" resname="trackingobject._dc_gtm_--property-id--.desc" approved="yes">
         <source>Used by DoubleClick (Google Tag Manager) to help identify the visitors by either age, gender or interests.</source>
@@ -284,8 +284,8 @@
         <target state="needs-translation">Browser Identifier cookie to uniquely identify devices accessing LinkedIn to detect abuse on the platform.</target>
       </trans-unit>
       <trans-unit id="trackingobject.lang.desc" resname="trackingobject.lang.desc">
-        <source>Used to remember a user's language setting.</source>
-        <target state="needs-translation">Used to remember a user's language setting.</target>
+        <source>Used to memorize a user's language setting.</source>
+        <target state="needs-translation">Used to memorize a user's language setting.</target>
       </trans-unit>
       <trans-unit id="group.external" resname="group.external">
         <source>External content</source>
@@ -304,8 +304,8 @@
         <target state="needs-translation">Is used to connect to Google Maps and to display those maps.</target>
       </trans-unit>
       <trans-unit id="trackingobject.MicrosoftStream.desc" resname="trackingobject.MicrosoftStream.desc">
-        <source>Is used to connect to Microsoft Stream and display to videos.</source>
-        <target state="needs-translation">Is used to connect to Microsoft Stream and display to videos.</target>
+        <source>Is used to connect to Microsoft Stream and display videos.</source>
+        <target state="needs-translation">Is used to connect to Microsoft Stream and display videos.</target>
       </trans-unit>
       <trans-unit id="trackingobject.Signature_Api.desc" resname="trackingobject.Signature_Api.desc">
         <source>Is used to connect to the Microsoft signature API.</source>
