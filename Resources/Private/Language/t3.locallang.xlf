@@ -84,12 +84,12 @@
         <target>crwdns85301:0crwdne85301:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oi_v2.desc" resname="trackingobject.et_oi_v2.desc">
-        <source>Opt-In cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</source>
-        <target>crwdns85303:0crwdne85303:0</target>
+        <source>Opt-in cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</source>
+        <target>crwdns138449:0crwdne138449:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip.desc" resname="trackingobject.et_oip.desc">
-        <source>Opt-In cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</source>
-        <target>crwdns85305:0crwdne85305:0</target>
+        <source>Opt-in cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</source>
+        <target>crwdns138451:0crwdne138451:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_allow_cookies.desc" resname="trackingobject.et_allow_cookies.desc">
         <source>If the parameter "data-block-cookies" is used, this cookie is called by the API Call _etracker.enableCookies() to indicate that etracker is allowed to set cookies.</source>
@@ -140,16 +140,16 @@
         <target>crwdns85329:0crwdne85329:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oi_v2--localstorage.desc" resname="trackingobject.et_oi_v2--localstorage.desc">
-        <source>OptIn-cookie, see corresponding cookie.</source>
-        <target>crwdns85331:0crwdne85331:0</target>
+        <source>Opt-in cookie, see corresponding cookie.</source>
+        <target>crwdns138453:0crwdne138453:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip--localstorage" resname="trackingobject.et_oip--localstorage">
         <source>et_oip</source>
         <target>crwdns85333:0crwdne85333:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip--localstorage.desc" resname="trackingobject.et_oip--localstorage.desc">
-        <source>OptIn-cookie for Signalize, see corresponding cookie.</source>
-        <target>crwdns85335:0crwdne85335:0</target>
+        <source>Opt-in cookie for Signalize, see corresponding cookie.</source>
+        <target>crwdns138455:0crwdne138455:0</target>
       </trans-unit>
       <trans-unit id="type.pixel" resname="type.pixel">
         <source>Pixel</source>
@@ -220,8 +220,8 @@
         <target>crwdns81002:0crwdne81002:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.AMP_TOKEN.desc" resname="trackingobject.AMP_TOKEN.desc">
-        <source>Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID service.</source>
-        <target>crwdns82997:0crwdne82997:0</target>
+        <source>Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, request in progress or an error retrieving a Client ID from AMP Client ID service.</source>
+        <target>crwdns138457:0crwdne138457:0</target>
       </trans-unit>
       <trans-unit id="trackingobject._dc_gtm_--property-id--.desc" resname="trackingobject._dc_gtm_--property-id--.desc">
         <source>Used by DoubleClick (Google Tag Manager) to help identify the visitors by either age, gender or interests.</source>
@@ -284,8 +284,8 @@
         <target>crwdns132446:0crwdne132446:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.lang.desc" resname="trackingobject.lang.desc">
-        <source>Used to remember a user's language setting.</source>
-        <target>crwdns132448:0crwdne132448:0</target>
+        <source>Used to memorize a user's language setting.</source>
+        <target>crwdns138459:0crwdne138459:0</target>
       </trans-unit>
       <trans-unit id="group.external" resname="group.external">
         <source>External content</source>
@@ -304,8 +304,8 @@
         <target>crwdns132456:0crwdne132456:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.MicrosoftStream.desc" resname="trackingobject.MicrosoftStream.desc">
-        <source>Is used to connect to Microsoft Stream and display to videos.</source>
-        <target>crwdns132458:0crwdne132458:0</target>
+        <source>Is used to connect to Microsoft Stream and display videos.</source>
+        <target>crwdns138461:0crwdne138461:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.Signature_Api.desc" resname="trackingobject.Signature_Api.desc">
         <source>Is used to connect to the Microsoft signature API.</source>
