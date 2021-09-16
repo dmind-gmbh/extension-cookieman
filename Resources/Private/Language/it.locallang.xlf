@@ -93,19 +93,19 @@
       </trans-unit>
       <trans-unit id="trackingobject.et_allow_cookies.desc" resname="trackingobject.et_allow_cookies.desc">
         <source>If the parameter "data-block-cookies" is used, this cookie is called by the API Call _etracker.enableCookies() to indicate that etracker is allowed to set cookies.</source>
-        <target state="needs-translation">If the parameter "data-block-cookies" is used, this cookie is called by the API Call _etracker.enableCookies() to indicate that etracker is allowed to set cookies.</target>
+        <target state="translated">Se viene utilizzato il parametro "data-block-cookies", questo cookie viene chiamato dall'API Call _etracker.enableCookies() per indicare che etracker è autorizzato a impostare i cookie.</target>
       </trans-unit>
       <trans-unit id="trackingobject.isSdEnabled.desc" resname="trackingobject.isSdEnabled.desc">
         <source>Detection whether the scrolling depth is measured for the visitor.</source>
-        <target state="needs-translation">Detection whether the scrolling depth is measured for the visitor.</target>
+        <target state="translated">Rileva se viene misurata di quanto si scorre nella pagina per il visitatore.</target>
       </trans-unit>
       <trans-unit id="trackingobject.BT_ctst.desc" resname="trackingobject.BT_ctst.desc">
         <source>Is only used to detect whether cookies are activated in the visitor's browser or not.</source>
-        <target state="needs-translation">Is only used to detect whether cookies are activated in the visitor's browser or not.</target>
+        <target state="translated">Viene utilizzato solo per rilevare se i cookie sono attivati o meno nel browser del visitatore.</target>
       </trans-unit>
       <trans-unit id="trackingobject.BT_sdc.desc" resname="trackingobject.BT_sdc.desc">
         <source>Contains base64 encoded data of the current visitor session (referrer, number of pages, number of seconds since session started) used for personalization purposes.</source>
-        <target state="needs-translation">Contains base64 encoded data of the current visitor session (referrer, number of pages, number of seconds since session started) used for personalization purposes.</target>
+        <target state="translated">Contiene i dati codificati base64 della sessione corrente del visitatore (referrer, numero di pagine, numero di secondi dall'inizio della sessione) utilizzati per scopi di personalizzazione.</target>
       </trans-unit>
       <trans-unit id="trackingobject.BT_pdc.desc" resname="trackingobject.BT_pdc.desc">
         <source>Contains base64-coded visitor history data (is customer, newsletter recipient etc.) for personalization.</source>
