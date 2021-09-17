@@ -2,6 +2,8 @@
 
 
 .. _contributing:
+
+.. Helps Github discover the contributors page:
 .. _contributors:
 
 ============
