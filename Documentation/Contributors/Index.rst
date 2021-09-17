@@ -3,6 +3,9 @@
 
 .. _contributing:
 
+.. Helps Github discover the contributors page:
+.. _contributors:
+
 ============
 Contributing
 ============
@@ -51,7 +54,8 @@ After switching branches, you might need a `git clean -fdX` to remove any ignore
 created by another version's build (append `-e '!.idea'` to exclude .idea).
 
 Supported TYPO3 versions
-~~~
+~~~~~~~~~~~~~~~~~~~~~~~~
+
 * all LTS versions: features, bugfixes, security
 * ELTS versions: security
 
