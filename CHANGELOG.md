@@ -1,3 +1,25 @@
+# 2.9.6
+
+## FEATURE
+
+- [FEATURE] Document reasoning for closable modals 6e5c47c
+
+## TASK
+
+- [TASK] Adapt package description b6ee558
+- [TASK] update npm dependencies caafb20
+- [TASK] Output sphinx warnings after build:docs 6ceb400
+- [TASK] add new extension icon 301d532
+- [TASK] Improve English TrackingObject texts (thanks to @t3webman) 4f19032
+
+## MISC
+
+- [DOCS] Split TypoScript setup and constants, add tocmenus and Developer/JavaScript 325c3b1
+- [DOCS] Link to Github instead of listing pre-configured tracking objects 412a2e7
+- [DOCS] Clarify requirements for cookie removal and introduction text d918305
+- [DOCS] add CONTRIBUTING.rst 77f786c
+- [DOCS] Fix formatting problems in docs (#230) 54df573
+
 # 2.9.2
 
 ## FEATURE
@@ -709,6 +731,11 @@
 - use partial across default themes b9df4e4
 - add rootPaths sequence resourceBasePath › default themes › default a8c7985
 - set bootstrap 4 as default 3f41550
+
+# 2.0.2-dev
+
+## MISC
+
 - use release:create d3fb2a2
 - add release:publish script f208fb5
 - enable bootstrap_package compatiblity e94aece
@@ -766,6 +793,11 @@
 - lint 96f9d9f
 - refactor initialisation and JS theme integration e666a7e
 - add .gitignore a53d38f
+
+# 1.3.1
+
+## MISC
+
 - drop double e.preventDefault() 6b3afee
 
 # 1.3.0
@@ -791,6 +823,11 @@
 ## MISC
 
 - bump version 74e447a
+
+# 1.2.0
+
+## MISC
+
 - docs 9c89b3d
 - streamline examples (2) 4573e78
 - streamline examples (1) 1d17bcc
@@ -817,6 +854,11 @@
 
 - version constraints 8c5c5e4
 - v1.0.0 965dd21
+
+# 0.1.0
+
+## MISC
+
 - pre-stable b89fc5e
 - initial 165ae21
 
