@@ -1,6 +1,60 @@
+# 2.9.0
+
+## TASK
+
+- [TASK] cleanup Selenium container configs b4bd24f
+- [TASK] upgrade and cleanup npm dependencies d9d5dca
+- [TASK] upgrade dependencies 2cc7adc
+- [TASK] upgrade build process 9328e1c
+- [TASK] Adapt TYPO3 compatibility statements 91d1bc9
+- [TASK] add typo3-ter replace 311d95c
+- [TASK] minify theme CSS b698c84
+- [TASK] adapt acceptance test button selector a4e0e98
+- [TASK] use codeception's clickWithLeftButton since it seems to imply scrolling the page there c5d3cd3
+- [TASK] use distributed js.cookie.min.js cc0615b
+- [TASK] remove finicky acceptance test; wait for cookieman.js to be loaded 2f1ca7a
+- [TASK] install TYPO3 if DB empty but LocalConfiguration.php present (ddev) 450da08
+- [TASK] set XDEBUG_MODE=coverage 7a49461
+- [TASK] cleanup 6431521
+- [TASK] use lowest PHP version for TYPO3v8 1e03b7f
+- [TASK] upgrade yarn dependencies a83228e
+- [TASK] cleanup e3b6003
+
+## BUGFIX
+
+- [BUGFIX] remove justified text for improved readability a837e3f
+- [BUGFIX] make example templates accessible (#195) (#196) 6360faf
+- [BUGFIX] adapt non-supported :not() selector chain 0cbb57a
+- [BUGFIX] use selector for clickWithLeftButton() 62fd69b
+- [BUGFIX] fix typo; marketing group used non-existent "SlideShare" example config; harden against undefined trackingObjects (examples) 4da21db
+- [BUGFIX] fix unit and CGL tests 792e033
+- [BUGFIX] add ViewHelper test ac35769
+- [BUGFIX] fix DataProcessor test c4e9b9a
+- [BUGFIX] remove composer-normalize (package installation unstable in composer 2) 52657da
+
+## MISC
+
+- New Crowdin updates (#214) 3b6eb09
+- [DOCS] add supported versions information 236f573
+- New Crowdin updates (#212) 77a40cc
+- New Crowdin updates (#208) 4e5c4f4
+- New Crowdin updates (#197) 9258482
+- [DOCS] Add section how to adapt existing theme (#202) bb444de
+- New Crowdin updates (#192) cb6e41e
+- New Crowdin updates (#187) 68f779b
+- Add tracking objects for Microsoft Forms/-Stream/Slideshare/Youtube/Maps (#158) (#167) bda3026
+- Bump ini from 1.3.5 to 1.3.8 in /Build (#183) 81e3386
+- Update Index.rst (#186) 03f333e
+- New Crowdin updates (#174) 818ebaa
+- use selenium+mkcert automated docker hub builds (2) 4e0ec8a
+- use selenium+mkcert automated docker hub builds 2a36e8d
+- New Crowdin updates (#163) 8ab1b85
+- remove minimum-stability:dev 70e3d04
+
 # 2.7.0
 
 ## MISC
+
 - yarn upgrade 1a24349
 - yarn update 8f0c517
 - update actions/upload-artifact 20a619c
@@ -14,6 +68,7 @@
 # 2.6.0
 
 ## MISC
+
 - upgrade npm packages 1fde6a0
 - lint fa02b95
 - Try multiple cookie domains and paths during HTML cookie deletion. Fixes #137 af85f69
@@ -24,6 +79,7 @@
 # 2.5.0
 
 ## MISC
+
 - add ViewHelper namespace c: to Partial as well 066a595
 - New Crowdin translations (#142) 0ea3799
 - Move example-inject.js to Js/Injects/ 9a095ae
@@ -186,6 +242,7 @@
 # 2.4.3
 
 ## MISC
+
 - add the "composer build:docs" command 45207dd
 - Add documentation for contributing to cookieman be149bf
 - add htmlCookieRemovalPattern documentation Fixes #90 89d8be4
@@ -218,6 +275,7 @@
 # 2.4.1
 
 ## MISC
+
 - minify 9f3ff32
 - Delete cookies by regex pattern (#88) 26db500
 - Create api endpoint to check user consent for a specific trackingobject (#89) 2589c15
@@ -226,6 +284,7 @@
 # 2.3.10
 
 ## MISC
+
 - add data-cookieman-accept-none option #83 09d4e48
 - New Crowdin translations (#79) 41e52bc
 - New Crowdin translations (#76) 9a321a7
@@ -266,6 +325,7 @@
 # 2.3.7
 
 ## MISC
+
 - set the docs branch 64f307f
 - document the differences among the example themes 808b222
 - fix typo d2771e6
@@ -388,6 +448,7 @@
 # 2.3.4
 
 ## MISC
+
 - New Crowdin translations (#45) 8dee7a3
 - remove unnecessary catch {} 1651e45
 - New Crowdin translations (#41) bd8b500
@@ -406,6 +467,7 @@
 # 2.3.1
 
 ## MISC
+
 - fix cgl b12e8cb
 - closes #35 add API call onScriptLoaded() to register script onload callbacks. (#28) 2071f59
 - fix #37 DNT message is only rendered once (2) 68d16f7
@@ -419,6 +481,7 @@
 # 2.2.4
 
 ## MISC
+
 - fix #31 split TypoScript into Base + Examples 8d2860a
 - fix #33 sort group.trackingsObjects by key and prevent JSON-object-cast 706581d
 - remove outdated reference to test extension e26a249
@@ -442,6 +505,7 @@
 # 2.2.1
 
 ## MISC
+
 - give animations more time 9272669
 - fix typo e742922
 - allow introduction-package ^3.0 to pass tests 7e2a9d9
@@ -495,6 +559,7 @@
 # 2.1.12
 
 ## MISC
+
 - remove  from templates (small is really small...) a41709a
 - fix missing DataProcessor 361cc9d
 - fix xdebug (again...) 0d132a9
@@ -526,6 +591,7 @@
 # 2.1.6
 
 ## MISC
+
 - showcase theme customizing d396ed5
 - describe theme customizing 495e748
 - change description d88dcf3
@@ -533,11 +599,13 @@
 # 2.1.3
 
 ## MISC
+
 - adapt ext_emconf and release script e95b98e
 
 # 2.1.0
 
 ## MISC
+
 - README (2) 59fc257
 - README fb76f46
 - make minify configurable fad6292
@@ -572,6 +640,7 @@
 # 2.0.9
 
 ## MISC
+
 - compile JS 56de6df
 - add release process to composer e764262
 - compile JS b76b88e
@@ -763,6 +832,7 @@
 # 2.0.0
 
 ## MISC
+
 - use release:create 6ab08e2
 - enable bootstrap_package compatiblity 8610a69
 - config via TypoScript; translation c90a843
@@ -772,6 +842,7 @@
 # 1.3.2
 
 ## MISC
+
 - add TODO section 493ae6f
 - add extension-helper c854e20
 - use composer update 4c0526f
@@ -820,17 +891,20 @@
 # 1.3.1
 
 ## MISC
+
 - drop double e.preventDefault() 6b3afee
 
 # 1.3.0
 
 ## MISC
+
 - bump version f6357d3
 - remove styling 68fc52a
 
 # 1.2.2
 
 ## MISC
+
 - Bump version afd1c16
 - docs 74009aa
 - docs 62a6e78
@@ -841,11 +915,13 @@
 # 1.2.1
 
 ## MISC
+
 - bump version 74e447a
 
 # 1.2.0
 
 ## MISC
+
 - docs 9c89b3d
 - streamline examples (2) 4573e78
 - streamline examples (1) 1d17bcc
@@ -854,12 +930,14 @@
 # 1.1.1
 
 ## MISC
+
 - bump version f906f2c
 - bump version 712f71e
 
 # 1.1.0
 
 ## MISC
+
 - bump version 50c9c8f
 - add imprint PID to constants; suppress showing popup on imprint/data declaration pages 683fc49
 - docs a3cd1e5
@@ -867,12 +945,14 @@
 # 1.0.0
 
 ## MISC
+
 - version constraints 8c5c5e4
 - v1.0.0 965dd21
 
 # 0.1.0
 
 ## MISC
+
 - pre-stable b89fc5e
 - initial 165ae21
 
