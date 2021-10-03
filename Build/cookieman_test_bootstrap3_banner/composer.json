@@ -1,10 +1,16 @@
 {
-    "name": "dmind/cookieman-test-bootstrap3-banner",
-    "type": "typo3-cms-extension",
-    "description": "",
-    "extra": {
-        "typo3/cms": {
-            "extension-key": "cookieman_test_bootstrap3_banner"
-        }
+  "name": "dmind/cookieman-test-bootstrap3-banner",
+  "type": "typo3-cms-extension",
+  "description": "",
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "cookieman_test_bootstrap3_banner"
     }
+  },
+  "conflict": {
+    "dmind/cookieman-test-bootstrap3-modal": "*",
+    "dmind/cookieman-test-bootstrap4-modal": "*",
+    "dmind/cookieman-test-bootstrap5-modal": "*",
+    "dmind/cookieman-test-customtheme": "*"
+  }
 }
