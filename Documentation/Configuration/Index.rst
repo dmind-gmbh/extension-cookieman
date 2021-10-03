@@ -19,11 +19,7 @@ This extension comes with two static templates:
 Learn how to configure Cookieman:
 
 .. toctree::
-   :maxdepth: 3
+   :glob:
    :titlesonly:
 
-   CookieUsage/Index
-   Example/Index
-   Reference/Index
-   Customization/Index
-   How-To/Index
+   */*
