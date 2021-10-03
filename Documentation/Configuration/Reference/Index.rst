@@ -329,14 +329,10 @@ trackingObjects
 
 :aspect:`Description`
    This array holds the tracking object configurations.
-   The Cookieman extension already provides several **preconfigured** tracking objects:
 
-   * Cookie Consent (Cookieman's settings cookie)
-   * fe_typo_user
-   * Google Analytics
-   * Google Tag Manager
-   * Matomo
-   * Bing
+   The Cookieman extension already provides several **preconfigured** tracking objects
+   in the folder `./Configuration/TypoScript/TrackingObjects/ <https://github.com/dmind-gmbh/extension-cookieman/tree/master/Configuration/TypoScript/TrackingObjects>`__
+   (link to the Github repository).
 
    .. important::
       If you add a preconfigured tracking object, you must at least **adapt** the `inject` code to your needs!
