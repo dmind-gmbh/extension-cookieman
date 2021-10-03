@@ -173,7 +173,7 @@
             ".build/bin/typo3cms --ansi"
         ],
         "typo3:flush": [
-            "@typo3cms cache:flush"
+            "@typo3 cache:warmup"
         ]
     },
     "support": {
