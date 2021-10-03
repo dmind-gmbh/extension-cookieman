@@ -1,3 +1,27 @@
+# 2.9.4
+
+## FEATURE
+
+- [FEATURE] Document reasoning for closable modals 8621d3c
+
+## TASK
+
+- [TASK] Adapt package description 4031d72
+- [TASK] update npm dependencies 3c72eb2
+- [TASK] Output sphinx warnings after build:docs c179d73
+- [TASK] add new extension icon 7a5954b
+- [TASK] Improve English TrackingObject texts (thanks to @t3webman) 6739c59
+
+## MISC
+
+- [DOCS] Split TypoScript setup and constants, add tocmenus and Developer/JavaScript 301c6e7
+- [DOCS] Link to Github instead of listing pre-configured tracking objects 6deb668
+- [DOCS] Clarify requirements for cookie removal and introduction text 3c4dd66
+- [DOCS] add CONTRIBUTING.rst 80b140a
+- New Crowdin updates (#235) b80e120
+- New Crowdin updates (#225) 0de5dbb
+- [DOCS] Fix formatting problems in docs (#230) 875fdd3
+
 # 2.9.0
 
 ## TASK
