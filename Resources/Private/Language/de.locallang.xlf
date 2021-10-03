@@ -84,12 +84,12 @@
         <target state="final">Cookie-Erkennung</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oi_v2.desc" resname="trackingobject.et_oi_v2.desc" approved="yes">
-        <source>Opt-In cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</source>
+        <source>Opt-in cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</source>
         <target state="final">Opt-In-Cookie speichert die Entscheidung des Besuchers, wenn auf der Seite des Kunden das Tracking Opt-In ausgespielt wird. Wird auch für ein eventuelles Opt-Out verwendet.</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip.desc" resname="trackingobject.et_oip.desc" approved="yes">
-        <source>Opt-In cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</source>
-        <target state="final">OptIn-Cookie für "signalize". Wählt der Kunde "nein", wird das Cookie mit dem Wert "no" und einer Laufzeit von 50 x 365 Tagen gesetzt. Wählt der Kunde "x" oder drückt die ESC-Taste (keine Entscheidung), wird das Cookie mit dem Wert "no" für die Gültigkeit von 1 Tag gesetzt. Ein Wert von "yes" wird nicht benötigt, da dieses implizit durch die Zustimmung zum eigentlichen Browser-Push gegeben ist.</target>
+        <source>Opt-in cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</source>
+        <target state="final">Opt-In-Cookie für "signalize". Wählt der Kunde "nein", wird das Cookie mit dem Wert "no" und einer Laufzeit von 50 x 365 Tagen gesetzt. Wählt der Kunde "x" oder drückt die ESC-Taste (keine Entscheidung), wird das Cookie mit dem Wert "no" für die Gültigkeit von 1 Tag gesetzt. Ein Wert von "yes" wird nicht benötigt, da dieses implizit durch die Zustimmung zum eigentlichen Browser-Push gegeben ist.</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_allow_cookies.desc" resname="trackingobject.et_allow_cookies.desc" approved="yes">
         <source>If the parameter "data-block-cookies" is used, this cookie is called by the API Call _etracker.enableCookies() to indicate that etracker is allowed to set cookies.</source>
@@ -140,16 +140,16 @@
         <target state="final">et_oi_v2</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oi_v2--localstorage.desc" resname="trackingobject.et_oi_v2--localstorage.desc" approved="yes">
-        <source>OptIn-cookie, see corresponding cookie.</source>
-        <target state="final">OptIn-Cookie, siehe entsprechendes Cookie.</target>
+        <source>Opt-in cookie, see corresponding cookie.</source>
+        <target state="final">Opt-In-Cookie, siehe entsprechendes Cookie.</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip--localstorage" resname="trackingobject.et_oip--localstorage" approved="yes">
         <source>et_oip</source>
         <target state="final">et_oip</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip--localstorage.desc" resname="trackingobject.et_oip--localstorage.desc" approved="yes">
-        <source>OptIn-cookie for Signalize, see corresponding cookie.</source>
-        <target state="final">OptIn-Cookie für Signalize, siehe entsprechendes Cookie.</target>
+        <source>Opt-in cookie for Signalize, see corresponding cookie.</source>
+        <target state="final">Opt-In-Cookie für Signalize, siehe entsprechendes Cookie.</target>
       </trans-unit>
       <trans-unit id="type.pixel" resname="type.pixel" approved="yes">
         <source>Pixel</source>
@@ -220,8 +220,8 @@
         <target state="final">Wird verwendet, um Benutzer zu unterscheiden.</target>
       </trans-unit>
       <trans-unit id="trackingobject.AMP_TOKEN.desc" resname="trackingobject.AMP_TOKEN.desc" approved="yes">
-        <source>Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID service.</source>
-        <target state="final">Enthält einen Token, der verwendet werden kann, um eine Client-ID vom AMP-Client-ID-Dienst abzurufen.</target>
+        <source>Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, request in progress or an error retrieving a Client ID from AMP Client ID service.</source>
+        <target state="final">Enthält ein Token, das verwendet werden kann, um eine Client-ID vom AMP-Client-ID-Service abzurufen. Andere mögliche Werte zeigen Opt-out, Anfrage im Gange oder einen Fehler beim Abrufen einer Client-ID vom AMP Client ID Service an.</target>
       </trans-unit>
       <trans-unit id="trackingobject._dc_gtm_--property-id--.desc" resname="trackingobject._dc_gtm_--property-id--.desc" approved="yes">
         <source>Used by DoubleClick (Google Tag Manager) to help identify the visitors by either age, gender or interests.</source>
@@ -284,7 +284,7 @@
         <target state="final">Dient zur eindeutigen eindeutigen Identifizierung von Geräten, die auf LinkedIn zugreifen, um Missbrauch auf der Plattform zu erkennen.</target>
       </trans-unit>
       <trans-unit id="trackingobject.lang.desc" resname="trackingobject.lang.desc" approved="yes">
-        <source>Used to remember a user's language setting.</source>
+        <source>Used to memorize a user's language setting.</source>
         <target state="final">Wird verwendet, um die Spracheinstellung eines Benutzers zu speichern.</target>
       </trans-unit>
       <trans-unit id="group.external" resname="group.external" approved="yes">
@@ -304,7 +304,7 @@
         <target state="final">Es wird eine Verbindung mit Google Maps hergestellt, um Karten anzuzeigen.</target>
       </trans-unit>
       <trans-unit id="trackingobject.MicrosoftStream.desc" resname="trackingobject.MicrosoftStream.desc" approved="yes">
-        <source>Is used to connect to Microsoft Stream and display to videos.</source>
+        <source>Is used to connect to Microsoft Stream and display videos.</source>
         <target state="final">Wird verwendet, um sich mit Microsoft Stream zu verbinden und Videos anzuzeigen.</target>
       </trans-unit>
       <trans-unit id="trackingobject.Signature_Api.desc" resname="trackingobject.Signature_Api.desc" approved="yes">
