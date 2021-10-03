@@ -1,3 +1,32 @@
+# 2.9.7
+
+## FEATURE
+
+- [FEATURE] Document reasoning for closable modals 9d6cfb5
+
+## TASK
+
+- [TASK] Adapt package description a6ddfe9
+- [TASK] remove superfluous testing extension installation (ci setup) 891ead8
+- [TASK] use TYPO3's cache:warmup command 901656a
+- [TASK] composer-install testing extensions to cope with auto-activation in TYPO3 v11 5c017d6
+- [TASK] update npm dependencies c209276
+- [TASK] Output sphinx warnings after build:docs b2fe0f7
+- [TASK] add new extension icon f75abbb
+- [TASK] Improve English TrackingObject texts (thanks to @t3webman) cf6a59a
+
+## BUGFIX
+
+- [BUGFIX] create directory before ddev tries to access it (dev environment) ee99e92
+
+## MISC
+
+- [DOCS] Split TypoScript setup and constants, add tocmenus and Developer/JavaScript a976561
+- [DOCS] Link to Github instead of listing pre-configured tracking objects 7ba32d5
+- [DOCS] Clarify requirements for cookie removal and introduction text 2aa5d16
+- [DOCS] add CONTRIBUTING.rst 0bba81a
+- [DOCS] Fix formatting problems in docs (#230) 233bcc2
+
 # 2.9.3
 
 ## FEATURE
@@ -737,6 +766,11 @@
 - use partial across default themes b9df4e4
 - add rootPaths sequence resourceBasePath › default themes › default a8c7985
 - set bootstrap 4 as default 3f41550
+
+# 2.0.2-dev
+
+## MISC
+
 - use release:create d3fb2a2
 - add release:publish script f208fb5
 - enable bootstrap_package compatiblity e94aece
@@ -794,6 +828,11 @@
 - lint 96f9d9f
 - refactor initialisation and JS theme integration e666a7e
 - add .gitignore a53d38f
+
+# 1.3.1
+
+## MISC
+
 - drop double e.preventDefault() 6b3afee
 
 # 1.3.0
@@ -819,6 +858,11 @@
 ## MISC
 
 - bump version 74e447a
+
+# 1.2.0
+
+## MISC
+
 - docs 9c89b3d
 - streamline examples (2) 4573e78
 - streamline examples (1) 1d17bcc
@@ -845,6 +889,11 @@
 
 - version constraints 8c5c5e4
 - v1.0.0 965dd21
+
+# 0.1.0
+
+## MISC
+
 - pre-stable b89fc5e
 - initial 165ae21
 
