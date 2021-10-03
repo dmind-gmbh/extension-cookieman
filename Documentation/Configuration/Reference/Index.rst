@@ -497,12 +497,15 @@ trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.type
 :aspect:`Description`
    The type of tracking.
 
-   Possible keywords:
+   Possible (default) keywords:
 
-   * `cookie_http+html`: a HTML (=HTTP+HTML) cookie, which is also readable from JavaScript
+   * `cookie_http+html`: an HTML (=HTTP+HTML) cookie, which is also readable from JavaScript.
+     This is the only type that can be removed after consent has been revoked.
    * `cookie_http`: an HTTP cookie
+   * `pixel`: a tracking pixel
 
-   You can add your own types by adding a localization string `type.‹your-type-key›`.
+   .. note::
+      You can add your own types by adding a localization string `type.‹your-type-key›`.
 
 
 .. _trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.provider:
@@ -541,3 +544,7 @@ trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.htmlCooki
    You can (optionally) set a regex pattern for cookie names here. It will be used during cookie removal.
    If would remove all matched cookies when consent for the group in which this tracking object is included is revoked.
    If this is empty, the tracking object key is used for deletion (see :ref:`trackingObjects.‹tracking-object-key›`).
+
+   .. note::
+      Cookie removal will only work for tracking object type `cookie_http+html`.
+      See :ref:`trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.type`.
