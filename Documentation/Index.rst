@@ -63,16 +63,9 @@ For contributing code, see the section :ref:`contributors`.
 
 :ref:`sitemap`
 
-
 .. toctree::
-   :maxdepth: 3
+   :glob:
+   :titlesonly:
 
-   Introduction/Index
-   Installation/Index
-   Configuration/Index
-   Translation/Index
-   Developer/Index
-   Contributors/Index
-   Links/Index
+   */*
    Sitemap
-
