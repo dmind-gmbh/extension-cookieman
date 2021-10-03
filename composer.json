@@ -117,8 +117,7 @@
             "php-cs-fixer --config=.php_cs.dist.php fix --using-cache=no"
         ],
         "install-typo3": [
-            "@typo3cms install:setup --admin-user-name=admin --admin-password=adminadmin --site-setup-type=site --no-interaction --force",
-            "@cookieman:bootstrap4-modal"
+            "@typo3cms install:setup --admin-user-name=admin --admin-password=adminadmin --site-setup-type=site --no-interaction --force"
         ],
         "release:create": [
             "extension-helper release:create",
