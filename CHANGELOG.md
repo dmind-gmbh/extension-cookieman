@@ -1,7 +1,44 @@
+# 2.9.1
+
+## FEATURE
+
+- [FEATURE] use WebDriver acceptInsecureCertificates, enable Firefox acceptance tests in CI ae202fb
+
+## TASK
+
+- [TASK] use WebDriver's clickWithLeftButton() since it includes moveMouseOver() 7be3b81
+- [TASK] update php_cs config (remove deprecations) 9fd7387
+- [TASK] use phpspec/prophecy-phpunit 842dbd8
+- [TASK] cleanup Selenium container configs 9141a78
+- [TASK] upgrade and cleanup npm dependencies f7629de
+- [TASK] upgrade dependencies a6c5749
+- [TASK] upgrade npm-dependencies 1aa9cfb
+- [TASK] cleanup a4e0afd
+- [TASK] use strict locators and clickWithLeftButton() 47f33a5
+- [TASK] reuse existing browser instance 3db5cb8
+- [TASK] cleanup selenium docker-compose.yaml a905e1e
+- [TASK] use JavaScript's scrollIntoView() instead of CodeCeption's scrollTo() 03089d4
+
+## BUGFIX
+
+- [BUGFIX] remove justified text for improved readability bc288f8
+- [BUGFIX] fix Firefox acceptance tests 507fede
+- [BUGFIX] fix Firefox acceptance tests (reason unknown...) 4b693c0
+- [BUGFIX] fix Firefox acceptance tests (reason unknown...) f6be62a
+- [BUGFIX] fix strict locator 8e4bfff
+
+## MISC
+
+- New Crowdin updates (#215) eea1813
+- [DOCS] add supported versions information 913c68b
+- Bump postcss from 8.2.8 to 8.2.10 in /Build (#217) 5451229
+- New Crowdin updates (#209) 66b13bf
+
 # 2.8.1
 
 ## FEATURE
 
+- [FEATURE] use TYPO3 tailor to publish to TER 611f14f
 - [FEATURE] use TYPO3 tailor to publish to TER 3d33601
 - [FEATURE] use TYPO3 tailor to publish to TER 993043d
 - [FEATURE] backport from master b354e27
@@ -879,11 +916,6 @@
 - lint 96f9d9f
 - refactor initialisation and JS theme integration e666a7e
 - add .gitignore a53d38f
-
-# 1.3.1
-
-## MISC
-
 - drop double e.preventDefault() 6b3afee
 
 # 1.3.0
@@ -909,11 +941,6 @@
 ## MISC
 
 - bump version 74e447a
-
-# 1.2.0
-
-## MISC
-
 - docs 9c89b3d
 - streamline examples (2) 4573e78
 - streamline examples (1) 1d17bcc
@@ -940,11 +967,6 @@
 
 - version constraints 8c5c5e4
 - v1.0.0 965dd21
-
-# 0.1.0
-
-## MISC
-
 - pre-stable b89fc5e
 - initial 165ae21
 
