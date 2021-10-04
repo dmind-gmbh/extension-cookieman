@@ -1,3 +1,11 @@
+# 2.9.8
+
+## MISC
+
+- [DOCS] fix TypoScript code blocks 1b53225
+- [DOCS] fix main toctree 8375327
+- [DOCS] fix semantic file 15d14b4
+
 # 2.9.7
 
 ## FEATURE
