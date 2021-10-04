@@ -67,5 +67,11 @@ For contributing code, see the section :ref:`contributors`.
    :glob:
    :titlesonly:
 
-   */*
+   Introduction/*
+   Installation/*
+   Configuration/*
+   Translation/*
+   Developer/*
+   Contributors/*
+   Links/*
    Sitemap
