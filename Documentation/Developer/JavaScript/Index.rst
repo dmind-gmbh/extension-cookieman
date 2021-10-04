@@ -5,7 +5,7 @@
 JavaScript API
 ==============
 
-cookieman.js exposes these methods:
+:file:`cookieman.js` exposes these methods:
 
 
 cookieman.showOnce()
@@ -17,7 +17,7 @@ cookieman.showOnce()
 :aspect:`Description`
    Shows the confirmation modal when consent has not been saved yet.
 
-   It is automatically called on each page from `cookieman-init.js` (with an aditional condition, see :ref:`when-is-it-shown`
+   It is automatically called on each page from :file:`cookieman-init.js` (with an aditional condition, see :ref:`when-is-it-shown`
 
 
 cookieman.show()
