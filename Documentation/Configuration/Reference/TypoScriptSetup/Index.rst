@@ -110,7 +110,7 @@ groups.‹group-key›.trackingObjects
 
    Example:
 
-   .. code-block:: ts
+   .. code-block:: typoscript
 
       trackingObjects {
         0 = CookieConsent
@@ -198,7 +198,7 @@ trackingObjects.‹tracking-object-key›
 
    Example:
 
-   .. code-block:: ts
+   .. code-block:: typoscript
 
       plugin.tx_cookieman.settings.trackingObjects {
           // 'Matomo' is the ‹tracking-object-key›:
