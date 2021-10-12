@@ -9,6 +9,8 @@ Custom themes
 
 Target group: **Developers, Integrators**
 
+.. _adapt-default-theme:
+
 Adapt an existing theme
 =======================
 
@@ -30,10 +32,12 @@ If you want to adapt an existing theme, and not necessarily create a new one, yo
       }
     }
   }
-  
-  
+
+
 This way, you also do not need to add a `cookieman-theme.css` and `cookieman-theme.js` file, which are necessary when creating a full custom theme.
 
+
+.. _create-new-theme:
 
 Create a new theme
 ==================

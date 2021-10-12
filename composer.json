@@ -1,7 +1,7 @@
 {
     "name": "dmind/cookieman",
     "type": "typo3-cms-extension",
-    "description": "A GDPR tracking consent popup. It asks for approval to include tracking objects (cookies, images or any HTML) and includes the objects when consented. It also removes cookies after the consent has been revoked. Notice: Supports TYPO3v8-v*, but each unique version only supports one!",
+    "description": "Provides a user consent popup. It asks for approval to include tracking objects (cookies, images or any HTML) and includes the objects when consented. It also removes cookies after the consent has been revoked.",
     "license": [
         "GPL-2.0-or-later"
     ],
@@ -77,7 +77,9 @@
             "@build:prod"
         ],
         "build:docs": [
-            "bash -c 'echo \"${@:-makehtml}\" | netcat docs 7000' --"
+            "rm -rf ./Documentation-GENERATED-temp/Result/project/0.0.0/_buildinfo/",
+            "bash -c 'echo \"${@:-makehtml}\" | netcat docs 7000' --",
+            "cat ./Documentation-GENERATED-temp/Result/project/0.0.0/_buildinfo/warnings.txt 2>/dev/null"
         ],
         "build:prepare": [
             "yarn install --save-dev --cwd=Build/"

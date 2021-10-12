@@ -30,55 +30,42 @@ Cookieman
    `CC BY-NC-SA 4.0 <https://creativecommons.org/licenses/by-nc-sa/4.0/>`__ (Creative Commons)
    license
 
-A GDPR tracking consent popup. It asks for approval to include tracking objects (cookies, images or any HTML) and includes the objects when consented.
-It enables tracking from the very first page (including referrer). Consents are shown in groups and saved to a cookie.
-It provides a stable API to read out consents with JavaScript. From version 2.3.9+ it removes configured tracking cookies when the user revokes consent.
-
 **TYPO3**
 
-   The content of this document is related to TYPO3 CMS,
-   a GNU/GPL CMS/Framework available from `typo3.org
-   <https://typo3.org/>`_ .
+The content of this document is related to TYPO3 CMS,
+a GNU/GPL CMS/Framework available from `typo3.org
+<https://typo3.org/>`_ .
 
 **Community Documentation:**
 
-   This documentation is community documentation for the TYPO3 extension 'cookieman'.
+This documentation is community documentation for the TYPO3 extension 'cookieman'.
 
-   It is maintained as part of this third party extension.
+It is maintained as part of this third party extension.
 
-   If you find an error or something is missing, please:
-   `Report a Problem <https://github.com/dmind-gmbh/extension-cookieman/issues/new>`__
+If you find an error or something is missing, please:
+`Report a Problem <https://github.com/dmind-gmbh/extension-cookieman/issues/new>`__
 
 **Extension Manual**
 
-   This documentation is for the TYPO3 extension 'cookieman'.
+This documentation is for the TYPO3 extension 'cookieman'.
 
 
 
 **Contributing To This Manual**
 
-   You are welcome to help improve this guide. Just click on "Edit me on GitHub"
-   on the top right to submit your change request.
+You are welcome to help improve this guide. Just click on "Edit me on GitHub"
+on the top right to submit your change request.
 
-   For contributing code, see the section :ref:`contributors`.
+For contributing code, see the section :ref:`contributors`.
 
 
-**Sitemap:**
+**Sitemap**
 
-   :ref:`sitemap`
-
+:ref:`sitemap`
 
 .. toctree::
-   :maxdepth: 3
-   :hidden:
+   :glob:
+   :titlesonly:
 
-
-   Introduction/Index
-   Installation/Index
-   Configuration/Index
-   Translation/Index
-   Developer/Index
-   Contributors/Index
-   Links/Index
+   */*
    Sitemap
-
