@@ -23,17 +23,17 @@
         <source>Settings</source>
         <target state="final">Opţiuni</target>
       </trans-unit>
-      <trans-unit id="settingsText" resname="settingsText">
+      <trans-unit id="settingsText" resname="settingsText" approved="yes">
         <source>Click here for Cookie %1$s.</source>
-        <target state="translated">Click aici pentru Cookie %1$s.</target>
+        <target state="final">Click aici pentru Cookie %1$s.</target>
       </trans-unit>
       <trans-unit id="accept" resname="accept" approved="yes">
         <source>Accept all cookies</source>
         <target state="final">Acceptă tot cookie-uri</target>
       </trans-unit>
-      <trans-unit id="deny" resname="deny">
+      <trans-unit id="deny" resname="deny" approved="yes">
         <source>Deny all cookies</source>
-        <target state="translated">Refuză toate cookie-urile</target>
+        <target state="final">Refuză toate cookie-urile</target>
       </trans-unit>
       <trans-unit id="save" resname="save" approved="yes">
         <source>Save</source>
@@ -43,9 +43,9 @@
         <source>Mandatory</source>
         <target state="final">Obligatorii</target>
       </trans-unit>
-      <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc">
+      <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc" approved="yes">
         <source>These cookies are needed for a smooth operation of our website.</source>
-        <target state="translated">Aceste cookie-uri sunt necesare pentru o bună funcționare a site-ului nostru.</target>
+        <target state="final">Aceste cookie-uri sunt necesare pentru o bună funcționare a site-ului nostru.</target>
       </trans-unit>
       <trans-unit id="tableheader.name" resname="tableheader.name" approved="yes">
         <source>Name</source>
@@ -75,13 +75,13 @@
         <source>Exclusion from counting (as a list of Account IDs)</source>
         <target state="needs-translation">Exclusion from counting (as a list of Account IDs)</target>
       </trans-unit>
-      <trans-unit id="trackingobject.GS3_v.desc" resname="trackingobject.GS3_v.desc">
+      <trans-unit id="trackingobject.GS3_v.desc" resname="trackingobject.GS3_v.desc" approved="yes">
         <source>Set by Optimizer webservice. Contains the same Visitor ID as BT_pdc.</source>
-        <target state="translated">Setat de serviciul web Optimizer. Conține același ID al vizitatorilor ca BT_pdc.</target>
+        <target state="final">Setat de serviciul web Optimizer. Conține același ID al vizitatorilor ca BT_pdc.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._et_coid.desc" resname="trackingobject._et_coid.desc">
+      <trans-unit id="trackingobject._et_coid.desc" resname="trackingobject._et_coid.desc" approved="yes">
         <source>Cookie detection</source>
-        <target state="translated">Detectare cookie</target>
+        <target state="final">Detectare cookie</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oi_v2.desc" resname="trackingobject.et_oi_v2.desc">
         <source>Opt-in cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</source>
