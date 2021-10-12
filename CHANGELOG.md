@@ -1,3 +1,26 @@
+# 2.9.5
+
+## FEATURE
+
+- [FEATURE] Document reasoning for closable modals 2a7eeec
+
+## TASK
+
+- [TASK] Adapt package description 2129979
+- [TASK] update npm dependencies df82de1
+- [TASK] Output sphinx warnings after build:docs 1a994e0
+- [TASK] add new extension icon 3300a53
+- [TASK] Improve English TrackingObject texts (thanks to @t3webman) e6c6656
+
+## MISC
+
+- [DOCS] Split TypoScript setup and constants, add tocmenus and Developer/JavaScript b3433d3
+- [DOCS] Link to Github instead of listing pre-configured tracking objects 99efd0a
+- [DOCS] Clarify requirements for cookie removal and introduction text d44e4e8
+- [DOCS] add CONTRIBUTING.rst cd93e2e
+- New Crowdin updates (#226) dbcff96
+- [DOCS] Fix formatting problems in docs (#230) d6bdedb
+
 # 2.9.1
 
 ## FEATURE
@@ -916,6 +939,11 @@
 - lint 96f9d9f
 - refactor initialisation and JS theme integration e666a7e
 - add .gitignore a53d38f
+
+# 1.3.1
+
+## MISC
+
 - drop double e.preventDefault() 6b3afee
 
 # 1.3.0
@@ -941,6 +969,11 @@
 ## MISC
 
 - bump version 74e447a
+
+# 1.2.0
+
+## MISC
+
 - docs 9c89b3d
 - streamline examples (2) 4573e78
 - streamline examples (1) 1d17bcc
@@ -967,6 +1000,11 @@
 
 - version constraints 8c5c5e4
 - v1.0.0 965dd21
+
+# 0.1.0
+
+## MISC
+
 - pre-stable b89fc5e
 - initial 165ae21
 

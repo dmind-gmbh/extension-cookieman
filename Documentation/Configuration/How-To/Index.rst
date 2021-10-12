@@ -174,10 +174,10 @@ A new TrackingObject of course needs some additional configuration:
                        PHPSESSID {
                            duration =
                            durationUnit = session
-                           type = cookie_http
+                           type = cookie_http+html
                            provider = Website
-                           # 1b. Set a Regular Expression pattern that matches the name of the cookie, 
-                           #     if the cookie name or parts of it are dynamic, so the cookie can be automatically 
+                           # 1b. Set a Regular Expression pattern that matches the name of the cookie,
+                           #     if the cookie name or parts of it are dynamic, so the cookie can be automatically
                            #     removed in case the user revokes the consent. (optional)
                            #     Please note that you must not provide regex delimiters and can not set options
                            # htmlCookieRemovalPattern = ^regex\.\d+\.[a-fA-F0-9]+$

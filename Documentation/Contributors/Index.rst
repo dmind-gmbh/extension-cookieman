@@ -72,8 +72,8 @@ break any documented feature or the input or output of any function marked with 
 Be sure to shoot us an angry message if we messed up!
 
 We usually release for all maintained TYPO3 APIs at the same time and use consecutive patch versions (e.g.
-2.2.3, 2.2.4, 2.2.5), each supporting one. 
- 
+2.2.3, 2.2.4, 2.2.5), each supporting one.
+
 
 Run locally
 -----------
@@ -101,8 +101,6 @@ during development. Use :command:`ddev composer` from outside the container or j
 - :command:`ddev composer test` runs all important tests. You do not strictly have to run tests before opening a
   pull request - they are also run post-commit on
   `Github actions <https://github.com/dmind-gmbh/extension-cookieman/actions>`__.
-- :command:`ddev composer fix:cgl` tries to fix CGL problems.
+- :command:`ddev composer fix:cgl` tries to fix linting problems.
 - :command:`ddev composer build:docs` [+ any parameters, defaults to "makehtml"] builds documentation using the official
   `TYPO3 docs team docker image <https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/RenderingDocs/Quickstart.html>`__
-  (experimental feature, feedback is welcome). Unfortunately, the parameter :command:`--help` is masked by composer.
-  :command:`composer build:docs -- --help` should work, but it doesn't.
