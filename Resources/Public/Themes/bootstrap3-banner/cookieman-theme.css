@@ -1,5 +1,6 @@
 #cookieman-modal .modal-dialog {
     width: 100%;
+    max-width: unset;
     margin: 0;
 }
 
