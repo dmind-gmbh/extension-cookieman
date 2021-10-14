@@ -16,7 +16,7 @@ jobs:
         strategy:
             fail-fast: false
             matrix:
-                php-version: [7.4, 8.0]
+                php-version: ["7.4", "8.0"]
         steps:
             -   uses: actions/checkout@v2
             -   run: sudo update-alternatives --set php /usr/bin/php${{ matrix.php-version }}
@@ -43,7 +43,7 @@ jobs:
         strategy:
             fail-fast: false
             matrix:
-                php-version: [7.4, 8.0]
+                php-version: ["7.4", "8.0"]
         steps:
             -   uses: actions/checkout@v2
             -   run: sudo update-alternatives --set php /usr/bin/php${{ matrix.php-version }}
