@@ -27,6 +27,9 @@ jobs:
         include:
            - browser: firefox
              experimental: true
+        exclude:
+           - browser: firefox
+             php-version: "7.4"
     steps:
       -   uses: actions/checkout@v2
       # Set PHP version
