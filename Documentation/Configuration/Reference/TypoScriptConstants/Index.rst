@@ -41,13 +41,9 @@ theme
 
    Name of the theme. It is used to extend the :ref:`resourcesBasePath` to create the full path to templates and assets.
 
-   The shipped default themes are (each showcase the functionality a bit differently):
+   The shipped default themes are these: `Themes directory on Github <https://github.com/dmind-gmbh/extension-cookieman/tree/master/Resources/Private/Themes>`__
 
-   * `bootstrap3-banner`: needs Bootstrap 3; uses a text link "settings" instead of a button; shows "Accept all cookies" only after opening the settings; uses custom accordion CSS to show opened/closed state (+/x) and enhanced checkboxes
-   * `bootstrap3-modal`: needs Bootstrap 3, uses custom CSS on the "settings" button and the accordion to show opened/closed state (⯈/⯆), shows the checkboxes inside left of the accordion header
-   * `bootstrap4-modal`: needs Bootstrap 4, uses custom CSS on the "settings" button and the accordion to show opened/closed state (+/x), shows the checkboxes inside right of the accordion header
-
-   You can check out the :ref:`demo` or see the :ref:`screenshots` to get an idea.
+   You can check them out on our :ref:`demo` page.
 
    Of course you can use your own custom theme (see :ref:`customization`).
 
