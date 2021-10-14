@@ -26,6 +26,8 @@ jobs:
         experimental: [false]
         include:
           - browser: firefox
+            php-version: ["8.0"]
+            theme: [bootstrap3-banner, bootstrap3-modal, bootstrap4-modal, bootstrap5-modal, customtheme]
             experimental: true
     steps:
       -   uses: actions/checkout@v2
