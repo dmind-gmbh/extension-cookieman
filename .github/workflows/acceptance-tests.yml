@@ -23,7 +23,7 @@ jobs:
         php-version: [7.4, 8.0]
         browser: [chrome]
         theme: [bootstrap3-banner, bootstrap3-modal, bootstrap4-modal, bootstrap5-modal, customtheme]
-        experimental: false
+        experimental: [false]
         include:
           - browser: firefox
             experimental: true
