@@ -119,6 +119,7 @@
             "@typo3cms install:setup --admin-user-name=admin --admin-password=adminadmin --site-setup-type=site --no-interaction --force"
         ],
         "release:create": [
+            "[ -z \"$IS_DDEV_PROJECT\" ] || ( echo 'Do not use from within ddev - Signing the commit would not work'; exit 1 ) || exit $?",
             "extension-helper release:create",
             "mv cookieman_*.zip .build || exit $?"
         ],
