@@ -5,91 +5,91 @@
     <body>
       <trans-unit id="heading" resname="heading">
         <source>About Cookies</source>
-        <target state="needs-translation">About Cookies</target>
+        <target state="translated">O plikach cookie</target>
       </trans-unit>
       <trans-unit id="dataProtectionDeclaration" resname="dataProtectionDeclaration">
         <source>Data Protection Declaration</source>
-        <target state="needs-translation">Data Protection Declaration</target>
+        <target state="translated">Deklaracja o ochronie danych</target>
       </trans-unit>
       <trans-unit id="imprint" resname="imprint">
         <source>Imprint</source>
-        <target state="needs-translation">Imprint</target>
+        <target state="translated">Nota prawna</target>
       </trans-unit>
       <trans-unit id="introText" resname="introText">
         <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
-        <target state="needs-translation">This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</target>
+        <target state="translated">Ta strona używa pliki cookie. Posiadają one dwie funkcje: z jednej strony zapewniają podstawową funkcjonalność tej strony. Z drugiej pozwalają nam one ulepszyć nasze treści poprzez zapisywanie i analizowanie anonimowych danych użytkowników. Możesz zmienić swoją zgodę na korzystanie z tych ciasteczek w każdej chwili. Więcej informacji na temat ciasteczek na naszym %1$s i dotyczących nas na %2$s.</target>
       </trans-unit>
       <trans-unit id="settings" resname="settings">
         <source>Settings</source>
-        <target state="needs-translation">Settings</target>
+        <target state="translated">Ustawienia</target>
       </trans-unit>
       <trans-unit id="settingsText" resname="settingsText">
         <source>Click here for Cookie %1$s.</source>
-        <target state="needs-translation">Click here for Cookie %1$s.</target>
+        <target state="translated">Kliknij tutaj, aby zobaczyć ciasteczko %1$s.</target>
       </trans-unit>
       <trans-unit id="accept" resname="accept">
         <source>Accept all cookies</source>
-        <target state="needs-translation">Accept all cookies</target>
+        <target state="translated">Akceptuj wszystkie pliki cookie</target>
       </trans-unit>
       <trans-unit id="deny" resname="deny">
         <source>Deny all cookies</source>
-        <target state="needs-translation">Deny all cookies</target>
+        <target state="translated">Zablokuj wszystkie pliki cookie</target>
       </trans-unit>
       <trans-unit id="save" resname="save">
         <source>Save</source>
-        <target state="needs-translation">Save</target>
+        <target state="translated">Zapisz</target>
       </trans-unit>
       <trans-unit id="group.mandatory" resname="group.mandatory">
         <source>Mandatory</source>
-        <target state="needs-translation">Mandatory</target>
+        <target state="translated">Obowiązkowe</target>
       </trans-unit>
       <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc">
         <source>These cookies are needed for a smooth operation of our website.</source>
-        <target state="needs-translation">These cookies are needed for a smooth operation of our website.</target>
+        <target state="translated">Te pliki cookie są potrzebne do sprawnego funkcjonowania naszej strony internetowej.</target>
       </trans-unit>
       <trans-unit id="tableheader.name" resname="tableheader.name">
         <source>Name</source>
-        <target state="needs-translation">Name</target>
+        <target state="translated">Nazwa</target>
       </trans-unit>
       <trans-unit id="tableheader.purpose" resname="tableheader.purpose">
         <source>Purpose</source>
-        <target state="needs-translation">Purpose</target>
+        <target state="translated">cel</target>
       </trans-unit>
       <trans-unit id="tableheader.duration" resname="tableheader.duration">
         <source>Lifetime</source>
-        <target state="needs-translation">Lifetime</target>
+        <target state="translated">Czas życia</target>
       </trans-unit>
       <trans-unit id="tableheader.type" resname="tableheader.type">
         <source>Type</source>
-        <target state="needs-translation">Type</target>
+        <target state="translated">Typ</target>
       </trans-unit>
       <trans-unit id="tableheader.provider" resname="tableheader.provider">
         <source>Provider</source>
-        <target state="needs-translation">Provider</target>
+        <target state="translated">Dostawca</target>
       </trans-unit>
       <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc">
         <source>Saves your consent to using cookies.</source>
-        <target state="needs-translation">Saves your consent to using cookies.</target>
+        <target state="translated">Zapisz zgodę na używanie ciasteczek.</target>
       </trans-unit>
       <trans-unit id="trackingobject.cntcookie.desc" resname="trackingobject.cntcookie.desc">
         <source>Exclusion from counting (as a list of Account IDs)</source>
-        <target state="needs-translation">Exclusion from counting (as a list of Account IDs)</target>
+        <target state="translated">Wykluczenie z liczenia (jako lista ID Klientów)</target>
       </trans-unit>
       <trans-unit id="trackingobject.GS3_v.desc" resname="trackingobject.GS3_v.desc">
         <source>Set by Optimizer webservice. Contains the same Visitor ID as BT_pdc.</source>
-        <target state="needs-translation">Set by Optimizer webservice. Contains the same Visitor ID as BT_pdc.</target>
+        <target state="translated">Ustaw przez usługę sieciową Optimier. Zawiera ten sam identyfikator odwiedzającego co BT_pdc.</target>
       </trans-unit>
       <trans-unit id="trackingobject._et_coid.desc" resname="trackingobject._et_coid.desc">
         <source>Cookie detection</source>
-        <target state="needs-translation">Cookie detection</target>
+        <target state="translated">Wykrywanie ciasteczek</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oi_v2.desc" resname="trackingobject.et_oi_v2.desc">
         <source>Opt-in cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</source>
-        <target state="needs-translation">Opt-in cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</target>
+        <target state="translated">Dozwolone ciasteczko, które przechowuje decyzję odwiedzającego gdy opt-in jest wyświetlany po stronie klienta. Jest również używany do ewentualnego opt-out.</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip.desc" resname="trackingobject.et_oip.desc">
         <source>Opt-in cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</source>
-        <target state="needs-translation">Opt-in cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</target>
+        <target state="translated">Nieaktywne ciasteczko używane przez "signalize". Jeśli klient wybierze "nie", ciasteczko jest ustawione na wartość "nie" i czas trwania 50 x 365 dni. Jeśli klient wybierze "x" lub naciśnie klawisz ESC (bez decyzji), ciasteczko jest ustawione z wartością "nie" dla ważności 1 dzień. Wartość "tak" nie jest wymagana, ponieważ jest to domyślnie podane na podstawie zgody na wciśnięcie w przeglądarce.</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_allow_cookies.desc" resname="trackingobject.et_allow_cookies.desc">
         <source>If the parameter "data-block-cookies" is used, this cookie is called by the API Call _etracker.enableCookies() to indicate that etracker is allowed to set cookies.</source>
@@ -293,11 +293,11 @@
       </trans-unit>
       <trans-unit id="group.external.desc" resname="group.external.desc">
         <source>With the help of these cookies we strive to improve our offer for our users. By means of providing video content or other useful content like maps to enhance the user experience.</source>
-        <target state="needs-translation">With the help of these cookies we strive to improve our offer for our users. By means of providing video content or other useful content like maps to enhance the user experience.</target>
+        <target state="translated">Dzięki tym ciasteczkom staramy się poprawić naszą ofertę dla naszych użytkowników. Poprzez dostarczanie treści wideo lub innych przydatnych treści, takich jak mapy, aby zwiększyć komfort użytkowników.</target>
       </trans-unit>
       <trans-unit id="trackingobject.YouTube.desc" resname="trackingobject.YouTube.desc">
         <source>Is used to connect to YouTube and display to videos.</source>
-        <target state="needs-translation">Is used to connect to YouTube and display to videos.</target>
+        <target state="translated">Jest używany do łączenia się z YouTube i wyświetlania filmów.</target>
       </trans-unit>
       <trans-unit id="trackingobject.GoogleMaps.desc" resname="trackingobject.GoogleMaps.desc">
         <source>Is used to connect to Google Maps and to display those maps.</source>
@@ -333,67 +333,67 @@
       </trans-unit>
       <trans-unit id="duration.none" resname="duration.empty">
         <source>none</source>
-        <target state="needs-translation">none</target>
+        <target state="translated">żadne</target>
       </trans-unit>
       <trans-unit id="duration.minute" resname="duration.minute">
         <source>minute</source>
-        <target state="needs-translation">minute</target>
+        <target state="translated">minuta</target>
       </trans-unit>
       <trans-unit id="duration.minutes" resname="duration.minutes">
         <source>minutes</source>
-        <target state="needs-translation">minutes</target>
+        <target state="translated">minuty</target>
       </trans-unit>
       <trans-unit id="duration.hour" resname="duration.hour">
         <source>hour</source>
-        <target state="needs-translation">hour</target>
+        <target state="translated">godzin</target>
       </trans-unit>
       <trans-unit id="duration.hours" resname="duration.hours">
         <source>hours</source>
-        <target state="needs-translation">hours</target>
+        <target state="translated">godziny</target>
       </trans-unit>
       <trans-unit id="duration.day" resname="duration.day">
         <source>day</source>
-        <target state="needs-translation">day</target>
+        <target state="translated">dzień</target>
       </trans-unit>
       <trans-unit id="duration.days" resname="duration.days">
         <source>days</source>
-        <target state="needs-translation">days</target>
+        <target state="translated">dni</target>
       </trans-unit>
       <trans-unit id="duration.month" resname="duration.month">
         <source>month</source>
-        <target state="needs-translation">month</target>
+        <target state="translated">miesiąc</target>
       </trans-unit>
       <trans-unit id="duration.months" resname="duration.months">
         <source>months</source>
-        <target state="needs-translation">months</target>
+        <target state="translated">miesięcy</target>
       </trans-unit>
       <trans-unit id="duration.year" resname="duration.year">
         <source>year</source>
-        <target state="needs-translation">year</target>
+        <target state="translated">rok</target>
       </trans-unit>
       <trans-unit id="duration.years" resname="duration.years">
         <source>years</source>
-        <target state="needs-translation">years</target>
+        <target state="translated">lat</target>
       </trans-unit>
       <trans-unit id="active" resname="active">
         <source>active</source>
-        <target state="needs-translation">active</target>
+        <target state="translated">aktywny</target>
       </trans-unit>
       <trans-unit id="alwaysactive" resname="alwaysactive">
         <source>always active</source>
-        <target state="needs-translation">always active</target>
+        <target state="translated">Zawsze aktywny</target>
       </trans-unit>
       <trans-unit id="inactive" resname="inactive">
         <source>inactive</source>
-        <target state="needs-translation">inactive</target>
+        <target state="translated">nieaktywny</target>
       </trans-unit>
       <trans-unit id="alwaysinactive" resname="alwaysinactive">
         <source>always inactive</source>
-        <target state="needs-translation">always inactive</target>
+        <target state="translated">zawsze nieaktywny</target>
       </trans-unit>
       <trans-unit id="group.accept" resname="group.accept">
         <source>accept</source>
-        <target state="needs-translation">accept</target>
+        <target state="translated">Akceptuj</target>
       </trans-unit>
     </body>
   </file>
