@@ -12,100 +12,77 @@ See a full TypoScript :ref:`configuration-example`.
 
 All configuration is prepended with `plugin.tx_cookieman.settings`.
 
-
 .. _groups:
 
 groups
 ^^^^^^
+.. rst-class:: dl-parameters
 
-:aspect:`Property`
-   groups
+groups
+   :sep:`|` :aspect:`Data type:` array
+   :sep:`|` :aspect:`Default:` mandatory
+   :sep:`|`
 
-:aspect:`Data type`
-   array
-
-:aspect:`Default`
-   mandatory
-
-:aspect:`Description`
    Holds the group configurations. A group contains several tracking objects.
 
    By default, it only contains the 'mandatory' group, which includes the `CookieConsent` settings cookie.
    See a full TypoScript :ref:`configuration-example`.
 
-
 .. _groups.<group-key>:
 
 groups.<group-key>
 ^^^^^^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
 
-:aspect:`Property`
-   groups.<group-key>
+groups.<group-key>
+   :sep:`|` :aspect:`Data type:` array
+   :sep:`|` :aspect:`Default:` mandatory
+   :sep:`|`
 
-:aspect:`Data type`
-   array
-
-:aspect:`Example`
-   mandatory
-
-:aspect:`Description`
    A single group. The group's key (name) should not contain spaces and non-ASCII characters.
 
    It will be saved in the settings cookie and can be checked with JavaScript: :js:`hasConsented('‹group-key›')`
-
 
 .. _groups.‹group-key›.preselected:
 
 groups.‹group-key›.preselected
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
 
-:aspect:`Property`
-   groups.‹group-key›.preselected
+groups.<group-key>.preselected
+   :sep:`|` :aspect:`Data type:` :ref:`t3tsref:data-type-boolean`
+   :sep:`|` :aspect:`Default:` 0 (not set)
+   :sep:`|`
 
-:aspect:`Data type`
-   :ref:`t3tsref:data-type-boolean`
-
-:aspect:`Default`
-   0 (not set)
-
-:aspect:`Description`
    If enabled (`1`), the group's consent checkbox will be already checked when the popup opens.
 
    The default group 'mandatory' has this set to `1`.
-
 
 .. _groups.‹group-key›.disabled:
 
 groups.‹group-key›.disabled
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
 
-:aspect:`Property`
-   groups.‹group-key›.disabled
+groups.<group-key>.disabled
+   :sep:`|` :aspect:`Data type:` :ref:`t3tsref:data-type-boolean`
+   :sep:`|` :aspect:`Default:` 0 (not set)
+   :sep:`|`
 
-:aspect:`Data type`
-   :ref:`t3tsref:data-type-boolean`
-
-:aspect:`Default`
-   0 (not set)
-
-:aspect:`Description`
    If enabled (`1`), the group's consent checkbox will be disabled (cannot be changed).
 
    The default group 'mandatory' has this set to `1`.
-
 
 .. _groups.‹group-key›.trackingObjects:
 
 groups.‹group-key›.trackingObjects
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
 
-:aspect:`Property`
-   groups.‹group-key›.trackingObjects
+groups.<group-key>.trackingObjects
+   :sep:`|` :aspect:`Data type:`  array with numeric indices
+   :sep:`|`
 
-:aspect:`Data type`
-   array with numeric indices
-
-:aspect:`Description`
    Holds a list of tracking object keys (numbered).
 
    Example:
@@ -117,56 +94,42 @@ groups.‹group-key›.trackingObjects
         1 = fe_typo_user
       }
 
-
 .. _groups.‹group-key›.respectDnt:
 
 groups.‹group-key›.respectDnt
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
 
-:aspect:`Property`
-   groups.‹group-key›.respectDnt
+groups.<group-key>.respectDnt
+   :sep:`|` :aspect:`Data type:` :ref:`t3tsref:data-type-boolean`
+   :sep:`|` :aspect:`Default:` 0 (not set)
+   :sep:`|`
 
-:aspect:`Data type`
-   :ref:`t3tsref:data-type-boolean`
-
-:aspect:`Default`
-   0 (not set)
-
-:aspect:`Description`
    If set to `1`, this group respects to the `"Do-not-track" setting of your browser <https://en.wikipedia.org/wiki/Do_Not_Track>`__.
-
 
 .. _groups.‹group-key›.showDntMessage:
 
 groups.‹group-key›.showDntMessage
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
 
-:aspect:`Property`
-   groups.‹group-key›.showDntMessage
+groups.<group-key>.showDntMessage
+   :sep:`|` :aspect:`Data type:` :ref:`t3tsref:data-type-boolean`
+   :sep:`|` :aspect:`Default:` 0 (not set)
+   :sep:`|`
 
-:aspect:`Data type`
-   :ref:`t3tsref:data-type-boolean`
-
-:aspect:`Default`
-   0 (not set)
-
-:aspect:`Description`
-   If set to `1` **and** the `"Do-not-track" setting of your browser <https://en.wikipedia.org/wiki/Do_Not_Track>`__ is enabled,
-   an additional message about that is shown inside the group.
-
+   If set to `1` **and** the `"Do-not-track" setting of your browser <https://en.wikipedia.org/wiki/Do_Not_Track>`__ is enabled, an additional message about that is shown inside the group.
 
 .. _trackingObjects:
 
 trackingObjects
 ^^^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
 
-:aspect:`Property`
-   trackingObjects
+trackingObjects
+   :sep:`|` :aspect:`Data type:` array
+   :sep:`|`
 
-:aspect:`Data type`
-   array
-
-:aspect:`Description`
    This array holds the tracking object configurations.
 
    The Cookieman extension already provides several **preconfigured** tracking objects
@@ -178,22 +141,17 @@ trackingObjects
 
    The default group 'mandatory' only contains the tracking object `CookieConsent` settings cookie.
 
-
 .. _trackingObjects.‹tracking-object-key›:
 
 trackingObjects.‹tracking-object-key›
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
 
-:aspect:`Property`
-   trackingObjects.‹tracking-object-key›
+trackingObjects.‹tracking-object-key›
+   :sep:`|` :aspect:`Data type:` array
+   :sep:`|` :aspect:`Example:` fe_typo_user
+   :sep:`|`
 
-:aspect:`Data type`
-   array
-
-:aspect:`Example`
-   fe_typo_user
-
-:aspect:`Description`
    A single tracking object configuration.
 
    Example:
@@ -222,114 +180,86 @@ trackingObjects.‹tracking-object-key›
           }
       }
 
-
 .. _trackingObjects.‹tracking-object-key›.inject:
 
 trackingObjects.‹tracking-object-key›.inject
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
 
-:aspect:`Property`
-   trackingObjects.‹tracking-object-key›.inject
+trackingObjects.‹tracking-object-key›.inject
+   :sep:`|` :aspect:`Data type:` :ref:`data-type-html-code`
+   :sep:`|` :aspect:`Example:`  <script src="/path/to/tracking-code.js"></script>
+   :sep:`|`
 
-:aspect:`Data type`
-   :ref:`data-type-html-code`
-
-:aspect:`Example`
-   <script src="/path/to/tracking-code.js"></script>
-
-:aspect:`Description`
    Each HTML tag in here will be appended to the page when the respective group is consented.
    This can be `<script>`, `<img>` or anything else.
 
    You can either use inline script or link to an external file (useful if a HTTP header `Content-Security-Policy` is set).
 
-
 .. _trackingObjects.‹tracking-object-key›.show:
 
 trackingObjects.‹tracking-object-key›.show
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
 
-:aspect:`Property`
-   trackingObjects.‹tracking-object-key›.show
+trackingObjects.‹tracking-object-key›.show
+   :sep:`|` :aspect:`Data type:` array
+   :sep:`|`
 
-:aspect:`Data type`
-   array
-
-:aspect:`Description`
    The actual rows of the table, each representing one "tracking item" (usually a cookie).
-
 
 .. _trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›:
 
 trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
 
-:aspect:`Property`
-   trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›
+trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›
+   :sep:`|` :aspect:`Data type:` array
+   :sep:`|` :aspect:`Example:`  _pk_id
+   :sep:`|`
 
-:aspect:`Data type`
-   array
-
-:aspect:`Example`
-   _pk_id
-
-:aspect:`Description`
    A single "tracking item" (e.g. the name of a cookie).
    A cookie that matches this name will be removed when consent for the group in which this tracking object is included
    is revoked. (see also :ref:`trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.htmlCookieRemovalPattern`)
-
 
 .. _trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.duration:
 
 trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.duration
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
 
-:aspect:`Property`
-   trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.duration
+trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.duration
+   :sep:`|` :aspect:`Data type:` :ref:`data-type-positive-integer`
+   :sep:`|` :aspect:`Example:`  12
+   :sep:`|`
 
-:aspect:`Data type`
-   :ref:`data-type-positive-integer`
-
-:aspect:`Example`
-   12
-
-:aspect:`Description`
    The lifetime of the tracking object (only the "number" part).
-
 
 .. _trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.durationUnit:
 
 trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.durationUnit
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
 
-:aspect:`Property`
-   trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.durationUnit
+trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.durationUnit
+   :sep:`|` :aspect:`Data type:` :ref:`data-type-string`
+   :sep:`|` :aspect:`Example:`  months
+   :sep:`|`
 
-:aspect:`Data type`
-   :ref:`data-type-string`
-
-:aspect:`Example`
-   months
-
-:aspect:`Description`
    The lifetime of the tracking object (only the "unit" part).
-
 
 .. _trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.type:
 
 trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.type
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
 
-:aspect:`Property`
-   trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.type
+trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.type
+   :sep:`|` :aspect:`Data type:` :ref:`data-type-string`
+   :sep:`|` :aspect:`Example:`  cookie_http+html
+   :sep:`|`
 
-:aspect:`Data type`
-   :ref:`data-type-string`
-
-:aspect:`Example`
-   cookie_http+html
-
-:aspect:`Description`
    The type of tracking.
 
    Possible (default) keywords:
@@ -342,40 +272,30 @@ trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.type
    .. note::
       You can add your own types by adding a localization string `type.‹your-type-key›`.
 
-
 .. _trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.provider:
 
 trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.provider
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
 
-:aspect:`Property`
-   trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.provider
+trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.provider
+   :sep:`|` :aspect:`Data type:` :ref:`data-type-string`
+   :sep:`|` :aspect:`Example:` Google
+   :sep:`|`
 
-:aspect:`Data type`
-   :ref:`data-type-string`
-
-:aspect:`Example`
-   Google
-
-:aspect:`Description`
    The provider of the cookie or tracking object.
-
 
 .. _trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.htmlCookieRemovalPattern:
 
 trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.htmlCookieRemovalPattern
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
 
-:aspect:`Property`
-   trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.htmlCookieRemovalPattern
+trackingObjects.‹tracking-object-key›.show.‹tracking-item-key›.htmlCookieRemovalPattern
+   :sep:`|` :aspect:`Data type:` :ref:`data-type-string`
+   :sep:`|` :aspect:`Example:`  ^_gat(?:_UA\-\d+\-\d+)?$
+   :sep:`|`
 
-:aspect:`Data type`
-   :ref:`data-type-string`
-
-:aspect:`Example`
-   ^_gat(?:_UA\-\d+\-\d+)?$
-
-:aspect:`Description`
    You can (optionally) set a regex pattern for cookie names here. It will be used during cookie removal.
    If would remove all matched cookies when consent for the group in which this tracking object is included is revoked.
    If this is empty, the tracking object key is used for deletion (see :ref:`trackingObjects.‹tracking-object-key›`).
