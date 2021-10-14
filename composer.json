@@ -16,7 +16,7 @@
     },
     "require": {
         "php": "^7.4 || ^8.0",
-        "typo3/cms-core": "^11.0 || 11.*.x-dev || dev-master"
+        "typo3/cms-core": "^11.5 || 11.*.x-dev || dev-master"
     },
     "require-dev": {
         "bk2k/extension-helper": "^1.0",
@@ -31,9 +31,8 @@
         "php-coveralls/php-coveralls": "^2.1",
         "phpspec/prophecy-phpunit": "^2.0",
         "roave/security-advisories": "dev-master",
-        "symfony/event-dispatcher": "^4",
-        "typo3/cms-install": "^11.0 || 11.*.x-dev || dev-master",
-        "typo3/cms-tstemplate": "^11.0 || 11.*.x-dev || dev-master",
+        "typo3/cms-install": "^11.5 || 11.*.x-dev || dev-master",
+        "typo3/cms-tstemplate": "^11.5 || 11.*.x-dev || dev-master",
         "typo3/testing-framework": "dev-master"
     },
     "config": {
