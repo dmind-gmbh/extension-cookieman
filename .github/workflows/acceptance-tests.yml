@@ -20,7 +20,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php-version: [7.4, 8.0]
+        php-version: ["7.4", "8.0"]
         browser: [chrome]
         theme: [bootstrap3-banner, bootstrap3-modal, bootstrap4-modal, bootstrap5-modal, customtheme]
         experimental: [false]
