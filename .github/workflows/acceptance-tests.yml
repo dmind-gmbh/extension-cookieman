@@ -16,12 +16,17 @@ jobs:
     env:
       BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
       BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
+    continue-on-error: ${{ matrix.experimental }}
     strategy:
       fail-fast: false
       matrix:
         php-version: [7.4, 8.0]
-        browser: [chrome, firefox]
+        browser: [chrome]
         theme: [bootstrap3-banner, bootstrap3-modal, bootstrap4-modal, bootstrap5-modal, customtheme]
+        experimental: false
+        include:
+          - browser: firefox
+            experimental: true
     steps:
       -   uses: actions/checkout@v2
       # Set PHP version
