@@ -67,10 +67,6 @@ This example configuration is based on the base TypoScript configuration
                    0 = Matomo
                    1 = MyOwnTrackingPixel
                }
-
-                respectDnt = 1
-                showDntMessage = 1
-
            }
        }
    }
