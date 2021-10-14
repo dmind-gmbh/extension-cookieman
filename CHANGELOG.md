@@ -1,3 +1,17 @@
+# 2.9.11
+
+## FEATURE
+
+- [FEATURE] Enable Do-Not-Track in all examples, beautify DNT-message (#244) f140ea6
+
+## TASK
+
+- [TASK] prevent creating release commits from ddev 45af3d9
+
+## BUGFIX
+
+- [BUGFIX] fix bootstrap3-banner compatibility with bootstrap_package d29dd0b
+
 # 2.9.6
 
 ## FEATURE
