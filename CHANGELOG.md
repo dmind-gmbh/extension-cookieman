@@ -1,3 +1,35 @@
+# 2.9.10
+
+# 2.9.9
+
+## FEATURE
+
+- [FEATURE] Enable Do-Not-Track in all examples, beautify DNT-message (#244) d522427
+- [FEATURE] run tests on PHP 8 40ce9b5
+
+## TASK
+
+- [TASK] duplicating the matrix (fed up with experimental matrix entries) 1c89c81
+- [TASK] skip Firefox PHP 7.4 jobs 2247584
+- [TASK] add Firefox to main matrix, allow failure (another go at experimental jobs) 0bffbcf
+- [TASK] use PHP 8 for --dev d26b7b3
+- [TASK] allow failures in Firefox acceptance tests (2) deb7525
+- [TASK] allow failures in Firefox acceptance tests 37d132f
+
+## BUGFIX
+
+- [BUGFIX] fix bootstrap3-banner compatibility with bootstrap_package aaa1a0f
+- [BUGFIX] fix --prefer-lowest stage, update php-cs-fixer 282640a
+- [BUGFIX] fix Firefox acceptance workflow 0b9b437
+- [BUGFIX] prevent yaml integer interpretation (2) 21eea96
+- [BUGFIX] prevent yaml integer interpretation 627fa2b
+- [BUGFIX] require local extensions :@dev 4d10331
+
+## MISC
+
+- [DOCS] remove explicit list of themes - point to Github and demo page instead d36ce3d
+- [DOCS] Style option lists (#246) 5d8b1c7
+
 # 2.9.8
 
 ## MISC
