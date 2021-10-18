@@ -114,8 +114,6 @@ which triggers a message inside the popup (in the "marketing" group) when enable
 Screenshots
 ===========
 
-You can find some notes about the differences among the example themes here: :ref:`theme`.
-
 (Click on the screenshots to open the full resolution.)
 
 .. figure:: ../Images/cookieman1.jpg
