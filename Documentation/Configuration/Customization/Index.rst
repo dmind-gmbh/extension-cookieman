@@ -83,21 +83,25 @@ These **HTML element attributes** control the functionality:
 
 <* data-cookieman-save>
 ^^^^^^^^^^^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
 
-   Save and close
+Save and close
 
+Example:
+
+.. code-block:: HTML
+
+   <button class="btn btn-default"
+           style="display: none"
+           data-cookieman-save>
+               {f:translate(key: 'save')}
+   </button>
 
 <* data-cookieman-accept-all>
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
 
-   Mark all checkboxes
-
-<* data-cookieman-accept-none>
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-   Uncheck all checkboxes (will just leave the groups with the options preselected=1, disabled=1 checked)
-
-They can appear multiple times and also together on the same element.
+Mark all checkboxes
 
 Example:
 
@@ -107,4 +111,22 @@ Example:
            data-cookieman-accept-all
            data-cookieman-save>
                {f:translate(key: 'accept')}
+   </button>
+
+<* data-cookieman-accept-none>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
+
+Uncheck all checkboxes (will just leave the groups with the options preselected=1, disabled=1 checked)
+
+They can appear multiple times and also together on the same element.
+
+Example:
+
+.. code-block:: HTML
+
+   <button class="btn btn-primary"
+           data-cookieman-accept-none
+           data-cookieman-save>
+               {f:translate(key: 'deny')}
    </button>
