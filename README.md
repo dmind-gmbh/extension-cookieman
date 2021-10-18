@@ -17,10 +17,10 @@ You can click around the included demo themes in our [demo](https://cookieman.d-
 ## Links
 | **Features / Documentation / Manual** | <https://docs.typo3.org/p/dmind/cookieman/master/en-us/> |
 | --- | --- |
-| Demo | <https://cookieman.d-mind.de/> |
+| Demo (example themes and languages) | <https://cookieman.d-mind.de/> |
 | TYPO3 extension repository |	<https://extensions.typo3.org/extension/cookieman> |
-| CI | <https://github.com/dmind-gmbh/extension-cookieman/actions> |
-| Packagist | <https://packagist.org/packages/dmind/cookieman> |
+| Translations (Crowdin) | <https://crowdin.com/project/typo3-extension-cookieman> |
+| PHP composer package (Packagist) | <https://packagist.org/packages/dmind/cookieman> |
 
 ## Contact
 For **bugs** and **feature** requests use the [Github bug tracker](https://github.com/dmind-gmbh/extension-cookieman/issues).
