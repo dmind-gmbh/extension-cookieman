@@ -22,4 +22,8 @@ Learn how to configure Cookieman:
    :glob:
    :titlesonly:
 
-   */*
+   CookieUsage/*
+   Example/*
+   Reference/*
+   Customization/*
+   How-To/*
