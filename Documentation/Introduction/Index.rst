@@ -1,3 +1,5 @@
+.. figure:: ../Images/header-cookieman-certified-extension-typo3.png
+
 .. include:: ../Includes.txt
 
 
@@ -116,49 +118,20 @@ You can find some notes about the differences among the example themes here: :re
 
 (Click on the screenshots to open the full resolution.)
 
-.. figure:: ../Images/bs4-modal-initial.png
+.. figure:: ../Images/cookieman1.jpg
    :class: with-shadow
-   :alt: Bootstrap 4 Modal
    :width: 400px
 
-   Bootstrap 4 Modal, status on page load. Groups can be opened for details.
+   Showcase of a site implementation
 
-
-.. figure:: ../Images/bs3-modal.png
+.. figure:: ../Images/cookieman2.jpg
    :class: with-shadow
-   :alt: Bootstrap 3 Modal
    :width: 400px
 
-   Bootstrap 4 Modal, opened. Shows details about the used cookies.
+   Showcase of a site implementation
 
-
-.. figure:: ../Images/bs4-modal-colors.png
+.. figure:: ../Images/cookieman3.jpg
    :class: with-shadow
-   :alt: Bootstrap 4 Modal
    :width: 400px
 
-   Bootstrap 4 Modal with customized colors.
-
-
-.. figure:: ../Images/bs3-modal-initial.png
-   :class: with-shadow
-   :alt: Bootstrap 3 Modal
-   :width: 400px
-
-   Bootstrap 3 Modal, status on page load. Groups can be opened for details.
-
-
-.. figure:: ../Images/bs3-banner-initial.png
-   :class: with-shadow
-   :alt: Bootstrap 3 Banner
-   :width: 400px
-
-   Bootstrap 3 Banner, status on page load.
-
-
-.. figure:: ../Images/bs3-banner-opened.png
-   :class: with-shadow
-   :alt: Bootstrap 3 Banner
-   :width: 400px
-
-   Bootstrap 3 Banner, opened. Shows details about the used cookies.
+   Showcase of a site implementation

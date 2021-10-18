@@ -17,10 +17,11 @@ Requirements
 *  If you reimplement your own theme, it has no requirements at all
 *  for the example themes:
 
-   *  Bootstrap 3/4 CSS
-   *  Bootstrap 3/4 JavaScript for *collapse* and *modal*
+   *  Bootstrap 3/4/5 CSS
+   *  Bootstrap 3/4/5 JavaScript for *collapse* and *modal*
    *  jQuery
 
+* we also apreciate new and creative custom themes
 
 .. _installation-steps:
 
