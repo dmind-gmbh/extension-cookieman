@@ -20,7 +20,6 @@
     },
     "require-dev": {
         "bk2k/bootstrap-package": "^10.0",
-        "bk2k/extension-helper": "^1.0",
         "browserstack/browserstack-local": "dev-master",
         "codeception/codeception": "^3.1",
         "dmind/cookieman-test": "@dev",
@@ -34,6 +33,7 @@
         "typo3/cms-impexp": "^8.7.0",
         "typo3/cms-rte-ckeditor": "^8.7.0",
         "typo3/cms-tstemplate": "^8.7.0",
+        "typo3/tailor": "^1.3",
         "typo3/testing-framework": "^2.0.4"
     },
     "config": {
@@ -126,13 +126,12 @@
         ],
         "release:create": [
             "[ -z \"$IS_DDEV_PROJECT\" ] || ( echo 'Do not use from within ddev - Signing the commit would not work'; exit 1 ) || exit $?",
-            "extension-helper release:create",
-            "mv cookieman_*.zip .build || exit $?"
-        ],
-        "release:prepare": [
-            "@build",
-            "[ -z \"$(git status --porcelain)\" ] || ( echo Working copy not clean; exit 1 )",
-            "@test"
+            "tailor set-version",
+            "echo [RELEASE] $(grep release Documentation/Settings.cfg | grep -Eo '([0-9]+(\\.|$)){3}') > /tmp/COMMIT_MSG || exit $?",
+            "echo >> /tmp/COMMIT_MSG || exit $?",
+            "git log $(git describe --tags --abbrev=0)..HEAD --no-merges --oneline --pretty=format:'%cs %s [%aN] (%h)' >> /tmp/COMMIT_MSG || exit $?",
+            "git commit --gpg-sign -aF /tmp/COMMIT_MSG || exit $?",
+            "git tag --sign -F /tmp/COMMIT_MSG"
         ],
         "test": [
             "@test:cgl",
