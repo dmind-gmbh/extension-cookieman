@@ -5,7 +5,7 @@
 [![Latest Stable Version](https://poser.pugx.org/dmind/cookieman/v/stable)](https://packagist.org/packages/dmind/cookieman)
 [![License](https://poser.pugx.org/dmind/cookieman/license)](https://packagist.org/packages/dmind/cookieman)
 
-![Cookieman logo](Documentation/Images/cookieman.png)
+![Cookieman logo](Documentation/Images/illu-3zu2-cookieman-d-mind.png)
 
 # TYPO3 extension Cookieman
 
