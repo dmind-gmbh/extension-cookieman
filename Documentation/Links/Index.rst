@@ -39,3 +39,6 @@ Pull requests are very welcome.
 .. figure:: ../Images/d-mind_logo_rgb.png
    :alt: d-mind
    :target: https://www.d-mind.de/
+
+.. figure:: ../Images/illl-transparenter-hintergrund.png
+
