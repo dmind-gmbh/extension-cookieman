@@ -76,7 +76,7 @@ For contributing code, see the section :ref:`contributors`.
    Introduction/*
 
 .. toctree::
-   :caption: For Intergrators
+   :caption: For Integrators
    :glob:
    :titlesonly:
 
