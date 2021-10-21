@@ -13,6 +13,12 @@
 Cookieman
 =============================================================
 
+.. rst-class:: horizbuttons-tip-m
+
+- :ref:`configuration-howto`
+- :ref:`configuration`
+- :ref:`javascript-api`
+
 :Version:
    |release|
 
@@ -68,10 +74,27 @@ For contributing code, see the section :ref:`contributors`.
    :titlesonly:
 
    Introduction/*
+
+.. toctree::
+   :caption: For Integrators
+   :glob:
+   :titlesonly:
+
    Installation/*
    Configuration/*
    Translation/*
+
+.. toctree::
+   :caption: For Developer
+   :glob:
+   :titlesonly:
+
    Developer/*
    Contributors/*
+
+.. toctree::
+   :glob:
+   :titlesonly:
+
    Links/*
    Sitemap
