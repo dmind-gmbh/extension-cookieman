@@ -10,16 +10,16 @@ Links
 :Demo:
    http://cookieman.d-mind.de/
 
-:TER:
+:TYPO3 extension repository:
    https://extensions.typo3.org/extension/cookieman
 
-:Git Repository:
+:Git Repository (code, bug reports, feature requests, general discussion):
    https://github.com/dmind-gmbh/extension-cookieman
 
-:Packagist:
+:Packagist (composer package):
    https://packagist.org/packages/dmind/cookieman
 
-:Contact:
+:Private contact:
    projekt-cookieman@d-mind.de
 
 :Website:
