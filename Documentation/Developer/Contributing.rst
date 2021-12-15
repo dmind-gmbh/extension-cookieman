@@ -74,7 +74,7 @@ We strive to support the latest version, too (but no promises).
 Releases
 --------
 
-Releases follow `semver <https://semver.org/>`. Including with composer via `dmind/cookieman: ^2.0` shall never
+Releases follow `semver <https://semver.org/>`__. Including with composer via `dmind/cookieman: ^2.0` shall never
 break any documented feature or the input or output of any function marked with @api in the code.
 Be sure to shoot us an angry message if we messed up!
 
