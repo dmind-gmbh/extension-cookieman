@@ -33,7 +33,7 @@
       </trans-unit>
       <trans-unit id="deny" resname="deny">
         <source>Deny all cookies</source>
-        <target state="needs-translation">Deny all cookies</target>
+        <target state="translated">Denegar todas las cookies</target>
       </trans-unit>
       <trans-unit id="save" resname="save" approved="yes">
         <source>Save</source>
