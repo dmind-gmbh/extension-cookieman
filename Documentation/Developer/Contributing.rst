@@ -24,6 +24,13 @@ on the top right to submit your improvement via a Pull Request.
 
 .. _contribute_feedback:
 
+Translations
+============
+
+Translations are managed on the official TYPO3 translation platform.
+See :ref:`Translation <translation>`.
+
+
 Feedback
 ========
 
