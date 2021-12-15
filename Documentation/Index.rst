@@ -85,7 +85,7 @@ For contributing code, see the section :ref:`contributors`.
    Translation/*
 
 .. toctree::
-   :caption: For Developer
+   :caption: For Developers
    :glob:
    :titlesonly:
 
