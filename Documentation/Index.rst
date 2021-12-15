@@ -67,5 +67,27 @@ For contributing code, see the section :ref:`contributors`.
    :glob:
    :titlesonly:
 
-   */*
+   Introduction/*
+
+.. toctree::
+   :caption: For Integrators
+   :glob:
+   :titlesonly:
+
+   Installation/*
+   Configuration/*
+   Translation/*
+
+.. toctree::
+   :caption: For Developers
+   :glob:
+   :titlesonly:
+
+   Developer/*
+
+.. toctree::
+   :glob:
+   :titlesonly:
+
+   Links/*
    Sitemap
