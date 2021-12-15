@@ -90,7 +90,6 @@ For contributing code, see the section :ref:`contributors`.
    :titlesonly:
 
    Developer/*
-   Contributors/*
 
 .. toctree::
    :glob:
