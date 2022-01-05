@@ -31,9 +31,9 @@
         <source>Accept all cookies</source>
         <target state="final">Aceptar todas cookies</target>
       </trans-unit>
-      <trans-unit id="deny" resname="deny">
+      <trans-unit id="deny" resname="deny" approved="yes">
         <source>Deny all cookies</source>
-        <target state="translated">Denegar todas las cookies</target>
+        <target state="final">Denegar todas las cookies</target>
       </trans-unit>
       <trans-unit id="save" resname="save" approved="yes">
         <source>Save</source>
@@ -63,9 +63,9 @@
         <source>Type</source>
         <target state="final">Tipo</target>
       </trans-unit>
-      <trans-unit id="tableheader.provider" resname="tableheader.provider">
+      <trans-unit id="tableheader.provider" resname="tableheader.provider" approved="yes">
         <source>Provider</source>
-        <target state="needs-translation">Provider</target>
+        <target state="final">Proveedor</target>
       </trans-unit>
       <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc" approved="yes">
         <source>Saves your consent to using cookies.</source>
@@ -227,9 +227,9 @@
         <source>Used by DoubleClick (Google Tag Manager) to help identify the visitors by either age, gender or interests.</source>
         <target state="needs-translation">Used by DoubleClick (Google Tag Manager) to help identify the visitors by either age, gender or interests.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._gac_--property-id--.desc" resname="trackingobject._gac_--property-id--.desc">
+      <trans-unit id="trackingobject._gac_--property-id--.desc" resname="trackingobject._gac_--property-id--.desc" approved="yes">
         <source>Contains campaign related information for the user. If you have linked your Google Analytics and Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.</source>
-        <target state="needs-translation">Contains campaign related information for the user. If you have linked your Google Analytics and Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.</target>
+        <target state="final">Contiene información relacionada con la campaña para el usuario. Si ha vinculado sus cuentas de Google Analytics y Google Ads, las etiquetas de conversión del sitio web de Google Ads leerán esta cookie, a menos que opte por excluirla.</target>
       </trans-unit>
       <trans-unit id="trackingobject._gat.desc" resname="trackingobject._gat.desc">
         <source>Used to throttle request rate.</source>
@@ -291,9 +291,9 @@
         <source>External content</source>
         <target state="needs-translation">External content</target>
       </trans-unit>
-      <trans-unit id="group.external.desc" resname="group.external.desc">
+      <trans-unit id="group.external.desc" resname="group.external.desc" approved="yes">
         <source>With the help of these cookies we strive to improve our offer for our users. By means of providing video content or other useful content like maps to enhance the user experience.</source>
-        <target state="translated">Con la ayuda de estas cookies, nos esforzamos por mejorar nuestra oferta para nuestros usuarios. Mediante datos anonimizados de los usuarios del sitio web podemos optimizar el flujo de usuarios. Esto nos permite mejorar los anuncios y el contenido del sitio web.</target>
+        <target state="final">Con la ayuda de estas cookies, nos esforzamos por mejorar nuestra oferta para nuestros usuarios. Mediante datos anonimizados de los usuarios del sitio web podemos optimizar el flujo de usuarios. Esto nos permite mejorar los anuncios y el contenido del sitio web.</target>
       </trans-unit>
       <trans-unit id="trackingobject.YouTube.desc" resname="trackingobject.YouTube.desc">
         <source>Is used to connect to YouTube and display to videos.</source>
