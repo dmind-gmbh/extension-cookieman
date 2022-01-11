@@ -5,67 +5,67 @@
     <body>
       <trans-unit id="heading" resname="heading">
         <source>About Cookies</source>
-        <target state="needs-translation">About Cookies</target>
+        <target state="translated">O Cookies</target>
       </trans-unit>
       <trans-unit id="dataProtectionDeclaration" resname="dataProtectionDeclaration">
         <source>Data Protection Declaration</source>
-        <target state="needs-translation">Data Protection Declaration</target>
+        <target state="translated">Prohlášení o ochraně údajů</target>
       </trans-unit>
       <trans-unit id="imprint" resname="imprint">
         <source>Imprint</source>
-        <target state="needs-translation">Imprint</target>
+        <target state="translated">Otisk</target>
       </trans-unit>
       <trans-unit id="introText" resname="introText">
         <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
-        <target state="needs-translation">This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</target>
+        <target state="translated">Tyto webové stránky používají soubory cookie. Ty mají dvě funkce: Na jedné straně zajišťují základní funkčnost těchto webových stránek. Na druhé straně nám umožňují zlepšovat náš obsah pro vás ukládáním a analýzou anonymizovaných uživatelských dat. Svůj souhlas s používáním těchto souborů cookie můžete kdykoli odvolat. Více informací o souborech cookie najdete na našich %1$s a o nás na %2$s.</target>
       </trans-unit>
       <trans-unit id="settings" resname="settings">
         <source>Settings</source>
-        <target state="needs-translation">Settings</target>
+        <target state="translated">Nastavení</target>
       </trans-unit>
       <trans-unit id="settingsText" resname="settingsText">
         <source>Click here for Cookie %1$s.</source>
-        <target state="needs-translation">Click here for Cookie %1$s.</target>
+        <target state="translated">Klikněte zde pro cookie %1$s.</target>
       </trans-unit>
       <trans-unit id="accept" resname="accept">
         <source>Accept all cookies</source>
-        <target state="needs-translation">Accept all cookies</target>
+        <target state="translated">Přijmout všechny soubory cookie</target>
       </trans-unit>
       <trans-unit id="deny" resname="deny">
         <source>Deny all cookies</source>
-        <target state="needs-translation">Deny all cookies</target>
+        <target state="translated">Odmítnout všechny soubory cookie</target>
       </trans-unit>
       <trans-unit id="save" resname="save">
         <source>Save</source>
-        <target state="needs-translation">Save</target>
+        <target state="translated">Uložit</target>
       </trans-unit>
       <trans-unit id="group.mandatory" resname="group.mandatory">
         <source>Mandatory</source>
-        <target state="needs-translation">Mandatory</target>
+        <target state="translated">Nezbytné</target>
       </trans-unit>
       <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc">
         <source>These cookies are needed for a smooth operation of our website.</source>
-        <target state="needs-translation">These cookies are needed for a smooth operation of our website.</target>
+        <target state="translated">Tyto soubory cookie jsou potřebné pro bezproblémový provoz našich webových stránek.</target>
       </trans-unit>
       <trans-unit id="tableheader.name" resname="tableheader.name">
         <source>Name</source>
-        <target state="needs-translation">Name</target>
+        <target state="translated">Jméno</target>
       </trans-unit>
       <trans-unit id="tableheader.purpose" resname="tableheader.purpose">
         <source>Purpose</source>
-        <target state="needs-translation">Purpose</target>
+        <target state="translated">Účel</target>
       </trans-unit>
       <trans-unit id="tableheader.duration" resname="tableheader.duration">
         <source>Lifetime</source>
-        <target state="needs-translation">Lifetime</target>
+        <target state="translated">Doživotní</target>
       </trans-unit>
       <trans-unit id="tableheader.type" resname="tableheader.type">
         <source>Type</source>
-        <target state="needs-translation">Type</target>
+        <target state="translated">Typ</target>
       </trans-unit>
       <trans-unit id="tableheader.provider" resname="tableheader.provider">
         <source>Provider</source>
-        <target state="needs-translation">Provider</target>
+        <target state="translated">Poskytovatel</target>
       </trans-unit>
       <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc">
         <source>Saves your consent to using cookies.</source>
