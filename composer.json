@@ -33,7 +33,6 @@
         "helhum/typo3-console": "^6.3",
         "php-coveralls/php-coveralls": "^2.1",
         "phpspec/prophecy-phpunit": "^2.0",
-        "roave/security-advisories": "dev-master",
         "typo3/cms-install": "^10.0 || dev-master",
         "typo3/cms-tstemplate": "^10.0 || dev-master",
         "typo3/tailor": "^1.3",
