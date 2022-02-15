@@ -32,7 +32,6 @@
         "friendsofphp/php-cs-fixer": "^2.14",
         "helhum/typo3-console": "^5.7",
         "php-coveralls/php-coveralls": "^2.1",
-        "roave/security-advisories": "dev-master",
         "typo3/cms-install": "^9.5.8",
         "typo3/cms-tstemplate": "^9.5.8",
         "typo3/tailor": "^1.3",
@@ -41,7 +40,12 @@
     "config": {
         "bin-dir": ".build/bin",
         "sort-packages": true,
-        "vendor-dir": ".build/vendor"
+        "vendor-dir": ".build/vendor",
+        "allow-plugins": {
+            "typo3/cms-composer-installers": true,
+            "typo3/class-alias-loader": true,
+            "helhum/typo3-console-plugin": true
+        }
     },
     "extra": {
         "branch-alias": {
