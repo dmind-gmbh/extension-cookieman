@@ -109,5 +109,3 @@ during development. Use :command:`ddev composer` from outside the container or j
   pull request - they are also run post-commit on
   `Github actions <https://github.com/dmind-gmbh/extension-cookieman/actions>`__.
 - :command:`ddev composer fix:cgl` tries to fix linting problems.
-- :command:`ddev composer build:docs` [+ any parameters, defaults to "makehtml"] builds documentation using the official
-  `TYPO3 docs team docker image <https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/RenderingDocs/Quickstart.html>`__
