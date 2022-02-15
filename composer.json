@@ -30,7 +30,6 @@
         "php-coveralls/php-coveralls": "^2.1",
         "phpspec/prophecy-phpunit": "^2.0",
         "phpunit/phpunit": "^9.5",
-        "roave/security-advisories": "dev-master",
         "typo3/cms-install": "^11.5 || 11.*.x-dev || dev-main",
         "typo3/cms-tstemplate": "^11.5 || 11.*.x-dev || dev-main",
         "typo3/tailor": "^1.3",
@@ -39,7 +38,11 @@
     "config": {
         "bin-dir": ".build/bin",
         "sort-packages": true,
-        "vendor-dir": ".build/vendor"
+        "vendor-dir": ".build/vendor",
+        "allow-plugins": {
+            "typo3/class-alias-loader": true,
+            "typo3/cms-composer-installers": true
+        }
     },
     "extra": {
         "branch-alias": {
