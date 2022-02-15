@@ -39,7 +39,12 @@
     "config": {
         "bin-dir": ".build/bin",
         "sort-packages": true,
-        "vendor-dir": ".build/vendor"
+        "vendor-dir": ".build/vendor",
+        "allow-plugins": {
+            "typo3/cms-composer-installers": true,
+            "typo3/class-alias-loader": true,
+            "helhum/typo3-console-plugin": true
+        }
     },
     "extra": {
         "branch-alias": {
