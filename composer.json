@@ -77,11 +77,6 @@
             "@build:prepare",
             "@build:prod"
         ],
-        "build:docs": [
-            "rm -rf ./Documentation-GENERATED-temp/Result/project/0.0.0/_buildinfo/",
-            "bash -c 'echo \"${@:-makehtml}\" | netcat docs 7000' --",
-            "cat ./Documentation-GENERATED-temp/Result/project/0.0.0/_buildinfo/warnings.txt 2>/dev/null"
-        ],
         "build:prepare": [
             "yarn install --save-dev --cwd=Build/"
         ],
