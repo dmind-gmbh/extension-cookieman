@@ -82,6 +82,15 @@ We usually release for all maintained TYPO3 APIs at the same time and use consec
 2.2.3, 2.2.4, 2.2.5), each supporting one.
 
 
+Create a new release
+~~~~~~~~~~~~~~~~~~~~
+
+:command:`composer release:create <version, e.g. 2.5.7>` will create a release commit and an annotated Git tag.
+Pushing it with :command:`git push --tags` makes the new release available for composer (packagist).
+It also triggers the Github Actions workflow "publish-ter" which uses the TER API via "tailor" to publish the new
+release to TER.
+
+
 Run locally
 -----------
 
