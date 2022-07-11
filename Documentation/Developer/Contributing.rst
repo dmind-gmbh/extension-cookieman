@@ -105,6 +105,16 @@ well).
 
 To throw away the database and restart cleanly, run :command:`ddev rm -ORU && git clean -fdX -e '!.idea' && ddev start`
 
+
+Run in Gitpod
+-------------
+
+Thanks to https://drud.github.io/ddev-gitpod-launcher/, we are able to develop DDEV project in the cloud.
+
+Using `this link<https://gitpod.io/#DDEV_REPO=https%3A%2F%2Fgithub.com%2Fdmind-gmbh%2Fextension-cookieman,DDEV_ARTIFACTS=/https://github.com/drud/ddev-gitpod-launcher/>`__
+opens the cookieman development environment in Gitpod.
+
+
 Composer scripts
 ----------------
 
