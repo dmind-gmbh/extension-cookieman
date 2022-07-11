@@ -1,7 +1,7 @@
 // requires: cookieman.js, Bootstrap-JS, jQuery
 /** global: cookieman */
 /** global: jQuery */
-cookieman.theme = (function () {
+(function () {
     "use strict";
     var showBackdrop = true
 
@@ -27,4 +27,4 @@ cookieman.theme = (function () {
             $modal.modal('hide')
         })
     }
-}())
+})()
