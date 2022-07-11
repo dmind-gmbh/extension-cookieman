@@ -12,6 +12,7 @@ labels:
 * [ ] Can you reproduce the problem on TYPO3 v8.7 LTS
 * [ ] Can you reproduce the problem on TYPO3 v9.5 LTS
 * [ ] Can you reproduce the problem on TYPO3 v10.4 LTS
+* [ ] Can you reproduce the problem on TYPO3 v11.5 LTS
 * [ ] Can you reproduce the problem on TYPO3 master
 
 ## Description
