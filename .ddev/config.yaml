@@ -29,7 +29,7 @@ hooks:
   - exec-host: .ddev/commands/copy-git-config
 project_tld: test
 use_dns_when_possible: true
-composer_version: "2"
+composer_version: "1"
 
 
 # This config.yaml was created with ddev version v1.16.0
