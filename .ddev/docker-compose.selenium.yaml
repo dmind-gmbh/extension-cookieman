@@ -6,7 +6,7 @@ services:
     image: selenium/node-chrome:3
     networks: [default, ddev_default]
     external_links:
-      - "ddev-router:extension-cookieman-master.test"
+      - "ddev-router:extension-cookieman-8lts.test"
     depends_on:
       - selenium-hub
     labels:
@@ -25,7 +25,7 @@ services:
     image: selenium/node-firefox:3
     networks: [default, ddev_default]
     external_links:
-      - "ddev-router:extension-cookieman-master.test"
+      - "ddev-router:extension-cookieman-8lts.test"
     depends_on:
       - selenium-hub
     labels:
