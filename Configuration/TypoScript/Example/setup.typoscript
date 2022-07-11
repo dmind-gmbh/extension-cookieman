@@ -34,6 +34,7 @@ plugin.tx_cookieman {
                     0 = GoogleMaps
                     10 = YouTube
                     20 = MicrosoftStream
+                    30 = Vimeo
                 }
 
                 respectDnt = 1
