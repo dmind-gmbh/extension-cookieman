@@ -1,0 +1,48 @@
+plugin.tx_cookieman.settings.trackingObjects {
+  Vimeo {
+    show {
+      __cf_bm {
+        duration = 1
+        durationUnit = year
+        type = cookie_http
+        provider = Vimeo
+      }
+      OptanonAlertBoxClosed {
+        duration = 1
+        durationUnit = year
+        type = cookie_http+html
+        provider = Vimeo
+      }
+      OptanonConsent {
+        duration = 1
+        durationUnit = year
+        type = cookie_http+html
+        provider = Vimeo
+      }
+      player {
+        duration = 1
+        durationUnit = year
+        type = cookie_http+html
+        provider = Vimeo
+      }
+      vuid {
+        duration = 2
+        durationUnit = years
+        type = cookie_http+html
+        provider = Vimeo
+      }
+      _abexps {
+        duration = 1
+        durationUnit = year
+        type = cookie_http+html
+        provider = Vimeo
+      }
+      continuous_play_v3 {
+        duration = 2
+        durationUnit = years
+        type = cookie_http+html
+        provider = Vimeo
+      }
+    }
+  }
+}
