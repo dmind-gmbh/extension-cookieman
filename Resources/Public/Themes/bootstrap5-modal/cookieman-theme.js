@@ -1,6 +1,6 @@
 // requires: cookieman.js, Bootstrap-JS
 /** global: cookieman */
-cookieman.theme = (function () {
+(function () {
   "use strict";
   var showBackdrop = true,
     showSettingsBtn = document.querySelector('[aria-controls="cookieman-settings"]'),
@@ -30,4 +30,4 @@ cookieman.theme = (function () {
   cookieman.hide = function () {
     modal && modal.hide()
   }
-}())
+})()
