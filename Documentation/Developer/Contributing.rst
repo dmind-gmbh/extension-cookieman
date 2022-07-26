@@ -85,6 +85,9 @@ We usually release for all maintained TYPO3 APIs at the same time and use consec
 Create a new release
 ~~~~~~~~~~~~~~~~~~~~
 
+Before creating a release you should merge the automatic Crowdin PRs until TYPO3v9 (in v10+ translations are 
+Crowdin-only, for earlier versions we distribute them because we were not on the older "poodle" server).
+
 :command:`composer release:create <version, e.g. 2.5.7>` will create a release commit and an annotated Git tag.
 Pushing it with :command:`git push --tags` makes the new release available for composer (packagist).
 It also triggers the Github Actions workflow "publish-ter" which uses the TER API via "tailor" to publish the new
@@ -104,6 +107,16 @@ so far - the script runs under the container environment so good chances that th
 well).
 
 To throw away the database and restart cleanly, run :command:`ddev rm -ORU && git clean -fdX -e '!.idea' && ddev start`
+
+
+Run in Gitpod
+-------------
+
+Thanks to https://drud.github.io/ddev-gitpod-launcher/, we are able to develop DDEV project in the cloud.
+
+Using `this link<https://gitpod.io/#DDEV_REPO=https%3A%2F%2Fgithub.com%2Fdmind-gmbh%2Fextension-cookieman,DDEV_ARTIFACTS=/https://github.com/drud/ddev-gitpod-launcher/>`__
+opens the cookieman development environment in Gitpod.
+
 
 Composer scripts
 ----------------

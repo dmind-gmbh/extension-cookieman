@@ -352,9 +352,11 @@ var cookieman = (function () {
         // xxx.yy
         var secondLevelDomain = fullDomain.split('.').slice(-2).join('.')
         Cookies.remove(name)
-        Cookies.remove(name, {path: ''})
+        Cookies.remove(name, {path: '/'})
         Cookies.remove(name, {path: '', domain: fullDomain})
+        Cookies.remove(name, {path: '/', domain: fullDomain})
         Cookies.remove(name, {path: '', domain: '.' + secondLevelDomain})
+        Cookies.remove(name, {path: '/', domain: '.' + secondLevelDomain})
     }
 
     function init() {
