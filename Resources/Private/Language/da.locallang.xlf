@@ -395,6 +395,34 @@
         <source>accept</source>
         <target state="final">acceptér</target>
       </trans-unit>
+      <trans-unit id="trackingobject.__cf_bm.desc" resname="trackingobject.__cf_bm.desc" approved="yes">
+        <source>Required to see Vimeo content.</source>
+        <target state="final">Kræves for at se Vimeo-indhold.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.OptanonAlertBoxClosed.desc" resname="trackingobject.OptanonAlertBoxClosed.desc" approved="yes">
+        <source>Saves the state of your Vimeo data protection consent.</source>
+        <target state="final">Gemmer tilstanden af dit Vimeo databeskyttelsessamtykke.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.OptanonConsent.desc" resname="trackingobject.OptanonConsent.desc" approved="yes">
+        <source>Saves the state of your Vimeo data protection consent.</source>
+        <target state="final">Gemmer tilstanden af dit Vimeo databeskyttelsessamtykke.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.player.desc" resname="trackingobject.player.desc" approved="yes">
+        <source>This cookie saves your preferences before playing an embedded Vimeo video. This will bring you back to your preferred settings the next time you watch a Vimeo video.</source>
+        <target state="final">Denne cookie gemmer dine præferencer, før du spiller en indlejret Vimeo video. Dette vil bringe dig tilbage til dine foretrukne indstillinger, næste gang du ser en Vimeo video.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.vuid.desc" resname="trackingobject.vuid.desc" approved="yes">
+        <source>This cookie gathers information about your actions on websites embedding Vimeo videos.</source>
+        <target state="final">Denne cookie indsamler oplysninger om dine handlinger på hjemmesider, der integrerer Vimeo videoer.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._abexps.desc" resname="trackingobject._abexps.desc" approved="yes">
+        <source>This cookie remembers your settings. Settings can include language, region or login user. In general this cookie saves data about how you use Vimeo.</source>
+        <target state="final">Denne cookie husker dine indstillinger. Indstillinger kan omfatte sprog, region eller login-bruger. Generelt gemmer denne cookie data om, hvordan du bruger Vimeo.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.continuous_play_v3.desc" resname="trackingobject.continuous_play_v3.desc" approved="yes">
+        <source>This cookie is a first-party cookie from Vimeo. The cookie collects information on how you use the Vimeo service. For example, the cookie saves when you pause and play a video again.</source>
+        <target state="final">Denne cookie er en førsteparts-cookie fra Vimeo. Cookien indsamler oplysninger om, hvordan du bruger Vimeo-tjenesten. For eksempel gemmer cookien, når du holder pause og afspiller en video igen.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

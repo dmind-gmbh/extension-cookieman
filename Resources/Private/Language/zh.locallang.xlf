@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.0">
-  <file source-language="en" datatype="plaintext" original="Frontend" date="2019-10-28T12:20:51Z" product-name="cookieman" target-language="zh-CN">
+  <file source-language="en" datatype="plaintext" original="Frontend" date="2019-10-28T12:20:51Z" product-name="cookieman" target-language="zh-TW">
     <header/>
     <body>
       <trans-unit id="heading" resname="heading">
@@ -84,12 +84,12 @@
         <target state="needs-translation">Cookie detection</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oi_v2.desc" resname="trackingobject.et_oi_v2.desc">
-        <source>Opt-In cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</source>
-        <target state="needs-translation">Opt-In cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</target>
+        <source>Opt-in cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</source>
+        <target state="needs-translation">Opt-in cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip.desc" resname="trackingobject.et_oip.desc">
-        <source>Opt-In cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</source>
-        <target state="needs-translation">Opt-In cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</target>
+        <source>Opt-in cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</source>
+        <target state="needs-translation">Opt-in cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_allow_cookies.desc" resname="trackingobject.et_allow_cookies.desc">
         <source>If the parameter "data-block-cookies" is used, this cookie is called by the API Call _etracker.enableCookies() to indicate that etracker is allowed to set cookies.</source>
@@ -140,16 +140,16 @@
         <target state="needs-translation">et_oi_v2</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oi_v2--localstorage.desc" resname="trackingobject.et_oi_v2--localstorage.desc">
-        <source>OptIn-cookie, see corresponding cookie.</source>
-        <target state="needs-translation">OptIn-cookie, see corresponding cookie.</target>
+        <source>Opt-in cookie, see corresponding cookie.</source>
+        <target state="needs-translation">Opt-in cookie, see corresponding cookie.</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip--localstorage" resname="trackingobject.et_oip--localstorage">
         <source>et_oip</source>
         <target state="needs-translation">et_oip</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip--localstorage.desc" resname="trackingobject.et_oip--localstorage.desc">
-        <source>OptIn-cookie for Signalize, see corresponding cookie.</source>
-        <target state="needs-translation">OptIn-cookie for Signalize, see corresponding cookie.</target>
+        <source>Opt-in cookie for Signalize, see corresponding cookie.</source>
+        <target state="needs-translation">Opt-in cookie for Signalize, see corresponding cookie.</target>
       </trans-unit>
       <trans-unit id="type.pixel" resname="type.pixel">
         <source>Pixel</source>
@@ -183,11 +183,15 @@
         <source>Local Storage</source>
         <target state="needs-translation">Local Storage</target>
       </trans-unit>
+      <trans-unit id="type.connection" resname="type.connection">
+        <source>Connection</source>
+        <target state="needs-translation">Connection</target>
+      </trans-unit>
       <trans-unit id="group.marketing" resname="group.marketing">
         <source>Marketing</source>
         <target state="needs-translation">Marketing</target>
       </trans-unit>
-      <trans-unit id="group.marketing.desc" resname="group.marketing">
+      <trans-unit id="group.marketing.desc" resname="group.marketing.desc">
         <source>With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</source>
         <target state="needs-translation">With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</target>
       </trans-unit>
@@ -216,8 +220,8 @@
         <target state="needs-translation">Used to distinguish users.</target>
       </trans-unit>
       <trans-unit id="trackingobject.AMP_TOKEN.desc" resname="trackingobject.AMP_TOKEN.desc">
-        <source>Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID service.</source>
-        <target state="needs-translation">Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, inflight request or an error retrieving a Client ID from AMP Client ID service.</target>
+        <source>Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, request in progress or an error retrieving a Client ID from AMP Client ID service.</source>
+        <target state="needs-translation">Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, request in progress or an error retrieving a Client ID from AMP Client ID service.</target>
       </trans-unit>
       <trans-unit id="trackingobject._dc_gtm_--property-id--.desc" resname="trackingobject._dc_gtm_--property-id--.desc">
         <source>Used by DoubleClick (Google Tag Manager) to help identify the visitors by either age, gender or interests.</source>
@@ -250,6 +254,78 @@
       <trans-unit id="trackingobject.MUIDB.desc" resname="trackingobject.MUIDB.desc">
         <source>Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</source>
         <target state="needs-translation">Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.MSFPC.desc" resname="trackingobject.MSFPC.desc">
+        <source>The cookie allows user tracking across many Microsoft domains and is used for Bing Analytics.</source>
+        <target state="needs-translation">The cookie allows user tracking across many Microsoft domains and is used for Bing Analytics.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.DcLcid.desc" resname="trackingobject.DcLcid.desc">
+        <source>The cookie is used to implement Microsoft-forms on the website.</source>
+        <target state="needs-translation">The cookie is used to implement Microsoft-forms on the website.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.AADNonce.forms.desc" resname="trackingobject.AADNonce.forms.desc">
+        <source>The cookie is used to implement Microsoft-forms on the website.</source>
+        <target state="needs-translation">The cookie is used to implement Microsoft-forms on the website.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__RequestVerificationToken.desc" resname="trackingobject.__RequestVerificationToken.desc">
+        <source>The cookie is used to implement anti-forgery concerning Microsoft-forms on the website.</source>
+        <target state="needs-translation">The cookie is used to implement anti-forgery concerning Microsoft-forms on the website.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.UID.desc" resname="trackingobject.UID.desc">
+        <source>The cookie is used for market and user research (Scorecard Research).</source>
+        <target state="needs-translation">The cookie is used for market and user research (Scorecard Research).</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.UIDR.desc" resname="trackingobject.UIDR.desc">
+        <source>The cookie is used for market and user research (Scorecard Research).</source>
+        <target state="needs-translation">The cookie is used for market and user research (Scorecard Research).</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.bcookie.desc" resname="trackingobject.bcookie.desc">
+        <source>Browser Identifier cookie to uniquely identify devices accessing LinkedIn to detect abuse on the platform.</source>
+        <target state="needs-translation">Browser Identifier cookie to uniquely identify devices accessing LinkedIn to detect abuse on the platform.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.lang.desc" resname="trackingobject.lang.desc">
+        <source>Used to memorize a user's language setting.</source>
+        <target state="needs-translation">Used to memorize a user's language setting.</target>
+      </trans-unit>
+      <trans-unit id="group.external" resname="group.external">
+        <source>External content</source>
+        <target state="needs-translation">External content</target>
+      </trans-unit>
+      <trans-unit id="group.external.desc" resname="group.external.desc">
+        <source>With the help of these cookies we strive to improve our offer for our users. By means of providing video content or other useful content like maps to enhance the user experience.</source>
+        <target state="needs-translation">With the help of these cookies we strive to improve our offer for our users. By means of providing video content or other useful content like maps to enhance the user experience.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.YouTube.desc" resname="trackingobject.YouTube.desc">
+        <source>Is used to connect to YouTube and display to videos.</source>
+        <target state="needs-translation">Is used to connect to YouTube and display to videos.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.GoogleMaps.desc" resname="trackingobject.GoogleMaps.desc">
+        <source>Is used to connect to Google Maps and to display those maps.</source>
+        <target state="needs-translation">Is used to connect to Google Maps and to display those maps.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.MicrosoftStream.desc" resname="trackingobject.MicrosoftStream.desc">
+        <source>Is used to connect to Microsoft Stream and display videos.</source>
+        <target state="needs-translation">Is used to connect to Microsoft Stream and display videos.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.Signature_Api.desc" resname="trackingobject.Signature_Api.desc">
+        <source>Is used to connect to the Microsoft signature API.</source>
+        <target state="needs-translation">Is used to connect to the Microsoft signature API.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.Authorization_Api.desc" resname="trackingobject.Authorization_Api.desc">
+        <source>Is used to connect to the Microsoft authorization API.</source>
+        <target state="needs-translation">Is used to connect to the Microsoft authorization API.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.RedirectToThinEmbed.desc" resname="trackingobject.RedirectToThinEmbed.desc">
+        <source>Is used to embed Microsoft Stream videos.</source>
+        <target state="needs-translation">Is used to embed Microsoft Stream videos.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.UserSession_Api.desc" resname="trackingobject.UserSession_Api.desc">
+        <source>Is used to store the user session of the Microsoft API.</source>
+        <target state="needs-translation">Is used to store the user session of the Microsoft API.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.wfeSessionId.desc" resname="trackingobject.wfeSessionId.desc">
+        <source>Is used to store the Web Front End Session ID of Microsoft Stream.</source>
+        <target state="needs-translation">Is used to store the Web Front End Session ID of Microsoft Stream.</target>
       </trans-unit>
       <trans-unit id="browser.dnt-enabled" resname="browser.dnt-enabled">
         <source><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></source>
@@ -314,6 +390,38 @@
       <trans-unit id="alwaysinactive" resname="alwaysinactive">
         <source>always inactive</source>
         <target state="needs-translation">always inactive</target>
+      </trans-unit>
+      <trans-unit id="group.accept" resname="group.accept">
+        <source>accept</source>
+        <target state="needs-translation">accept</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__cf_bm.desc" resname="trackingobject.__cf_bm.desc">
+        <source>Required to see Vimeo content.</source>
+        <target state="needs-translation">Required to see Vimeo content.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.OptanonAlertBoxClosed.desc" resname="trackingobject.OptanonAlertBoxClosed.desc">
+        <source>Saves the state of your Vimeo data protection consent.</source>
+        <target state="needs-translation">Saves the state of your Vimeo data protection consent.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.OptanonConsent.desc" resname="trackingobject.OptanonConsent.desc">
+        <source>Saves the state of your Vimeo data protection consent.</source>
+        <target state="needs-translation">Saves the state of your Vimeo data protection consent.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.player.desc" resname="trackingobject.player.desc">
+        <source>This cookie saves your preferences before playing an embedded Vimeo video. This will bring you back to your preferred settings the next time you watch a Vimeo video.</source>
+        <target state="needs-translation">This cookie saves your preferences before playing an embedded Vimeo video. This will bring you back to your preferred settings the next time you watch a Vimeo video.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.vuid.desc" resname="trackingobject.vuid.desc">
+        <source>This cookie gathers information about your actions on websites embedding Vimeo videos.</source>
+        <target state="needs-translation">This cookie gathers information about your actions on websites embedding Vimeo videos.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._abexps.desc" resname="trackingobject._abexps.desc">
+        <source>This cookie remembers your settings. Settings can include language, region or login user. In general this cookie saves data about how you use Vimeo.</source>
+        <target state="needs-translation">This cookie remembers your settings. Settings can include language, region or login user. In general this cookie saves data about how you use Vimeo.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.continuous_play_v3.desc" resname="trackingobject.continuous_play_v3.desc">
+        <source>This cookie is a first-party cookie from Vimeo. The cookie collects information on how you use the Vimeo service. For example, the cookie saves when you pause and play a video again.</source>
+        <target state="needs-translation">This cookie is a first-party cookie from Vimeo. The cookie collects information on how you use the Vimeo service. For example, the cookie saves when you pause and play a video again.</target>
       </trans-unit>
     </body>
   </file>
