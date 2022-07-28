@@ -295,9 +295,9 @@
         <source>With the help of these cookies we strive to improve our offer for our users. By means of providing video content or other useful content like maps to enhance the user experience.</source>
         <target state="final">Ved hjælp af disse cookies, bestræber vi os på at forbedre vores tilbud til vores brugere. Det gør vi ved at levere videoindhold eller andet nyttigt indhold, såsom kort, til at forbedre brugeroplevelsen.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.YouTube.desc" resname="trackingobject.YouTube.desc" approved="yes">
-        <source>Is used to connect to YouTube and display to videos.</source>
-        <target state="final">Bruges til at oprette forbindelse til YouTube og vise videoer.</target>
+      <trans-unit id="trackingobject.YouTube.desc" resname="trackingobject.YouTube.desc">
+        <source>Is used to connect to YouTube and to display videos.</source>
+        <target state="needs-translation">Is used to connect to YouTube and to display videos.</target>
       </trans-unit>
       <trans-unit id="trackingobject.GoogleMaps.desc" resname="trackingobject.GoogleMaps.desc" approved="yes">
         <source>Is used to connect to Google Maps and to display those maps.</source>
