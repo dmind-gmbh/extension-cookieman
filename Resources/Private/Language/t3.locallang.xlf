@@ -296,8 +296,8 @@
         <target>crwdns123454:0crwdne123454:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.YouTube.desc" resname="trackingobject.YouTube.desc">
-        <source>Is used to connect to YouTube and display to videos.</source>
-        <target>crwdns123456:0crwdne123456:0</target>
+        <source>Is used to connect to YouTube and to display videos.</source>
+        <target>crwdns210014:0crwdne210014:0</target>
       </trans-unit>
       <trans-unit id="trackingobject.GoogleMaps.desc" resname="trackingobject.GoogleMaps.desc">
         <source>Is used to connect to Google Maps and to display those maps.</source>
