@@ -63,8 +63,21 @@ class TypoScriptSettingsProcessor implements DataProcessorInterface
      */
     protected function sanitizeSettings(array $settings)
     {
-        // ignore keys on groups.trackingObjects - this makes sure it does not get output as an object in JSON
         foreach (($settings['groups'] ?? []) as $groupId => $group) {
+            if (isset($group['preselected'])) {
+                $settings['groups'][$groupId]['preselected'] = (bool)$group['preselected'];
+            }
+            if (isset($group['disabled'])) {
+                $settings['groups'][$groupId]['disabled'] = (bool)$group['disabled'];
+            }
+            if (isset($group['respectDnt'])) {
+                $settings['groups'][$groupId]['respectDnt'] = (bool)$group['respectDnt'];
+            }
+            if (isset($group['showDntMessage'])) {
+                $settings['groups'][$groupId]['showDntMessage'] = (bool)$group['showDntMessage'];
+            }
+
+            // ignore keys on groups.trackingObjects - this makes sure it does not get output as an object in JSON
             $trackingObjects = $group['trackingObjects'] ?? [];
             // sort to allow using TypoScript-style .20 .10 .40 etc.
             ksort($trackingObjects);

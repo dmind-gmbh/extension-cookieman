@@ -45,8 +45,8 @@ plugin.tx_cookieman.settings {
                 0 = Crowdin
             }
 
-            respectDnt = 1
-            showDntMessage = 1
+            respectDnt = 0
+            showDntMessage = 0
         }
     }
 }
@@ -55,7 +55,7 @@ plugin.tx_cookieman._LOCAL_LANG {
     en {
         trackingobject\.CrowdinWidget = Crowdin Widget
         trackingobject\.CrowdinWidget\.desc = This is just a test but on the other hand it is useful: It displays the Crowdin Widget which allows you to help translating cookieman ;)
-        group\.testgroup = Test group
+        group\.testgroup = Test group (does not respect Do-Not-Track header)
         type\.script = JavaScript
     }
 
