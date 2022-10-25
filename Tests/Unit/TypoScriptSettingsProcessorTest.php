@@ -60,7 +60,7 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
             ['data' => []]
         );
 
-        self::assertEquals(
+        self::assertSame(
             $returnedSettings,
             $result
         );
@@ -73,7 +73,10 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
                 [
                     'groups' => [
                         'mandatory' => [
-                            'preselected' => 1,
+                            'preselected' => '1', // all numbers come as strings from TypoScript
+                            'disabled' => '1',
+                            'respectDnt' => '0',
+                            'showDntMessage' => '0',
                             'trackingObjects' => [ // unordered object
                                 10 => 'fe_typo_user',
                                 0 => 'CookieConsent',
@@ -118,7 +121,10 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
                     'settings' => [
                         'groups' => [
                             'mandatory' => [
-                                'preselected' => 1,
+                                'preselected' => true,
+                                'disabled' => true,
+                                'respectDnt' => false,
+                                'showDntMessage' => false,
                                 'trackingObjects' => [ // ordered list
                                     'CookieConsent',
                                     'fe_typo_user',
