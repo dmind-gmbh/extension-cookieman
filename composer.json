@@ -29,7 +29,7 @@
         "helhum/typo3-console": "^7.0 || 7.x-dev || dev-latest",
         "php-coveralls/php-coveralls": "^2.1",
         "phpspec/prophecy-phpunit": "^2.0",
-        "phpunit/phpunit": "^9.5",
+        "phpunit/phpunit": "^9.5.25",
         "typo3/cms-install": "^11.5 || 11.*.x-dev || dev-main",
         "typo3/cms-tstemplate": "^11.5 || 11.*.x-dev || dev-main",
         "typo3/tailor": "^1.3",
