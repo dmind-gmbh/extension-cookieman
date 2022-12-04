@@ -1,5 +1,5 @@
 services:
   Dmind\Cookieman\DataProcessing\TypoScriptSettingsProcessor:
-      autowire: true
-      autoconfigure: false
-      public: true
+    autowire: true
+    autoconfigure: false
+    public: true
