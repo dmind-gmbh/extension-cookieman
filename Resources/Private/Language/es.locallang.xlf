@@ -17,7 +17,7 @@
       </trans-unit>
       <trans-unit id="introText" resname="introText">
         <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
-        <target state="needs-translation">This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</target>
+        <target state="translated">Este sitio web utiliza cookies, las cuales tienen dos funciones: por un lado, están proporcionando una funcionalidad básica para este sitio web. Por otro lado, nos permiten mejorar nuestro contenido guardando y analizando datos anónimos de usuario. Usted puede cambiar su consentimiento a utilizar estas cookies en cualquier momento. Encontrar más información sobre cookies en nuestro %1$s y sobre nosotros en el %2$s.</target>
       </trans-unit>
       <trans-unit id="settings" resname="settings" approved="yes">
         <source>Settings</source>
