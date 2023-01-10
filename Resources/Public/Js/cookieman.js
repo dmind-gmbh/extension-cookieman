@@ -468,4 +468,4 @@ var cookieman = (function () {
          */
         eventsEl: eventsEl
     }
-}())
+}());
