@@ -44,9 +44,6 @@
             "typo3/cms-composer-installers": true
         }
     },
-    "conflict": {
-        "typo3/cms-composer-installers": ">=4"
-    },
     "extra": {
         "branch-alias": {
             "dev-master": "2.9.x-dev"
