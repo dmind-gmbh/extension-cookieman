@@ -7,9 +7,9 @@
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="cookieman-modal-title">
+                <div class="h5 modal-title" id="cookieman-modal-title">
                     {f:translate(key: 'heading')}
-                </h5>
+                </div>
             </div>
             <div class="modal-body">
                 <p>
@@ -35,13 +35,13 @@
                         <div class="accordion" id="cookieman-acco">
                             <f:for each="{settings.groups}" key="groupId" as="group">
                                 <div class="accordion-item">
-                                    <h2 class="accordion-header" id="cookieman-acco-h-{groupId}">
+                                    <div class="h2 accordion-header" id="cookieman-acco-h-{groupId}">
                                       <button type="button" class="accordion-button collapsed" role="button" data-bs-toggle="collapse"
                                          data-bs-target="#cookieman-acco-{groupId}"
                                          aria-expanded="false" aria-controls="cookieman-acco-{groupId}">
                                         {f:translate(key: 'group.{groupId}', default: groupId)}
                                       </button>
-                                    </h2>
+                                    </div>
                                     <div id="cookieman-acco-{groupId}" class="accordion-collapse collapse"
                                          aria-labelledby="cookieman-acco-h-{groupId}"
                                          data-bs-parent="#cookieman-acco">

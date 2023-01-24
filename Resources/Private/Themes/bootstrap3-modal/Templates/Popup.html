@@ -7,9 +7,9 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">
+                <div class="h5 modal-title">
                     {f:translate(key: 'heading')}
-                </h5>
+                </div>
             </div>
             <div class="modal-body">
                 <p>
@@ -37,14 +37,14 @@
                             <f:for each="{settings.groups}" key="groupId" as="group">
                                 <div class="panel panel-default">
                                     <div class="panel-heading" role="tab">
-                                        <h4 class="panel-title">
+                                        <div class="h4 panel-title">
                                             <a class="collapsed" role="button" data-toggle="collapse"
                                                data-parent="#cookieman-acco" href="#cookieman-acco-{groupId}"
                                                aria-expanded="true"
                                                aria-controls="cookieman-acco-{groupId}">
                                                 {f:translate(key: 'group.{groupId}', default: groupId)}
                                             </a>
-                                        </h4>
+                                        </div>
                                     </div>
                                     <div id="cookieman-acco-{groupId}" class="panel-collapse collapse" role="tabpanel">
                                         <div class="panel-body">
