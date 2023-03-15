@@ -3,397 +3,397 @@
   <file source-language="en" datatype="plaintext" original="Frontend" date="2019-10-28T12:20:51Z" product-name="cookieman" target-language="ko">
     <header/>
     <body>
-      <trans-unit id="heading" resname="heading">
+      <trans-unit id="heading" resname="heading" approved="yes">
         <source>About Cookies</source>
-        <target state="translated">쿠키 정보</target>
+        <target state="final">쿠키 정보</target>
       </trans-unit>
-      <trans-unit id="dataProtectionDeclaration" resname="dataProtectionDeclaration">
+      <trans-unit id="dataProtectionDeclaration" resname="dataProtectionDeclaration" approved="yes">
         <source>Data Protection Declaration</source>
-        <target state="translated">데이터 보호 선언</target>
+        <target state="final">데이터 보호 선언</target>
       </trans-unit>
-      <trans-unit id="imprint" resname="imprint">
+      <trans-unit id="imprint" resname="imprint" approved="yes">
         <source>Imprint</source>
-        <target state="translated">임프린트</target>
+        <target state="final">임프린트</target>
       </trans-unit>
-      <trans-unit id="introText" resname="introText">
+      <trans-unit id="introText" resname="introText" approved="yes">
         <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
-        <target state="translated">이 웹사이트는 쿠키를 사용합니다. 쿠키에는 두 가지 기능이 있습니다: 하나는 이 웹사이트의 기본 기능을 제공하는 것입니다. 다른 한편으로는 익명화된 사용자 데이터를 저장하고 분석하여 사용자를 위한 콘텐츠를 개선할 수 있도록 합니다. 이러한 쿠키 사용에 대한 동의를 언제든지 다시 철회할 수 있습니다. 쿠키에 관한 자세한 내용은 %1$s에서, 당사에 관한 자세한 내용은 %2$s에서 확인하세요.</target>
+        <target state="final">이 웹사이트는 쿠키를 사용합니다. 쿠키에는 두 가지 기능이 있습니다: 하나는 이 웹사이트의 기본 기능을 제공하는 것입니다. 다른 한편으로는 익명화된 사용자 데이터를 저장하고 분석하여 사용자를 위한 콘텐츠를 개선할 수 있도록 합니다. 이러한 쿠키 사용에 대한 동의를 언제든지 다시 철회할 수 있습니다. 쿠키에 관한 자세한 내용은 %1$s에서, 당사에 관한 자세한 내용은 %2$s에서 확인하세요.</target>
       </trans-unit>
-      <trans-unit id="settings" resname="settings">
+      <trans-unit id="settings" resname="settings" approved="yes">
         <source>Settings</source>
-        <target state="translated">설정</target>
+        <target state="final">설정</target>
       </trans-unit>
-      <trans-unit id="settingsText" resname="settingsText">
+      <trans-unit id="settingsText" resname="settingsText" approved="yes">
         <source>Click here for Cookie %1$s.</source>
-        <target state="translated">쿠키 %1$s를 보려면 여기를 클릭하세요.</target>
+        <target state="final">쿠키 %1$s를 보려면 여기를 클릭하세요.</target>
       </trans-unit>
-      <trans-unit id="accept" resname="accept">
+      <trans-unit id="accept" resname="accept" approved="yes">
         <source>Accept all cookies</source>
-        <target state="translated">모든 쿠키 허용</target>
+        <target state="final">모든 쿠키 허용</target>
       </trans-unit>
-      <trans-unit id="deny" resname="deny">
+      <trans-unit id="deny" resname="deny" approved="yes">
         <source>Deny all cookies</source>
-        <target state="translated">모든 쿠키 거부</target>
+        <target state="final">모든 쿠키 거부</target>
       </trans-unit>
-      <trans-unit id="save" resname="save">
+      <trans-unit id="save" resname="save" approved="yes">
         <source>Save</source>
-        <target state="translated">저장</target>
+        <target state="final">저장</target>
       </trans-unit>
-      <trans-unit id="group.mandatory" resname="group.mandatory">
+      <trans-unit id="group.mandatory" resname="group.mandatory" approved="yes">
         <source>Mandatory</source>
-        <target state="translated">필수</target>
+        <target state="final">필수</target>
       </trans-unit>
-      <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc">
+      <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc" approved="yes">
         <source>These cookies are needed for a smooth operation of our website.</source>
-        <target state="translated">이러한 쿠키는 당사 웹사이트의 원활한 운영을 위해 필요합니다.</target>
+        <target state="final">이러한 쿠키는 당사 웹사이트의 원활한 운영을 위해 필요합니다.</target>
       </trans-unit>
-      <trans-unit id="tableheader.name" resname="tableheader.name">
+      <trans-unit id="tableheader.name" resname="tableheader.name" approved="yes">
         <source>Name</source>
-        <target state="translated">이름</target>
+        <target state="final">이름</target>
       </trans-unit>
-      <trans-unit id="tableheader.purpose" resname="tableheader.purpose">
+      <trans-unit id="tableheader.purpose" resname="tableheader.purpose" approved="yes">
         <source>Purpose</source>
-        <target state="translated">목적</target>
+        <target state="final">목적</target>
       </trans-unit>
-      <trans-unit id="tableheader.duration" resname="tableheader.duration">
+      <trans-unit id="tableheader.duration" resname="tableheader.duration" approved="yes">
         <source>Lifetime</source>
-        <target state="translated">평생</target>
+        <target state="final">평생</target>
       </trans-unit>
-      <trans-unit id="tableheader.type" resname="tableheader.type">
+      <trans-unit id="tableheader.type" resname="tableheader.type" approved="yes">
         <source>Type</source>
-        <target state="translated">유형</target>
+        <target state="final">유형</target>
       </trans-unit>
-      <trans-unit id="tableheader.provider" resname="tableheader.provider">
+      <trans-unit id="tableheader.provider" resname="tableheader.provider" approved="yes">
         <source>Provider</source>
-        <target state="translated">공급자</target>
+        <target state="final">공급자</target>
       </trans-unit>
-      <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc">
+      <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc" approved="yes">
         <source>Saves your consent to using cookies.</source>
-        <target state="translated">쿠키 사용에 대한 귀하의 동의를 저장합니다.</target>
+        <target state="final">쿠키 사용에 대한 귀하의 동의를 저장합니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.cntcookie.desc" resname="trackingobject.cntcookie.desc">
+      <trans-unit id="trackingobject.cntcookie.desc" resname="trackingobject.cntcookie.desc" approved="yes">
         <source>Exclusion from counting (as a list of Account IDs)</source>
-        <target state="translated">집계에서 제외(계정 ID 목록으로)</target>
+        <target state="final">집계에서 제외(계정 ID 목록으로)</target>
       </trans-unit>
-      <trans-unit id="trackingobject.GS3_v.desc" resname="trackingobject.GS3_v.desc">
+      <trans-unit id="trackingobject.GS3_v.desc" resname="trackingobject.GS3_v.desc" approved="yes">
         <source>Set by Optimizer webservice. Contains the same Visitor ID as BT_pdc.</source>
-        <target state="translated">옵티마이저 웹서비스에서 설정합니다. BT_pdc와 동일한 방문자 ID를 포함합니다.</target>
+        <target state="final">옵티마이저 웹서비스에서 설정합니다. BT_pdc와 동일한 방문자 ID를 포함합니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._et_coid.desc" resname="trackingobject._et_coid.desc">
+      <trans-unit id="trackingobject._et_coid.desc" resname="trackingobject._et_coid.desc" approved="yes">
         <source>Cookie detection</source>
-        <target state="translated">쿠키 감지</target>
+        <target state="final">쿠키 감지</target>
       </trans-unit>
-      <trans-unit id="trackingobject.et_oi_v2.desc" resname="trackingobject.et_oi_v2.desc">
+      <trans-unit id="trackingobject.et_oi_v2.desc" resname="trackingobject.et_oi_v2.desc" approved="yes">
         <source>Opt-in cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</source>
-        <target state="translated">추적 옵트인이 고객 측에 표시될 때 방문자의 결정을 저장하는 옵트인 쿠키입니다. 옵트아웃에도 사용됩니다.</target>
+        <target state="final">추적 옵트인이 고객 측에 표시될 때 방문자의 결정을 저장하는 옵트인 쿠키입니다. 옵트아웃에도 사용됩니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.et_oip.desc" resname="trackingobject.et_oip.desc">
+      <trans-unit id="trackingobject.et_oip.desc" resname="trackingobject.et_oip.desc" approved="yes">
         <source>Opt-in cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</source>
-        <target state="translated">signalize에서 사용하는 옵트인 쿠키. 고객이 "아니오"를 선택하면 쿠키는 "아니오" 값과 50 x 365일 기간으로 설정됩니다. 고객이 "x"를 선택하거나 ESC 키를 누르는 경우(결정 없음), 쿠키는 1일의 유효 기간 동안 "no" 값으로 설정됩니다. 실제 브라우저 푸시에 대한 동의가 암시적으로 제공되므로 "yes" 값은 필요하지 않습니다.</target>
+        <target state="final">signalize에서 사용하는 옵트인 쿠키. 고객이 "아니오"를 선택하면 쿠키는 "아니오" 값과 50 x 365일 기간으로 설정됩니다. 고객이 "x"를 선택하거나 ESC 키를 누르는 경우(결정 없음), 쿠키는 1일의 유효 기간 동안 "no" 값으로 설정됩니다. 실제 브라우저 푸시에 대한 동의가 암시적으로 제공되므로 "yes" 값은 필요하지 않습니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.et_allow_cookies.desc" resname="trackingobject.et_allow_cookies.desc">
+      <trans-unit id="trackingobject.et_allow_cookies.desc" resname="trackingobject.et_allow_cookies.desc" approved="yes">
         <source>If the parameter "data-block-cookies" is used, this cookie is called by the API Call _etracker.enableCookies() to indicate that etracker is allowed to set cookies.</source>
-        <target state="translated">매개변수 "data-block-cookies"를 사용하는 경우, 이 쿠키는 API 호출 _etracker.enableCookies()에 의해 호출되어 에트래커가 쿠키를 설정할 수 있음을 나타냅니다.</target>
+        <target state="final">매개변수 "data-block-cookies"를 사용하는 경우, 이 쿠키는 API 호출 _etracker.enableCookies()에 의해 호출되어 에트래커가 쿠키를 설정할 수 있음을 나타냅니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.isSdEnabled.desc" resname="trackingobject.isSdEnabled.desc">
+      <trans-unit id="trackingobject.isSdEnabled.desc" resname="trackingobject.isSdEnabled.desc" approved="yes">
         <source>Detection whether the scrolling depth is measured for the visitor.</source>
-        <target state="translated">방문자의 스크롤 깊이가 측정되었는지 여부를 감지합니다.</target>
+        <target state="final">방문자의 스크롤 깊이가 측정되었는지 여부를 감지합니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.BT_ctst.desc" resname="trackingobject.BT_ctst.desc">
+      <trans-unit id="trackingobject.BT_ctst.desc" resname="trackingobject.BT_ctst.desc" approved="yes">
         <source>Is only used to detect whether cookies are activated in the visitor's browser or not.</source>
-        <target state="translated">방문자의 브라우저에서 쿠키가 활성화되어 있는지 여부를 감지하는 데만 사용됩니다.</target>
+        <target state="final">방문자의 브라우저에서 쿠키가 활성화되어 있는지 여부를 감지하는 데만 사용됩니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.BT_sdc.desc" resname="trackingobject.BT_sdc.desc">
+      <trans-unit id="trackingobject.BT_sdc.desc" resname="trackingobject.BT_sdc.desc" approved="yes">
         <source>Contains base64 encoded data of the current visitor session (referrer, number of pages, number of seconds since session started) used for personalization purposes.</source>
-        <target state="translated">개인화 목적으로 사용되는 현재 방문자 세션의 base64 인코딩된 데이터(참조자, 페이지 수, 세션 시작 후 초수)를 포함합니다.</target>
+        <target state="final">개인화 목적으로 사용되는 현재 방문자 세션의 base64 인코딩된 데이터(참조자, 페이지 수, 세션 시작 후 초수)를 포함합니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.BT_pdc.desc" resname="trackingobject.BT_pdc.desc">
+      <trans-unit id="trackingobject.BT_pdc.desc" resname="trackingobject.BT_pdc.desc" approved="yes">
         <source>Contains base64-coded visitor history data (is customer, newsletter recipient etc.) for personalization.</source>
-        <target state="translated">개인화를 위해 base64 코딩된 방문자 기록 데이터(고객, 뉴스레터 수신자 등)가 포함되어 있습니다.</target>
+        <target state="final">개인화를 위해 base64 코딩된 방문자 기록 데이터(고객, 뉴스레터 수신자 등)가 포함되어 있습니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_pdc.desc">
+      <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_pdc.desc" approved="yes">
         <source>Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</source>
-        <target state="translated">방문자가 제외된 프로젝트 ID 목록을 포함합니다. 이 쿠키는 클라이언트가 모든 방문자가 테스트에 할당되지 않고 특정 일부만 할당되도록 구성한 경우 웹 서비스에 의해 설정됩니다.</target>
+        <target state="final">방문자가 제외된 프로젝트 ID 목록을 포함합니다. 이 쿠키는 클라이언트가 모든 방문자가 테스트에 할당되지 않고 특정 일부만 할당되도록 구성한 경우 웹 서비스에 의해 설정됩니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_ecl.desc">
+      <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_ecl.desc" approved="yes">
         <source>Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</source>
-        <target state="translated">방문자가 제외된 프로젝트 ID 목록을 포함합니다. 이 쿠키는 클라이언트가 모든 방문자가 테스트에 할당되지 않고 특정 일부만 할당되도록 구성한 경우 웹 서비스에 의해 설정됩니다.</target>
+        <target state="final">방문자가 제외된 프로젝트 ID 목록을 포함합니다. 이 쿠키는 클라이언트가 모든 방문자가 테스트에 할당되지 않고 특정 일부만 할당되도록 구성한 경우 웹 서비스에 의해 설정됩니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.et_scroll_depth.desc" resname="trackingobject.et_scroll_depth.desc">
+      <trans-unit id="trackingobject.et_scroll_depth.desc" resname="trackingobject.et_scroll_depth.desc" approved="yes">
         <source>Data for scrolling depth measurement</source>
-        <target state="translated">스크롤 깊이 측정을 위한 데이터</target>
+        <target state="final">스크롤 깊이 측정을 위한 데이터</target>
       </trans-unit>
-      <trans-unit id="trackingobject.targetingAPISession.desc" resname="trackingobject.targetingAPISession.desc">
+      <trans-unit id="trackingobject.targetingAPISession.desc" resname="trackingobject.targetingAPISession.desc" approved="yes">
         <source>Data collected in the current session for the optimiser</source>
-        <target state="translated">옵티마이저를 위해 현재 세션에서 수집된 데이터</target>
+        <target state="final">옵티마이저를 위해 현재 세션에서 수집된 데이터</target>
       </trans-unit>
       <trans-unit id="trackingobject._et_coid--localstorage" resname="trackingobject._et_coid--localstorage">
         <source>_et_coid</source>
         <target state="needs-translation">_et_coid</target>
       </trans-unit>
-      <trans-unit id="trackingobject._et_coid--localstorage.desc" resname="trackingobject._et_coid--localstorage.desc">
+      <trans-unit id="trackingobject._et_coid--localstorage.desc" resname="trackingobject._et_coid--localstorage.desc" approved="yes">
         <source>Cookie detection, see corresponding cookie.</source>
-        <target state="translated">쿠키 감지, 해당 쿠키를 참조하십시오.</target>
+        <target state="final">쿠키 감지, 해당 쿠키를 참조하십시오.</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oi_v2--localstorage" resname="trackingobject.et_oi_v2--localstorage">
         <source>et_oi_v2</source>
         <target state="needs-translation">et_oi_v2</target>
       </trans-unit>
-      <trans-unit id="trackingobject.et_oi_v2--localstorage.desc" resname="trackingobject.et_oi_v2--localstorage.desc">
+      <trans-unit id="trackingobject.et_oi_v2--localstorage.desc" resname="trackingobject.et_oi_v2--localstorage.desc" approved="yes">
         <source>Opt-in cookie, see corresponding cookie.</source>
-        <target state="translated">옵트인 쿠키는 해당 쿠키를 참조하십시오.</target>
+        <target state="final">옵트인 쿠키는 해당 쿠키를 참조하십시오.</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip--localstorage" resname="trackingobject.et_oip--localstorage">
         <source>et_oip</source>
         <target state="needs-translation">et_oip</target>
       </trans-unit>
-      <trans-unit id="trackingobject.et_oip--localstorage.desc" resname="trackingobject.et_oip--localstorage.desc">
+      <trans-unit id="trackingobject.et_oip--localstorage.desc" resname="trackingobject.et_oip--localstorage.desc" approved="yes">
         <source>Opt-in cookie for Signalize, see corresponding cookie.</source>
-        <target state="translated">시그널라이즈용 옵트인 쿠키는 해당 쿠키를 참조하십시오.</target>
+        <target state="final">시그널라이즈용 옵트인 쿠키는 해당 쿠키를 참조하십시오.</target>
       </trans-unit>
-      <trans-unit id="type.pixel" resname="type.pixel">
+      <trans-unit id="type.pixel" resname="type.pixel" approved="yes">
         <source>Pixel</source>
-        <target state="translated">픽셀</target>
+        <target state="final">픽셀</target>
       </trans-unit>
       <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html">
         <source>HTML</source>
         <target state="needs-translation">HTML</target>
       </trans-unit>
-      <trans-unit id="trackingobject._fbp.desc" resname="trackingobject._fbp.desc">
+      <trans-unit id="trackingobject._fbp.desc" resname="trackingobject._fbp.desc" approved="yes">
         <source>Stores the unique visitor ID.</source>
-        <target state="translated">고유 방문자 ID를 저장합니다.</target>
+        <target state="final">고유 방문자 ID를 저장합니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.facebookPixel.desc" resname="trackingobject.FacebookPixel.desc">
+      <trans-unit id="trackingobject.facebookPixel.desc" resname="trackingobject.FacebookPixel.desc" approved="yes">
         <source>If JavaScript is not enabled, this pixel initiates a connection to facebook.</source>
-        <target state="translated">자바스크립트가 활성화되지 않은 경우, 이 픽셀은 페이스북에 대한 연결을 시작합니다.</target>
+        <target state="final">자바스크립트가 활성화되지 않은 경우, 이 픽셀은 페이스북에 대한 연결을 시작합니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.fe_typo_user.desc" resname="trackingobject.fe_typo_user.desc">
+      <trans-unit id="trackingobject.fe_typo_user.desc" resname="trackingobject.fe_typo_user.desc" approved="yes">
         <source>Assigns your browser to a session on the server.</source>
-        <target state="translated">브라우저를 서버의 세션에 할당합니다.</target>
+        <target state="final">브라우저를 서버의 세션에 할당합니다.</target>
       </trans-unit>
-      <trans-unit id="duration.session" resname="duration.session">
+      <trans-unit id="duration.session" resname="duration.session" approved="yes">
         <source>session</source>
-        <target state="translated">세션</target>
+        <target state="final">세션</target>
       </trans-unit>
       <trans-unit id="type.cookie_http" resname="type.cookie_http">
         <source>HTTP</source>
         <target state="needs-translation">HTTP</target>
       </trans-unit>
-      <trans-unit id="type.localstorage" resname="type.localstorage">
+      <trans-unit id="type.localstorage" resname="type.localstorage" approved="yes">
         <source>Local Storage</source>
-        <target state="translated">로컬 저장소</target>
+        <target state="final">로컬 저장소</target>
       </trans-unit>
-      <trans-unit id="type.connection" resname="type.connection">
+      <trans-unit id="type.connection" resname="type.connection" approved="yes">
         <source>Connection</source>
-        <target state="translated">연결</target>
+        <target state="final">연결</target>
       </trans-unit>
-      <trans-unit id="group.marketing" resname="group.marketing">
+      <trans-unit id="group.marketing" resname="group.marketing" approved="yes">
         <source>Marketing</source>
-        <target state="translated">마케팅</target>
+        <target state="final">마케팅</target>
       </trans-unit>
-      <trans-unit id="group.marketing.desc" resname="group.marketing.desc">
+      <trans-unit id="group.marketing.desc" resname="group.marketing.desc" approved="yes">
         <source>With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</source>
-        <target state="translated">이러한 쿠키의 도움으로 당사는 사용자를 위한 서비스를 개선하기 위해 노력합니다. 웹사이트 사용자의 익명화된 데이터를 통해 사용자 흐름을 최적화할 수 있습니다. 이를 통해 광고 및 웹사이트 콘텐츠를 개선할 수 있습니다.</target>
+        <target state="final">이러한 쿠키의 도움으로 당사는 사용자를 위한 서비스를 개선하기 위해 노력합니다. 웹사이트 사용자의 익명화된 데이터를 통해 사용자 흐름을 최적화할 수 있습니다. 이를 통해 광고 및 웹사이트 콘텐츠를 개선할 수 있습니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._pk_id.desc" resname="trackingobject._pk_id.desc">
+      <trans-unit id="trackingobject._pk_id.desc" resname="trackingobject._pk_id.desc" approved="yes">
         <source>Used to store a few details about the user such as the unique visitor ID.</source>
-        <target state="translated">고유 방문자 ID와 같은 사용자에 대한 몇 가지 세부 정보를 저장하는 데 사용됩니다.</target>
+        <target state="final">고유 방문자 ID와 같은 사용자에 대한 몇 가지 세부 정보를 저장하는 데 사용됩니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._pk_ref.desc" resname="trackingobject._pk_ref.desc">
+      <trans-unit id="trackingobject._pk_ref.desc" resname="trackingobject._pk_ref.desc" approved="yes">
         <source>Used to store the attribution information, the referrer initially used to visit the website.</source>
-        <target state="translated">웹사이트 방문 시 처음에 사용된 리퍼러의 어트리뷰션 정보를 저장하는 데 사용됩니다.</target>
+        <target state="final">웹사이트 방문 시 처음에 사용된 리퍼러의 어트리뷰션 정보를 저장하는 데 사용됩니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._pk_ses.desc" resname="trackingobject._pk_ses.desc">
+      <trans-unit id="trackingobject._pk_ses.desc" resname="trackingobject._pk_ses.desc" approved="yes">
         <source>Short lived cookie used to temporarily store data for the visit.</source>
-        <target state="translated">방문에 대한 데이터를 임시로 저장하는 데 사용되는 단기 쿠키.</target>
+        <target state="final">방문에 대한 데이터를 임시로 저장하는 데 사용되는 단기 쿠키.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._pk_cvar.desc" resname="trackingobject._pk_cvar.desc">
+      <trans-unit id="trackingobject._pk_cvar.desc" resname="trackingobject._pk_cvar.desc" approved="yes">
         <source>Short lived cookie used to temporarily store data for the visit.</source>
-        <target state="translated">방문에 대한 데이터를 임시로 저장하는 데 사용되는 단기 쿠키.</target>
+        <target state="final">방문에 대한 데이터를 임시로 저장하는 데 사용되는 단기 쿠키.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._pk_hsr.desc" resname="trackingobject._pk_hsr.desc">
+      <trans-unit id="trackingobject._pk_hsr.desc" resname="trackingobject._pk_hsr.desc" approved="yes">
         <source>Short lived cookie used to temporarily store data for the visit.</source>
-        <target state="translated">방문에 대한 데이터를 임시로 저장하는 데 사용되는 단기 쿠키.</target>
+        <target state="final">방문에 대한 데이터를 임시로 저장하는 데 사용되는 단기 쿠키.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._ga.desc" resname="trackingobject._ga.desc">
+      <trans-unit id="trackingobject._ga.desc" resname="trackingobject._ga.desc" approved="yes">
         <source>Used to distinguish users.</source>
-        <target state="translated">사용자를 구별하는 데 사용됩니다.</target>
+        <target state="final">사용자를 구별하는 데 사용됩니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.AMP_TOKEN.desc" resname="trackingobject.AMP_TOKEN.desc">
+      <trans-unit id="trackingobject.AMP_TOKEN.desc" resname="trackingobject.AMP_TOKEN.desc" approved="yes">
         <source>Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, request in progress or an error retrieving a Client ID from AMP Client ID service.</source>
-        <target state="translated">AMP 클라이언트 ID 서비스에서 클라이언트 ID를 검색하는 데 사용할 수 있는 토큰을 포함합니다. 기타 가능한 값은 옵트아웃, inflight request 또는 AMP 클라이언트 ID 서비스에서 클라이언트 ID를 검색하는 데 오류가 발생했음을 나타냅니다.</target>
+        <target state="final">AMP 클라이언트 ID 서비스에서 클라이언트 ID를 검색하는 데 사용할 수 있는 토큰을 포함합니다. 기타 가능한 값은 옵트아웃, inflight request 또는 AMP 클라이언트 ID 서비스에서 클라이언트 ID를 검색하는 데 오류가 발생했음을 나타냅니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._dc_gtm_--property-id--.desc" resname="trackingobject._dc_gtm_--property-id--.desc">
+      <trans-unit id="trackingobject._dc_gtm_--property-id--.desc" resname="trackingobject._dc_gtm_--property-id--.desc" approved="yes">
         <source>Used by DoubleClick (Google Tag Manager) to help identify the visitors by either age, gender or interests.</source>
-        <target state="translated">연령, 성별 또는 관심사별로 방문자를 식별하기 위해 DoubleClick(Google 태그 관리자)에서 사용합니다.</target>
+        <target state="final">연령, 성별 또는 관심사별로 방문자를 식별하기 위해 DoubleClick(Google 태그 관리자)에서 사용합니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._gac_--property-id--.desc" resname="trackingobject._gac_--property-id--.desc">
+      <trans-unit id="trackingobject._gac_--property-id--.desc" resname="trackingobject._gac_--property-id--.desc" approved="yes">
         <source>Contains campaign related information for the user. If you have linked your Google Analytics and Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.</source>
-        <target state="translated">사용자에 대한 캠페인 관련 정보를 포함합니다. 구글 애널리틱스와 구글 애즈 계정을 연결한 경우, 사용자가 옵트아웃하지 않는 한 구글 애즈 웹사이트 전환 태그가 이 쿠키를 읽습니다.</target>
+        <target state="final">사용자에 대한 캠페인 관련 정보를 포함합니다. 구글 애널리틱스와 구글 애즈 계정을 연결한 경우, 사용자가 옵트아웃하지 않는 한 구글 애즈 웹사이트 전환 태그가 이 쿠키를 읽습니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._gat.desc" resname="trackingobject._gat.desc">
+      <trans-unit id="trackingobject._gat.desc" resname="trackingobject._gat.desc" approved="yes">
         <source>Used to throttle request rate.</source>
-        <target state="translated">요청 속도를 조절하는 데 사용됩니다.</target>
+        <target state="final">요청 속도를 조절하는 데 사용됩니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._ga_--container-id--.desc" resname="trackingobject._ga_--container-id--.desc">
+      <trans-unit id="trackingobject._ga_--container-id--.desc" resname="trackingobject._ga_--container-id--.desc" approved="yes">
         <source>Persists session state.</source>
-        <target state="translated">요청 속도를 조절하는 데 사용됩니다.</target>
+        <target state="final">요청 속도를 조절하는 데 사용됩니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._gcl_au.desc" resname="trackingobject._gcl_au.desc">
+      <trans-unit id="trackingobject._gcl_au.desc" resname="trackingobject._gcl_au.desc" approved="yes">
         <source>Used by Google AdSense to experiment with advertisement efficiency.</source>
-        <target state="translated">Google 애드센스에서 광고 효율성을 실험하는 데 사용됩니다.</target>
+        <target state="final">Google 애드센스에서 광고 효율성을 실험하는 데 사용됩니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._gid.desc" resname="trackingobject._gid.desc">
+      <trans-unit id="trackingobject._gid.desc" resname="trackingobject._gid.desc" approved="yes">
         <source>Used to distinguish users.</source>
-        <target state="translated">사용자를 구별하는 데 사용됩니다.</target>
+        <target state="final">사용자를 구별하는 데 사용됩니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.MUID.desc" resname="trackingobject.MUID.desc">
+      <trans-unit id="trackingobject.MUID.desc" resname="trackingobject.MUID.desc" approved="yes">
         <source>Used as unique user identifier. The cookie allows user tracking across many Microsoft domains.</source>
-        <target state="translated">고유한 사용자 식별자로 사용됩니다. 이 쿠키를 통해 여러 Microsoft 도메인에서 사용자를 추적할 수 있습니다.</target>
+        <target state="final">고유한 사용자 식별자로 사용됩니다. 이 쿠키를 통해 여러 Microsoft 도메인에서 사용자를 추적할 수 있습니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.MUIDB.desc" resname="trackingobject.MUIDB.desc">
+      <trans-unit id="trackingobject.MUIDB.desc" resname="trackingobject.MUIDB.desc" approved="yes">
         <source>Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</source>
-        <target state="translated">광고 효율성을 테스트하기 위해 여러 사이트에서 여러 웹 사이트 방문의 익명 사용자 데이터를 저장합니다.</target>
+        <target state="final">광고 효율성을 테스트하기 위해 여러 사이트에서 여러 웹 사이트 방문의 익명 사용자 데이터를 저장합니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.MSFPC.desc" resname="trackingobject.MSFPC.desc">
+      <trans-unit id="trackingobject.MSFPC.desc" resname="trackingobject.MSFPC.desc" approved="yes">
         <source>The cookie allows user tracking across many Microsoft domains and is used for Bing Analytics.</source>
-        <target state="translated">이 쿠키는 여러 Microsoft 도메인에서 사용자를 추적할 수 있게 해주며 Bing 애널리틱스에 사용됩니다.</target>
+        <target state="final">이 쿠키는 여러 Microsoft 도메인에서 사용자를 추적할 수 있게 해주며 Bing 애널리틱스에 사용됩니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.DcLcid.desc" resname="trackingobject.DcLcid.desc">
+      <trans-unit id="trackingobject.DcLcid.desc" resname="trackingobject.DcLcid.desc" approved="yes">
         <source>The cookie is used to implement Microsoft-forms on the website.</source>
-        <target state="translated">이 쿠키는 웹사이트에서 Microsoft 양식을 구현하는 데 사용됩니다.</target>
+        <target state="final">이 쿠키는 웹사이트에서 Microsoft 양식을 구현하는 데 사용됩니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.AADNonce.forms.desc" resname="trackingobject.AADNonce.forms.desc">
+      <trans-unit id="trackingobject.AADNonce.forms.desc" resname="trackingobject.AADNonce.forms.desc" approved="yes">
         <source>The cookie is used to implement Microsoft-forms on the website.</source>
-        <target state="translated">이 쿠키는 웹사이트에서 Microsoft 양식을 구현하는 데 사용됩니다.</target>
+        <target state="final">이 쿠키는 웹사이트에서 Microsoft 양식을 구현하는 데 사용됩니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.__RequestVerificationToken.desc" resname="trackingobject.__RequestVerificationToken.desc">
+      <trans-unit id="trackingobject.__RequestVerificationToken.desc" resname="trackingobject.__RequestVerificationToken.desc" approved="yes">
         <source>The cookie is used to implement anti-forgery concerning Microsoft-forms on the website.</source>
-        <target state="translated">이 쿠키는 웹 사이트에서 Microsoft 양식과 관련된 위조 방지를 구현하는 데 사용됩니다.</target>
+        <target state="final">이 쿠키는 웹 사이트에서 Microsoft 양식과 관련된 위조 방지를 구현하는 데 사용됩니다.</target>
       </trans-unit>
       <trans-unit id="trackingobject.UID.desc" resname="trackingobject.UID.desc">
         <source>The cookie is used for market and user research (Scorecard Research).</source>
         <target state="needs-translation">The cookie is used for market and user research (Scorecard Research).</target>
       </trans-unit>
-      <trans-unit id="trackingobject.UIDR.desc" resname="trackingobject.UIDR.desc">
+      <trans-unit id="trackingobject.UIDR.desc" resname="trackingobject.UIDR.desc" approved="yes">
         <source>The cookie is used for market and user research (Scorecard Research).</source>
-        <target state="translated">이 쿠키는 시장 및 사용자 조사(스코어카드 조사)에 사용됩니다.</target>
+        <target state="final">이 쿠키는 시장 및 사용자 조사(스코어카드 조사)에 사용됩니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.bcookie.desc" resname="trackingobject.bcookie.desc">
+      <trans-unit id="trackingobject.bcookie.desc" resname="trackingobject.bcookie.desc" approved="yes">
         <source>Browser Identifier cookie to uniquely identify devices accessing LinkedIn to detect abuse on the platform.</source>
-        <target state="translated">이 쿠키는 시장 및 사용자 조사(스코어카드 조사)에 사용됩니다.</target>
+        <target state="final">이 쿠키는 시장 및 사용자 조사(스코어카드 조사)에 사용됩니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.lang.desc" resname="trackingobject.lang.desc">
+      <trans-unit id="trackingobject.lang.desc" resname="trackingobject.lang.desc" approved="yes">
         <source>Used to memorize a user's language setting.</source>
-        <target state="translated">사용자의 언어 설정을 기억하는 데 사용됩니다.</target>
+        <target state="final">사용자의 언어 설정을 기억하는 데 사용됩니다.</target>
       </trans-unit>
-      <trans-unit id="group.external" resname="group.external">
+      <trans-unit id="group.external" resname="group.external" approved="yes">
         <source>External content</source>
-        <target state="translated">외부 콘텐츠</target>
+        <target state="final">외부 콘텐츠</target>
       </trans-unit>
-      <trans-unit id="group.external.desc" resname="group.external.desc">
+      <trans-unit id="group.external.desc" resname="group.external.desc" approved="yes">
         <source>With the help of these cookies we strive to improve our offer for our users. By means of providing video content or other useful content like maps to enhance the user experience.</source>
-        <target state="translated">이러한 쿠키의 도움으로 당사는 사용자에게 더 나은 서비스를 제공하기 위해 노력합니다. 동영상 콘텐츠 또는 지도와 같은 기타 유용한 콘텐츠를 제공하여 사용자 경험을 향상시킵니다.</target>
+        <target state="final">이러한 쿠키의 도움으로 당사는 사용자에게 더 나은 서비스를 제공하기 위해 노력합니다. 동영상 콘텐츠 또는 지도와 같은 기타 유용한 콘텐츠를 제공하여 사용자 경험을 향상시킵니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.YouTube.desc" resname="trackingobject.YouTube.desc">
+      <trans-unit id="trackingobject.YouTube.desc" resname="trackingobject.YouTube.desc" approved="yes">
         <source>Is used to connect to YouTube and to display videos.</source>
-        <target state="translated">YouTube에 연결하고 동영상에 표시하는 데 사용됩니다.</target>
+        <target state="final">YouTube에 연결하고 동영상에 표시하는 데 사용됩니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.GoogleMaps.desc" resname="trackingobject.GoogleMaps.desc">
+      <trans-unit id="trackingobject.GoogleMaps.desc" resname="trackingobject.GoogleMaps.desc" approved="yes">
         <source>Is used to connect to Google Maps and to display those maps.</source>
-        <target state="translated">Google 지도에 연결하고 해당 지도를 표시하는 데 사용됩니다.</target>
+        <target state="final">Google 지도에 연결하고 해당 지도를 표시하는 데 사용됩니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.MicrosoftStream.desc" resname="trackingobject.MicrosoftStream.desc">
+      <trans-unit id="trackingobject.MicrosoftStream.desc" resname="trackingobject.MicrosoftStream.desc" approved="yes">
         <source>Is used to connect to Microsoft Stream and display videos.</source>
-        <target state="translated">Microsoft Stream에 연결하여 비디오에 표시하는 데 사용됩니다.</target>
+        <target state="final">Microsoft Stream에 연결하여 비디오에 표시하는 데 사용됩니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.Signature_Api.desc" resname="trackingobject.Signature_Api.desc">
+      <trans-unit id="trackingobject.Signature_Api.desc" resname="trackingobject.Signature_Api.desc" approved="yes">
         <source>Is used to connect to the Microsoft signature API.</source>
-        <target state="translated">Microsoft 서명 API에 연결하는 데 사용됩니다.</target>
+        <target state="final">Microsoft 서명 API에 연결하는 데 사용됩니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.Authorization_Api.desc" resname="trackingobject.Authorization_Api.desc">
+      <trans-unit id="trackingobject.Authorization_Api.desc" resname="trackingobject.Authorization_Api.desc" approved="yes">
         <source>Is used to connect to the Microsoft authorization API.</source>
-        <target state="translated">Microsoft 인증 API에 연결하는 데 사용됩니다.</target>
+        <target state="final">Microsoft 인증 API에 연결하는 데 사용됩니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.RedirectToThinEmbed.desc" resname="trackingobject.RedirectToThinEmbed.desc">
+      <trans-unit id="trackingobject.RedirectToThinEmbed.desc" resname="trackingobject.RedirectToThinEmbed.desc" approved="yes">
         <source>Is used to embed Microsoft Stream videos.</source>
-        <target state="translated">Microsoft Stream 비디오를 임베드하는 데 사용됩니다.</target>
+        <target state="final">Microsoft Stream 비디오를 임베드하는 데 사용됩니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.UserSession_Api.desc" resname="trackingobject.UserSession_Api.desc">
+      <trans-unit id="trackingobject.UserSession_Api.desc" resname="trackingobject.UserSession_Api.desc" approved="yes">
         <source>Is used to store the user session of the Microsoft API.</source>
-        <target state="translated">Microsoft API의 사용자 세션을 저장하는 데 사용됩니다.</target>
+        <target state="final">Microsoft API의 사용자 세션을 저장하는 데 사용됩니다.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.wfeSessionId.desc" resname="trackingobject.wfeSessionId.desc">
+      <trans-unit id="trackingobject.wfeSessionId.desc" resname="trackingobject.wfeSessionId.desc" approved="yes">
         <source>Is used to store the Web Front End Session ID of Microsoft Stream.</source>
-        <target state="translated">Microsoft Stream의 웹 프런트엔드 세션 ID를 저장하는 데 사용됩니다.</target>
+        <target state="final">Microsoft Stream의 웹 프런트엔드 세션 ID를 저장하는 데 사용됩니다.</target>
       </trans-unit>
-      <trans-unit id="browser.dnt-enabled" resname="browser.dnt-enabled">
+      <trans-unit id="browser.dnt-enabled" resname="browser.dnt-enabled" approved="yes">
         <source><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></source>
-        <target state="translated"><![CDATA[[CDATA[귀하는 이미 <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">브라우저의 추적 금지 기능</a>을 통해 사용자 추적을 거부하셨습니다. 당사는 이를 허용합니다. 브라우저 설정을 통해 변경할 수 있습니다.]]]]></target>
+        <target state="final"><![CDATA[[CDATA[귀하는 이미 <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">브라우저의 추적 금지 기능</a>을 통해 사용자 추적을 거부하셨습니다. 당사는 이를 허용합니다. 브라우저 설정을 통해 변경할 수 있습니다.]]]]></target>
       </trans-unit>
-      <trans-unit id="duration.none" resname="duration.empty">
+      <trans-unit id="duration.none" resname="duration.empty" approved="yes">
         <source>none</source>
-        <target state="translated">없음</target>
+        <target state="final">없음</target>
       </trans-unit>
-      <trans-unit id="duration.minute" resname="duration.minute">
+      <trans-unit id="duration.minute" resname="duration.minute" approved="yes">
         <source>minute</source>
-        <target state="translated">분</target>
+        <target state="final">분</target>
       </trans-unit>
-      <trans-unit id="duration.minutes" resname="duration.minutes">
+      <trans-unit id="duration.minutes" resname="duration.minutes" approved="yes">
         <source>minutes</source>
-        <target state="translated">분</target>
+        <target state="final">분</target>
       </trans-unit>
-      <trans-unit id="duration.hour" resname="duration.hour">
+      <trans-unit id="duration.hour" resname="duration.hour" approved="yes">
         <source>hour</source>
-        <target state="translated">시간</target>
+        <target state="final">시간</target>
       </trans-unit>
-      <trans-unit id="duration.hours" resname="duration.hours">
+      <trans-unit id="duration.hours" resname="duration.hours" approved="yes">
         <source>hours</source>
-        <target state="translated">시간</target>
+        <target state="final">시간</target>
       </trans-unit>
-      <trans-unit id="duration.day" resname="duration.day">
+      <trans-unit id="duration.day" resname="duration.day" approved="yes">
         <source>day</source>
-        <target state="translated">일</target>
+        <target state="final">일</target>
       </trans-unit>
-      <trans-unit id="duration.days" resname="duration.days">
+      <trans-unit id="duration.days" resname="duration.days" approved="yes">
         <source>days</source>
-        <target state="translated">일</target>
+        <target state="final">일</target>
       </trans-unit>
-      <trans-unit id="duration.month" resname="duration.month">
+      <trans-unit id="duration.month" resname="duration.month" approved="yes">
         <source>month</source>
-        <target state="translated">월</target>
+        <target state="final">월</target>
       </trans-unit>
-      <trans-unit id="duration.months" resname="duration.months">
+      <trans-unit id="duration.months" resname="duration.months" approved="yes">
         <source>months</source>
-        <target state="translated">개월</target>
+        <target state="final">개월</target>
       </trans-unit>
-      <trans-unit id="duration.year" resname="duration.year">
+      <trans-unit id="duration.year" resname="duration.year" approved="yes">
         <source>year</source>
-        <target state="translated">년</target>
+        <target state="final">년</target>
       </trans-unit>
-      <trans-unit id="duration.years" resname="duration.years">
+      <trans-unit id="duration.years" resname="duration.years" approved="yes">
         <source>years</source>
-        <target state="translated">년</target>
+        <target state="final">년</target>
       </trans-unit>
-      <trans-unit id="active" resname="active">
+      <trans-unit id="active" resname="active" approved="yes">
         <source>active</source>
-        <target state="translated">활성</target>
+        <target state="final">활성</target>
       </trans-unit>
-      <trans-unit id="alwaysactive" resname="alwaysactive">
+      <trans-unit id="alwaysactive" resname="alwaysactive" approved="yes">
         <source>always active</source>
-        <target state="translated">항상 활성</target>
+        <target state="final">항상 활성</target>
       </trans-unit>
-      <trans-unit id="inactive" resname="inactive">
+      <trans-unit id="inactive" resname="inactive" approved="yes">
         <source>inactive</source>
-        <target state="translated">비활성</target>
+        <target state="final">비활성</target>
       </trans-unit>
-      <trans-unit id="alwaysinactive" resname="alwaysinactive">
+      <trans-unit id="alwaysinactive" resname="alwaysinactive" approved="yes">
         <source>always inactive</source>
-        <target state="translated">항상 비활성</target>
+        <target state="final">항상 비활성</target>
       </trans-unit>
-      <trans-unit id="group.accept" resname="group.accept">
+      <trans-unit id="group.accept" resname="group.accept" approved="yes">
         <source>accept</source>
-        <target state="translated">동의</target>
+        <target state="final">동의</target>
       </trans-unit>
       <trans-unit id="trackingobject.__cf_bm.desc" resname="trackingobject.__cf_bm.desc">
         <source>Required to see Vimeo content.</source>
