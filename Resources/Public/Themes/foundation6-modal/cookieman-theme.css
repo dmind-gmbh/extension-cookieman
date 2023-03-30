@@ -1,0 +1,32 @@
+#cookieman-modal table {
+  font-size: 80%;
+}
+
+#cookieman-modal [data-bs-toggle="collapse"][data-bs-target="#cookieman-settings"] {
+  position: relative;
+  padding-right: 30px;
+}
+
+#cookieman-modal [data-bs-toggle="collapse"][data-bs-target="#cookieman-settings"]:after {
+  content: '';
+  /* mask-image allows to use the background-color */
+  mask-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' clip-rule='evenodd'/></svg>");
+  -webkit-mask-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' clip-rule='evenodd'/></svg>");  
+  background-color: white;
+  background-size: 1.25em;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 4px;
+  width: 1.25em;
+  height: 1.25em;
+  margin: auto;
+  transition: transform ease-out 0.3s;
+  transform-origin: center;
+  transform: rotate(180deg);
+}
+
+#cookieman-modal [data-bs-toggle="collapse"][data-bs-target="#cookieman-settings"].collapsed:after {
+  transform: rotate(0);
+}

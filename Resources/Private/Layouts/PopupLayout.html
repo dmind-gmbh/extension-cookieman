@@ -30,7 +30,8 @@
 <div id="cookieman-modal"
      data-cookieman-showonce="{isShowOnce}"
      data-cookieman-settings="{f:format.json(value: '{groups: settings.groups, trackingObjects: settings.trackingObjects}')}"
-     class="modal fade" tabindex="-1" role="dialog"
+     class="{f:render(section: 'modalClass',optional: 1)}" tabindex="-1" role="dialog"
+     {f:render(section:'additonalAttributes',optional: 1)}
 >
     <f:render section="Content"/>
 </div>

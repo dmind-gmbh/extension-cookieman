@@ -1,0 +1,132 @@
+<!--suppress XmlUnusedNamespaceDeclaration -->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:c="http://typo3.org/ns/Dmind/Cookieman/ViewHelpers"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers" lang="en">
+<f:layout name="PopupLayout"/>
+<f:section name="modalClass">reveal large</f:section>
+<f:section name="additonalAttributes">data-reveal aria-labelledby="Cookie Optin" aria-hidden="true"</f:section>
+<f:section name="Content">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cookieman-modal-title">
+                    {f:translate(key: 'heading')}
+                </h5>
+            </div>
+            <div class="modal-body text-right">
+                <p class="text-left">
+                    {f:translate(
+                    key: 'introText',
+                    arguments: {
+                    1: "{dataProtectionDeclarationLink -> f:spaceless()}",
+                    2: "{imprintLink -> f:spaceless()}"
+                    }) -> f:format.raw()}
+                </p>
+                <button class="button button-secondary button-sm float-right collapsed pr-5"
+                        type="button"
+                        aria-expanded="false" aria-controls="cookieman-settings">
+                    {f:translate(key: 'settings')}
+                </button>
+
+                <div class="clearfix"></div>
+
+                <div class="accordion text-left"
+                     data-accordion
+                     data-allow-all-closed="true"
+                     id="cookieman-settings">
+                    <div class="accordion-item-settings" data-accordion-item>
+                        <div class="accordion-content-settings" data-tab-content>
+                            <form data-cookieman-form class="mt-3"
+                                  data-cookieman-dnt-enabled="{f:translate(key: 'browser.dnt-enabled')}"
+                            >
+                                <div class="accordion"
+                                     data-accordion
+                                     data-multi-expand="true"
+                                     data-allow-all-closed="true"
+                                     id="cookieman-acco">
+                                    <f:for each="{settings.groups}" key="groupId" as="group">
+                                        <div class="accordion-item" data-accordion-item>
+                                            <a href="#{groupId}" class="accordion-title" id="cookieman-acco-h-{groupId}">
+                                                {f:translate(key: 'group.{groupId}', default: groupId)}
+                                            </a>
+                                            <div id="cookieman-acco-{groupId}" class="accordion-content"
+                                                 data-tab-content
+                                                 aria-labelledby="cookieman-acco-h-{groupId}"
+                                            >
+                                                <div>
+                                                    <f:if condition="{group.showDntMessage}">
+                                                        <div class="mb-3" data-cookieman-dnt></div>
+                                                    </f:if>
+
+                                                    <div class="alert alert-primary">
+                                                        <div class="form-check">
+                                                            <!--suppress XmlUnboundNsPrefix, HtmlUnknownAttribute -->
+                                                            <input class="form-check-input" type="checkbox" value="" id="{groupId}" name="{groupId}"
+                                                                   {f:if(condition: group.preselected, then: 'checked="checked"')}
+                                                            {f:if(condition: group.disabled, then: 'disabled="disabled"')}
+                                                            />
+                                                            <label class="form-check-label" for="{groupId}">
+                                                                {f:translate(key: 'group.accept')}
+                                                            </label>
+                                                        </div>
+                                                    </div>
+
+                                                    <p>
+                                                        {f:translate(key: 'group.{groupId}.desc')}
+                                                    </p>
+
+                                                    <f:if condition="{group -> c:shownTrackingObjects() -> f:count()} > 0">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-hover table-sm">
+                                                                <thead>
+                                                                <tr>
+                                                                    <th>{f:translate(key: 'tableheader.name')}</th>
+                                                                    <th>{f:translate(key: 'tableheader.purpose')}</th>
+                                                                    <th>{f:translate(key: 'tableheader.duration')}</th>
+                                                                    <th>{f:translate(key: 'tableheader.type')}</th>
+                                                                    <th>{f:translate(key: 'tableheader.provider')}</th>
+                                                                </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                <f:render partial="TableRowsByGroup" section="content"
+                                                                          arguments="{_all}"/>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </f:if>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </f:for>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="modal-footer text-right">
+                <button
+                    data-cookieman-accept-none data-cookieman-save
+                    class="button button-secondary"
+                >
+                    {f:translate(key: 'deny')}
+                </button>
+                <button hidden
+                        data-cookieman-save
+                        class="button button-light"
+                >
+                    {f:translate(key: 'save')}
+                </button>
+                <button
+                    data-cookieman-accept-all data-cookieman-save
+                    class="button button-primary"
+                >
+                    {f:translate(key: 'accept')}
+                </button>
+            </div>
+        </div>
+    </div>
+</f:section>
+</html>
