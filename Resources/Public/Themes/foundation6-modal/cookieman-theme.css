@@ -1,3 +1,9 @@
+/* Foundation 6 CSS requirements
+@include foundation-reveal; (this is the modal element in foundation)
+@include motion-ui-transitions; (needed for fade in/out animation)
+@include motion-ui-animations; (needed for fade in/out animation)
+@include foundation-accordion;
+*/
 #cookieman-modal table {
   font-size: 80%;
 }
@@ -11,7 +17,7 @@
   content: '';
   /* mask-image allows to use the background-color */
   mask-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' clip-rule='evenodd'/></svg>");
-  -webkit-mask-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' clip-rule='evenodd'/></svg>");  
+  -webkit-mask-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' clip-rule='evenodd'/></svg>");
   background-color: white;
   background-size: 1.25em;
   background-repeat: no-repeat;
@@ -29,4 +35,20 @@
 
 #cookieman-modal [data-bs-toggle="collapse"][data-bs-target="#cookieman-settings"].collapsed:after {
   transform: rotate(0);
+}
+.button[hidden] {
+    display:none;
+}
+.accordion-content-settings {
+    display:none;
+}
+.modal-body {
+    margin-bottom: 1rem;
+}
+.modal-footer button {
+    margin-right: 1rem;
+}
+.modal-footer.text-right button {
+    margin-left: 1rem;
+    margin-right: 0;
 }

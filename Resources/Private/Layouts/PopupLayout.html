@@ -1,3 +1,6 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers" lang="en">
+
 <f:comment><!--
         adding data-cookieman-showonce=1 only if we are not currently on pages where direct read access is mandatory
         -->
@@ -26,13 +29,16 @@
     >{f:translate(key: 'imprint')}</a>
 </f:variable>
 
+<!--suppress HtmlUnknownAttribute -->
 <f:spaceless>
 <div id="cookieman-modal"
      data-cookieman-showonce="{isShowOnce}"
      data-cookieman-settings="{f:format.json(value: '{groups: settings.groups, trackingObjects: settings.trackingObjects}')}"
-     class="{f:render(section: 'modalClass',optional: 1)}" tabindex="-1" role="dialog"
-     {f:render(section:'additonalAttributes',optional: 1)}
+     class="{f:render(section:'modalClass',optional: 1)}" tabindex="-1" role="dialog"
+     {f:render(section:'additionalAttributes',optional: 1)}
 >
     <f:render section="Content"/>
 </div>
 </f:spaceless>
+
+</html>
