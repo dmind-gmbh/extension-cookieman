@@ -25,7 +25,7 @@
         "codeception/module-webdriver": "^1.1",
         "dmind/cookieman-test": "@dev",
         "dmind/cookieman-test-bootstrap5-modal": "@dev",
-        "friendsofphp/php-cs-fixer": "^3.2",
+        "friendsofphp/php-cs-fixer": "^3.14",
         "helhum/typo3-console": "^7.0 || 7.x-dev || dev-latest",
         "php-coveralls/php-coveralls": "^2.1",
         "phpspec/prophecy-phpunit": "^2.0",

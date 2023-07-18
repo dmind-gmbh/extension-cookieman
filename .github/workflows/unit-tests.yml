@@ -12,40 +12,49 @@ on:
 
 jobs:
     unit-tests:
-        runs-on: ubuntu-18.04
+        runs-on: ubuntu-22.04
         strategy:
             fail-fast: false
             matrix:
-                php-version: ["7.4", "8.0"]
+                php-version: ["7.4", "8.1"]
         steps:
-            -   uses: actions/checkout@v2
-            -   run: sudo update-alternatives --set php /usr/bin/php${{ matrix.php-version }}
-            -   run: composer update --no-interaction --no-progress
-            -   run: composer show
-            -   run: composer tests-for:ci
-            -   name: Push to coveralls (master only)
-                run: |
+            - uses: actions/checkout@v3
+            - uses: shivammathur/setup-php@v2
+              with:
+                  php-version: ${{ matrix.php-version }}
+                  extensions: intl, mbstring, json, zip, curl
+                  tools: composer:v2
+            - run: composer update --no-interaction --no-progress
+            - run: composer show
+            - run: composer tests-for:ci
+            - name: Push to coveralls (master only)
+              run: |
                         .build/bin/php-coveralls \
                         --root_dir=. --env=prod --verbose \
                         || true
-                if: github.ref == 'refs/heads/master' && matrix.php-version == '7.4'
-                env:
-                    COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+              if: github.ref == 'refs/heads/master' && matrix.php-version == '7.4'
+              env:
+                  COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
             - name: Upload coveralls result
-              uses: actions/upload-artifact@v2
+              uses: actions/upload-artifact@v3
               if: github.ref == 'refs/heads/master' && matrix.php-version == '7.4'
               with:
                   name: Coveralls result
                   path: ./Build/coveralls-upload.json
     unit-tests-lowest:
-        runs-on: ubuntu-18.04
+        runs-on: ubuntu-22.04
         continue-on-error: true
         strategy:
             fail-fast: false
             matrix:
-                php-version: ["7.4", "8.0"]
+                php-version: ["7.4", "8.1"]
         steps:
-            -   uses: actions/checkout@v2
-            -   run: sudo update-alternatives --set php /usr/bin/php${{ matrix.php-version }}
-            -   run: composer update --no-interaction --prefer-lowest --no-progress
-            -   run: composer tests-for:ci
+            - uses: actions/checkout@v3
+            - uses: shivammathur/setup-php@v2
+              with:
+                  php-version: ${{ matrix.php-version }}
+                  extensions: intl, mbstring, json, zip, curl
+                  tools: composer:v2
+            - run: composer update --no-interaction --prefer-lowest --no-progress
+            - run: composer show
+            - run: composer tests-for:ci
