@@ -1,7 +1,7 @@
 plugin.tx_cookieman.settings.trackingObjects {
     MicrosoftStream {
         inject (
-            <script data-what="MicrosoftStrean" src="/typo3conf/ext/cookieman/Resources/Public/Js/Injects/example-inject.js"></script>
+            <script data-what="MicrosoftStream" src="/typo3conf/ext/cookieman/Resources/Public/Js/Injects/example-inject.js"></script>
         )
 # example:
 #        inject (
@@ -15,7 +15,7 @@ plugin.tx_cookieman.settings.trackingObjects {
                 type = connection
                 provider = MicrosoftStream
             }
-            
+
             Signature_Api {
                 duration =
                 durationUnit = session
