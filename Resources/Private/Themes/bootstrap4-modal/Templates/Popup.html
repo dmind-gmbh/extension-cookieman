@@ -7,12 +7,12 @@
     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="h5 modal-header" id="cookieman-modal-title">
-                {f:translate(key: 'LLL:EXT:cookieman/Resources/Private/Language/locallang.xlf:heading')}
+                {f:translate(key: 'heading', extensionName: 'cookieman')}
             </div>
             <div class="modal-body">
                 <p>
                     {f:translate(
-                    key: 'LLL:EXT:cookieman/Resources/Private/Language/locallang.xlf:introText',
+                    key: 'introText', extensionName: 'cookieman',
                     arguments: {
                     1: "{dataProtectionDeclarationLink -> f:spaceless()}",
                     2: "{imprintLink -> f:spaceless()}"
@@ -21,13 +21,13 @@
                 <button class="btn btn-secondary btn-sm float-right collapsed pr-5"
                         type="button" data-toggle="collapse"
                         data-target="#cookieman-settings" aria-expanded="false" aria-controls="cookieman-settings">
-                    {f:translate(key: 'LLL:EXT:cookieman/Resources/Private/Language/locallang.xlf:settings')}
+                    {f:translate(key: 'settings', extensionName: 'cookieman')}
                 </button>
                 <div class="clearfix"></div>
 
                 <div class="collapse" id="cookieman-settings">
                     <form data-cookieman-form class="mt-3"
-                          data-cookieman-dnt-enabled="{f:translate(key: 'LLL:EXT:cookieman/Resources/Private/Language/locallang.xlf:browser.dnt-enabled')}"
+                          data-cookieman-dnt-enabled="{f:translate(key: 'browser.dnt-enabled', extensionName: 'cookieman')}"
                     >
                         <f:comment>
                             should have class="accordion"; due to incompatiblity with bootstrap_package
@@ -40,7 +40,7 @@
                                         <a href="" class="collapsed" data-toggle="collapse"
                                            data-target="#cookieman-acco-{groupId}" role="button"
                                            aria-expanded="false" aria-controls="cookieman-acco-{groupId}">
-                                            {f:translate(key: 'LLL:EXT:cookieman/Resources/Private/Language/locallang.xlf:group.{groupId}', default: groupId)}
+                                            {f:translate(key: 'group.{groupId}', extensionName: 'cookieman', default: groupId)}
                                         </a>
                                     </div>
 
@@ -58,23 +58,23 @@
                                                 {f:if(condition: group.disabled, then: 'disabled="disabled"')}
                                                 >
                                                 <label class="form-check-label" for="{groupId}">
-                                                    {f:translate(key: 'LLL:EXT:cookieman/Resources/Private/Language/locallang.xlf:group.accept')}
+                                                    {f:translate(key: 'group.accept', extensionName: 'cookieman')}
                                                 </label>
                                             </div>
                                         </div>
                                         <p>
-                                            {f:translate(key: 'LLL:EXT:cookieman/Resources/Private/Language/locallang.xlf:group.{groupId}.desc')}
+                                            {f:translate(key: 'group.{groupId}.desc', extensionName: 'cookieman')}
                                         </p>
                                         <f:if condition="{group -> c:shownTrackingObjects() -> f:count()} > 0">
                                             <div class="table-responsive">
                                                 <table class="table table-hover table-sm">
                                                     <thead>
                                                     <tr>
-                                                        <th>{f:translate(key: 'LLL:EXT:cookieman/Resources/Private/Language/locallang.xlf:tableheader.name')}</th>
-                                                        <th>{f:translate(key: 'LLL:EXT:cookieman/Resources/Private/Language/locallang.xlf:tableheader.purpose')}</th>
-                                                        <th>{f:translate(key: 'LLL:EXT:cookieman/Resources/Private/Language/locallang.xlf:tableheader.duration')}</th>
-                                                        <th>{f:translate(key: 'LLL:EXT:cookieman/Resources/Private/Language/locallang.xlf:tableheader.type')}</th>
-                                                        <th>{f:translate(key: 'LLL:EXT:cookieman/Resources/Private/Language/locallang.xlf:tableheader.provider')}</th>
+                                                        <th>{f:translate(key: 'tableheader.name', extensionName: 'cookieman')}</th>
+                                                        <th>{f:translate(key: 'tableheader.purpose', extensionName: 'cookieman')}</th>
+                                                        <th>{f:translate(key: 'tableheader.duration', extensionName: 'cookieman')}</th>
+                                                        <th>{f:translate(key: 'tableheader.type', extensionName: 'cookieman')}</th>
+                                                        <th>{f:translate(key: 'tableheader.provider', extensionName: 'cookieman')}</th>
                                                     </tr>
                                                     </thead>
                                                     <tbody>
@@ -97,19 +97,19 @@
                     data-cookieman-accept-none data-cookieman-save
                     class="btn btn-primary"
                 >
-                    {f:translate(key: 'LLL:EXT:cookieman/Resources/Private/Language/locallang.xlf:deny')}
+                    {f:translate(key: 'deny', extensionName: 'cookieman')}
                 </button>
                 <button
                     data-cookieman-save
                     class="btn btn-default" style="display: none"
                 >
-                    {f:translate(key: 'LLL:EXT:cookieman/Resources/Private/Language/locallang.xlf:save')}
+                    {f:translate(key: 'save', extensionName: 'cookieman')}
                 </button>
                 <button
                     data-cookieman-accept-all data-cookieman-save
                     class="btn btn-primary"
                 >
-                    {f:translate(key: 'LLL:EXT:cookieman/Resources/Private/Language/locallang.xlf:accept')}
+                    {f:translate(key: 'accept', extensionName: 'cookieman')}
                 </button>
             </div>
         </div>
