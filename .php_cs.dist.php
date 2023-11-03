@@ -64,6 +64,6 @@ return (new PhpCsFixer\Config)
         PhpCsFixer\Finder::create()
             ->ignoreVCS(true)
             ->ignoreVCSIgnored(true)
-            ->notName(['ext_localconf.php', 'ext_tables.php', 'ext_emconf.php'])
+            ->notName(['ext_localconf.php', 'ext_tables.php', 'ext_emconf.php', 'additional.php'])
             ->in(__DIR__)
     );
