@@ -3,3 +3,5 @@ services:
     autowire: true
     autoconfigure: false
     public: true
+  Dmind\Cookieman\ViewHelpers\ShownTrackingObjectsViewHelper:
+    public: true

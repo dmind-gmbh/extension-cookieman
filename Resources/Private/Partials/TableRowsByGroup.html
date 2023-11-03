@@ -6,13 +6,13 @@
         <tr>
             <td>
                 {f:translate(
-                key:'trackingobject.{trackingItemId}',
+                key:'LLL:EXT:cookieman/Resources/Private/Language/locallang.xlf:trackingobject.{trackingItemId}',
                 default: trackingItemId
                 )}
             </td>
             <td>
                 {f:translate(
-                key:'trackingobject.{trackingItemId}.desc',
+                key:'LLL:EXT:cookieman/Resources/Private/Language/locallang.xlf:trackingobject.{trackingItemId}.desc',
                 default: 'missing translation:
                 trackingobject.{trackingItemId}.desc'
                 )}
@@ -20,14 +20,14 @@
             <td>
                 {trackingItem.duration}
                 {f:translate(
-                key:'duration.{trackingItem.durationUnit}',
+                key:'LLL:EXT:cookieman/Resources/Private/Language/locallang.xlf:duration.{trackingItem.durationUnit}',
                 default: 'missing translation:
                 duration.{trackingItem.durationUnit}'
                 )}
             </td>
             <td>
                 {f:translate(
-                key:'type.{trackingItem.type}',
+                key:'LLL:EXT:cookieman/Resources/Private/Language/locallang.xlf:type.{trackingItem.type}',
                 default: 'missing translation:
                 type.{trackingItem.type}'
                 )}
@@ -35,7 +35,7 @@
             <td>
                 <f:if condition="{trackingItem.provider}">
                     {f:translate(
-                    key: trackingItem.provider,
+                    key: 'LLL:EXT:cookieman/Resources/Private/Language/locallang.xlf:{trackingItem.provider}',
                     default: trackingItem.provider
                     )}
                 </f:if>
