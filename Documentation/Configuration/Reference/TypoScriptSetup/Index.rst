@@ -162,9 +162,13 @@ trackingObjects.‹tracking-object-key›
           // 'Matomo' is the ‹tracking-object-key›:
           Matomo {
               // injected code, if consent is given:
-              inject (
-                  <script data-what="Matomo" src="/typo3conf/ext/cookieman/Resources/Public/Js/Injects/example-inject.js"></script>
-              )
+              inject = TEXT
+              inject {
+                  insertData = 1
+                  value (
+                      <script data-what="Matomo" src="/{path : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}"></script>
+                  )
+              }
 
               show {
                   // set cookies, if consent is given:

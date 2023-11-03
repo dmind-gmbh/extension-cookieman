@@ -1,8 +1,12 @@
 plugin.tx_cookieman.settings.trackingObjects {
     MicrosoftStream {
-        inject (
-            <script data-what="MicrosoftStream" src="/typo3conf/ext/cookieman/Resources/Public/Js/Injects/example-inject.js"></script>
-        )
+        inject = TEXT
+        inject {
+            insertData = 1
+            value (
+                <script data-what="MicrosoftStream" src="/{path : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}"></script>
+            )
+        }
 # example:
 #        inject (
 # no example available yet. We are happy to receive a pull request if you have one.
