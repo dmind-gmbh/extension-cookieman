@@ -1,6 +1,6 @@
 plugin.tx_cookieman {
     settings {
-        resourcesBasePath = EXT:cookieman_test_customtheme/Extensions/cookieman/Resources
+        resourcesBasePath = EXT:cookieman_test_customtheme/Resources
         theme = customTheme
     }
 }
