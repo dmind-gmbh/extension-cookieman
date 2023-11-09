@@ -36,6 +36,11 @@ class ShownTrackingObjectsViewHelper extends AbstractViewHelper
         $group = $arguments['group'] ?? $renderChildrenClosure();
         $settings = $renderingContext->getVariableProvider()->get('settings');
 
+        return self::shownTrackingObjects($group, $settings);
+    }
+
+    public static function shownTrackingObjects(array $group, array $settings): array
+    {
         $rows = [];
         foreach ($group['trackingObjects'] ?? [] as $trackingObjectId) {
             $rows += $settings['trackingObjects'][$trackingObjectId]['show'] ?? [];
