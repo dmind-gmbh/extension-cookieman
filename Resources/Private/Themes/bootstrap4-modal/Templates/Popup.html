@@ -29,11 +29,7 @@
                     <form data-cookieman-form class="mt-3"
                           data-cookieman-dnt-enabled="{f:translate(key: 'browser.dnt-enabled', extensionName: 'cookieman')}"
                     >
-                        <f:comment>
-                            should have class="accordion"; due to incompatiblity with bootstrap_package
-                            left out at the moment - https://github.com/benjaminkott/bootstrap_package/pull/775
-                        </f:comment>
-                        <div id="cookieman-acco">
+                        <div id="cookieman-acco" class="accordion">
                             <f:for each="{settings.groups}" key="groupId" as="group">
                                 <div class="card">
                                     <div class="card-header" id="cookieman-acco-h-{groupId}">
