@@ -34,8 +34,8 @@ plugin.tx_cookieman.settings {
             }
             show {
                 CrowdinWidget {
-                    duration = -
-                    durationUnit = -
+                    duration =
+                    durationUnit = none
                     type = script
                     provider = Crowdin
                 }
@@ -53,15 +53,4 @@ plugin.tx_cookieman.settings {
             showDntMessage = 0
         }
     }
-}
-
-plugin.tx_cookieman._LOCAL_LANG {
-    en {
-        trackingobject\.CrowdinWidget = Crowdin Widget
-        trackingobject\.CrowdinWidget\.desc = This is just a test but on the other hand it is useful: It displays the Crowdin Widget which allows you to help translating cookieman ;)
-        group\.testgroup = Test group (does not respect Do-Not-Track header)
-        type\.script = JavaScript
-    }
-
-    default < .en
 }
