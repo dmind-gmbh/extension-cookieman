@@ -101,6 +101,7 @@ class PopupInteractionsCest
         $I->amOnPage(self::PATH_root);
         $I->waitForJS('return typeof cookieman === "object"', 10);
         $I->waitForElementVisible(self::SELECTOR_modal);
+        $I->waitForElementClickable(self::LOCATOR_settings);
         $I->clickWithLeftButton(self::LOCATOR_settings);
         $I->scrollIntoView(self::SELECTOR_btnSaveAll);
         $I->clickWithLeftButton(['css' => self::SELECTOR_btnSaveAll]);
