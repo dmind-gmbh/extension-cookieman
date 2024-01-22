@@ -191,7 +191,7 @@ trackingObjects.‹tracking-object-key›.inject
 .. rst-class:: dl-parameters
 
 trackingObjects.‹tracking-object-key›.inject
-   :sep:`|` :aspect:`Data type:` :ref:`data-type-html-code`
+   :sep:`|` :aspect:`Data type:` :ref:`data-type-html-code` / :ref:`cObject <data-type-cobject>`
    :sep:`|` :aspect:`Example:`  <script src="/path/to/tracking-code.js"></script>
    :sep:`|`
 
@@ -199,6 +199,13 @@ trackingObjects.‹tracking-object-key›.inject
    This can be `<script>`, `<img>` or anything else.
 
    You can either use inline script or link to an external file (useful if a HTTP header `Content-Security-Policy` is set).
+
+   If you need a local path from your `_assets` directory, let TYPO3 build it. We currently recommend using `TEXT`
+   with `insertData = 1` and the getText `{path : EXT:…}`. The preceding root path (`/`) is necessary for it to work on subpages.
+   See the example above.
+
+   It has shortcomings (see https://forge.typo3.org/issues/99203#change-507069).
+   For v13 we'll probably get the {asset : ...} getText (https://review.typo3.org/c/Packages/TYPO3.CMS/+/77018).
 
 .. _trackingObjects.‹tracking-object-key›.show:
 
