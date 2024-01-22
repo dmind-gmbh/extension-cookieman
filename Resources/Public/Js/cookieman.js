@@ -2,7 +2,6 @@
 /** global: Cookies */
 var cookieman = (function () {
     "use strict";
-    // remember: write IE11-compatible JavaScript
     var cookieName = 'CookieConsent',
         cookieLifetimeDays = 365,
         form = document.querySelector('[data-cookieman-form]'),
@@ -61,7 +60,7 @@ var cookieman = (function () {
     }
 
     /**
-     * Checks if consent was given for all groups, in which a trackingObject
+     * Checks if consent was given for all groups in which a trackingObject
      * with the given key is defined. Normally each trackingObject should only
      * be present in one group.
      *
@@ -318,23 +317,7 @@ var cookieman = (function () {
         }
     }
 
-    // CustomEvents https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent
-    // polyfill for IE9+
-    function polyfillCustomEvent() {
-        if (typeof window.CustomEvent !== "function") {
-            window.CustomEvent = function (typeArg, customEventInit) {
-                customEventInit = customEventInit || {bubbles: false, cancelable: false, detail: undefined}
-                var event = document.createEvent('CustomEvent')
-                event.initCustomEvent(typeArg, customEventInit.bubbles, customEventInit.cancelable, customEventInit.detail)
-                return event
-            }
-            window.CustomEvent.prototype = window.Event.prototype
-        }
-    }
-
     function emit(typeArg, customEventInit) {
-        polyfillCustomEvent()
-
         eventsEl.dispatchEvent(
             new window.CustomEvent(typeArg, customEventInit)
         )
