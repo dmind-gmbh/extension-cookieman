@@ -16,7 +16,7 @@
     },
     "require": {
         "php": "^7.4 || ^8.0",
-        "typo3/cms-core": "^12 || 12.*.x-dev || dev-main"
+        "typo3/cms-core": "^12.4.9 || 12.*.x-dev || dev-main"
     },
     "require-dev": {
         "browserstack/browserstack-local": "dev-master",
