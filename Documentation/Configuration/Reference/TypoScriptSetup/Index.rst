@@ -204,8 +204,9 @@ trackingObjects.‹tracking-object-key›.inject
    with `insertData = 1` and the getText `{path : EXT:…}`. The preceding root path (`/`) is necessary for it to work on subpages.
    See the example above.
 
-   It has shortcomings (see https://forge.typo3.org/issues/99203#change-507069).
-   For v13 we'll probably get the {asset : ...} getText (https://review.typo3.org/c/Packages/TYPO3.CMS/+/77018).
+   It has shortcomings (namely the missing base and missing cache busting ?parameter. See https://forge.typo3.org/issues/99203#change-507069).
+
+   For v13 we'll probably get a {asset : ...} getText function (https://review.typo3.org/c/Packages/TYPO3.CMS/+/77018).
 
 .. _trackingObjects.‹tracking-object-key›.show:
 
