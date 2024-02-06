@@ -18,14 +18,8 @@ use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
 
 class TypoScriptSettingsProcessor implements DataProcessorInterface
 {
-    /**
-     * @var ConfigurationManagerInterface
-     */
-    protected $configurationManager;
-
-    public function __construct(ConfigurationManager $configurationManager)
+    public function __construct(protected ConfigurationManager $configurationManager)
     {
-        $this->configurationManager = $configurationManager;
     }
 
     /**
@@ -59,7 +53,7 @@ class TypoScriptSettingsProcessor implements DataProcessorInterface
     /**
      * Prepare TypoScript for the frontend.
      */
-    protected function sanitizeSettings(array $settings, ContentObjectRenderer $cObj)
+    protected function sanitizeSettings(array $settings, ContentObjectRenderer $cObj): array
     {
         foreach (($settings['groups'] ?? []) as $groupId => $group) {
             if (isset($group['preselected'])) {

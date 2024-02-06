@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 /*
  * This file is part of the package dmind/cookieman.
@@ -10,7 +12,7 @@
 defined('TYPO3') or die();
 
 // static TypoScript
-(static function () {
+(static function() {
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
         'cookieman',
         'Configuration/TypoScript',
