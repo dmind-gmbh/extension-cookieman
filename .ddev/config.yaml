@@ -10,14 +10,15 @@ additional_hostnames: []
 additional_fqdns: []
 database:
     type: mariadb
-    version: "10.4"
+    version: "10.11"
 hooks:
     post-start:
         - composer: update --with-dependencies --no-progress
         - exec: rm -f composer.lock
         - exec: |
             if [[ $(mysql -e "SHOW TABLES" | wc -l) -eq 0 ]]; then
-              composer typo3 install:setup -- --admin-user-name=admin --admin-password='aaAA11!!' --site-setup-type=site --no-interaction --force
+              composer typo3 install:setup -- --admin-user-name=admin --admin-password='aaAA11!!' \
+                --site-setup-type=site --no-interaction --force
               mysql <<< 'INSERT INTO pages SET uid=2, pid=1, title="Imprint", slug="/imprint"'
               mysql <<< 'INSERT INTO pages SET uid=3, pid=1, title="Privacy Policy", slug="/privacy"'
             fi
