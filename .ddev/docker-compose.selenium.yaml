@@ -1,20 +1,19 @@
-version: '3.6'
-
 services:
   selenium-chrome:
     container_name: ddev-${DDEV_SITENAME}-selenium-chrome
-    image: selenium/node-chrome:3
-    networks: [default, ddev_default]
+    image: selenium/node-chrome:4.9
+    networks: [ grid, ddev_default ]
     external_links:
       - "ddev-router:extension-cookieman-master.test"
     depends_on:
       - selenium-hub
     labels:
       com.ddev.site-name: ${DDEV_SITENAME}
-      com.ddev.approot: $DDEV_APPROOT
+      com.ddev.approot: ${DDEV_APPROOT}
     environment:
-      - HUB_HOST=selenium-hub
-      - HUB_PORT=4444
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
       - CAROOT=/mnt/ddev-global-cache/mkcert
     volumes:
       - /dev/shm:/dev/shm
@@ -22,18 +21,19 @@ services:
 
   selenium-firefox:
     container_name: ddev-${DDEV_SITENAME}-selenium-firefox
-    image: selenium/node-firefox:3
-    networks: [default, ddev_default]
+    image: selenium/node-firefox:4.9
+    networks: [ grid, ddev_default ]
     external_links:
       - "ddev-router:extension-cookieman-master.test"
     depends_on:
       - selenium-hub
     labels:
       com.ddev.site-name: ${DDEV_SITENAME}
-      com.ddev.approot: $DDEV_APPROOT
+      com.ddev.approot: ${DDEV_APPROOT}
     environment:
-      - HUB_HOST=selenium-hub
-      - HUB_PORT=4444
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
       - CAROOT=/mnt/ddev-global-cache/mkcert
     volumes:
       - /dev/shm:/dev/shm
@@ -41,13 +41,15 @@ services:
 
   selenium-hub:
     container_name: ddev-${DDEV_SITENAME}-selenium-hub
-    image: selenium/hub:3
-    networks: [default, ddev_default]
+    image: selenium/hub:4.9
+    networks: [ grid, ddev_default ]
     external_links:
       - "ddev-router:extension-cookieman-master.test"
     labels:
       com.ddev.site-name: ${DDEV_SITENAME}
-      com.ddev.approot: $DDEV_APPROOT
+      com.ddev.approot: ${DDEV_APPROOT}
+    ports:
+      - 4442-4443:4442-4443
     environment:
       - VIRTUAL_HOST=$DDEV_HOSTNAME
       - HTTP_EXPOSE=4444
@@ -57,5 +59,6 @@ services:
       - ddev-global-cache:/mnt/ddev-global-cache
 
 networks:
+  grid:
   ddev_default:
     external: true

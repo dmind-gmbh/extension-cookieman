@@ -33,27 +33,27 @@ use Exception;
  */
 class PopupInteractionsCest
 {
-    const PATH_root = '/';
-    const PATH_imprint = '/imprint';
-    const PATH_dataProtectionDeclaration = '/privacy';
+    public const PATH_root = '/';
+    public const PATH_imprint = '/imprint';
+    public const PATH_dataProtectionDeclaration = '/privacy';
 
-    const MODAL_titleEn = 'About Cookies';
-    const MODAL_textEn = 'This website uses cookies.';
+    public const MODAL_titleEn = 'About Cookies';
+    public const MODAL_textEn = 'This website uses cookies.';
 
-    const SELECTOR_modal = '#cookieman-modal';
-    const SELECTOR_btnSaveNotSaveAll = '[data-cookieman-save]:not([data-cookieman-accept-all]):not([data-cookieman-accept-none])';
-    const SELECTOR_btnSaveNone = '[data-cookieman-save][data-cookieman-accept-none]';
-    const SELECTOR_btnSaveAll = '[data-cookieman-save][data-cookieman-accept-all]';
-    const LOCATOR_settings = ['xpath' => '//*[self::button or self::a][contains(., "Settings")]'];
-    const BUTTON_titleSave = 'Save';
+    public const SELECTOR_modal = '#cookieman-modal';
+    public const SELECTOR_btnSaveNotSaveAll = '[data-cookieman-save]:not([data-cookieman-accept-all]):not([data-cookieman-accept-none])';
+    public const SELECTOR_btnSaveNone = '[data-cookieman-save][data-cookieman-accept-none]';
+    public const SELECTOR_btnSaveAll = '[data-cookieman-save][data-cookieman-accept-all]';
+    public const LOCATOR_settings = ['xpath' => '//*[self::button or self::a][contains(., "Settings")]'];
+    public const BUTTON_titleSave = 'Save';
 
-    const COOKIENAME = 'CookieConsent';
-    const COOKIE_separator = '|';
+    public const COOKIENAME = 'CookieConsent';
+    public const COOKIE_separator = '|';
 
-    const JS_showCookieman = 'cookieman.show()';
-    const JS_showOnceCookieman = 'cookieman.showOnce()';
-    const JS_hideCookieman = 'cookieman.hide()';
-    const JS_onScriptLoaded = "
+    public const JS_showCookieman = 'cookieman.show()';
+    public const JS_showOnceCookieman = 'cookieman.showOnce()';
+    public const JS_hideCookieman = 'cookieman.hide()';
+    public const JS_onScriptLoaded = "
             cookieman.onScriptLoaded(
                 arguments[0],
                 arguments[1],
@@ -63,16 +63,16 @@ class PopupInteractionsCest
             );
         ";
 
-    const GROUP_keyMandatory = 'mandatory';
+    public const GROUP_keyMandatory = 'mandatory';
 
-    const GROUP_key2nd = 'marketing';
-    const GROUP_title2nd = 'Marketing';
-    const COOKIE_titleIn2ndGroup = '_gat';
+    public const GROUP_key2nd = 'marketing';
+    public const GROUP_title2nd = 'Marketing';
+    public const COOKIE_titleIn2ndGroup = '_gat';
 
-    const GROUP_keyTestgroup = 'testgroup';
-    const TRACKINGOBJECT_inTestgroupWith2Scripts = 'Crowdin';
+    public const GROUP_keyTestgroup = 'testgroup';
+    public const TRACKINGOBJECT_inTestgroupWith2Scripts = 'Crowdin';
 
-    const WAITFOR_timeout = 5;
+    public const WAITFOR_timeout = 5;
 
     /**
      * @param AcceptanceTester $I
