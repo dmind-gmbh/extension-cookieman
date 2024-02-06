@@ -89,24 +89,26 @@
             </div>
 
             <div class="modal-footer">
-                <button
-                    data-cookieman-accept-none data-cookieman-save
-                    class="btn btn-primary"
-                >
-                    {f:translate(key: 'deny', extensionName: 'cookieman')}
-                </button>
-                <button
-                    data-cookieman-save
-                    class="btn btn-default" style="display: none"
-                >
-                    {f:translate(key: 'save', extensionName: 'cookieman')}
-                </button>
-                <button
-                    data-cookieman-accept-all data-cookieman-save
-                    class="btn btn-primary"
-                >
-                    {f:translate(key: 'accept', extensionName: 'cookieman')}
-                </button>
+                <div class="btn-group" role="group">
+                    <button
+                        data-cookieman-accept-none data-cookieman-save
+                        class="btn btn-primary"
+                    >
+                        {f:translate(key: 'deny', extensionName: 'cookieman')}
+                    </button>
+                    <button
+                        data-cookieman-save
+                        class="btn btn-default" style="display: none"
+                    >
+                        {f:translate(key: 'save', extensionName: 'cookieman')}
+                    </button>
+                    <button
+                        data-cookieman-accept-all data-cookieman-save
+                        class="btn btn-primary"
+                    >
+                        {f:translate(key: 'accept', extensionName: 'cookieman')}
+                    </button>
+                </div>
             </div>
         </div>
     </div>
