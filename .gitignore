@@ -7,12 +7,10 @@
 
 # build, dev, clutter
 /Build/yarn-error.log
-/Build/.phpunit.result.cache
+/Build/.phpunit.*
 /Build/node_modules/
 /Build/mix-manifest.json
 /Build/testing-docker/.env
-/Build/clover.xml
-/Build/coveralls-upload.json
 /Build/AcceptanceReports
 /Tests/Acceptance/Support/_generated/
 /temp-*/

@@ -21,34 +21,11 @@ class ShownTrackingObjectsViewHelperTest extends UnitTestCase
 {
     use ProphecyTrait;
 
-    /**
-     * @var ShownTrackingObjectsViewHelper
-     */
-    protected $viewHelper;
+    protected ShownTrackingObjectsViewHelper $viewHelper;
 
-    /**
-     * fix type annotation
-     * @var MockObject|StandardVariableProvider
-     */
-    protected $templateVariableContainer;
+    protected MockObject|StandardVariableProvider $templateVariableContainer;
 
-    /**
-     * @dataProvider settingsProvider
-     * @test
-     * @param array $settings
-     * @param array $expected
-     */
-    public function trackingObjectsByParameter(array $settings, array $expected): void
-    {
-        $result = ShownTrackingObjectsViewHelper::shownTrackingObjects(
-            $settings['groups']['mandatory'],
-            $settings
-        );
-
-        self::assertSame($expected, $result);
-    }
-
-    public function settingsProvider(): array
+    public static function settingsProvider(): array
     {
         $_tests[] = [
             0 => [
@@ -111,6 +88,22 @@ class ShownTrackingObjectsViewHelperTest extends UnitTestCase
         ];
 
         return $_tests;
+    }
+
+    /**
+     * @dataProvider settingsProvider
+     * @test
+     * @param array $settings
+     * @param array $expected
+     */
+    public function trackingObjectsByParameter(array $settings, array $expected): void
+    {
+        $result = ShownTrackingObjectsViewHelper::shownTrackingObjects(
+            $settings['groups']['mandatory'],
+            $settings
+        );
+
+        self::assertSame($expected, $result);
     }
 
     protected function setUp(): void
