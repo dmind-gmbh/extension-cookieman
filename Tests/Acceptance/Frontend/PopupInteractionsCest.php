@@ -35,24 +35,17 @@ class PopupInteractionsCest
 {
     public const PATH_root = '/';
     public const PATH_imprint = '/imprint';
-    public const PATH_dataProtectionDeclaration = '/privacy';
-
-    public const MODAL_titleEn = 'About Cookies';
-    public const MODAL_textEn = 'This website uses cookies.';
 
     public const SELECTOR_modal = '#cookieman-modal';
     public const SELECTOR_btnSaveNotSaveAll = '[data-cookieman-save]:not([data-cookieman-accept-all]):not([data-cookieman-accept-none])';
     public const SELECTOR_btnSaveNone = '[data-cookieman-save][data-cookieman-accept-none]';
     public const SELECTOR_btnSaveAll = '[data-cookieman-save][data-cookieman-accept-all]';
     public const LOCATOR_settings = ['xpath' => '//*[self::button or self::a][contains(., "Settings")]'];
-    public const BUTTON_titleSave = 'Save';
 
     public const COOKIENAME = 'CookieConsent';
     public const COOKIE_separator = '|';
 
     public const JS_showCookieman = 'cookieman.show()';
-    public const JS_showOnceCookieman = 'cookieman.showOnce()';
-    public const JS_hideCookieman = 'cookieman.hide()';
     public const JS_onScriptLoaded = "
             cookieman.onScriptLoaded(
                 arguments[0],
@@ -83,6 +76,7 @@ class PopupInteractionsCest
         $I->amOnPage(self::PATH_root);
         $I->waitForJS('return typeof cookieman === "object"', 10);
         $I->waitForElementVisible(self::SELECTOR_modal);
+        $I->waitForElementClickable(self::SELECTOR_btnSaveNone);
         $I->clickWithLeftButton(['css' => self::SELECTOR_btnSaveNone]);
         $I->waitForElementNotVisible(self::SELECTOR_modal);
         $I->seeCookie(self::COOKIENAME);
@@ -104,6 +98,7 @@ class PopupInteractionsCest
         $I->waitForElementClickable(self::LOCATOR_settings);
         $I->clickWithLeftButton(self::LOCATOR_settings);
         $I->scrollIntoView(self::SELECTOR_btnSaveAll);
+        $I->waitForElementClickable(self::SELECTOR_btnSaveAll);
         $I->clickWithLeftButton(['css' => self::SELECTOR_btnSaveAll]);
         $I->waitForElementNotVisible(self::SELECTOR_modal);
         $I->seeCookie(self::COOKIENAME);
@@ -138,9 +133,11 @@ class PopupInteractionsCest
         $I->amOnPage(self::PATH_root);
         $I->waitForJS('return typeof cookieman === "object"', 10);
         $I->waitForElementVisible(self::SELECTOR_modal, self::WAITFOR_timeout);
-        $I->tryToClickWithLeftButton(self::LOCATOR_settings);
+        $I->waitForElementClickable(self::LOCATOR_settings);
+        $I->clickWithLeftButton(self::LOCATOR_settings);
         $I->waitForElementVisible(Locator::contains('*', self::GROUP_title2nd), self::WAITFOR_timeout);
-        $I->tryToClickWithLeftButton(Locator::contains('*', self::GROUP_title2nd));
+        $I->waitForElementClickable(Locator::contains('*', self::GROUP_title2nd));
+        $I->clickWithLeftButton(Locator::contains('*', self::GROUP_title2nd));
         $I->waitForElementVisible(
             Locator::contains('*', self::COOKIE_titleIn2ndGroup),
             self::WAITFOR_timeout
@@ -151,6 +148,7 @@ class PopupInteractionsCest
         }
         $I->seeCheckboxIsChecked('[name=' . self::GROUP_key2nd . ']');
         $I->scrollIntoView(self::SELECTOR_btnSaveNotSaveAll);
+        $I->waitForElementClickable(self::SELECTOR_btnSaveNotSaveAll);
         $I->clickWithLeftButton(['css' => self::SELECTOR_btnSaveNotSaveAll]);
         $I->waitForElementNotVisible(self::SELECTOR_modal);
         $I->seeCookie(self::COOKIENAME);
