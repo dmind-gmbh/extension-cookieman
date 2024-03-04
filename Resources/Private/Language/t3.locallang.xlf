@@ -215,6 +215,174 @@
         <source>Short lived cookie used to temporarily store data for the visit.</source>
         <target>crwdns81000:0crwdne81000:0</target>
       </trans-unit>
+      <trans-unit id="trackingobject.__eoi.desc" resname="trackingobject.__eoi.desc">
+        <source>Google: Security for AdSense, AdSense for Search, Display + Video 360, Google Ad Manager, Google Ads</source>
+        <target>crwdns305134:0crwdne305134:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.NID.desc" resname="trackingobject.NID.desc">
+        <source>Google: Security, Analytics, Functionality, Advertising for AdSense for Search, Google Ads</source>
+        <target>crwdns305136:0crwdne305136:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__gads.desc" resname="trackingobject.__gads.desc">
+        <source>Google: Advertising for AdSense, Display + Video 360, Google Ad Manager, Google Ads</source>
+        <target>crwdns305138:0crwdne305138:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.pm_sess.desc" resname="trackingobject.pm_sess.desc">
+        <source>Google: Security, Functionality for  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</source>
+        <target>crwdns305140:0crwdne305140:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.pm_sess_NNN.desc" resname="trackingobject.pm_sess_NNN.desc">
+        <source>Google: Security, Functionality for  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</source>
+        <target>crwdns305142:0crwdne305142:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.aboutads_sessNNN.desc" resname="trackingobject.aboutads_sessNNN.desc">
+        <source>Google: Security, Functionality for  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</source>
+        <target>crwdns305144:0crwdne305144:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.FPAU.desc" resname="trackingobject.FPAU.desc">
+        <source>Google: Analytics, Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</source>
+        <target>crwdns305146:0crwdne305146:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.ANID.desc" resname="trackingobject.ANID.desc">
+        <source>Google: Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </source>
+        <target>crwdns305148:0crwdne305148:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.AID.desc" resname="trackingobject.AID.desc">
+        <source>Google: Analytics, Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </source>
+        <target>crwdns305150:0crwdne305150:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.TAID.desc" resname="trackingobject.TAID.desc">
+        <source>Google: Analytics, Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </source>
+        <target>crwdns305152:0crwdne305152:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.RUL.desc" resname="trackingobject.RUL.desc">
+        <source>Google: Advertising for Display + Video 360, Google Ads </source>
+        <target>crwdns305154:0crwdne305154:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.FPGCLAW.desc" resname="trackingobject.FPGCLAW.desc">
+        <source>Google: Analytics, Advertising for Google Ads</source>
+        <target>crwdns305156:0crwdne305156:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.FPGCLGB.desc" resname="trackingobject.FPGCLGB.desc">
+        <source>Google: Analytics, Advertising for Google Ads</source>
+        <target>crwdns305158:0crwdne305158:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gcl_gb.desc" resname="trackingobject._gcl_gb.desc">
+        <source>Google: Analytics, Advertising for Google Ads</source>
+        <target>crwdns305160:0crwdne305160:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gac_gb_--wpid--.desc" resname="trackingobject._gac_gb_--wpid--.desc">
+        <source>Google: Analytics, Advertising for Google Ads</source>
+        <target>crwdns305162:0crwdne305162:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gcl_aw.desc" resname="trackingobject._gcl_aw.desc">
+        <source>Google: Analytics, Advertising for Google Ads</source>
+        <target>crwdns305164:0crwdne305164:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.1P_JAR.desc" resname="trackingobject.1P_JAR.desc">
+        <source>Google: Advertising for Google Ads</source>
+        <target>crwdns305166:0crwdne305166:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.Conversion.desc" resname="trackingobject.Conversion.desc">
+        <source>Google: Advertising for Google Ads</source>
+        <target>crwdns305168:0crwdne305168:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.YSC.desc" resname="trackingobject.YSC.desc">
+        <source>Google: Security for Google Ads, YouTube </source>
+        <target>crwdns305170:0crwdne305170:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.VISITOR_INFO1_LIVE.desc" resname="trackingobject.VISITOR_INFO1_LIVE.desc">
+        <source>Google: Security, Advertising for Google Ads, YouTube </source>
+        <target>crwdns305172:0crwdne305172:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.VISITOR_INFO1_LIVE__k.desc" resname="trackingobject.VISITOR_INFO1_LIVE__k.desc">
+        <source>Google: Security, Advertising for Google Ads, YouTube </source>
+        <target>crwdns305174:0crwdne305174:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.VISITOR_INFO1_LIVE__default.desc" resname="trackingobject.VISITOR_INFO1_LIVE__default.desc">
+        <source>Google: Security, Advertising for Google Ads, YouTube </source>
+        <target>crwdns305176:0crwdne305176:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.DSID.desc" resname="trackingobject.DSID.desc">
+        <source>Google: Security, Functionality, Advertising for AdSense, Campaign Manager, Google Ad Manager, Google Analytics, Display + Video 360, Search Ads 360 </source>
+        <target>crwdns305178:0crwdne305178:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.test_cookie.desc" resname="trackingobject.test_cookie.desc">
+        <source>Google: Functionality for AdSense, Campaign Manager, Google Ad Manager, Google Analytics, Display + Video 360, Search Ads 360 </source>
+        <target>crwdns305180:0crwdne305180:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.IDE.desc" resname="trackingobject.IDE.desc">
+        <source>Google: Advertising for Campaign Manager, Display + Video 360, Google Ad Manager, Google Analytics, Search Ads 360 </source>
+        <target>crwdns305182:0crwdne305182:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.FPLC.desc" resname="trackingobject.FPLC.desc">
+        <source>Google: Analytics for Google Analytics </source>
+        <target>crwdns305184:0crwdne305184:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.FPID.desc" resname="trackingobject.FPID.desc">
+        <source>Google: Analytics for Google Analytics</source>
+        <target>crwdns305186:0crwdne305186:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.GA_OPT_OUT.desc" resname="trackingobject.GA_OPT_OUT.desc">
+        <source>Google: Functionality for Google Analytics</source>
+        <target>crwdns305188:0crwdne305188:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__utma.desc" resname="trackingobject.__utma.desc">
+        <source>Google: Analytics for Google Analytics</source>
+        <target>crwdns305190:0crwdne305190:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__utmb.desc" resname="trackingobject.__utmb.desc">
+        <source>Google: Analytics for Google Analytics</source>
+        <target>crwdns305192:0crwdne305192:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__utmc.desc" resname="trackingobject.__utmc.desc">
+        <source>Google: Analytics for Google Analytics</source>
+        <target>crwdns305194:0crwdne305194:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__utmt.desc" resname="trackingobject.__utmt.desc">
+        <source>Google: Analytics for Google Analytics</source>
+        <target>crwdns305196:0crwdne305196:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__utmz.desc" resname="trackingobject.__utmz.desc">
+        <source>Google: Analytics for Google Analytics</source>
+        <target>crwdns305198:0crwdne305198:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__utmv.desc" resname="trackingobject.__utmv.desc">
+        <source>Google: Analytics for Google Analytics</source>
+        <target>crwdns305200:0crwdne305200:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gat_--custom-name--.desc" resname="trackingobject._gat_--custom-name--.desc">
+        <source>Google: Analytics for Google Analytics</source>
+        <target>crwdns305202:0crwdne305202:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gaexp.desc" resname="trackingobject._gaexp.desc">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target>crwdns305204:0crwdne305204:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gaexp_rc.desc" resname="trackingobject._gaexp_rc.desc">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target>crwdns305206:0crwdne305206:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._opt_awcid.desc" resname="trackingobject._opt_awcid.desc">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target>crwdns305208:0crwdne305208:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._opt_awmid.desc" resname="trackingobject._opt_awmid.desc">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target>crwdns305210:0crwdne305210:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._opt_awgid.desc" resname="trackingobject._opt_awgid.desc">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target>crwdns305212:0crwdne305212:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._opt_awkid.desc" resname="trackingobject._opt_awkid.desc">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target>crwdns305214:0crwdne305214:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._opt_utmc.desc" resname="trackingobject._opt_utmc.desc">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target>crwdns305216:0crwdne305216:0</target>
+      </trans-unit>
       <trans-unit id="trackingobject._ga.desc" resname="trackingobject._ga.desc">
         <source>Used to distinguish users.</source>
         <target>crwdns81002:0crwdne81002:0</target>
@@ -335,6 +503,14 @@
         <source>none</source>
         <target>crwdns85960:0crwdne85960:0</target>
       </trans-unit>
+      <trans-unit id="duration.second" resname="duration.second">
+        <source>second</source>
+        <target>crwdns305218:0crwdne305218:0</target>
+      </trans-unit>
+      <trans-unit id="duration.seconds" resname="duration.seconds">
+        <source>seconds</source>
+        <target>crwdns305220:0crwdne305220:0</target>
+      </trans-unit>
       <trans-unit id="duration.minute" resname="duration.minute">
         <source>minute</source>
         <target>crwdns81022:0crwdne81022:0</target>
@@ -358,6 +534,14 @@
       <trans-unit id="duration.days" resname="duration.days">
         <source>days</source>
         <target>crwdns81032:0crwdne81032:0</target>
+      </trans-unit>
+      <trans-unit id="duration.week" resname="duration.week">
+        <source>week</source>
+        <target>crwdns305222:0crwdne305222:0</target>
+      </trans-unit>
+      <trans-unit id="duration.weeks" resname="duration.weeks">
+        <source>weeks</source>
+        <target>crwdns305224:0crwdne305224:0</target>
       </trans-unit>
       <trans-unit id="duration.month" resname="duration.month">
         <source>month</source>
