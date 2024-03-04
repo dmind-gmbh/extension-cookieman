@@ -22,6 +22,7 @@ plugin.tx_cookieman {
                     40 = FacebookPixel
                     50 = MicrosoftForms
                     60 = Slideshare
+                    70 = GoogleAds
                 }
 
                 respectDnt = 1
