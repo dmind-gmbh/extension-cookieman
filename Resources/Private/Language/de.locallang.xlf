@@ -215,173 +215,173 @@
         <source>Short lived cookie used to temporarily store data for the visit.</source>
         <target state="final">Kurzzeitiges Cookie, um vorübergehende Daten des Besuchs zu speichern.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.__eoi.desc" resname="trackingobject.__eoi.desc">
+      <trans-unit id="trackingobject.__eoi.desc" resname="trackingobject.__eoi.desc" approved="yes">
         <source>Google: Security for AdSense, AdSense for Search, Display + Video 360, Google Ad Manager, Google Ads</source>
-        <target state="needs-translation">Google: Security for AdSense, AdSense for Search, Display + Video 360, Google Ad Manager, Google Ads</target>
+        <target state="final">Google: Sicherheit für AdSense, AdSense for Search, Display + Video 360, Google Ad Manager, Google Ads</target>
       </trans-unit>
-      <trans-unit id="trackingobject.NID.desc" resname="trackingobject.NID.desc">
+      <trans-unit id="trackingobject.NID.desc" resname="trackingobject.NID.desc" approved="yes">
         <source>Google: Security, Analytics, Functionality, Advertising for AdSense for Search, Google Ads</source>
-        <target state="needs-translation">Google: Security, Analytics, Functionality, Advertising for AdSense for Search, Google Ads</target>
+        <target state="final">Google: Sicherheit, Analytik, Funktionalität, Werbung für AdSense for Search, Google Ads</target>
       </trans-unit>
-      <trans-unit id="trackingobject.__gads.desc" resname="trackingobject.__gads.desc">
+      <trans-unit id="trackingobject.__gads.desc" resname="trackingobject.__gads.desc" approved="yes">
         <source>Google: Advertising for AdSense, Display + Video 360, Google Ad Manager, Google Ads</source>
-        <target state="needs-translation">Google: Advertising for AdSense, Display + Video 360, Google Ad Manager, Google Ads</target>
+        <target state="final">Google: Werbung für AdSense, Display + Video 360, Google Ad Manager, Google Ads</target>
       </trans-unit>
-      <trans-unit id="trackingobject.pm_sess.desc" resname="trackingobject.pm_sess.desc">
+      <trans-unit id="trackingobject.pm_sess.desc" resname="trackingobject.pm_sess.desc" approved="yes">
         <source>Google: Security, Functionality for  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</source>
-        <target state="needs-translation">Google: Security, Functionality for  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</target>
+        <target state="final">Google: Sicherheit, Funktionalität für  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</target>
       </trans-unit>
-      <trans-unit id="trackingobject.pm_sess_NNN.desc" resname="trackingobject.pm_sess_NNN.desc">
+      <trans-unit id="trackingobject.pm_sess_NNN.desc" resname="trackingobject.pm_sess_NNN.desc" approved="yes">
         <source>Google: Security, Functionality for  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</source>
-        <target state="needs-translation">Google: Security, Functionality for  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</target>
+        <target state="final">Google: Sicherheit, Funktionalität für  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</target>
       </trans-unit>
-      <trans-unit id="trackingobject.aboutads_sessNNN.desc" resname="trackingobject.aboutads_sessNNN.desc">
+      <trans-unit id="trackingobject.aboutads_sessNNN.desc" resname="trackingobject.aboutads_sessNNN.desc" approved="yes">
         <source>Google: Security, Functionality for  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</source>
-        <target state="needs-translation">Google: Security, Functionality for  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</target>
+        <target state="final">Google: Sicherheit, Funktionalität für  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</target>
       </trans-unit>
-      <trans-unit id="trackingobject.FPAU.desc" resname="trackingobject.FPAU.desc">
+      <trans-unit id="trackingobject.FPAU.desc" resname="trackingobject.FPAU.desc" approved="yes">
         <source>Google: Analytics, Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</source>
-        <target state="needs-translation">Google: Analytics, Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</target>
+        <target state="final">Google: Analytik, Werbung für Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</target>
       </trans-unit>
-      <trans-unit id="trackingobject.ANID.desc" resname="trackingobject.ANID.desc">
+      <trans-unit id="trackingobject.ANID.desc" resname="trackingobject.ANID.desc" approved="yes">
         <source>Google: Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </source>
-        <target state="needs-translation">Google: Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </target>
+        <target state="final">Google: Werbung for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </target>
       </trans-unit>
-      <trans-unit id="trackingobject.AID.desc" resname="trackingobject.AID.desc">
+      <trans-unit id="trackingobject.AID.desc" resname="trackingobject.AID.desc" approved="yes">
         <source>Google: Analytics, Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </source>
-        <target state="needs-translation">Google: Analytics, Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </target>
+        <target state="final">Google: Analytik, Werbung für Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </target>
       </trans-unit>
-      <trans-unit id="trackingobject.TAID.desc" resname="trackingobject.TAID.desc">
+      <trans-unit id="trackingobject.TAID.desc" resname="trackingobject.TAID.desc" approved="yes">
         <source>Google: Analytics, Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </source>
-        <target state="needs-translation">Google: Analytics, Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </target>
+        <target state="final">Google: Analytik, Werbung für Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </target>
       </trans-unit>
-      <trans-unit id="trackingobject.RUL.desc" resname="trackingobject.RUL.desc">
+      <trans-unit id="trackingobject.RUL.desc" resname="trackingobject.RUL.desc" approved="yes">
         <source>Google: Advertising for Display + Video 360, Google Ads </source>
-        <target state="needs-translation">Google: Advertising for Display + Video 360, Google Ads </target>
+        <target state="final">Google: Werbung für Display + Video 360, Google Ads </target>
       </trans-unit>
-      <trans-unit id="trackingobject.FPGCLAW.desc" resname="trackingobject.FPGCLAW.desc">
+      <trans-unit id="trackingobject.FPGCLAW.desc" resname="trackingobject.FPGCLAW.desc" approved="yes">
         <source>Google: Analytics, Advertising for Google Ads</source>
-        <target state="needs-translation">Google: Analytics, Advertising for Google Ads</target>
+        <target state="final">Google: Analytik, Werbung für Google Ads</target>
       </trans-unit>
-      <trans-unit id="trackingobject.FPGCLGB.desc" resname="trackingobject.FPGCLGB.desc">
+      <trans-unit id="trackingobject.FPGCLGB.desc" resname="trackingobject.FPGCLGB.desc" approved="yes">
         <source>Google: Analytics, Advertising for Google Ads</source>
-        <target state="needs-translation">Google: Analytics, Advertising for Google Ads</target>
+        <target state="final">Google: Analytik, Werbung für Google Ads</target>
       </trans-unit>
-      <trans-unit id="trackingobject._gcl_gb.desc" resname="trackingobject._gcl_gb.desc">
+      <trans-unit id="trackingobject._gcl_gb.desc" resname="trackingobject._gcl_gb.desc" approved="yes">
         <source>Google: Analytics, Advertising for Google Ads</source>
-        <target state="needs-translation">Google: Analytics, Advertising for Google Ads</target>
+        <target state="final">Google: Analytik, Werbung für Google Ads</target>
       </trans-unit>
-      <trans-unit id="trackingobject._gac_gb_--wpid--.desc" resname="trackingobject._gac_gb_--wpid--.desc">
+      <trans-unit id="trackingobject._gac_gb_--wpid--.desc" resname="trackingobject._gac_gb_--wpid--.desc" approved="yes">
         <source>Google: Analytics, Advertising for Google Ads</source>
-        <target state="needs-translation">Google: Analytics, Advertising for Google Ads</target>
+        <target state="final">Google: Analytik, Werbung für Google Ads</target>
       </trans-unit>
-      <trans-unit id="trackingobject._gcl_aw.desc" resname="trackingobject._gcl_aw.desc">
+      <trans-unit id="trackingobject._gcl_aw.desc" resname="trackingobject._gcl_aw.desc" approved="yes">
         <source>Google: Analytics, Advertising for Google Ads</source>
-        <target state="needs-translation">Google: Analytics, Advertising for Google Ads</target>
+        <target state="final">Google: Analytik, Werbung für Google Ads</target>
       </trans-unit>
-      <trans-unit id="trackingobject.1P_JAR.desc" resname="trackingobject.1P_JAR.desc">
+      <trans-unit id="trackingobject.1P_JAR.desc" resname="trackingobject.1P_JAR.desc" approved="yes">
         <source>Google: Advertising for Google Ads</source>
-        <target state="needs-translation">Google: Advertising for Google Ads</target>
+        <target state="final">Google: Analytik, Werbung für Google Ads</target>
       </trans-unit>
-      <trans-unit id="trackingobject.Conversion.desc" resname="trackingobject.Conversion.desc">
+      <trans-unit id="trackingobject.Conversion.desc" resname="trackingobject.Conversion.desc" approved="yes">
         <source>Google: Advertising for Google Ads</source>
-        <target state="needs-translation">Google: Advertising for Google Ads</target>
+        <target state="final">Google: Werbung für Google Ads</target>
       </trans-unit>
-      <trans-unit id="trackingobject.YSC.desc" resname="trackingobject.YSC.desc">
+      <trans-unit id="trackingobject.YSC.desc" resname="trackingobject.YSC.desc" approved="yes">
         <source>Google: Security for Google Ads, YouTube </source>
-        <target state="needs-translation">Google: Security for Google Ads, YouTube </target>
+        <target state="final">Google: Sicherheit für Google Ads, YouTube </target>
       </trans-unit>
-      <trans-unit id="trackingobject.VISITOR_INFO1_LIVE.desc" resname="trackingobject.VISITOR_INFO1_LIVE.desc">
+      <trans-unit id="trackingobject.VISITOR_INFO1_LIVE.desc" resname="trackingobject.VISITOR_INFO1_LIVE.desc" approved="yes">
         <source>Google: Security, Advertising for Google Ads, YouTube </source>
-        <target state="needs-translation">Google: Security, Advertising for Google Ads, YouTube </target>
+        <target state="final">Google: Sicherheit, Werbung für Google Ads, YouTube </target>
       </trans-unit>
-      <trans-unit id="trackingobject.VISITOR_INFO1_LIVE__k.desc" resname="trackingobject.VISITOR_INFO1_LIVE__k.desc">
+      <trans-unit id="trackingobject.VISITOR_INFO1_LIVE__k.desc" resname="trackingobject.VISITOR_INFO1_LIVE__k.desc" approved="yes">
         <source>Google: Security, Advertising for Google Ads, YouTube </source>
-        <target state="needs-translation">Google: Security, Advertising for Google Ads, YouTube </target>
+        <target state="final">Google: Sicherheit, Werbung für Google Ads, YouTube </target>
       </trans-unit>
-      <trans-unit id="trackingobject.VISITOR_INFO1_LIVE__default.desc" resname="trackingobject.VISITOR_INFO1_LIVE__default.desc">
+      <trans-unit id="trackingobject.VISITOR_INFO1_LIVE__default.desc" resname="trackingobject.VISITOR_INFO1_LIVE__default.desc" approved="yes">
         <source>Google: Security, Advertising for Google Ads, YouTube </source>
-        <target state="needs-translation">Google: Security, Advertising for Google Ads, YouTube </target>
+        <target state="final">Google: Sicherheit, Werbung für Google Ads, YouTube </target>
       </trans-unit>
-      <trans-unit id="trackingobject.DSID.desc" resname="trackingobject.DSID.desc">
+      <trans-unit id="trackingobject.DSID.desc" resname="trackingobject.DSID.desc" approved="yes">
         <source>Google: Security, Functionality, Advertising for AdSense, Campaign Manager, Google Ad Manager, Google Analytics, Display + Video 360, Search Ads 360 </source>
-        <target state="needs-translation">Google: Security, Functionality, Advertising for AdSense, Campaign Manager, Google Ad Manager, Google Analytics, Display + Video 360, Search Ads 360 </target>
+        <target state="final">Google: Sicherheit, Funktionalität, Werbung für AdSense, Campaign Manager, Google Ad Manager, Google Analytics, Display + Video 360, Search Ads 360 </target>
       </trans-unit>
-      <trans-unit id="trackingobject.test_cookie.desc" resname="trackingobject.test_cookie.desc">
+      <trans-unit id="trackingobject.test_cookie.desc" resname="trackingobject.test_cookie.desc" approved="yes">
         <source>Google: Functionality for AdSense, Campaign Manager, Google Ad Manager, Google Analytics, Display + Video 360, Search Ads 360 </source>
-        <target state="needs-translation">Google: Functionality for AdSense, Campaign Manager, Google Ad Manager, Google Analytics, Display + Video 360, Search Ads 360 </target>
+        <target state="final">Google: Funktionalität für AdSense, Campaign Manager, Google Ad Manager, Google Analytics, Display + Video 360, Search Ads 360 </target>
       </trans-unit>
-      <trans-unit id="trackingobject.IDE.desc" resname="trackingobject.IDE.desc">
+      <trans-unit id="trackingobject.IDE.desc" resname="trackingobject.IDE.desc" approved="yes">
         <source>Google: Advertising for Campaign Manager, Display + Video 360, Google Ad Manager, Google Analytics, Search Ads 360 </source>
-        <target state="needs-translation">Google: Advertising for Campaign Manager, Display + Video 360, Google Ad Manager, Google Analytics, Search Ads 360 </target>
+        <target state="final">Google: Werbung for Campaign Manager, Display + Video 360, Google Ad Manager, Google Analytics, Search Ads 360 </target>
       </trans-unit>
-      <trans-unit id="trackingobject.FPLC.desc" resname="trackingobject.FPLC.desc">
+      <trans-unit id="trackingobject.FPLC.desc" resname="trackingobject.FPLC.desc" approved="yes">
         <source>Google: Analytics for Google Analytics </source>
-        <target state="needs-translation">Google: Analytics for Google Analytics </target>
+        <target state="final">Google: Analytik für Google Analytics </target>
       </trans-unit>
-      <trans-unit id="trackingobject.FPID.desc" resname="trackingobject.FPID.desc">
+      <trans-unit id="trackingobject.FPID.desc" resname="trackingobject.FPID.desc" approved="yes">
         <source>Google: Analytics for Google Analytics</source>
-        <target state="needs-translation">Google: Analytics for Google Analytics</target>
+        <target state="final">Google: Analytik für Google Analytics</target>
       </trans-unit>
-      <trans-unit id="trackingobject.GA_OPT_OUT.desc" resname="trackingobject.GA_OPT_OUT.desc">
+      <trans-unit id="trackingobject.GA_OPT_OUT.desc" resname="trackingobject.GA_OPT_OUT.desc" approved="yes">
         <source>Google: Functionality for Google Analytics</source>
-        <target state="needs-translation">Google: Functionality for Google Analytics</target>
+        <target state="final">Google: Funktionalität für Google Analytics </target>
       </trans-unit>
-      <trans-unit id="trackingobject.__utma.desc" resname="trackingobject.__utma.desc">
+      <trans-unit id="trackingobject.__utma.desc" resname="trackingobject.__utma.desc" approved="yes">
         <source>Google: Analytics for Google Analytics</source>
-        <target state="needs-translation">Google: Analytics for Google Analytics</target>
+        <target state="final">Google: Analytik für Google Analytics</target>
       </trans-unit>
-      <trans-unit id="trackingobject.__utmb.desc" resname="trackingobject.__utmb.desc">
+      <trans-unit id="trackingobject.__utmb.desc" resname="trackingobject.__utmb.desc" approved="yes">
         <source>Google: Analytics for Google Analytics</source>
-        <target state="needs-translation">Google: Analytics for Google Analytics</target>
+        <target state="final">Google: Analytik für Google Analytics</target>
       </trans-unit>
-      <trans-unit id="trackingobject.__utmc.desc" resname="trackingobject.__utmc.desc">
+      <trans-unit id="trackingobject.__utmc.desc" resname="trackingobject.__utmc.desc" approved="yes">
         <source>Google: Analytics for Google Analytics</source>
-        <target state="needs-translation">Google: Analytics for Google Analytics</target>
+        <target state="final">Google: Analytik für Google Analytics</target>
       </trans-unit>
-      <trans-unit id="trackingobject.__utmt.desc" resname="trackingobject.__utmt.desc">
+      <trans-unit id="trackingobject.__utmt.desc" resname="trackingobject.__utmt.desc" approved="yes">
         <source>Google: Analytics for Google Analytics</source>
-        <target state="needs-translation">Google: Analytics for Google Analytics</target>
+        <target state="final">Google: Analytik für Google Analytics</target>
       </trans-unit>
-      <trans-unit id="trackingobject.__utmz.desc" resname="trackingobject.__utmz.desc">
+      <trans-unit id="trackingobject.__utmz.desc" resname="trackingobject.__utmz.desc" approved="yes">
         <source>Google: Analytics for Google Analytics</source>
-        <target state="needs-translation">Google: Analytics for Google Analytics</target>
+        <target state="final">Google: Analytik für Google Analytics</target>
       </trans-unit>
-      <trans-unit id="trackingobject.__utmv.desc" resname="trackingobject.__utmv.desc">
+      <trans-unit id="trackingobject.__utmv.desc" resname="trackingobject.__utmv.desc" approved="yes">
         <source>Google: Analytics for Google Analytics</source>
-        <target state="needs-translation">Google: Analytics for Google Analytics</target>
+        <target state="final">Google: Analytik für Google Analytics</target>
       </trans-unit>
-      <trans-unit id="trackingobject._gat_--custom-name--.desc" resname="trackingobject._gat_--custom-name--.desc">
+      <trans-unit id="trackingobject._gat_--custom-name--.desc" resname="trackingobject._gat_--custom-name--.desc" approved="yes">
         <source>Google: Analytics for Google Analytics</source>
-        <target state="needs-translation">Google: Analytics for Google Analytics</target>
+        <target state="final">Google: Analytik für Google Analytics</target>
       </trans-unit>
-      <trans-unit id="trackingobject._gaexp.desc" resname="trackingobject._gaexp.desc">
+      <trans-unit id="trackingobject._gaexp.desc" resname="trackingobject._gaexp.desc" approved="yes">
         <source>Google: Analytics for Google Analytics, Optimize</source>
-        <target state="needs-translation">Google: Analytics for Google Analytics, Optimize</target>
+        <target state="final">Google: Analytik für Google Analytics, Optimize</target>
       </trans-unit>
-      <trans-unit id="trackingobject._gaexp_rc.desc" resname="trackingobject._gaexp_rc.desc">
+      <trans-unit id="trackingobject._gaexp_rc.desc" resname="trackingobject._gaexp_rc.desc" approved="yes">
         <source>Google: Analytics for Google Analytics, Optimize</source>
-        <target state="needs-translation">Google: Analytics for Google Analytics, Optimize</target>
+        <target state="final">Google: Analytik für Google Analytics, Optimize</target>
       </trans-unit>
-      <trans-unit id="trackingobject._opt_awcid.desc" resname="trackingobject._opt_awcid.desc">
+      <trans-unit id="trackingobject._opt_awcid.desc" resname="trackingobject._opt_awcid.desc" approved="yes">
         <source>Google: Analytics for Google Analytics, Optimize</source>
-        <target state="needs-translation">Google: Analytics for Google Analytics, Optimize</target>
+        <target state="final">Google: Analytik für Google Analytics, Optimize</target>
       </trans-unit>
-      <trans-unit id="trackingobject._opt_awmid.desc" resname="trackingobject._opt_awmid.desc">
+      <trans-unit id="trackingobject._opt_awmid.desc" resname="trackingobject._opt_awmid.desc" approved="yes">
         <source>Google: Analytics for Google Analytics, Optimize</source>
-        <target state="needs-translation">Google: Analytics for Google Analytics, Optimize</target>
+        <target state="final">Google: Analytik für Google Analytics, Optimize</target>
       </trans-unit>
-      <trans-unit id="trackingobject._opt_awgid.desc" resname="trackingobject._opt_awgid.desc">
+      <trans-unit id="trackingobject._opt_awgid.desc" resname="trackingobject._opt_awgid.desc" approved="yes">
         <source>Google: Analytics for Google Analytics, Optimize</source>
-        <target state="needs-translation">Google: Analytics for Google Analytics, Optimize</target>
+        <target state="final">Google: Analytik für Google Analytics, Optimize</target>
       </trans-unit>
-      <trans-unit id="trackingobject._opt_awkid.desc" resname="trackingobject._opt_awkid.desc">
+      <trans-unit id="trackingobject._opt_awkid.desc" resname="trackingobject._opt_awkid.desc" approved="yes">
         <source>Google: Analytics for Google Analytics, Optimize</source>
-        <target state="needs-translation">Google: Analytics for Google Analytics, Optimize</target>
+        <target state="final">Google: Analytik für Google Analytics, Optimize</target>
       </trans-unit>
-      <trans-unit id="trackingobject._opt_utmc.desc" resname="trackingobject._opt_utmc.desc">
+      <trans-unit id="trackingobject._opt_utmc.desc" resname="trackingobject._opt_utmc.desc" approved="yes">
         <source>Google: Analytics for Google Analytics, Optimize</source>
-        <target state="needs-translation">Google: Analytics for Google Analytics, Optimize</target>
+        <target state="final">Google: Analytik für Google Analytics, Optimize</target>
       </trans-unit>
       <trans-unit id="trackingobject._ga.desc" resname="trackingobject._ga.desc" approved="yes">
         <source>Used to distinguish users.</source>
@@ -503,13 +503,13 @@
         <source>none</source>
         <target state="final">keine</target>
       </trans-unit>
-      <trans-unit id="duration.second" resname="duration.second">
+      <trans-unit id="duration.second" resname="duration.second" approved="yes">
         <source>second</source>
-        <target state="needs-translation">second</target>
+        <target state="final">Sekunde</target>
       </trans-unit>
-      <trans-unit id="duration.seconds" resname="duration.seconds">
+      <trans-unit id="duration.seconds" resname="duration.seconds" approved="yes">
         <source>seconds</source>
-        <target state="needs-translation">seconds</target>
+        <target state="final">Sekunden</target>
       </trans-unit>
       <trans-unit id="duration.minute" resname="duration.minute" approved="yes">
         <source>minute</source>
@@ -535,13 +535,13 @@
         <source>days</source>
         <target state="final">Tage</target>
       </trans-unit>
-      <trans-unit id="duration.week" resname="duration.week">
+      <trans-unit id="duration.week" resname="duration.week" approved="yes">
         <source>week</source>
-        <target state="needs-translation">week</target>
+        <target state="final">Woche</target>
       </trans-unit>
-      <trans-unit id="duration.weeks" resname="duration.weeks">
+      <trans-unit id="duration.weeks" resname="duration.weeks" approved="yes">
         <source>weeks</source>
-        <target state="needs-translation">weeks</target>
+        <target state="final">Wochen</target>
       </trans-unit>
       <trans-unit id="duration.month" resname="duration.month" approved="yes">
         <source>month</source>
