@@ -253,6 +253,12 @@
             <trans-unit id="duration.none" resname="duration.empty">
                 <source>none</source>
             </trans-unit>
+			<trans-unit id="duration.second" resname="duration.second">
+				<source>second</source>
+			</trans-unit>
+			<trans-unit id="duration.seconds" resname="duration.seconds">
+				<source>seconds</source>
+			</trans-unit>
             <trans-unit id="duration.minute" resname="duration.minute">
                 <source>minute</source>
             </trans-unit>
@@ -271,6 +277,12 @@
             <trans-unit id="duration.days" resname="duration.days">
                 <source>days</source>
             </trans-unit>
+			<trans-unit id="duration.week" resname="duration.week">
+				<source>week</source>
+			</trans-unit>
+			<trans-unit id="duration.weeks" resname="duration.weeks">
+				<source>weeks</source>
+			</trans-unit>
             <trans-unit id="duration.month" resname="duration.month">
                 <source>month</source>
             </trans-unit>
