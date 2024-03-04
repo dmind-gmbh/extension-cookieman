@@ -4,7 +4,7 @@ services:
     image: selenium/node-chrome:4.9
     networks: [ grid, ddev_default ]
     external_links:
-      - "ddev-router:extension-cookieman-master.test"
+      - "ddev-router:extension-cookieman-master.ddev.site"
     depends_on:
       - selenium-hub
     labels:
@@ -24,7 +24,7 @@ services:
     image: selenium/node-firefox:4.9
     networks: [ grid, ddev_default ]
     external_links:
-      - "ddev-router:extension-cookieman-master.test"
+      - "ddev-router:extension-cookieman-master.ddev.site"
     depends_on:
       - selenium-hub
     labels:
@@ -44,7 +44,7 @@ services:
     image: selenium/hub:4.9
     networks: [ grid, ddev_default ]
     external_links:
-      - "ddev-router:extension-cookieman-master.test"
+      - "ddev-router:extension-cookieman-master.ddev.site"
     labels:
       com.ddev.site-name: ${DDEV_SITENAME}
       com.ddev.approot: ${DDEV_APPROOT}
