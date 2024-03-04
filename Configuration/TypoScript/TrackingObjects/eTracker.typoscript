@@ -1,7 +1,7 @@
 plugin.tx_cookieman.settings.trackingObjects {
     etracker {
         # You can inject eTracker without cookies: https://www.etracker.com/en/support/block-etracker-cookies/
-        # So you would inject this normally (alaways) ...
+        # So you would include this as usual:
         #
         #    <!-- Copyright (c) 2000-2019 etracker GmbH. All rights reserved. -->
         #    <!-- This material may not be reproduced, displayed, modified or distributed -->
@@ -9,28 +9,27 @@ plugin.tx_cookieman.settings.trackingObjects {
         #    <!-- etracker tracklet 4.1 -->
         #    <script type="text/javascript">
         #    //var et_pagename = "";
-#    //var et_areas = "";
-#    //var et_url = "";
-#    //var et_target = "";
-#    //var et_tval = "";
-#    //var et_tonr = "";
-#    //var et_tsale = 0;
-#    //var et_basket = "";
-#    //var et_cust = 0;
-#    </script>
-#    <script id="_etLoader" type="text/javascript" charset="UTF-8" data-block-cookies="true" data-respect-dnt="true" data-secure-code="ZPKvl3" src="//static.etracker.com/code/e.js"></script>
-#    <!-- etracker tracklet 4.1 end -->
+        #    //var et_areas = "";
+        #    //var et_url = "";
+        #    //var et_target = "";
+        #    //var et_tval = "";
+        #    //var et_tonr = "";
+        #    //var et_tsale = 0;
+        #    //var et_basket = "";
+        #    //var et_cust = 0;
+        #    </script>
+        #    <script id="_etLoader" type="text/javascript" charset="UTF-8" data-block-cookies="true" data-respect-dnt="true" data-secure-code="ZPKvl3" src="//static.etracker.com/code/e.js"></script>
+        #    <!-- etracker tracklet 4.1 end -->
 
-        # ... then when cookie usage is consented (put this into a file if your CSP does not allow inline scripts):
+        # ... then gets called when cookie usage is consented:
         inject (
             <script>
                 _etracker.enableCookies()
             </script>
         )
 
-        # yes, the amount of tracking object items for eTracker is insane...
         show {
-            # https://www.etracker.com/support/verwendete-cookies-zaehlung/ (only German)
+            # https://www.etracker.com/en/docs/integration-setup-2/settings-accounts/etracker-cookies/cookies-used/
             cntcookie {
                 duration = 4
                 durationUnit = years
