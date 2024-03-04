@@ -19,6 +19,91 @@ plugin.tx_cookieman.settings.trackingObjects {
 #        )
         show {
             # https://developers.google.com/analytics/devguides/collection/gtagjs/cookie-usage
+            # many are missing. See https://business.safety.google/adscookies/
+            DSID {
+                duration = 2
+                durationUnit = weeks
+                type = cookie_http+html
+                provider = Google
+            }
+
+            test_cookie {
+                duration = 15
+                durationUnit = minutes
+                type = cookie_http+html
+                provider = Google
+            }
+
+            IDE {
+                duration = 24
+                durationUnit = months
+                type = cookie_http+html
+                provider = Google
+            }
+
+            FPLC {
+                duration = 20
+                durationUnit = hours
+                type = cookie_http+html
+                provider = Google
+            }
+
+            FPID {
+                duration = 2
+                durationUnit = years
+                type = cookie_http+html
+                provider = Google
+            }
+
+            GA_OPT_OUT {
+                duration = 7
+                durationUnit = years
+                type = cookie_http+html
+                provider = Google
+            }
+
+            __utma {
+                duration = 2
+                durationUnit = years
+                type = cookie_http+html
+                provider = Google
+            }
+
+            __utmb {
+                duration = 30
+                durationUnit = minutes
+                type = cookie_http+html
+                provider = Google
+            }
+
+            __utmc {
+                duration =
+                durationUnit = session
+                type = cookie_http+html
+                provider = Google
+            }
+
+            __utmt {
+                duration = 10
+                durationUnit = minutes
+                type = cookie_http+html
+                provider = Google
+            }
+
+            __utmz {
+                duration = 6
+                durationUnit = months
+                type = cookie_http+html
+                provider = Google
+            }
+
+            __utmv {
+                duration = 2
+                durationUnit = years
+                type = cookie_http+html
+                provider = Google
+            }
+
             _ga {
                 duration = 2
                 durationUnit = years
@@ -28,15 +113,21 @@ plugin.tx_cookieman.settings.trackingObjects {
 
             _gat {
                 duration = 1
-                durationUnit = day
+                durationUnit = minute
                 type = cookie_http+html
                 provider = Google
-                htmlCookieRemovalPattern = ^_gat(?:_UA\-\d+\-\d+)?$
+            }
+
+            _gat_--custom-name-- {
+                duration = 1
+                durationUnit = minute
+                type = cookie_http+html
+                provider = Google
             }
 
             _gid {
-                duration = 1
-                durationUnit = day
+                duration = 24
+                durationUnit = hours
                 type = cookie_http+html
                 provider = Google
             }
@@ -46,15 +137,80 @@ plugin.tx_cookieman.settings.trackingObjects {
                 durationUnit = years
                 type = cookie_http+html
                 provider = Google
-                htmlCookieRemovalPattern = ^_ga_GTM\-\d+$
+                htmlCookieRemovalPattern = ^_ga_
             }
 
-            _gac_--property-id-- {
-                duration = 3
-                durationUnit = months
+            _dc_gtm_--property-id-- {
+                duration = 1
+                durationUnit = minute
                 type = cookie_http+html
                 provider = Google
-                htmlCookieRemovalPattern = ^_gac_UA\-\d+\-\d+$
+                htmlCookieRemovalPattern = ^_dc_gtm_UA\-\d+\-\d+$
+            }
+
+            _gaexp {
+                duration = 93
+                durationUnit = days
+                type = cookie_http+html
+                provider = Google
+            }
+
+            _gaexp_rc {
+                duration = 10
+                durationUnit = seconds
+                type = cookie_http+html
+                provider = Google
+            }
+
+            _opt_awcid {
+                duration = 24
+                durationUnit = hours
+                type = cookie_http+html
+                provider = Google
+            }
+
+            _opt_awmid {
+                duration = 24
+                durationUnit = hours
+                type = cookie_http+html
+                provider = Google
+            }
+
+            _opt_awgid {
+                duration = 24
+                durationUnit = hours
+                type = cookie_http+html
+                provider = Google
+            }
+
+            _opt_awkid {
+                duration = 24
+                durationUnit = hours
+                type = cookie_http+html
+                provider = Google
+            }
+
+            _opt_utmc {
+                duration = 24
+                durationUnit = hours
+                type = cookie_http+html
+                provider = Google
+            }
+
+
+            _gac_--property-id-- {
+                duration = 90
+                durationUnit = days
+                type = cookie_http+html
+                provider = Google
+                htmlCookieRemovalPattern = ^_gac_
+            }
+
+            AMP_TOKEN {
+                duration = 1
+                durationUnit = year
+                type = cookie_http+html
+                provider = Google
             }
         }
     }
