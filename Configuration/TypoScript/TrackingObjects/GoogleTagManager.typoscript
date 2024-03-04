@@ -17,22 +17,10 @@ plugin.tx_cookieman.settings.trackingObjects {
 #        )
         show {
             # https://developers.google.com/analytics/devguides/collection/gtagjs/cookie-usage
-            _gcl_au {
-                duration = 3
-                durationUnit = months
-                type = cookie_http+html
-                provider = Google
-            }
-
-            AMP_TOKEN {
-                duration = 1
-                durationUnit = year
-                type = cookie_http+html
-                provider = Google
-            }
+            # https://business.safety.google/adscookies/
             _dc_gtm_--property-id-- {
-                duration = 2
-                durationUnit = years
+                duration = 1
+                durationUnit = minute
                 type = cookie_http+html
                 provider = Google
                 htmlCookieRemovalPattern = ^_dc_gtm_UA\-\d+\-\d+$
