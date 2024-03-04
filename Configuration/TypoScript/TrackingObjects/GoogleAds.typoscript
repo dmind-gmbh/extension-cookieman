@@ -1,0 +1,171 @@
+plugin.tx_cookieman.settings.trackingObjects {
+    GoogleAds {
+        inject =
+        show {
+            # https://business.safety.google/adscookies/
+            __eoi {
+                duration = 6
+                durationUnit = months
+                type = cookie_http+html
+                provider = Google
+            }
+
+            NID {
+                duration = 6
+                durationUnit = months
+                type = cookie_http+html
+                provider = Google
+            }
+
+            __gads {
+                duration = 13
+                durationUnit = months
+                type = cookie_http+html
+                provider = Google
+            }
+
+            pm_sess {
+                duration = 30
+                durationUnit = minutes
+                type = cookie_http+html
+                provider = Google
+            }
+
+            pm_sess_NNN {
+                duration = 30
+                durationUnit = minutes
+                type = cookie_http+html
+                provider = Google
+                htmlCookieRemovalPattern = ^pm_sess_
+            }
+
+            aboutads_sessNNN {
+                duration = 30
+                durationUnit = minutes
+                type = cookie_http+html
+                provider = Google
+                htmlCookieRemovalPattern = ^aboutads_sess_
+            }
+
+            FPAU {
+                duration = 90
+                durationUnit = days
+                type = cookie_http+html
+                provider = Google
+            }
+
+            ANID {
+                duration = 24
+                durationUnit = months
+                type = cookie_http+html
+                provider = Google
+            }
+
+            AID {
+                duration = 24
+                durationUnit = months
+                type = cookie_http+html
+                provider = Google
+            }
+
+            TAID {
+                duration = 14
+                durationUnit = days
+                type = cookie_http+html
+                provider = Google
+            }
+
+            _gcl_au {
+                duration = 90
+                durationUnit = days
+                type = cookie_http+html
+                provider = Google
+            }
+
+            RUL {
+                duration = 12
+                durationUnit = months
+                type = cookie_http+html
+                provider = Google
+            }
+
+            FPGCLAW {
+                duration = 90
+                durationUnit = days
+                type = cookie_http+html
+                provider = Google
+            }
+
+            FPGCLGB {
+                duration = 90
+                durationUnit = days
+                type = cookie_http+html
+                provider = Google
+            }
+
+            _gcl_gb {
+                duration = 90
+                durationUnit = days
+                type = cookie_http+html
+                provider = Google
+            }
+
+            _gac_gb_--wpid-- {
+                duration = 90
+                durationUnit = days
+                type = cookie_http+html
+                provider = Google
+                htmlCookieRemovalPattern = ^_gac_gb_
+            }
+
+            _gcl_aw {
+                duration = 90
+                durationUnit = days
+                type = cookie_http+html
+                provider = Google
+            }
+
+            1P_JAR {
+                duration = 30
+                durationUnit = days
+                type = cookie_http+html
+                provider = Google
+            }
+
+            Conversion {
+                duration = 90
+                durationUnit = days
+                type = cookie_http+html
+                provider = Google
+            }
+
+            YSC {
+                duration =
+                durationUnit = session
+                type = cookie_http+html
+                provider = Google
+            }
+
+            VISITOR_INFO1_LIVE {
+                duration = 180
+                durationUnit = days
+                type = cookie_http+html
+                provider = Google
+            }
+
+            VISITOR_INFO1_LIVE__k {
+                duration = 180
+                durationUnit = days
+                type = cookie_http+html
+                provider = Google
+            }
+
+            VISITOR_INFO1_LIVE__default {
+                duration = 180
+                durationUnit = days
+                type = cookie_http+html
+                provider = Google
+            }
+        }
+    }
+}
