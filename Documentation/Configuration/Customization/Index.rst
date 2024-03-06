@@ -131,3 +131,23 @@ Uncheck all checkboxes
               data-cookieman-save>
                   {f:translate(key: 'deny')}
       </button>
+
+
+Global functionality with data-attributes
+=========================================
+
+<* data-cookieman-show>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
+
+Opens the cookieman dialog
+   It can be added to any HTML element. The element does not have to be there on
+   initial load (thus it should work with web components, VueJS, react, etc.).
+
+   Example:
+
+   .. code-block:: HTML
+
+      <button data-cookieman-show>
+        Adjust your cookie preferences
+      </button>
