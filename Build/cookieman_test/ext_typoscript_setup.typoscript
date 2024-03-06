@@ -1,3 +1,5 @@
+@import 'EXT:cookieman_test/Configuration/TypoScript/setup.typoscript'
+
 @import 'EXT:cookieman/Configuration/TypoScript/setup.typoscript'
 @import 'EXT:cookieman/Configuration/TypoScript/Example/setup.typoscript'
 
