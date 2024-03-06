@@ -311,10 +311,14 @@ Cookieman allows to add external sources with the :ref:`inject <trackingObjects.
 
    plugin.tx_cookieman.settings.trackingObjects {
        Matomo {
-           inject (
-               <script src="https://your-domain.com/typo3conf/ext/your_sitepackage/Resources/Public/JavaScript/matomo-trackingcode.js"></script>
-               <script src="https://your-matomo-server.com/path/to/matomo.js" async defer></script>
-           )
+           inject = TEXT
+           inject {
+               insertData = 1
+               value (
+                   <script src="/{path : EXT:your_sitepackage/Resources/Public/JavaScript/matomo-trackingcode.js}"></script>
+                   <script src="https://your-matomo-server.com/path/to/matomo.js" async defer></script>
+               )
+           }
        }
    }
 

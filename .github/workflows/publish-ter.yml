@@ -13,7 +13,7 @@ jobs:
       TYPO3_API_TOKEN: ${{ secrets.TYPO3_API_TOKEN }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Check tag
         run: |
@@ -32,7 +32,7 @@ jobs:
           comment="${comment//'%'/'%25'}"
           comment="${comment//$'\n'/'%0A'}"
           comment="${comment//$'\r'/'%0D'}"
-          
+
           if [[ -z "${comment// }" ]]; then
             echo ::set-output name=comment::Released version ${{ steps.get-version.outputs.version }} of ${{ env.TYPO3_EXTENSION_KEY }}
           else

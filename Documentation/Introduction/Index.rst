@@ -92,7 +92,7 @@ Features
 Compatibility
 -------------
 
-*  Supports all modern browsers and Internet Explorer 11
+*  Supports all modern browsers
 *  Can be configured to work with a strict `Content Security Policy <https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP>`__
    (no inline scripts are needed)
 

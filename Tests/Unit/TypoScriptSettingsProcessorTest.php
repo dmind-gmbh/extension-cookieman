@@ -12,61 +12,17 @@ declare(strict_types=1);
 namespace Dmind\Cookieman\Tests\Unit;
 
 use Dmind\Cookieman\DataProcessing\TypoScriptSettingsProcessor;
+use PHPUnit\Framework\MockObject\MockObject;
 use TYPO3\CMS\Extbase\Configuration\ConfigurationManager;
+use TYPO3\CMS\Extbase\Configuration\Exception\InvalidConfigurationTypeException;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
 use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
 
 class TypoScriptSettingsProcessorTest extends UnitTestCase
 {
-    /**
-     * @var ContentObjectRenderer|\PHPUnit\Framework\MockObject\MockObject
-     */
-    protected $contentObjectRenderer;
+    protected ContentObjectRenderer|MockObject $contentObjectRenderer;
 
-    /**
-     * Sets up this testcase
-     */
-    protected function setUp(): void
-    {
-        parent::setUp();
-        $this->contentObjectRenderer = $this->getMockBuilder(ContentObjectRenderer::class)
-            ->getMock();
-    }
-
-    /**
-     * @dataProvider settingsProvider
-     * @test
-     * @param array $pluginConfiguration
-     * @param array $returnedSettings
-     */
-    public function returnsSettings(array $pluginConfiguration, array $returnedSettings): void
-    {
-        $configurationManager = $this->getMockBuilder(ConfigurationManager::class)
-            ->disableOriginalConstructor()
-            ->getMock();
-        $configurationManager->expects(self::once())->method('getConfiguration')->willReturn(
-            $pluginConfiguration
-        );
-
-        $subject = $this->getMockBuilder(TypoScriptSettingsProcessor::class)
-            ->setConstructorArgs([$configurationManager])
-            ->setMethods(['getConfigurationManager']) // setMethods() for PHPUnit 6.5
-            ->getMock();
-
-        $result = $subject->process(
-            $this->contentObjectRenderer,
-            [],
-            [],
-            ['data' => []]
-        );
-
-        self::assertSame(
-            $returnedSettings,
-            $result
-        );
-    }
-
-    public function settingsProvider()
+    public static function settingsProvider()
     {
         return [
             [
@@ -167,5 +123,43 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
                 ],
             ],
         ];
+    }
+
+    /**
+     * @dataProvider settingsProvider
+     * @test
+     * @param array $pluginConfiguration
+     * @param array $returnedSettings
+     * @throws InvalidConfigurationTypeException
+     */
+    public function returnsSettings(array $pluginConfiguration, array $returnedSettings): void
+    {
+        $configurationManager = $this->getMockBuilder(ConfigurationManager::class)
+            ->disableOriginalConstructor()
+            ->getMock();
+        $configurationManager->expects(self::once())->method('getConfiguration')->willReturn(
+            $pluginConfiguration
+        );
+
+        $subject = new TypoScriptSettingsProcessor($configurationManager);
+
+        $result = $subject->process(
+            $this->contentObjectRenderer,
+            [],
+            [],
+            ['data' => []]
+        );
+
+        self::assertSame(
+            $returnedSettings,
+            $result
+        );
+    }
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->contentObjectRenderer = $this->getMockBuilder(ContentObjectRenderer::class)
+            ->getMock();
     }
 }

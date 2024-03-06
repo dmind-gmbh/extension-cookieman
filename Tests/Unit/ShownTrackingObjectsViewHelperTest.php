@@ -14,91 +14,18 @@ namespace Dmind\Cookieman\Tests\Unit;
 use Dmind\Cookieman\ViewHelpers\ShownTrackingObjectsViewHelper;
 use PHPUnit\Framework\MockObject\MockObject;
 use Prophecy\PhpUnit\ProphecyTrait;
-use TYPO3\TestingFramework\Fluid\Unit\ViewHelpers\ViewHelperBaseTestcase;
+use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
 use TYPO3Fluid\Fluid\Core\Variables\StandardVariableProvider;
 
-class ShownTrackingObjectsViewHelperTest extends ViewHelperBaseTestcase
+class ShownTrackingObjectsViewHelperTest extends UnitTestCase
 {
     use ProphecyTrait;
 
-    /**
-     * @var ShownTrackingObjectsViewHelper
-     */
-    protected $viewHelper;
+    protected ShownTrackingObjectsViewHelper $viewHelper;
 
-    /**
-     * fix type annotation
-     * @var MockObject|StandardVariableProvider
-     */
-    protected $templateVariableContainer;
+    protected MockObject|StandardVariableProvider $templateVariableContainer;
 
-    protected function setUp(): void
-    {
-        parent::setUp();
-
-        $this->viewHelper = new ShownTrackingObjectsViewHelper();
-        $this->injectDependenciesIntoViewHelper($this->viewHelper);
-    }
-
-    /**
-     * @dataProvider settingsProvider
-     * @test
-     * @param array $settings
-     * @param array $expected
-     */
-    public function trackingObjectsByParameter(array $settings, array $expected): void
-    {
-        $this->templateVariableContainer->expects(self::once())
-            ->method('get')->with('settings')
-            ->willReturn(
-                $settings
-            );
-        $this->renderingContext->injectViewHelperVariableContainer($this->viewHelperVariableContainer->reveal());
-
-        $this->setArgumentsUnderTest(
-            $this->viewHelper,
-            [
-                'group' => $settings['groups']['mandatory'],
-            ]
-        );
-        $actual = $this->viewHelper->initializeArgumentsAndRender();
-
-        self::assertEquals($expected, $actual);
-    }
-
-    /**
-     * @dataProvider settingsProvider
-     * @test
-     * @param array $settings
-     * @param array $expected
-     */
-    public function trackingObjectsByChildren(array $settings, array $expected)
-    {
-        $this->templateVariableContainer->expects(self::once())
-            ->method('get')->with('settings')
-            ->willReturn(
-                $settings
-            );
-        $this->renderingContext->injectViewHelperVariableContainer($this->viewHelperVariableContainer->reveal());
-
-        $this->viewHelper->setRenderChildrenClosure(
-            function () use ($settings) {
-                return $settings['groups']['mandatory'];
-            }
-        );
-
-        $this->setArgumentsUnderTest(
-            $this->viewHelper,
-            [
-                'group' => $settings['groups']['mandatory'],
-            ]
-        );
-        $actual = $this->viewHelper->initializeArgumentsAndRender();
-
-        self::assertEquals($expected, $actual);
-    }
-
-    public function settingsProvider()
+    public static function settingsProvider(): array
     {
         $_tests[] = [
             0 => [
@@ -161,5 +88,28 @@ class ShownTrackingObjectsViewHelperTest extends ViewHelperBaseTestcase
         ];
 
         return $_tests;
+    }
+
+    /**
+     * @dataProvider settingsProvider
+     * @test
+     * @param array $settings
+     * @param array $expected
+     */
+    public function trackingObjectsByParameter(array $settings, array $expected): void
+    {
+        $result = ShownTrackingObjectsViewHelper::shownTrackingObjects(
+            $settings['groups']['mandatory'],
+            $settings
+        );
+
+        self::assertSame($expected, $result);
+    }
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $this->viewHelper = new ShownTrackingObjectsViewHelper();
     }
 }
