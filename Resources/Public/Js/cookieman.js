@@ -112,6 +112,21 @@ var cookieman = (function () {
         }
     }
 
+    /**
+     * Intercepts clicks on elements with `data-cookieman-show` attribute
+     * even when they are not yet in the DOM.
+     */
+    function onBodyClick(e) {
+        const target = e.target
+        if (!target) {
+            return
+        }
+
+        if (target.dataset.hasOwnProperty('cookiemanShow')) {
+            cookieman.show()
+        }
+    }
+
     function onSaveClick(e) {
         e.preventDefault()
         saveSelections()
@@ -379,6 +394,13 @@ var cookieman = (function () {
                 onSaveClick
             )
         }
+
+        // Intercepts clicks on elements with `data-cookieman-show` attribute
+        // even when they are not yet in the DOM.
+        document.body.addEventListener(
+            'click',
+            onBodyClick
+        )
 
         // load form state
         loadCheckboxStates()
