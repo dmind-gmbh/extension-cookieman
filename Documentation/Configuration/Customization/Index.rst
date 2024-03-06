@@ -86,12 +86,16 @@ These **HTML element attributes** control the functionality:
 .. rst-class:: dl-parameters
 
 Save and close
+   It is recommended to have that hidden on initial load and only show it when
+   the user has made a change.
+
+   The default themes show it when the user has clicked the "settings" collapsible.
+
    Example:
 
    .. code-block:: HTML
 
-      <button class="btn btn-default"
-              style="display: none"
+      <button style="display: none"
               data-cookieman-save>
                   {f:translate(key: 'save')}
       </button>
@@ -105,8 +109,7 @@ Mark all checkboxes
 
    .. code-block:: HTML
 
-      <button class="btn btn-primary"
-              data-cookieman-accept-all
+      <button data-cookieman-accept-all
               data-cookieman-save>
                   {f:translate(key: 'accept')}
       </button>
@@ -124,8 +127,7 @@ Uncheck all checkboxes
 
    .. code-block:: HTML
 
-      <button class="btn btn-primary"
-              data-cookieman-accept-none
+      <button data-cookieman-accept-none
               data-cookieman-save>
                   {f:translate(key: 'deny')}
       </button>
