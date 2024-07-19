@@ -20,6 +20,16 @@ plugin.tx_cookieman {
                 }
             }
         }
+        cookie {
+            # cookie expire time in days (default: 365)
+            cookieLifetimeDays = 
+
+            # domain without protocol like www.example.com, .example.com (default: Typo3 site name)
+            domain = .ddev.site
+
+            # sameSite Options: Lax, Strict or None (default: lax)
+            sameSite = Lax             
+        }
     }
 }
 

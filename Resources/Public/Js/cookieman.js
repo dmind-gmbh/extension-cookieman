@@ -16,7 +16,14 @@ var cookieman = (function () {
         loadedTrackingObjectScripts = {}
 
     function saveSelections() {
-        var consented = []
+        var consented = [],
+            expires = settings.cookie.cookieLifetimeDays || cookieLifetimeDays,
+            params = {
+                expires: parseInt(expires, 10) ,
+                domain: settings.cookie.domain || undefined,
+                sameSite: settings.cookie.sameSite || 'lax'
+            }
+
         for (var _i = 0; _i < checkboxes.length; _i++) {
             if (checkboxes[_i].checked) {
                 consented.push(checkboxes[_i].name)
@@ -26,7 +33,7 @@ var cookieman = (function () {
         Cookies.set(
             cookieName,
             consented.join('|'),
-            {expires: cookieLifetimeDays, sameSite: 'lax'}
+			params
         )
     }
 
