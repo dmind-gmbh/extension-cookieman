@@ -25,7 +25,7 @@ plugin.tx_cookieman {
             cookieLifetimeDays = 
 
             # domain without protocol like www.example.com, .example.com (default: Typo3 site name)
-            domain = .ddev.site
+            domain = 
 
             # sameSite Options: Lax, Strict or None (default: lax)
             sameSite = Lax             
