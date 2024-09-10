@@ -333,7 +333,7 @@ Cookieman allows to add external sources with the :ref:`inject <trackingObjects.
 Configuration of the cookie used by the extension itself
 --------------------------------------------------------
 
-There are a few typoscript option to configure the cookie which is required by the exension.
+There are a few typoscript options to configure the cookie which is required by the exension.
 
 .. code-block:: typoscript
 
@@ -355,8 +355,11 @@ There are a few typoscript option to configure the cookie which is required by t
 .. tip::
 
    If you have multiple TYPO3 sites running on one instance with multiple subdomains you propably do not want to have multiple cookieman cookies.
-   This would also means that the cookieman banner is displayed on both domains and that every website user has to configure it for every subdomain again.
+   This would also mean that the cookieman banner is displayed on both domains and that every website user has to configure it for every subdomain again.
    To avoid this just set the domain setting to the domain with a starting dot.
+
+.. code-block:: typoscript
+
    plugin.tx_cookieman.settings.cookie.domain = .example.com
 
 
