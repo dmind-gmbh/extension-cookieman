@@ -27,9 +27,10 @@
 </f:variable>
 
 <f:spaceless>
+    
 <div id="cookieman-modal"
      data-cookieman-showonce="{isShowOnce}"
-     data-cookieman-settings="{f:format.json(value: '{groups: settings.groups, trackingObjects: settings.trackingObjects}')}"
+     data-cookieman-settings="{f:format.json(value: '{cookie: settings.cookie, groups: settings.groups, trackingObjects: settings.trackingObjects}')}"
      class="modal fade" tabindex="-1" role="dialog"
 >
     <f:render section="Content"/>
