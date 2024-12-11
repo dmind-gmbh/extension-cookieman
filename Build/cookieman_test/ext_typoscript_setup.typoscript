@@ -12,28 +12,32 @@ plugin.tx_cookieman.settings {
     trackingObjects {
         # add the Crowdin translation integration of cookieman as "TrackingObject" - actually a neat way to test if our JS inclusion works ;)
         Crowdin {
-            inject (
-<script data-what="Crowdin (1st script)" src="/typo3conf/ext/cookieman/Resources/Public/Js/Injects/example-inject.js"></script>
-<script data-what="Crowdin (2nd script)" src="/typo3conf/ext/cookieman/Resources/Public/Js/Injects/example-inject.js"></script>
-<script
-  type="text/javascript"
-  nonce="EDNnf03nceIOfn39fn3e9h3sdfa"
-  src="https://crowdin.com/js/crowdjet/crowdjet.js">
-</script>
-<div
-  id="crowdjet-container"
-  data-project-id="379354"
-  style="bottom: 90px; right: 20px;">
-</div>
-<div
-  id="crowdjet-expand-container"
-  style="top: 50%; right: 15px; background-color: #ffc107; background-color: var(--warning); border-radius: 5%">
-</div>
-            )
+            inject = TEXT
+            inject {
+                insertData = 1
+                value (
+                    <script data-what="Crowdin (1st script)" src="/{path : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}"></script>
+                    <script data-what="Crowdin (2nd script)" src="/{path : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}"></script>
+                    <script
+                      type="text/javascript"
+                      nonce="EDNnf03nceIOfn39fn3e9h3sdfa"
+                      src="https://crowdin.com/js/crowdjet/crowdjet.js">
+                    </script>
+                    <div
+                      id="crowdjet-container"
+                      data-project-id="379354"
+                      style="bottom: 90px; right: 20px;">
+                    </div>
+                    <div
+                      id="crowdjet-expand-container"
+                      style="top: 50%; right: 15px; background-color: #ffc107; background-color: var(--warning); border-radius: 5%">
+                    </div>
+                )
+            }
             show {
                 CrowdinWidget {
-                    duration = -
-                    durationUnit = -
+                    duration =
+                    durationUnit = none
                     type = script
                     provider = Crowdin
                 }
@@ -51,15 +55,4 @@ plugin.tx_cookieman.settings {
             showDntMessage = 0
         }
     }
-}
-
-plugin.tx_cookieman._LOCAL_LANG {
-    en {
-        trackingobject\.CrowdinWidget = Crowdin Widget
-        trackingobject\.CrowdinWidget\.desc = This is just a test but on the other hand it is useful: It displays the Crowdin Widget which allows you to help translating cookieman ;)
-        group\.testgroup = Test group (does not respect Do-Not-Track header)
-        type\.script = JavaScript
-    }
-
-    default < .en
 }

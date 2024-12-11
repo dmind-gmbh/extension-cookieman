@@ -2,11 +2,13 @@
 # https://matomo.org/faq/general/faq_146/
 plugin.tx_cookieman.settings.trackingObjects {
     Matomo {
-        # inline scripts would break Content-Security-Policy: script-src
-        # https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/script-src
-        inject (
-            <script data-what="Matomo" src="/typo3conf/ext/cookieman/Resources/Public/Js/Injects/example-inject.js"></script>
-        )
+        inject = TEXT
+        inject {
+            insertData = 1
+            value (
+                <script data-what="Matomo" src="/{path : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}"></script>
+            )
+        }
         # example:
 #        inject (
 #<script type="text/javascript">

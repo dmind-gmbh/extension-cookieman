@@ -112,7 +112,7 @@ cookieman.onScriptLoaded(String trackingObjectKey, int scriptId, function callba
      (starting from 0 with the first).
 
    * `callback` is a function reference. It receives trackingObjectKey and scriptId (see example below).
-     callback is called immediately if the referred to <script> has already finished loading.
+     The callback is called immediately if the referred to <script> has already finished loading.
 
    Example:
 

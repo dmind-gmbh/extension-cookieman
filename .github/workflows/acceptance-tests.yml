@@ -20,26 +20,26 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php-version: ["7.4", "8.1"]
-        browser: [chrome]
-        theme: [bootstrap3-banner, bootstrap3-modal, bootstrap4-modal, bootstrap5-modal, customtheme]
+        php-version: [ "8.1", "8.2", "8.3" ]
+        browser: [ chrome ]
+        theme: [ bootstrap3-banner, bootstrap3-modal, bootstrap4-modal, bootstrap5-modal, customtheme ]
     steps:
-      -   uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       # Set PHP version
-      -   run: |
-            sed -i -e 's/^php_version:.*/php_version: ${{ matrix.php-version }}/g' .ddev/config.yaml
+      - run: |
+          sed -i -e 's/^php_version:.*/php_version: ${{ matrix.php-version }}/g' .ddev/config.yaml
       # Start ddev
-      -   uses: ddev/github-action-setup-ddev@v1
+      - uses: ddev/github-action-setup-ddev@v1
       # Setup tests
-      -   run: ddev composer cookieman:${{ matrix.theme }}
+      - run: ddev composer cookieman:${{ matrix.theme }}
       # Run tests
-      -   run: ddev composer test:acceptance:${{ matrix.browser }}
+      - run: ddev composer test:acceptance:${{ matrix.browser }}
       # Save acceptance reports
-      -   uses: actions/upload-artifact@master
-          with:
-            name: ${{ matrix.browser }}-${{ matrix.theme }}-${{ matrix.php-version }}-ar
-            path: Build/AcceptanceReports
-          if: always()
+      - uses: actions/upload-artifact@master
+        with:
+          name: ${{ matrix.browser }}-${{ matrix.theme }}-${{ matrix.php-version }}-ar
+          path: Build/AcceptanceReports
+        if: always()
 
   acceptance-tests-firefox:
     runs-on: ubuntu-22.04
@@ -50,23 +50,23 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php-version: ["8.1"]
-        browser: [firefox]
-        theme: [bootstrap3-banner, bootstrap3-modal, bootstrap4-modal, bootstrap5-modal, customtheme]
+        php-version: [ "8.3" ]
+        browser: [ firefox ]
+        theme: [ bootstrap3-banner, bootstrap3-modal, bootstrap4-modal, bootstrap5-modal, customtheme ]
     steps:
-      -   uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       # Set PHP version
-      -   run: |
-            sed -i -e 's/^php_version:.*/php_version: ${{ matrix.php-version }}/g' .ddev/config.yaml
+      - run: |
+          sed -i -e 's/^php_version:.*/php_version: ${{ matrix.php-version }}/g' .ddev/config.yaml
       # Start ddev
-      -   uses: ddev/github-action-setup-ddev@v1
+      - uses: ddev/github-action-setup-ddev@v1
       # Setup tests
-      -   run: ddev composer cookieman:${{ matrix.theme }}
+      - run: ddev composer cookieman:${{ matrix.theme }}
       # Run tests
-      -   run: ddev composer test:acceptance:${{ matrix.browser }}
+      - run: ddev composer test:acceptance:${{ matrix.browser }}
       # Save acceptance reports
-      -   uses: actions/upload-artifact@v3
-          with:
-            name: ${{ matrix.browser }}-${{ matrix.theme }}-${{ matrix.php-version }}-ar
-            path: Build/AcceptanceReports
-          if: always()
+      - uses: actions/upload-artifact@v3
+        with:
+          name: ${{ matrix.browser }}-${{ matrix.theme }}-${{ matrix.php-version }}-ar
+          path: Build/AcceptanceReports
+        if: always()
