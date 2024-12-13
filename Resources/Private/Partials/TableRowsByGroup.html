@@ -33,12 +33,10 @@
                 )}
             </td>
             <td>
-                <f:if condition="{trackingItem.provider}">
-                    {f:translate(
-                    key: trackingItem.provider,
-                    default: trackingItem.provider
-                    )}
-                </f:if>
+                {f:translate(
+                  key: 'provider.{trackingItem.provider}',
+                  default: trackingItem.provider
+                )}
             </td>
         </tr>
     </f:for>
