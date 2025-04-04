@@ -109,7 +109,7 @@
             "@typo3:flush"
         ],
         "fix:cgl": [
-            "php-cs-fixer --config=.php_cs.dist.php fix --using-cache=no"
+            "php-cs-fixer --config=.php-cs-fixer.php fix --using-cache=no"
         ],
         "release:create": [
             "[ -z \"$IS_DDEV_PROJECT\" ] || ( echo 'Do not use from within ddev - Signing the commit would not work'; exit 1 ) || exit $?",
@@ -147,7 +147,7 @@
             "codecept run --env firefox -d -c Build/local.codeception.yml -- acceptance"
         ],
         "test:cgl": [
-            "php-cs-fixer --config=.php_cs.dist.php fix -v --diff --using-cache=no --dry-run"
+            "php-cs-fixer --config=.php-cs-fixer.php fix -v --diff --using-cache=no --dry-run"
         ],
         "test:unit": [
             "@putenv XDEBUG_MODE=coverage",

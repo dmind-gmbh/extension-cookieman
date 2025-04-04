@@ -1,14 +1,12 @@
 <?php
 
 $config = \TYPO3\CodingStandards\CsFixerConfig::create();
-$config->setFinder(
-    PhpCsFixer\Finder::create()
-        ->ignoreVCS(true)
-        ->ignoreVCSIgnored(true)
-        ->notName(['ext_localconf.php', 'ext_tables.php', 'ext_emconf.php', 'additional.php'])
-        ->exclude(['Tests/Acceptance/Support/_generated/'])
-        ->in(__DIR__)
-);
+$config->getFinder()
+    ->ignoreVCS(true)
+    ->ignoreVCSIgnored(true)
+    ->notName(['ext_localconf.php', 'ext_tables.php', 'ext_emconf.php', 'additional.php'])
+    ->exclude(['Tests/Acceptance/Support/_generated/'])
+    ->in(__DIR__);
 $config->addRules(
     [
         'yoda_style' => false, // dude, I love yoda style
@@ -17,6 +15,7 @@ $config->addRules(
             'closure_fn_spacing' => 'none',
         ],
         'single_line_empty_body' => false,
+        'cast_spaces' => ['space' => 'single'],
     ]
 );
 

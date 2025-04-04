@@ -57,16 +57,16 @@ class TypoScriptSettingsProcessor implements DataProcessorInterface
     {
         foreach (($settings['groups'] ?? []) as $groupId => $group) {
             if (isset($group['preselected'])) {
-                $settings['groups'][$groupId]['preselected'] = (bool)$group['preselected'];
+                $settings['groups'][$groupId]['preselected'] = (bool) $group['preselected'];
             }
             if (isset($group['disabled'])) {
-                $settings['groups'][$groupId]['disabled'] = (bool)$group['disabled'];
+                $settings['groups'][$groupId]['disabled'] = (bool) $group['disabled'];
             }
             if (isset($group['respectDnt'])) {
-                $settings['groups'][$groupId]['respectDnt'] = (bool)$group['respectDnt'];
+                $settings['groups'][$groupId]['respectDnt'] = (bool) $group['respectDnt'];
             }
             if (isset($group['showDntMessage'])) {
-                $settings['groups'][$groupId]['showDntMessage'] = (bool)$group['showDntMessage'];
+                $settings['groups'][$groupId]['showDntMessage'] = (bool) $group['showDntMessage'];
             }
 
             $trackingObjects = $group['trackingObjects'] ?? [];
