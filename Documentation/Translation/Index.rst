@@ -19,22 +19,12 @@ All strings are translatable. Translations are managed on `Crowdin <https://crow
 Override translations
 =====================
 
-You can override translations by the usual means (.xlf-files or TypoScript :typoscript:`_LOCAL_LANG`).
-If you use the TypoScript approach please keep in mind that the default language is english and additional languages can be added via the language ISO-639-1 code (de, fr, ...).
+You can override translations by registering your .xlf-file as override in your `ext_localconf.php` (this example uses a configure_cookieman extension that we recommend to hold all your cookieman configuration):
 
-Example:
---------
+.. code-block:: php
 
-.. code-block:: typoscript
-
-   plugin.tx_cookieman._LOCAL_LANG {
-     default {
-       group.mandatory = Technically necessary
-     }
-     de {
-       group.marketing = Technisch notwendig
-     }
-   }
+    $GLOBALS['TYPO3_CONF_VARS']['SYS']['locallangXMLOverride']['EXT:cookieman/Resources/Private/Language/locallang.xlf'][]
+        = 'EXT:configure_cookieman/Resources/Private/Language/locallang_cookieman.xlf';
 
 
 Add translations for new groups and tracking objects
@@ -53,22 +43,3 @@ If you have added groups or tracking objects, you will have to add these transla
 
 :aspect:`type.‹your-custom-type-key›`
    Shown in the table column "Type".
-
-
-Example:
---------
-
-.. code-block:: typoscript
-
-   plugin.tx_cookieman._LOCAL_LANG {
-     default {
-       trackingobject.pixelphp = You can translate the name, but you do not have to.
-       trackingobject.pixelphp.desc = My own tracking pixel does not really track you. It's just here to cheer you up.
-       group.mygroup = My group is my castle.
-     }
-     de {
-       trackingobject.pixelphp = Du kannst den Namen übersetzen, musst es aber nicht machen.
-       trackingobject.pixelphp.desc = Mein eigener Tracking Pixel trackt dich nicht wirklich. Er ist nur hier, um dich aufzumuntern.
-       group.mygroup = In meiner Gruppe bin ich König.
-     }
-   }
