@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="Frontend" date="2019-10-28T12:20:51Z" product-name="cookieman" target-language="ro">
+    <header/>
+    <body>
+      <trans-unit id="heading" resname="heading" approved="yes">
+        <source>About Cookies</source>
+        <target state="final">Despre cookie-uri</target>
+      </trans-unit>
+      <trans-unit id="dataProtectionDeclaration" resname="dataProtectionDeclaration" approved="yes">
+        <source>Data Protection Declaration</source>
+        <target state="final">Informații privind protecția datelor cu caracter personal</target>
+      </trans-unit>
+      <trans-unit id="imprint" resname="imprint" approved="yes">
+        <source>Imprint</source>
+        <target state="final">Imprimă</target>
+      </trans-unit>
+      <trans-unit id="introText" resname="introText">
+        <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
+        <target state="needs-translation">This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</target>
+      </trans-unit>
+      <trans-unit id="settings" resname="settings" approved="yes">
+        <source>Settings</source>
+        <target state="final">Opţiuni</target>
+      </trans-unit>
+      <trans-unit id="settingsText" resname="settingsText" approved="yes">
+        <source>Click here for Cookie %1$s.</source>
+        <target state="final">Click aici pentru Cookie %1$s.</target>
+      </trans-unit>
+      <trans-unit id="accept" resname="accept" approved="yes">
+        <source>Accept all cookies</source>
+        <target state="final">Acceptă tot cookie-uri</target>
+      </trans-unit>
+      <trans-unit id="deny" resname="deny" approved="yes">
+        <source>Deny all cookies</source>
+        <target state="final">Refuză toate cookie-urile</target>
+      </trans-unit>
+      <trans-unit id="save" resname="save" approved="yes">
+        <source>Save</source>
+        <target state="final">Salvare</target>
+      </trans-unit>
+      <trans-unit id="group.mandatory" resname="group.mandatory" approved="yes">
+        <source>Mandatory</source>
+        <target state="final">Obligatorii</target>
+      </trans-unit>
+      <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc" approved="yes">
+        <source>These cookies are needed for a smooth operation of our website.</source>
+        <target state="final">Aceste cookie-uri sunt necesare pentru o bună funcționare a site-ului nostru.</target>
+      </trans-unit>
+      <trans-unit id="tableheader.name" resname="tableheader.name" approved="yes">
+        <source>Name</source>
+        <target state="final">Nume</target>
+      </trans-unit>
+      <trans-unit id="tableheader.purpose" resname="tableheader.purpose" approved="yes">
+        <source>Purpose</source>
+        <target state="final">Scop</target>
+      </trans-unit>
+      <trans-unit id="tableheader.duration" resname="tableheader.duration" approved="yes">
+        <source>Lifetime</source>
+        <target state="final">Durata de viaţă</target>
+      </trans-unit>
+      <trans-unit id="tableheader.type" resname="tableheader.type" approved="yes">
+        <source>Type</source>
+        <target state="final">Tip</target>
+      </trans-unit>
+      <trans-unit id="tableheader.provider" resname="tableheader.provider" approved="yes">
+        <source>Provider</source>
+        <target state="final">Distribuitor</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc" approved="yes">
+        <source>Saves your consent to using cookies.</source>
+        <target state="final">Îți salvează consimțământul de a utiliza cookie-uri.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.cntcookie.desc" resname="trackingobject.cntcookie.desc">
+        <source>Exclusion from counting (as a list of Account IDs)</source>
+        <target state="needs-translation">Exclusion from counting (as a list of Account IDs)</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.GS3_v.desc" resname="trackingobject.GS3_v.desc" approved="yes">
+        <source>Set by Optimizer webservice. Contains the same Visitor ID as BT_pdc.</source>
+        <target state="final">Setat de serviciul web Optimizer. Conține același ID al vizitatorilor ca BT_pdc.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._et_coid.desc" resname="trackingobject._et_coid.desc" approved="yes">
+        <source>Cookie detection</source>
+        <target state="final">Detectare cookie</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oi_v2.desc" resname="trackingobject.et_oi_v2.desc">
+        <source>Opt-in cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</source>
+        <target state="needs-translation">Opt-in cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oip.desc" resname="trackingobject.et_oip.desc">
+        <source>Opt-in cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</source>
+        <target state="needs-translation">Opt-in cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_allow_cookies.desc" resname="trackingobject.et_allow_cookies.desc">
+        <source>If the parameter "data-block-cookies" is used, this cookie is called by the API Call _etracker.enableCookies() to indicate that etracker is allowed to set cookies.</source>
+        <target state="needs-translation">If the parameter "data-block-cookies" is used, this cookie is called by the API Call _etracker.enableCookies() to indicate that etracker is allowed to set cookies.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.isSdEnabled.desc" resname="trackingobject.isSdEnabled.desc">
+        <source>Detection whether the scrolling depth is measured for the visitor.</source>
+        <target state="needs-translation">Detection whether the scrolling depth is measured for the visitor.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.BT_ctst.desc" resname="trackingobject.BT_ctst.desc">
+        <source>Is only used to detect whether cookies are activated in the visitor's browser or not.</source>
+        <target state="needs-translation">Is only used to detect whether cookies are activated in the visitor's browser or not.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.BT_sdc.desc" resname="trackingobject.BT_sdc.desc">
+        <source>Contains base64 encoded data of the current visitor session (referrer, number of pages, number of seconds since session started) used for personalization purposes.</source>
+        <target state="needs-translation">Contains base64 encoded data of the current visitor session (referrer, number of pages, number of seconds since session started) used for personalization purposes.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.BT_pdc.desc" resname="trackingobject.BT_pdc.desc">
+        <source>Contains base64-coded visitor history data (is customer, newsletter recipient etc.) for personalization.</source>
+        <target state="needs-translation">Contains base64-coded visitor history data (is customer, newsletter recipient etc.) for personalization.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_pdc.desc">
+        <source>Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</source>
+        <target state="needs-translation">Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_ecl.desc">
+        <source>Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</source>
+        <target state="needs-translation">Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_scroll_depth.desc" resname="trackingobject.et_scroll_depth.desc">
+        <source>Data for scrolling depth measurement</source>
+        <target state="needs-translation">Data for scrolling depth measurement</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.targetingAPISession.desc" resname="trackingobject.targetingAPISession.desc">
+        <source>Data collected in the current session for the optimiser</source>
+        <target state="needs-translation">Data collected in the current session for the optimiser</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._et_coid--localstorage" resname="trackingobject._et_coid--localstorage">
+        <source>_et_coid</source>
+        <target state="needs-translation">_et_coid</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._et_coid--localstorage.desc" resname="trackingobject._et_coid--localstorage.desc">
+        <source>Cookie detection, see corresponding cookie.</source>
+        <target state="needs-translation">Cookie detection, see corresponding cookie.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oi_v2--localstorage" resname="trackingobject.et_oi_v2--localstorage">
+        <source>et_oi_v2</source>
+        <target state="needs-translation">et_oi_v2</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oi_v2--localstorage.desc" resname="trackingobject.et_oi_v2--localstorage.desc">
+        <source>Opt-in cookie, see corresponding cookie.</source>
+        <target state="needs-translation">Opt-in cookie, see corresponding cookie.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oip--localstorage" resname="trackingobject.et_oip--localstorage">
+        <source>et_oip</source>
+        <target state="needs-translation">et_oip</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oip--localstorage.desc" resname="trackingobject.et_oip--localstorage.desc">
+        <source>Opt-in cookie for Signalize, see corresponding cookie.</source>
+        <target state="needs-translation">Opt-in cookie for Signalize, see corresponding cookie.</target>
+      </trans-unit>
+      <trans-unit id="type.pixel" resname="type.pixel">
+        <source>Pixel</source>
+        <target state="needs-translation">Pixel</target>
+      </trans-unit>
+      <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html" approved="yes">
+        <source>HTML</source>
+        <target state="final">HTML</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._fbp.desc" resname="trackingobject._fbp.desc">
+        <source>Stores the unique visitor ID.</source>
+        <target state="needs-translation">Stores the unique visitor ID.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.facebookPixel.desc" resname="trackingobject.FacebookPixel.desc">
+        <source>If JavaScript is not enabled, this pixel initiates a connection to facebook.</source>
+        <target state="needs-translation">If JavaScript is not enabled, this pixel initiates a connection to facebook.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.fe_typo_user.desc" resname="trackingobject.fe_typo_user.desc">
+        <source>Assigns your browser to a session on the server.</source>
+        <target state="needs-translation">Assigns your browser to a session on the server.</target>
+      </trans-unit>
+      <trans-unit id="duration.session" resname="duration.session" approved="yes">
+        <source>session</source>
+        <target state="final">sesiune</target>
+      </trans-unit>
+      <trans-unit id="type.cookie_http" resname="type.cookie_http" approved="yes">
+        <source>HTTP</source>
+        <target state="final">HTTP</target>
+      </trans-unit>
+      <trans-unit id="type.localstorage" resname="type.localstorage">
+        <source>Local Storage</source>
+        <target state="needs-translation">Local Storage</target>
+      </trans-unit>
+      <trans-unit id="type.connection" resname="type.connection">
+        <source>Connection</source>
+        <target state="needs-translation">Connection</target>
+      </trans-unit>
+      <trans-unit id="group.marketing" resname="group.marketing" approved="yes">
+        <source>Marketing</source>
+        <target state="final">Publicitate</target>
+      </trans-unit>
+      <trans-unit id="group.marketing.desc" resname="group.marketing.desc">
+        <source>With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</source>
+        <target state="needs-translation">With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._pk_id.desc" resname="trackingobject._pk_id.desc">
+        <source>Used to store a few details about the user such as the unique visitor ID.</source>
+        <target state="needs-translation">Used to store a few details about the user such as the unique visitor ID.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._pk_ref.desc" resname="trackingobject._pk_ref.desc">
+        <source>Used to store the attribution information, the referrer initially used to visit the website.</source>
+        <target state="needs-translation">Used to store the attribution information, the referrer initially used to visit the website.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._pk_ses.desc" resname="trackingobject._pk_ses.desc">
+        <source>Short lived cookie used to temporarily store data for the visit.</source>
+        <target state="needs-translation">Short lived cookie used to temporarily store data for the visit.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._pk_cvar.desc" resname="trackingobject._pk_cvar.desc">
+        <source>Short lived cookie used to temporarily store data for the visit.</source>
+        <target state="needs-translation">Short lived cookie used to temporarily store data for the visit.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._pk_hsr.desc" resname="trackingobject._pk_hsr.desc">
+        <source>Short lived cookie used to temporarily store data for the visit.</source>
+        <target state="needs-translation">Short lived cookie used to temporarily store data for the visit.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__eoi.desc" resname="trackingobject.__eoi.desc">
+        <source>Google: Security for AdSense, AdSense for Search, Display + Video 360, Google Ad Manager, Google Ads</source>
+        <target state="needs-translation">Google: Security for AdSense, AdSense for Search, Display + Video 360, Google Ad Manager, Google Ads</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.NID.desc" resname="trackingobject.NID.desc">
+        <source>Google: Security, Analytics, Functionality, Advertising for AdSense for Search, Google Ads</source>
+        <target state="needs-translation">Google: Security, Analytics, Functionality, Advertising for AdSense for Search, Google Ads</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__gads.desc" resname="trackingobject.__gads.desc">
+        <source>Google: Advertising for AdSense, Display + Video 360, Google Ad Manager, Google Ads</source>
+        <target state="needs-translation">Google: Advertising for AdSense, Display + Video 360, Google Ad Manager, Google Ads</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.pm_sess.desc" resname="trackingobject.pm_sess.desc">
+        <source>Google: Security, Functionality for  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</source>
+        <target state="needs-translation">Google: Security, Functionality for  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.pm_sess_NNN.desc" resname="trackingobject.pm_sess_NNN.desc">
+        <source>Google: Security, Functionality for  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</source>
+        <target state="needs-translation">Google: Security, Functionality for  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.aboutads_sessNNN.desc" resname="trackingobject.aboutads_sessNNN.desc">
+        <source>Google: Security, Functionality for  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</source>
+        <target state="needs-translation">Google: Security, Functionality for  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.FPAU.desc" resname="trackingobject.FPAU.desc">
+        <source>Google: Analytics, Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</source>
+        <target state="needs-translation">Google: Analytics, Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.ANID.desc" resname="trackingobject.ANID.desc">
+        <source>Google: Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </source>
+        <target state="needs-translation">Google: Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </target>
+      </trans-unit>
+      <trans-unit id="trackingobject.AID.desc" resname="trackingobject.AID.desc">
+        <source>Google: Analytics, Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </source>
+        <target state="needs-translation">Google: Analytics, Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </target>
+      </trans-unit>
+      <trans-unit id="trackingobject.TAID.desc" resname="trackingobject.TAID.desc">
+        <source>Google: Analytics, Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </source>
+        <target state="needs-translation">Google: Analytics, Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </target>
+      </trans-unit>
+      <trans-unit id="trackingobject.RUL.desc" resname="trackingobject.RUL.desc">
+        <source>Google: Advertising for Display + Video 360, Google Ads </source>
+        <target state="needs-translation">Google: Advertising for Display + Video 360, Google Ads </target>
+      </trans-unit>
+      <trans-unit id="trackingobject.FPGCLAW.desc" resname="trackingobject.FPGCLAW.desc">
+        <source>Google: Analytics, Advertising for Google Ads</source>
+        <target state="needs-translation">Google: Analytics, Advertising for Google Ads</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.FPGCLGB.desc" resname="trackingobject.FPGCLGB.desc">
+        <source>Google: Analytics, Advertising for Google Ads</source>
+        <target state="needs-translation">Google: Analytics, Advertising for Google Ads</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gcl_gb.desc" resname="trackingobject._gcl_gb.desc">
+        <source>Google: Analytics, Advertising for Google Ads</source>
+        <target state="needs-translation">Google: Analytics, Advertising for Google Ads</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gac_gb_--wpid--.desc" resname="trackingobject._gac_gb_--wpid--.desc">
+        <source>Google: Analytics, Advertising for Google Ads</source>
+        <target state="needs-translation">Google: Analytics, Advertising for Google Ads</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gcl_aw.desc" resname="trackingobject._gcl_aw.desc">
+        <source>Google: Analytics, Advertising for Google Ads</source>
+        <target state="needs-translation">Google: Analytics, Advertising for Google Ads</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.1P_JAR.desc" resname="trackingobject.1P_JAR.desc">
+        <source>Google: Advertising for Google Ads</source>
+        <target state="needs-translation">Google: Advertising for Google Ads</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.Conversion.desc" resname="trackingobject.Conversion.desc">
+        <source>Google: Advertising for Google Ads</source>
+        <target state="needs-translation">Google: Advertising for Google Ads</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.YSC.desc" resname="trackingobject.YSC.desc">
+        <source>Google: Security for Google Ads, YouTube </source>
+        <target state="needs-translation">Google: Security for Google Ads, YouTube </target>
+      </trans-unit>
+      <trans-unit id="trackingobject.VISITOR_INFO1_LIVE.desc" resname="trackingobject.VISITOR_INFO1_LIVE.desc">
+        <source>Google: Security, Advertising for Google Ads, YouTube </source>
+        <target state="needs-translation">Google: Security, Advertising for Google Ads, YouTube </target>
+      </trans-unit>
+      <trans-unit id="trackingobject.VISITOR_INFO1_LIVE__k.desc" resname="trackingobject.VISITOR_INFO1_LIVE__k.desc">
+        <source>Google: Security, Advertising for Google Ads, YouTube </source>
+        <target state="needs-translation">Google: Security, Advertising for Google Ads, YouTube </target>
+      </trans-unit>
+      <trans-unit id="trackingobject.VISITOR_INFO1_LIVE__default.desc" resname="trackingobject.VISITOR_INFO1_LIVE__default.desc">
+        <source>Google: Security, Advertising for Google Ads, YouTube </source>
+        <target state="needs-translation">Google: Security, Advertising for Google Ads, YouTube </target>
+      </trans-unit>
+      <trans-unit id="trackingobject.DSID.desc" resname="trackingobject.DSID.desc">
+        <source>Google: Security, Functionality, Advertising for AdSense, Campaign Manager, Google Ad Manager, Google Analytics, Display + Video 360, Search Ads 360 </source>
+        <target state="needs-translation">Google: Security, Functionality, Advertising for AdSense, Campaign Manager, Google Ad Manager, Google Analytics, Display + Video 360, Search Ads 360 </target>
+      </trans-unit>
+      <trans-unit id="trackingobject.test_cookie.desc" resname="trackingobject.test_cookie.desc">
+        <source>Google: Functionality for AdSense, Campaign Manager, Google Ad Manager, Google Analytics, Display + Video 360, Search Ads 360 </source>
+        <target state="needs-translation">Google: Functionality for AdSense, Campaign Manager, Google Ad Manager, Google Analytics, Display + Video 360, Search Ads 360 </target>
+      </trans-unit>
+      <trans-unit id="trackingobject.IDE.desc" resname="trackingobject.IDE.desc">
+        <source>Google: Advertising for Campaign Manager, Display + Video 360, Google Ad Manager, Google Analytics, Search Ads 360 </source>
+        <target state="needs-translation">Google: Advertising for Campaign Manager, Display + Video 360, Google Ad Manager, Google Analytics, Search Ads 360 </target>
+      </trans-unit>
+      <trans-unit id="trackingobject.FPLC.desc" resname="trackingobject.FPLC.desc">
+        <source>Google: Analytics for Google Analytics </source>
+        <target state="needs-translation">Google: Analytics for Google Analytics </target>
+      </trans-unit>
+      <trans-unit id="trackingobject.FPID.desc" resname="trackingobject.FPID.desc">
+        <source>Google: Analytics for Google Analytics</source>
+        <target state="needs-translation">Google: Analytics for Google Analytics</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.GA_OPT_OUT.desc" resname="trackingobject.GA_OPT_OUT.desc">
+        <source>Google: Functionality for Google Analytics</source>
+        <target state="needs-translation">Google: Functionality for Google Analytics</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__utma.desc" resname="trackingobject.__utma.desc">
+        <source>Google: Analytics for Google Analytics</source>
+        <target state="needs-translation">Google: Analytics for Google Analytics</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__utmb.desc" resname="trackingobject.__utmb.desc">
+        <source>Google: Analytics for Google Analytics</source>
+        <target state="needs-translation">Google: Analytics for Google Analytics</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__utmc.desc" resname="trackingobject.__utmc.desc">
+        <source>Google: Analytics for Google Analytics</source>
+        <target state="needs-translation">Google: Analytics for Google Analytics</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__utmt.desc" resname="trackingobject.__utmt.desc">
+        <source>Google: Analytics for Google Analytics</source>
+        <target state="needs-translation">Google: Analytics for Google Analytics</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__utmz.desc" resname="trackingobject.__utmz.desc">
+        <source>Google: Analytics for Google Analytics</source>
+        <target state="needs-translation">Google: Analytics for Google Analytics</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__utmv.desc" resname="trackingobject.__utmv.desc">
+        <source>Google: Analytics for Google Analytics</source>
+        <target state="needs-translation">Google: Analytics for Google Analytics</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gat_--custom-name--.desc" resname="trackingobject._gat_--custom-name--.desc">
+        <source>Google: Analytics for Google Analytics</source>
+        <target state="needs-translation">Google: Analytics for Google Analytics</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gaexp.desc" resname="trackingobject._gaexp.desc">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target state="needs-translation">Google: Analytics for Google Analytics, Optimize</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gaexp_rc.desc" resname="trackingobject._gaexp_rc.desc">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target state="needs-translation">Google: Analytics for Google Analytics, Optimize</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._opt_awcid.desc" resname="trackingobject._opt_awcid.desc">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target state="needs-translation">Google: Analytics for Google Analytics, Optimize</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._opt_awmid.desc" resname="trackingobject._opt_awmid.desc">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target state="needs-translation">Google: Analytics for Google Analytics, Optimize</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._opt_awgid.desc" resname="trackingobject._opt_awgid.desc">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target state="needs-translation">Google: Analytics for Google Analytics, Optimize</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._opt_awkid.desc" resname="trackingobject._opt_awkid.desc">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target state="needs-translation">Google: Analytics for Google Analytics, Optimize</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._opt_utmc.desc" resname="trackingobject._opt_utmc.desc">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target state="needs-translation">Google: Analytics for Google Analytics, Optimize</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._ga.desc" resname="trackingobject._ga.desc">
+        <source>Used to distinguish users.</source>
+        <target state="needs-translation">Used to distinguish users.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.AMP_TOKEN.desc" resname="trackingobject.AMP_TOKEN.desc">
+        <source>Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, request in progress or an error retrieving a Client ID from AMP Client ID service.</source>
+        <target state="needs-translation">Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, request in progress or an error retrieving a Client ID from AMP Client ID service.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._dc_gtm_--property-id--.desc" resname="trackingobject._dc_gtm_--property-id--.desc">
+        <source>Used by DoubleClick (Google Tag Manager) to help identify the visitors by either age, gender or interests.</source>
+        <target state="needs-translation">Used by DoubleClick (Google Tag Manager) to help identify the visitors by either age, gender or interests.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gac_--property-id--.desc" resname="trackingobject._gac_--property-id--.desc">
+        <source>Contains campaign related information for the user. If you have linked your Google Analytics and Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.</source>
+        <target state="needs-translation">Contains campaign related information for the user. If you have linked your Google Analytics and Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gat.desc" resname="trackingobject._gat.desc">
+        <source>Used to throttle request rate.</source>
+        <target state="needs-translation">Used to throttle request rate.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._ga_--container-id--.desc" resname="trackingobject._ga_--container-id--.desc">
+        <source>Persists session state.</source>
+        <target state="needs-translation">Persists session state.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gcl_au.desc" resname="trackingobject._gcl_au.desc">
+        <source>Used by Google AdSense to experiment with advertisement efficiency.</source>
+        <target state="needs-translation">Used by Google AdSense to experiment with advertisement efficiency.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gid.desc" resname="trackingobject._gid.desc">
+        <source>Used to distinguish users.</source>
+        <target state="needs-translation">Used to distinguish users.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.MUID.desc" resname="trackingobject.MUID.desc">
+        <source>Used as unique user identifier. The cookie allows user tracking across many Microsoft domains.</source>
+        <target state="needs-translation">Used as unique user identifier. The cookie allows user tracking across many Microsoft domains.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.MUIDB.desc" resname="trackingobject.MUIDB.desc">
+        <source>Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</source>
+        <target state="needs-translation">Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.MSFPC.desc" resname="trackingobject.MSFPC.desc">
+        <source>The cookie allows user tracking across many Microsoft domains and is used for Bing Analytics.</source>
+        <target state="needs-translation">The cookie allows user tracking across many Microsoft domains and is used for Bing Analytics.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.DcLcid.desc" resname="trackingobject.DcLcid.desc">
+        <source>The cookie is used to implement Microsoft-forms on the website.</source>
+        <target state="needs-translation">The cookie is used to implement Microsoft-forms on the website.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.AADNonce.forms.desc" resname="trackingobject.AADNonce.forms.desc">
+        <source>The cookie is used to implement Microsoft-forms on the website.</source>
+        <target state="needs-translation">The cookie is used to implement Microsoft-forms on the website.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__RequestVerificationToken.desc" resname="trackingobject.__RequestVerificationToken.desc">
+        <source>The cookie is used to implement anti-forgery concerning Microsoft-forms on the website.</source>
+        <target state="needs-translation">The cookie is used to implement anti-forgery concerning Microsoft-forms on the website.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.UID.desc" resname="trackingobject.UID.desc">
+        <source>The cookie is used for market and user research (Scorecard Research).</source>
+        <target state="needs-translation">The cookie is used for market and user research (Scorecard Research).</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.UIDR.desc" resname="trackingobject.UIDR.desc">
+        <source>The cookie is used for market and user research (Scorecard Research).</source>
+        <target state="needs-translation">The cookie is used for market and user research (Scorecard Research).</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.bcookie.desc" resname="trackingobject.bcookie.desc">
+        <source>Browser Identifier cookie to uniquely identify devices accessing LinkedIn to detect abuse on the platform.</source>
+        <target state="needs-translation">Browser Identifier cookie to uniquely identify devices accessing LinkedIn to detect abuse on the platform.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.lang.desc" resname="trackingobject.lang.desc">
+        <source>Used to memorize a user's language setting.</source>
+        <target state="needs-translation">Used to memorize a user's language setting.</target>
+      </trans-unit>
+      <trans-unit id="group.external" resname="group.external">
+        <source>External content</source>
+        <target state="needs-translation">External content</target>
+      </trans-unit>
+      <trans-unit id="group.external.desc" resname="group.external.desc">
+        <source>With the help of these cookies we strive to improve our offer for our users. By means of providing video content or other useful content like maps to enhance the user experience.</source>
+        <target state="needs-translation">With the help of these cookies we strive to improve our offer for our users. By means of providing video content or other useful content like maps to enhance the user experience.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.YouTube.desc" resname="trackingobject.YouTube.desc">
+        <source>Is used to connect to YouTube and to display videos.</source>
+        <target state="needs-translation">Is used to connect to YouTube and to display videos.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.GoogleMaps.desc" resname="trackingobject.GoogleMaps.desc">
+        <source>Is used to connect to Google Maps and to display those maps.</source>
+        <target state="needs-translation">Is used to connect to Google Maps and to display those maps.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.MicrosoftStream.desc" resname="trackingobject.MicrosoftStream.desc">
+        <source>Is used to connect to Microsoft Stream and display videos.</source>
+        <target state="needs-translation">Is used to connect to Microsoft Stream and display videos.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.Signature_Api.desc" resname="trackingobject.Signature_Api.desc">
+        <source>Is used to connect to the Microsoft signature API.</source>
+        <target state="needs-translation">Is used to connect to the Microsoft signature API.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.Authorization_Api.desc" resname="trackingobject.Authorization_Api.desc">
+        <source>Is used to connect to the Microsoft authorization API.</source>
+        <target state="needs-translation">Is used to connect to the Microsoft authorization API.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.RedirectToThinEmbed.desc" resname="trackingobject.RedirectToThinEmbed.desc">
+        <source>Is used to embed Microsoft Stream videos.</source>
+        <target state="needs-translation">Is used to embed Microsoft Stream videos.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.UserSession_Api.desc" resname="trackingobject.UserSession_Api.desc">
+        <source>Is used to store the user session of the Microsoft API.</source>
+        <target state="needs-translation">Is used to store the user session of the Microsoft API.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.wfeSessionId.desc" resname="trackingobject.wfeSessionId.desc">
+        <source>Is used to store the Web Front End Session ID of Microsoft Stream.</source>
+        <target state="needs-translation">Is used to store the Web Front End Session ID of Microsoft Stream.</target>
+      </trans-unit>
+      <trans-unit id="browser.dnt-enabled" resname="browser.dnt-enabled">
+        <source><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></source>
+        <target state="needs-translation"><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></target>
+      </trans-unit>
+      <trans-unit id="duration.none" resname="duration.empty">
+        <source>none</source>
+        <target state="needs-translation">none</target>
+      </trans-unit>
+      <trans-unit id="duration.second" resname="duration.second">
+        <source>second</source>
+        <target state="needs-translation">second</target>
+      </trans-unit>
+      <trans-unit id="duration.seconds" resname="duration.seconds">
+        <source>seconds</source>
+        <target state="needs-translation">seconds</target>
+      </trans-unit>
+      <trans-unit id="duration.minute" resname="duration.minute" approved="yes">
+        <source>minute</source>
+        <target state="final">minut</target>
+      </trans-unit>
+      <trans-unit id="duration.minutes" resname="duration.minutes" approved="yes">
+        <source>minutes</source>
+        <target state="final">minute</target>
+      </trans-unit>
+      <trans-unit id="duration.hour" resname="duration.hour" approved="yes">
+        <source>hour</source>
+        <target state="final">oră</target>
+      </trans-unit>
+      <trans-unit id="duration.hours" resname="duration.hours" approved="yes">
+        <source>hours</source>
+        <target state="final">ore</target>
+      </trans-unit>
+      <trans-unit id="duration.day" resname="duration.day" approved="yes">
+        <source>day</source>
+        <target state="final">zi</target>
+      </trans-unit>
+      <trans-unit id="duration.days" resname="duration.days" approved="yes">
+        <source>days</source>
+        <target state="final">zile</target>
+      </trans-unit>
+      <trans-unit id="duration.week" resname="duration.week">
+        <source>week</source>
+        <target state="needs-translation">week</target>
+      </trans-unit>
+      <trans-unit id="duration.weeks" resname="duration.weeks">
+        <source>weeks</source>
+        <target state="needs-translation">weeks</target>
+      </trans-unit>
+      <trans-unit id="duration.month" resname="duration.month" approved="yes">
+        <source>month</source>
+        <target state="final">lună</target>
+      </trans-unit>
+      <trans-unit id="duration.months" resname="duration.months" approved="yes">
+        <source>months</source>
+        <target state="final">luni</target>
+      </trans-unit>
+      <trans-unit id="duration.year" resname="duration.year" approved="yes">
+        <source>year</source>
+        <target state="final">an</target>
+      </trans-unit>
+      <trans-unit id="duration.years" resname="duration.years" approved="yes">
+        <source>years</source>
+        <target state="final">ani</target>
+      </trans-unit>
+      <trans-unit id="active" resname="active" approved="yes">
+        <source>active</source>
+        <target state="final">activ</target>
+      </trans-unit>
+      <trans-unit id="alwaysactive" resname="alwaysactive" approved="yes">
+        <source>always active</source>
+        <target state="final">mereu activ</target>
+      </trans-unit>
+      <trans-unit id="inactive" resname="inactive" approved="yes">
+        <source>inactive</source>
+        <target state="final">inactiv</target>
+      </trans-unit>
+      <trans-unit id="alwaysinactive" resname="alwaysinactive" approved="yes">
+        <source>always inactive</source>
+        <target state="final">mereu inactiv</target>
+      </trans-unit>
+      <trans-unit id="group.accept" resname="group.accept">
+        <source>accept</source>
+        <target state="needs-translation">accept</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__cf_bm.desc" resname="trackingobject.__cf_bm.desc">
+        <source>Required to see Vimeo content.</source>
+        <target state="needs-translation">Required to see Vimeo content.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.OptanonAlertBoxClosed.desc" resname="trackingobject.OptanonAlertBoxClosed.desc">
+        <source>Saves the state of your Vimeo data protection consent.</source>
+        <target state="needs-translation">Saves the state of your Vimeo data protection consent.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.OptanonConsent.desc" resname="trackingobject.OptanonConsent.desc">
+        <source>Saves the state of your Vimeo data protection consent.</source>
+        <target state="needs-translation">Saves the state of your Vimeo data protection consent.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.player.desc" resname="trackingobject.player.desc">
+        <source>This cookie saves your preferences before playing an embedded Vimeo video. This will bring you back to your preferred settings the next time you watch a Vimeo video.</source>
+        <target state="needs-translation">This cookie saves your preferences before playing an embedded Vimeo video. This will bring you back to your preferred settings the next time you watch a Vimeo video.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.vuid.desc" resname="trackingobject.vuid.desc">
+        <source>This cookie gathers information about your actions on websites embedding Vimeo videos.</source>
+        <target state="needs-translation">This cookie gathers information about your actions on websites embedding Vimeo videos.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._abexps.desc" resname="trackingobject._abexps.desc">
+        <source>This cookie remembers your settings. Settings can include language, region or login user. In general this cookie saves data about how you use Vimeo.</source>
+        <target state="needs-translation">This cookie remembers your settings. Settings can include language, region or login user. In general this cookie saves data about how you use Vimeo.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.continuous_play_v3.desc" resname="trackingobject.continuous_play_v3.desc">
+        <source>This cookie is a first-party cookie from Vimeo. The cookie collects information on how you use the Vimeo service. For example, the cookie saves when you pause and play a video again.</source>
+        <target state="needs-translation">This cookie is a first-party cookie from Vimeo. The cookie collects information on how you use the Vimeo service. For example, the cookie saves when you pause and play a video again.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
