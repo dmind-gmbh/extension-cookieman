@@ -49,7 +49,7 @@ This example configuration is based on the base TypoScript configuration
                inject {
                    insertData = 1
                    value = (
-                       <div>Here be dragons <img src="/{path : EXT:my_ext/Resources/Public/Image/MyImage.png}"></div>
+                       <div>Here be dragons <img src="/{path : EXT:my_ext/Resources/Public/Image/MyImage.png}?{date : U}"></div>
                        <script>alert('oh la la!')</script>
                    )
                }

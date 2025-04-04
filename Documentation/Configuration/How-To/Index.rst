@@ -315,7 +315,7 @@ Cookieman allows to add external sources with the :ref:`inject <trackingObjects.
            inject {
                insertData = 1
                value (
-                   <script src="/{path : EXT:your_sitepackage/Resources/Public/JavaScript/matomo-trackingcode.js}"></script>
+                   <script src="/{path : EXT:your_sitepackage/Resources/Public/JavaScript/matomo-trackingcode.js}?{date : U}"></script>
                    <script src="https://your-matomo-server.com/path/to/matomo.js" async defer></script>
                )
            }
@@ -341,13 +341,13 @@ There are a few typoscript options to configure the cookie which is required by 
         settings {
             cookie {
                 # cookie expire time in days (default: 365)
-                cookieLifetimeDays = 
+                cookieLifetimeDays =
 
                 # domain without protocol like www.example.com, .example.com (default: Typo3 site name)
-                domain = 
+                domain =
 
                 # sameSite Options: Lax, Strict or None (default: lax)
-                sameSite = Lax             
+                sameSite = Lax
             }
         }
     }

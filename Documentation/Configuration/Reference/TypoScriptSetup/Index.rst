@@ -166,7 +166,7 @@ trackingObjects.‹tracking-object-key›
               inject {
                   insertData = 1
                   value (
-                      <script data-what="Matomo" src="/{path : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}"></script>
+                      <script data-what="Matomo" src="/{path : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}?{date : U}"></script>
                   )
               }
 
@@ -201,12 +201,12 @@ trackingObjects.‹tracking-object-key›.inject
    You can either use inline script or link to an external file (useful if a HTTP header `Content-Security-Policy` is set).
 
    If you need a local path from your `_assets` directory, let TYPO3 build it. We currently recommend using `TEXT`
-   with `insertData = 1` and the getText `{path : EXT:…}`. The preceding root path (`/`) is necessary for it to work on subpages.
+   with `insertData = 1` and the getText `{path : EXT:…}`. The preceding root path (`/`) is necessary for it to work on subpages. We recommend adding `?{date : U}` to add a cache-busting parameter.
    See the example above.
 
    It has shortcomings (namely the missing base and missing cache busting ?parameter. See https://forge.typo3.org/issues/99203#change-507069).
 
-   For v13 we'll probably get a {asset : ...} getText function (https://review.typo3.org/c/Packages/TYPO3.CMS/+/77018).
+   For v13 we can use the `{asset : ...}`` getText function (https://review.typo3.org/c/Packages/TYPO3.CMS/+/77018).
 
 .. _trackingObjects.‹tracking-object-key›.show:
 
