@@ -3,15 +3,15 @@
   <file source-language="en" datatype="plaintext" original="messages" date="2022-11-27T22:26:21Z" product-name="cookieman_test" target-language="da">
     <header/>
     <body>
-      <trans-unit id="trackingobject.CrowdinWidget" xml:space="preserve">
+      <trans-unit id="trackingobject.CrowdinWidget" xml:space="preserve" approved="yes">
 				<source>Crowdin Widget</source>
-			<target state="needs-translation">Crowdin Widget</target></trans-unit>
-      <trans-unit id="trackingobject.CrowdinWidget.desc" xml:space="preserve">
+			<target state="final">Crowdin-widget</target></trans-unit>
+      <trans-unit id="trackingobject.CrowdinWidget.desc" xml:space="preserve" approved="yes">
 				<source>This is just a test but on the other hand it is useful: It displays the Crowdin Widget which allows you to help translating cookieman ;)</source>
-			<target state="needs-translation">This is just a test but on the other hand it is useful: It displays the Crowdin Widget which allows you to help translating cookieman ;)</target></trans-unit>
-      <trans-unit id="group.testgroup" xml:space="preserve">
+			<target state="final">Dette er blot en test, men på den anden side er det nyttigt: Det viser  enCrowdin-widget, som giver dig mulighed for at hjælpe med at oversætte cookieman ;)</target></trans-unit>
+      <trans-unit id="group.testgroup" xml:space="preserve" approved="yes">
 				<source>Test group (does not respect Do-Not-Track header)</source>
-			<target state="needs-translation">Test group (does not respect Do-Not-Track header)</target></trans-unit>
+			<target state="final">Testgruppe (respekterer ikke Do-Not-Track header)</target></trans-unit>
       <trans-unit id="type.script" xml:space="preserve">
 				<source>JavaScript</source>
 			<target state="needs-translation">JavaScript</target></trans-unit>
