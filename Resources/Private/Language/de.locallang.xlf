@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="Frontend" date="2019-10-28T12:20:51Z" product-name="cookieman" target-language="de">
+    <header/>
+    <body>
+      <trans-unit id="heading" resname="heading" approved="yes">
+        <source>About Cookies</source>
+        <target state="final">Hinweis zu Cookies</target>
+      </trans-unit>
+      <trans-unit id="dataProtectionDeclaration" resname="dataProtectionDeclaration" approved="yes">
+        <source>Data Protection Declaration</source>
+        <target state="final">Datenschutzerklärung</target>
+      </trans-unit>
+      <trans-unit id="imprint" resname="imprint" approved="yes">
+        <source>Imprint</source>
+        <target state="final">Impressum</target>
+      </trans-unit>
+      <trans-unit id="introText" resname="introText" approved="yes">
+        <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
+        <target state="final">Unsere Webseite verwendet Cookies. Diese haben zwei Funktionen: Zum einen sind sie erforderlich für die grundlegende Funktionalität unserer Website. Zum anderen können wir mit Hilfe der Cookies unsere Inhalte für Sie immer weiter verbessern. Hierzu werden pseudonymisierte Daten von Website-Besuchern gesammelt und ausgewertet. Das Einverständnis in die Verwendung der Cookies können Sie jederzeit widerrufen. Weitere Informationen zu Cookies auf dieser Website finden Sie in unserer %1$s und zu uns im %2$s.</target>
+      </trans-unit>
+      <trans-unit id="settings" resname="settings" approved="yes">
+        <source>Settings</source>
+        <target state="final">Einstellungen</target>
+      </trans-unit>
+      <trans-unit id="settingsText" resname="settingsText" approved="yes">
+        <source>Click here for Cookie %1$s.</source>
+        <target state="final">Hier gelangen Sie zu den Cookie-%1$s.</target>
+      </trans-unit>
+      <trans-unit id="accept" resname="accept" approved="yes">
+        <source>Accept all cookies</source>
+        <target state="final">Alle Cookies akzeptieren</target>
+      </trans-unit>
+      <trans-unit id="deny" resname="deny" approved="yes">
+        <source>Deny all cookies</source>
+        <target state="final">Alle Cookies ablehnen</target>
+      </trans-unit>
+      <trans-unit id="save" resname="save" approved="yes">
+        <source>Save</source>
+        <target state="final">Speichern</target>
+      </trans-unit>
+      <trans-unit id="group.mandatory" resname="group.mandatory" approved="yes">
+        <source>Mandatory</source>
+        <target state="final">Erforderlich</target>
+      </trans-unit>
+      <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc" approved="yes">
+        <source>These cookies are needed for a smooth operation of our website.</source>
+        <target state="final">Diese Cookies werden für eine reibungslose Funktion unserer Website benötigt.</target>
+      </trans-unit>
+      <trans-unit id="tableheader.name" resname="tableheader.name" approved="yes">
+        <source>Name</source>
+        <target state="final">Name</target>
+      </trans-unit>
+      <trans-unit id="tableheader.purpose" resname="tableheader.purpose" approved="yes">
+        <source>Purpose</source>
+        <target state="final">Zweck</target>
+      </trans-unit>
+      <trans-unit id="tableheader.duration" resname="tableheader.duration" approved="yes">
+        <source>Lifetime</source>
+        <target state="final">Ablauf</target>
+      </trans-unit>
+      <trans-unit id="tableheader.type" resname="tableheader.type" approved="yes">
+        <source>Type</source>
+        <target state="final">Typ</target>
+      </trans-unit>
+      <trans-unit id="tableheader.provider" resname="tableheader.provider" approved="yes">
+        <source>Provider</source>
+        <target state="final">Anbieter</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc" approved="yes">
+        <source>Saves your consent to using cookies.</source>
+        <target state="final">Speichert Ihre Einwilligung zur Verwendung von Cookies.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.cntcookie.desc" resname="trackingobject.cntcookie.desc" approved="yes">
+        <source>Exclusion from counting (as a list of Account IDs)</source>
+        <target state="final">Ausschluss von der Zählung (Liste von Account IDs)</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.GS3_v.desc" resname="trackingobject.GS3_v.desc" approved="yes">
+        <source>Set by Optimizer webservice. Contains the same Visitor ID as BT_pdc.</source>
+        <target state="final">Wird vom Optimizer Webservice gesetzt. Enthält die gleiche Visitor ID wie BT_pdc.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._et_coid.desc" resname="trackingobject._et_coid.desc" approved="yes">
+        <source>Cookie detection</source>
+        <target state="final">Cookie-Erkennung</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oi_v2.desc" resname="trackingobject.et_oi_v2.desc" approved="yes">
+        <source>Opt-in cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</source>
+        <target state="final">Opt-In-Cookie speichert die Entscheidung des Besuchers, wenn auf der Seite des Kunden das Tracking Opt-In ausgespielt wird. Wird auch für ein eventuelles Opt-Out verwendet.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oip.desc" resname="trackingobject.et_oip.desc" approved="yes">
+        <source>Opt-in cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</source>
+        <target state="final">Opt-In-Cookie für "signalize". Wählt der Kunde "nein", wird das Cookie mit dem Wert "no" und einer Laufzeit von 50 x 365 Tagen gesetzt. Wählt der Kunde "x" oder drückt die ESC-Taste (keine Entscheidung), wird das Cookie mit dem Wert "no" für die Gültigkeit von 1 Tag gesetzt. Ein Wert von "yes" wird nicht benötigt, da dieses implizit durch die Zustimmung zum eigentlichen Browser-Push gegeben ist.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_allow_cookies.desc" resname="trackingobject.et_allow_cookies.desc" approved="yes">
+        <source>If the parameter "data-block-cookies" is used, this cookie is called by the API Call _etracker.enableCookies() to indicate that etracker is allowed to set cookies.</source>
+        <target state="final">Bei Verwendung des Parameters "data-block-cookies" wird dieses Cookie durch den API Call _etracker.enableCookies() gesetzt, um anzuzeigen, dass etracker Cookies setzen darf.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.isSdEnabled.desc" resname="trackingobject.isSdEnabled.desc" approved="yes">
+        <source>Detection whether the scrolling depth is measured for the visitor.</source>
+        <target state="final">Erkennung, ob bei dem Besucher die Scrolltiefe gemessen wird.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.BT_ctst.desc" resname="trackingobject.BT_ctst.desc" approved="yes">
+        <source>Is only used to detect whether cookies are activated in the visitor's browser or not.</source>
+        <target state="final">Wird nur verwendet, um zu erkennen, ob im Browser des Besuchers Cookies aktiviert sind oder nicht.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.BT_sdc.desc" resname="trackingobject.BT_sdc.desc" approved="yes">
+        <source>Contains base64 encoded data of the current visitor session (referrer, number of pages, number of seconds since session started) used for personalization purposes.</source>
+        <target state="final">Enthält Base64-codierte Daten der aktuellen Besuchersitzung (Referrer, Anzahl der Seiten, Anzahl der Sekunden seit Beginn der Sitzung), die zur Personalisierung verwendet werden.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.BT_pdc.desc" resname="trackingobject.BT_pdc.desc" approved="yes">
+        <source>Contains base64-coded visitor history data (is customer, newsletter recipient etc.) for personalization.</source>
+        <target state="final">Enthält Base64-kodierte Daten der Besucherhistorie (ist Kunde, Newsletter-Empfänger etc.) zur Personalisierung.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_pdc.desc" approved="yes">
+        <source>Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</source>
+        <target state="final">Enthält eine Liste von Projekt IDs, für die der Besucher ausgeschlossen ist. Dieser Cookie wird vom Webservice gesetzt, wenn der Client konfiguriert hat, dass nicht alle Besucher einem Test, sondern nur einem bestimmten Bruchteil zugeordnet sind.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_ecl.desc" approved="yes">
+        <source>Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</source>
+        <target state="final">Enthält eine Liste von Projekt IDs, für die der Besucher ausgeschlossen ist. Dieser Cookie wird vom Webservice gesetzt, wenn der Client konfiguriert hat, dass nicht alle Besucher einem Test, sondern nur einem bestimmten Bruchteil zugeordnet sind.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_scroll_depth.desc" resname="trackingobject.et_scroll_depth.desc" approved="yes">
+        <source>Data for scrolling depth measurement</source>
+        <target state="final">Daten für die Messung der Scrollposition</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.targetingAPISession.desc" resname="trackingobject.targetingAPISession.desc" approved="yes">
+        <source>Data collected in the current session for the optimiser</source>
+        <target state="final">In der aktuellen Session gesammelte Daten für den Optimiser.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._et_coid--localstorage" resname="trackingobject._et_coid--localstorage" approved="yes">
+        <source>_et_coid</source>
+        <target state="final">_et_coid</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._et_coid--localstorage.desc" resname="trackingobject._et_coid--localstorage.desc" approved="yes">
+        <source>Cookie detection, see corresponding cookie.</source>
+        <target state="final">Cookieerkennung, siehe entsprechendes Cookie.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oi_v2--localstorage" resname="trackingobject.et_oi_v2--localstorage" approved="yes">
+        <source>et_oi_v2</source>
+        <target state="final">et_oi_v2</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oi_v2--localstorage.desc" resname="trackingobject.et_oi_v2--localstorage.desc" approved="yes">
+        <source>Opt-in cookie, see corresponding cookie.</source>
+        <target state="final">Opt-In-Cookie, siehe entsprechendes Cookie.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oip--localstorage" resname="trackingobject.et_oip--localstorage" approved="yes">
+        <source>et_oip</source>
+        <target state="final">et_oip</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oip--localstorage.desc" resname="trackingobject.et_oip--localstorage.desc" approved="yes">
+        <source>Opt-in cookie for Signalize, see corresponding cookie.</source>
+        <target state="final">Opt-In-Cookie für Signalize, siehe entsprechendes Cookie.</target>
+      </trans-unit>
+      <trans-unit id="type.pixel" resname="type.pixel" approved="yes">
+        <source>Pixel</source>
+        <target state="final">Pixel</target>
+      </trans-unit>
+      <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html" approved="yes">
+        <source>HTML</source>
+        <target state="final">HTML</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._fbp.desc" resname="trackingobject._fbp.desc" approved="yes">
+        <source>Stores the unique visitor ID.</source>
+        <target state="final">Speichert die eindeutige Besucher-ID.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.facebookPixel.desc" resname="trackingobject.FacebookPixel.desc" approved="yes">
+        <source>If JavaScript is not enabled, this pixel initiates a connection to facebook.</source>
+        <target state="final">Wenn JavaScript nicht aktiviert ist, wird durch dieses Pixel eine Verbindung zu Facebook initiiert.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.fe_typo_user.desc" resname="trackingobject.fe_typo_user.desc" approved="yes">
+        <source>Assigns your browser to a session on the server.</source>
+        <target state="final">Ordnet Ihren Browser einer Session auf dem Server zu. Dies beeinflusst nur die Inhalte, die Sie sehen und wird von uns nicht ausgewertet oder weiterverarbeitet.</target>
+      </trans-unit>
+      <trans-unit id="duration.session" resname="duration.session" approved="yes">
+        <source>session</source>
+        <target state="final">Session</target>
+      </trans-unit>
+      <trans-unit id="type.cookie_http" resname="type.cookie_http" approved="yes">
+        <source>HTTP</source>
+        <target state="final">HTTP</target>
+      </trans-unit>
+      <trans-unit id="type.localstorage" resname="type.localstorage" approved="yes">
+        <source>Local Storage</source>
+        <target state="final">Local Storage</target>
+      </trans-unit>
+      <trans-unit id="type.connection" resname="type.connection" approved="yes">
+        <source>Connection</source>
+        <target state="final">Verbindung</target>
+      </trans-unit>
+      <trans-unit id="group.marketing" resname="group.marketing" approved="yes">
+        <source>Marketing</source>
+        <target state="final">Marketing</target>
+      </trans-unit>
+      <trans-unit id="group.marketing.desc" resname="group.marketing.desc" approved="yes">
+        <source>With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</source>
+        <target state="final">Mit Hilfe dieser Cookies sind wir bemüht unser Angebot für Sie noch attraktiver zu gestalten. Mittels pseudonymisierter Daten von Websitenutzern kann der Nutzerfluss analysiert und beurteilt werden. Dies gibt uns die Möglichkeit Werbe- und Websiteinhalte zu optimieren.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._pk_id.desc" resname="trackingobject._pk_id.desc" approved="yes">
+        <source>Used to store a few details about the user such as the unique visitor ID.</source>
+        <target state="final">Wird verwendet, um ein paar Details über den Benutzer wie die eindeutige Besucher-ID zu speichern.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._pk_ref.desc" resname="trackingobject._pk_ref.desc" approved="yes">
+        <source>Used to store the attribution information, the referrer initially used to visit the website.</source>
+        <target state="final">Wird benutzt, um die Informationen der Herkunftswebsite des Benutzers zu speichern.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._pk_ses.desc" resname="trackingobject._pk_ses.desc" approved="yes">
+        <source>Short lived cookie used to temporarily store data for the visit.</source>
+        <target state="final">Kurzzeitiges Cookie, um vorübergehende Daten des Besuchs zu speichern.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._pk_cvar.desc" resname="trackingobject._pk_cvar.desc" approved="yes">
+        <source>Short lived cookie used to temporarily store data for the visit.</source>
+        <target state="final">Kurzzeitiges Cookie, um vorübergehende Daten des Besuchs zu speichern.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._pk_hsr.desc" resname="trackingobject._pk_hsr.desc" approved="yes">
+        <source>Short lived cookie used to temporarily store data for the visit.</source>
+        <target state="final">Kurzzeitiges Cookie, um vorübergehende Daten des Besuchs zu speichern.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__eoi.desc" resname="trackingobject.__eoi.desc" approved="yes">
+        <source>Google: Security for AdSense, AdSense for Search, Display + Video 360, Google Ad Manager, Google Ads</source>
+        <target state="final">Google: Sicherheit für AdSense, AdSense for Search, Display + Video 360, Google Ad Manager, Google Ads</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.NID.desc" resname="trackingobject.NID.desc" approved="yes">
+        <source>Google: Security, Analytics, Functionality, Advertising for AdSense for Search, Google Ads</source>
+        <target state="final">Google: Sicherheit, Analytik, Funktionalität, Werbung für AdSense for Search, Google Ads</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__gads.desc" resname="trackingobject.__gads.desc" approved="yes">
+        <source>Google: Advertising for AdSense, Display + Video 360, Google Ad Manager, Google Ads</source>
+        <target state="final">Google: Werbung für AdSense, Display + Video 360, Google Ad Manager, Google Ads</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.pm_sess.desc" resname="trackingobject.pm_sess.desc" approved="yes">
+        <source>Google: Security, Functionality for  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</source>
+        <target state="final">Google: Sicherheit, Funktionalität für  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.pm_sess_NNN.desc" resname="trackingobject.pm_sess_NNN.desc" approved="yes">
+        <source>Google: Security, Functionality for  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</source>
+        <target state="final">Google: Sicherheit, Funktionalität für  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.aboutads_sessNNN.desc" resname="trackingobject.aboutads_sessNNN.desc" approved="yes">
+        <source>Google: Security, Functionality for  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</source>
+        <target state="final">Google: Sicherheit, Funktionalität für  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.FPAU.desc" resname="trackingobject.FPAU.desc" approved="yes">
+        <source>Google: Analytics, Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</source>
+        <target state="final">Google: Analytik, Werbung für Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.ANID.desc" resname="trackingobject.ANID.desc" approved="yes">
+        <source>Google: Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </source>
+        <target state="final">Google: Werbung for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </target>
+      </trans-unit>
+      <trans-unit id="trackingobject.AID.desc" resname="trackingobject.AID.desc" approved="yes">
+        <source>Google: Analytics, Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </source>
+        <target state="final">Google: Analytik, Werbung für Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </target>
+      </trans-unit>
+      <trans-unit id="trackingobject.TAID.desc" resname="trackingobject.TAID.desc" approved="yes">
+        <source>Google: Analytics, Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </source>
+        <target state="final">Google: Analytik, Werbung für Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </target>
+      </trans-unit>
+      <trans-unit id="trackingobject.RUL.desc" resname="trackingobject.RUL.desc" approved="yes">
+        <source>Google: Advertising for Display + Video 360, Google Ads </source>
+        <target state="final">Google: Werbung für Display + Video 360, Google Ads </target>
+      </trans-unit>
+      <trans-unit id="trackingobject.FPGCLAW.desc" resname="trackingobject.FPGCLAW.desc" approved="yes">
+        <source>Google: Analytics, Advertising for Google Ads</source>
+        <target state="final">Google: Analytik, Werbung für Google Ads</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.FPGCLGB.desc" resname="trackingobject.FPGCLGB.desc" approved="yes">
+        <source>Google: Analytics, Advertising for Google Ads</source>
+        <target state="final">Google: Analytik, Werbung für Google Ads</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gcl_gb.desc" resname="trackingobject._gcl_gb.desc" approved="yes">
+        <source>Google: Analytics, Advertising for Google Ads</source>
+        <target state="final">Google: Analytik, Werbung für Google Ads</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gac_gb_--wpid--.desc" resname="trackingobject._gac_gb_--wpid--.desc" approved="yes">
+        <source>Google: Analytics, Advertising for Google Ads</source>
+        <target state="final">Google: Analytik, Werbung für Google Ads</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gcl_aw.desc" resname="trackingobject._gcl_aw.desc" approved="yes">
+        <source>Google: Analytics, Advertising for Google Ads</source>
+        <target state="final">Google: Analytik, Werbung für Google Ads</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.1P_JAR.desc" resname="trackingobject.1P_JAR.desc" approved="yes">
+        <source>Google: Advertising for Google Ads</source>
+        <target state="final">Google: Analytik, Werbung für Google Ads</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.Conversion.desc" resname="trackingobject.Conversion.desc" approved="yes">
+        <source>Google: Advertising for Google Ads</source>
+        <target state="final">Google: Werbung für Google Ads</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.YSC.desc" resname="trackingobject.YSC.desc" approved="yes">
+        <source>Google: Security for Google Ads, YouTube </source>
+        <target state="final">Google: Sicherheit für Google Ads, YouTube </target>
+      </trans-unit>
+      <trans-unit id="trackingobject.VISITOR_INFO1_LIVE.desc" resname="trackingobject.VISITOR_INFO1_LIVE.desc" approved="yes">
+        <source>Google: Security, Advertising for Google Ads, YouTube </source>
+        <target state="final">Google: Sicherheit, Werbung für Google Ads, YouTube </target>
+      </trans-unit>
+      <trans-unit id="trackingobject.VISITOR_INFO1_LIVE__k.desc" resname="trackingobject.VISITOR_INFO1_LIVE__k.desc" approved="yes">
+        <source>Google: Security, Advertising for Google Ads, YouTube </source>
+        <target state="final">Google: Sicherheit, Werbung für Google Ads, YouTube </target>
+      </trans-unit>
+      <trans-unit id="trackingobject.VISITOR_INFO1_LIVE__default.desc" resname="trackingobject.VISITOR_INFO1_LIVE__default.desc" approved="yes">
+        <source>Google: Security, Advertising for Google Ads, YouTube </source>
+        <target state="final">Google: Sicherheit, Werbung für Google Ads, YouTube </target>
+      </trans-unit>
+      <trans-unit id="trackingobject.DSID.desc" resname="trackingobject.DSID.desc" approved="yes">
+        <source>Google: Security, Functionality, Advertising for AdSense, Campaign Manager, Google Ad Manager, Google Analytics, Display + Video 360, Search Ads 360 </source>
+        <target state="final">Google: Sicherheit, Funktionalität, Werbung für AdSense, Campaign Manager, Google Ad Manager, Google Analytics, Display + Video 360, Search Ads 360 </target>
+      </trans-unit>
+      <trans-unit id="trackingobject.test_cookie.desc" resname="trackingobject.test_cookie.desc" approved="yes">
+        <source>Google: Functionality for AdSense, Campaign Manager, Google Ad Manager, Google Analytics, Display + Video 360, Search Ads 360 </source>
+        <target state="final">Google: Funktionalität für AdSense, Campaign Manager, Google Ad Manager, Google Analytics, Display + Video 360, Search Ads 360 </target>
+      </trans-unit>
+      <trans-unit id="trackingobject.IDE.desc" resname="trackingobject.IDE.desc" approved="yes">
+        <source>Google: Advertising for Campaign Manager, Display + Video 360, Google Ad Manager, Google Analytics, Search Ads 360 </source>
+        <target state="final">Google: Werbung for Campaign Manager, Display + Video 360, Google Ad Manager, Google Analytics, Search Ads 360 </target>
+      </trans-unit>
+      <trans-unit id="trackingobject.FPLC.desc" resname="trackingobject.FPLC.desc" approved="yes">
+        <source>Google: Analytics for Google Analytics </source>
+        <target state="final">Google: Analytik für Google Analytics </target>
+      </trans-unit>
+      <trans-unit id="trackingobject.FPID.desc" resname="trackingobject.FPID.desc" approved="yes">
+        <source>Google: Analytics for Google Analytics</source>
+        <target state="final">Google: Analytik für Google Analytics</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.GA_OPT_OUT.desc" resname="trackingobject.GA_OPT_OUT.desc" approved="yes">
+        <source>Google: Functionality for Google Analytics</source>
+        <target state="final">Google: Funktionalität für Google Analytics </target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__utma.desc" resname="trackingobject.__utma.desc" approved="yes">
+        <source>Google: Analytics for Google Analytics</source>
+        <target state="final">Google: Analytik für Google Analytics</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__utmb.desc" resname="trackingobject.__utmb.desc" approved="yes">
+        <source>Google: Analytics for Google Analytics</source>
+        <target state="final">Google: Analytik für Google Analytics</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__utmc.desc" resname="trackingobject.__utmc.desc" approved="yes">
+        <source>Google: Analytics for Google Analytics</source>
+        <target state="final">Google: Analytik für Google Analytics</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__utmt.desc" resname="trackingobject.__utmt.desc" approved="yes">
+        <source>Google: Analytics for Google Analytics</source>
+        <target state="final">Google: Analytik für Google Analytics</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__utmz.desc" resname="trackingobject.__utmz.desc" approved="yes">
+        <source>Google: Analytics for Google Analytics</source>
+        <target state="final">Google: Analytik für Google Analytics</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__utmv.desc" resname="trackingobject.__utmv.desc" approved="yes">
+        <source>Google: Analytics for Google Analytics</source>
+        <target state="final">Google: Analytik für Google Analytics</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gat_--custom-name--.desc" resname="trackingobject._gat_--custom-name--.desc" approved="yes">
+        <source>Google: Analytics for Google Analytics</source>
+        <target state="final">Google: Analytik für Google Analytics</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gaexp.desc" resname="trackingobject._gaexp.desc" approved="yes">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target state="final">Google: Analytik für Google Analytics, Optimize</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gaexp_rc.desc" resname="trackingobject._gaexp_rc.desc" approved="yes">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target state="final">Google: Analytik für Google Analytics, Optimize</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._opt_awcid.desc" resname="trackingobject._opt_awcid.desc" approved="yes">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target state="final">Google: Analytik für Google Analytics, Optimize</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._opt_awmid.desc" resname="trackingobject._opt_awmid.desc" approved="yes">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target state="final">Google: Analytik für Google Analytics, Optimize</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._opt_awgid.desc" resname="trackingobject._opt_awgid.desc" approved="yes">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target state="final">Google: Analytik für Google Analytics, Optimize</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._opt_awkid.desc" resname="trackingobject._opt_awkid.desc" approved="yes">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target state="final">Google: Analytik für Google Analytics, Optimize</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._opt_utmc.desc" resname="trackingobject._opt_utmc.desc" approved="yes">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target state="final">Google: Analytik für Google Analytics, Optimize</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._ga.desc" resname="trackingobject._ga.desc" approved="yes">
+        <source>Used to distinguish users.</source>
+        <target state="final">Wird verwendet, um Benutzer zu unterscheiden.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.AMP_TOKEN.desc" resname="trackingobject.AMP_TOKEN.desc" approved="yes">
+        <source>Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, request in progress or an error retrieving a Client ID from AMP Client ID service.</source>
+        <target state="final">Enthält ein Token, das verwendet werden kann, um eine Client-ID vom AMP-Client-ID-Service abzurufen. Andere mögliche Werte zeigen Opt-out, Anfrage im Gange oder einen Fehler beim Abrufen einer Client-ID vom AMP Client ID Service an.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._dc_gtm_--property-id--.desc" resname="trackingobject._dc_gtm_--property-id--.desc" approved="yes">
+        <source>Used by DoubleClick (Google Tag Manager) to help identify the visitors by either age, gender or interests.</source>
+        <target state="final">Wird von DoubleClick (Google Tag Manager) verwendet, um die Besucher nach Alter, Geschlecht oder Interessen zu identifizieren.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gac_--property-id--.desc" resname="trackingobject._gac_--property-id--.desc" approved="yes">
+        <source>Contains campaign related information for the user. If you have linked your Google Analytics and Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.</source>
+        <target state="final">Enthält Informationen zu Kampagnen für den Benutzer. Wenn Sie Ihr Google Analytics- und Ihr Google Ads Konto verknüpft haben, werden Elemente zur Effizienzmessung dieses Cookie lesen, sofern Sie dies nicht deaktivieren.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gat.desc" resname="trackingobject._gat.desc" approved="yes">
+        <source>Used to throttle request rate.</source>
+        <target state="final">Wird zum Drosseln der Anfragerate verwendet.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._ga_--container-id--.desc" resname="trackingobject._ga_--container-id--.desc" approved="yes">
+        <source>Persists session state.</source>
+        <target state="final">Speichert den aktuellen Sessionstatus.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gcl_au.desc" resname="trackingobject._gcl_au.desc" approved="yes">
+        <source>Used by Google AdSense to experiment with advertisement efficiency.</source>
+        <target state="final">Wird von Google AdSense zum Experimentieren mit Werbungseffizienz auf Webseiten verwendet.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gid.desc" resname="trackingobject._gid.desc" approved="yes">
+        <source>Used to distinguish users.</source>
+        <target state="final">Wird verwendet, um Benutzer zu unterscheiden.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.MUID.desc" resname="trackingobject.MUID.desc" approved="yes">
+        <source>Used as unique user identifier. The cookie allows user tracking across many Microsoft domains.</source>
+        <target state="final">Wird als eindeutige Benutzer-ID verwendet. Der Cookie ermöglicht Benutzer-Tracking durch Synchronisieren der ID in vielen Microsoft-Domänen.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.MUIDB.desc" resname="trackingobject.MUIDB.desc" approved="yes">
+        <source>Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</source>
+        <target state="final">Speichert anonyme Daten über Besucher von mehreren Besuchen und auf mehreren Webseiten. Diese Informationen werden verwendet, um die Effizienz der Werbung auf Webseiten zu messen.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.MSFPC.desc" resname="trackingobject.MSFPC.desc" approved="yes">
+        <source>The cookie allows user tracking across many Microsoft domains and is used for Bing Analytics.</source>
+        <target state="final">Das Cookie ermöglicht die Benutzerverfolgung über viele Microsoft-Domains und wird für Bing Analytics verwendet.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.DcLcid.desc" resname="trackingobject.DcLcid.desc" approved="yes">
+        <source>The cookie is used to implement Microsoft-forms on the website.</source>
+        <target state="final">Das Cookie wird verwendet, um Microsoft-Formulare zu integrieren.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.AADNonce.forms.desc" resname="trackingobject.AADNonce.forms.desc" approved="yes">
+        <source>The cookie is used to implement Microsoft-forms on the website.</source>
+        <target state="final">Das Cookie wird verwendet, um Microsoft-Formulare zu integrieren.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__RequestVerificationToken.desc" resname="trackingobject.__RequestVerificationToken.desc" approved="yes">
+        <source>The cookie is used to implement anti-forgery concerning Microsoft-forms on the website.</source>
+        <target state="final">Das Cookie wird verwendet, um einen Spam-Schutz für Microsoft-Formularen umzusetzen.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.UID.desc" resname="trackingobject.UID.desc" approved="yes">
+        <source>The cookie is used for market and user research (Scorecard Research).</source>
+        <target state="final">Das Cookie wird für die Markt- und Nutzerforschung (Scorecard Research) verwendet.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.UIDR.desc" resname="trackingobject.UIDR.desc" approved="yes">
+        <source>The cookie is used for market and user research (Scorecard Research).</source>
+        <target state="final">Das Cookie wird für die Markt- und Nutzerforschung (Scorecard Research) verwendet.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.bcookie.desc" resname="trackingobject.bcookie.desc" approved="yes">
+        <source>Browser Identifier cookie to uniquely identify devices accessing LinkedIn to detect abuse on the platform.</source>
+        <target state="final">Dient zur eindeutigen eindeutigen Identifizierung von Geräten, die auf LinkedIn zugreifen, um Missbrauch auf der Plattform zu erkennen.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.lang.desc" resname="trackingobject.lang.desc" approved="yes">
+        <source>Used to memorize a user's language setting.</source>
+        <target state="final">Wird verwendet, um die Spracheinstellung eines Benutzers zu speichern.</target>
+      </trans-unit>
+      <trans-unit id="group.external" resname="group.external" approved="yes">
+        <source>External content</source>
+        <target state="final">Externe Inhalte</target>
+      </trans-unit>
+      <trans-unit id="group.external.desc" resname="group.external.desc" approved="yes">
+        <source>With the help of these cookies we strive to improve our offer for our users. By means of providing video content or other useful content like maps to enhance the user experience.</source>
+        <target state="final">Mit Hilfe dieser Cookies bemühen wir uns, unser Angebot für unsere Nutzer durch die Bereitstellung von Videoinhalten oder anderen nützlichen Inhalten wie Karten zu verbessern.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.YouTube.desc" resname="trackingobject.YouTube.desc" approved="yes">
+        <source>Is used to connect to YouTube and to display videos.</source>
+        <target state="final">Es wird eine Verbindung mit YouTube hergestellt, um Videos anzuzeigen.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.GoogleMaps.desc" resname="trackingobject.GoogleMaps.desc" approved="yes">
+        <source>Is used to connect to Google Maps and to display those maps.</source>
+        <target state="final">Es wird eine Verbindung mit Google Maps hergestellt, um Karten anzuzeigen.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.MicrosoftStream.desc" resname="trackingobject.MicrosoftStream.desc" approved="yes">
+        <source>Is used to connect to Microsoft Stream and display videos.</source>
+        <target state="final">Wird verwendet, um sich mit Microsoft Stream zu verbinden und Videos anzuzeigen.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.Signature_Api.desc" resname="trackingobject.Signature_Api.desc" approved="yes">
+        <source>Is used to connect to the Microsoft signature API.</source>
+        <target state="final">Wird zur Verbindung mit der Microsoft-Signatur-API verwendet.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.Authorization_Api.desc" resname="trackingobject.Authorization_Api.desc" approved="yes">
+        <source>Is used to connect to the Microsoft authorization API.</source>
+        <target state="final">Wird verwendet, um sich mit der Microsoft-Autorisierungs-API zu verbinden.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.RedirectToThinEmbed.desc" resname="trackingobject.RedirectToThinEmbed.desc" approved="yes">
+        <source>Is used to embed Microsoft Stream videos.</source>
+        <target state="final">Wird verwendet, um Microsoft Stream-Videos einzubetten.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.UserSession_Api.desc" resname="trackingobject.UserSession_Api.desc" approved="yes">
+        <source>Is used to store the user session of the Microsoft API.</source>
+        <target state="final">Wird verwendet, um die Benutzersitzung der Microsoft API zu speichern.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.wfeSessionId.desc" resname="trackingobject.wfeSessionId.desc" approved="yes">
+        <source>Is used to store the Web Front End Session ID of Microsoft Stream.</source>
+        <target state="final">Wird verwendet, um die Web Front End Session ID von Microsoft Stream zu speichern.</target>
+      </trans-unit>
+      <trans-unit id="browser.dnt-enabled" resname="browser.dnt-enabled" approved="yes">
+        <source><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></source>
+        <target state="final"><![CDATA[Sie haben bereits über die <a target="_blank" rel="noopener" href="https://de.wikipedia.org/wiki/Do_Not_Track_(Software)">Do-Not-Track-Funktion Ihres Browsers</a> der Erstellung von Nutzungsprofilen widersprochen. Dies akzeptieren wir. Sie können diese Funktion über die Einstellungen Ihres Browsers anpassen.]]></target>
+      </trans-unit>
+      <trans-unit id="duration.none" resname="duration.empty" approved="yes">
+        <source>none</source>
+        <target state="final">keine</target>
+      </trans-unit>
+      <trans-unit id="duration.second" resname="duration.second" approved="yes">
+        <source>second</source>
+        <target state="final">Sekunde</target>
+      </trans-unit>
+      <trans-unit id="duration.seconds" resname="duration.seconds" approved="yes">
+        <source>seconds</source>
+        <target state="final">Sekunden</target>
+      </trans-unit>
+      <trans-unit id="duration.minute" resname="duration.minute" approved="yes">
+        <source>minute</source>
+        <target state="final">Minute</target>
+      </trans-unit>
+      <trans-unit id="duration.minutes" resname="duration.minutes" approved="yes">
+        <source>minutes</source>
+        <target state="final">Minuten</target>
+      </trans-unit>
+      <trans-unit id="duration.hour" resname="duration.hour" approved="yes">
+        <source>hour</source>
+        <target state="final">Stunde</target>
+      </trans-unit>
+      <trans-unit id="duration.hours" resname="duration.hours" approved="yes">
+        <source>hours</source>
+        <target state="final">Stunden</target>
+      </trans-unit>
+      <trans-unit id="duration.day" resname="duration.day" approved="yes">
+        <source>day</source>
+        <target state="final">Tag</target>
+      </trans-unit>
+      <trans-unit id="duration.days" resname="duration.days" approved="yes">
+        <source>days</source>
+        <target state="final">Tage</target>
+      </trans-unit>
+      <trans-unit id="duration.week" resname="duration.week" approved="yes">
+        <source>week</source>
+        <target state="final">Woche</target>
+      </trans-unit>
+      <trans-unit id="duration.weeks" resname="duration.weeks" approved="yes">
+        <source>weeks</source>
+        <target state="final">Wochen</target>
+      </trans-unit>
+      <trans-unit id="duration.month" resname="duration.month" approved="yes">
+        <source>month</source>
+        <target state="final">Monat</target>
+      </trans-unit>
+      <trans-unit id="duration.months" resname="duration.months" approved="yes">
+        <source>months</source>
+        <target state="final">Monate</target>
+      </trans-unit>
+      <trans-unit id="duration.year" resname="duration.year" approved="yes">
+        <source>year</source>
+        <target state="final">Jahr</target>
+      </trans-unit>
+      <trans-unit id="duration.years" resname="duration.years" approved="yes">
+        <source>years</source>
+        <target state="final">Jahre</target>
+      </trans-unit>
+      <trans-unit id="active" resname="active" approved="yes">
+        <source>active</source>
+        <target state="final">aktiv</target>
+      </trans-unit>
+      <trans-unit id="alwaysactive" resname="alwaysactive" approved="yes">
+        <source>always active</source>
+        <target state="final">immer aktiv</target>
+      </trans-unit>
+      <trans-unit id="inactive" resname="inactive" approved="yes">
+        <source>inactive</source>
+        <target state="final">inaktiv</target>
+      </trans-unit>
+      <trans-unit id="alwaysinactive" resname="alwaysinactive" approved="yes">
+        <source>always inactive</source>
+        <target state="final">immer inaktiv</target>
+      </trans-unit>
+      <trans-unit id="group.accept" resname="group.accept" approved="yes">
+        <source>accept</source>
+        <target state="final">Zustimmen</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__cf_bm.desc" resname="trackingobject.__cf_bm.desc" approved="yes">
+        <source>Required to see Vimeo content.</source>
+        <target state="final">Wird benötigt, um Vimeo-Inhalte zu sehen.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.OptanonAlertBoxClosed.desc" resname="trackingobject.OptanonAlertBoxClosed.desc" approved="yes">
+        <source>Saves the state of your Vimeo data protection consent.</source>
+        <target state="final">Speichert Ihre Zustimmung zum Vimeo-Datenschutz.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.OptanonConsent.desc" resname="trackingobject.OptanonConsent.desc" approved="yes">
+        <source>Saves the state of your Vimeo data protection consent.</source>
+        <target state="final">Speichert Ihre Zustimmung zum Vimeo-Datenschutz.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.player.desc" resname="trackingobject.player.desc" approved="yes">
+        <source>This cookie saves your preferences before playing an embedded Vimeo video. This will bring you back to your preferred settings the next time you watch a Vimeo video.</source>
+        <target state="final">Dieses Cookie speichert Ihre Einstellungen, bevor Sie ein eingebettetes Vimeo-Video abspielen. Dadurch bekommen Sie beim nächsten Mal, wenn Sie ein Vimeo-Video ansehen, wieder Ihre bevorzugten Einstellungen.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.vuid.desc" resname="trackingobject.vuid.desc" approved="yes">
+        <source>This cookie gathers information about your actions on websites embedding Vimeo videos.</source>
+        <target state="final">Dieses Cookie sammelt Informationen über Ihre Handlungen auf Webseiten, die ein Vimeo-Video eingebettet haben.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._abexps.desc" resname="trackingobject._abexps.desc" approved="yes">
+        <source>This cookie remembers your settings. Settings can include language, region or login user. In general this cookie saves data about how you use Vimeo.</source>
+        <target state="final">Dieses Vimeo-Cookie hilft Vimeo, sich an die von Ihnen getroffenen Einstellungen zu erinnern. Dabei kann es sich zum Beispiel um eine voreingestellte Sprache, um eine Region oder einen Benutzernamen handeln. Im Allgemeinen speichert das Cookie Daten darüber, wie Sie Vimeo verwenden.</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.continuous_play_v3.desc" resname="trackingobject.continuous_play_v3.desc" approved="yes">
+        <source>This cookie is a first-party cookie from Vimeo. The cookie collects information on how you use the Vimeo service. For example, the cookie saves when you pause and play a video again.</source>
+        <target state="final">Bei diesem Cookie handelt es sich um ein Erstanbieter-Cookie von Vimeo. Das Cookie sammelt Informationen wie Sie das Vimeo-Service verwenden. Beispielsweise speichert das Cookie, wann Sie ein Video pausieren bzw. wieder abspielen.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
