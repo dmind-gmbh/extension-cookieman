@@ -20,6 +20,16 @@ plugin.tx_cookieman {
                 }
             }
         }
+        cookie {
+            # cookie expire time in days (default: 365)
+            cookieLifetimeDays = 
+
+            # domain without protocol like www.example.com, .example.com (default: Typo3 site name)
+            domain = 
+
+            # sameSite Options: Lax, Strict or None (default: lax)
+            sameSite = Lax             
+        }
     }
 }
 
@@ -56,7 +66,9 @@ page {
             100 = {$plugin.tx_cookieman.settings.resourcesBasePath}/Private/Themes/{$plugin.tx_cookieman.settings.theme}/Layouts/
         }
 
-        // allows to omit extension name in f:translate ViewHelpers
+        // @see https://docs.typo3.org/m/typo3/reference-typoscript/12.4/en-us/ContentObjects/Fluidtemplate/Index.html#extbase-controllerextensionname
+        // should allow to omit extension name in f:translate ViewHelpers
+        // but does not seem to work in 12LTS @see https://forge.typo3.org/issues/102315
         extbase.controllerExtensionName = cookieman
 
         # evaluate settings during rendering. With FLUIDTEMPLATE.settings we would prevent overwritability
@@ -66,7 +78,7 @@ page {
     }
 }
 
-[{$plugin.tx_cookieman.settings.minify} == '0']
+['{$plugin.tx_cookieman.settings.minify}' == '0']
 page {
     includeJSFooter {
         cookieman := removeString(.min)

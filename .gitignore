@@ -1,23 +1,29 @@
+# IDE
 /.idea
 
 # composer
 /vendor/
 /composer.lock
 
-# Build stuff
-/.build/
+# build, dev, clutter
 /Build/yarn-error.log
-/Build/.phpunit.result.cache
+/Build/.phpunit.*
 /Build/node_modules/
 /Build/mix-manifest.json
 /Build/testing-docker/.env
-/Build/clover.xml
-/Build/coveralls-upload.json
 /Build/AcceptanceReports
 /Tests/Acceptance/Support/_generated/
 /temp-*/
 /Documentation-GENERATED-temp/
 /Resources/Public/Js/mix-manifest.json
+
+# TYPO3
+/.build/
+/config/*
+!/config/system/
+/config/system/*
+!/config/system/additional.php
+/var
 
 # CGL Fixer
 /.php_cs.cache
@@ -26,5 +32,5 @@
 /local.log
 ./browserstack.err
 
-# private stuff
+# private
 /.ddev/homeadditions/.gitconfig

@@ -162,9 +162,13 @@ trackingObjects.‹tracking-object-key›
           // 'Matomo' is the ‹tracking-object-key›:
           Matomo {
               // injected code, if consent is given:
-              inject (
-                  <script data-what="Matomo" src="/typo3conf/ext/cookieman/Resources/Public/Js/Injects/example-inject.js"></script>
-              )
+              inject = TEXT
+              inject {
+                  insertData = 1
+                  value (
+                      <script data-what="Matomo" src="/{path : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}?{date : U}"></script>
+                  )
+              }
 
               show {
                   // set cookies, if consent is given:
@@ -187,7 +191,7 @@ trackingObjects.‹tracking-object-key›.inject
 .. rst-class:: dl-parameters
 
 trackingObjects.‹tracking-object-key›.inject
-   :sep:`|` :aspect:`Data type:` :ref:`data-type-html-code`
+   :sep:`|` :aspect:`Data type:` :ref:`data-type-html-code` / :ref:`cObject <data-type-cobject>`
    :sep:`|` :aspect:`Example:`  <script src="/path/to/tracking-code.js"></script>
    :sep:`|`
 
@@ -195,6 +199,14 @@ trackingObjects.‹tracking-object-key›.inject
    This can be `<script>`, `<img>` or anything else.
 
    You can either use inline script or link to an external file (useful if a HTTP header `Content-Security-Policy` is set).
+
+   If you need a local path from your `_assets` directory, let TYPO3 build it. We currently recommend using `TEXT`
+   with `insertData = 1` and the getText `{path : EXT:…}`. The preceding root path (`/`) is necessary for it to work on subpages. We recommend adding `?{date : U}` to add a cache-busting parameter.
+   See the example above.
+
+   It has shortcomings (namely the missing base and missing cache busting ?parameter. See https://forge.typo3.org/issues/99203#change-507069).
+
+   For v13 we can use the `{asset : ...}`` getText function (https://review.typo3.org/c/Packages/TYPO3.CMS/+/77018).
 
 .. _trackingObjects.‹tracking-object-key›.show:
 

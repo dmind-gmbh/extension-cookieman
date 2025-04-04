@@ -3,6 +3,8 @@
 /.github export-ignore
 /Build export-ignore
 /Tests export-ignore
+/config export-ignore
+/var export-ignore
 
 # Files
 .editorconfig export-ignore
@@ -16,22 +18,5 @@ package.json export-ignore
 webpack.config.js export-ignore
 yarn.lock export-ignore
 
-# Enforce checkout with linux lf consistent over all plattforms
-*.xml text eol=lf
-*.html text eol=lf
-*.css text eol=lf
-*.tmpl text eol=lf
-*.less text eol=lf
-*.js text eol=lf
-*.json text eol=lf
-*.php text eol=lf
-*.rst text eol=lf
-*.md text eol=lf
-*.yml text eol=lf
-*.ts text eol=lf
-*.xlf text eol=lf
-*.sql text eol=lf
-*.t3s text eol=lf
-*.txt text eol=lf
-*.typoscript text eol=lf
-*.tsconfig text eol=lf
+# lf checkout when text is auto-detected
+* text=auto eol=lf

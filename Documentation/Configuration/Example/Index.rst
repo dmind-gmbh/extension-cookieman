@@ -25,6 +25,7 @@ This example configuration is based on the base TypoScript configuration
        trackingObjects {
            # extend the existing configuration for 'Matomo'
            Matomo {
+               inject >
                inject (
                <script type="text/javascript">
                  var _paq = window._paq || [];
@@ -44,10 +45,14 @@ This example configuration is based on the base TypoScript configuration
            # add my own custom tracking solution
            # if you have a useful configuration and want to share, we would be happy if you did a pull request!
            MyOwnTrackingPixel {
-               inject (
-                   <div>Here be dragons <img src="https://via.placeholder.com/200x200?text=Tracking pixel..."></div>
-                   <script>alert('oh la la!')</script>
-               )
+               inject = TEXT
+               inject {
+                   insertData = 1
+                   value = (
+                       <div>Here be dragons <img src="/{path : EXT:my_ext/Resources/Public/Image/MyImage.png}?{date : U}"></div>
+                       <script>alert('oh la la!')</script>
+                   )
+               }
                show {
                    # each element here represents one line of information in the consent popup
                    pixelphp {

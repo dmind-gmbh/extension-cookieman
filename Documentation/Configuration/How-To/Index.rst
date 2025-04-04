@@ -311,13 +311,57 @@ Cookieman allows to add external sources with the :ref:`inject <trackingObjects.
 
    plugin.tx_cookieman.settings.trackingObjects {
        Matomo {
-           inject (
-               <script src="https://your-domain.com/typo3conf/ext/your_sitepackage/Resources/Public/JavaScript/matomo-trackingcode.js"></script>
-               <script src="https://your-matomo-server.com/path/to/matomo.js" async defer></script>
-           )
+           inject = TEXT
+           inject {
+               insertData = 1
+               value (
+                   <script src="/{path : EXT:your_sitepackage/Resources/Public/JavaScript/matomo-trackingcode.js}?{date : U}"></script>
+                   <script src="https://your-matomo-server.com/path/to/matomo.js" async defer></script>
+               )
+           }
        }
    }
 
 .. tip::
 
    Read more about the Content Security Policy on the `Mozilla Developer Network <https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP>`__.
+
+
+
+.. _extension-cookie-settings:
+
+Configuration of the cookie used by the extension itself
+--------------------------------------------------------
+
+There are a few typoscript options to configure the cookie which is required by the exension.
+
+.. code-block:: typoscript
+
+    plugin.tx_cookieman {
+        settings {
+            cookie {
+                # cookie expire time in days (default: 365)
+                cookieLifetimeDays =
+
+                # domain without protocol like www.example.com, .example.com (default: Typo3 site name)
+                domain =
+
+                # sameSite Options: Lax, Strict or None (default: lax)
+                sameSite = Lax
+            }
+        }
+    }
+
+.. tip::
+
+   If you have multiple TYPO3 sites running on one instance with multiple subdomains you propably do not want to have multiple cookieman cookies.
+   This would also mean that the cookieman banner is displayed on both domains and that every website user has to configure it for every subdomain again.
+   To avoid this just set the domain setting to the domain with a starting dot.
+
+.. code-block:: typoscript
+
+   plugin.tx_cookieman.settings.cookie.domain = .example.com
+
+
+
+

@@ -15,7 +15,7 @@
         pageUid: settings.links.dataProtectionDeclarationPid,
         section: settings.links.dataProtectionDeclarationAnchor
     )}"
-    >{f:translate(key: 'dataProtectionDeclaration')}</a>
+    >{f:translate(key: 'dataProtectionDeclaration', extensionName: 'cookieman')}</a>
 </f:variable>
 
 <f:variable name="imprintLink">
@@ -23,14 +23,15 @@
         pageUid: settings.links.imprintPid,
         section: settings.links.imprintAnchor
     )}"
-    >{f:translate(key: 'imprint')}</a>
+    >{f:translate(key: 'imprint', extensionName: 'cookieman')}</a>
 </f:variable>
 
 <f:spaceless>
+    
 <div id="cookieman-modal"
      data-cookieman-showonce="{isShowOnce}"
-     data-cookieman-settings="{f:format.json(value: '{groups: settings.groups, trackingObjects: settings.trackingObjects}')}"
-     class="modal fade" tabindex="-1" role="dialog" aria-label="Cookie Dialog"
+     data-cookieman-settings="{f:format.json(value: '{cookie: settings.cookie, groups: settings.groups, trackingObjects: settings.trackingObjects}')}"
+     class="modal fade" tabindex="-1" role="dialog"
 >
     <f:render section="Content"/>
 </div>

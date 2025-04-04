@@ -18,14 +18,8 @@ use TYPO3\CMS\Frontend\ContentObject\DataProcessorInterface;
 
 class TypoScriptSettingsProcessor implements DataProcessorInterface
 {
-    /**
-     * @var ConfigurationManagerInterface
-     */
-    protected $configurationManager;
-
-    public function __construct(ConfigurationManager $configurationManager)
+    public function __construct(protected ConfigurationManager $configurationManager)
     {
-        $this->configurationManager = $configurationManager;
     }
 
     /**
@@ -49,7 +43,7 @@ class TypoScriptSettingsProcessor implements DataProcessorInterface
             'cookieman'
         );
 
-        $settings = $this->sanitizeSettings($settings);
+        $settings = $this->sanitizeSettings($settings, $cObj);
 
         $processedData['settings'] = $settings;
 
@@ -59,27 +53,37 @@ class TypoScriptSettingsProcessor implements DataProcessorInterface
     /**
      * Prepare TypoScript for the frontend.
      */
-    protected function sanitizeSettings(array $settings)
+    protected function sanitizeSettings(array $settings, ContentObjectRenderer $cObj): array
     {
         foreach (($settings['groups'] ?? []) as $groupId => $group) {
             if (isset($group['preselected'])) {
-                $settings['groups'][$groupId]['preselected'] = (bool)$group['preselected'];
+                $settings['groups'][$groupId]['preselected'] = (bool) $group['preselected'];
             }
             if (isset($group['disabled'])) {
-                $settings['groups'][$groupId]['disabled'] = (bool)$group['disabled'];
+                $settings['groups'][$groupId]['disabled'] = (bool) $group['disabled'];
             }
             if (isset($group['respectDnt'])) {
-                $settings['groups'][$groupId]['respectDnt'] = (bool)$group['respectDnt'];
+                $settings['groups'][$groupId]['respectDnt'] = (bool) $group['respectDnt'];
             }
             if (isset($group['showDntMessage'])) {
-                $settings['groups'][$groupId]['showDntMessage'] = (bool)$group['showDntMessage'];
+                $settings['groups'][$groupId]['showDntMessage'] = (bool) $group['showDntMessage'];
             }
 
-            // ignore keys on groups.trackingObjects - this makes sure it does not get output as an object in JSON
             $trackingObjects = $group['trackingObjects'] ?? [];
             // sort to allow using TypoScript-style .20 .10 .40 etc.
             ksort($trackingObjects);
+            // ignore keys on groups.trackingObjects - this makes sure it does not get output as an object in JSON
             $settings['groups'][$groupId]['trackingObjects'] = array_values($trackingObjects);
+        }
+
+        // render `<trackingObjects.‹tracking-object-key›.inject>
+        foreach (($settings['trackingObjects'] ?? []) as $trackingObjectKey => $trackingObject) {
+            if (!($trackingObject['inject']['_typoScriptNodeValue'] ?? false)) {
+                continue;
+            }
+
+            $settings['trackingObjects'][$trackingObjectKey]['inject']
+                = $cObj->cObjGetSingle($trackingObject['inject']['_typoScriptNodeValue'], $trackingObject['inject']);
         }
 
         return $settings;
