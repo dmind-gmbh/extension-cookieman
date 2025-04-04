@@ -16,7 +16,7 @@
     },
     "require": {
         "php": "^7.4 || ^8.0",
-        "typo3/cms-core": "^11.5 || 11.*.x-dev || dev-main"
+        "typo3/cms-core": "^11.5 || 11.*.x-dev"
     },
     "require-dev": {
         "browserstack/browserstack-local": "dev-master",
@@ -30,8 +30,8 @@
         "php-coveralls/php-coveralls": "^2.1",
         "phpspec/prophecy-phpunit": "^2.0",
         "phpunit/phpunit": "^9.5.25",
-        "typo3/cms-install": "^11.5 || 11.*.x-dev || dev-main",
-        "typo3/cms-tstemplate": "^11.5 || 11.*.x-dev || dev-main",
+        "typo3/cms-install": "^11.5 || 11.*.x-dev",
+        "typo3/cms-tstemplate": "^11.5 || 11.*.x-dev",
         "typo3/tailor": "^1.3",
         "typo3/testing-framework": "^6.15"
     },
