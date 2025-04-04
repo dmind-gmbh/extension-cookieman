@@ -1,4 +1,4 @@
-name: extension-cookieman-master
+name: extension-cookieman-12lts
 type: typo3
 docroot: .build/public
 php_version: "8.2"
@@ -17,8 +17,17 @@ hooks:
         - exec: rm -f composer.lock
         - exec: |
             if [[ $(mysql -e "SHOW TABLES" | wc -l) -eq 0 ]]; then
-              composer typo3 install:setup -- --admin-user-name=admin --admin-password='aaAA11!!' \
-                --site-setup-type=site --no-interaction --force
+              composer typo3 -- install:setup \
+                --web-server-config=apache \
+                --use-existing-database \
+                --database-socket="" \
+                --database-driver=mysqli --database-host-name=db --database-port=3306 --database-name=db \
+                --database-user-name=db --database-user-password=db \
+                --admin-user-name=admin --admin-password='aaAA11!!' \
+                --site-setup-type=site --site-base-url="$DDEV_PRIMARY_URL" \
+                --site-name="$DDEV_PROJECT" \
+                --force
+
               mysql <<< 'INSERT INTO pages SET uid=2, pid=1, title="Imprint", slug="/imprint"'
               mysql <<< 'INSERT INTO pages SET uid=3, pid=1, title="Privacy Policy", slug="/privacy"'
             fi
