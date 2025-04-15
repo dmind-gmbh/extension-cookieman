@@ -12,9 +12,9 @@
       <trans-unit id="group.testgroup" xml:space="preserve" approved="yes">
 				<source>Test group (does not respect Do-Not-Track header)</source>
 			<target state="final">Testgruppe (respekterer ikke Do-Not-Track header)</target></trans-unit>
-      <trans-unit id="type.script" xml:space="preserve">
+      <trans-unit id="type.script" xml:space="preserve" approved="yes">
 				<source>JavaScript</source>
-			<target state="needs-translation">JavaScript</target></trans-unit>
+			<target state="final">JavaScript</target></trans-unit>
     </body>
   </file>
 </xliff>
