@@ -14,7 +14,6 @@ namespace Dmind\Cookieman\Tests\Acceptance\Frontend;
 use Codeception\Util\Locator;
 use Dmind\Cookieman\Tests\Acceptance\Support\AcceptanceTester;
 use Dmind\Cookieman\Tests\Acceptance\Support\Constants;
-use Exception;
 
 /**
  * Tests clicking through some frontend pages
@@ -23,7 +22,7 @@ class PopupInteractionsCest
 {
     /**
      * @param AcceptanceTester $I
-     * @throws Exception
+     * @throws \Exception
      */
     public function save(AcceptanceTester $I)
     {
@@ -42,7 +41,7 @@ class PopupInteractionsCest
 
     /**
      * @param AcceptanceTester $I
-     * @throws Exception
+     * @throws \Exception
      */
     public function saveAll(AcceptanceTester $I)
     {
@@ -74,7 +73,7 @@ class PopupInteractionsCest
     /**
      * @group desktop
      * @param AcceptanceTester $I
-     * @throws Exception
+     * @throws \Exception
      */
     public function selectGroupAndSaveMobile(AcceptanceTester $I)
     {
@@ -110,7 +109,7 @@ class PopupInteractionsCest
     /**
      * @param AcceptanceTester $I
      * @throws \Codeception\Exception\ModuleException
-     * @throws Exception
+     * @throws \Exception
      */
     public function onScriptLoadedEventHandler(AcceptanceTester $I)
     {

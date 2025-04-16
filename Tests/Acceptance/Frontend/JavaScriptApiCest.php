@@ -14,7 +14,6 @@ namespace Dmind\Cookieman\Tests\Acceptance\Frontend;
 use Codeception\Exception\ModuleException;
 use Dmind\Cookieman\Tests\Acceptance\Support\AcceptanceTester;
 use Dmind\Cookieman\Tests\Acceptance\Support\Constants;
-use Exception;
 
 /**
  * Tests clicking through some frontend pages
@@ -24,7 +23,7 @@ class JavaScriptApiCest
     /**
      * @param AcceptanceTester $I
      * @throws ModuleException
-     * @throws Exception
+     * @throws \Exception
      */
     public function onScriptLoadedEventHandler(AcceptanceTester $I)
     {

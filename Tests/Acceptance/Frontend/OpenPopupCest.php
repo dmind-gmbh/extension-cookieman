@@ -13,7 +13,6 @@ namespace Dmind\Cookieman\Tests\Acceptance\Frontend;
 
 use Dmind\Cookieman\Tests\Acceptance\Support\AcceptanceTester;
 use Dmind\Cookieman\Tests\Acceptance\Support\Constants;
-use Exception;
 
 /**
  * Tests opening the popup
@@ -22,7 +21,7 @@ class OpenPopupCest
 {
     /**
      * @param AcceptanceTester $I
-     * @throws Exception
+     * @throws \Exception
      */
     public function openViaClickOnDataCookiemanShowElement(AcceptanceTester $I)
     {
@@ -34,7 +33,7 @@ class OpenPopupCest
 
     /**
      * @param AcceptanceTester $I
-     * @throws Exception
+     * @throws \Exception
      */
     public function notShownOnImprint(AcceptanceTester $I)
     {
