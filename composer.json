@@ -30,7 +30,7 @@
         "phpunit/phpunit": "^11.5",
         "typo3/cms-install": "^13.4 || 13.*.x-dev",
         "typo3/cms-tstemplate": "^13.4 || 13.*.x-dev",
-        "typo3/coding-standards": "0.7.1",
+        "typo3/coding-standards": "^0.8.0",
         "typo3/tailor": "^1.5",
         "typo3/testing-framework": "^9.0"
     },
