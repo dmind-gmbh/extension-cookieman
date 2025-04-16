@@ -11,7 +11,6 @@ declare(strict_types=1);
 
 namespace Dmind\Cookieman\ViewHelpers;
 
-use TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface;
 use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractViewHelper;
 
 /**
@@ -28,18 +27,15 @@ class ShownTrackingObjectsViewHelper extends AbstractViewHelper
         );
     }
 
-    public static function renderStatic(
-        array $arguments,
-        \Closure $renderChildrenClosure,
-        RenderingContextInterface $renderingContext
-    ): array {
-        $group = $arguments['group'] ?? $renderChildrenClosure();
-        $settings = $renderingContext->getVariableProvider()->get('settings');
+    public function render()
+    {
+        $group = $this->arguments['group'] ?? $this->renderChildren();
+        $settings = $this->renderingContext->getVariableProvider()->get('settings');
 
-        return self::shownTrackingObjects($group, $settings);
+        return $this->shownTrackingObjects($group, $settings);
     }
 
-    public static function shownTrackingObjects(array $group, array $settings): array
+    private function shownTrackingObjects(array $group, array $settings): array
     {
         $rows = [];
         foreach ($group['trackingObjects'] ?? [] as $trackingObjectId) {

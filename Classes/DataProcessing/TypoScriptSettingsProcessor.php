@@ -30,7 +30,6 @@ class TypoScriptSettingsProcessor implements DataProcessorInterface
      * @param array $processorConfiguration The configuration of this processor
      * @param array $processedData Key/value store of processed data (e.g. to be passed to a Fluid View)
      * @return array the processed data as key/value store
-     * @throws \TYPO3\CMS\Extbase\Configuration\Exception\InvalidConfigurationTypeException
      */
     public function process(
         ContentObjectRenderer $cObj,
