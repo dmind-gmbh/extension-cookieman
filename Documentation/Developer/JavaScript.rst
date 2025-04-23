@@ -70,7 +70,7 @@ cookieman.consenteds()
    :sep:`|` :aspect:`Example:` ["mandatory", "ads"]
    :sep:`|`
 
-   Returns all groups keys the user has consented to.
+   Returns all group keys the user has consented to.
 
 cookieman.hasConsented(groupKey)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -90,8 +90,7 @@ cookieman.hasConsentedTrackingObject(trackingObjectKey)
    :sep:`|` :aspect:`Data type:` boolean
    :sep:`|`
 
-   Returns `true` if the user has consented to all groups (A group is any name of a checkbox in the popup, e.g.
-   'marketing') that contain the given trackingObject, else false.
+   Returns `true` if the user has consented to all groups that contain the given trackingObject, else false.
 
    `trackingObjectKey` is the trackingObjects.‹tracking object key› from TypoScript, e.g. 'Matomo'.
 
@@ -103,8 +102,8 @@ cookieman.onScriptLoaded(String trackingObjectKey, int scriptId, function callba
    :sep:`|` :aspect:`Data type:` void
    :sep:`|`
 
-   Do things after an external script has been loaded. This is useful if you are interacting with external scripts
-   that are loaded by Cookieman.
+   This is a hook to do things after an external script has been loaded.
+   This is useful if you are interacting with external scripts that are loaded by Cookieman.
 
    * `trackingObjectKey` is the trackingObjects.‹tracking object key› from TypoScript, e.g. 'Matomo'.
 
