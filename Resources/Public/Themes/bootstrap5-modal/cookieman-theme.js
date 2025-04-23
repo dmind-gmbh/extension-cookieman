@@ -1,4 +1,4 @@
-// requires: cookieman.js, Bootstrap-JS
+// requires: cookieman.js, Bootstrap-JS for modals as bootstrap.Modal()
 /** global: cookieman */
 (function () {
   "use strict";
