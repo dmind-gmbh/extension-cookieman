@@ -88,8 +88,10 @@ Create a new release
 Before creating a release you should merge the automatic Crowdin PRs until TYPO3v9 (in v10+ translations are 
 Crowdin-only, for earlier versions we distribute them because we were not on the older "poodle" server).
 
-:command:`composer release:create <version, e.g. 2.5.7>` will create a release commit and an annotated Git tag.
-Pushing it with :command:`git push --tags` makes the new release available for composer (packagist).
+The DDEV host command :command:`ddev release <version, e.g. 2.5.7>` will create a release commit and an annotated Git tag.
+It expects that you have set up Git for signing commits (:command:`git config --get user.signingKey`).
+
+Pushing the tag with :command:`git push --tags` makes the new release available for composer (packagist).
 It also triggers the Github Actions workflow "publish-ter" which uses the TER API via "tailor" to publish the new
 release to TER.
 

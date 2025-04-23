@@ -31,8 +31,6 @@ hooks:
               mysql <<< 'INSERT INTO pages SET uid=2, pid=1, title="Imprint", slug="/imprint"'
               mysql <<< 'INSERT INTO pages SET uid=3, pid=1, title="Privacy Policy", slug="/privacy"'
             fi
-    pre-start:
-        - exec-host: .ddev/commands/copy-git-config
 use_dns_when_possible: true
 composer_version: "2"
 web_environment: []

@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+## Description: Commit and tag a cookieman release
+## Usage: release <version, e.g. 3.0.0>
+
+# saner programming env: these switches turn some bugs into errors
+set -o errexit -o pipefail -o noclobber -o nounset
+
+version="${1:-}"
+if [ -z "$version" ]; then
+    echo "Usage: ddev release <version>"
+    exit 1
+fi
+
+ddev exec .build/bin/tailor set-version $1
+echo "[RELEASE]" $(grep release Documentation/Settings.cfg | grep -Eo '([0-9]+([.]|$)){3}') >| /tmp/COMMIT_MSG
+echo >> /tmp/COMMIT_MSG
+git log "$(git describe --tags --abbrev=0)"..HEAD --no-merges --oneline --pretty=format:'%cs %s [%aN] (%h)' >> /tmp/COMMIT_MSG
+git commit --gpg-sign -aF /tmp/COMMIT_MSG
+git tag --sign -F /tmp/COMMIT_MSG $1
+

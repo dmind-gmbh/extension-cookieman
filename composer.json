@@ -111,15 +111,6 @@
         "fix:cgl": [
             "php-cs-fixer --config=.php-cs-fixer.php fix --using-cache=no"
         ],
-        "release:create": [
-            "git config --get user.signingKey > /dev/null || ( echo 'Please set your GPG key for signing commits' && exit 1 )  || exit $?",
-            "tailor set-version",
-            "echo [RELEASE] $(grep release Documentation/Settings.cfg | grep -Eo '([0-9]+([.]|$)){3}') > /tmp/COMMIT_MSG || exit $?",
-            "echo >> /tmp/COMMIT_MSG || exit $?",
-            "git log $(git describe --tags --abbrev=0)..HEAD --no-merges --oneline --pretty=format:'%cs %s [%aN] (%h)' >> /tmp/COMMIT_MSG || exit $?",
-            "git commit --gpg-sign -aF /tmp/COMMIT_MSG || exit $?",
-            "git tag --sign -F /tmp/COMMIT_MSG"
-        ],
         "test": [
             "@test:cgl",
             "@test:unit",
