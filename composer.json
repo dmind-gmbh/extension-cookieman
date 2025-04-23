@@ -16,7 +16,7 @@
     },
     "require": {
         "php": "^8.2",
-        "typo3/cms-core": "^13.4.0 || 13.*.x-dev"
+        "typo3/cms-core": "^14.0 || 14.*.x-dev"
     },
     "require-dev": {
         "browserstack/browserstack-local": "dev-master",
@@ -28,8 +28,8 @@
         "friendsofphp/php-cs-fixer": "^3.75",
         "helhum/typo3-console": "^8.2",
         "phpunit/phpunit": "^11.5",
-        "typo3/cms-install": "^13.4 || 13.*.x-dev",
-        "typo3/cms-tstemplate": "^13.4 || 13.*.x-dev",
+        "typo3/cms-install": "^14.0 || 14.*.x-dev",
+        "typo3/cms-tstemplate": "^14.0 || 13.*.x-dev",
         "typo3/coding-standards": "^0.8.0",
         "typo3/tailor": "^1.7",
         "typo3/testing-framework": "^9.2"
