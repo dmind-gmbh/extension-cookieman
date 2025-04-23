@@ -12,7 +12,7 @@ on:
 
 jobs:
   acceptance-tests:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     env:
       BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
       BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
@@ -35,14 +35,14 @@ jobs:
       # Run tests
       - run: ddev composer test:acceptance:${{ matrix.browser }}
       # Save acceptance reports
-      - uses: actions/upload-artifact@master
+      - uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.browser }}-${{ matrix.theme }}-${{ matrix.php-version }}-ar
           path: Build/AcceptanceReports
         if: always()
 
   acceptance-tests-firefox:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     env:
       BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
       BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }}
@@ -65,7 +65,7 @@ jobs:
       # Run tests
       - run: ddev composer test:acceptance:${{ matrix.browser }}
       # Save acceptance reports
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.browser }}-${{ matrix.theme }}-${{ matrix.php-version }}-ar
           path: Build/AcceptanceReports
