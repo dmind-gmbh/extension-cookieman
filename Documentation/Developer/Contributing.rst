@@ -85,13 +85,19 @@ We usually release for all maintained TYPO3 APIs at the same time and use consec
 Create a new release
 ~~~~~~~~~~~~~~~~~~~~
 
-Before creating a release you should merge the automatic Crowdin PRs until TYPO3v9 (in v10+ translations are 
+Before creating a release you should merge the automatic Crowdin PRs until TYPO3v9 (in v10+ translations are
 Crowdin-only, for earlier versions we distribute them because we were not on the older "poodle" server).
 
 :command:`composer release:create <version, e.g. 2.5.7>` will create a release commit and an annotated Git tag.
 Pushing it with :command:`git push --tags` makes the new release available for composer (packagist).
 It also triggers the Github Actions workflow "publish-ter" which uses the TER API via "tailor" to publish the new
 release to TER.
+
+Commits
+-------
+
+We loosely follow the commit message style of
+`conventional commits <https://www.conventionalcommits.org/en/v1.0.0/>`__.
 
 
 Run locally
@@ -100,19 +106,19 @@ Run locally
 :command:`ddev start && ddev launch` will install a TYPO3 with example content and cookieman.
 This installs helper extensions that automatically enable a certain theme and some TypoScript setup to facilitate
 development.
-The admin user is "admin", password "adminadmin".
+The admin user is "admin", password "aaAA11!!".
 
 The ddev custom command :command:`ddev install-git-hooks` installs CGL checkers as pre-commit hooks (only tested on Linux
 so far - the script runs under the container environment so good chances that this would work for other OSs as
 well).
 
-To throw away the database and restart cleanly, run :command:`ddev rm -ORU && git clean -fdX -e '!.idea' && ddev start`
+To throw away the database and restart cleanly, run :command:`ddev delete -Oy && git clean -fdX -e '!.idea' && ddev start`
 
 
 Run in Gitpod
 -------------
 
-Thanks to https://drud.github.io/ddev-gitpod-launcher/, we are able to develop DDEV project in the cloud.
+Thanks to https://drud.github.io/ddev-gitpod-launcher/, we are able to develop on cookieman with DDEV in the cloud.
 
 `This link <https://gitpod.io/#DDEV_REPO=https%3A%2F%2Fgithub.com%2Fdmind-gmbh%2Fextension-cookieman,DDEV_ARTIFACTS=/https://github.com/drud/ddev-gitpod-launcher/>`__
 opens the cookieman development environment in Gitpod.
@@ -121,8 +127,8 @@ opens the cookieman development environment in Gitpod.
 Composer scripts
 ----------------
 
-Have a look at the `composer.json`'s `script` section. This is the main entry point for any commands needed
-during development. Use :command:`ddev composer` from outside the container or just :command:`composer` from inside.
+Have a look at the `composer.json`'s `script` section. This is the main entry point for commands needed
+during development.
 
 - :command:`ddev composer cookieman:...` enables an official cookieman theme. The "customtheme" shall resemble an integrator
   following our documentation.
