@@ -17,7 +17,7 @@
       </trans-unit>
       <trans-unit id="introText" resname="introText">
         <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
-        <target state="needs-translation">This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</target>
+        <target state="translated">Acest site folosește cookie-uri. Acestea au două funcții: pe de o parte, oferă funcționalități de bază pentru acest site. Pe de altă parte, ne permit să îmbunătăţim conţinutul nostru pentru tine prin salvarea şi analizarea datelor anonime ale utilizatorilor. Poți să îți redesenezi consimțământul pentru utilizarea acestor cookie-uri în orice moment. Găsește mai multe informații despre cookie-urile de pe %1$s și despre cele de pe %2$s.</target>
       </trans-unit>
       <trans-unit id="settings" resname="settings" approved="yes">
         <source>Settings</source>
@@ -73,7 +73,7 @@
       </trans-unit>
       <trans-unit id="trackingobject.cntcookie.desc" resname="trackingobject.cntcookie.desc">
         <source>Exclusion from counting (as a list of Account IDs)</source>
-        <target state="needs-translation">Exclusion from counting (as a list of Account IDs)</target>
+        <target state="translated">Excludere de la numărare (ca listă de ID-uri de cont)</target>
       </trans-unit>
       <trans-unit id="trackingobject.GS3_v.desc" resname="trackingobject.GS3_v.desc" approved="yes">
         <source>Set by Optimizer webservice. Contains the same Visitor ID as BT_pdc.</source>
@@ -85,7 +85,7 @@
       </trans-unit>
       <trans-unit id="trackingobject.et_oi_v2.desc" resname="trackingobject.et_oi_v2.desc">
         <source>Opt-in cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</source>
-        <target state="needs-translation">Opt-in cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</target>
+        <target state="translated">Opt-in cookie care stochează decizia vizitatorului atunci când opțiunea de urmărire este afișată în partea clientului. De asemenea, este folosit și pentru o posibilă excludere voluntară.</target>
       </trans-unit>
       <trans-unit id="trackingobject.et_oip.desc" resname="trackingobject.et_oip.desc">
         <source>Opt-in cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</source>
