@@ -1,7 +1,6 @@
 [![Crowdin](https://badges.crowdin.net/typo3-extension-cookieman/localized.svg)](https://crowdin.com/project/typo3-extension-cookieman)
-[![Coverage Status](https://coveralls.io/repos/github/dmind-gmbh/extension-cookieman/badge.svg?branch=master)](https://coveralls.io/github/dmind-gmbh/extension-cookieman?branch=master)
-[![Unit Tests](https://github.com/dmind-gmbh/extension-cookieman/workflows/CGL%20&%20unit%20tests/badge.svg?event=push&branch=master)](https://github.com/dmind-gmbh/extension-cookieman/actions)
-[![Acceptance Tests](https://github.com/dmind-gmbh/extension-cookieman/workflows/acceptance%20tests/badge.svg?event=push&branch=master)](https://github.com/dmind-gmbh/extension-cookieman/actions)
+[![CGL & unit tests](https://github.com/dmind-gmbh/extension-cookieman/actions/workflows/unit-tests.yml/badge.svg?branch=11lts)](https://github.com/dmind-gmbh/extension-cookieman/actions/workflows/unit-tests.yml)
+[![acceptance tests](https://github.com/dmind-gmbh/extension-cookieman/actions/workflows/acceptance-tests.yml/badge.svg?branch=11lts)](https://github.com/dmind-gmbh/extension-cookieman/actions/workflows/acceptance-tests.yml)
 [![Latest Stable Version](https://poser.pugx.org/dmind/cookieman/v/stable)](https://packagist.org/packages/dmind/cookieman)
 [![License](https://poser.pugx.org/dmind/cookieman/license)](https://packagist.org/packages/dmind/cookieman)
 
