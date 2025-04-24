@@ -10,7 +10,7 @@ suites:
                 -   Asserts:
             config:
                 WebDriver:
-                    url: https://extension-cookieman-master.ddev.site
+                    url: https://cookieman.ddev.site
                     host: selenium-hub
                     port: 4444
                     wait: 5

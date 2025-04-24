@@ -1,4 +1,4 @@
-name: extension-cookieman-12lts
+name: cookieman
 type: typo3
 docroot: .build/public
 php_version: "8.2"
