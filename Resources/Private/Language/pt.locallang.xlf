@@ -3,81 +3,81 @@
   <file source-language="en" datatype="plaintext" original="Frontend" date="2019-10-28T12:20:51Z" product-name="cookieman" target-language="pt-PT">
     <header/>
     <body>
-      <trans-unit id="heading" resname="heading">
+      <trans-unit id="heading" resname="heading" approved="yes">
         <source>About Cookies</source>
-        <target state="needs-translation">About Cookies</target>
+        <target state="final">Sobre Cookies</target>
       </trans-unit>
-      <trans-unit id="dataProtectionDeclaration" resname="dataProtectionDeclaration">
+      <trans-unit id="dataProtectionDeclaration" resname="dataProtectionDeclaration" approved="yes">
         <source>Data Protection Declaration</source>
-        <target state="needs-translation">Data Protection Declaration</target>
+        <target state="final">Declaração de Proteção de Dados</target>
       </trans-unit>
-      <trans-unit id="imprint" resname="imprint">
+      <trans-unit id="imprint" resname="imprint" approved="yes">
         <source>Imprint</source>
-        <target state="needs-translation">Imprint</target>
+        <target state="final">Aviso legal</target>
       </trans-unit>
-      <trans-unit id="introText" resname="introText">
+      <trans-unit id="introText" resname="introText" approved="yes">
         <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
-        <target state="needs-translation">This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</target>
+        <target state="final">Este site utiliza cookies. Esses têm duas funções: por um lado, eles fornecem funcionalidade básica para este site. Por outro lado, eles nos permitem melhorar nossos conteúdos para você, salvando e analisando dados anônimos de usuários. Você pode redesenhar seu consentimento para usar esses cookies a qualquer momento. Encontre mais informações sobre cookies na %1$s e em relação a nós no %2$s.</target>
       </trans-unit>
-      <trans-unit id="settings" resname="settings">
+      <trans-unit id="settings" resname="settings" approved="yes">
         <source>Settings</source>
-        <target state="needs-translation">Settings</target>
+        <target state="final">Confirgurações</target>
       </trans-unit>
-      <trans-unit id="settingsText" resname="settingsText">
+      <trans-unit id="settingsText" resname="settingsText" approved="yes">
         <source>Click here for Cookie %1$s.</source>
-        <target state="needs-translation">Click here for Cookie %1$s.</target>
+        <target state="final">Clique aqui para Cookie %1$s.</target>
       </trans-unit>
-      <trans-unit id="accept" resname="accept">
+      <trans-unit id="accept" resname="accept" approved="yes">
         <source>Accept all cookies</source>
-        <target state="needs-translation">Accept all cookies</target>
+        <target state="final">Aceitar todos os cookies</target>
       </trans-unit>
-      <trans-unit id="deny" resname="deny">
+      <trans-unit id="deny" resname="deny" approved="yes">
         <source>Deny all cookies</source>
-        <target state="needs-translation">Deny all cookies</target>
+        <target state="final">Negar todos os cookies</target>
       </trans-unit>
-      <trans-unit id="save" resname="save">
+      <trans-unit id="save" resname="save" approved="yes">
         <source>Save</source>
-        <target state="needs-translation">Save</target>
+        <target state="final">Gravar</target>
       </trans-unit>
-      <trans-unit id="group.mandatory" resname="group.mandatory">
+      <trans-unit id="group.mandatory" resname="group.mandatory" approved="yes">
         <source>Mandatory</source>
-        <target state="needs-translation">Mandatory</target>
+        <target state="final">Obrigatório</target>
       </trans-unit>
-      <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc">
+      <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc" approved="yes">
         <source>These cookies are needed for a smooth operation of our website.</source>
-        <target state="needs-translation">These cookies are needed for a smooth operation of our website.</target>
+        <target state="final">Esses cookies são necessários para o bom funcionamento do nosso site.</target>
       </trans-unit>
-      <trans-unit id="tableheader.name" resname="tableheader.name">
+      <trans-unit id="tableheader.name" resname="tableheader.name" approved="yes">
         <source>Name</source>
-        <target state="needs-translation">Name</target>
+        <target state="final">Nome</target>
       </trans-unit>
-      <trans-unit id="tableheader.purpose" resname="tableheader.purpose">
+      <trans-unit id="tableheader.purpose" resname="tableheader.purpose" approved="yes">
         <source>Purpose</source>
-        <target state="needs-translation">Purpose</target>
+        <target state="final">Objetivo</target>
       </trans-unit>
-      <trans-unit id="tableheader.duration" resname="tableheader.duration">
+      <trans-unit id="tableheader.duration" resname="tableheader.duration" approved="yes">
         <source>Lifetime</source>
-        <target state="needs-translation">Lifetime</target>
+        <target state="final">Vitalícia</target>
       </trans-unit>
-      <trans-unit id="tableheader.type" resname="tableheader.type">
+      <trans-unit id="tableheader.type" resname="tableheader.type" approved="yes">
         <source>Type</source>
-        <target state="needs-translation">Type</target>
+        <target state="final">Tipo</target>
       </trans-unit>
-      <trans-unit id="tableheader.provider" resname="tableheader.provider">
+      <trans-unit id="tableheader.provider" resname="tableheader.provider" approved="yes">
         <source>Provider</source>
-        <target state="needs-translation">Provider</target>
+        <target state="final">Fornecedor</target>
       </trans-unit>
-      <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc">
+      <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc" approved="yes">
         <source>Saves your consent to using cookies.</source>
-        <target state="needs-translation">Saves your consent to using cookies.</target>
+        <target state="final">Salva seu consentimento para a utilização de cookies.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.cntcookie.desc" resname="trackingobject.cntcookie.desc">
+      <trans-unit id="trackingobject.cntcookie.desc" resname="trackingobject.cntcookie.desc" approved="yes">
         <source>Exclusion from counting (as a list of Account IDs)</source>
-        <target state="needs-translation">Exclusion from counting (as a list of Account IDs)</target>
+        <target state="final">Exclusão da contagem (como uma lista de IDs de conta)</target>
       </trans-unit>
-      <trans-unit id="trackingobject.GS3_v.desc" resname="trackingobject.GS3_v.desc">
+      <trans-unit id="trackingobject.GS3_v.desc" resname="trackingobject.GS3_v.desc" approved="yes">
         <source>Set by Optimizer webservice. Contains the same Visitor ID as BT_pdc.</source>
-        <target state="needs-translation">Set by Optimizer webservice. Contains the same Visitor ID as BT_pdc.</target>
+        <target state="final">Configurado pelo Optimizer webservice. Contém o mesmo ID de visitante que BT_pdc.</target>
       </trans-unit>
       <trans-unit id="trackingobject._et_coid.desc" resname="trackingobject._et_coid.desc">
         <source>Cookie detection</source>
