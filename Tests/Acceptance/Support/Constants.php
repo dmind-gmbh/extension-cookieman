@@ -22,6 +22,7 @@ class Constants
     public const SELECTOR_btnSaveNone = '[data-cookieman-save][data-cookieman-accept-none]';
     public const SELECTOR_btnSaveAll = '[data-cookieman-save][data-cookieman-accept-all]';
     public const LOCATOR_settings = ['xpath' => '//*[self::button or self::a][contains(., "Settings")]'];
+    public const LOCATOR_2ndGroup = ['xpath' => '//*[self::button or self::a][contains(., "Settings")]'];
 
     public const COOKIENAME = 'CookieConsent';
     public const COOKIE_separator = '|';
@@ -40,7 +41,6 @@ class Constants
     public const GROUP_keyMandatory = 'mandatory';
 
     public const GROUP_key2nd = 'marketing';
-    public const GROUP_title2nd = 'Marketing';
     public const COOKIE_titleIn2ndGroup = '_gat';
 
     public const GROUP_keyTestgroup = 'testgroup';

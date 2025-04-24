@@ -86,9 +86,9 @@ class PopupInteractionsCest
         $I->waitForElementClickable(Constants::LOCATOR_settings);
         $I->clickWithLeftButton(Constants::LOCATOR_settings);
         $I->wait(3);
-        $I->waitForElementVisible(Locator::contains('button', Constants::GROUP_title2nd), Constants::WAITFOR_timeout);
-        $I->waitForElementClickable(Locator::contains('button', Constants::GROUP_title2nd));
-        $I->clickWithLeftButton(Locator::contains('button', Constants::GROUP_title2nd));
+        $I->waitForElementVisible(Constants::LOCATOR_2ndGroup, Constants::WAITFOR_timeout);
+        $I->waitForElementClickable(Constants::LOCATOR_2ndGroup);
+        $I->clickWithLeftButton(Constants::LOCATOR_2ndGroup);
         $I->wait(3);
         $I->waitForElementVisible(
             Locator::contains('*', Constants::COOKIE_titleIn2ndGroup),

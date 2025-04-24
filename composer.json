@@ -24,7 +24,7 @@
         "codeception/module-asserts": "^3.0",
         "codeception/module-webdriver": "^4.0",
         "dmind/cookieman-test": "@dev",
-        "dmind/cookieman-test-bootstrap3-banner": "@dev",
+        "dmind/cookieman-test-bootstrap5-modal": "@dev",
         "friendsofphp/php-cs-fixer": "^3.49",
         "helhum/typo3-console": "^8.1.1",
         "phpspec/prophecy-phpunit": "^2.1",
@@ -50,8 +50,7 @@
         },
         "typo3/cms": {
             "extension-key": "cookieman",
-            "web-dir": ".build/public",
-            "app-dir": ".build"
+            "web-dir": ".build/public"
         }
     },
     "autoload": {
@@ -149,10 +148,10 @@
             "@test:unit"
         ],
         "typo3": [
-            ".build/bin/typo3 --ansi"
+            "typo3 --ansi"
         ],
         "typo3:flush": [
-            "@typo3 cache:warmup"
+            "@typo3 cache:flush"
         ]
     },
     "support": {
