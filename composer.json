@@ -49,8 +49,7 @@
         },
         "typo3/cms": {
             "extension-key": "cookieman",
-            "web-dir": ".build/public",
-            "app-dir": ".build"
+            "web-dir": ".build/public"
         }
     },
     "autoload": {
