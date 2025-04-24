@@ -24,7 +24,7 @@
         "codeception/module-asserts": "^3.0",
         "codeception/module-webdriver": "^4.0",
         "dmind/cookieman-test": "@dev",
-        "dmind/cookieman-test-bootstrap5-modal": "@dev",
+        "dmind/cookieman-test-bootstrap3-banner": "@dev",
         "friendsofphp/php-cs-fixer": "^3.75",
         "helhum/typo3-console": "^8.2",
         "phpunit/phpunit": "^11.5",
@@ -147,10 +147,10 @@
             "@test:unit"
         ],
         "typo3": [
-            ".build/bin/typo3 --ansi"
+            "typo3 --ansi"
         ],
         "typo3:flush": [
-            "@typo3 cache:warmup"
+            "@typo3 cache:flush"
         ]
     },
     "support": {
