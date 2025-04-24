@@ -15,9 +15,9 @@
         <source>Imprint</source>
         <target state="final">Imprimă</target>
       </trans-unit>
-      <trans-unit id="introText" resname="introText">
+      <trans-unit id="introText" resname="introText" approved="yes">
         <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
-        <target state="translated">Acest site folosește cookie-uri. Acestea au două funcții: pe de o parte, oferă funcționalități de bază pentru acest site. Pe de altă parte, ne permit să îmbunătăţim conţinutul nostru pentru tine prin salvarea şi analizarea datelor anonime ale utilizatorilor. Poți să îți redesenezi consimțământul pentru utilizarea acestor cookie-uri în orice moment. Găsește mai multe informații despre cookie-urile de pe %1$s și despre cele de pe %2$s.</target>
+        <target state="final">Acest site folosește cookie-uri. Acestea au două funcții: pe de o parte, oferă funcționalități de bază pentru acest site. Pe de altă parte, ne permit să îmbunătăţim conţinutul nostru pentru tine prin salvarea şi analizarea datelor anonime ale utilizatorilor. Poți să îți redesenezi consimțământul pentru utilizarea acestor cookie-uri în orice moment. Găsește mai multe informații despre cookie-urile de pe %1$s și despre cele de pe %2$s.</target>
       </trans-unit>
       <trans-unit id="settings" resname="settings" approved="yes">
         <source>Settings</source>
@@ -71,9 +71,9 @@
         <source>Saves your consent to using cookies.</source>
         <target state="final">Îți salvează consimțământul de a utiliza cookie-uri.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.cntcookie.desc" resname="trackingobject.cntcookie.desc">
+      <trans-unit id="trackingobject.cntcookie.desc" resname="trackingobject.cntcookie.desc" approved="yes">
         <source>Exclusion from counting (as a list of Account IDs)</source>
-        <target state="translated">Excludere de la numărare (ca listă de ID-uri de cont)</target>
+        <target state="final">Excludere de la numărare (ca listă de ID-uri de cont)</target>
       </trans-unit>
       <trans-unit id="trackingobject.GS3_v.desc" resname="trackingobject.GS3_v.desc" approved="yes">
         <source>Set by Optimizer webservice. Contains the same Visitor ID as BT_pdc.</source>
@@ -83,93 +83,93 @@
         <source>Cookie detection</source>
         <target state="final">Detectare cookie</target>
       </trans-unit>
-      <trans-unit id="trackingobject.et_oi_v2.desc" resname="trackingobject.et_oi_v2.desc">
+      <trans-unit id="trackingobject.et_oi_v2.desc" resname="trackingobject.et_oi_v2.desc" approved="yes">
         <source>Opt-in cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</source>
-        <target state="translated">Opt-in cookie care stochează decizia vizitatorului atunci când opțiunea de urmărire este afișată în partea clientului. De asemenea, este folosit și pentru o posibilă excludere voluntară.</target>
+        <target state="final">Opt-in cookie care stochează decizia vizitatorului atunci când opțiunea de urmărire este afișată în partea clientului. De asemenea, este folosit și pentru o posibilă excludere voluntară.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.et_oip.desc" resname="trackingobject.et_oip.desc">
+      <trans-unit id="trackingobject.et_oip.desc" resname="trackingobject.et_oip.desc" approved="yes">
         <source>Opt-in cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</source>
-        <target state="needs-translation">Opt-in cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</target>
+        <target state="final">Opt-in cookie folosit de "signalize". Dacă clientul alege "nu", cookie-ul este setat cu valoarea "nu" şi o durată de 50 x 365 zile. În cazul în care clientul alege „x” sau apasă cheia CES (nicio decizie), cookie-ul este setat cu valoarea "nu" pentru validitatea unei zile. O valoare de "da" nu este obligatorie, deoarece acest lucru este dat implicit de consimţământul pentru împingerea reală a browserului.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.et_allow_cookies.desc" resname="trackingobject.et_allow_cookies.desc">
+      <trans-unit id="trackingobject.et_allow_cookies.desc" resname="trackingobject.et_allow_cookies.desc" approved="yes">
         <source>If the parameter "data-block-cookies" is used, this cookie is called by the API Call _etracker.enableCookies() to indicate that etracker is allowed to set cookies.</source>
-        <target state="needs-translation">If the parameter "data-block-cookies" is used, this cookie is called by the API Call _etracker.enableCookies() to indicate that etracker is allowed to set cookies.</target>
+        <target state="final">Dacă parametrul "data-block-cookies" este utilizat, acest cookie este apelat de API Call _etracker.enableCookies() pentru a indica faptul că este permis să seteze cookie-uri.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.isSdEnabled.desc" resname="trackingobject.isSdEnabled.desc">
+      <trans-unit id="trackingobject.isSdEnabled.desc" resname="trackingobject.isSdEnabled.desc" approved="yes">
         <source>Detection whether the scrolling depth is measured for the visitor.</source>
-        <target state="needs-translation">Detection whether the scrolling depth is measured for the visitor.</target>
+        <target state="final">Detectaţi dacă adâncimea de derulare este măsurată pentru vizitator.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.BT_ctst.desc" resname="trackingobject.BT_ctst.desc">
+      <trans-unit id="trackingobject.BT_ctst.desc" resname="trackingobject.BT_ctst.desc" approved="yes">
         <source>Is only used to detect whether cookies are activated in the visitor's browser or not.</source>
-        <target state="needs-translation">Is only used to detect whether cookies are activated in the visitor's browser or not.</target>
+        <target state="final">Este folosit doar pentru a detecta dacă cookie-urile sunt activate sau nu în browser-ul vizitatorului.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.BT_sdc.desc" resname="trackingobject.BT_sdc.desc">
+      <trans-unit id="trackingobject.BT_sdc.desc" resname="trackingobject.BT_sdc.desc" approved="yes">
         <source>Contains base64 encoded data of the current visitor session (referrer, number of pages, number of seconds since session started) used for personalization purposes.</source>
-        <target state="needs-translation">Contains base64 encoded data of the current visitor session (referrer, number of pages, number of seconds since session started) used for personalization purposes.</target>
+        <target state="final">Conține date codificate base64 ale actualei sesiuni de vizitatori (referință, număr de pagini, număr de secunde de la începerea sesiunii) utilizate în scopuri personalizate.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.BT_pdc.desc" resname="trackingobject.BT_pdc.desc">
+      <trans-unit id="trackingobject.BT_pdc.desc" resname="trackingobject.BT_pdc.desc" approved="yes">
         <source>Contains base64-coded visitor history data (is customer, newsletter recipient etc.) for personalization.</source>
-        <target state="needs-translation">Contains base64-coded visitor history data (is customer, newsletter recipient etc.) for personalization.</target>
+        <target state="final">Conține date din istoricul vizitatorilor codate base64 (client, destinatar newsletter etc.) pentru personalizare.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_pdc.desc">
+      <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_pdc.desc" approved="yes">
         <source>Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</source>
-        <target state="needs-translation">Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</target>
+        <target state="final">Conţine o listă de ID-uri de proiect pentru care vizitatorul este exclus. Acest cookie este setat de către serviciul web dacă clientul a configurat că nu toți vizitatorii sunt asociați la un test, dar numai pentru o anumită fracțiune.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_ecl.desc">
+      <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_ecl.desc" approved="yes">
         <source>Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</source>
-        <target state="needs-translation">Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</target>
+        <target state="final">Conţine o listă de ID-uri de proiect pentru care vizitatorul este exclus. Acest cookie este setat de către serviciul web dacă clientul a configurat că nu toți vizitatorii sunt asociați la un test, dar numai pentru o anumită fracțiune.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.et_scroll_depth.desc" resname="trackingobject.et_scroll_depth.desc">
+      <trans-unit id="trackingobject.et_scroll_depth.desc" resname="trackingobject.et_scroll_depth.desc" approved="yes">
         <source>Data for scrolling depth measurement</source>
-        <target state="needs-translation">Data for scrolling depth measurement</target>
+        <target state="final">Date pentru măsurarea adâncimii de derulare</target>
       </trans-unit>
-      <trans-unit id="trackingobject.targetingAPISession.desc" resname="trackingobject.targetingAPISession.desc">
+      <trans-unit id="trackingobject.targetingAPISession.desc" resname="trackingobject.targetingAPISession.desc" approved="yes">
         <source>Data collected in the current session for the optimiser</source>
-        <target state="needs-translation">Data collected in the current session for the optimiser</target>
+        <target state="final">Date colectate în sesiunea curentă pentru optimizator</target>
       </trans-unit>
-      <trans-unit id="trackingobject._et_coid--localstorage" resname="trackingobject._et_coid--localstorage">
+      <trans-unit id="trackingobject._et_coid--localstorage" resname="trackingobject._et_coid--localstorage" approved="yes">
         <source>_et_coid</source>
-        <target state="needs-translation">_et_coid</target>
+        <target state="final">_et_coid</target>
       </trans-unit>
-      <trans-unit id="trackingobject._et_coid--localstorage.desc" resname="trackingobject._et_coid--localstorage.desc">
+      <trans-unit id="trackingobject._et_coid--localstorage.desc" resname="trackingobject._et_coid--localstorage.desc" approved="yes">
         <source>Cookie detection, see corresponding cookie.</source>
-        <target state="needs-translation">Cookie detection, see corresponding cookie.</target>
+        <target state="final">Detectarea de cookie-uri, vezi cookie-urile corespunzătoare.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.et_oi_v2--localstorage" resname="trackingobject.et_oi_v2--localstorage">
+      <trans-unit id="trackingobject.et_oi_v2--localstorage" resname="trackingobject.et_oi_v2--localstorage" approved="yes">
         <source>et_oi_v2</source>
-        <target state="needs-translation">et_oi_v2</target>
+        <target state="final">et_oi_v2</target>
       </trans-unit>
-      <trans-unit id="trackingobject.et_oi_v2--localstorage.desc" resname="trackingobject.et_oi_v2--localstorage.desc">
+      <trans-unit id="trackingobject.et_oi_v2--localstorage.desc" resname="trackingobject.et_oi_v2--localstorage.desc" approved="yes">
         <source>Opt-in cookie, see corresponding cookie.</source>
-        <target state="needs-translation">Opt-in cookie, see corresponding cookie.</target>
+        <target state="final">Opt-in cookie, vezi cookie corespunzătoare.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.et_oip--localstorage" resname="trackingobject.et_oip--localstorage">
+      <trans-unit id="trackingobject.et_oip--localstorage" resname="trackingobject.et_oip--localstorage" approved="yes">
         <source>et_oip</source>
-        <target state="needs-translation">et_oip</target>
+        <target state="final">et_oip</target>
       </trans-unit>
-      <trans-unit id="trackingobject.et_oip--localstorage.desc" resname="trackingobject.et_oip--localstorage.desc">
+      <trans-unit id="trackingobject.et_oip--localstorage.desc" resname="trackingobject.et_oip--localstorage.desc" approved="yes">
         <source>Opt-in cookie for Signalize, see corresponding cookie.</source>
-        <target state="needs-translation">Opt-in cookie for Signalize, see corresponding cookie.</target>
+        <target state="final">Opt-in cookie, vezi cookie corespunzătoare.</target>
       </trans-unit>
-      <trans-unit id="type.pixel" resname="type.pixel">
+      <trans-unit id="type.pixel" resname="type.pixel" approved="yes">
         <source>Pixel</source>
-        <target state="needs-translation">Pixel</target>
+        <target state="final">Pixel</target>
       </trans-unit>
       <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html" approved="yes">
         <source>HTML</source>
         <target state="final">HTML</target>
       </trans-unit>
-      <trans-unit id="trackingobject._fbp.desc" resname="trackingobject._fbp.desc">
+      <trans-unit id="trackingobject._fbp.desc" resname="trackingobject._fbp.desc" approved="yes">
         <source>Stores the unique visitor ID.</source>
-        <target state="needs-translation">Stores the unique visitor ID.</target>
+        <target state="final">Stochează ID-ul unic al vizitatorului.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.facebookPixel.desc" resname="trackingobject.FacebookPixel.desc">
+      <trans-unit id="trackingobject.facebookPixel.desc" resname="trackingobject.FacebookPixel.desc" approved="yes">
         <source>If JavaScript is not enabled, this pixel initiates a connection to facebook.</source>
-        <target state="needs-translation">If JavaScript is not enabled, this pixel initiates a connection to facebook.</target>
+        <target state="final">Dacă JavaScript nu este activat, acest pixel inițiază o conexiune la facebook.</target>
       </trans-unit>
-      <trans-unit id="trackingobject.fe_typo_user.desc" resname="trackingobject.fe_typo_user.desc">
+      <trans-unit id="trackingobject.fe_typo_user.desc" resname="trackingobject.fe_typo_user.desc" approved="yes">
         <source>Assigns your browser to a session on the server.</source>
-        <target state="needs-translation">Assigns your browser to a session on the server.</target>
+        <target state="final">Atribuie browserul tău unei sesiuni de pe server.</target>
       </trans-unit>
       <trans-unit id="duration.session" resname="duration.session" approved="yes">
         <source>session</source>
@@ -179,25 +179,25 @@
         <source>HTTP</source>
         <target state="final">HTTP</target>
       </trans-unit>
-      <trans-unit id="type.localstorage" resname="type.localstorage">
+      <trans-unit id="type.localstorage" resname="type.localstorage" approved="yes">
         <source>Local Storage</source>
-        <target state="needs-translation">Local Storage</target>
+        <target state="final">Local Storage</target>
       </trans-unit>
-      <trans-unit id="type.connection" resname="type.connection">
+      <trans-unit id="type.connection" resname="type.connection" approved="yes">
         <source>Connection</source>
-        <target state="needs-translation">Connection</target>
+        <target state="final">Conexiune</target>
       </trans-unit>
       <trans-unit id="group.marketing" resname="group.marketing" approved="yes">
         <source>Marketing</source>
         <target state="final">Publicitate</target>
       </trans-unit>
-      <trans-unit id="group.marketing.desc" resname="group.marketing.desc">
+      <trans-unit id="group.marketing.desc" resname="group.marketing.desc" approved="yes">
         <source>With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</source>
-        <target state="needs-translation">With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</target>
+        <target state="final">Cu ajutorul acestor cookie-uri, ne străduim să ne îmbunătățim oferta pentru utilizatorii noștri. Prin intermediul datelor anonimizate ale utilizatorilor website-ului, putem optimiza fluxul de utilizatori. Acest lucru ne permite să îmbunătățim anunțurile și conținutul site-ului.</target>
       </trans-unit>
-      <trans-unit id="trackingobject._pk_id.desc" resname="trackingobject._pk_id.desc">
+      <trans-unit id="trackingobject._pk_id.desc" resname="trackingobject._pk_id.desc" approved="yes">
         <source>Used to store a few details about the user such as the unique visitor ID.</source>
-        <target state="needs-translation">Used to store a few details about the user such as the unique visitor ID.</target>
+        <target state="final">Folosit pentru a stoca câteva detalii despre utilizator, cum ar fi ID-ul unic pentru vizitatori.</target>
       </trans-unit>
       <trans-unit id="trackingobject._pk_ref.desc" resname="trackingobject._pk_ref.desc">
         <source>Used to store the attribution information, the referrer initially used to visit the website.</source>
