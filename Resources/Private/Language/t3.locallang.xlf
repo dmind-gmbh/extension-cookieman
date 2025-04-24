@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="Frontend" date="2019-10-28T12:20:51Z" product-name="cookieman" target-language="t3">
+    <header/>
+    <body>
+      <trans-unit id="heading" resname="heading">
+        <source>About Cookies</source>
+        <target>crwdns80742:0crwdne80742:0</target>
+      </trans-unit>
+      <trans-unit id="dataProtectionDeclaration" resname="dataProtectionDeclaration">
+        <source>Data Protection Declaration</source>
+        <target>crwdns80744:0crwdne80744:0</target>
+      </trans-unit>
+      <trans-unit id="imprint" resname="imprint">
+        <source>Imprint</source>
+        <target>crwdns80746:0crwdne80746:0</target>
+      </trans-unit>
+      <trans-unit id="introText" resname="introText">
+        <source>This website uses cookies. Those have two functions: On the one hand they are providing basic functionality for this website. On the other hand they allow us to improve our content for you by saving and analyzing anonymized user data. You can redraw your consent to using these cookies at any time. Find more information regarding cookies on our %1$s and regarding us on the %2$s.</source>
+        <target>crwdns85840:0%1$scrwdnd85840:0%2$scrwdne85840:0</target>
+      </trans-unit>
+      <trans-unit id="settings" resname="settings">
+        <source>Settings</source>
+        <target>crwdns80750:0crwdne80750:0</target>
+      </trans-unit>
+      <trans-unit id="settingsText" resname="settingsText">
+        <source>Click here for Cookie %1$s.</source>
+        <target>crwdns80752:0%1$scrwdne80752:0</target>
+      </trans-unit>
+      <trans-unit id="accept" resname="accept">
+        <source>Accept all cookies</source>
+        <target>crwdns80754:0crwdne80754:0</target>
+      </trans-unit>
+      <trans-unit id="deny" resname="deny">
+        <source>Deny all cookies</source>
+        <target>crwdns109372:0crwdne109372:0</target>
+      </trans-unit>
+      <trans-unit id="save" resname="save">
+        <source>Save</source>
+        <target>crwdns80756:0crwdne80756:0</target>
+      </trans-unit>
+      <trans-unit id="group.mandatory" resname="group.mandatory">
+        <source>Mandatory</source>
+        <target>crwdns80758:0crwdne80758:0</target>
+      </trans-unit>
+      <trans-unit id="group.mandatory.desc" resname="group.mandatory.desc">
+        <source>These cookies are needed for a smooth operation of our website.</source>
+        <target>crwdns80824:0crwdne80824:0</target>
+      </trans-unit>
+      <trans-unit id="tableheader.name" resname="tableheader.name">
+        <source>Name</source>
+        <target>crwdns80760:0crwdne80760:0</target>
+      </trans-unit>
+      <trans-unit id="tableheader.purpose" resname="tableheader.purpose">
+        <source>Purpose</source>
+        <target>crwdns80762:0crwdne80762:0</target>
+      </trans-unit>
+      <trans-unit id="tableheader.duration" resname="tableheader.duration">
+        <source>Lifetime</source>
+        <target>crwdns80764:0crwdne80764:0</target>
+      </trans-unit>
+      <trans-unit id="tableheader.type" resname="tableheader.type">
+        <source>Type</source>
+        <target>crwdns80766:0crwdne80766:0</target>
+      </trans-unit>
+      <trans-unit id="tableheader.provider" resname="tableheader.provider">
+        <source>Provider</source>
+        <target>crwdns80768:0crwdne80768:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.CookieConsent.desc" resname="trackingobject.CookieConsent.desc">
+        <source>Saves your consent to using cookies.</source>
+        <target>crwdns80770:0crwdne80770:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.cntcookie.desc" resname="trackingobject.cntcookie.desc">
+        <source>Exclusion from counting (as a list of Account IDs)</source>
+        <target>crwdns85213:0crwdne85213:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.GS3_v.desc" resname="trackingobject.GS3_v.desc">
+        <source>Set by Optimizer webservice. Contains the same Visitor ID as BT_pdc.</source>
+        <target>crwdns85215:0crwdne85215:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._et_coid.desc" resname="trackingobject._et_coid.desc">
+        <source>Cookie detection</source>
+        <target>crwdns85217:0crwdne85217:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oi_v2.desc" resname="trackingobject.et_oi_v2.desc">
+        <source>Opt-in cookie that stores the visitor's decision when the tracking opt-in is displayed on the customer's side. Is also used for a possible opt-out.</source>
+        <target>crwdns138421:0crwdne138421:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oip.desc" resname="trackingobject.et_oip.desc">
+        <source>Opt-in cookie used by "signalize". If the customer chooses "no", the cookie is set with the value "no" and a duration of 50 x 365 days. If the customer chooses "x" or presses the ESC key (no decision), the cookie is set with the value "no" for the validity of 1 day. A value of "yes" is not required, since this is implicitly given by the consent to the actual browser push.</source>
+        <target>crwdns138423:0crwdne138423:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_allow_cookies.desc" resname="trackingobject.et_allow_cookies.desc">
+        <source>If the parameter "data-block-cookies" is used, this cookie is called by the API Call _etracker.enableCookies() to indicate that etracker is allowed to set cookies.</source>
+        <target>crwdns85223:0crwdne85223:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.isSdEnabled.desc" resname="trackingobject.isSdEnabled.desc">
+        <source>Detection whether the scrolling depth is measured for the visitor.</source>
+        <target>crwdns85225:0crwdne85225:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.BT_ctst.desc" resname="trackingobject.BT_ctst.desc">
+        <source>Is only used to detect whether cookies are activated in the visitor's browser or not.</source>
+        <target>crwdns85227:0crwdne85227:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.BT_sdc.desc" resname="trackingobject.BT_sdc.desc">
+        <source>Contains base64 encoded data of the current visitor session (referrer, number of pages, number of seconds since session started) used for personalization purposes.</source>
+        <target>crwdns85229:0crwdne85229:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.BT_pdc.desc" resname="trackingobject.BT_pdc.desc">
+        <source>Contains base64-coded visitor history data (is customer, newsletter recipient etc.) for personalization.</source>
+        <target>crwdns85231:0crwdne85231:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_pdc.desc">
+        <source>Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</source>
+        <target>crwdns85233:0crwdne85233:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.BT_ecl.desc" resname="trackingobject.BT_ecl.desc">
+        <source>Contains a list of project IDs for which the visitor is excluded. This cookie is set by the web service if the client has configured that not all visitors are assigned to a test, but only to a certain fraction.</source>
+        <target>crwdns85233:0crwdne85233:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_scroll_depth.desc" resname="trackingobject.et_scroll_depth.desc">
+        <source>Data for scrolling depth measurement</source>
+        <target>crwdns85237:0crwdne85237:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.targetingAPISession.desc" resname="trackingobject.targetingAPISession.desc">
+        <source>Data collected in the current session for the optimiser</source>
+        <target>crwdns85239:0crwdne85239:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._et_coid--localstorage" resname="trackingobject._et_coid--localstorage">
+        <source>_et_coid</source>
+        <target>crwdns85241:0crwdne85241:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._et_coid--localstorage.desc" resname="trackingobject._et_coid--localstorage.desc">
+        <source>Cookie detection, see corresponding cookie.</source>
+        <target>crwdns85243:0crwdne85243:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oi_v2--localstorage" resname="trackingobject.et_oi_v2--localstorage">
+        <source>et_oi_v2</source>
+        <target>crwdns85245:0crwdne85245:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oi_v2--localstorage.desc" resname="trackingobject.et_oi_v2--localstorage.desc">
+        <source>Opt-in cookie, see corresponding cookie.</source>
+        <target>crwdns138425:0crwdne138425:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oip--localstorage" resname="trackingobject.et_oip--localstorage">
+        <source>et_oip</source>
+        <target>crwdns85249:0crwdne85249:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.et_oip--localstorage.desc" resname="trackingobject.et_oip--localstorage.desc">
+        <source>Opt-in cookie for Signalize, see corresponding cookie.</source>
+        <target>crwdns138427:0crwdne138427:0</target>
+      </trans-unit>
+      <trans-unit id="type.pixel" resname="type.pixel">
+        <source>Pixel</source>
+        <target>crwdns85938:0crwdne85938:0</target>
+      </trans-unit>
+      <trans-unit id="type.cookie_http+html" resname="type.cookie_http+html">
+        <source>HTML</source>
+        <target>crwdns80772:0crwdne80772:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._fbp.desc" resname="trackingobject._fbp.desc">
+        <source>Stores the unique visitor ID.</source>
+        <target>crwdns85940:0crwdne85940:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.facebookPixel.desc" resname="trackingobject.FacebookPixel.desc">
+        <source>If JavaScript is not enabled, this pixel initiates a connection to facebook.</source>
+        <target>crwdns85942:0crwdne85942:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.fe_typo_user.desc" resname="trackingobject.fe_typo_user.desc">
+        <source>Assigns your browser to a session on the server.</source>
+        <target>crwdns80774:0crwdne80774:0</target>
+      </trans-unit>
+      <trans-unit id="duration.session" resname="duration.session">
+        <source>session</source>
+        <target>crwdns80776:0crwdne80776:0</target>
+      </trans-unit>
+      <trans-unit id="type.cookie_http" resname="type.cookie_http">
+        <source>HTTP</source>
+        <target>crwdns80778:0crwdne80778:0</target>
+      </trans-unit>
+      <trans-unit id="type.localstorage" resname="type.localstorage">
+        <source>Local Storage</source>
+        <target>crwdns85253:0crwdne85253:0</target>
+      </trans-unit>
+      <trans-unit id="type.connection" resname="type.connection">
+        <source>Connection</source>
+        <target>crwdns123434:0crwdne123434:0</target>
+      </trans-unit>
+      <trans-unit id="group.marketing" resname="group.marketing">
+        <source>Marketing</source>
+        <target>crwdns80780:0crwdne80780:0</target>
+      </trans-unit>
+      <trans-unit id="group.marketing.desc" resname="group.marketing.desc">
+        <source>With the help of these cookies we strive to improve our offer for our users. By means of anonymized data of website users we can optimize the user flow. This enables us to improve ads and website content.</source>
+        <target>crwdns80826:0crwdne80826:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._pk_id.desc" resname="trackingobject._pk_id.desc">
+        <source>Used to store a few details about the user such as the unique visitor ID.</source>
+        <target>crwdns80836:0crwdne80836:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._pk_ref.desc" resname="trackingobject._pk_ref.desc">
+        <source>Used to store the attribution information, the referrer initially used to visit the website.</source>
+        <target>crwdns80838:0crwdne80838:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._pk_ses.desc" resname="trackingobject._pk_ses.desc">
+        <source>Short lived cookie used to temporarily store data for the visit.</source>
+        <target>crwdns80840:0crwdne80840:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._pk_cvar.desc" resname="trackingobject._pk_cvar.desc">
+        <source>Short lived cookie used to temporarily store data for the visit.</source>
+        <target>crwdns80842:0crwdne80842:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._pk_hsr.desc" resname="trackingobject._pk_hsr.desc">
+        <source>Short lived cookie used to temporarily store data for the visit.</source>
+        <target>crwdns80844:0crwdne80844:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__eoi.desc" resname="trackingobject.__eoi.desc">
+        <source>Google: Security for AdSense, AdSense for Search, Display + Video 360, Google Ad Manager, Google Ads</source>
+        <target>crwdns305018:0crwdne305018:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.NID.desc" resname="trackingobject.NID.desc">
+        <source>Google: Security, Analytics, Functionality, Advertising for AdSense for Search, Google Ads</source>
+        <target>crwdns305020:0crwdne305020:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__gads.desc" resname="trackingobject.__gads.desc">
+        <source>Google: Advertising for AdSense, Display + Video 360, Google Ad Manager, Google Ads</source>
+        <target>crwdns305022:0crwdne305022:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.pm_sess.desc" resname="trackingobject.pm_sess.desc">
+        <source>Google: Security, Functionality for  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</source>
+        <target>crwdns305024:0crwdne305024:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.pm_sess_NNN.desc" resname="trackingobject.pm_sess_NNN.desc">
+        <source>Google: Security, Functionality for  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</source>
+        <target>crwdns305026:0crwdne305026:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.aboutads_sessNNN.desc" resname="trackingobject.aboutads_sessNNN.desc">
+        <source>Google: Security, Functionality for  Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</source>
+        <target>crwdns305028:0crwdne305028:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.FPAU.desc" resname="trackingobject.FPAU.desc">
+        <source>Google: Analytics, Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360</source>
+        <target>crwdns305030:0crwdne305030:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.ANID.desc" resname="trackingobject.ANID.desc">
+        <source>Google: Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </source>
+        <target>crwdns305032:0crwdne305032:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.AID.desc" resname="trackingobject.AID.desc">
+        <source>Google: Analytics, Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </source>
+        <target>crwdns305034:0crwdne305034:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.TAID.desc" resname="trackingobject.TAID.desc">
+        <source>Google: Analytics, Advertising for Campaign Manager, Display + Video 360, Google Ads, Search Ads 360 </source>
+        <target>crwdns305036:0crwdne305036:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.RUL.desc" resname="trackingobject.RUL.desc">
+        <source>Google: Advertising for Display + Video 360, Google Ads </source>
+        <target>crwdns305038:0crwdne305038:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.FPGCLAW.desc" resname="trackingobject.FPGCLAW.desc">
+        <source>Google: Analytics, Advertising for Google Ads</source>
+        <target>crwdns305040:0crwdne305040:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.FPGCLGB.desc" resname="trackingobject.FPGCLGB.desc">
+        <source>Google: Analytics, Advertising for Google Ads</source>
+        <target>crwdns305042:0crwdne305042:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gcl_gb.desc" resname="trackingobject._gcl_gb.desc">
+        <source>Google: Analytics, Advertising for Google Ads</source>
+        <target>crwdns305044:0crwdne305044:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gac_gb_--wpid--.desc" resname="trackingobject._gac_gb_--wpid--.desc">
+        <source>Google: Analytics, Advertising for Google Ads</source>
+        <target>crwdns305046:0crwdne305046:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gcl_aw.desc" resname="trackingobject._gcl_aw.desc">
+        <source>Google: Analytics, Advertising for Google Ads</source>
+        <target>crwdns305048:0crwdne305048:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.1P_JAR.desc" resname="trackingobject.1P_JAR.desc">
+        <source>Google: Advertising for Google Ads</source>
+        <target>crwdns305050:0crwdne305050:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.Conversion.desc" resname="trackingobject.Conversion.desc">
+        <source>Google: Advertising for Google Ads</source>
+        <target>crwdns305052:0crwdne305052:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.YSC.desc" resname="trackingobject.YSC.desc">
+        <source>Google: Security for Google Ads, YouTube </source>
+        <target>crwdns305054:0crwdne305054:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.VISITOR_INFO1_LIVE.desc" resname="trackingobject.VISITOR_INFO1_LIVE.desc">
+        <source>Google: Security, Advertising for Google Ads, YouTube </source>
+        <target>crwdns305056:0crwdne305056:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.VISITOR_INFO1_LIVE__k.desc" resname="trackingobject.VISITOR_INFO1_LIVE__k.desc">
+        <source>Google: Security, Advertising for Google Ads, YouTube </source>
+        <target>crwdns305058:0crwdne305058:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.VISITOR_INFO1_LIVE__default.desc" resname="trackingobject.VISITOR_INFO1_LIVE__default.desc">
+        <source>Google: Security, Advertising for Google Ads, YouTube </source>
+        <target>crwdns305060:0crwdne305060:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.DSID.desc" resname="trackingobject.DSID.desc">
+        <source>Google: Security, Functionality, Advertising for AdSense, Campaign Manager, Google Ad Manager, Google Analytics, Display + Video 360, Search Ads 360 </source>
+        <target>crwdns305062:0crwdne305062:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.test_cookie.desc" resname="trackingobject.test_cookie.desc">
+        <source>Google: Functionality for AdSense, Campaign Manager, Google Ad Manager, Google Analytics, Display + Video 360, Search Ads 360 </source>
+        <target>crwdns305064:0crwdne305064:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.IDE.desc" resname="trackingobject.IDE.desc">
+        <source>Google: Advertising for Campaign Manager, Display + Video 360, Google Ad Manager, Google Analytics, Search Ads 360 </source>
+        <target>crwdns305066:0crwdne305066:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.FPLC.desc" resname="trackingobject.FPLC.desc">
+        <source>Google: Analytics for Google Analytics </source>
+        <target>crwdns305068:0crwdne305068:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.FPID.desc" resname="trackingobject.FPID.desc">
+        <source>Google: Analytics for Google Analytics</source>
+        <target>crwdns305070:0crwdne305070:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.GA_OPT_OUT.desc" resname="trackingobject.GA_OPT_OUT.desc">
+        <source>Google: Functionality for Google Analytics</source>
+        <target>crwdns305072:0crwdne305072:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__utma.desc" resname="trackingobject.__utma.desc">
+        <source>Google: Analytics for Google Analytics</source>
+        <target>crwdns305074:0crwdne305074:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__utmb.desc" resname="trackingobject.__utmb.desc">
+        <source>Google: Analytics for Google Analytics</source>
+        <target>crwdns305076:0crwdne305076:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__utmc.desc" resname="trackingobject.__utmc.desc">
+        <source>Google: Analytics for Google Analytics</source>
+        <target>crwdns305078:0crwdne305078:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__utmt.desc" resname="trackingobject.__utmt.desc">
+        <source>Google: Analytics for Google Analytics</source>
+        <target>crwdns305080:0crwdne305080:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__utmz.desc" resname="trackingobject.__utmz.desc">
+        <source>Google: Analytics for Google Analytics</source>
+        <target>crwdns305082:0crwdne305082:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__utmv.desc" resname="trackingobject.__utmv.desc">
+        <source>Google: Analytics for Google Analytics</source>
+        <target>crwdns305084:0crwdne305084:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gat_--custom-name--.desc" resname="trackingobject._gat_--custom-name--.desc">
+        <source>Google: Analytics for Google Analytics</source>
+        <target>crwdns305086:0crwdne305086:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gaexp.desc" resname="trackingobject._gaexp.desc">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target>crwdns305088:0crwdne305088:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gaexp_rc.desc" resname="trackingobject._gaexp_rc.desc">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target>crwdns305090:0crwdne305090:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._opt_awcid.desc" resname="trackingobject._opt_awcid.desc">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target>crwdns305092:0crwdne305092:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._opt_awmid.desc" resname="trackingobject._opt_awmid.desc">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target>crwdns305094:0crwdne305094:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._opt_awgid.desc" resname="trackingobject._opt_awgid.desc">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target>crwdns305096:0crwdne305096:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._opt_awkid.desc" resname="trackingobject._opt_awkid.desc">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target>crwdns305098:0crwdne305098:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._opt_utmc.desc" resname="trackingobject._opt_utmc.desc">
+        <source>Google: Analytics for Google Analytics, Optimize</source>
+        <target>crwdns305100:0crwdne305100:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._ga.desc" resname="trackingobject._ga.desc">
+        <source>Used to distinguish users.</source>
+        <target>crwdns80782:0crwdne80782:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.AMP_TOKEN.desc" resname="trackingobject.AMP_TOKEN.desc">
+        <source>Contains a token that can be used to retrieve a Client ID from AMP Client ID service. Other possible values indicate opt-out, request in progress or an error retrieving a Client ID from AMP Client ID service.</source>
+        <target>crwdns138429:0crwdne138429:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._dc_gtm_--property-id--.desc" resname="trackingobject._dc_gtm_--property-id--.desc">
+        <source>Used by DoubleClick (Google Tag Manager) to help identify the visitors by either age, gender or interests.</source>
+        <target>crwdns83459:0crwdne83459:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gac_--property-id--.desc" resname="trackingobject._gac_--property-id--.desc">
+        <source>Contains campaign related information for the user. If you have linked your Google Analytics and Google Ads accounts, Google Ads website conversion tags will read this cookie unless you opt-out.</source>
+        <target>crwdns80786:0crwdne80786:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gat.desc" resname="trackingobject._gat.desc">
+        <source>Used to throttle request rate.</source>
+        <target>crwdns80788:0crwdne80788:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._ga_--container-id--.desc" resname="trackingobject._ga_--container-id--.desc">
+        <source>Persists session state.</source>
+        <target>crwdns80790:0crwdne80790:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gcl_au.desc" resname="trackingobject._gcl_au.desc">
+        <source>Used by Google AdSense to experiment with advertisement efficiency.</source>
+        <target>crwdns80792:0crwdne80792:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._gid.desc" resname="trackingobject._gid.desc">
+        <source>Used to distinguish users.</source>
+        <target>crwdns80794:0crwdne80794:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.MUID.desc" resname="trackingobject.MUID.desc">
+        <source>Used as unique user identifier. The cookie allows user tracking across many Microsoft domains.</source>
+        <target>crwdns84009:0crwdne84009:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.MUIDB.desc" resname="trackingobject.MUIDB.desc">
+        <source>Saves anonymous user data from multiple website visits on multiple sites to test advertisement efficiency.</source>
+        <target>crwdns80798:0crwdne80798:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.MSFPC.desc" resname="trackingobject.MSFPC.desc">
+        <source>The cookie allows user tracking across many Microsoft domains and is used for Bing Analytics.</source>
+        <target>crwdns123436:0crwdne123436:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.DcLcid.desc" resname="trackingobject.DcLcid.desc">
+        <source>The cookie is used to implement Microsoft-forms on the website.</source>
+        <target>crwdns123438:0crwdne123438:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.AADNonce.forms.desc" resname="trackingobject.AADNonce.forms.desc">
+        <source>The cookie is used to implement Microsoft-forms on the website.</source>
+        <target>crwdns123440:0crwdne123440:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__RequestVerificationToken.desc" resname="trackingobject.__RequestVerificationToken.desc">
+        <source>The cookie is used to implement anti-forgery concerning Microsoft-forms on the website.</source>
+        <target>crwdns123442:0crwdne123442:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.UID.desc" resname="trackingobject.UID.desc">
+        <source>The cookie is used for market and user research (Scorecard Research).</source>
+        <target>crwdns123444:0crwdne123444:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.UIDR.desc" resname="trackingobject.UIDR.desc">
+        <source>The cookie is used for market and user research (Scorecard Research).</source>
+        <target>crwdns123446:0crwdne123446:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.bcookie.desc" resname="trackingobject.bcookie.desc">
+        <source>Browser Identifier cookie to uniquely identify devices accessing LinkedIn to detect abuse on the platform.</source>
+        <target>crwdns123448:0crwdne123448:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.lang.desc" resname="trackingobject.lang.desc">
+        <source>Used to memorize a user's language setting.</source>
+        <target>crwdns138431:0crwdne138431:0</target>
+      </trans-unit>
+      <trans-unit id="group.external" resname="group.external">
+        <source>External content</source>
+        <target>crwdns123452:0crwdne123452:0</target>
+      </trans-unit>
+      <trans-unit id="group.external.desc" resname="group.external.desc">
+        <source>With the help of these cookies we strive to improve our offer for our users. By means of providing video content or other useful content like maps to enhance the user experience.</source>
+        <target>crwdns123454:0crwdne123454:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.YouTube.desc" resname="trackingobject.YouTube.desc">
+        <source>Is used to connect to YouTube and to display videos.</source>
+        <target>crwdns210014:0crwdne210014:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.GoogleMaps.desc" resname="trackingobject.GoogleMaps.desc">
+        <source>Is used to connect to Google Maps and to display those maps.</source>
+        <target>crwdns123458:0crwdne123458:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.MicrosoftStream.desc" resname="trackingobject.MicrosoftStream.desc">
+        <source>Is used to connect to Microsoft Stream and display videos.</source>
+        <target>crwdns138433:0crwdne138433:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.Signature_Api.desc" resname="trackingobject.Signature_Api.desc">
+        <source>Is used to connect to the Microsoft signature API.</source>
+        <target>crwdns123462:0crwdne123462:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.Authorization_Api.desc" resname="trackingobject.Authorization_Api.desc">
+        <source>Is used to connect to the Microsoft authorization API.</source>
+        <target>crwdns123464:0crwdne123464:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.RedirectToThinEmbed.desc" resname="trackingobject.RedirectToThinEmbed.desc">
+        <source>Is used to embed Microsoft Stream videos.</source>
+        <target>crwdns123466:0crwdne123466:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.UserSession_Api.desc" resname="trackingobject.UserSession_Api.desc">
+        <source>Is used to store the user session of the Microsoft API.</source>
+        <target>crwdns123468:0crwdne123468:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.wfeSessionId.desc" resname="trackingobject.wfeSessionId.desc">
+        <source>Is used to store the Web Front End Session ID of Microsoft Stream.</source>
+        <target>crwdns123470:0crwdne123470:0</target>
+      </trans-unit>
+      <trans-unit id="browser.dnt-enabled" resname="browser.dnt-enabled">
+        <source><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></source>
+        <target><![CDATA[crwdns80822:0crwdne80822:0]]></target>
+      </trans-unit>
+      <trans-unit id="duration.none" resname="duration.empty">
+        <source>none</source>
+        <target>crwdns85944:0crwdne85944:0</target>
+      </trans-unit>
+      <trans-unit id="duration.second" resname="duration.second">
+        <source>second</source>
+        <target>crwdns305102:0crwdne305102:0</target>
+      </trans-unit>
+      <trans-unit id="duration.seconds" resname="duration.seconds">
+        <source>seconds</source>
+        <target>crwdns305104:0crwdne305104:0</target>
+      </trans-unit>
+      <trans-unit id="duration.minute" resname="duration.minute">
+        <source>minute</source>
+        <target>crwdns80802:0crwdne80802:0</target>
+      </trans-unit>
+      <trans-unit id="duration.minutes" resname="duration.minutes">
+        <source>minutes</source>
+        <target>crwdns80804:0crwdne80804:0</target>
+      </trans-unit>
+      <trans-unit id="duration.hour" resname="duration.hour">
+        <source>hour</source>
+        <target>crwdns80806:0crwdne80806:0</target>
+      </trans-unit>
+      <trans-unit id="duration.hours" resname="duration.hours">
+        <source>hours</source>
+        <target>crwdns80808:0crwdne80808:0</target>
+      </trans-unit>
+      <trans-unit id="duration.day" resname="duration.day">
+        <source>day</source>
+        <target>crwdns80810:0crwdne80810:0</target>
+      </trans-unit>
+      <trans-unit id="duration.days" resname="duration.days">
+        <source>days</source>
+        <target>crwdns80812:0crwdne80812:0</target>
+      </trans-unit>
+      <trans-unit id="duration.week" resname="duration.week">
+        <source>week</source>
+        <target>crwdns305106:0crwdne305106:0</target>
+      </trans-unit>
+      <trans-unit id="duration.weeks" resname="duration.weeks">
+        <source>weeks</source>
+        <target>crwdns305108:0crwdne305108:0</target>
+      </trans-unit>
+      <trans-unit id="duration.month" resname="duration.month">
+        <source>month</source>
+        <target>crwdns80814:0crwdne80814:0</target>
+      </trans-unit>
+      <trans-unit id="duration.months" resname="duration.months">
+        <source>months</source>
+        <target>crwdns80816:0crwdne80816:0</target>
+      </trans-unit>
+      <trans-unit id="duration.year" resname="duration.year">
+        <source>year</source>
+        <target>crwdns80818:0crwdne80818:0</target>
+      </trans-unit>
+      <trans-unit id="duration.years" resname="duration.years">
+        <source>years</source>
+        <target>crwdns80820:0crwdne80820:0</target>
+      </trans-unit>
+      <trans-unit id="active" resname="active">
+        <source>active</source>
+        <target>crwdns80828:0crwdne80828:0</target>
+      </trans-unit>
+      <trans-unit id="alwaysactive" resname="alwaysactive">
+        <source>always active</source>
+        <target>crwdns80830:0crwdne80830:0</target>
+      </trans-unit>
+      <trans-unit id="inactive" resname="inactive">
+        <source>inactive</source>
+        <target>crwdns80832:0crwdne80832:0</target>
+      </trans-unit>
+      <trans-unit id="alwaysinactive" resname="alwaysinactive">
+        <source>always inactive</source>
+        <target>crwdns80834:0crwdne80834:0</target>
+      </trans-unit>
+      <trans-unit id="group.accept" resname="group.accept">
+        <source>accept</source>
+        <target>crwdns133944:0crwdne133944:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.__cf_bm.desc" resname="trackingobject.__cf_bm.desc">
+        <source>Required to see Vimeo content.</source>
+        <target>crwdns209460:0crwdne209460:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.OptanonAlertBoxClosed.desc" resname="trackingobject.OptanonAlertBoxClosed.desc">
+        <source>Saves the state of your Vimeo data protection consent.</source>
+        <target>crwdns209462:0crwdne209462:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.OptanonConsent.desc" resname="trackingobject.OptanonConsent.desc">
+        <source>Saves the state of your Vimeo data protection consent.</source>
+        <target>crwdns209464:0crwdne209464:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.player.desc" resname="trackingobject.player.desc">
+        <source>This cookie saves your preferences before playing an embedded Vimeo video. This will bring you back to your preferred settings the next time you watch a Vimeo video.</source>
+        <target>crwdns209466:0crwdne209466:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.vuid.desc" resname="trackingobject.vuid.desc">
+        <source>This cookie gathers information about your actions on websites embedding Vimeo videos.</source>
+        <target>crwdns209468:0crwdne209468:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject._abexps.desc" resname="trackingobject._abexps.desc">
+        <source>This cookie remembers your settings. Settings can include language, region or login user. In general this cookie saves data about how you use Vimeo.</source>
+        <target>crwdns209470:0crwdne209470:0</target>
+      </trans-unit>
+      <trans-unit id="trackingobject.continuous_play_v3.desc" resname="trackingobject.continuous_play_v3.desc">
+        <source>This cookie is a first-party cookie from Vimeo. The cookie collects information on how you use the Vimeo service. For example, the cookie saves when you pause and play a video again.</source>
+        <target>crwdns209472:0crwdne209472:0</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
