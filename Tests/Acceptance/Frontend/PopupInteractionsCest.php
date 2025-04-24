@@ -50,6 +50,7 @@ class PopupInteractionsCest
         $I->waitForElementVisible(Constants::SELECTOR_modal);
         $I->waitForElementClickable(Constants::LOCATOR_settings);
         $I->clickWithLeftButton(Constants::LOCATOR_settings);
+        $I->wait(3);
         $I->scrollIntoView(Constants::SELECTOR_btnSaveAll);
         $I->waitForElementClickable(Constants::SELECTOR_btnSaveAll);
         $I->clickWithLeftButton(['css' => Constants::SELECTOR_btnSaveAll]);
@@ -83,16 +84,18 @@ class PopupInteractionsCest
         $I->waitForElementVisible(Constants::SELECTOR_modal, Constants::WAITFOR_timeout);
         $I->waitForElementClickable(Constants::LOCATOR_settings);
         $I->clickWithLeftButton(Constants::LOCATOR_settings);
-        $I->waitForElementVisible(Locator::contains('*', Constants::GROUP_title2nd), Constants::WAITFOR_timeout);
-        $I->waitForElementClickable(Locator::contains('*', Constants::GROUP_title2nd));
-        $I->clickWithLeftButton(Locator::contains('*', Constants::GROUP_title2nd));
+        $I->wait(3);
+        $I->waitForElementVisible(Locator::contains('button', Constants::GROUP_title2nd), Constants::WAITFOR_timeout);
+        $I->waitForElementClickable(Locator::contains('button', Constants::GROUP_title2nd));
+        $I->clickWithLeftButton(Locator::contains('button', Constants::GROUP_title2nd));
+        $I->wait(3);
         $I->waitForElementVisible(
             Locator::contains('*', Constants::COOKIE_titleIn2ndGroup),
             Constants::WAITFOR_timeout
         ); // a single row in the table
         $I->scrollIntoView('[name=' . Constants::GROUP_key2nd . ']');
         if (!$I->tryToCheckOption('[name=' . Constants::GROUP_key2nd . ']')) { // theme: *-modal
-            $I->executeJS('$("[name=' . Constants::GROUP_key2nd . ']").click()'); // theme: bootstrap3-banner
+            $I->executeJS('document.querySelector("[name=' . Constants::GROUP_key2nd . ']").click()'); // theme: bootstrap3-banner
         }
         $I->seeCheckboxIsChecked('[name=' . Constants::GROUP_key2nd . ']');
         $I->scrollIntoView(Constants::SELECTOR_btnSaveNotSaveAll);
