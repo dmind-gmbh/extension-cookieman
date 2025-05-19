@@ -12,6 +12,8 @@ declare(strict_types=1);
 namespace Dmind\Cookieman\Tests\Unit;
 
 use Dmind\Cookieman\DataProcessing\TypoScriptSettingsProcessor;
+use PHPUnit\Framework\Attributes\DataProvider;
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\MockObject\MockObject;
 use TYPO3\CMS\Extbase\Configuration\ConfigurationManager;
 use TYPO3\CMS\Extbase\Configuration\Exception\InvalidConfigurationTypeException;
@@ -22,7 +24,7 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
 {
     protected ContentObjectRenderer|MockObject $contentObjectRenderer;
 
-    public static function settingsProvider()
+    public static function settingsProvider(): array
     {
         return [
             [
@@ -126,12 +128,11 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
     }
 
     /**
-     * @dataProvider settingsProvider
-     * @test
      * @param array $pluginConfiguration
      * @param array $returnedSettings
-     * @throws InvalidConfigurationTypeException
      */
+    #[DataProvider('settingsProvider')]
+    #[Test]
     public function returnsSettings(array $pluginConfiguration, array $returnedSettings): void
     {
         $configurationManager = $this->getMockBuilder(ConfigurationManager::class)
