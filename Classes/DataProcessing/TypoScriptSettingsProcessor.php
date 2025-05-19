@@ -89,13 +89,13 @@ class TypoScriptSettingsProcessor implements DataProcessorInterface
         return $settings;
     }
 
-    function renderCObject(array $config, ContentObjectRenderer $cObj): string
+    protected function renderCObject(array $config, ContentObjectRenderer $cObj): string
     {
         $type = $config['_typoScriptNodeValue'] ?? null;
         if (!$type) {
             return '';
         }
-        unset ($config['_typoScriptNodeValue']);
+        unset($config['_typoScriptNodeValue']);
 
         if ($type === 'COA') {
             // Bring into "non-Extbasey" TypoScript form to render sub-objects directly
