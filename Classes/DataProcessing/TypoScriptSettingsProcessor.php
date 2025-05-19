@@ -83,9 +83,45 @@ class TypoScriptSettingsProcessor implements DataProcessorInterface
             }
 
             $settings['trackingObjects'][$trackingObjectKey]['inject']
-                = $cObj->cObjGetSingle($trackingObject['inject']['_typoScriptNodeValue'], $trackingObject['inject']);
+                = $this->renderCObject($trackingObject['inject'], $cObj);
         }
 
         return $settings;
+    }
+
+    function renderCObject(array $config, ContentObjectRenderer $cObj): string
+    {
+        $type = $config['_typoScriptNodeValue'] ?? null;
+        if (!$type) {
+            return '';
+        }
+        unset ($config['_typoScriptNodeValue']);
+
+        if ($type === 'COA') {
+            // Bring into "non-Extbasey" TypoScript form to render sub-objects directly
+            $config = $this->convertPlainArrayToTypoScriptArray($config);
+        }
+
+        return $cObj->cObjGetSingle($type, $config);
+    }
+
+    /**
+     * Taken from @see \TYPO3\CMS\Core\TypoScript\TypoScriptService::convertPlainArrayToTypoScriptArray
+     */
+    protected function convertPlainArrayToTypoScriptArray(array $plainArray): array
+    {
+        $typoScriptArray = [];
+        foreach ($plainArray as $key => $value) {
+            if (is_array($value)) {
+                if (isset($value['_typoScriptNodeValue'])) {
+                    $typoScriptArray[$key] = $value['_typoScriptNodeValue'];
+                    unset($value['_typoScriptNodeValue']);
+                }
+                $typoScriptArray[$key . '.'] = $this->convertPlainArrayToTypoScriptArray($value);
+            } else {
+                $typoScriptArray[$key] = $value ?? '';
+            }
+        }
+        return $typoScriptArray;
     }
 }

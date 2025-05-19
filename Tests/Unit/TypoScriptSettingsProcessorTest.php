@@ -133,6 +133,30 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
                                     'provider' => 'Website',
                                 ],
                             ],
+                            'inject' => [
+                                // (recursive) COA
+                                '_typoScriptNodeValue' => 'COA',
+                                'wrap' => 'outer COA:|',
+                                10 => [
+                                    '_typoScriptNodeValue' => 'TEXT',
+                                    'insertData' => 1,
+                                    'value' => '{date : Y}',
+                                ],
+                                20 => [
+                                    // COA
+                                    '_typoScriptNodeValue' => 'COA',
+                                    'wrap' => ';inner COA:|',
+                                    10 => [
+                                        '_typoScriptNodeValue' => 'TEXT',
+                                        'data' => 'date : Y',
+                                    ],
+                                    20 => [
+                                        '_typoScriptNodeValue' => 'TEXT',
+                                        'data' => 'path : fileadmin/file.ext',
+                                        'wrap' => ',|',
+                                    ],
+                                ],
+                            ],
                         ],
                     ],
                 ],
@@ -185,6 +209,7 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
                                         'provider' => 'Website',
                                     ],
                                 ],
+                                'inject' => 'outer COA:2025;inner COA:2025,fileadmin/file.ext',
                             ],
                         ],
                     ],
