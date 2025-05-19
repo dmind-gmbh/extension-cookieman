@@ -51,6 +51,9 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
                                     'provider' => 'Website',
                                 ],
                             ],
+                            'inject' => [
+                                '<script>simpleTextInject</script>'
+                            ]
                         ],
                         'fe_typo_user' => [
                             'show' => [
@@ -99,6 +102,9 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
                                         'provider' => 'Website',
                                     ],
                                 ],
+                                'inject' => [
+                                    '<script>simpleTextInject</script>'
+                                ]
                             ],
                             'fe_typo_user' => [
                                 'show' => [
