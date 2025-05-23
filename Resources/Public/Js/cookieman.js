@@ -17,11 +17,11 @@ var cookieman = (function () {
 
     function saveSelections() {
         var consented = [],
-            expires = settings.cookie.cookieLifetimeDays || cookieLifetimeDays,
+            expires = settings.cookie?.cookieLifetimeDays || cookieLifetimeDays,
             params = {
                 expires: parseInt(expires, 10) ,
-                domain: settings.cookie.domain || undefined,
-                sameSite: settings.cookie.sameSite || 'lax'
+                domain: settings.cookie?.domain || undefined,
+                sameSite: settings.cookie?.sameSite || 'lax'
             }
 
         for (var _i = 0; _i < checkboxes.length; _i++) {
