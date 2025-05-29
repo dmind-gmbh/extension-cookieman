@@ -465,7 +465,7 @@
       </trans-unit>
       <trans-unit id="trackingobject.YouTube.desc" resname="trackingobject.YouTube.desc">
         <source>Is used to connect to YouTube and to display videos.</source>
-        <target state="needs-translation">Is used to connect to YouTube and to display videos.</target>
+        <target state="translated">Wordt gebruikt om verbinding te maken met YouTube en video weer te geven.</target>
       </trans-unit>
       <trans-unit id="trackingobject.GoogleMaps.desc" resname="trackingobject.GoogleMaps.desc" approved="yes">
         <source>Is used to connect to Google Maps and to display those maps.</source>
@@ -581,7 +581,7 @@
       </trans-unit>
       <trans-unit id="trackingobject.__cf_bm.desc" resname="trackingobject.__cf_bm.desc">
         <source>Required to see Vimeo content.</source>
-        <target state="needs-translation">Required to see Vimeo content.</target>
+        <target state="translated">Vereist om Vimeo inhoud weer te geven.</target>
       </trans-unit>
       <trans-unit id="trackingobject.OptanonAlertBoxClosed.desc" resname="trackingobject.OptanonAlertBoxClosed.desc">
         <source>Saves the state of your Vimeo data protection consent.</source>
