@@ -28,13 +28,16 @@ jobs:
       - name: Get comment
         id: get-comment
         run: |
-          comment=$(git tag -n10 -l ${{ steps.get-version.outputs.version }} | sed "s/^[0-9.]*[ ]*//g")
+          comment="$(git tag -n10 -l ${{ steps.get-version.outputs.version }} | sed "s/^[0-9.]*[ ]*//g")"
 
+          EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
+          echo "comment<<$EOF" >> $GITHUB_OUTPUT
           if [[ -z "${comment// }" ]]; then
-            echo "comment=Released version ${{ steps.get-version.outputs.version }} of ${{ env.TYPO3_EXTENSION_KEY }}" >> $GITHUB_OUTPUT
+            echo "Released version ${{ steps.get-version.outputs.version }} of ${{ env.TYPO3_EXTENSION_KEY }}" >> $GITHUB_OUTPUT
           else
-            echo "comment=$comment" >> $GITHUB_OUTPUT
+            echo "$comment" >> $GITHUB_OUTPUT
           fi
+          echo "$EOF" >> $GITHUB_OUTPUT
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
