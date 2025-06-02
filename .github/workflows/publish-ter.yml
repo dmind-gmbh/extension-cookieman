@@ -29,9 +29,6 @@ jobs:
         id: get-comment
         run: |
           comment=$(git tag -n10 -l ${{ steps.get-version.outputs.version }} | sed "s/^[0-9.]*[ ]*//g")
-          comment="${comment//'%'/'%25'}"
-          comment="${comment//$'\n'/'%0A'}"
-          comment="${comment//$'\r'/'%0D'}"
 
           if [[ -z "${comment// }" ]]; then
             echo "comment=Released version ${{ steps.get-version.outputs.version }} of ${{ env.TYPO3_EXTENSION_KEY }}" >> $GITHUB_OUTPUT
