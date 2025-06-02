@@ -23,7 +23,7 @@ jobs:
 
       - name: Get version
         id: get-version
-        run: echo ::set-output name=version::${GITHUB_REF/refs\/tags\//}
+        run: echo "version=${GITHUB_REF/refs\/tags\//}" >> $GITHUB_OUTPUT
 
       - name: Get comment
         id: get-comment
@@ -34,15 +34,15 @@ jobs:
           comment="${comment//$'\r'/'%0D'}"
 
           if [[ -z "${comment// }" ]]; then
-            echo ::set-output name=comment::Released version ${{ steps.get-version.outputs.version }} of ${{ env.TYPO3_EXTENSION_KEY }}
+            echo "comment=Released version ${{ steps.get-version.outputs.version }} of ${{ env.TYPO3_EXTENSION_KEY }}" >> $GITHUB_OUTPUT
           else
-            echo ::set-output name=comment::$comment
+            echo "comment=$comment" >> $GITHUB_OUTPUT
           fi
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 7.4
+          php-version: 8.4
           extensions: intl, mbstring, json, zip, curl
           tools: composer:v2
 
