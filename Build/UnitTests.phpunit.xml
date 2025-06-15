@@ -16,7 +16,6 @@
 		 displayDetailsOnTestsThatTriggerErrors="true"
 		 displayDetailsOnTestsThatTriggerNotices="true"
 		 displayDetailsOnTestsThatTriggerWarnings="true"
-		 displayDetailsOnPhpunitDeprecations="true"
 >
 	<testsuites>
 		<testsuite name="Cookieman Extension">
