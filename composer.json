@@ -26,10 +26,10 @@
         "dmind/cookieman-test": "@dev",
         "dmind/cookieman-test-bootstrap5-modal": "@dev",
         "friendsofphp/php-cs-fixer": "^3.75",
-        "helhum/typo3-console": "^8.2",
+        "helhum/typo3-console": "^8",
         "phpunit/phpunit": "^11.5",
         "typo3/cms-install": "^14.0 || 14.*.x-dev",
-        "typo3/cms-tstemplate": "^14.0 || 13.*.x-dev",
+        "typo3/cms-tstemplate": "^14.0 || 14.*.x-dev",
         "typo3/coding-standards": "^0.8.0",
         "typo3/tailor": "^1.7",
         "typo3/testing-framework": "^9.2"
