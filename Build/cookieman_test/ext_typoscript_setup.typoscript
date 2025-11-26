@@ -15,8 +15,14 @@ plugin.tx_cookieman.settings {
             inject {
                 insertData = 1
                 value (
-                    <script data-what="Crowdin (1st script)" src="/{path : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}"></script>
-                    <script data-what="Crowdin (2nd script)" src="/{path : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}"></script>
+                    <script nonce="{request : nonce | value}"
+                        data-what="TestTrackingObject (1st script)"
+                        src="/{path : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}"
+                    ></script>
+                    <script nonce="{request : nonce | value}"
+                        data-what="TestTrackingObject (2nd script)"
+                        src="/{path : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}"
+                    ></script>
                 )
             }
             show {
