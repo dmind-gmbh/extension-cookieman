@@ -3,11 +3,11 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2022-11-27T22:26:21Z" product-name="cookieman_test">
 		<header />
 		<body>
-			<trans-unit id="trackingobject.CrowdinWidget" xml:space="preserve">
-				<source>Crowdin Widget</source>
+			<trans-unit id="trackingobject.TestTrackingObject" xml:space="preserve">
+				<source>Test Tracking Object</source>
 			</trans-unit>
-			<trans-unit id="trackingobject.CrowdinWidget.desc" xml:space="preserve">
-				<source>This is just a test but on the other hand it is useful: It displays the Crowdin Widget which allows you to help translating cookieman ;)</source>
+			<trans-unit id="trackingobject.TestTrackingObject.desc" xml:space="preserve">
+				<source>Test Tracking Object (description)</source>
 			</trans-unit>
 			<trans-unit id="group.testgroup" xml:space="preserve">
 				<source>Test group (does not respect Do-Not-Track header)</source>
