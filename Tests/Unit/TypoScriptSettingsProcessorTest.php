@@ -209,7 +209,7 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
                                         'provider' => 'Website',
                                     ],
                                 ],
-                                'inject' => 'outer COA:2025;inner COA:2025,fileadmin/file.ext',
+                                'inject' => 'outer COA:' . date('Y') . ';inner COA:' . date('Y') . ',fileadmin/file.ext',
                             ],
                         ],
                     ],
