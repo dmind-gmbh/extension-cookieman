@@ -1,0 +1,163 @@
+plugin.tx_cookieman {
+  settings.trackingObjects {
+    LinkedIn {
+      inject =
+      show {
+        # https://www.linkedin.com/legal/l/cookie-table#thirdparty
+        bcookie {
+          duration = 12
+          durationUnit = months
+          type = cookie_http+html
+          provider = LinkedIn
+        }
+
+        bscookie {
+          duration = 12
+          durationUnit = months
+          type = cookie_http+html
+          provider = LinkedIn
+        }
+
+        JSESSIONID {
+          duration =
+          durationUnit = session
+          type = cookie_http+html
+          provider = LinkedIn
+        }
+
+        lang {
+          duration =
+          durationUnit = session
+          type = cookie_http+html
+          provider = LinkedIn
+        }
+
+        lidc {
+          duration = 24
+          durationUnit = hours
+          type = cookie_http+html
+          provider = LinkedIn
+        }
+
+        sdsc {
+          duration =
+          durationUnit = session
+          type = cookie_http+html
+          provider = LinkedIn
+        }
+
+        li_gc {
+          duration = 6
+          durationUnit = months
+          type = cookie_http+html
+          provider = LinkedIn
+        }
+
+        li_mc {
+          duration = 6
+          durationUnit = months
+          type = cookie_http+html
+          provider = LinkedIn
+        }
+
+        UID {
+          duration = 720
+          durationUnit = days
+          type = cookie_http+html
+          provider = Scorecard research
+        }
+
+        UserMatchHistory {
+          duration = 30
+          durationUnit = days
+          type = cookie_http+html
+          provider = LinkedIn
+        }
+
+        AnalyticsSyncHistory {
+          duration = 30
+          durationUnit = days
+          type = cookie_http+html
+          provider = LinkedIn
+        }
+
+        lms_ads {
+          duration = 30
+          durationUnit = days
+          type = cookie_http+html
+          provider = LinkedIn
+        }
+
+        lms_analytics {
+          duration = 30
+          durationUnit = days
+          type = cookie_http+html
+          provider = LinkedIn
+        }
+
+        li_fat_id {
+          duration = 30
+          durationUnit = days
+          type = cookie_http+html
+          provider = LinkedIn
+        }
+
+        li_sugr {
+          duration = 90
+          durationUnit = days
+          type = cookie_http+html
+          provider = LinkedIn
+        }
+
+        _guid {
+          duration = 90
+          durationUnit = days
+          type = cookie_http+html
+          provider = LinkedIn
+        }
+
+        BizographicsOptOut {
+          duration = 10
+          durationUnit = years
+          type = cookie_http+html
+          provider = LinkedIn
+        }
+
+        li_giant {
+          duration = 7
+          durationUnit = days
+          type = cookie_http+html
+          provider = LinkedIn
+        }
+
+        oribi_cookie_test {
+          duration =
+          durationUnit = session
+          type = cookie_http+html
+          provider = Oribi
+        }
+
+        oribili_user_guid {
+          duration = 1
+          durationUnit = year
+          type = cookie_http+html
+          provider = Oribi
+        }
+
+        ln_or {
+          duration = 1
+          durationUnit = day
+          type = cookie_http+html
+          provider = Oribi
+        }
+
+        ar_debug {
+          duration = 12
+          durationUnit = months
+          type = cookie_http+html
+          provider = LinkedIn
+        }
+      }
+    }
+  }
+}
