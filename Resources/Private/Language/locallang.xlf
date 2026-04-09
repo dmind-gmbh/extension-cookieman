@@ -373,6 +373,63 @@
             <trans-unit id="trackingobject.wfeSessionId.desc" resname="trackingobject.wfeSessionId.desc">
                 <source>Is used to store the Web Front End Session ID of Microsoft Stream.</source>
             </trans-unit>
+			<trans-unit id="trackingobject.bscookie.desc" resname="trackingobject..desc">
+				<source>Used for remembering that a logged in user is verified by two factor authentication and has previously logged in to LinkedIn</source>
+			</trans-unit>
+			<trans-unit id="trackingobject.JSESSIONID.desc" resname="trackingobject..desc">
+				<source>Used for Cross Site Request Forgery (CSRF) protection and URL signature validation.</source>
+			</trans-unit>
+			<trans-unit id="trackingobject.lidc.desc" resname="trackingobject..desc">
+				<source>Facilitates data center selection</source>
+			</trans-unit>
+			<trans-unit id="trackingobject.sdsc.desc" resname="trackingobject..desc">
+				<source>Signed data service context cookie used for database routing to ensure consistency across all databases when a change is made. Used to ensure that user-inputted content is immediately available to the submitting user upon submission</source>
+			</trans-unit>
+			<trans-unit id="trackingobject.li_gc.desc" resname="trackingobject..desc">
+				<source>Used to store consent of guests regarding the use of cookies for non-essential purposes</source>
+			</trans-unit>
+			<trans-unit id="trackingobject.li_mc.desc" resname="trackingobject..desc">
+				<source>Used as a temporary cache to avoid database lookups for a member's consent for use of non-essential cookies and used for having consent information on the client side to enforce consent on the client side</source>
+			</trans-unit>
+			<trans-unit id="trackingobject.UserMatchHistory.desc" resname="trackingobject..desc">
+				<source>LinkedIn Ads ID syncing</source>
+			</trans-unit>
+			<trans-unit id="trackingobject.AnalyticsSyncHistory.desc" resname="trackingobject.AnalyticsSyncHistory.desc">
+				<source>Used to store information about the time a sync took place with the lms_analytics cookie</source>
+			</trans-unit>
+			<trans-unit id="trackingobject.lms_ads.desc" resname="trackingobject.lms_ads.desc">
+				<source>Used to identify LinkedIn Members off LinkedIn for advertising</source>
+			</trans-unit>
+			<trans-unit id="trackingobject.lms_analytics.desc" resname="trackingobject.lms_analytics.desc">
+				<source>Used to identify LinkedIn Members off LinkedIn for analytics</source>
+			</trans-unit>
+			<trans-unit id="trackingobject.li_fat_id.desc" resname="trackingobject.li_fat_id.desc">
+				<source>Member indirect identifier for Members for conversion tracking, retargeting, analytics</source>
+			</trans-unit>
+			<trans-unit id="trackingobject.li_sugr.desc" resname="trackingobject.li_sugr.desc">
+				<source>Used to make a probabilistic match of a user's identity</source>
+			</trans-unit>
+			<trans-unit id="trackingobject._guid.desc" resname="trackingobject._guid.desc">
+				<source>Used to identify a LinkedIn Member for advertising through Google Ads</source>
+			</trans-unit>
+			<trans-unit id="trackingobject.BizographicsOptOut.desc" resname="trackingobject.BizographicsOptOut.desc">
+				<source>Used to determine opt-out status for non-members</source>
+			</trans-unit>
+			<trans-unit id="trackingobject.li_giant.desc" resname="trackingobject.li_giant.desc">
+				<source>Indirect indentifier for groups of LinkedIn Members used for conversion tracking</source>
+			</trans-unit>
+			<trans-unit id="trackingobject.oribi_cookie_test.desc" resname="trackingobject.oribi_cookie_test.desc">
+				<source>To determine if tracking can be enabled on current domain</source>
+			</trans-unit>
+			<trans-unit id="trackingobject.oribili_user_guid.desc" resname="trackingobject.oribili_user_guid.desc">
+				<source>Used to count unique visitors to a website</source>
+			</trans-unit>
+			<trans-unit id="trackingobject.ln_or.desc" resname="trackingobject.ln_or.desc">
+				<source>Used to determine if Oribi analytics can be carried out on a specific domain</source>
+			</trans-unit>
+			<trans-unit id="trackingobject.ar_debug.desc" resname="trackingobject.ar_debug.desc">
+				<source>Supports Google attribution reporting API integration to mitigate signal loss</source>
+			</trans-unit>
             <trans-unit id="browser.dnt-enabled" resname="browser.dnt-enabled">
                 <source><![CDATA[You already opted out of user tracking via your <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Do_Not_Track">browser's Do-not-track function</a>. We accept that. You can affect this via your browser's settings.]]></source>
             </trans-unit>
