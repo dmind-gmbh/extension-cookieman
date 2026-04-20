@@ -24,7 +24,7 @@ jobs:
         browser: [ chrome ]
         theme: [ bootstrap3-banner, bootstrap3-modal, bootstrap4-modal, bootstrap5-modal, customtheme ]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       # Set PHP version
       - run: |
           sed -i -e 's/^php_version:.*/php_version: ${{ matrix.php-version }}/g' .ddev/config.yaml
@@ -54,7 +54,7 @@ jobs:
         browser: [ firefox ]
         theme: [ bootstrap3-banner, bootstrap3-modal, bootstrap4-modal, bootstrap5-modal, customtheme ]
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       # Set PHP version
       - run: |
           sed -i -e 's/^php_version:.*/php_version: ${{ matrix.php-version }}/g' .ddev/config.yaml
