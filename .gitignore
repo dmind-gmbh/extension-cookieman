@@ -28,9 +28,5 @@
 # CGL Fixer
 /.php_cs.cache
 
-# Browserstack local
-/local.log
-./browserstack.err
-
 # private
 /.ddev/homeadditions/.gitconfig

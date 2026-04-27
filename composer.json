@@ -19,7 +19,6 @@
         "typo3/cms-core": "^14.0 || 14.*.x-dev"
     },
     "require-dev": {
-        "browserstack/browserstack-local": "dev-master",
         "codeception/codeception": "^5.2",
         "codeception/module-asserts": "^3.0",
         "codeception/module-webdriver": "^4.0",
@@ -116,18 +115,6 @@
         ],
         "test:acceptance": [
             "@test:acceptance:chrome"
-        ],
-        "test:acceptance:browserstack_chrome": [
-            "codecept run --env browserstack_chrome -d -c Build/browserstack.codeception.yml -- acceptance"
-        ],
-        "test:acceptance:browserstack_ie11": [
-            "codecept run --env browserstack_ie11 -d -c Build/browserstack.codeception.yml -- acceptance"
-        ],
-        "test:acceptance:browserstack_iphone": [
-            "codecept run --env browserstack_iPhone8 --skip-group desktop -d -c Build/browserstack.codeception.yml -- acceptance"
-        ],
-        "test:acceptance:browserstack_safari": [
-            "codecept run --env browserstack_safari -d -c Build/browserstack.codeception.yml -- acceptance"
         ],
         "test:acceptance:chrome": [
             "codecept run --env chrome -d -c Build/local.codeception.yml -- acceptance"
