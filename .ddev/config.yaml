@@ -15,6 +15,7 @@ hooks:
         - exec: rm -f composer.lock
         - exec: |
             if [[ $(mysql -e "SHOW TABLES" | wc -l) -eq 0 ]]; then
+              rm -f config/system/settings.php
               composer typo3 -- install:setup \
                 --web-server-config=apache \
                 --use-existing-database \
