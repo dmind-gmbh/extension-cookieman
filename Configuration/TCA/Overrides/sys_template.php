@@ -9,16 +9,18 @@ declare(strict_types=1);
  * LICENSE file that was distributed with this source code.
  */
 
-defined('TYPO3') or die();
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
+defined('TYPO3') || die();
 
 // static TypoScript
 (static function() {
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+    ExtensionManagementUtility::addStaticFile(
         'cookieman',
         'Configuration/TypoScript',
         'Cookieman'
     );
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+    ExtensionManagementUtility::addStaticFile(
         'cookieman',
         'Configuration/TypoScript/Example',
         'Cookieman (Example configuration of groups and tracking objects)'
