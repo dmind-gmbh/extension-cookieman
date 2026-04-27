@@ -25,7 +25,7 @@ class JavaScriptApiCest
      * @throws ModuleException
      * @throws \Exception
      */
-    public function onScriptLoadedEventHandler(AcceptanceTester $I)
+    public function onScriptLoadedEventHandler(AcceptanceTester $I): void
     {
         $I->amOnPage(Constants::PATH_root);
         $I->setCookie(

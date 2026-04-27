@@ -11,6 +11,7 @@ declare(strict_types=1);
 
 namespace Dmind\Cookieman\Tests\Acceptance\Frontend;
 
+use Codeception\Exception\ModuleException;
 use Codeception\Util\Locator;
 use Dmind\Cookieman\Tests\Acceptance\Support\AcceptanceTester;
 use Dmind\Cookieman\Tests\Acceptance\Support\Constants;
@@ -24,7 +25,7 @@ class PopupInteractionsCest
      * @param AcceptanceTester $I
      * @throws \Exception
      */
-    public function save(AcceptanceTester $I)
+    public function save(AcceptanceTester $I): void
     {
         $I->amOnPage(Constants::PATH_root);
         $I->waitForJS('return typeof cookieman === "object"', 10);
@@ -43,7 +44,7 @@ class PopupInteractionsCest
      * @param AcceptanceTester $I
      * @throws \Exception
      */
-    public function saveAll(AcceptanceTester $I)
+    public function saveAll(AcceptanceTester $I): void
     {
         $I->amOnPage(Constants::PATH_root);
         $I->waitForJS('return typeof cookieman === "object"', 10);
@@ -76,7 +77,7 @@ class PopupInteractionsCest
      * @param AcceptanceTester $I
      * @throws \Exception
      */
-    public function selectGroupAndSaveMobile(AcceptanceTester $I)
+    public function selectGroupAndSaveMobile(AcceptanceTester $I): void
     {
         $I->resizeWindow(480, 800);
         $I->amOnPage(Constants::PATH_root);
@@ -111,10 +112,10 @@ class PopupInteractionsCest
 
     /**
      * @param AcceptanceTester $I
-     * @throws \Codeception\Exception\ModuleException
+     * @throws ModuleException
      * @throws \Exception
      */
-    public function onScriptLoadedEventHandler(AcceptanceTester $I)
+    public function onScriptLoadedEventHandler(AcceptanceTester $I): void
     {
         $I->amOnPage(Constants::PATH_root);
         $I->setCookie(

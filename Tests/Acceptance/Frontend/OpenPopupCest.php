@@ -23,7 +23,7 @@ class OpenPopupCest
      * @param AcceptanceTester $I
      * @throws \Exception
      */
-    public function openViaClickOnDataCookiemanShowElement(AcceptanceTester $I)
+    public function openViaClickOnDataCookiemanShowElement(AcceptanceTester $I): void
     {
         $I->amOnPage(Constants::PATH_imprint);
         $I->waitForJS('return typeof cookieman === "object"', 10);
@@ -35,7 +35,7 @@ class OpenPopupCest
      * @param AcceptanceTester $I
      * @throws \Exception
      */
-    public function notShownOnImprint(AcceptanceTester $I)
+    public function notShownOnImprint(AcceptanceTester $I): void
     {
         $I->amOnPage(Constants::PATH_imprint);
         $I->waitForJS('return typeof cookieman === "object"', 10);

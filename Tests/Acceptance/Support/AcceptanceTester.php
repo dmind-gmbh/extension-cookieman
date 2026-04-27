@@ -11,12 +11,13 @@ declare(strict_types=1);
 
 namespace Dmind\Cookieman\Tests\Acceptance\Support;
 
+use Codeception\Actor;
 use Dmind\Cookieman\Tests\Acceptance\Support\_generated\AcceptanceTesterActions;
 
 /**
  * Default acceptance tester
  */
-class AcceptanceTester extends \Codeception\Actor
+class AcceptanceTester extends Actor
 {
     use AcceptanceTesterActions;
 
