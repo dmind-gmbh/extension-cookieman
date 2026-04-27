@@ -1,22 +1,23 @@
 {
     "name": "dmind/cookieman",
-    "type": "typo3-cms-extension",
     "description": "Provides a user consent popup. It asks for approval to include tracking objects (cookies, images or any HTML) and includes the objects when consented. It also removes cookies after the consent has been revoked.",
     "license": [
         "GPL-2.0-or-later"
     ],
+    "type": "typo3-cms-extension",
     "authors": [
         {
             "name": "Jonas Eberle",
             "role": "Developer"
         }
     ],
-    "replace": {
-        "typo3-ter/cookieman": "self.version"
+    "support": {
+        "issues": "https://github.com/dmind-gmbh/extension-cookieman/issues",
+        "source": "https://github.com/dmind-gmbh/extension-cookieman"
     },
     "require": {
         "php": "^8.2",
-        "typo3/cms-core": "^14.0 || 14.*.x-dev"
+        "typo3/cms-core": "14.*.x-dev || ^14.0"
     },
     "require-dev": {
         "codeception/codeception": "^5.2",
@@ -24,34 +25,29 @@
         "codeception/module-webdriver": "^4.0",
         "dmind/cookieman-test": "@dev",
         "dmind/cookieman-test-bootstrap5-modal": "@dev",
+        "ergebnis/composer-normalize": "^2.51",
         "friendsofphp/php-cs-fixer": "^3.95",
         "helhum/typo3-console": "^8.3",
         "phpunit/phpunit": "^11.5",
         "ssch/typo3-rector": "^3.8",
-        "typo3/cms-install": "^14.0 || 14.*.x-dev",
-        "typo3/cms-tstemplate": "^14.0 || 14.*.x-dev",
+        "typo3/cms-frontend": "14.*.x-dev || ^14.0",
+        "typo3/cms-install": "14.*.x-dev || ^14.0",
+        "typo3/cms-tstemplate": "14.*.x-dev || ^14.0",
         "typo3/coding-standards": "^0.8.0",
         "typo3/tailor": "^1.7",
-        "typo3/testing-framework": "^9.2"
+        "typo3/testing-framework": "^9.5"
     },
-    "config": {
-        "bin-dir": ".build/bin",
-        "sort-packages": true,
-        "vendor-dir": ".build/vendor",
-        "allow-plugins": {
-            "typo3/class-alias-loader": true,
-            "typo3/cms-composer-installers": true
+    "replace": {
+        "typo3-ter/cookieman": "self.version"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "Build/*"
         }
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "2.9.x-dev"
-        },
-        "typo3/cms": {
-            "extension-key": "cookieman",
-            "web-dir": ".build/public"
-        }
-    },
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "Dmind\\Cookieman\\": "Classes/"
@@ -62,14 +58,25 @@
             "Dmind\\Cookieman\\Tests\\": "Tests/"
         }
     },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "Build/*"
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true,
+            "typo3/class-alias-loader": true,
+            "typo3/cms-composer-installers": true
+        },
+        "bin-dir": ".build/bin",
+        "sort-packages": true,
+        "vendor-dir": ".build/vendor"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "2.9.x-dev"
+        },
+        "typo3/cms": {
+            "extension-key": "cookieman",
+            "web-dir": ".build/public"
         }
-    ],
-    "minimum-stability": "dev",
-    "prefer-stable": true,
+    },
     "scripts": {
         "build": [
             "@build:prepare",
@@ -128,6 +135,7 @@
         "test:cgl": [
             "php-cs-fixer fix -v --diff --using-cache=no --dry-run"
         ],
+        "test:composer:normalize": "@composer normalize --dry-run",
         "test:rector": "@rector process --dry-run",
         "test:unit": [
             "@putenv XDEBUG_MODE=coverage",
@@ -135,6 +143,7 @@
         ],
         "tests-for:ci": [
             "@test:cgl",
+            "@test:composer:normalize",
             "@test:rector",
             "@test:unit"
         ],
@@ -144,9 +153,5 @@
         "typo3:flush": [
             "@typo3 cache:flush"
         ]
-    },
-    "support": {
-        "issues": "https://github.com/dmind-gmbh/extension-cookieman/issues",
-        "source": "https://github.com/dmind-gmbh/extension-cookieman"
     }
 }
