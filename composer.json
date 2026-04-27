@@ -27,6 +27,7 @@
         "friendsofphp/php-cs-fixer": "^3.95",
         "helhum/typo3-console": "^8.3",
         "phpunit/phpunit": "^11.5",
+        "ssch/typo3-rector": "^3.8",
         "typo3/cms-install": "^14.0 || 14.*.x-dev",
         "typo3/cms-tstemplate": "^14.0 || 14.*.x-dev",
         "typo3/coding-standards": "^0.8.0",
@@ -108,6 +109,8 @@
         "fix:cgl": [
             "php-cs-fixer --config=.php-cs-fixer.php fix --using-cache=no"
         ],
+        "fix:rector": "@rector process",
+        "rector": "rector @additional_args --ansi",
         "test": [
             "@test:cgl",
             "@test:unit",
@@ -125,12 +128,14 @@
         "test:cgl": [
             "php-cs-fixer fix -v --diff --using-cache=no --dry-run"
         ],
+        "test:rector": "@rector process --dry-run",
         "test:unit": [
             "@putenv XDEBUG_MODE=coverage",
             "phpunit -c Build/UnitTests.phpunit.xml"
         ],
         "tests-for:ci": [
             "@test:cgl",
+            "@test:rector",
             "@test:unit"
         ],
         "typo3": [
