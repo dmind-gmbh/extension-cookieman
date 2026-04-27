@@ -17,10 +17,8 @@ use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\MockObject\MockObject;
 use Psr\EventDispatcher\EventDispatcherInterface;
 use Psr\Http\Message\ServerRequestInterface;
-use Psr\Log\NullLogger;
 use Symfony\Component\DependencyInjection\Container;
 use TYPO3\CMS\Core\Cache\CacheManager;
-use TYPO3\CMS\Core\Context\Context;
 use TYPO3\CMS\Core\EventDispatcher\NoopEventDispatcher;
 use TYPO3\CMS\Core\Http\ServerRequest;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
@@ -44,7 +42,6 @@ use TYPO3\CMS\Frontend\ContentObject\ScalableVectorGraphicsContentObject;
 use TYPO3\CMS\Frontend\ContentObject\TextContentObject;
 use TYPO3\CMS\Frontend\ContentObject\UserContentObject;
 use TYPO3\CMS\Frontend\ContentObject\UserInternalContentObject;
-use TYPO3\CMS\Frontend\Controller\TypoScriptFrontendController;
 use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
 
 class TypoScriptSettingsProcessorTest extends UnitTestCase
@@ -252,35 +249,37 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
     {
         parent::setUp();
         $GLOBALS['SIM_ACCESS_TIME'] = 1534278180;
-        $frontendControllerMock =
-            $this->getAccessibleMock(
-                TypoScriptFrontendController::class,
-                ['sL'],
-                [],
-                '',
-                false
-            );
-        $frontendControllerMock->_set('context', new Context());
-        $frontendControllerMock->config = [];
 
-        $cacheManagerMock = $this->getMockBuilder(CacheManager::class)->disableOriginalConstructor()->getMock();
-        GeneralUtility::setSingletonInstance(CacheManager::class, $cacheManagerMock);
+        //        $cacheManagerMock = $this->getMockBuilder(CacheManager::class)->disableOriginalConstructor()->getMock();
+        //        GeneralUtility::setSingletonInstance(CacheManager::class, $cacheManagerMock);
 
-        $this->contentObjectRenderer = $this->getAccessibleMock(
-            ContentObjectRenderer::class,
-            ['getResourceFactory', 'getEnvironmentVariable'],
-            [$frontendControllerMock]
-        );
+        $this->contentObjectRenderer = $this->getMockBuilder(
+            ContentObjectRenderer::class
+        )
+            ->disableOriginalConstructor()
+            ->getMock();
 
-        $logger = new NullLogger();
-        $this->contentObjectRenderer->setLogger($logger);
+        //        $logger = new NullLogger();
+        //        $this->contentObjectRenderer->setLogger($logger);
         $request = new ServerRequest();
         $this->contentObjectRenderer->setRequest($request);
 
         $contentObjectFactoryMock = $this->createContentObjectFactoryMock();
-        $cObj = $this->contentObjectRenderer;
+//        $frontendControllerMock =
+//            $this->getAccessibleMock(
+//                '\\TYPO3\\CMS\\Frontend\\Controller\\TypoScriptFrontendController',
+//                ['sL'],
+//                [],
+//                '',
+//                false
+//            );
+        $cObjMock = $this->createMock(
+            ContentObjectRenderer::class,
+            [],
+//            [$frontendControllerMock]
+        );
         foreach ($this->contentObjectMap as $name => $className) {
-            $contentObjectFactoryMock->addGetContentObjectCallback($name, $className, $request, $cObj);
+            $contentObjectFactoryMock->addGetContentObjectCallback($name, $className, $request, $cObjMock);
         }
         $container = new Container();
         $container->set(ContentObjectFactory::class, $contentObjectFactoryMock);
@@ -290,7 +289,7 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
         $this->contentObjectRenderer->start([], 'tt_content');
     }
 
-    private function createContentObjectFactoryMock(): ContentObjectFactory
+    private function createContentObjectFactoryMock()
     {
         return new class (new Container()) extends ContentObjectFactory {
             /**
