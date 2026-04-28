@@ -25,7 +25,7 @@ return Map::fromEntries(
                 ...[
                     new UriValue('https://cdn.jsdelivr.net/'),
                     new UriValue('https://code.jquery.com/'),
-                ]
+                ],
             ),
         ),
     ],
