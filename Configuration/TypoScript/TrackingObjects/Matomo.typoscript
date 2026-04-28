@@ -6,12 +6,12 @@ plugin.tx_cookieman.settings.trackingObjects {
         inject {
             insertData = 1
             value (
-                <script data-what="Matomo" src="{asset : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}?{date : U}"></script>
+                <script nonce="{request : nonce | value}" data-what="Matomo" src="{asset : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}?{date : U}"></script>
             )
         }
         # example:
 #        inject (
-#<script type="text/javascript">
+#<script nonce="{request : nonce | value}">
 #  var _paq = window._paq || [];
 #  _paq.push(['trackPageView']);
 #  _paq.push(['enableLinkTracking']);

@@ -7,12 +7,12 @@ plugin.tx_cookieman.settings.trackingObjects {
         inject {
             insertData = 1
             value (
-                <script data-what="FacebookPixel" src="{asset : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}?{date : U}"></script>
+                <script nonce="{request : nonce | value}" data-what="FacebookPixel" src="{asset : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}?{date : U}"></script>
             )
         }
         # example:
 #        inject (
-#<script>
+#<script nonce="{request : nonce | value}">
 #!function(f,b,e,v,n,t,s)
 #{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 #n.callMethod.apply(n,arguments):n.queue.push(arguments)};

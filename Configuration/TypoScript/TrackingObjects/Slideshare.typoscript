@@ -4,7 +4,7 @@ plugin.tx_cookieman.settings.trackingObjects {
         inject {
             insertData = 1
             value (
-                <script data-what="Slideshare" src="{asset : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}?{date : U}"></script>
+                <script nonce="{request : nonce | value}" data-what="Slideshare" src="{asset : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}?{date : U}"></script>
             )
         }
 # example:

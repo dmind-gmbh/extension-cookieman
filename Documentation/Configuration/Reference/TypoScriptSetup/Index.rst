@@ -166,7 +166,10 @@ trackingObjects.‹tracking-object-key›
               inject {
                   insertData = 1
                   value (
-                      <script data-what="Matomo" src="{asset : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}?{date : U}"></script>
+                      <script nonce="{request : nonce | value}"
+                         data-what="Matomo"
+                         src="{asset : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}?{date : U}"
+                      ></script>
                   )
               }
 

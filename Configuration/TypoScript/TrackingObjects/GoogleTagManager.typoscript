@@ -6,13 +6,13 @@ plugin.tx_cookieman.settings.trackingObjects {
         inject {
             insertData = 1
             value (
-                <script data-what="GoogleTagManager" src="{asset : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}?{date : U}"></script>
+                <script nonce="{request : nonce | value}" data-what="GoogleTagManager" src="{asset : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}?{date : U}"></script>
             )
         }
         # example:
 #        inject (
-#<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-#<script>
+#<script nonce="{request : nonce | value}" async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+#<script nonce="{request : nonce | value}">
 #  window.dataLayer = window.dataLayer || [];
 #  function gtag(){dataLayer.push(arguments);}
 #  gtag('js', new Date());

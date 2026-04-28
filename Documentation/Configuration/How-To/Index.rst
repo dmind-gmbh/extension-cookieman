@@ -48,20 +48,24 @@ Cookieman will inject the tracking codes after user consent with the
 
    plugin.tx_cookieman.settings.trackingObjects {
        Matomo {
-           inject (
-               <script type="text/javascript">
-                 var _paq = window._paq || [];
-                 _paq.push(['trackPageView']);
-                 _paq.push(['enableLinkTracking']);
-                 (function() {
-                   var u="//{$PIWIK_URL}/";
-                   _paq.push(['setTrackerUrl', u+'matomo.php']);
-                   _paq.push(['setSiteId', {$IDSITE}]);
-                   var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-                   g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-                 })();
-               </script>
-           )
+           inject = TEXT
+           inject {
+               insertData = 1
+               value = (
+                  <script nonce="{request : nonce | value}">
+                    var _paq = window._paq || [];
+                    _paq.push(['trackPageView']);
+                    _paq.push(['enableLinkTracking']);
+                    (function() {
+                      var u="//{$PIWIK_URL}/";
+                      _paq.push(['setTrackerUrl', u+'matomo.php']);
+                      _paq.push(['setSiteId', {$IDSITE}]);
+                      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+                    })();
+                  </script>
+              )
+           }
        }
    }
 
@@ -111,17 +115,20 @@ You can add selected TrackingObjects with two (or three) steps in TypoScript:
    # 3. Add the tracking code to the TrackingObject:
    plugin.tx_cookieman.settings.trackingObjects {
        GoogleAnalytics {
-           inject (
-           <script>
-               (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-               (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-               m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-               })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+           inject {
+               insertData = 1
+               value = (
+                 <script nonce="{request : nonce | value}">
+                     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-               ga('create', 'UA-XXXXX-Y', 'auto');
-               ga('send', 'pageview');
-           </script>
-           )
+                     ga('create', 'UA-XXXXX-Y', 'auto');
+                     ga('send', 'pageview');
+                 </script>
+               )
+           }
        }
    }
 
@@ -315,8 +322,12 @@ Cookieman allows to add external sources with the :ref:`inject <trackingObjects.
            inject {
                insertData = 1
                value (
-                   <script src="{asset : EXT:your_sitepackage/Resources/Public/JavaScript/matomo-trackingcode.js}?{date : U}"></script>
-                   <script src="https://your-matomo-server.com/path/to/matomo.js" async defer></script>
+                   <script nonce="{request : nonce | value}"
+                       src="{asset : EXT:your_sitepackage/Resources/Public/JavaScript/matomo-trackingcode.js}?{date : U}"
+                   ></script>
+                   <script nonce="{request : nonce | value}"
+                       src="https://your-matomo-server.com/path/to/matomo.js" async defer
+                   ></script>
                )
            }
        }
@@ -361,7 +372,3 @@ There are a few typoscript options to configure the cookie which is required by 
 .. code-block:: typoscript
 
    plugin.tx_cookieman.settings.cookie.domain = .example.com
-
-
-
-

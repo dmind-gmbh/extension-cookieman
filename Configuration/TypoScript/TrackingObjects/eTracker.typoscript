@@ -7,7 +7,7 @@ plugin.tx_cookieman.settings.trackingObjects {
         #    <!-- This material may not be reproduced, displayed, modified or distributed -->
         #    <!-- without the express prior written permission of the copyright holder. -->
         #    <!-- etracker tracklet 4.1 -->
-        #    <script type="text/javascript">
+        #    <script nonce="{request : nonce | value}">
         #    //var et_pagename = "";
         #    //var et_areas = "";
         #    //var et_url = "";
@@ -18,12 +18,12 @@ plugin.tx_cookieman.settings.trackingObjects {
         #    //var et_basket = "";
         #    //var et_cust = 0;
         #    </script>
-        #    <script id="_etLoader" type="text/javascript" charset="UTF-8" data-block-cookies="true" data-respect-dnt="true" data-secure-code="ZPKvl3" src="//static.etracker.com/code/e.js"></script>
+        #    <script id="_etLoader" nonce="{request : nonce | value}" charset="UTF-8" data-block-cookies="true" data-respect-dnt="true" data-secure-code="ZPKvl3" src="//static.etracker.com/code/e.js"></script>
         #    <!-- etracker tracklet 4.1 end -->
 
         # ... then gets called when cookie usage is consented:
         inject (
-            <script>
+            <script nonce="{request : nonce | value}">
                 _etracker.enableCookies()
             </script>
         )

@@ -25,21 +25,24 @@ This example configuration is based on the base TypoScript configuration
        trackingObjects {
            # extend the existing configuration for 'Matomo'
            Matomo {
-               inject >
-               inject (
-               <script type="text/javascript">
-                 var _paq = window._paq || [];
-                 _paq.push(['trackPageView']);
-                 _paq.push(['enableLinkTracking']);
-                 (function() {
-                   var u="//my-piwik-server.my-domain.com/";
-                   _paq.push(['setTrackerUrl', u+'matomo.php']);
-                   _paq.push(['setSiteId', 'my site ID']);
-                   var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-                   g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-                 })();
-               </script>
-               )
+               inject = TEXT
+               inject {
+                   insertData = 1
+                   value = (
+                     <script nonce="{request : nonce | value}">
+                       var _paq = window._paq || [];
+                       _paq.push(['trackPageView']);
+                       _paq.push(['enableLinkTracking']);
+                       (function() {
+                         var u="//my-piwik-server.my-domain.com/";
+                         _paq.push(['setTrackerUrl', u+'matomo.php']);
+                         _paq.push(['setSiteId', 'my site ID']);
+                         var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                         g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+                       })();
+                     </script>
+                  )
+               }
            }
 
            # add my own custom tracking solution
@@ -50,7 +53,7 @@ This example configuration is based on the base TypoScript configuration
                    insertData = 1
                    value = (
                        <div>Here be dragons <img src="{asset : EXT:my_ext/Resources/Public/Image/MyImage.png}?{date : U}"></div>
-                       <script>alert('oh la la!')</script>
+                       <script nonce="{request : nonce | value}">alert('oh la la!')</script>
                    )
                }
                show {
