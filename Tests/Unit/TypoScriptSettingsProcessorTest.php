@@ -20,6 +20,7 @@ use Psr\Http\Message\ServerRequestInterface;
 use Symfony\Component\DependencyInjection\Container;
 use TYPO3\CMS\Core\EventDispatcher\NoopEventDispatcher;
 use TYPO3\CMS\Core\Http\ServerRequest;
+use TYPO3\CMS\Core\Http\Uri;
 use TYPO3\CMS\Core\SystemResource\Publishing\SystemResourcePublisherInterface;
 use TYPO3\CMS\Core\SystemResource\SystemResourceFactory;
 use TYPO3\CMS\Core\SystemResource\Type\PublicResourceInterface;
@@ -306,9 +307,9 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
             $resource->method('__toString')->willReturn($key);
             return $resource;
         });
-        $systemResourcePublisher->method('generateUri')->willReturnCallback(function($resource) {
-            return new \TYPO3\CMS\Core\Http\Uri($resource->getResourceIdentifier());
-        });
+        $systemResourcePublisher->method('generateUri')->willReturnCallback(
+            fn($resource) => new Uri($resource->getResourceIdentifier())
+        );
 
         $request = new ServerRequest();
         $pageInformation = new PageInformation();
@@ -349,11 +350,11 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
 
         // Stub insertData for common patterns
         $this->contentObjectRenderer->method('insertData')->willReturnCallback(
-            function(string $content) {
-                return preg_replace_callback('/\{([^}]+)\}/', function($matches) {
-                    return $this->contentObjectRenderer->getData($matches[1]);
-                }, $content);
-            },
+            fn(string $content) => preg_replace_callback(
+                '/\{([^}]+)\}/',
+                fn($matches) => $this->contentObjectRenderer->getData($matches[1]),
+                $content
+            ),
         );
 
         // Stub wrap for general use
@@ -391,7 +392,7 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
                     $this->contentObjectRenderer->getRequest(),
                     $this->contentObjectRenderer,
                 );
-                if ($contentObject) {
+                if ($contentObject instanceof AbstractContentObject) {
                     return $contentObject->render($conf);
                 }
                 return '';
