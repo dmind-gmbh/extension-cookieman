@@ -21,6 +21,7 @@ use Symfony\Component\DependencyInjection\Container;
 use TYPO3\CMS\Core\Cache\CacheManager;
 use TYPO3\CMS\Core\EventDispatcher\NoopEventDispatcher;
 use TYPO3\CMS\Core\Http\ServerRequest;
+use TYPO3\CMS\Core\Utility\ArrayUtility;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Extbase\Configuration\ConfigurationManager;
 use TYPO3\CMS\Frontend\ContentObject\AbstractContentObject;
@@ -42,12 +43,16 @@ use TYPO3\CMS\Frontend\ContentObject\ScalableVectorGraphicsContentObject;
 use TYPO3\CMS\Frontend\ContentObject\TextContentObject;
 use TYPO3\CMS\Frontend\ContentObject\UserContentObject;
 use TYPO3\CMS\Frontend\ContentObject\UserInternalContentObject;
+use TYPO3\CMS\Core\Site\Entity\Site;
+use TYPO3\CMS\Core\Site\Entity\SiteLanguage;
+use TYPO3\CMS\Frontend\Page\PageInformation;
 use TYPO3\TestingFramework\Core\Unit\UnitTestCase;
 
 class TypoScriptSettingsProcessorTest extends UnitTestCase
 {
     protected bool $resetSingletonInstances = true;
     protected ContentObjectRenderer|MockObject $contentObjectRenderer;
+    protected ContentObjectFactory $contentObjectFactory;
     /**
      * Default content object name -> class name map, shipped with TYPO3 CMS
      */
@@ -74,6 +79,7 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
 
     public static function settingsProvider(): array
     {
+        $year = date('Y');
         return [
             [
                 [
@@ -195,7 +201,7 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
                                         'provider' => 'Website',
                                     ],
                                 ],
-                                'inject' => 'year:' . date('Y'),
+                                'inject' => 'year:' . $year,
                             ],
                             'another' => [ // unused
                                 'show' => [
@@ -206,7 +212,7 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
                                         'provider' => 'Website',
                                     ],
                                 ],
-                                'inject' => 'outer COA:2025;inner COA:2025,fileadmin/file.ext',
+                                'inject' => 'outer COA:' . $year . ';inner COA:' . $year . ',fileadmin/file.ext',
                             ],
                         ],
                     ],
@@ -230,7 +236,26 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
             $pluginConfiguration
         );
 
-        $subject = new TypoScriptSettingsProcessor($configurationManager);
+        /** @var TypoScriptSettingsProcessor|MockObject $subject */
+        $subject = $this->getMockBuilder(TypoScriptSettingsProcessor::class)
+            ->setConstructorArgs([$configurationManager])
+            ->onlyMethods([])
+            ->getMock();
+
+        $this->contentObjectRenderer->method('stdWrapValue')->willReturnCallback(
+            function ($key, $config, $defaultValue = '') {
+                if (isset($config[$key])) {
+                    if (!isset($config[$key . '.'])) {
+                        return $config[$key];
+                    }
+                } elseif (isset($config[$key . '.'])) {
+                    $config[$key] = '';
+                } else {
+                    return $defaultValue;
+                }
+                return $this->contentObjectRenderer->stdWrap($config[$key], $config[$key . '.'] ?? []);
+            }
+        );
 
         $result = $subject->process(
             $this->contentObjectRenderer,
@@ -249,9 +274,7 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
     {
         parent::setUp();
         $GLOBALS['SIM_ACCESS_TIME'] = 1534278180;
-
-        //        $cacheManagerMock = $this->getMockBuilder(CacheManager::class)->disableOriginalConstructor()->getMock();
-        //        GeneralUtility::setSingletonInstance(CacheManager::class, $cacheManagerMock);
+        $GLOBALS['EXEC_TIME'] = 1534278180;
 
         $this->contentObjectRenderer = $this->getMockBuilder(
             ContentObjectRenderer::class
@@ -259,37 +282,107 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
             ->disableOriginalConstructor()
             ->getMock();
 
-        //        $logger = new NullLogger();
-        //        $this->contentObjectRenderer->setLogger($logger);
+        $ref = new \ReflectionProperty(ContentObjectRenderer::class, 'eventDispatcher');
+        $ref->setValue($this->contentObjectRenderer, new NoopEventDispatcher());
+
         $request = new ServerRequest();
+        $pageInformation = new PageInformation();
+        $pageInformation->setId(1);
+        $pageInformation->setPageRecord(['uid' => 1]);
+        $request = $request->withAttribute('frontend.page.information', $pageInformation);
+        $this->contentObjectRenderer->method('getRequest')->willReturn($request);
         $this->contentObjectRenderer->setRequest($request);
 
-        $contentObjectFactoryMock = $this->createContentObjectFactoryMock();
-//        $frontendControllerMock =
-//            $this->getAccessibleMock(
-//                '\\TYPO3\\CMS\\Frontend\\Controller\\TypoScriptFrontendController',
-//                ['sL'],
-//                [],
-//                '',
-//                false
-//            );
-        $cObjMock = $this->createMock(
-            ContentObjectRenderer::class,
-            [],
-//            [$frontendControllerMock]
-        );
+        $this->contentObjectFactory = $this->createContentObjectFactoryMock();
+
+        $cObjMock = $this->contentObjectRenderer;
         foreach ($this->contentObjectMap as $name => $className) {
-            $contentObjectFactoryMock->addGetContentObjectCallback($name, $className, $request, $cObjMock);
+            $this->contentObjectFactory->addGetContentObjectCallback($name, $className, $request, $cObjMock);
         }
+
+        // AI has slopped me some hardcore stubbing here. Would be nice to somehow just use
+        // ContentObjectRenderer->cObjGetSingle() here somehow to test if the TypoScript config gets really
+        // rendered as we expect it.
+
+        // Stub cObjGet for COA
+        $this->contentObjectRenderer->method('cObjGet')->willReturnCallback(
+            function (array $setup) {
+                $content = '';
+                foreach (ArrayUtility::filterAndSortByNumericKeys($setup) as $key) {
+                    $content .= $this->contentObjectRenderer->cObjGetSingle((string)$setup[$key], $setup[$key . '.'] ?? []);
+                }
+                return $content;
+            }
+        );
+
+        // Stub getData using the real upstream method
+        $this->contentObjectRenderer->method('getData')->willReturnCallback(
+            function (string $key, $fieldArray = null) {
+                $ref = new \ReflectionMethod(ContentObjectRenderer::class, 'getData');
+                return $ref->invoke($this->contentObjectRenderer, $key, $fieldArray);
+            }
+        );
+
+        // Stub insertData for common patterns
+        $this->contentObjectRenderer->method('insertData')->willReturnCallback(
+            function (string $content) {
+                return preg_replace_callback('/\{([^}]+)\}/', function($matches) {
+                    return $this->contentObjectRenderer->getData($matches[1]);
+                }, $content);
+            }
+        );
+
+        // Stub wrap for general use
+        $this->contentObjectRenderer->method('wrap')->willReturnCallback(
+            function ($content, $wrap) {
+                if ($wrap) {
+                    $parts = explode('|', (string)$wrap);
+                    return ($parts[0] ?? '') . $content . ($parts[1] ?? '');
+                }
+                return (string)$content;
+            }
+        );
+
+        // Stub stdWrap more generally
+        $this->contentObjectRenderer->method('stdWrap')->willReturnCallback(
+            function ($content, $conf) {
+                $content = (string)$content;
+                if (isset($conf['data'])) {
+                    $content = $this->contentObjectRenderer->getData($conf['data']);
+                }
+                if ($conf['insertData'] ?? false) {
+                    $content = $this->contentObjectRenderer->insertData($content);
+                }
+                if (isset($conf['wrap'])) {
+                    $content = $this->contentObjectRenderer->wrap($content, $conf['wrap']);
+                }
+                return (string)$content;
+            }
+        );
+
+        $this->contentObjectRenderer->method('cObjGetSingle')->willReturnCallback(
+            function (string $name, array $conf) {
+                $contentObject = $this->contentObjectFactory->getContentObject(
+                    $name,
+                    $this->contentObjectRenderer->getRequest(),
+                    $this->contentObjectRenderer
+                );
+                if ($contentObject) {
+                    return $contentObject->render($conf);
+                }
+                return '';
+            }
+        );
+
         $container = new Container();
-        $container->set(ContentObjectFactory::class, $contentObjectFactoryMock);
+        $container->set(ContentObjectFactory::class, $this->contentObjectFactory);
         $container->set(EventDispatcherInterface::class, new NoopEventDispatcher());
         GeneralUtility::setContainer($container);
 
         $this->contentObjectRenderer->start([], 'tt_content');
     }
 
-    private function createContentObjectFactoryMock()
+    private function createContentObjectFactoryMock(): ContentObjectFactory
     {
         return new class (new Container()) extends ContentObjectFactory {
             /**
