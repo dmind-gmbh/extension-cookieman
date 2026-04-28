@@ -156,7 +156,7 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
                                     ],
                                     20 => [
                                         '_typoScriptNodeValue' => 'TEXT',
-                                        'data' => 'path : fileadmin/file.ext',
+                                        'data' => 'asset : fileadmin/file.ext',
                                         'wrap' => ',|',
                                     ],
                                 ],

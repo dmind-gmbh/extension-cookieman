@@ -4,7 +4,7 @@ plugin.tx_cookieman.settings.trackingObjects {
         inject {
             insertData = 1
             value (
-                <script data-what="YouTube" src="/{path : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}"></script>
+                <script data-what="YouTube" src="{asset : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}?{date : U}"></script>
             )
         }
 # example:

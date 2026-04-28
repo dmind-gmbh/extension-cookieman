@@ -315,7 +315,7 @@ Cookieman allows to add external sources with the :ref:`inject <trackingObjects.
            inject {
                insertData = 1
                value (
-                   <script src="/{path : EXT:your_sitepackage/Resources/Public/JavaScript/matomo-trackingcode.js}?{date : U}"></script>
+                   <script src="{asset : EXT:your_sitepackage/Resources/Public/JavaScript/matomo-trackingcode.js}?{date : U}"></script>
                    <script src="https://your-matomo-server.com/path/to/matomo.js" async defer></script>
                )
            }

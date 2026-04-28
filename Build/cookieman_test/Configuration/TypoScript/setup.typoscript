@@ -18,11 +18,11 @@ plugin.tx_cookieman.settings {
                 value (
                     <script nonce="{request : nonce | value}"
                         data-what="TestTrackingObject (1st script)"
-                        src="/{path : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}"
+                        src="{asset : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}?{date : U}"
                     ></script>
                     <script nonce="{request : nonce | value}"
                         data-what="TestTrackingObject (2nd script)"
-                        src="/{path : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}"
+                        src="{asset : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}?{date : U}"
                     ></script>
                 )
             }
