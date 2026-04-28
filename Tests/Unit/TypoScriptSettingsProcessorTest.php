@@ -308,7 +308,7 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
             return $resource;
         });
         $systemResourcePublisher->method('generateUri')->willReturnCallback(
-            fn($resource) => new Uri($resource->getResourceIdentifier())
+            fn($resource) => new Uri($resource->getResourceIdentifier()),
         );
 
         $request = new ServerRequest();
@@ -353,7 +353,7 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
             fn(string $content) => preg_replace_callback(
                 '/\{([^}]+)\}/',
                 fn($matches) => $this->contentObjectRenderer->getData($matches[1]),
-                $content
+                $content,
             ),
         );
 
