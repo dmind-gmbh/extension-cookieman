@@ -27,6 +27,9 @@ hooks:
                 --site-name="$DDEV_PROJECT" \
                 --force
 
+              # Lamentably, the base does not get inserted correctly (--site-base-url is ignored)
+              sed -i "s#https://localhost/#$DDEV_PRIMARY_URL#" config/sites/main/config.yaml
+
               mysql <<< 'INSERT INTO pages SET uid=2, pid=1, title="Imprint", slug="/imprint"'
               mysql <<< 'INSERT INTO pages SET uid=3, pid=1, title="Privacy Policy", slug="/privacy"'
             fi
