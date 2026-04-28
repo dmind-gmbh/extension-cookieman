@@ -91,18 +91,14 @@ This example configuration is based on the base TypoScript configuration
    }
 
 
-Make the consent revokable
-==========================
+Allow users to adjust their consent
+===================================
 
 It is recommended to include a snippet like the following on your data privacy statement page
 to allow your users to adjust their cookie preferences:
 
 .. code-block:: HTML
 
-   <button onclick="cookieman.show()">
+   <button data-cookieman-show>
      Adjust your cookie preferences
    </button>
-
-.. attention::
-
-   If your website uses a strict `Content-Security-Policy` (see `Mozilla Developer Network <https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP>`__) the onclick= needs to be replaced with registering a click-handler from an external <script> (also see :ref:`how cookieman supports Content-Security-Policy <content-security-policy>`).
