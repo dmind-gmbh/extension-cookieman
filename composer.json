@@ -74,6 +74,9 @@
             "dev-master": "2.9.x-dev"
         },
         "typo3/cms": {
+            "Package": {
+                "providesPackages": []
+            },
             "extension-key": "cookieman",
             "web-dir": ".build/public"
         }
