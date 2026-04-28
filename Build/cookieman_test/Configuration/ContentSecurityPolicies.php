@@ -22,7 +22,10 @@ return Map::fromEntries(
             new Mutation(
                 MutationMode::Extend,
                 Directive::ScriptSrc,
-                new UriValue('https://cdn.jsdelivr.net/'),
+                ...[
+                    new UriValue('https://cdn.jsdelivr.net/'),
+                    new UriValue('https://code.jquery.com/'),
+                ]
             ),
         ),
     ],
