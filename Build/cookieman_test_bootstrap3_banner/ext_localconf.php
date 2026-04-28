@@ -8,12 +8,12 @@ defined('TYPO3') || die();
     ExtensionManagementUtility::addTypoScriptConstants(
         <<<TYPOSCRIPT
         @import 'EXT:cookieman_test_bootstrap3_banner/Configuration/TypoScript/constants.typoscript'
-        TYPOSCRIPT
+        TYPOSCRIPT,
     );
 
     ExtensionManagementUtility::addTypoScriptSetup(
         <<<TYPOSCRIPT
         @import 'EXT:cookieman_test_bootstrap3_banner/Configuration/TypoScript/setup.typoscript'
-        TYPOSCRIPT
+        TYPOSCRIPT,
     );
 })();
