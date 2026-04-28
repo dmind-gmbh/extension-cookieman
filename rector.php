@@ -7,8 +7,8 @@ use Rector\PostRector\Rector\NameImportingPostRector;
 use Rector\Set\ValueObject\LevelSetList;
 use Rector\Set\ValueObject\SetList;
 use Rector\TypeDeclaration\Rector\ClassMethod\AddVoidReturnTypeWhereNoReturnRector;
+use Rector\TypeDeclaration\Rector\StmtsAwareInterface\SafeDeclareStrictTypesRector;
 use Rector\ValueObject\PhpVersion;
-use Ssch\TYPO3Rector\CodeQuality\General\ConvertImplicitVariablesToExplicitGlobalsRector;
 use Ssch\TYPO3Rector\CodeQuality\General\ExtEmConfRector;
 use Ssch\TYPO3Rector\Configuration\Typo3Option;
 use Ssch\TYPO3Rector\Set\Typo3LevelSetList;
@@ -54,6 +54,9 @@ return RectorConfig::configure()
         __DIR__ . '/**/Configuration/ExtensionBuilder/*',
         __DIR__ . '/config/system/settings.php',
         DateTimeAspectInsteadOfGlobalsExecTimeRector::class,
+        SafeDeclareStrictTypesRector::class => [
+            'ext_emconf.php',
+        ],
         NameImportingPostRector::class => [
             'ClassAliasMap.php',
         ],
