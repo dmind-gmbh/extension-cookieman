@@ -30,6 +30,7 @@
         "helhum/typo3-console": "^8.3",
         "phpunit/phpunit": "^11.5",
         "ssch/typo3-rector": "^3.8",
+        "typo3/cms-fluid-styled-content": "14.*.x-dev || ^14.0",
         "typo3/cms-frontend": "14.*.x-dev || ^14.0",
         "typo3/cms-install": "14.*.x-dev || ^14.0",
         "typo3/cms-tstemplate": "14.*.x-dev || ^14.0",
