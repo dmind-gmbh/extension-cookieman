@@ -3,14 +3,14 @@
 // using cookieman API
 console.log('cookieman_test: using onScriptLoaded() API')
 cookieman.onScriptLoaded(
-    'Crowdin',
+    'TestTrackingObject',
     0,
     function (trackingObjectKey, scriptId) {
         console.log('cookieman_test: callback onScriptLoaded() API', trackingObjectKey, scriptId)
     }
 )
 cookieman.onScriptLoaded(
-    'Crowdin',
+    'TestTrackingObject',
     1,
     function (trackingObjectKey, scriptId) {
         console.log('cookieman_test: callback onScriptLoaded() API', trackingObjectKey, scriptId)
@@ -30,7 +30,7 @@ setTimeout(
     function () {
         console.log('cookieman_test: using onScriptLoaded() API (after 2s)')
         cookieman.onScriptLoaded(
-            'Crowdin',
+            'TestTrackingObject',
             1,
             function (trackingObjectKey, scriptId) {
                 console.log('cookieman_test: callback onScriptLoaded() API (after 2s)', trackingObjectKey, scriptId)

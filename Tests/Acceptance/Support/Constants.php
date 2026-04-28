@@ -44,7 +44,7 @@ class Constants
     public const COOKIE_titleIn2ndGroup = '_gat';
 
     public const GROUP_keyTestgroup = 'testgroup';
-    public const TRACKINGOBJECT_inTestgroupWith2Scripts = 'Crowdin';
+    public const TRACKINGOBJECT_inTestgroupWith2Scripts = 'TestTrackingObject';
 
     public const WAITFOR_timeout = 5;
 }
