@@ -31,8 +31,8 @@ class JavaScriptApiCest
         $I->setCookie(
             Constants::COOKIENAME,
             $this->cookieValueForGroups(
-                [Constants::GROUP_keyMandatory, Constants::GROUP_keyTestgroup]
-            )
+                [Constants::GROUP_keyMandatory, Constants::GROUP_keyTestgroup],
+            ),
         );
         $I->reloadPage();
 
@@ -41,7 +41,7 @@ class JavaScriptApiCest
             $onScriptLoadedArgs = [Constants::TRACKINGOBJECT_inTestgroupWith2Scripts, $iScript];
             $I->executeJS(
                 Constants::JS_onScriptLoaded,
-                $onScriptLoadedArgs
+                $onScriptLoadedArgs,
             );
             $I->waitForText($onScriptLoadedArgs[0] . ':' . $onScriptLoadedArgs[1] . ' loaded');
         }

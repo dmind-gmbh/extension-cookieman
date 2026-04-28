@@ -23,7 +23,7 @@ class ShownTrackingObjectsViewHelper extends AbstractViewHelper
         $this->registerArgument(
             'group',
             'array',
-            'group configuration (settings.groups.‹group-key›)'
+            'group configuration (settings.groups.‹group-key›)',
         );
     }
 

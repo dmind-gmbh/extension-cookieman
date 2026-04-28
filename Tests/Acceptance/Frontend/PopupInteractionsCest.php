@@ -36,7 +36,7 @@ class PopupInteractionsCest
         $I->seeCookie(Constants::COOKIENAME);
         $I->assertEquals(
             Constants::GROUP_keyMandatory,
-            $I->grabCookie(Constants::COOKIENAME, ['path' => Constants::PATH_root])
+            $I->grabCookie(Constants::COOKIENAME, ['path' => Constants::PATH_root]),
         );
     }
 
@@ -59,7 +59,7 @@ class PopupInteractionsCest
         $I->seeCookie(Constants::COOKIENAME);
         $I->assertStringStartsWith(
             $this->cookieValueForGroups([Constants::GROUP_keyMandatory, Constants::GROUP_key2nd]),
-            $I->grabCookie(Constants::COOKIENAME, ['path' => Constants::PATH_root])
+            $I->grabCookie(Constants::COOKIENAME, ['path' => Constants::PATH_root]),
         );
     }
 
@@ -92,7 +92,7 @@ class PopupInteractionsCest
         $I->wait(3);
         $I->waitForElementVisible(
             Locator::contains('*', Constants::COOKIE_titleIn2ndGroup),
-            Constants::WAITFOR_timeout
+            Constants::WAITFOR_timeout,
         ); // a single row in the table
         $I->scrollIntoView('[name=' . Constants::GROUP_key2nd . ']');
         if (!$I->tryToCheckOption('[name=' . Constants::GROUP_key2nd . ']')) { // theme: *-modal
@@ -106,7 +106,7 @@ class PopupInteractionsCest
         $I->seeCookie(Constants::COOKIENAME);
         $I->assertEquals(
             $this->cookieValueForGroups([Constants::GROUP_keyMandatory, Constants::GROUP_key2nd]),
-            $I->grabCookie(Constants::COOKIENAME, ['path' => Constants::PATH_root])
+            $I->grabCookie(Constants::COOKIENAME, ['path' => Constants::PATH_root]),
         );
     }
 
@@ -121,8 +121,8 @@ class PopupInteractionsCest
         $I->setCookie(
             Constants::COOKIENAME,
             $this->cookieValueForGroups(
-                [Constants::GROUP_keyMandatory, Constants::GROUP_keyTestgroup]
-            )
+                [Constants::GROUP_keyMandatory, Constants::GROUP_keyTestgroup],
+            ),
         );
         $I->reloadPage();
 
@@ -131,7 +131,7 @@ class PopupInteractionsCest
             $onScriptLoadedArgs = [Constants::TRACKINGOBJECT_inTestgroupWith2Scripts, $iScript];
             $I->executeJS(
                 Constants::JS_onScriptLoaded,
-                $onScriptLoadedArgs
+                $onScriptLoadedArgs,
             );
             $I->waitForText($onScriptLoadedArgs[0] . ':' . $onScriptLoadedArgs[1] . ' loaded');
         }

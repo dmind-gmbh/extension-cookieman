@@ -36,6 +36,6 @@ if (getenv('IS_DDEV_PROJECT') == 'true') {
                 'devIPmask' => '*',
                 'displayErrors' => 1,
             ],
-        ]
+        ],
     );
 }

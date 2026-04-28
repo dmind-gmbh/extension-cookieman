@@ -114,7 +114,7 @@
             "@typo3:flush"
         ],
         "fix:cgl": [
-            "php-cs-fixer --config=.php-cs-fixer.php fix --using-cache=no"
+            "php-cs-fixer --config=.php-cs-fixer.dist.php fix --using-cache=no"
         ],
         "fix:rector": "@rector process",
         "rector": "rector @additional_args --ansi",

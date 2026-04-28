@@ -35,11 +35,11 @@ class TypoScriptSettingsProcessor implements DataProcessorInterface
         ContentObjectRenderer $cObj,
         array $contentObjectConfiguration,
         array $processorConfiguration,
-        array $processedData
+        array $processedData,
     ): array {
         $settings = $this->configurationManager->getConfiguration(
             ConfigurationManagerInterface::CONFIGURATION_TYPE_SETTINGS,
-            'cookieman'
+            'cookieman',
         );
 
         $settings = $this->sanitizeSettings($settings, $cObj);

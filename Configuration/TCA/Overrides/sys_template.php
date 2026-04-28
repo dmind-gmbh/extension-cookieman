@@ -18,11 +18,11 @@ defined('TYPO3') || die();
     ExtensionManagementUtility::addStaticFile(
         'cookieman',
         'Configuration/TypoScript',
-        'Cookieman'
+        'Cookieman',
     );
     ExtensionManagementUtility::addStaticFile(
         'cookieman',
         'Configuration/TypoScript/Example',
-        'Cookieman (Example configuration of groups and tracking objects)'
+        'Cookieman (Example configuration of groups and tracking objects)',
     );
 })();

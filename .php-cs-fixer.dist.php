@@ -23,9 +23,15 @@ return (new Config())
             ->in(__DIR__)
             // 💡 additional files, eg bin entry file
             // ->append([__DIR__.'/bin-entry-file'])
-            ->exclude(['Tests/Acceptance/Support/_generated/', '.build'])
-            ->notName(['ext_localconf.php', 'ext_tables.php', 'ext_emconf.php', 'additional.php'])
+            ->exclude(
+                [
+                    '.build/',
+                    '.ddev/',
+                    'Tests/Acceptance/Support/_generated/',
+                    'var/cache/',
+                ],
+            )
+            ->notName(['setttings.php'])
             // ->notPath([/* ... */])
-            ->ignoreDotFiles(false) // true by default in v3, false in v4 or future mode
-    // ->ignoreVCS(true) // true by default
+            ->ignoreDotFiles(false), // true by default in v3, false in v4 or future mode
     );
