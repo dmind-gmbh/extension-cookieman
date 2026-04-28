@@ -1,2 +1,50 @@
 page.5 = TEXT
 page.5.value = <button data-cookieman-show>Example button: Adjust your cookie preferences</button>
+
+@import 'EXT:cookieman/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:cookieman/Configuration/TypoScript/Example/setup.typoscript'
+
+# subscribe to events
+page.includeJSFooter {
+    subscribe-events = EXT:cookieman_test/Resources/Public/Js/subscribe-events.js
+}
+
+plugin.tx_cookieman.settings {
+    trackingObjects {
+        TestTrackingObject {
+            inject = TEXT
+            inject {
+                insertData = 1
+                value (
+                    <script nonce="{request : nonce | value}"
+                        data-what="TestTrackingObject (1st script)"
+                        src="/{path : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}"
+                    ></script>
+                    <script nonce="{request : nonce | value}"
+                        data-what="TestTrackingObject (2nd script)"
+                        src="/{path : EXT:cookieman/Resources/Public/Js/Injects/example-inject.js}"
+                    ></script>
+                )
+            }
+            show {
+                TestTrackingObjectTableLine {
+                    duration =
+                    durationUnit = none
+                    type = script
+                    provider = CookiemanTests
+                }
+            }
+        }
+    }
+
+    groups {
+        testgroup {
+            trackingObjects {
+                0 = TestTrackingObject
+            }
+
+            respectDnt = 0
+            showDntMessage = 0
+        }
+    }
+}

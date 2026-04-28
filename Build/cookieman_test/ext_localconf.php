@@ -1,5 +1,7 @@
 <?php
 
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
 defined('TYPO3') || die();
 
 (static function() {
@@ -8,4 +10,16 @@ defined('TYPO3') || die();
         = 'EXT:cookieman_test/Resources/Private/Language/locallang_cookieman.xlf';
     $GLOBALS['TYPO3_CONF_VARS']['SYS']['locallangXMLOverride']['de']['EXT:cookieman/Resources/Private/Language/locallang.xlf'][]
         = 'EXT:cookieman_test/Resources/Private/Language/de.locallang_cookieman.xlf';
+
+    ExtensionManagementUtility::addTypoScriptConstants(
+        <<<TYPOSCRIPT
+        @import 'EXT:cookieman_test/Configuration/TypoScript/constants.typoscript'
+        TYPOSCRIPT
+    );
+
+    ExtensionManagementUtility::addTypoScriptSetup(
+        <<<TYPOSCRIPT
+        @import 'EXT:cookieman_test/Configuration/TypoScript/setup.typoscript'
+        TYPOSCRIPT
+    );
 })();
