@@ -17,7 +17,7 @@
     },
     "require": {
         "php": "^8.2",
-        "typo3/cms-core": "14.*.x-dev || ^14.0"
+        "typo3/cms-core": "14.*.x-dev || ^14.3"
     },
     "require-dev": {
         "codeception/codeception": "^5.2",
@@ -30,10 +30,10 @@
         "helhum/typo3-console": "^8.3",
         "phpunit/phpunit": "^11.5",
         "ssch/typo3-rector": "^3.14",
-        "typo3/cms-fluid-styled-content": "14.*.x-dev || ^14.0",
-        "typo3/cms-frontend": "14.*.x-dev || ^14.0",
-        "typo3/cms-install": "14.*.x-dev || ^14.0",
-        "typo3/cms-tstemplate": "14.*.x-dev || ^14.0",
+        "typo3/cms-fluid-styled-content": "14.*.x-dev || ^14.3",
+        "typo3/cms-frontend": "14.*.x-dev || ^14.3",
+        "typo3/cms-install": "14.*.x-dev || ^14.3",
+        "typo3/cms-tstemplate": "14.*.x-dev || ^14.3",
         "typo3/coding-standards": "^0.8.0",
         "typo3/tailor": "^1.7",
         "typo3/testing-framework": "^9.5"

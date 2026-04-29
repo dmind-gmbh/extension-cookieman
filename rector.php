@@ -46,7 +46,7 @@ return RectorConfig::configure()
     ])
     ->withConfiguredRule(ExtEmConfRector::class, [
         ExtEmConfRector::PHP_VERSION_CONSTRAINT => '8.2.0-8.5.99',
-        ExtEmConfRector::TYPO3_VERSION_CONSTRAINT => '14.0.0-14.9.99',
+        ExtEmConfRector::TYPO3_VERSION_CONSTRAINT => '14.3.0-14.9.99',
         ExtEmConfRector::ADDITIONAL_VALUES_TO_BE_REMOVED => [],
     ])
     ->withSkip([
