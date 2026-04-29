@@ -11,7 +11,8 @@
 .gitattributes export-ignore
 .crowdin.yaml export-ignore
 .gitignore export-ignore
-.php_cs.dist export-ignore
+.php-cs-fixer.dist.php export-ignore
+rector.php export-ignore
 
 # Build
 package.json export-ignore
