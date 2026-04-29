@@ -4,16 +4,19 @@
     "license": "GPL-2.0-or-later",
     "description": "",
     "scripts": {
-        "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "watch": "npm run dev -- --watch",
-        "prod": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "watchProd": "npm run prod -- --watch"
+        "dev": "mix",
+        "watch": "mix watch",
+        "prod": "mix --production",
+        "watchProd": "mix watch -- --env production"
     },
     "keywords": [],
     "devDependencies": {
-        "cross-env": "^7.0.3",
         "js-cookie": "^3.0.5",
-        "laravel-mix": "^6.0.25"
+        "laravel-mix": "^6.0.49"
+    },
+    "resolutions": {
+        "webpack-dev-server": "^5.2.1",
+        "uuid": "^14.0.0"
     },
     "dependencies": {}
 }
