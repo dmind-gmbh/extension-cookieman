@@ -7,9 +7,6 @@
 Links
 =====
 
-:Demo:
-   http://cookieman.d-mind.de/
-
 :TYPO3 extension repository:
    https://extensions.typo3.org/extension/cookieman
 

@@ -97,18 +97,6 @@ Compatibility
    (no inline scripts are needed)
 
 
-.. _demo:
-
-Demo
-====
-
-You can click around the included demo themes `here <http://cookieman.d-mind.de/>`__.
-Have a look at the JavaScript console to see when tracking gets enabled.
-
-You can also try out the `"Do-not-track" setting of your browser <https://en.wikipedia.org/wiki/Do_Not_Track>`__
-which triggers a message inside the popup (in the "marketing" group) when enabled.
-
-
 .. _screenshots:
 
 Screenshots
