@@ -10,7 +10,7 @@ labels:
 ## Prerequisites
 
 * [ ] I can reproduce the problem on TYPO3 version: ___
-* [ ] I can you reproduce the problem on TYPO3 master
+* [ ] I can reproduce the problem on TYPO3 master
 
 ## Description
 
