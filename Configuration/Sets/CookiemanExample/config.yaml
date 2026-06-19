@@ -1,0 +1,4 @@
+name: dmind/cookieman-example
+label: 'Cookieman (Example configuration of groups and tracking objects)'
+dependencies:
+  - dmind/cookieman

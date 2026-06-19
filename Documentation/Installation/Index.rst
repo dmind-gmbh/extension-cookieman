@@ -51,11 +51,56 @@ Installation
    #. **With composer**: Use `composer req dmind/cookieman`.
       This will load a compatible version available from `Packagist <https://packagist.org/packages/dmind/cookieman>`__.
 
-#. **Integration:** Include the static TypoScript "Cookieman" in your root template
-   or reference the necessary files in your site package.
-   This will get you a group `mandatory` with the tracking object `CookieConsent`.
+#. **Integration:** Choose one of the two equivalent approaches:
 
-   **For evaluation purposes:** Include the static TypoScript "Cookieman (Example configuration of groups and tracking objects)"
-   to see a full example with multiple groups and tracking objects.
+   **Option A – Site set (recommended for TYPO3 ≥ 13)**
+
+   Add the site set ``dmind/cookieman`` to your site configuration
+   (``config/sites/<your-site>/config.yaml``):
+
+   .. code-block:: yaml
+
+      sets:
+        - dmind/cookieman
+
+   For evaluation purposes, also add the example set:
+
+   .. code-block:: yaml
+
+      sets:
+        - dmind/cookieman
+        - dmind/cookieman-example
+
+   **Option B – @import in your own TypoScript**
+
+   Import the extension's TypoScript files directly from your site package's
+   setup file:
+
+   .. code-block:: typoscript
+
+      @import 'EXT:cookieman/Configuration/TypoScript/constants.typoscript'
+      @import 'EXT:cookieman/Configuration/TypoScript/setup.typoscript'
+
+   For evaluation purposes, also import the example configuration:
+
+   .. code-block:: typoscript
+
+      @import 'EXT:cookieman/Configuration/TypoScript/Example/setup.typoscript'
+
+   **Option C – Static TypoScript (classic approach)**
+
+   .. note::
+
+      We do not recommend this approach. TypoScript stored in ``sys_template`` database records
+      is not on the file system and therefore not under version control, which makes updates and
+      refactoring significantly harder to manage. Prefer Option A or B instead.
+
+   Include the static TypoScript "Cookieman" in your root template
+   or reference the necessary files in your site package.
+
+   For evaluation purposes, also include
+   "Cookieman (Example configuration of groups and tracking objects)".
+
+   All three options give you a group ``mandatory`` with the tracking object ``CookieConsent``.
 
 #. **Configure the extension** with TypoScript constants and setup (see :ref:`configuration`).
