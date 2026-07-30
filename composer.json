@@ -1,6 +1,6 @@
 {
     "name": "dmind/cookieman",
-    "description": "Provides a user consent popup. It asks for approval to include tracking objects (cookies, images or any HTML) and includes the objects when consented. It also removes cookies after the consent has been revoked.",
+    "description": "Cookieman - Provides a user consent popup. It asks for approval to include tracking objects (cookies, images or any HTML) and includes the objects when consented. It also removes cookies after the consent has been revoked.",
     "license": [
         "GPL-2.0-or-later"
     ],
