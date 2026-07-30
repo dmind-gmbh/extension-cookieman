@@ -70,12 +70,9 @@
         "vendor-dir": ".build/vendor"
     },
     "extra": {
-        "branch-alias": {
-            "dev-master": "2.9.x-dev"
-        },
         "typo3/cms": {
             "Package": {
-                "providesPackages": []
+                "providesPackages": {}
             },
             "extension-key": "cookieman",
             "web-dir": ".build/public"
