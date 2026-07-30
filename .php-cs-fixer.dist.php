@@ -27,6 +27,8 @@ return (new Config())
                 [
                     '.build/',
                     '.ddev/',
+                    'config/',
+                    'Build/',
                     'Tests/Acceptance/Support/_generated/',
                     'var/cache/',
                 ],
