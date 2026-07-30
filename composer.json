@@ -80,14 +80,14 @@
     },
     "scripts": {
         "build": [
-            "@build:prepare",
+            "@build:nodejs-install",
             "@build:prod"
         ],
-        "build:prepare": [
+        "build:nodejs-install": [
             "yarn install --save-dev --cwd=Build/"
         ],
         "build:prod": [
-            "yarn --cwd=Build/ run prod"
+            "yarn --cwd=Build/ run build"
         ],
         "cookieman:bootstrap3-banner": [
             "composer rem --dev 'dmind/cookieman-test-*'",
@@ -121,6 +121,7 @@
         "rector": "rector @additional_args --ansi",
         "test": [
             "@test:cgl",
+            "@test:js:lint",
             "@test:unit",
             "@test:acceptance"
         ],
@@ -137,6 +138,9 @@
             "php-cs-fixer fix -v --diff --using-cache=no --dry-run"
         ],
         "test:composer:normalize": "@composer normalize --dry-run",
+        "test:js:lint": [
+            "yarn --cwd=Build/ run lint"
+        ],
         "test:rector": "@rector process --dry-run",
         "test:unit": [
             "@putenv XDEBUG_MODE=coverage",
@@ -145,6 +149,7 @@
         "tests-for:ci": [
             "@test:cgl",
             "@test:composer:normalize",
+            "@test:js:lint",
             "@test:rector",
             "@test:unit"
         ],

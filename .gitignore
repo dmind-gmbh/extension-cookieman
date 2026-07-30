@@ -9,13 +9,11 @@
 /Build/yarn-error.log
 /Build/.phpunit.*
 /Build/node_modules/
-/Build/mix-manifest.json
 /Build/testing-docker/.env
 /Build/AcceptanceReports
 /Tests/Acceptance/Support/_generated/
 /temp-*/
 /Documentation-GENERATED-temp/
-/Resources/Public/Js/mix-manifest.json
 
 # TYPO3
 /.build/

@@ -3,20 +3,26 @@
     "author": "",
     "license": "GPL-2.0-or-later",
     "description": "",
+    "type": "module",
     "scripts": {
-        "dev": "mix",
-        "watch": "mix watch",
-        "prod": "mix --production",
-        "watchProd": "mix watch -- --env production"
+        "build": "node build.mjs",
+        "watch": "node build.mjs --watch",
+        "lint": "cd .. && eslint --config Build/eslint.config.mjs \"Resources/Public/**/*.{js,ts}\" && node Build/check-types.mjs"
     },
     "keywords": [],
     "devDependencies": {
+        "@eslint/js": "^10.0.1",
+        "browserslist": "^4.28.7",
+        "browserslist-to-esbuild": "^2.1.1",
+        "chokidar": "^5.0.0",
+        "eslint": "^10.8.0",
+        "globals": "^17.8.0",
         "js-cookie": "^3.0.5",
-        "laravel-mix": "^6.0.49"
-    },
-    "resolutions": {
-        "webpack-dev-server": "^5.2.1",
-        "uuid": "^14.0.0"
+        "lightningcss": "^1.33.0",
+        "sass": "^1.102.0",
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.65.0",
+        "vite": "^8.2.0"
     },
     "dependencies": {}
 }

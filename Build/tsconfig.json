@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "ES2017",
+        "lib": ["ES2017", "DOM"],
+        "allowJs": true,
+        "checkJs": false,
+        "strict": true,
+        "noEmit": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": ["../Resources/Public/**/*.ts", "../Resources/Public/**/*.js", "types/**/*.d.ts"]
+}

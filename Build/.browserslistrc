@@ -1,0 +1,6 @@
+# Conservative, maximum-compatibility target for the JS/CSS build (Vite/oxc/lightningcss).
+# "defaults" = "> 0.5%, last 2 versions, Firefox ESR, not dead" — broad, current-browser
+# coverage while automatically excluding abandoned browsers (incl. any residual IE).
+# IE 11 support was deliberately dropped (see commit 9586422); this floor intentionally
+# stays above it rather than reintroducing it.
+defaults

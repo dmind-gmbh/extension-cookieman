@@ -128,7 +128,7 @@ var cookieman = (function () {
             return
         }
 
-        if (target.dataset.hasOwnProperty('cookiemanShow')) {
+        if (Object.prototype.hasOwnProperty.call(target.dataset, 'cookiemanShow')) {
             cookieman.show()
         }
     }
@@ -297,8 +297,7 @@ var cookieman = (function () {
         if (oItem.type === 'cookie_http+html') {
             if (Object.prototype.hasOwnProperty.call(oItem, 'htmlCookieRemovalPattern') && oItem['htmlCookieRemovalPattern'] !== '') {
                 var regex,
-                    currentCookies = Cookies.get(),
-                    matches
+                    currentCookies = Cookies.get()
 
                 try {
                     //Put in try/catch in case user set malformed regex
