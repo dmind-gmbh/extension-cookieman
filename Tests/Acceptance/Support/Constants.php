@@ -37,6 +37,22 @@ class Constants
                 }
             );
         ";
+    public const JS_onConsented = "
+            cookieman.onConsented(
+                arguments[0],
+                function (groupKey) {
+                    document.body.append(groupKey + ' consented; ')
+                }
+            );
+        ";
+    public const JS_onConsentChanged = "
+            cookieman.onConsentChanged(
+                function (consenteds) {
+                    document.body.append('consentChanged:' + consenteds.join('|') + '; ')
+                }
+            );
+        ";
+    public const JS_consent = 'cookieman.consent(arguments[0])';
 
     public const GROUP_keyMandatory = 'mandatory';
 

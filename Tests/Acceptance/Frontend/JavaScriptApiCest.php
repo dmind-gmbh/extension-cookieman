@@ -48,6 +48,53 @@ class JavaScriptApiCest
     }
 
     /**
+     * @param AcceptanceTester $I
+     * @throws ModuleException
+     * @throws \Exception
+     */
+    public function onConsentedEventHandler(AcceptanceTester $I): void
+    {
+        $I->amOnPage(Constants::PATH_root);
+        $I->setCookie(
+            Constants::COOKIENAME,
+            $this->cookieValueForGroups([Constants::GROUP_keyMandatory]),
+        );
+        $I->reloadPage();
+
+        // group already consented -> callback fires immediately
+        $I->executeJS(Constants::JS_onConsented, [Constants::GROUP_keyMandatory]);
+        $I->waitForText(Constants::GROUP_keyMandatory . ' consented');
+
+        // group not yet consented -> callback waits until consent is granted
+        $I->executeJS(Constants::JS_onConsented, [Constants::GROUP_key2nd]);
+        $I->dontSee(Constants::GROUP_key2nd . ' consented');
+
+        $I->executeJS(Constants::JS_consent, [Constants::GROUP_key2nd]);
+        $I->waitForText(Constants::GROUP_key2nd . ' consented');
+    }
+
+    /**
+     * @param AcceptanceTester $I
+     * @throws ModuleException
+     * @throws \Exception
+     */
+    public function onConsentChangedEventHandler(AcceptanceTester $I): void
+    {
+        $I->amOnPage(Constants::PATH_root);
+        $I->setCookie(
+            Constants::COOKIENAME,
+            $this->cookieValueForGroups([Constants::GROUP_keyMandatory]),
+        );
+        $I->reloadPage();
+
+        $I->executeJS(Constants::JS_onConsentChanged);
+        $I->executeJS(Constants::JS_consent, [Constants::GROUP_key2nd]);
+        $I->waitForText(
+            'consentChanged:' . $this->cookieValueForGroups([Constants::GROUP_keyMandatory, Constants::GROUP_key2nd]),
+        );
+    }
+
+    /**
      * @param array $groupKeys
      * @return string
      */

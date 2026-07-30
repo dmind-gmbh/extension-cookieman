@@ -35,6 +35,11 @@ var cookieman = (function () {
             consented.join('|'),
 			params
         )
+
+        emit(
+            'consentChanged',
+            {detail: {consenteds: consentedSelectionsRespectDnt()}}
+        )
     }
 
     function setChecked(checkbox, state) {
@@ -473,6 +478,45 @@ var cookieman = (function () {
             } else { // already loaded
                 callback(trackingObjectKey, scriptId)
             }
+        },
+        /**
+         * Calls `callback` once consent for `groupKey` is given: immediately if it
+         * already is, or the next time it newly becomes so (e.g. accept-all, save,
+         * or `cookieman.consent()`). Revoking and re-granting consent later fires it
+         * again, since that's a new consent event.
+         *
+         * @api
+         * @param {string} groupKey
+         * @param {function} callback
+         */
+        onConsented: function (groupKey, callback) {
+            if (hasConsented(groupKey)) {
+                callback(groupKey)
+                return
+            }
+            var onConsentChangedOnce = function () {
+                if (hasConsented(groupKey)) {
+                    eventsEl.removeEventListener('consentChanged', onConsentChangedOnce)
+                    callback(groupKey)
+                }
+            }
+            eventsEl.addEventListener('consentChanged', onConsentChangedOnce)
+        },
+        /**
+         * Calls `callback` every time consent selections are saved (accept-all,
+         * accept-none, save, or `cookieman.consent()`), with the list of currently
+         * consented group keys (respecting Do Not Track).
+         *
+         * @api
+         * @param {function} callback
+         */
+        onConsentChanged: function (callback) {
+            eventsEl.addEventListener(
+                'consentChanged',
+                function (ev) {
+                    callback(ev.detail.consenteds)
+                }
+            )
         },
         /**
          * not part of the API

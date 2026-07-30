@@ -126,6 +126,59 @@ cookieman.onScriptLoaded(String trackingObjectKey, int scriptId, function callba
       )
 
 
+cookieman.onConsented(String groupKey, function callback)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
+
+cookieman.onConsented(String groupKey, function callback)
+   :sep:`|` :aspect:`Data type:` void
+   :sep:`|`
+
+   This is a hook to do things once consent for a given group has been given – an alternative to using a
+   trackingObject's :ref:`inject <trackingObjects.‹tracking-object-key›.inject>` section.
+
+   * `groupKey` is the settings.groups.‹group key› from TypoScript, e.g. 'marketing'.
+
+   * `callback` is a function reference. It receives `groupKey` (see example below).
+     The callback is called immediately if the group is already consented to. Otherwise, it is called the next
+     time consent is given (accept-all, save, or :js:`cookieman.consent()`). If consent is later revoked and given
+     again, the callback fires again.
+
+   Example:
+
+   .. code-block:: js
+
+      cookieman.onConsented(
+          'marketing',
+          function (groupKey) {
+              loadMyVideoEmbeds()
+          }
+      )
+
+cookieman.onConsentChanged(function callback)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
+
+cookieman.onConsentChanged(function callback)
+   :sep:`|` :aspect:`Data type:` void
+   :sep:`|`
+
+   This is a hook to react whenever the user's consent selections are saved (accept-all, accept-none, save, or
+   :js:`cookieman.consent()`) – useful if you'd rather listen for changes than poll `cookieman.hasConsented()`.
+
+   * `callback` is a function reference. It receives the array of currently consented group keys (same shape as
+     `cookieman.consenteds()`).
+
+   Example:
+
+   .. code-block:: js
+
+      cookieman.onConsentChanged(
+          function (consenteds) {
+              console.log('consent is now:', consenteds)
+          }
+      )
+
 .. tip::
 
    Cookieman also includes the (1kB) cookie library `JavaScript Cookie <https://github.com/js-cookie/js-cookie>`__
