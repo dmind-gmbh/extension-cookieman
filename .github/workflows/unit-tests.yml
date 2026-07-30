@@ -11,8 +11,30 @@ on:
       - '!l10n_*'
 
 jobs:
+  js-assets:
+    runs-on: ubuntu-26.04
+    steps:
+      - uses: actions/checkout@v6
+      - id: nodejs-version
+        run: echo "version=$(grep --only-matching --perl-regexp '^nodejs_version:\s*"\K[^"]+' .ddev/config.yaml)" >> "$GITHUB_OUTPUT"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ steps.nodejs-version.outputs.version }}
+          cache: yarn
+          cache-dependency-path: Build/yarn.lock
+      - run: yarn --cwd=Build/ install --frozen-lockfile
+      - run: yarn --cwd=Build/ run lint
+      - run: yarn --cwd=Build/ run build
+      - name: Verify committed build output is up to date
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "::error::Build output differs from what's committed. Run 'yarn --cwd=Build/ run build' locally and commit the result." >&2
+            git status --short
+            git diff
+            exit 1
+          fi
   unit-tests:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     strategy:
       fail-fast: false
       matrix:

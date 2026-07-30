@@ -149,7 +149,6 @@
         "tests-for:ci": [
             "@test:cgl",
             "@test:composer:normalize",
-            "@test:js:lint",
             "@test:rector",
             "@test:unit"
         ],
