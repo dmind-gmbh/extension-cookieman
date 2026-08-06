@@ -1,0 +1,25 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:comment><!--
+    The small placeholder that every page holds. cookieman loads the popup itself from
+    `data-cookieman-popup-url` when it needs it.
+
+    `data-cookieman-settings` only holds what cookieman needs before that: the consent
+    cookie, the groups and the `inject` code, so that the tracking objects of a user who
+    consented before start without a wait.
+
+    `data-cookieman-showonce` is the only value that differs between pages.
+    -->
+</f:comment>
+<f:spaceless>
+<div data-cookieman-stub
+     data-cookieman-showonce="{f:if(
+        condition:'{data.uid} != {settings.links.dataProtectionDeclarationPid}
+            && {data.uid} != {settings.links.imprintPid}',
+        then: 1,
+        else: 0
+     )}"
+     data-cookieman-popup-url="{popupUrl}"
+     data-cookieman-settings="{f:format.json(value: settingsForStub)}"
+></div>
+</f:spaceless>
+</html>

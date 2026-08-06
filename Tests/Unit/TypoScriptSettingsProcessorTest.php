@@ -230,6 +230,49 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
     #[Test]
     public function returnsSettings(array $pluginConfiguration, array $returnedSettings): void
     {
+        $result = $this->process($pluginConfiguration);
+
+        // only `settings`. `settingsForStub` and `popupUrl` have their own tests.
+        self::assertSame(
+            $returnedSettings['settings'],
+            $result['settings'],
+        );
+    }
+
+    /**
+     * The stub in the page only holds what cookieman needs before it loads the popup.
+     */
+    #[DataProvider('settingsProvider')]
+    #[Test]
+    public function returnsSettingsForStub(array $pluginConfiguration, array $returnedSettings): void
+    {
+        $result = $this->process($pluginConfiguration);
+        $settings = $returnedSettings['settings'];
+
+        self::assertSame(
+            ['cookie', 'consentConfigurationVersion', 'groups', 'trackingObjects'],
+            array_keys($result['settingsForStub']),
+        );
+        self::assertSame($settings['groups'], $result['settingsForStub']['groups']);
+
+        // of the tracking objects only `inject`, not the `show` that fills the table
+        foreach ($result['settingsForStub']['trackingObjects'] as $key => $trackingObject) {
+            self::assertSame(['inject'], array_keys($trackingObject));
+            self::assertSame($settings['trackingObjects'][$key]['inject'], $trackingObject['inject']);
+        }
+    }
+
+    #[DataProvider('settingsProvider')]
+    #[Test]
+    public function returnsPopupUrlWithAHashOfTheSettings(array $pluginConfiguration): void
+    {
+        $result = $this->process($pluginConfiguration);
+
+        self::assertMatchesRegularExpression('#^/\?consent=[0-9a-f]{10}$#', $result['popupUrl']);
+    }
+
+    protected function process(array $pluginConfiguration): array
+    {
         $configurationManager = $this->getMockBuilder(ConfigurationManager::class)
             ->disableOriginalConstructor()
             ->getMock();
@@ -258,16 +301,11 @@ class TypoScriptSettingsProcessorTest extends UnitTestCase
             },
         );
 
-        $result = $subject->process(
+        return $subject->process(
             $this->contentObjectRenderer,
             [],
             [],
             ['data' => []],
-        );
-
-        self::assertSame(
-            $returnedSettings,
-            $result,
         );
     }
 

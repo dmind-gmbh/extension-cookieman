@@ -11,6 +11,8 @@ declare(strict_types=1);
 
 namespace Dmind\Cookieman\DataProcessing;
 
+use Dmind\Cookieman\Middleware\PopupRoute;
+use TYPO3\CMS\Core\Site\Entity\SiteLanguage;
 use TYPO3\CMS\Extbase\Configuration\ConfigurationManager;
 use TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface;
 use TYPO3\CMS\Frontend\ContentObject\ContentObjectRenderer;
@@ -45,8 +47,53 @@ class TypoScriptSettingsProcessor implements DataProcessorInterface
         $settings = $this->sanitizeSettings($settings, $cObj);
 
         $processedData['settings'] = $settings;
+        $processedData['settingsForStub'] = $this->stubSettings($settings);
+        $processedData['popupUrl'] = $this->popupUrl($settings, $cObj);
 
         return $processedData;
+    }
+
+    /**
+     * The settings that cookieman needs before it loads the popup.
+     *
+     * They stay in the page, so that the tracking objects of a user who consented before
+     * start without a wait for the popup. Everything else only matters when the popup is
+     * open, @see \Dmind\Cookieman\Middleware\PopupRoute.
+     */
+    protected function stubSettings(array $settings): array
+    {
+        $stub = [
+            'cookie' => $settings['cookie'] ?? [],
+            'consentConfigurationVersion' => $settings['consentConfigurationVersion'] ?? '',
+            'groups' => $settings['groups'] ?? [],
+            'trackingObjects' => [],
+        ];
+
+        // `inject` only. `show` is a lot of data and only fills the table in the popup.
+        foreach (($settings['trackingObjects'] ?? []) as $trackingObjectKey => $trackingObject) {
+            if (!isset($trackingObject['inject'])) {
+                continue;
+            }
+            $stub['trackingObjects'][$trackingObjectKey] = ['inject' => $trackingObject['inject']];
+        }
+
+        return $stub;
+    }
+
+    /**
+     * URL of the popup on the root page of the site, in the language of the page.
+     *
+     * The value of the argument is a hash of the settings. The browser keeps the popup
+     * for a long time, and a changed hash makes it load the popup again.
+     */
+    protected function popupUrl(array $settings, ContentObjectRenderer $cObj): string
+    {
+        $hash = substr(md5(json_encode($settings, JSON_THROW_ON_ERROR)), 0, 10);
+
+        $language = $cObj->getRequest()->getAttribute('language');
+        $base = $language instanceof SiteLanguage ? $language->getBase()->getPath() : '/';
+
+        return rtrim($base, '/') . '/?' . PopupRoute::ARGUMENT . '=' . $hash;
     }
 
     /**

@@ -3,20 +3,21 @@
 (function () {
   "use strict";
   var showBackdrop = true,
-    showSettingsBtn = document.querySelector('[aria-controls="cookieman-settings"]'),
     modal = null
 
-  // show "save" after opening settings
-  if (showSettingsBtn) {
-    showSettingsBtn.addEventListener('click', function (ev) {
-      var saveBtn = document.querySelector(
-        '[data-cookieman-save]:not([data-cookieman-accept-all]):not([data-cookieman-accept-none])'
-      )
-      if (saveBtn) {
-        saveBtn.hidden = false
-      }
-    })
-  }
+  // show "save" after opening settings.
+  // delegated: cookieman puts the popup into the page later
+  document.addEventListener('click', function (ev) {
+    if (!ev.target || !ev.target.closest('[aria-controls="cookieman-settings"]')) {
+      return
+    }
+    var saveBtn = document.querySelector(
+      '[data-cookieman-save]:not([data-cookieman-accept-all]):not([data-cookieman-accept-none])'
+    )
+    if (saveBtn) {
+      saveBtn.hidden = false
+    }
+  })
 
   cookieman.show = function () {
     modal = new bootstrap.Modal(

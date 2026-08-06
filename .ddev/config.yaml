@@ -32,6 +32,14 @@ hooks:
 
               mysql <<< 'INSERT INTO pages SET uid=2, pid=1, title="Imprint", slug="/imprint"'
               mysql <<< 'INSERT INTO pages SET uid=3, pid=1, title="Privacy Policy", slug="/privacy"'
+              # a second language, to test that cookieman gives the labels of the language of the page
+              mysql <<< 'INSERT INTO pages SET uid=101, pid=0, sys_language_uid=1, l10n_parent=1, l10n_source=1, title="Startseite", slug="/"'
+              mysql <<< 'INSERT INTO pages SET uid=102, pid=1, sys_language_uid=1, l10n_parent=2, l10n_source=2, title="Impressum", slug="/imprint"'
+              mysql <<< 'INSERT INTO pages SET uid=103, pid=1, sys_language_uid=1, l10n_parent=3, l10n_source=3, title="Datenschutz", slug="/privacy"'
+              php Build/ddev/add-german-language.php
+              # the German labels of cookieman come from the translation server
+              .build/bin/typo3 configuration:set LANG/availableLocales '["de"]' --json
+              .build/bin/typo3 language:update de
             fi
 use_dns_when_possible: true
 composer_version: "2"

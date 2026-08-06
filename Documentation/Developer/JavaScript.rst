@@ -25,10 +25,23 @@ cookieman.show()
 .. rst-class:: dl-parameters
 
 cookieman.show()
-   :sep:`|` :aspect:`Data type:` void
+   :sep:`|` :aspect:`Data type:` Promise
    :sep:`|`
 
    Shows the confirmation modal.
+
+   The page only holds a small stub of cookieman. Thus this function first loads the
+   modal, and it gives a Promise that resolves when the modal is there. Since cookieman
+   5.0.0 it does not give `void` any more.
+
+   .. code-block:: javascript
+
+      cookieman.show().then(function () {
+          // the modal is in the page now
+      })
+
+   A theme assigns its own function to `cookieman.show`. Cookieman calls it after it
+   loaded the modal, so a theme does not need a change.
 
    You can also use the attribute `data-cookieman-show` on any element to show the modal when clicked.
 

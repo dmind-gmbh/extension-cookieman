@@ -7,14 +7,17 @@ var cookieman = (function () {
         // divides the consented groups from the consentConfigurationVersion in the cookie
         versionSeparator = '#',
         defaultConfigurationVersion = '1',
-        form = document.querySelector('[data-cookieman-form]'),
-        settingsEl = document.querySelector('[data-cookieman-settings]'),
-        eventsEl = settingsEl,
-        settings = JSON.parse(settingsEl.dataset.cookiemanSettings),
-        checkboxes = form.querySelectorAll('[type=checkbox][name]'),
-        saveButtons = document.querySelectorAll('[data-cookieman-save]'),
-        acceptAllButtons = document.querySelectorAll('[data-cookieman-accept-all]'),
-        acceptNoneButtons = document.querySelectorAll('[data-cookieman-accept-none]'),
+        // the placeholder in the page. It stays there, so it is a stable target for the
+        // event listeners that callers register before the popup is loaded.
+        stubEl = document.querySelector('[data-cookieman-stub]'),
+        eventsEl = stubEl,
+        // only the settings that we need before the popup is loaded. The popup brings the
+        // rest, @see mergeSettings().
+        settings = JSON.parse(stubEl.dataset.cookiemanSettings),
+        // everything below is empty until the popup is loaded, @see wirePopup()
+        form = null,
+        checkboxes = [],
+        popupPromise = null,
         injectedTrackingObjects = [],
         loadedTrackingObjectScripts = {}
 
@@ -49,12 +52,101 @@ var cookieman = (function () {
             }
         }
 
+        saveConsented(consented)
+    }
+
+    /**
+     * @param {string[]} consented group keys
+     */
+    function saveConsented(consented) {
         writeCookie(consented)
 
         emit(
             'consentChanged',
             {detail: {consenteds: consentedSelectionsRespectDnt()}}
         )
+    }
+
+    /**
+     * Loads the popup once and puts it into the page.
+     *
+     * The page only holds a small stub, so that it stays small and the browser can keep
+     * the popup for all pages of the site.
+     *
+     * @return {Promise} resolves when the popup is in the page and ready
+     */
+    function loadPopup() {
+        if (popupPromise !== null) {
+            return popupPromise
+        }
+
+        popupPromise = window.fetch(stubEl.dataset.cookiemanPopupUrl, {credentials: 'same-origin'})
+            .then(function (response) {
+                if (!response.ok) {
+                    throw new Error('cookieman: got ' + response.status + ' for the popup')
+                }
+                return response.text()
+            })
+            .then(function (html) {
+                var pseudo = document.createElement('div')
+                pseudo.innerHTML = html
+                while (pseudo.firstChild) {
+                    document.body.appendChild(pseudo.firstChild)
+                }
+                wirePopup()
+                emit('popupLoaded', {detail: {}})
+            })
+            .catch(function (error) {
+                // let a later call try again
+                popupPromise = null
+                console.error('cookieman: could not load the popup.', error)
+                throw error
+            })
+
+        return popupPromise
+    }
+
+    /**
+     * Takes the elements and the full settings of the popup that we just put into the page.
+     */
+    function wirePopup() {
+        form = document.querySelector('[data-cookieman-form]')
+        if (!form) {
+            console.error('cookieman: the popup holds no [data-cookieman-form].')
+            return
+        }
+        mergeSettings()
+
+        checkboxes = form.querySelectorAll('[type=checkbox][name]')
+        addClickHandlers(document.querySelectorAll('[data-cookieman-accept-all]'), onAcceptAllClick)
+        addClickHandlers(document.querySelectorAll('[data-cookieman-accept-none]'), onAcceptNoneClick)
+        addClickHandlers(document.querySelectorAll('[data-cookieman-save]'), onSaveClick)
+
+        loadCheckboxStates()
+        setDntTextIfEnabled()
+    }
+
+    /**
+     * The popup brings the settings that the stub leaves out, e.g. `show` of the tracking
+     * objects, which fills the table.
+     */
+    function mergeSettings() {
+        var popupSettingsEl = document.querySelector('[data-cookieman-settings]:not([data-cookieman-stub])')
+        if (!popupSettingsEl) {
+            return
+        }
+        var popupSettings = JSON.parse(popupSettingsEl.dataset.cookiemanSettings)
+        for (var key in popupSettings) {
+            if (Object.prototype.hasOwnProperty.call(popupSettings, key)) {
+                settings[key] = popupSettings[key]
+            }
+        }
+    }
+
+    function addClickHandlers(elements, handler) {
+        for (var _i = 0; _i < elements.length; _i++) {
+            elements[_i].addEventListener('click', handler)
+        }
     }
 
     function setChecked(checkbox, state) {
@@ -196,7 +288,7 @@ var cookieman = (function () {
 
     function loadCheckboxStates() {
         // do not change checkbox states if there are no saved settings yet
-        if (!hasCookie()) {
+        if (!hasCookie() || !form) {
             return
         }
         // keep the selections of the user, also if the configuration changed
@@ -456,26 +548,6 @@ var cookieman = (function () {
     }
 
     function init() {
-        // register handlers
-        for (var i = 0; i < acceptAllButtons.length; i++) {
-            acceptAllButtons[i].addEventListener(
-                'click',
-                onAcceptAllClick
-            )
-        }
-        for (i = 0; i < acceptNoneButtons.length; i++) {
-            acceptNoneButtons[i].addEventListener(
-                'click',
-                onAcceptNoneClick
-            )
-        }
-        for (i = 0; i < saveButtons.length; i++) {
-            saveButtons[i].addEventListener(
-                'click',
-                onSaveClick
-            )
-        }
-
         // Intercepts clicks on elements with `data-cookieman-show` attribute
         // even when they are not yet in the DOM.
         document.body.addEventListener(
@@ -484,35 +556,24 @@ var cookieman = (function () {
         )
 
         upgradeCookieVersion()
-        loadCheckboxStates()
-        setDntTextIfEnabled()
 
-        // inject tracking objects if consented
+        // inject tracking objects if consented. This does not wait for the popup: the
+        // stub already holds the groups and the `inject` code.
         injectNewTrackingObjects()
     }
 
     init()
 
-    return {
+    var api = {
         /**
          * @api
-         */
-        show: function () {
-            console.error('Your theme should implement function cookieman.show()')
-        },
-        /**
-         * @api
-         */
-        hide: function () {
-            console.error('Your theme should implement function cookieman.hide()')
-        },
-        /**
-         * @api
+         * @returns {Promise}
          */
         showOnce: function () {
-            if (!hasCookie() || isConsentOutdated()) {
-                cookieman.show()
+            if (hasCookie() && !isConsentOutdated()) {
+                return window.Promise.resolve()
             }
+            return cookieman.show()
         },
         /**
          * @api
@@ -535,9 +596,22 @@ var cookieman = (function () {
          * @param {string} groupKey
          */
         consent: function (groupKey) {
-            var checkbox = form.querySelector('[type=checkbox][name="' + groupKey + '"]')
-            setChecked(checkbox, true)
-            saveSelections()
+            if (form) {
+                // the popup is loaded: keep the selections that the user sees
+                var checkbox = form.querySelector('[type=checkbox][name="' + groupKey + '"]')
+                if (checkbox) {
+                    setChecked(checkbox, true)
+                }
+                saveSelections()
+            } else {
+                // no popup: work on the data
+                var consented = parseCookie().consented
+                if (consented.indexOf(groupKey) === -1) {
+                    consented.push(groupKey)
+                }
+                saveConsented(consented)
+            }
+
             injectNewTrackingObjects()
         },
         /**
@@ -610,4 +684,43 @@ var cookieman = (function () {
          */
         eventsEl: eventsEl
     }
+
+    // `show` and `hide` stay the hooks that a theme assigns. We wrap them, because the
+    // page only holds a stub and the popup must be in the page before a theme can show
+    // it. Callers keep using `cookieman.show()`, which now gives a Promise.
+    var themeShow = function () {
+            console.error('Your theme should implement function cookieman.show()')
+        },
+        themeHide = function () {
+            console.error('Your theme should implement function cookieman.hide()')
+        }
+
+    Object.defineProperty(api, 'show', {
+        enumerable: true,
+        get: function () {
+            return function () {
+                return loadPopup().then(themeShow)
+            }
+        },
+        set: function (fn) {
+            themeShow = fn
+        }
+    })
+
+    Object.defineProperty(api, 'hide', {
+        enumerable: true,
+        get: function () {
+            return function () {
+                // nothing to hide if the popup was never loaded
+                if (popupPromise !== null) {
+                    themeHide()
+                }
+            }
+        },
+        set: function (fn) {
+            themeHide = fn
+        }
+    })
+
+    return api
 }());

@@ -15,6 +15,16 @@ class Constants
 {
     public const PATH_root = '/';
     public const PATH_imprint = '/imprint';
+    /** the second language of the test site, @see .ddev/config.yaml */
+    public const PATH_rootDe = '/de/';
+
+    /** `heading` of Resources/Private/Language/locallang.xlf and of its German language pack */
+    public const LABEL_heading = 'About Cookies';
+    public const LABEL_headingDe = 'Hinweis zu Cookies';
+    /** @see \Dmind\Cookieman\Middleware\PopupRoute::ARGUMENT */
+    public const POPUP_argument = 'consent';
+    /** the root page with the query argument */
+    public const PATH_popup = '/?' . self::POPUP_argument;
 
     public const SELECTOR_modal = '#cookieman-modal';
     public const SELECTOR_btnDataCookiemanShow = '[data-cookieman-show]';

@@ -6,14 +6,14 @@ cookieman.theme = (function () {
   var showBackdrop = true
 
   // show "save" after opening settings
-  jQuery(function () {
-    jQuery('[aria-controls="cookieman-settings"]').on(
-      'click',
-      function () {
-        jQuery('[data-cookieman-save]').show()
-      }
-    )
-  })
+  // delegated: cookieman puts the popup into the page later
+  jQuery(document).on(
+    'click',
+    '[aria-controls="cookieman-settings"]',
+    function () {
+      jQuery('[data-cookieman-save]').show()
+    }
+  )
 
   cookieman.show = function () {
     jQuery(function () {
