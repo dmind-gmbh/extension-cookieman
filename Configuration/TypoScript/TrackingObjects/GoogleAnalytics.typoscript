@@ -10,17 +10,17 @@ plugin.tx_cookieman.settings.trackingObjects {
             )
         }
         # example:
-#        inject (
-#<script nonce="{request : nonce | value}">
-#(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-#(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-#m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-#})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-#
-#ga('create', 'UA-XXXXX-Y', 'auto');
-#ga('send', 'pageview');
-#</script>
-#        )
+        #        inject (
+        #<script nonce="{request : nonce | value}">
+        #(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        #(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        #m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        #})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        #
+        #ga('create', 'UA-XXXXX-Y', 'auto');
+        #ga('send', 'pageview');
+        #</script>
+        #        )
         show {
             # https://developers.google.com/analytics/devguides/collection/gtagjs/cookie-usage
             # many are missing. See https://business.safety.google/adscookies/

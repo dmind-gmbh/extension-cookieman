@@ -10,15 +10,15 @@ plugin.tx_cookieman.settings.trackingObjects {
             )
         }
         # example:
-#        inject (
-#<script nonce="{request : nonce | value}" async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-#<script nonce="{request : nonce | value}">
-#  window.dataLayer = window.dataLayer || [];
-#  function gtag(){dataLayer.push(arguments);}
-#  gtag('js', new Date());
-#  gtag('config', 'GA_MEASUREMENT_ID');
-#</script>
-#        )
+        #        inject (
+        #<script nonce="{request : nonce | value}" async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+        #<script nonce="{request : nonce | value}">
+        #  window.dataLayer = window.dataLayer || [];
+        #  function gtag(){dataLayer.push(arguments);}
+        #  gtag('js', new Date());
+        #  gtag('config', 'GA_MEASUREMENT_ID');
+        #</script>
+        #        )
         show {
             # https://developers.google.com/analytics/devguides/collection/gtagjs/cookie-usage
             # https://business.safety.google/adscookies/

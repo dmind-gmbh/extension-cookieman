@@ -71,15 +71,15 @@ page {
 }
 
 ['{$plugin.tx_cookieman.settings.minify}' == '0']
-page {
-    includeJSFooter {
-        cookieman := removeString(.min)
-        cookieman-theme := removeString(.min)
-        cookieman-init := removeString(.min)
-    }
+    page {
+        includeJSFooter {
+            cookieman := removeString(.min)
+            cookieman-theme := removeString(.min)
+            cookieman-init := removeString(.min)
+        }
 
-    includeCSS {
-        cookieman-theme := removeString(.min)
+        includeCSS {
+            cookieman-theme := removeString(.min)
+        }
     }
-}
 [end]

@@ -1,12 +1,17 @@
-page.5 = TEXT
-page.5.value = <button data-cookieman-show>Example button: Adjust your cookie preferences</button>
-
 @import 'EXT:cookieman/Configuration/TypoScript/setup.typoscript'
 @import 'EXT:cookieman/Configuration/TypoScript/Example/setup.typoscript'
 
-# subscribe to events
-page.includeJSFooter {
-    subscribe-events = EXT:cookieman_test/Resources/Public/Js/subscribe-events.js
+# after the imports, so that subscribe-events.js comes after cookieman.js
+page {
+    5 = TEXT
+    5 {
+        value = <button data-cookieman-show>Example button: Adjust your cookie preferences</button>
+    }
+
+    # subscribe to events
+    includeJSFooter {
+        subscribe-events = EXT:cookieman_test/Resources/Public/Js/subscribe-events.js
+    }
 }
 
 plugin.tx_cookieman.settings {

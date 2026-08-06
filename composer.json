@@ -28,6 +28,7 @@
         "ergebnis/composer-normalize": "^2.51",
         "friendsofphp/php-cs-fixer": "^3.95",
         "helhum/typo3-console": "^8.3",
+        "helmich/typo3-typoscript-lint": "^3.3",
         "phpunit/phpunit": "^11.5",
         "ssch/typo3-rector": "^3.14",
         "typo3/cms-fluid-styled-content": "14.*.x-dev || ^14.3",
@@ -121,8 +122,10 @@
         "rector": "rector @additional_args --ansi",
         "test": [
             "@test:cgl",
+            "@test:composer:normalize",
             "@test:js:lint",
-            "@test:unit",
+            "@test:ts",
+            "@test:rector",
             "@test:acceptance"
         ],
         "test:acceptance": [
@@ -142,6 +145,7 @@
             "yarn --cwd=Build/ run lint"
         ],
         "test:rector": "@rector process --dry-run",
+        "test:ts": "(s=/tmp/.$$_$RANDOM; { typoscript-lint --ansi --fail-on-warnings; echo $?>$s; } | sed -E 's#/var/www/html/(.*)\\.$#\\1#g'; exit $(cat $s;rm $s))",
         "test:unit": [
             "@putenv XDEBUG_MODE=coverage",
             "phpunit -c Build/UnitTests.phpunit.xml"
@@ -149,6 +153,7 @@
         "tests-for:ci": [
             "@test:cgl",
             "@test:composer:normalize",
+            "@test:ts",
             "@test:rector",
             "@test:unit"
         ],
