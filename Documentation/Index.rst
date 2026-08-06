@@ -74,6 +74,7 @@ For contributing code, see the section :ref:`contributors`.
    :titlesonly:
 
    Introduction/*
+   NewInVersion5/Index
 
 .. toctree::
    :caption: For Integrators
