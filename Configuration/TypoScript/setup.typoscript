@@ -27,8 +27,8 @@ plugin.tx_cookieman {
             # domain without protocol like www.example.com, .example.com (default: Typo3 site name)
             domain =
 
-            # sameSite Options: Lax, Strict or None (default: lax)
-            sameSite = Lax
+            # sameSite Options: Lax, Strict or None (default: Strict)
+            sameSite =
         }
     }
 }

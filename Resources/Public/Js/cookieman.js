@@ -21,7 +21,7 @@ var cookieman = (function () {
             params = {
                 expires: parseInt(expires, 10) ,
                 domain: settings.cookie?.domain || undefined,
-                sameSite: settings.cookie?.sameSite || 'lax'
+                sameSite: settings.cookie?.sameSite || 'Strict'
             }
 
         for (var _i = 0; _i < checkboxes.length; _i++) {

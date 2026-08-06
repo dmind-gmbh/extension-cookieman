@@ -357,11 +357,18 @@ There are a few typoscript options to configure the cookie which is required by 
                 # domain without protocol like www.example.com, .example.com (default: Typo3 site name)
                 domain =
 
-                # sameSite Options: Lax, Strict or None (default: lax)
-                sameSite = Lax
+                # sameSite Options: Lax, Strict or None (default: Strict)
+                sameSite =
             }
         }
     }
+
+.. note::
+
+   Up to cookieman 4.3 the default for ``sameSite`` was ``Lax``. Set
+   ``sameSite = Lax`` to keep that behaviour.
+   The `SameSite attribute on the Mozilla Developer Network <https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie#samesitesamesite-value>`__
+   explains what the values do.
 
 .. tip::
 
