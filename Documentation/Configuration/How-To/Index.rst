@@ -344,7 +344,8 @@ Cookieman allows to add external sources with the :ref:`inject <trackingObjects.
 Configuration of the cookie used by the extension itself
 --------------------------------------------------------
 
-There are a few typoscript options to configure the cookie which is required by the exension.
+There are a few TypoScript constants to configure the cookie which is required by the exension
+(see :ref:`typoscript-constants`).
 
 .. code-block:: typoscript
 
@@ -360,7 +361,7 @@ There are a few typoscript options to configure the cookie which is required by 
                 # sameSite Options: Lax, Strict or None (default: Strict)
                 sameSite =
 
-                # send the cookie via https only (default: on, if the page is https). Set to 0 to switch off.
+                # send the cookie via https only (default: on). Cookieman sets it only on https pages.
                 secure =
             }
         }
@@ -375,13 +376,13 @@ There are a few typoscript options to configure the cookie which is required by 
 
 .. note::
 
-   Browsers discard a ``secure`` cookie that comes from an http page. The cookie is
-   then never stored and the banner comes back on every page. Because of this,
-   cookieman looks at the protocol of the page and makes the cookie ``secure`` on
-   https pages only. You cannot switch ``secure`` on for http pages.
+   ``secure`` is on. It is safe to leave it on, also for an http website: cookieman
+   sets the attribute only when the page is served via https.
+   The `Secure attribute on the Mozilla Developer Network <https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie#secure>`__
+   explains what it does.
 
-   Switch it off with ``secure = 0`` if you share the cookie between subdomains
-   (see the tip on ``domain`` below) and one of them is still http.
+   Set ``secure = 0`` only if you have http/https subdomains that must be covered by the cookie
+   (see the tip on ``domain`` below). This is the only reason to switch it off.
 
    Browsers also discard a cookie with ``sameSite = None`` if it is not ``secure``.
 

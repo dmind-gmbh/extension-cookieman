@@ -21,17 +21,10 @@ plugin.tx_cookieman {
             }
         }
         cookie {
-            # cookie expire time in days (default: 365)
-            cookieLifetimeDays =
-
-            # domain without protocol like www.example.com, .example.com (default: Typo3 site name)
-            domain =
-
-            # sameSite Options: Lax, Strict or None (default: Strict)
-            sameSite =
-
-            # send the cookie via https only (default: on, if the page is https). Set to 0 to switch off.
-            secure =
+            cookieLifetimeDays = {$plugin.tx_cookieman.settings.cookie.cookieLifetimeDays}
+            domain = {$plugin.tx_cookieman.settings.cookie.domain}
+            sameSite = {$plugin.tx_cookieman.settings.cookie.sameSite}
+            secure = {$plugin.tx_cookieman.settings.cookie.secure}
         }
     }
 }

@@ -101,6 +101,72 @@ links.imprintAnchor
 
    You can set an (optional) anchor (TYPO3-lingua "section") on the imprint page.
 
+.. _cookie.cookieLifetimeDays:
+
+cookie.cookieLifetimeDays
+^^^^^^^^^^^^^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
+
+cookie.cookieLifetimeDays
+   :sep:`|` :aspect:`Data type:` :ref:`data-type-string`
+   :sep:`|` :aspect:`Default:` 365
+   :sep:`|` :aspect:`Example:` 90
+   :sep:`|`
+
+   Number of days after which the consent cookie expires.
+
+.. _cookie.domain:
+
+cookie.domain
+^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
+
+cookie.domain
+   :sep:`|` :aspect:`Data type:` :ref:`data-type-string`
+   :sep:`|` :aspect:`Default:` the domain of the TYPO3 site
+   :sep:`|` :aspect:`Example:` .example.com
+   :sep:`|`
+
+   Domain of the consent cookie, without the protocol. Start it with a dot to share the
+   cookie between subdomains (see :ref:`extension-cookie-settings`).
+
+.. _cookie.sameSite:
+
+cookie.sameSite
+^^^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
+
+cookie.sameSite
+   :sep:`|` :aspect:`Data type:` :ref:`data-type-string`
+   :sep:`|` :aspect:`Default:` Strict
+   :sep:`|` :aspect:`Example:` Lax
+   :sep:`|`
+
+   `SameSite attribute <https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie#samesitesamesite-value>`__
+   of the consent cookie. Use `Strict`, `Lax` or `None`.
+
+   Up to cookieman 4.3 the default was `Lax`.
+
+.. _cookie.secure:
+
+cookie.secure
+^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
+
+cookie.secure
+   :sep:`|` :aspect:`Data type:` :ref:`data-type-string`
+   :sep:`|` :aspect:`Default:` empty (= on)
+   :sep:`|` :aspect:`Example:` 0
+   :sep:`|`
+
+   Makes the consent cookie
+   `secure <https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie#secure>`__.
+   Cookieman sets the attribute only when the page is served via https, so it is safe
+   to leave this on.
+
+   Set it to `0` only if you have http/https subdomains that must be covered by by the cookie
+   (see :ref:`extension-cookie-settings`).
+
 .. _minify:
 
 minify

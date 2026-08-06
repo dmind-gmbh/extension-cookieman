@@ -14,6 +14,16 @@ plugin.tx_cookieman {
             # cat=plugin.tx_cookieman/links; type=string; label=anchor within imprint (if needed)
             imprintAnchor =
         }
+        cookie {
+            # cat=plugin.tx_cookieman/cookie; type=string; label=cookie expire time in days (default: 365)
+            cookieLifetimeDays =
+            # cat=plugin.tx_cookieman/cookie; type=string; label=domain without protocol like www.example.com, .example.com (default: the TYPO3 site name)
+            domain =
+            # cat=plugin.tx_cookieman/cookie; type=string; label=sameSite attribute. Lax, Strict or None (default: Strict)
+            sameSite =
+            # cat=plugin.tx_cookieman/cookie; type=string; label=send the cookie via https only (default: on). Cookieman sets it only on https pages. Set to 0 only if you have mixed http/https subdomains which must be covered.
+            secure =
+        }
         # cat=plugin.tx_cookieman/assets; type=boolean; label=include minified CSS/JS (disable for development)
         minify = 1
     }
