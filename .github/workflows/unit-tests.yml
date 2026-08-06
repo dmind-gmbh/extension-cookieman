@@ -1,6 +1,7 @@
 name: CGL & unit tests
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - '**'

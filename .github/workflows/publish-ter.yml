@@ -1,5 +1,6 @@
 name: publish to TER
 on:
+  workflow_dispatch:
   push:
     tags:
       - '*'

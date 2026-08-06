@@ -1,6 +1,7 @@
 name: acceptance tests
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - '**'
