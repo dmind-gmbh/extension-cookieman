@@ -359,6 +359,9 @@ There are a few typoscript options to configure the cookie which is required by 
 
                 # sameSite Options: Lax, Strict or None (default: Strict)
                 sameSite =
+
+                # send the cookie via https only (default: on, if the page is https). Set to 0 to switch off.
+                secure =
             }
         }
     }
@@ -369,6 +372,18 @@ There are a few typoscript options to configure the cookie which is required by 
    ``sameSite = Lax`` to keep that behaviour.
    The `SameSite attribute on the Mozilla Developer Network <https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie#samesitesamesite-value>`__
    explains what the values do.
+
+.. note::
+
+   Browsers discard a ``secure`` cookie that comes from an http page. The cookie is
+   then never stored and the banner comes back on every page. Because of this,
+   cookieman looks at the protocol of the page and makes the cookie ``secure`` on
+   https pages only. You cannot switch ``secure`` on for http pages.
+
+   Switch it off with ``secure = 0`` if you share the cookie between subdomains
+   (see the tip on ``domain`` below) and one of them is still http.
+
+   Browsers also discard a cookie with ``sameSite = None`` if it is not ``secure``.
 
 .. tip::
 

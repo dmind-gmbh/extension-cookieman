@@ -29,6 +29,9 @@ plugin.tx_cookieman {
 
             # sameSite Options: Lax, Strict or None (default: Strict)
             sameSite =
+
+            # send the cookie via https only (default: on, if the page is https). Set to 0 to switch off.
+            secure =
         }
     }
 }

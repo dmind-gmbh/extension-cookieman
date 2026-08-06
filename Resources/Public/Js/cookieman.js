@@ -21,7 +21,9 @@ var cookieman = (function () {
             params = {
                 expires: parseInt(expires, 10) ,
                 domain: settings.cookie?.domain || undefined,
-                sameSite: settings.cookie?.sameSite || 'Strict'
+                sameSite: settings.cookie?.sameSite || 'Strict',
+                // browsers discard a `secure` cookie that comes from an http page
+                secure: settings.cookie?.secure !== '0' && window.location.protocol === 'https:'
             }
 
         for (var _i = 0; _i < checkboxes.length; _i++) {
