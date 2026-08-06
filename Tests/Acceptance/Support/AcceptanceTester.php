@@ -50,9 +50,7 @@ class AcceptanceTester extends Actor
     public function grabCookieWithAttributes(string $name): Cookie
     {
         return $this->executeInSelenium(
-            static function(RemoteWebDriver $webDriver) use ($name): Cookie {
-                return $webDriver->manage()->getCookieNamed($name);
-            },
+            static fn(RemoteWebDriver $webDriver): Cookie => $webDriver->manage()->getCookieNamed($name),
         );
     }
 

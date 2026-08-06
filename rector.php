@@ -53,6 +53,12 @@ return RectorConfig::configure()
         // @see https://github.com/sabbelasichon/typo3-rector/issues/2536
         __DIR__ . '/**/Configuration/ExtensionBuilder/*',
         __DIR__ . '/config/system/settings.php',
+        // Codeception writes the actor traits here on every build
+        __DIR__ . '/**/_generated/*',
+        // Codeception writes the failure reports here
+        __DIR__ . '/**/AcceptanceReports/*',
+        // third-party code, and not in the repository
+        __DIR__ . '/**/node_modules/*',
         DateTimeAspectInsteadOfGlobalsExecTimeRector::class,
         SafeDeclareStrictTypesRector::class => [
             'ext_emconf.php',
