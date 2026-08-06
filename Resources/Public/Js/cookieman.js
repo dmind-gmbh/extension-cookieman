@@ -4,6 +4,9 @@ var cookieman = (function () {
     "use strict";
     var cookieName = 'CookieConsent',
         cookieLifetimeDays = 365,
+        // divides the consented groups from the consentConfigurationVersion in the cookie
+        versionSeparator = '#',
+        defaultConfigurationVersion = '1',
         form = document.querySelector('[data-cookieman-form]'),
         settingsEl = document.querySelector('[data-cookieman-settings]'),
         eventsEl = settingsEl,
@@ -15,9 +18,13 @@ var cookieman = (function () {
         injectedTrackingObjects = [],
         loadedTrackingObjectScripts = {}
 
-    function saveSelections() {
-        var consented = [],
-            expires = settings.cookie?.cookieLifetimeDays || cookieLifetimeDays,
+    /**
+     * Writes the consent cookie with the current consentConfigurationVersion.
+     *
+     * @param {string[]} consented group keys
+     */
+    function writeCookie(consented) {
+        var expires = settings.cookie?.cookieLifetimeDays || cookieLifetimeDays,
             params = {
                 expires: parseInt(expires, 10) ,
                 domain: settings.cookie?.domain || undefined,
@@ -26,17 +33,23 @@ var cookieman = (function () {
                 secure: settings.cookie?.secure !== '0' && window.location.protocol === 'https:'
             }
 
+        Cookies.set(
+            cookieName,
+            consented.join('|') + versionSeparator + configurationVersion(),
+			params
+        )
+    }
+
+    function saveSelections() {
+        var consented = []
+
         for (var _i = 0; _i < checkboxes.length; _i++) {
             if (checkboxes[_i].checked) {
                 consented.push(checkboxes[_i].name)
             }
         }
 
-        Cookies.set(
-            cookieName,
-            consented.join('|'),
-			params
-        )
+        writeCookie(consented)
 
         emit(
             'consentChanged',
@@ -93,9 +106,80 @@ var cookieman = (function () {
         )
     }
 
-    function consentedSelectionsAll() {
+    /**
+     * The version of the configuration that the integrator set.
+     *
+     * @return {string}
+     */
+    function configurationVersion() {
+        return String(settings.consentConfigurationVersion || defaultConfigurationVersion)
+    }
+
+    /**
+     * Splits the cookie into the consented group keys and the
+     * consentConfigurationVersion that was current when the user saved.
+     *
+     * Format: 'group1|group2#version'. Without a version: 'group1|group2'.
+     * A group key cannot contain the separator, so the first one divides the two parts.
+     *
+     * @return {{consented: string[], version: string}}
+     */
+    function parseCookie() {
         var cookie = Cookies.get(cookieName)
-        return cookie ? cookie.split('|') : []
+        if (typeof cookie === 'undefined') {
+            return {consented: [], version: ''}
+        }
+        var separatorPos = cookie.indexOf(versionSeparator),
+            consentedPart = separatorPos === -1 ? cookie : cookie.slice(0, separatorPos)
+        return {
+            consented: consentedPart ? consentedPart.split('|') : [],
+            version: separatorPos === -1 ? '' : cookie.slice(separatorPos + 1)
+        }
+    }
+
+    /**
+     * @return {boolean}
+     */
+    function hasCookie() {
+        return typeof Cookies.get(cookieName) !== 'undefined'
+    }
+
+    /**
+     * The configuration changed after the user gave consent.
+     *
+     * A cookie without a version comes from cookieman < 5.0.0. It stays valid,
+     * @see upgradeCookieVersion().
+     *
+     * @return {boolean}
+     */
+    function isConsentOutdated() {
+        var cookieVersion = parseCookie().version
+        return cookieVersion !== '' && cookieVersion !== configurationVersion()
+    }
+
+    /**
+     * Writes the current version into a cookie that has none.
+     *
+     * Cookieman < 5.0.0 saved that consent. We keep it, but from now on the user gets the
+     * popup again on the next change of the version.
+     */
+    function upgradeCookieVersion() {
+        if (!hasCookie()) {
+            return
+        }
+        var cookie = parseCookie()
+        if (cookie.version !== '') {
+            return
+        }
+        writeCookie(cookie.consented)
+    }
+
+    function consentedSelectionsAll() {
+        // an outdated consent does not cover the current configuration
+        if (isConsentOutdated()) {
+            return []
+        }
+        return parseCookie().consented
     }
 
     function consentedSelectionsRespectDnt() {
@@ -112,10 +196,11 @@ var cookieman = (function () {
 
     function loadCheckboxStates() {
         // do not change checkbox states if there are no saved settings yet
-        if (typeof Cookies.get(cookieName) === 'undefined') {
+        if (!hasCookie()) {
             return
         }
-        var consented = consentedSelectionsAll()
+        // keep the selections of the user, also if the configuration changed
+        var consented = parseCookie().consented
         selectNone()
         for (var _i = 0; _i < consented.length; _i++) {
             var _checkbox = form.querySelector('[name=' + consented[_i] + ']')
@@ -398,7 +483,7 @@ var cookieman = (function () {
             onBodyClick
         )
 
-        // load form state
+        upgradeCookieVersion()
         loadCheckboxStates()
         setDntTextIfEnabled()
 
@@ -425,7 +510,7 @@ var cookieman = (function () {
          * @api
          */
         showOnce: function () {
-            if (typeof Cookies.get(cookieName) === 'undefined') {
+            if (!hasCookie() || isConsentOutdated()) {
                 cookieman.show()
             }
         },

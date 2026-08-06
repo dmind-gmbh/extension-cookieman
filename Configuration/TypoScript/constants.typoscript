@@ -24,6 +24,8 @@ plugin.tx_cookieman {
             # cat=plugin.tx_cookieman/cookie; type=string; label=send the cookie via https only (default: on). Cookieman sets it only on https pages. Set to 0 only if you have mixed http/https subdomains which must be covered.
             secure =
         }
+        # cat=plugin.tx_cookieman/cookie; type=string; label=version of your cookie configuration (default: 1). Change it to show the consent popup again. The consent of the user does not count until they save again.
+        consentConfigurationVersion = 1
         # cat=plugin.tx_cookieman/assets; type=boolean; label=include minified CSS/JS (disable for development)
         minify = 1
     }

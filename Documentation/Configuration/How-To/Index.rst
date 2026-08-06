@@ -369,7 +369,7 @@ There are a few TypoScript constants to configure the cookie which is required b
 
 .. note::
 
-   Up to cookieman 4.3 the default for ``sameSite`` was ``Lax``. Set
+   Before cookieman 5.0.0 the default for ``sameSite`` was ``Lax``. Set
    ``sameSite = Lax`` to keep that behaviour.
    The `SameSite attribute on the Mozilla Developer Network <https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie#samesitesamesite-value>`__
    explains what the values do.
@@ -395,3 +395,39 @@ There are a few TypoScript constants to configure the cookie which is required b
 .. code-block:: typoscript
 
    plugin.tx_cookieman.settings.cookie.domain = .example.com
+
+
+.. _show-the-popup-again:
+
+Show the consent popup again after a configuration change
+---------------------------------------------------------
+
+A user who gave consent does not see the popup again. If you add a tracking object or
+change your groups, that user keeps the old consent and does not see the new
+configuration.
+
+Change :ref:`consentConfigurationVersion` every time you change your cookie
+configuration. The default is ``1``, so your first change sets it to ``2``:
+
+.. code-block:: typoscript
+
+   plugin.tx_cookieman.settings.consentConfigurationVersion = 2
+
+Cookieman writes the version into the consent cookie. If the version in the cookie of a
+user is not the same as the configured one, cookieman shows the popup again. The
+selections of the user stay in the checkboxes, so they only must confirm them.
+
+You can use any value, for example a date or the number of your release.
+
+.. important::
+
+   Until the user saves again, the old consent does not count: cookieman injects no
+   tracking objects. This makes sure that a new tracking object does not start before
+   the user consented to it.
+
+.. note::
+
+   Consent that cookieman before 5.0.0 saved holds no version. Cookieman adds the
+   current version to such a cookie without a change for the user ("silent upgrade").
+   Nobody is asked again because of the upgrade to 5.0.0. Only your next change of the
+   version shows the popup again.

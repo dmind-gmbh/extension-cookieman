@@ -26,6 +26,30 @@ class Constants
 
     public const COOKIENAME = 'CookieConsent';
     public const COOKIE_separator = '|';
+    public const COOKIE_versionSeparator = '#';
+
+    /**
+     * The test instance overrides the default 1. A test that expects this value fails if
+     * the constant does not arrive in the JS, because the JS falls back to the default.
+     *
+     * @see Build/cookieman_test/Configuration/TypoScript/constants.typoscript
+     */
+    public const CONSENTCONFIGURATIONVERSION = '2';
+    /** any other non-empty version. Not '0', which reads like "switched off". */
+    public const CONSENTCONFIGURATIONVERSION_outdated = '0.9';
+
+    /**
+     * The test instance overrides the defaults of cookieLifetimeDays and sameSite, and
+     * uses the default of secure.
+     *
+     * @see Build/cookieman_test/Configuration/TypoScript/constants.typoscript
+     */
+    public const COOKIE_lifetimeDays = 30;
+    public const COOKIE_sameSite = 'Lax';
+    /** the test site is https, so the default switches `secure` on */
+    public const COOKIE_secure = true;
+
+    public const JS_consenteds = 'return cookieman.consenteds()';
 
     public const JS_showCookieman = 'cookieman.show()';
     public const JS_onScriptLoaded = "

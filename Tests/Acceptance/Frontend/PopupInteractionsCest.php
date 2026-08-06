@@ -35,7 +35,7 @@ class PopupInteractionsCest
         $I->waitForElementNotVisible(Constants::SELECTOR_modal);
         $I->seeCookie(Constants::COOKIENAME);
         $I->assertEquals(
-            Constants::GROUP_keyMandatory,
+            $I->cookieValueWithVersion([Constants::GROUP_keyMandatory]),
             $I->grabCookie(Constants::COOKIENAME, ['path' => Constants::PATH_root]),
         );
     }
@@ -105,7 +105,7 @@ class PopupInteractionsCest
         $I->waitForElementNotVisible(Constants::SELECTOR_modal);
         $I->seeCookie(Constants::COOKIENAME);
         $I->assertEquals(
-            $this->cookieValueForGroups([Constants::GROUP_keyMandatory, Constants::GROUP_key2nd]),
+            $I->cookieValueWithVersion([Constants::GROUP_keyMandatory, Constants::GROUP_key2nd]),
             $I->grabCookie(Constants::COOKIENAME, ['path' => Constants::PATH_root]),
         );
     }

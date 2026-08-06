@@ -61,6 +61,12 @@ cookieman.consent(groupKey)
    videos, Google Maps, facebook posts, ... – clicking the "yes, show the content"-button would call this function and a
    `<script>` in trackingObject's `inject` section would take care of actually loading the content.
 
+   .. note::
+
+      If the consent of the user is outdated (see :ref:`consentConfigurationVersion`),
+      this function also makes the consent current again. It keeps the groups that the user
+      selected before and adds the given one, without showing the popup.
+
 cookieman.consenteds()
 ^^^^^^^^^^^^^^^^^^^^^^
 .. rst-class:: dl-parameters

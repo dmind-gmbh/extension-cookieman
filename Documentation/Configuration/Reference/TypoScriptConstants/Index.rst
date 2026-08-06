@@ -145,7 +145,7 @@ cookie.sameSite
    `SameSite attribute <https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Set-Cookie#samesitesamesite-value>`__
    of the consent cookie. Use `Strict`, `Lax` or `None`.
 
-   Up to cookieman 4.3 the default was `Lax`.
+   Before cookieman 5.0.0 the default was `Lax`.
 
 .. _cookie.secure:
 
@@ -164,8 +164,32 @@ cookie.secure
    Cookieman sets the attribute only when the page is served via https, so it is safe
    to leave this on.
 
-   Set it to `0` only if you have http/https subdomains that must be covered by by the cookie
+   Set it to `0` only if you have http/https subdomains that must be covered by the cookie
    (see :ref:`extension-cookie-settings`).
+
+.. _consentConfigurationVersion:
+
+consentConfigurationVersion
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. rst-class:: dl-parameters
+
+consentConfigurationVersion
+   :sep:`|` :aspect:`Data type:` :ref:`data-type-string`
+   :sep:`|` :aspect:`Default:` 1
+   :sep:`|` :aspect:`Example:` 2
+   :sep:`|`
+
+   Version of your cookie configuration. Cookieman writes it into the consent cookie.
+   You can use any value, for example a date or the number of your release.
+
+   Change it every time you change your cookie configuration. Cookieman then shows the
+   consent popup again to all users whose cookie holds a different version. Until such a
+   user saves again, the old consent does not count and cookieman injects no tracking
+   objects (see :ref:`show-the-popup-again`).
+
+   Consent that cookieman before 5.0.0 saved holds no version. Such a cookie gets the
+   current version without a change for the user ("silent upgrade"). Thus the upgrade to
+   5.0.0 does not ask anybody again.
 
 .. _minify:
 

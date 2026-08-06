@@ -2,8 +2,9 @@
 @import 'EXT:cookieman/Configuration/TypoScript/TrackingObjects/CookieConsent.typoscript'
 
 plugin.tx_cookieman {
-    # documentation: https://github.com/dmind-gmbh/extension-cookieman
     settings {
+        consentConfigurationVersion = {$plugin.tx_cookieman.settings.consentConfigurationVersion}
+
         links {
             dataProtectionDeclarationPid = {$plugin.tx_cookieman.settings.links.dataProtectionDeclarationPid}
             dataProtectionDeclarationAnchor = {$plugin.tx_cookieman.settings.links.dataProtectionDeclarationAnchor}

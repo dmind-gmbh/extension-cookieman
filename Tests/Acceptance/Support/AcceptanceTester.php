@@ -13,6 +13,8 @@ namespace Dmind\Cookieman\Tests\Acceptance\Support;
 
 use Codeception\Actor;
 use Dmind\Cookieman\Tests\Acceptance\Support\_generated\AcceptanceTesterActions;
+use Facebook\WebDriver\Cookie;
+use Facebook\WebDriver\Remote\RemoteWebDriver;
 
 /**
  * Default acceptance tester
@@ -40,5 +42,31 @@ class AcceptanceTester extends Actor
     public function scrollIntoView(string $cssSelector): void
     {
         $this->executeJS('document.querySelector("' . str_replace('"', '\\"', $cssSelector) . '").scrollIntoView()');
+    }
+
+    /**
+     * The cookie with all its attributes. grabCookie() only gives the value.
+     */
+    public function grabCookieWithAttributes(string $name): Cookie
+    {
+        return $this->executeInSelenium(
+            static function(RemoteWebDriver $webDriver) use ($name): Cookie {
+                return $webDriver->manage()->getCookieNamed($name);
+            },
+        );
+    }
+
+    /**
+     * The value that the consent cookie holds for the given groups, with the
+     * consentConfigurationVersion that the test instance configures.
+     *
+     * @param string[] $groupKeys
+     */
+    public function cookieValueWithVersion(
+        array $groupKeys,
+        string $version = Constants::CONSENTCONFIGURATIONVERSION,
+    ): string {
+        return implode(Constants::COOKIE_separator, $groupKeys)
+            . ($version === '' ? '' : Constants::COOKIE_versionSeparator . $version);
     }
 }

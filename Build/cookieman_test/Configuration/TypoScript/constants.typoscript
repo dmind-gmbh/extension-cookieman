@@ -18,5 +18,17 @@ plugin.tx_cookieman {
             imprintAnchor = imprintAnchor
         }
         minify = 0
+        # not the default 1, so the tests see that the constant really arrives in the JS.
+        # keep in sync with Constants::CONSENTCONFIGURATIONVERSION
+        consentConfigurationVersion = 2
+        cookie {
+            # not the defaults, so the tests see that the constants really arrive in the JS.
+            # keep in sync with Constants::COOKIE_*
+            cookieLifetimeDays = 30
+            sameSite = Lax
+            # `domain` stays empty: a domain cookie and the host-only cookies that
+            # AcceptanceTester::setCookie() writes would collide on the same name.
+            # `secure` stays empty to test the default. The test site is https.
+        }
     }
 }
