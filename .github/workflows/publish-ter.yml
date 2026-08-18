@@ -28,13 +28,15 @@ jobs:
 
       - name: Get comment
         id: get-comment
+        env:
+          VERSION: ${{ steps.get-version.outputs.version }}
         run: |
-          comment="$(git tag -n10 -l ${{ steps.get-version.outputs.version }} | sed "s/^[0-9.]*[ ]*//g")"
+          comment="$(git tag --list -n10 "$VERSION" | sed "s/^[0-9.]*[ ]*//g")"
 
           EOF=$(dd if=/dev/urandom bs=15 count=1 status=none | base64)
           echo "comment<<$EOF" >> $GITHUB_OUTPUT
           if [[ -z "${comment// }" ]]; then
-            echo "Released version ${{ steps.get-version.outputs.version }} of ${{ env.TYPO3_EXTENSION_KEY }}" >> $GITHUB_OUTPUT
+            echo "Released version $VERSION of $TYPO3_EXTENSION_KEY" >> $GITHUB_OUTPUT
           else
             echo "$comment" >> $GITHUB_OUTPUT
           fi
@@ -51,4 +53,7 @@ jobs:
         run: composer global require typo3/tailor --prefer-dist --no-progress --no-suggest
 
       - name: Publish to TER
-        run: php ~/.composer/vendor/bin/tailor ter:publish --comment "${{ steps.get-comment.outputs.comment }}" ${{ steps.get-version.outputs.version }} cookieman
+        env:
+          COMMENT: ${{ steps.get-comment.outputs.comment }}
+          VERSION: ${{ steps.get-version.outputs.version }}
+        run: php ~/.composer/vendor/bin/tailor ter:publish --comment "$COMMENT" "$VERSION" cookieman
