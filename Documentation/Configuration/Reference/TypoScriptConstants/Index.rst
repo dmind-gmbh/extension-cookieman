@@ -10,6 +10,22 @@ TypoScript constants
 
 Adjust the TypoScript constants (again, either in a sys_template record or in a file in your site package).
 
+Sites that use the site set ``dmind/cookieman`` get all constants below as site settings with the same
+names. Set them in :guilabel:`Site Management > Settings` or in ``config/sites/<your-site>/settings.yaml``:
+
+.. code-block:: yaml
+
+   plugin:
+     tx_cookieman:
+       settings:
+         theme: bootstrap5-modal
+         links:
+           dataProtectionDeclarationPid: 12
+           imprintPid: 13
+         consentConfigurationVersion: 2
+
+A constant in a sys_template record still overrides the site setting.
+
 All constants are prepended with `plugin.tx_cookieman.settings`.
 
 

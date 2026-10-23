@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="EXT:cookieman/Configuration/Sets/Cookieman/labels.xlf" date="2026-10-23T00:00:00Z" product-name="cookieman">
+        <header/>
+        <body>
+            <trans-unit id="label">
+                <source>Cookieman</source>
+            </trans-unit>
+            <trans-unit id="categories.cookieman">
+                <source>Cookieman</source>
+            </trans-unit>
+            <trans-unit id="categories.cookieman.theme">
+                <source>Theme</source>
+            </trans-unit>
+            <trans-unit id="categories.cookieman.links">
+                <source>Links</source>
+            </trans-unit>
+            <trans-unit id="categories.cookieman.cookie">
+                <source>Cookie</source>
+            </trans-unit>
+            <trans-unit id="categories.cookieman.assets">
+                <source>Assets</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.tx_cookieman.settings.resourcesBasePath">
+                <source>Resources base path</source>
+            </trans-unit>
+            <trans-unit id="settings.description.plugin.tx_cookieman.settings.resourcesBasePath">
+                <source>Path to directory that holds Resources/Private|Public/Themes/&lt;theme&gt;</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.tx_cookieman.settings.theme">
+                <source>Theme</source>
+            </trans-unit>
+            <trans-unit id="settings.description.plugin.tx_cookieman.settings.theme">
+                <source>Name of theme. Either your custom one or one of the examples: [bootstrap5-modal/bootstrap4-modal/bootstrap3-modal (a simple and straight-forward popup), bootstrap3-banner (a banner that uses some interactive functions)]</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.tx_cookieman.settings.links.dataProtectionDeclarationPid">
+                <source>Data protection declaration page</source>
+            </trans-unit>
+            <trans-unit id="settings.description.plugin.tx_cookieman.settings.links.dataProtectionDeclarationPid">
+                <source>page ID of data declaration (the cookie banner will not be shown on this page)</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.tx_cookieman.settings.links.dataProtectionDeclarationAnchor">
+                <source>Data protection declaration anchor</source>
+            </trans-unit>
+            <trans-unit id="settings.description.plugin.tx_cookieman.settings.links.dataProtectionDeclarationAnchor">
+                <source>anchor within data declaration page (if needed)</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.tx_cookieman.settings.links.imprintPid">
+                <source>Imprint page</source>
+            </trans-unit>
+            <trans-unit id="settings.description.plugin.tx_cookieman.settings.links.imprintPid">
+                <source>page ID of imprint (the cookie banner will not be shown on this page)</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.tx_cookieman.settings.links.imprintAnchor">
+                <source>Imprint anchor</source>
+            </trans-unit>
+            <trans-unit id="settings.description.plugin.tx_cookieman.settings.links.imprintAnchor">
+                <source>anchor within imprint (if needed)</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.tx_cookieman.settings.cookie.cookieLifetimeDays">
+                <source>Cookie lifetime</source>
+            </trans-unit>
+            <trans-unit id="settings.description.plugin.tx_cookieman.settings.cookie.cookieLifetimeDays">
+                <source>cookie expire time in days (default: 365)</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.tx_cookieman.settings.cookie.domain">
+                <source>Cookie domain</source>
+            </trans-unit>
+            <trans-unit id="settings.description.plugin.tx_cookieman.settings.cookie.domain">
+                <source>domain without protocol like www.example.com, .example.com (default: the TYPO3 site name)</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.tx_cookieman.settings.cookie.sameSite">
+                <source>Cookie sameSite</source>
+            </trans-unit>
+            <trans-unit id="settings.description.plugin.tx_cookieman.settings.cookie.sameSite">
+                <source>sameSite attribute. Lax, Strict or None (default: Strict)</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.tx_cookieman.settings.cookie.secure">
+                <source>Cookie secure</source>
+            </trans-unit>
+            <trans-unit id="settings.description.plugin.tx_cookieman.settings.cookie.secure">
+                <source>send the cookie via https only (default: on). Cookieman sets it only on https pages. Set to 0 only if you have mixed http/https subdomains which must be covered.</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.tx_cookieman.settings.consentConfigurationVersion">
+                <source>Consent configuration version</source>
+            </trans-unit>
+            <trans-unit id="settings.description.plugin.tx_cookieman.settings.consentConfigurationVersion">
+                <source>version of your cookie configuration (default: 1). Change it to show the consent popup again. The consent of the user does not count until they save again.</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.tx_cookieman.settings.minify">
+                <source>Minify assets</source>
+            </trans-unit>
+            <trans-unit id="settings.description.plugin.tx_cookieman.settings.minify">
+                <source>include minified CSS/JS (disable for development)</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.tx_cookieman.settings.cookie.sameSite.enum.Strict">
+                <source>Strict</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.tx_cookieman.settings.cookie.sameSite.enum.Lax">
+                <source>Lax</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.tx_cookieman.settings.cookie.sameSite.enum.None">
+                <source>None</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.tx_cookieman.settings.cookie.secure.enum.1">
+                <source>On</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.tx_cookieman.settings.cookie.secure.enum.0">
+                <source>Off</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.tx_cookieman.settings.minify.enum.1">
+                <source>On</source>
+            </trans-unit>
+            <trans-unit id="settings.plugin.tx_cookieman.settings.minify.enum.0">
+                <source>Off</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
