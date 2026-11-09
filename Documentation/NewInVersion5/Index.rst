@@ -83,3 +83,13 @@ See :ref:`show-the-popup-again`.
    Consent that cookieman before 5.0.0 saved holds no version. Cookieman adds the
    current version to such a cookie without a change for the user ("silent upgrade").
    Thus the upgrade to 5.0.0 asks nobody again.
+
+
+Site settings
+-------------
+
+The site set ``dmind/cookieman`` defines all TypoScript constants as site settings
+(``Configuration/Sets/Cookieman/settings.definitions.yaml``). Editors set the theme, the data
+protection and imprint pages, the cookie options and the consent configuration version per site in
+:guilabel:`Site Management > Settings`. The defaults equal the former constants, so nothing changes
+for existing sites. See :ref:`typoscript-constants`.

@@ -1,0 +1,79 @@
+# Site settings for the set dmind/cookieman (Site Management > Settings).
+# Each setting is also a TypoScript constant with the same name, so Configuration/TypoScript keeps working
+# unchanged. The defaults match Configuration/TypoScript/constants.typoscript and the defaults of
+# cookieman.js, because site settings replace the constants of the set.
+categories:
+  cookieman: ~
+  cookieman.theme:
+    parent: cookieman
+  cookieman.links:
+    parent: cookieman
+  cookieman.cookie:
+    parent: cookieman
+  cookieman.assets:
+    parent: cookieman
+
+settings:
+  plugin.tx_cookieman.settings.resourcesBasePath:
+    type: string
+    default: 'EXT:cookieman/Resources'
+    category: cookieman.theme
+  plugin.tx_cookieman.settings.theme:
+    type: string
+    default: 'bootstrap4-modal'
+    category: cookieman.theme
+
+  plugin.tx_cookieman.settings.links.dataProtectionDeclarationPid:
+    type: page
+    default: 0
+    category: cookieman.links
+  plugin.tx_cookieman.settings.links.dataProtectionDeclarationAnchor:
+    type: string
+    default: ''
+    category: cookieman.links
+  plugin.tx_cookieman.settings.links.imprintPid:
+    type: page
+    default: 0
+    category: cookieman.links
+  plugin.tx_cookieman.settings.links.imprintAnchor:
+    type: string
+    default: ''
+    category: cookieman.links
+
+  plugin.tx_cookieman.settings.cookie.cookieLifetimeDays:
+    type: int
+    default: 365
+    category: cookieman.cookie
+  plugin.tx_cookieman.settings.cookie.domain:
+    type: string
+    default: ''
+    category: cookieman.cookie
+  plugin.tx_cookieman.settings.cookie.sameSite:
+    type: string
+    default: 'Strict'
+    category: cookieman.cookie
+    enum:
+      - 'Strict'
+      - 'Lax'
+      - 'None'
+  # A string, not a bool: a false bool becomes an empty constant, which cookieman.js reads as "on".
+  plugin.tx_cookieman.settings.cookie.secure:
+    type: string
+    default: '1'
+    category: cookieman.cookie
+    enum:
+      - '1'
+      - '0'
+  plugin.tx_cookieman.settings.consentConfigurationVersion:
+    type: int
+    default: 1
+    category: cookieman.cookie
+
+  # A string, not a bool: the setup checks for '0'.
+  plugin.tx_cookieman.settings.minify:
+    type: string
+    default: '1'
+    category: cookieman.assets
+    enum:
+      - '1'
+      - '0'

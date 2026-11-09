@@ -71,6 +71,11 @@ Installation
         - dmind/cookieman
         - dmind/cookieman-example
 
+   With the site set, the constants are site settings: edit them in
+   :guilabel:`Site Management > Settings` (category "Cookieman"). TYPO3 stores them in
+   ``config/sites/<your-site>/settings.yaml``, so every site of an installation can have its own
+   pages, theme and consent version. See :ref:`typoscript-constants`.
+
    **Option B – @import in your own TypoScript**
 
    Import the extension's TypoScript files directly from your site package's
