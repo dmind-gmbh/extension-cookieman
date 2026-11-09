@@ -21,6 +21,89 @@ plugin.tx_cookieman.settings.trackingObjects {
                 type = connection
                 provider = YouTube
             }
+            # The player sets these after playback, also on youtube-nocookie.com.
+            # They live on the YouTube domain, so cookieman cannot delete them on revoke.
+            # Names and durations of the cookies (2026-10-29):
+            #   https://policies.google.com/technologies/cookies?hl=en
+            #   __Secure-YNID replaces VISITOR_INFO1_LIVE, __Secure-YENID replaces __Secure-YEC. Browsers can have both.
+            # Local storage of the player and when it is written (2026-10-29):
+            #   https://swarmify.com/blog/what-is-youtube-nocookie/
+            #   https://consently.net/blog/is-youtube-embed-gdpr-compliant
+            #   https://www.consentstack.io/vendors/youtube
+            #   https://consentstack.io/vendors/youtube-player
+            #   https://www.goodreads.com/author_blog_posts/20193203-embed-youtube-videos-without-cookies
+            YSC {
+                duration =
+                durationUnit = session
+                type = cookie_http
+                provider = YouTube
+            }
+            VISITOR_INFO1_LIVE {
+                duration = 6
+                durationUnit = months
+                type = cookie_http
+                provider = YouTube
+            }
+            VISITOR_PRIVACY_METADATA {
+                duration = 6
+                durationUnit = months
+                type = cookie_http
+                provider = YouTube
+            }
+            __Secure-YNID {
+                duration = 6
+                durationUnit = months
+                type = cookie_http
+                provider = YouTube
+            }
+            __Secure-ROLLOUT_TOKEN {
+                duration = 6
+                durationUnit = months
+                type = cookie_http
+                provider = YouTube
+            }
+            PREF {
+                duration = 8
+                durationUnit = months
+                type = cookie_http
+                provider = YouTube
+            }
+            __Secure-YEC {
+                duration = 13
+                durationUnit = months
+                type = cookie_http
+                provider = YouTube
+            }
+            __Secure-YENID {
+                duration = 13
+                durationUnit = months
+                type = cookie_http
+                provider = YouTube
+            }
+            yt-remote-device-id {
+                duration =
+                durationUnit = none
+                type = localstorage
+                provider = YouTube
+            }
+            yt-remote-connected-devices {
+                duration =
+                durationUnit = none
+                type = localstorage
+                provider = YouTube
+            }
+            yt-player-headers-readable {
+                duration =
+                durationUnit = none
+                type = localstorage
+                provider = YouTube
+            }
+            ytidb::LAST_RESULT_ENTRY_KEY {
+                duration =
+                durationUnit = none
+                type = localstorage
+                provider = YouTube
+            }
         }
     }
 }
