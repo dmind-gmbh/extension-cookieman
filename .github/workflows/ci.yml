@@ -1,0 +1,133 @@
+name: "C/I static"
+on:
+  #push:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '43 3 * * 1'
+jobs:
+  gatherComposerCommands:
+    name: "Gather C/I checks"
+    runs-on: ubuntu-26.04
+    outputs:
+      checks: ${{steps.composerCommands.outputs.checks}}
+      phpVersion: ${{steps.versions.outputs.php_version}}
+      nodeVersion: ${{steps.versions.outputs.node_version}}
+    steps:
+      - uses: actions/checkout@v6
+        # One matrix entry per leaf command of "composer ci", each carrying what it
+        # needs to run, taken from extra.ci.requires in composer.json:
+        #   composer-install -> "composer install" in the runner
+        #   nodejs           -> NodeJS only, without the packages of a project
+        #   nodejs-install   -> NodeJS + "composer build:nodejs-install"
+        #   xmllint          -> libxml2-utils in the runner
+        # A check in extra.ci.allow-failure shows its result, but does not fail the run.
+        # composer.json stays the single source of truth: a check added to
+        # scripts.ci shows up here, and moving it between the requires lists
+        # changes what its job installs - both without touching this workflow.
+      - id: composerCommands
+        run: |
+          echo "checks=$(jq -c '
+            (.extra.ci.requires."composer-install" // []) as $needsComposer
+            | (.extra.ci.requires."nodejs" // []) as $needsNodejs
+            | (.extra.ci.requires."nodejs-install" // []) as $needsNodejsInstall
+            | (.extra.ci.requires."xmllint" // []) as $needsXmllint
+            | (.extra.ci."allow-failure" // []) as $allowFailure
+            | .scripts.ci
+            | map(sub("^@"; ""))
+            | map({
+                command: .,
+                composerInstall: (IN($needsComposer[])),
+                nodejs: (IN($needsNodejs[]) or IN($needsNodejsInstall[])),
+                nodejsInstall: (IN($needsNodejsInstall[])),
+                xmllintInstall: (IN($needsXmllint[])),
+                allowFailure: (IN($allowFailure[]))
+              })
+          ' composer.json)" >> $GITHUB_OUTPUT
+        # PHP and NodeJS versions come from .ddev/config.yaml, so the runner uses
+        # exactly what developers have locally.
+      - id: versions
+        run: |
+          phpVersion=$(sed --quiet --regexp-extended 's/^php_version: *"?([0-9.]+)"?.*/\1/p' .ddev/config.yaml)
+          nodeVersion=$(sed --quiet --regexp-extended 's/^nodejs_version: *"?([0-9.]+)"?.*/\1/p' .ddev/config.yaml)
+          # An empty version does not fail the setup action, it makes it use its
+          # own default. Then C/I tests a different version than the developers.
+          [ -n "$phpVersion" ] || { echo "::error::php_version not found in .ddev/config.yaml"; exit 1; }
+          [ -n "$nodeVersion" ] || { echo "::error::nodejs_version not found in .ddev/config.yaml"; exit 1; }
+          echo "php_version=$phpVersion" >> $GITHUB_OUTPUT
+          echo "node_version=$nodeVersion" >> $GITHUB_OUTPUT
+
+  static:
+    name: "${{ matrix.check.command }}"
+    needs: gatherComposerCommands
+    runs-on: ubuntu-26.04
+    continue-on-error: ${{ matrix.check.allowFailure }}
+    #concurrency:
+    #  allow subsequent jobs to use this cache
+    #  group: ${{ github.run_id }}
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v6
+        # PHP is always needed - it is the runner for every "composer <check>".
+      - name: "Install PHP"
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: "${{ needs.gatherComposerCommands.outputs.phpVersion }}"
+          coverage: none
+          tools: composer:v2
+      - name: "Show Composer version"
+        run: composer --version
+      - name: "Install xmllint"
+        if: matrix.check.xmllintInstall
+        run: sudo apt-get update && sudo apt-get install --yes libxml2-utils
+      - name: "Cache composer packages"
+        if: matrix.check.composerInstall
+        uses: actions/cache@v5
+        with:
+          key: "php-composer-${{ hashFiles('**/composer.lock') }}"
+          path: |
+            ~/.cache/composer
+            vendor
+      - name: "Add extensions.d-mind.de auth for composer"
+        if: matrix.check.composerInstall
+        run: "composer config --auth --global http-basic.extensions.d-mind.de \"$AUTH_USER\" \"$AUTH_PW\""
+        env:
+          AUTH_USER: ${{ secrets.HTTP_AUTH_EXTENSIONS_DMIND_USER }}
+          AUTH_PW: ${{ secrets.HTTP_AUTH_EXTENSIONS_DMIND_PW }}
+      - name: "Install composer dependencies"
+        if: matrix.check.composerInstall
+        run: "composer install --no-progress --no-interaction"
+      - name: "Install NodeJS"
+        if: matrix.check.nodejs
+        uses: actions/setup-node@v6
+        with:
+          node-version: "${{ needs.gatherComposerCommands.outputs.nodeVersion }}"
+        # setup-node's own "cache" input takes ONE package manager and fails when
+        # that manager's lockfile is missing, while composer build:nodejs-install
+        # handles npm and yarn side by side. So cache both download caches here,
+        # each only when such a lockfile actually exists.
+      - name: "Cache npm downloads"
+        if: matrix.check.nodejsInstall && hashFiles('packages/*/Build/package-lock.json') != ''
+        uses: actions/cache@v5
+        with:
+          path: "~/.npm"
+          key: "npm-${{ hashFiles('packages/*/Build/package-lock.json') }}"
+          restore-keys: "npm-"
+      - name: "Cache yarn downloads"
+        if: matrix.check.nodejsInstall && hashFiles('packages/*/Build/yarn.lock') != ''
+        uses: actions/cache@v5
+        with:
+          path: "~/.cache/yarn"
+          key: "yarn-${{ hashFiles('packages/*/Build/yarn.lock') }}"
+          restore-keys: "yarn-"
+      - name: "Install NodeJS packages"
+        if: matrix.check.nodejsInstall
+        run: "composer build:nodejs-install"
+      - name: "Run composer ${{ matrix.check.command }}"
+        run: "composer ${{ matrix.check.command }}"
+    strategy:
+      fail-fast: false
+      # use cache for each matrix job:
+      #max-parallel: 1
+      matrix:
+        check: ${{fromJson(needs.gatherComposerCommands.outputs.checks)}}

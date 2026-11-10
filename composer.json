@@ -82,7 +82,15 @@
                     "advisories": []
                 }
             },
-            "comment": "ci:composer:audit and ci:node:audit ignore the advisories in allow-failure-parts.<ecosystem>.advisories and the abandoned packages in allow-failure-parts.<ecosystem>.abandoned."
+            "comment": "This lists requirements for the ci: tasks. The Github workflow selectively installs what is needed. ci:composer:audit and ci:node:audit ignore the advisories in allow-failure-parts.<ecosystem>.advisories and the abandoned packages in allow-failure-parts.<ecosystem>.abandoned.",
+            "requires": {
+                "composer-install": [
+                    "ci:composer:audit"
+                ],
+                "nodejs": [
+                    "ci:node:audit"
+                ]
+            }
         },
         "typo3/cms": {
             "Package": {
@@ -175,6 +183,10 @@
         ],
         "typo3:flush": [
             "@typo3 cache:flush"
+        ],
+        "ci": [
+            "@ci:composer:audit",
+            "@ci:node:audit"
         ],
         "ci:composer:audit": "tooling/audit.sh composer",
         "ci:node:audit": "tooling/audit.sh nodejs"
