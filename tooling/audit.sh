@@ -109,11 +109,15 @@ for lockFile in "$@"; do
             deprecated=$(jq --compact-output \
                 '[.packages // {} | to_entries[] | select(.value.deprecated) | .key | sub("^.*node_modules/"; "")] | unique' \
                 "$lockFile") || deprecated='[]'
+            # npm 7 and later report "vulnerabilities", npm 6 reports "advisories".
             # An entry whose "via" is a package name only repeats an advisory of that package.
             normalize='input | {
                 complete: has("metadata"),
-                advisories: ([.vulnerabilities // {} | .[] | .via[] | objects
-                    | {ids: [.url | sub("^.*/"; "")], module: .name, severity, url}] | unique),
+                advisories: ([(.vulnerabilities // {} | .[] | .via[] | objects
+                        | {ids: [.url | sub("^.*/"; "")], module: .name, severity, url}),
+                    (.advisories // {} | .[]
+                        | {ids: ([.github_advisory_id, (.url | sub("^.*/"; ""))] + (.cves // []) | map(select(. != null)) | unique),
+                           module: .module_name, severity, url})] | unique),
                 abandoned: $deprecated
             }'
             ;;
