@@ -33,6 +33,7 @@ hooks:
               mysql <<< 'INSERT INTO pages SET uid=2, pid=1, title="Imprint", slug="/imprint"'
               mysql <<< 'INSERT INTO pages SET uid=3, pid=1, title="Privacy Policy", slug="/privacy"'
             fi
+        - exec: run-parts --verbose --exit-on-error --regex='^[0-9]' /mnt/ddev_config/hooks/post-start/exec.d
 use_dns_when_possible: true
 composer_version: "2"
 web_environment: []

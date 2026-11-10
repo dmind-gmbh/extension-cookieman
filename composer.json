@@ -71,6 +71,19 @@
         "vendor-dir": ".build/vendor"
     },
     "extra": {
+        "ci": {
+            "allow-failure-parts": {
+                "composer": {
+                    "abandoned": [],
+                    "advisories": []
+                },
+                "nodejs": {
+                    "abandoned": [],
+                    "advisories": []
+                }
+            },
+            "comment": "ci:composer:audit and ci:node:audit ignore the advisories in allow-failure-parts.<ecosystem>.advisories and the abandoned packages in allow-failure-parts.<ecosystem>.abandoned."
+        },
         "typo3/cms": {
             "Package": {
                 "providesPackages": {}
@@ -162,6 +175,8 @@
         ],
         "typo3:flush": [
             "@typo3 cache:flush"
-        ]
+        ],
+        "ci:composer:audit": "tooling/audit.sh composer",
+        "ci:node:audit": "tooling/audit.sh nodejs"
     }
 }
